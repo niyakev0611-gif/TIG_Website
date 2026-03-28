@@ -2319,7 +2319,7 @@ const POSTS = [
 <!-- /wp:list -->
 
 <!-- wp:image {"id":334,"width":768,"height":503,"sizeSlug":"large","linkDestination":"none","otterConditions":[]} -->
-<figure class="wp-block-image size-large is-resized"><img src="https://taiwanese-in-germany.com/wp-content/uploads/2023/03/Screen-Shot-2023-03-22-at-5.10.44-PM-1024x670.png" alt="" class="wp-image-334" style="width:768px;height:503px" width="768" height="503"/></figure>
+<figure class="wp-block-image size-large is-resized"><img src="assets/images/Screen%20Shot%202023-03-22%20at%205.10.44%20PM.png" alt="" class="wp-image-334" style="width:768px;height:503px" width="768" height="503"/></figure>
 <!-- /wp:image -->
 
 <!-- wp:paragraph -->
@@ -2327,7 +2327,7 @@ const POSTS = [
 <!-- /wp:paragraph -->
 
 <!-- wp:image {"id":332,"width":768,"height":484,"sizeSlug":"large","linkDestination":"none","otterConditions":[]} -->
-<figure class="wp-block-image size-large is-resized"><img src="https://taiwanese-in-germany.com/wp-content/uploads/2023/03/Screen-Shot-2023-03-22-at-5.11.27-PM-1024x645.png" alt="" class="wp-image-332" style="width:768px;height:484px" width="768" height="484"/></figure>
+<figure class="wp-block-image size-large is-resized"><img src="assets/images/Screen%20Shot%202023-03-22%20at%205.11.27%20PM.png" alt="" class="wp-image-332" style="width:768px;height:484px" width="768" height="484"/></figure>
 <!-- /wp:image -->
 
 <!-- wp:paragraph {"otterConditions":[]} -->
@@ -2335,7 +2335,7 @@ const POSTS = [
 <!-- /wp:paragraph -->
 
 <!-- wp:image {"id":337,"sizeSlug":"large","linkDestination":"none"} -->
-<figure class="wp-block-image size-large"><img src="https://taiwanese-in-germany.com/wp-content/uploads/2023/03/Screen-Shot-2023-03-22-at-5.05.39-PM-1024x586.png" alt="" class="wp-image-337"/></figure>
+<figure class="wp-block-image size-large"><img src="assets/images/Screen%20Shot%202023-03-22%20at%205.05.39%20PM.png" alt="" class="wp-image-337"/></figure>
 <!-- /wp:image -->
 
 <!-- wp:paragraph -->
