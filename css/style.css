@@ -247,6 +247,19 @@ ul, ol { list-style: none; }
   color: var(--accent);
 }
 
+/* 德國國旗三色：黑 / 紅 / 金 */
+.de-flag-text {
+  background: linear-gradient(
+    180deg,
+    #000000 0%,   #000000 33%,
+    #CC0000 33%,  #CC0000 66%,
+    #FFCE00 66%,  #FFCE00 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
 .hero__subtitle {
   font-size: var(--text-xl);
   font-weight: 400;
