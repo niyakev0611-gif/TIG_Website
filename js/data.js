@@ -2351,7 +2351,7 @@ const POSTS = [
 <!-- /wp:paragraph -->
 
 <!-- wp:image {"id":886,"sizeSlug":"large","linkDestination":"none"} -->
-<figure class="wp-block-image size-large"><img src="https://taiwanese-in-germany.com/wp-content/uploads/2023/09/Screen-Shot-2023-09-12-at-6.41.42-PM-1024x342.png" alt="" class="wp-image-886"/></figure>
+<figure class="wp-block-image size-large"><img src="assets/images/Screen%20Shot%202023-09-12%20at%206.41.42%20PM.png" alt="" class="wp-image-886"/></figure>
 <!-- /wp:image -->
 
 <!-- wp:paragraph -->
