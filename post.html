@@ -18,17 +18,13 @@
 </head>
 <body>
 
-<!-- Reading Progress Bar -->
 <div class="progress-bar" id="progressBar"></div>
 
-<!-- ========== NAVBAR ========== -->
-<nav class="navbar scrolled" id="navbar">
+<!-- NAVBAR -->
+<nav class="navbar">
   <div class="container">
     <div class="navbar__inner">
-      <a href="index.html" class="navbar__logo">
-        <span class="navbar__logo-icon">🇩🇪</span>
-        <span>台勞在德國</span>
-      </a>
+      <a href="index.html" class="navbar__logo">🇩🇪 台勞在德國</a>
       <button class="navbar__hamburger" id="hamburger" aria-label="選單">
         <span></span><span></span><span></span>
       </button>
@@ -43,10 +39,11 @@
   </div>
 </nav>
 
-<!-- ========== POST LAYOUT ========== -->
+<!-- POST -->
 <main class="post-layout" id="postLayout">
 
-  <!-- Breadcrumb -->
+  <a href="javascript:history.back()" class="back-btn">← 返回</a>
+
   <nav class="breadcrumb" id="breadcrumb">
     <a href="index.html">首頁</a>
     <span class="breadcrumb__sep">›</span>
@@ -55,60 +52,47 @@
     <span id="breadcrumbTitle">…</span>
   </nav>
 
-  <!-- Post Header -->
   <header class="post-header" id="postHeader">
     <div class="post-header__cats" id="postCats"></div>
     <h1 class="post-header__title" id="postTitle">載入中…</h1>
     <div class="post-header__meta">
-      <div class="post-header__meta-item">
-        <span>📅</span>
-        <span id="postDate"></span>
-      </div>
-      <div class="post-header__meta-item">
-        <span>✍️</span>
-        <span>K</span>
-      </div>
-      <div class="post-header__meta-item" id="readingTimeWrap">
-        <span>⏱️</span>
-        <span id="readingTime"></span>
-      </div>
+      <span id="postDate"></span>
+      <span class="post-header__sep">·</span>
+      <span>K</span>
+      <span class="post-header__sep">·</span>
+      <span id="readingTime"></span>
     </div>
+    <hr class="post-header__divider" />
   </header>
 
-  <!-- Post Content -->
-  <article class="post-content" id="postContent">
-    <!-- JS rendered -->
-  </article>
+  <article class="post-content" id="postContent"></article>
 
-  <!-- Post Tags -->
   <div class="post-tags" id="postTags" style="display:none;">
     <span class="post-tags__label">標籤：</span>
   </div>
 
-  <!-- Related Posts -->
   <div class="related" id="related" style="display:none;">
     <h2 class="related__title">相關文章</h2>
     <div class="related__grid" id="relatedGrid"></div>
   </div>
 
-  <!-- 404 State (hidden by default) -->
   <div id="notFound" style="display:none;">
-    <div class="empty-state" style="padding-top:var(--space-16);">
-      <div class="empty-state__emoji">😕</div>
+    <div class="empty-state">
+      <div class="empty-state__icon">😕</div>
       <div class="empty-state__title">找不到這篇文章</div>
       <p>文章可能已移除或網址有誤。</p>
       <br />
-      <a href="index.html" class="view-all" style="display:inline-flex;">← 回到首頁</a>
+      <a href="index.html" style="color:var(--accent); font-size:var(--text-sm);">← 回到首頁</a>
     </div>
   </div>
 
 </main>
 
-<!-- ========== FOOTER ========== -->
+<!-- FOOTER -->
 <footer class="footer">
   <div class="container">
     <div class="footer__inner">
-      <div class="footer__brand">
+      <div>
         <div class="footer__brand-name">🇩🇪 台勞在德國打工記</div>
         <p class="footer__brand-desc">台灣人在德國的生活記錄，分享實用資訊、旅行攻略與德語學習。</p>
       </div>
@@ -127,7 +111,7 @@
       </div>
     </div>
     <div class="footer__bottom">
-      <span>© 2026 台勞在德國打工記 · Taiwanese in Germany</span>
+      <span>© 2026 台勞在德國打工記</span>
     </div>
   </div>
 </footer>

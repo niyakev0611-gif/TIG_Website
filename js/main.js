@@ -73,19 +73,17 @@ function createPostCard(post) {
   a.className = 'post-card';
   a.href = `post.html?slug=${post.slug}`;
 
-  const catsHtml = post.categories.map(c =>
-    `<span class="tag">${c}</span>`
-  ).join('');
+  const firstCat = post.categories[0] || '';
 
   a.innerHTML = `
     <div class="post-card__cover">${post.emoji}</div>
     <div class="post-card__body">
-      <div class="post-card__cats">${catsHtml}</div>
+      <div class="post-card__cat">${firstCat}</div>
       <div class="post-card__title">${post.title}</div>
       <div class="post-card__excerpt">${post.excerpt}</div>
       <div class="post-card__footer">
-        <span class="post-card__date font-en">${formatDate(post.date)}</span>
-        <span class="post-card__arrow">→</span>
+        <span class="post-card__date">${formatDate(post.date)}</span>
+        <span class="post-card__more">閱讀 →</span>
       </div>
     </div>
   `;

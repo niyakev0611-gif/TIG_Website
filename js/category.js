@@ -34,28 +34,22 @@ function initNavActive(activeCat) {
 
 /* ---------- Update Category Hero ---------- */
 function updateHero(activeCat) {
-  const catInfo = CATEGORIES.find(c => c.name === activeCat);
+  const catInfo   = CATEGORIES.find(c => c.name === activeCat);
   const titleEl   = document.getElementById('catTitle');
   const descEl    = document.getElementById('catDesc');
-  const emojiEl   = document.getElementById('catEmoji');
-  const metaEl    = document.getElementById('catMeta');
-  const breadEl   = document.getElementById('breadcrumbCurrent');
+  const countEl   = document.getElementById('catCount');
   const pageTitle = document.getElementById('pageTitle');
 
   if (catInfo) {
     const count = getPostsByCategory(activeCat).length;
     titleEl.textContent   = catInfo.name;
     descEl.textContent    = catInfo.desc;
-    emojiEl.textContent   = catInfo.emoji;
-    metaEl.textContent    = `共 ${count} 篇文章`;
-    breadEl.textContent   = catInfo.name;
+    countEl.textContent   = `共 ${count} 篇文章`;
     pageTitle.textContent = `${catInfo.name} | 台勞在德國打工記`;
   } else {
     titleEl.textContent = '所有文章';
-    descEl.textContent  = '瀏覽全部 ' + POSTS.length + ' 篇文章';
-    emojiEl.textContent = '📝';
-    metaEl.textContent  = `共 ${POSTS.length} 篇文章`;
-    breadEl.textContent = '所有文章';
+    descEl.textContent  = '瀏覽全部文章';
+    countEl.textContent = `共 ${POSTS.length} 篇文章`;
   }
 }
 
@@ -114,19 +108,17 @@ function createPostCard(post, index) {
   a.href = `post.html?slug=${post.slug}`;
   a.dataset.delay = index * 60;
 
-  const catsHtml = post.categories.map(c =>
-    `<span class="tag">${c}</span>`
-  ).join('');
+  const firstCat = post.categories[0] || '';
 
   a.innerHTML = `
     <div class="post-card__cover">${post.emoji}</div>
     <div class="post-card__body">
-      <div class="post-card__cats">${catsHtml}</div>
+      <div class="post-card__cat">${firstCat}</div>
       <div class="post-card__title">${post.title}</div>
       <div class="post-card__excerpt">${post.excerpt}</div>
       <div class="post-card__footer">
-        <span class="post-card__date font-en">${formatDate(post.date)}</span>
-        <span class="post-card__arrow">→</span>
+        <span class="post-card__date">${formatDate(post.date)}</span>
+        <span class="post-card__more">閱讀 →</span>
       </div>
     </div>
   `;
