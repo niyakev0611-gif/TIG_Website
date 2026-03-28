@@ -3,11 +3,29 @@
    Taiwanese in Germany
    ============================================================ */
 
+function initTheme() {
+  const btn = document.getElementById('themeToggle');
+  if (!btn) return;
+  const saved = localStorage.getItem('theme') ||
+    (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+  applyTheme(saved);
+  btn.addEventListener('click', () => {
+    const next = document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark';
+    applyTheme(next); localStorage.setItem('theme', next);
+  });
+}
+function applyTheme(theme) {
+  document.documentElement.dataset.theme = theme;
+  const btn = document.getElementById('themeToggle');
+  if (btn) btn.textContent = theme === 'dark' ? '☀️' : '🌙';
+}
+
 document.addEventListener('DOMContentLoaded', () => {
   const params = new URLSearchParams(window.location.search);
   const activeCat = params.get('cat') || '';
 
   initNavbar();
+  initTheme();
   initNavActive(activeCat);
   updateHero(activeCat);
   renderFilterBar(activeCat);
