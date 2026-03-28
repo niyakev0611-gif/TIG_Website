@@ -3,9 +3,28 @@
    Design: Apple Minimalist Style
    ============================================================ */
 
-/* 霞鶩文楷 TC — 正體中文楷書美字 */
-@import url('https://cdn.jsdelivr.net/npm/lxgw-wenkai-tc-webfont@latest/style.css');
-/* Inter — 英文數字輔助 */
+/* Glow Sans TC (未來榮光) — 細長現代正體中文 */
+@font-face {
+  font-family: 'Glow Sans TC';
+  src: url('https://cdn.jsdelivr.net/gh/welai/glow-sans@v0.93/packages/GlowSansTC/GlowSansTC-Normal-3.woff2') format('woff2');
+  font-weight: 300; font-display: swap;
+}
+@font-face {
+  font-family: 'Glow Sans TC';
+  src: url('https://cdn.jsdelivr.net/gh/welai/glow-sans@v0.93/packages/GlowSansTC/GlowSansTC-Normal-4.woff2') format('woff2');
+  font-weight: 400; font-display: swap;
+}
+@font-face {
+  font-family: 'Glow Sans TC';
+  src: url('https://cdn.jsdelivr.net/gh/welai/glow-sans@v0.93/packages/GlowSansTC/GlowSansTC-Normal-5.woff2') format('woff2');
+  font-weight: 500; font-display: swap;
+}
+@font-face {
+  font-family: 'Glow Sans TC';
+  src: url('https://cdn.jsdelivr.net/gh/welai/glow-sans@v0.93/packages/GlowSansTC/GlowSansTC-Normal-7.woff2') format('woff2');
+  font-weight: 700; font-display: swap;
+}
+/* Inter — 英文數字 */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
 /* ---------- CSS Variables ---------- */
@@ -25,8 +44,7 @@
   --shadow-md:    0 4px 20px rgba(0,0,0,.08);
   --shadow-lg:    0 12px 40px rgba(0,0,0,.10);
 
-  /* 霞鶩文楷 TC 為主，Inter 處理英文數字，系統字體兜底 */
-  --font:         'LXGW WenKai TC', 'LXGW WenKai', 'Inter', -apple-system, BlinkMacSystemFont, 'PingFang TC', 'Microsoft JhengHei', sans-serif;
+  --font:         'Glow Sans TC', 'Inter', -apple-system, BlinkMacSystemFont, 'PingFang TC', 'Microsoft JhengHei', sans-serif;
   --font-en:      'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
 
   --text-xs:   0.75rem;    /* 12px */
