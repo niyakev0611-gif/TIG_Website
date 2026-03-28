@@ -2343,7 +2343,7 @@ const POSTS = [
 <!-- /wp:paragraph -->
 
 <!-- wp:image {"id":888,"sizeSlug":"large","linkDestination":"none"} -->
-<figure class="wp-block-image size-large"><img src="https://taiwanese-in-germany.com/wp-content/uploads/2023/09/Screen-Shot-2023-09-12-at-6.41.54-PM-1024x635.png" alt="" class="wp-image-888"/></figure>
+<figure class="wp-block-image size-large"><img src="assets/images/Screen%20Shot%202023-09-12%20at%206.41.54%20PM.png" alt="" class="wp-image-888"/></figure>
 <!-- /wp:image -->
 
 <!-- wp:paragraph -->
@@ -2359,7 +2359,7 @@ const POSTS = [
 <!-- /wp:paragraph -->
 
 <!-- wp:image {"id":889,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full"><img src="https://taiwanese-in-germany.com/wp-content/uploads/2023/09/Screen-Shot-2023-09-12-at-6.42.28-PM.png" alt="" class="wp-image-889"/></figure>
+<figure class="wp-block-image size-full"><img src="assets/images/Screen%20Shot%202023-09-12%20at%206.42.28%20PM.png" alt="" class="wp-image-889"/></figure>
 <!-- /wp:image -->
 
 <!-- wp:paragraph {"textColor":"foreground"} -->
