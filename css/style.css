@@ -128,6 +128,7 @@ ul, ol { list-style: none; }
   gap: 6px;
   opacity: 0.9;
   transition: opacity var(--duration);
+  flex-shrink: 0;
 }
 .navbar__logo:hover { opacity: 1; }
 
@@ -135,12 +136,14 @@ ul, ol { list-style: none; }
   display: flex;
   align-items: center;
   gap: 4px;
+  flex: 1;
+  justify-content: center;
 }
 
 .navbar__link {
   font-size: var(--text-sm);
   color: var(--secondary);
-  padding: 8px 14px;
+  padding: 8px 20px;
   border-radius: 8px;
   transition: color var(--duration), background var(--duration);
 }
