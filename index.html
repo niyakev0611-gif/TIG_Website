@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="台灣人在德國的生活記錄。分享來德生活必辦事項、德國日常、旅行攻略與德語學習。" />
+  <meta property="og:title" content="台勞在德國打工記" />
+  <meta property="og:description" content="台灣人在德國的生活記錄 — 實用資訊、生活分享、旅遊攻略" />
+  <meta property="og:type" content="website" />
+  <title>台勞在德國打工記 | Taiwanese in Germany</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🇩🇪</text></svg>" />
+</head>
+<body>
+
+<!-- ========== NAVBAR ========== -->
+<nav class="navbar" id="navbar">
+  <div class="container">
+    <div class="navbar__inner">
+      <a href="index.html" class="navbar__logo">
+        <span class="navbar__logo-icon">🇩🇪</span>
+        <span>台勞在德國</span>
+      </a>
+      <button class="navbar__hamburger" id="hamburger" aria-label="選單">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="navbar__nav" id="navMenu">
+        <li><a href="index.html" class="navbar__link active">首頁</a></li>
+        <li><a href="category.html?cat=來德生活必辦事項" class="navbar__link">來德必辦</a></li>
+        <li><a href="category.html?cat=德國生活" class="navbar__link">德國生活</a></li>
+        <li><a href="category.html?cat=旅行" class="navbar__link">旅行</a></li>
+        <li><a href="category.html?cat=德文" class="navbar__link">德文</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- ========== HERO ========== -->
+<section class="hero">
+  <div class="hero__bg"></div>
+  <div class="hero__orb hero__orb--1"></div>
+  <div class="hero__orb hero__orb--2"></div>
+  <div class="hero__orb hero__orb--3"></div>
+
+  <div class="container">
+    <div class="hero__content">
+      <div class="hero__badge font-en">
+        <span>✦</span>
+        <span>Taiwanese in Germany</span>
+      </div>
+      <h1 class="hero__title">
+        台勞在<span class="gradient-text">德國</span><br>打工記
+      </h1>
+      <p class="hero__subtitle">
+        一個台灣人在德國的生活記錄，分享來德必辦事項、日常生活心得、旅行攻略與德語學習。
+      </p>
+      <div class="hero__stats">
+        <div class="hero__stat">
+          <span class="hero__stat-num font-en" id="postCount">12</span>
+          <span class="hero__stat-label">篇文章</span>
+        </div>
+        <div class="hero__stat">
+          <span class="hero__stat-num font-en">4</span>
+          <span class="hero__stat-label">個分類</span>
+        </div>
+        <div class="hero__stat">
+          <span class="hero__stat-num font-en">DE</span>
+          <span class="hero__stat-label">德國生活</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero__scroll">
+    <span>向下捲動</span>
+    <div class="hero__scroll-arrow"></div>
+  </div>
+</section>
+
+<!-- ========== CATEGORIES ========== -->
+<section class="section" id="categories">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-tag">✦ Categories</div>
+      <h2 class="section-title">探索分類</h2>
+      <p class="section-desc">找到你最需要的資訊，從移居準備到日常生活，一應俱全。</p>
+    </div>
+    <div class="categories-grid stagger" id="categoriesGrid">
+      <!-- JS rendered -->
+    </div>
+  </div>
+</section>
+
+<hr class="section-divider" />
+
+<!-- ========== RECENT POSTS ========== -->
+<section class="section" id="posts">
+  <div class="container">
+    <div class="section-header reveal" style="display:flex; align-items:flex-end; justify-content:space-between; flex-wrap:wrap; gap:1rem;">
+      <div>
+        <div class="section-tag">✦ Latest</div>
+        <h2 class="section-title">最新文章</h2>
+      </div>
+      <a href="category.html" class="view-all">
+        全部文章 <span>→</span>
+      </a>
+    </div>
+    <div class="posts-grid stagger" id="postsGrid">
+      <!-- JS rendered -->
+    </div>
+  </div>
+</section>
+
+<hr class="section-divider" />
+
+<!-- ========== ABOUT STRIP ========== -->
+<section class="about-strip">
+  <div class="container">
+    <div class="about-strip__inner">
+      <div class="about-strip__text reveal">
+        <h2 class="about-strip__title">關於這個部落格</h2>
+        <p class="about-strip__body">
+          我是 K，一個旅居德國多年的台灣人。這個部落格記錄了我在德國的生活點滴，希望能幫助即將來德、或正在德國打拼的台灣朋友們少走一些彎路。
+        </p>
+      </div>
+      <div class="about-strip__facts stagger reveal">
+        <div class="fact-card">
+          <div class="fact-card__emoji">📍</div>
+          <div class="fact-card__label">Location</div>
+          <div class="fact-card__value">德國</div>
+        </div>
+        <div class="fact-card">
+          <div class="fact-card__emoji">✍️</div>
+          <div class="fact-card__label">Content</div>
+          <div class="fact-card__value">實用生活資訊</div>
+        </div>
+        <div class="fact-card">
+          <div class="fact-card__emoji">🌏</div>
+          <div class="fact-card__label">For</div>
+          <div class="fact-card__value">在德台灣人</div>
+        </div>
+        <div class="fact-card">
+          <div class="fact-card__emoji">🆓</div>
+          <div class="fact-card__label">Cost</div>
+          <div class="fact-card__value">完全免費</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== FOOTER ========== -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__inner">
+      <div class="footer__brand">
+        <div class="footer__brand-name">🇩🇪 台勞在德國打工記</div>
+        <p class="footer__brand-desc">台灣人在德國的生活記錄，分享實用資訊、旅行攻略與德語學習。希望能幫助每一位在德國打拼的台灣朋友。</p>
+      </div>
+      <div>
+        <div class="footer__col-title">分類</div>
+        <ul class="footer__links">
+          <li><a href="category.html?cat=來德生活必辦事項" class="footer__link">來德生活必辦事項</a></li>
+          <li><a href="category.html?cat=德國生活" class="footer__link">德國生活</a></li>
+          <li><a href="category.html?cat=旅行" class="footer__link">旅行</a></li>
+          <li><a href="category.html?cat=德文" class="footer__link">德文</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer__col-title">文章</div>
+        <ul class="footer__links" id="footerRecentLinks">
+          <!-- JS rendered -->
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>© 2026 台勞在德國打工記 · Taiwanese in Germany</span>
+      <span>原站：<a href="https://taiwanese-in-germany.com" target="_blank" rel="noopener" style="color:rgba(255,255,255,0.5); transition:color .15s;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='rgba(255,255,255,0.5)'">taiwanese-in-germany.com</a></span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

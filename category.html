@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="台勞在德國打工記 — 文章分類列表" />
+  <title id="pageTitle">文章列表 | 台勞在德國打工記</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🇩🇪</text></svg>" />
+</head>
+<body>
+
+<!-- ========== NAVBAR ========== -->
+<nav class="navbar scrolled" id="navbar">
+  <div class="container">
+    <div class="navbar__inner">
+      <a href="index.html" class="navbar__logo">
+        <span class="navbar__logo-icon">🇩🇪</span>
+        <span>台勞在德國</span>
+      </a>
+      <button class="navbar__hamburger" id="hamburger" aria-label="選單">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="navbar__nav" id="navMenu">
+        <li><a href="index.html" class="navbar__link">首頁</a></li>
+        <li><a href="category.html?cat=來德生活必辦事項" class="navbar__link" data-cat="來德生活必辦事項">來德必辦</a></li>
+        <li><a href="category.html?cat=德國生活" class="navbar__link" data-cat="德國生活">德國生活</a></li>
+        <li><a href="category.html?cat=旅行" class="navbar__link" data-cat="旅行">旅行</a></li>
+        <li><a href="category.html?cat=德文" class="navbar__link" data-cat="德文">德文</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- ========== CATEGORY HERO ========== -->
+<section class="cat-hero" id="catHero">
+  <div class="container">
+    <div class="breadcrumb">
+      <a href="index.html">首頁</a>
+      <span class="breadcrumb__sep">›</span>
+      <span id="breadcrumbCurrent">文章列表</span>
+    </div>
+    <div class="cat-hero__emoji" id="catEmoji">📝</div>
+    <h1 class="cat-hero__title" id="catTitle">所有文章</h1>
+    <p class="cat-hero__desc" id="catDesc">瀏覽所有分類的文章</p>
+    <p class="cat-hero__meta" id="catMeta"></p>
+  </div>
+</section>
+
+<!-- ========== FILTER BAR ========== -->
+<section style="background: var(--bg-card); border-bottom: 1px solid var(--border); position: sticky; top: 60px; z-index: 50;">
+  <div class="container">
+    <div class="filter-bar" id="filterBar">
+      <!-- JS rendered -->
+    </div>
+  </div>
+</section>
+
+<!-- ========== POSTS GRID ========== -->
+<section class="section">
+  <div class="container">
+    <div class="posts-grid posts-grid--wide stagger" id="postsGrid">
+      <!-- JS rendered -->
+    </div>
+    <div id="emptyState" style="display:none;">
+      <div class="empty-state">
+        <div class="empty-state__emoji">🔍</div>
+        <div class="empty-state__title">找不到文章</div>
+        <p>此分類目前沒有文章。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== FOOTER ========== -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__inner">
+      <div class="footer__brand">
+        <div class="footer__brand-name">🇩🇪 台勞在德國打工記</div>
+        <p class="footer__brand-desc">台灣人在德國的生活記錄，分享實用資訊、旅行攻略與德語學習。</p>
+      </div>
+      <div>
+        <div class="footer__col-title">分類</div>
+        <ul class="footer__links">
+          <li><a href="category.html?cat=來德生活必辦事項" class="footer__link">來德生活必辦事項</a></li>
+          <li><a href="category.html?cat=德國生活" class="footer__link">德國生活</a></li>
+          <li><a href="category.html?cat=旅行" class="footer__link">旅行</a></li>
+          <li><a href="category.html?cat=德文" class="footer__link">德文</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer__col-title">最新文章</div>
+        <ul class="footer__links" id="footerLinks"></ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>© 2026 台勞在德國打工記 · Taiwanese in Germany</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/data.js"></script>
+<script src="js/category.js"></script>
+</body>
+</html>
