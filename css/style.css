@@ -135,15 +135,15 @@ ul, ol { list-style: none; }
 .navbar__nav {
   display: flex;
   align-items: center;
-  gap: 4px;
+  gap: 0;
   flex: 1;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 
 .navbar__link {
-  font-size: var(--text-sm);
+  font-size: var(--text-base);
   color: var(--secondary);
-  padding: 8px 20px;
+  padding: 10px 28px;
   border-radius: 8px;
   transition: color var(--duration), background var(--duration);
 }
