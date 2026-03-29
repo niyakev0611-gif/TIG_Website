@@ -749,7 +749,7 @@ const POSTS = [
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p class="">例如：6月的票只有在6/1-6/30這段期間有效，7月的票只有在7/1-7/31這段期間有效。</p>
+<p class="">例如：3月的票只有在3/1-3/31這段期間有效，4月的票只有在4/1-4/30這段期間有效，以此類推。</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
@@ -1038,6 +1038,43 @@ const POSTS = [
 
 <!-- wp:image {"id":975,"sizeSlug":"large","linkDestination":"none"} -->
 <figure class="wp-block-image size-large"><img src="assets/images/2024/02/img_4549-1-625x1024.jpg" alt="" class="wp-image-975"/><figcaption class="wp-element-caption">回到自己的票的頁面可以看到紅色的字gekündigt代表已經解約了！想要的話可以點Reaktivieren重新啟用(續約)的意思</figcaption></figure>
+
+<!-- wp:separator -->
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+<!-- /wp:separator -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">📅 文章更新紀錄</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class=""><strong>最後更新：2026年3月29日</strong><br>原文發布：2023年6月24日</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p class="">本文依據以下官方來源整理，如有最新異動請以官方公告為準：</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul class="wp-block-list">
+<!-- wp:list-item -->
+<li class=""><a href="https://www.bahn.de/faq/deutschlandticket-neuer-preis" target="_blank" rel="noreferrer noopener">Deutsche Bahn — Deutschland Ticket 現行價格說明</a></li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li class=""><a href="https://www.adac.de/news/deutschlandticket/" target="_blank" rel="noreferrer noopener">ADAC — Deutschlandticket 2026 漲至63歐元</a></li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li class=""><a href="https://wissen.deutschlandticket.de/wie-viel-kostet-das-deutschland-ticket-ab-dem-1.-januar-2026-0" target="_blank" rel="noreferrer noopener">deutschlandticket.de — 2026年價格調整官方說明</a></li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li class=""><a href="https://www.bahn.de/faq/deutschlandticket-kuendigen" target="_blank" rel="noreferrer noopener">Deutsche Bahn — 如何取消 Deutschland Ticket 訂閱</a></li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li class=""><a href="https://bahnpedia.de/deutschlandticket-2026-preis-kuendigung-neue-regeln-im-ueberblick/" target="_blank" rel="noreferrer noopener">Bahnpedia — Deutschlandticket 2026：價格、取消與新規則總覽</a></li>
+<!-- /wp:list-item -->
+</ul>
+<!-- /wp:list -->
+
 <!-- /wp:image -->`
   },
   {
