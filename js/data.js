@@ -309,9 +309,9 @@ const POSTS = [
 <!-- /wp:image -->`
   },
   {
-    slug: 'referral-codes-2024',
-    title: '2024 歐洲德國 分享碼 回饋金 推薦碼 優惠碼 大匯集 Referral Link Promo Code',
-    date: '2023-06-26',
+    slug: 'referral-codes-2026',
+    title: '2026 歐洲德國 分享碼 回饋金 推薦碼 優惠碼 大匯集 Referral Link Promo Code',
+    date: '2026-03-29',
     categories: ["來德生活必辦事項", "德國生活"],
     tags: ["promo code", "referral link", "免費", "分享碼", "回饋金", "德國", "德國交通", "折扣碼", "推薦", "推薦碼", "旅遊", "自助", "銀行"],
     excerpt: '在這邊分享一下，我在德國經常使用的一些軟體跟服務，很多都可以有朋友介紹的回饋金，讓你在第一次使用註冊時也可以有些優惠哦！ 交通類 兩輪類(電動滑板車/電動腳踏車) Tier (e-scooter) 新註冊的可以有5次5折的優惠 LIME (…',
@@ -353,15 +353,19 @@ const POSTS = [
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p class=""><a href="https://ts.la/kevin522006">https://ts.la/kevin522006</a> 使用此連結下訂特斯拉可以折扣500歐！！！</p>
+<p class=""><a href="https://ts.la/kevin522006">https://ts.la/kevin522006</a> 使用此連結下訂特斯拉可以折扣250歐！！！</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p class="">hat Ihnen <strong>500 € Rabatt</strong> auf einen neuen Tesla verschafft</p>
+<p class="">Get <strong>1,000 Supercharging 公里</strong> or <strong>€250</strong> Per Referral</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p class=""><em>(Stand 26.11.2024)</em></p>
+<p class="">hat Ihnen <strong>250 € Rabatt</strong> auf einen neuen Tesla verschafft</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p class=""><em>(Stand 29.03.2026)</em></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:heading {"level":3} -->
