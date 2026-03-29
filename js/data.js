@@ -463,39 +463,7 @@ const POSTS = [
 <!-- /wp:button --></div>
 <!-- /wp:buttons -->
 
-<!-- wp:heading {"level":4} -->
-<h4 class="wp-block-heading">C24</h4>
-<!-- /wp:heading -->
-
-<!-- wp:image {"id":1003,"width":"578px","height":"auto","sizeSlug":"large","linkDestination":"none"} -->
-<figure class="wp-block-image size-large is-resized"><img src="assets/images/2024/04/image-1024x1024.png" alt="" class="wp-image-1003" style="width:578px;height:auto"/></figure>
-<!-- /wp:image -->
-
-<!-- wp:paragraph -->
-<p class="">詳情優缺點比較請見<a href="/post?slug=german-bank-recommendation">此篇</a><a href="/post?slug=german-bank-recommendation" target="_blank" rel="noreferrer noopener">介紹</a></p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p class="">你知道現在在德國定存利率有將近三四趴嗎？想要定存的優惠又不想現金都被綁死嗎？C24是我最近發現一個很好用的銀行，可以讓你有近乎定存的<strong>利率2%*</strong>日存帳戶Tagesgeld（每月結算會到你帳上），然後這些金額又不是像傳統定存一樣是被綁死的，可以隨是匯出來到主帳戶。主帳戶Girokonto有<strong>1,25%*的利率</strong>，還給你一張Debit Mastercard是讓你可以刷卡消費的，他是Check24比價網站出來開的銀行，簡直是一舉三得！ 使用我的代碼<strong><strong>C24KL59F536F2</strong></strong>，或是點以下連結<a href="https://s.c24.de/SxUVpBP1Vp/">https://s.c24.de/</a><a href="https://s.c24.de/SxUVpBP1Vp/" target="_blank" rel="noreferrer noopener">SxUVpBP1Vp</a><a href="https://s.c24.de/SxUVpBP1Vp/">/</a>！<em>(*利率上次更新： 29.03.2026)</em></p>
-<!-- /wp:paragraph -->
-
-<!-- wp:image {"id":1008,"sizeSlug":"large","linkDestination":"none"} -->
-<figure class="wp-block-image size-large"><img src="assets/images/2024/04/Screen-Shot-2024-04-21-at-10.58.49-PM-1024x744.png" alt="" class="wp-image-1008"/></figure>
-<!-- /wp:image -->
-
-<!-- wp:paragraph -->
-<p class="">Sicher Dir Deutschlands bestes Girokonto bei der C24 Bank - mit<strong> 1,25 % Zinsen</strong>* auf Dein Girokonto und <strong>2 % Zinsen auf Dein Tagesgeld*.</strong> Nutze einfach meinen Einladungscode C24KL59F536F2 oder melde Dich direkt über den Link an: <a href="https://s.c24.de/SxUVpBP1Vp/">https://s.c24.de/</a><a href="https://s.c24.de/SxUVpBP1Vp/" target="_blank" rel="noreferrer noopener">SxUVpBP1Vp</a><a href="https://s.c24.de/SxUVpBP1Vp/">/</a> <em>(Stand 29.03.2026)</em></p>
-<!-- /wp:paragraph -->
-
-<!-- wp:buttons -->
-<div class="wp-block-buttons"><!-- wp:button -->
-<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="https://revolut.com/referral/kevinaxzg" target="_blank" rel="noreferrer noopener">C24點我開戶</a></div>
-<!-- /wp:button --></div>
-<!-- /wp:buttons -->
-
-<!-- wp:paragraph -->
-<p class=""></p>
-<!-- /wp:paragraph --></div>
+</div>
 <!-- /wp:group -->
 
 <!-- wp:group {"layout":{"type":"constrained"}} -->
@@ -1273,7 +1241,31 @@ const POSTS = [
     tags: ["免費", "德國", "折扣碼", "推薦", "銀行"],
     excerpt: '在德國生活的這些年來，用過不少間銀行，Deutsche Bank德意志銀行、Sparkasse、Comdirekt、Revolut、N26還有Commerzbank德國商業銀行。這篇會來介紹四間我推薦的銀行，以及分析其優缺點。至於為什麼不介…',
     emoji: '🏦',
-    content: `<!-- wp:paragraph -->
+    content: `<!-- wp:group {"backgroundColor":"base-2","style":{"spacing":{"padding":{"top":"var:preset|spacing|30","bottom":"var:preset|spacing|30","left":"var:preset|spacing|30","right":"var:preset|spacing|30"}},"border":{"radius":"8px"}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group has-base-2-background-color has-background" style="border-radius:8px;padding-top:var(--wp--preset--spacing--30);padding-right:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--30);padding-left:var(--wp--preset--spacing--30)"><!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">📋 目錄</h3>
+<!-- /wp:heading -->
+
+<!-- wp:list -->
+<ul class="wp-block-list"><!-- wp:list-item -->
+<li class=""><a href="#c24">🏦 C24 — 最推薦的免費網路銀行</a></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li class=""><a href="#revolut">💳 Revolut — 旅遊換匯首選</a></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li class=""><a href="#n26">📱 N26 — 德國本土網路銀行</a></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li class=""><a href="#commerzbank">🏛️ Commerzbank — 實體銀行（已收取管理費）</a></li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list --></div>
+<!-- /wp:group -->
+
+<!-- wp:paragraph -->
 <p class=""></p>
 <!-- /wp:paragraph -->
 
@@ -1286,7 +1278,7 @@ const POSTS = [
 <!-- /wp:paragraph -->
 
 <!-- wp:heading {"level":1,"backgroundColor":"cyan-bluish-gray"} -->
-<h1 class="wp-block-heading has-cyan-bluish-gray-background-color has-background">C24</h1>
+<h1 id="c24" class="wp-block-heading has-cyan-bluish-gray-background-color has-background">C24</h1>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
@@ -1392,7 +1384,7 @@ const POSTS = [
 <!-- /wp:paragraph -->
 
 <!-- wp:heading {"level":1,"backgroundColor":"cyan-bluish-gray"} -->
-<h1 class="wp-block-heading has-cyan-bluish-gray-background-color has-background">Revolut</h1>
+<h1 id="revolut" class="wp-block-heading has-cyan-bluish-gray-background-color has-background">Revolut</h1>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
@@ -1506,7 +1498,7 @@ const POSTS = [
 <!-- /wp:paragraph -->
 
 <!-- wp:heading {"level":1,"backgroundColor":"cyan-bluish-gray"} -->
-<h1 class="wp-block-heading has-cyan-bluish-gray-background-color has-background">N26</h1>
+<h1 id="n26" class="wp-block-heading has-cyan-bluish-gray-background-color has-background">N26</h1>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
@@ -1600,7 +1592,7 @@ const POSTS = [
 <!-- /wp:paragraph -->
 
 <!-- wp:heading {"level":1,"backgroundColor":"cyan-bluish-gray"} -->
-<h1 class="wp-block-heading has-cyan-bluish-gray-background-color has-background"><s>Commerzbank 德國商業銀行</s> （不再免費，自 2025 年 5 月起正式收取帳戶管理費 €4.90/月）</h1>
+<h1 id="commerzbank" class="wp-block-heading has-cyan-bluish-gray-background-color has-background"><s>Commerzbank 德國商業銀行</s> （不再免費，自 2025 年 5 月起正式收取帳戶管理費 €4.90/月）</h1>
 <!-- /wp:heading -->
 
 <!-- wp:image {"id":529,"width":"450px","height":"225px","sizeSlug":"full","linkDestination":"none"} -->
