@@ -1009,6 +1009,44 @@ body { padding-left: 64px; }
 .stagger > *:nth-child(5) { transition-delay: 240ms; }
 .stagger > *:nth-child(6) { transition-delay: 300ms; }
 
+/* ---------- WordPress Button Block ---------- */
+.wp-block-buttons {
+  margin: 1.5em 0;
+}
+.wp-block-button {
+  display: inline-block;
+}
+.wp-element-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--accent);
+  color: #fff !important;
+  font-family: var(--font);
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1;
+  padding: 14px 28px;
+  border-radius: 50px;
+  text-decoration: none !important;
+  box-shadow: 0 4px 14px rgba(0, 102, 204, 0.30);
+  transition: background 0.2s var(--ease),
+              box-shadow 0.2s var(--ease),
+              transform 0.2s var(--spring);
+  cursor: pointer;
+}
+.wp-element-button:hover {
+  background: var(--accent-hover);
+  box-shadow: 0 6px 20px rgba(0, 102, 204, 0.40);
+  transform: translateY(-2px);
+  color: #fff !important;
+  text-decoration: none !important;
+}
+.wp-element-button:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 8px rgba(0, 102, 204, 0.25);
+}
+
 /* ---------- RESPONSIVE ---------- */
 @media (max-width: 640px) {
   .section { padding: 60px 0; }
