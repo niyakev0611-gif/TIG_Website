@@ -1248,10 +1248,6 @@ const POSTS = [
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li class=""><a href="#c24">🏦 C24 — 最推薦的免費網路銀行</a></li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
 <li class=""><a href="#revolut">💳 Revolut — 旅遊換匯首選</a></li>
 <!-- /wp:list-item -->
 
@@ -1270,114 +1266,8 @@ const POSTS = [
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p class="">在德國生活的這些年來，用過不少間銀行，Deutsche Bank德意志銀行、Sparkasse、Comdirekt、Revolut、N26還有Commerzbank德國商業銀行。這篇會來介紹四<strong>間</strong>我推薦的銀行，以及分析其優缺點。至於為什麼不介紹德意志銀行或是Sparkasse則是因為這兩間是我當初在慕尼黑交換學生的時候使用的，一方面覺得德意志銀行開始收帳戶管理費後與他的服務相比其實不值，另一方面其他的銀行現在也沒在使用，所以這邊只介紹我使用體驗上推薦的！<strong>（我只推薦好東西！）</strong></p>
+<p class="">在德國生活的這些年來，用過不少間銀行，Deutsche Bank德意志銀行、Sparkasse、Comdirekt、Revolut、N26還有Commerzbank德國商業銀行。這篇會來介紹三<strong>間</strong>我推薦的銀行，以及分析其優缺點。至於為什麼不介紹德意志銀行或是Sparkasse則是因為這兩間是我當初在慕尼黑交換學生的時候使用的，一方面覺得德意志銀行開始收帳戶管理費後與他的服務相比其實不值，另一方面其他的銀行現在也沒在使用，所以這邊只介紹我使用體驗上推薦的！<strong>（我只推薦好東西！）</strong></p>
 <!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p class=""></p>
-<!-- /wp:paragraph -->
-
-<!-- wp:heading {"level":1,"backgroundColor":"cyan-bluish-gray"} -->
-<h1 id="c24" class="wp-block-heading has-cyan-bluish-gray-background-color has-background">C24</h1>
-<!-- /wp:heading -->
-
-<!-- wp:paragraph -->
-<p class="">C24 是一間德國Check24比價網站出來開的銀行，提供免費Girokonto/日息帳戶、虛擬的Debit卡、免費即時轉帳服務(Echtzeit Überweisung)、消費累積點數等服務。現在已經變成我在德國主力使用的銀行了</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:image {"id":1003,"width":"622px","height":"auto","sizeSlug":"large","linkDestination":"none","align":"center"} -->
-<figure class="wp-block-image aligncenter size-large is-resized"><img src="assets/images/2024/04/image-1024x1024.png" alt="" class="wp-image-1003" style="width:622px;height:auto"/></figure>
-<!-- /wp:image -->
-
-<!-- wp:heading {"level":3} -->
-<h3 class="wp-block-heading">優點：</h3>
-<!-- /wp:heading -->
-
-<!-- wp:list {"ordered":true} -->
-<ol class="wp-block-list"><!-- wp:list-item -->
-<li class=""><strong>免費！不用帳戶管理費</strong>！在德國眾多銀行都開始收取帳戶管理費的今天可是一大福音（尤其交換學生）</li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
-<li class=""><strong>有日息帳戶</strong>(Tagesgeld)、一般帳戶Girokonto也有利息：日息帳戶以目前給到的利率有到1.5%*，不用特別開戶，也不用像定存一樣被綁死，可以隨時匯款出來，我現在主要都存在這裡保持資金的靈活性。一般帳戶Girokonto利息給到1.25%*</li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
-<li class=""><strong>快速開戶</strong>：用戶可以在數分鐘內完成開戶流程，無需實體跑銀行(也沒有實體分行讓你跑🤣</li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
-<li class=""><strong>免費即時轉帳服務(Echtzeit Überweisung)</strong>：資金可在幾秒內匯出並即時到帳，基本上全歐洲參與銀行皆可使用，這個功能真的是太佛心！！！(Commerzbank的這個功能每筆要收1.5歐，N26）</li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
-<li class=""><strong>刷外幣無交易手續費</strong>：C24不會收取任何外幣交易手續費，但不提供外幣帳戶。</li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
-<li class=""><strong>虛擬Debit卡</strong>：C24 有提供一次性虛擬Debit卡，可以提高用戶在網上交易的安全性。<em>超級愛這個功能！很多一次性的網站我都用這個，就不怕個資外洩。</em></li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
-<li class="">每個月<strong>4次超市領現金</strong>免費：每個月可以4次提款免費，透過手機App生成提款QR Code直接在合作超市提款現金。（合作超市大的有DM、Rewe、Rossman、Penny），每次提領金額上限為300歐</li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
-<li class=""><strong>可App遠端鎖卡</strong>：用戶可以隨時在應用程式中暫停或恢復卡片，以及限制或啟用 ATM 取款和網上交易等功能。<em>如果遺失或被盜刷了，可以動動手指就鎖卡，並且直接訂新的一張。</em></li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
-<li class=""><strong>累積點數</strong>：使用他的卡消費可以累積Cashback的點數，這些點數可以在Check24裡面使用，也有特定合作的廠商可以讓你更快速累積點數。</li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
-<li class=""><strong>支持 Apple Pay</strong>：讓付款變得更加方便</li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
-<li class=""><strong>App設計人性化</strong>：不得不說，身為一間網路銀行，這部分C24做得相當不錯，App設計很人性化也很好用，流暢度也相當好 ，我自己很喜歡用自動化匯款的功能，可以設定金額跟日期，日期一到他就自己匯款了(讓資金在你的銀行裡生利息到最後一刻再付款)<br></li>
-<!-- /wp:list-item --></ol>
-<!-- /wp:list -->
-
-<!-- wp:heading {"level":3} -->
-<h3 class="wp-block-heading">缺點：</h3>
-<!-- /wp:heading -->
-
-<!-- wp:list {"ordered":true} -->
-<ol class="wp-block-list"><!-- wp:list-item -->
-<li class="">沒有實體分行！不過是網路銀行，所以大家在辦開戶的時候就已經接受這個事實了🤣每個月<strong>4次超市領現金</strong>免費，若超過4次提款，則要收取2.5歐費用，每次提領金額上限為300歐</li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
-<li class="">無法取得貸款：C24 目前並不提供任何貸款或信用卡服務。都是Debit Card現金卡</li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
-<li class="">Check24理論上會有你所有C24銀行資料，你的扣款紀錄都他們理論上都可以掌握，因此也有可能推個人化的廣告給你</li>
-<!-- /wp:list-item --></ol>
-<!-- /wp:list -->
-
-<!-- wp:image {"id":1008,"sizeSlug":"large","linkDestination":"none"} -->
-<figure class="wp-block-image size-large"><img src="assets/images/2024/04/Screen-Shot-2024-04-21-at-10.58.49-PM-1024x744.png" alt="" class="wp-image-1008"/></figure>
-<!-- /wp:image -->
-
-<!-- wp:heading {"level":3} -->
-<h3 class="wp-block-heading">總結：</h3>
-<!-- /wp:heading -->
-
-<!-- wp:paragraph -->
-<p class="">基本上我儲蓄存款都是放在這間！想要定存的優惠又不想現金都被綁死嗎？C24能幫你達成，可以讓你有近乎定存的利率<strong>2%*日存帳戶Tagesgeld</strong>（每月結算會到你帳上），然後這些金額又不是像傳統定存一樣是被綁死的，可以隨是匯出來到主帳戶。主帳戶Girokonto有<strong>1,25%*的利率</strong>，還給你一張Debit Mastercard是讓你可以刷卡消費的，每個月有四次可以去領現金！</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p class=""><em>(*利率上次更新： 30.03.2025)</em></p>
-<!-- /wp:paragraph -->
-
-<!-- wp:buttons -->
-<div class="wp-block-buttons"><!-- wp:button -->
-<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="https://s.c24.de/SaC4JgmbdY/" target="_blank" rel="noreferrer noopener">點我開戶</a></div>
-<!-- /wp:button --></div>
-<!-- /wp:buttons -->
 
 <!-- wp:paragraph -->
 <p class=""></p>
