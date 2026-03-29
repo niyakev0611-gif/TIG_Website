@@ -1235,8 +1235,8 @@ const POSTS = [
   },
   {
     slug: 'german-bank-recommendation',
-    title: '2025 推薦的免付費德國銀行',
-    date: '2023-04-11',
+    title: '2026 推薦的免付費德國銀行',
+    date: '2026-03-29',
     categories: ["來德生活必辦事項", "德國生活"],
     tags: ["免費", "德國", "折扣碼", "推薦", "銀行"],
     excerpt: '在德國生活的這些年來，用過不少間銀行，Deutsche Bank德意志銀行、Sparkasse、Comdirekt、Revolut、N26還有Commerzbank德國商業銀行。這篇會來介紹四間我推薦的銀行（含最新加入的 BBVA 高 Cashback 首選），以及分析其優缺點。至於為什麼不介…',
@@ -1265,12 +1265,16 @@ const POSTS = [
 <!-- /wp:list --></div>
 <!-- /wp:group -->
 
+<!-- wp:paragraph {"fontSize":"small"} -->
+<p class="has-small-font-size" style="color:#888;">最後更新：2026 年 3 月 29 日</p>
+<!-- /wp:paragraph -->
+
 <!-- wp:paragraph -->
 <p class=""></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p class="">在德國生活的這些年來，用過不少間銀行，Deutsche Bank德意志銀行、Sparkasse、Comdirekt、Revolut、N26還有Commerzbank德國商業銀行。這篇會來介紹四<strong>間</strong>我推薦的銀行，以及分析其優缺點。至於為什麼不介紹德意志銀行或是Sparkasse則是因為這兩間是我當初在慕尼黑交換學生的時候使用的，一方面覺得德意志銀行開始收帳戶管理費後與他的服務相比其實不值，另一方面其他的銀行現在也沒在使用，所以這邊只介紹我使用體驗上推薦的！<strong>（我只推薦好東西！）</strong></p>
+<p class="">在德國生活的這些年來，用過不少間銀行，Deutsche Bank德意志銀行、Sparkasse、Comdirekt、Revolut、N26還有Commerzbank德國商業銀行。這篇會來介紹<strong>四間</strong>我推薦的銀行，以及分析其優缺點。至於為什麼不介紹德意志銀行或是Sparkasse則是因為這兩間是我當初在慕尼黑交換學生的時候使用的，一方面覺得德意志銀行開始收帳戶管理費後與他的服務相比其實不值，另一方面其他的銀行現在也沒在使用，所以這邊只介紹我使用體驗上推薦的！<strong>（我只推薦好東西！）</strong></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
