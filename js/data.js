@@ -102,7 +102,7 @@ const POSTS = [
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li class="">自行使用ELSTER等線上報稅軟體（大部分請參照<a href="https://taiwanese-in-germany.com/2024-%e5%be%b7%e5%9c%8b%e5%a0%b1%e7%a8%85%e8%bb%9f%e9%ab%94%e6%8e%a8%e8%96%a6/">這篇德國報稅軟體推薦</a>）</li>
+<li class="">自行使用ELSTER等線上報稅軟體（大部分請參照<a href="/post?slug=tax-software-2024">這篇德國報稅軟體推薦</a>）</li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
@@ -132,7 +132,7 @@ const POSTS = [
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li class="">資本利得免稅額（Sparerpauschbetrag）：維持 <strong>1,000歐元</strong>（如銀行產生的利息：<a href="https://taiwanese-in-germany.com/2024-%e6%8e%a8%e8%96%a6%e7%9a%84%e5%85%8d%e4%bb%98%e8%b2%bb%e5%be%b7%e5%9c%8b%e9%8a%80%e8%a1%8c/">延伸閱讀德國高利息活存銀行推薦</a>）</li>
+<li class="">資本利得免稅額（Sparerpauschbetrag）：維持 <strong>1,000歐元</strong>（如銀行產生的利息：<a href="/post?slug=german-bank-recommendation">延伸閱讀德國高利息活存銀行推薦</a>）</li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
@@ -414,7 +414,7 @@ const POSTS = [
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p class="">詳情優缺點比較請見<a href="https://taiwanese-in-germany.com/2023-%e6%8e%a8%e8%96%a6%e7%9a%84%e5%85%8d%e4%bb%98%e8%b2%bb%e5%be%b7%e5%9c%8b%e9%8a%80%e8%a1%8c/">此篇</a><a href="https://taiwanese-in-germany.com/2023-%e6%8e%a8%e8%96%a6%e7%9a%84%e5%85%8d%e4%bb%98%e8%b2%bb%e5%be%b7%e5%9c%8b%e9%8a%80%e8%a1%8c/" target="_blank" rel="noreferrer noopener">介紹</a></p>
+<p class="">詳情優缺點比較請見<a href="/post?slug=german-bank-recommendation">此篇</a><a href="/post?slug=german-bank-recommendation" target="_blank" rel="noreferrer noopener">介紹</a></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:buttons -->
@@ -436,7 +436,7 @@ const POSTS = [
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p class="">詳情優缺點比較請見<a href="https://taiwanese-in-germany.com/2023-%e6%8e%a8%e8%96%a6%e7%9a%84%e5%85%8d%e4%bb%98%e8%b2%bb%e5%be%b7%e5%9c%8b%e9%8a%80%e8%a1%8c/" target="_blank" rel="noreferrer noopener">此篇介紹</a></p>
+<p class="">詳情優缺點比較請見<a href="/post?slug=german-bank-recommendation" target="_blank" rel="noreferrer noopener">此篇介紹</a></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:buttons -->
@@ -454,7 +454,7 @@ const POSTS = [
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p class="">詳情優缺點比較請見<a href="https://taiwanese-in-germany.com/2023-%e6%8e%a8%e8%96%a6%e7%9a%84%e5%85%8d%e4%bb%98%e8%b2%bb%e5%be%b7%e5%9c%8b%e9%8a%80%e8%a1%8c/">此篇</a><a href="https://taiwanese-in-germany.com/2023-%e6%8e%a8%e8%96%a6%e7%9a%84%e5%85%8d%e4%bb%98%e8%b2%bb%e5%be%b7%e5%9c%8b%e9%8a%80%e8%a1%8c/" target="_blank" rel="noreferrer noopener">介紹</a></p>
+<p class="">詳情優缺點比較請見<a href="/post?slug=german-bank-recommendation">此篇</a><a href="/post?slug=german-bank-recommendation" target="_blank" rel="noreferrer noopener">介紹</a></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:buttons -->
@@ -472,11 +472,11 @@ const POSTS = [
 <!-- /wp:image -->
 
 <!-- wp:paragraph -->
-<p class="">詳情優缺點比較請見<a href="https://taiwanese-in-germany.com/2023-%e6%8e%a8%e8%96%a6%e7%9a%84%e5%85%8d%e4%bb%98%e8%b2%bb%e5%be%b7%e5%9c%8b%e9%8a%80%e8%a1%8c/">此篇</a><a href="https://taiwanese-in-germany.com/2023-%e6%8e%a8%e8%96%a6%e7%9a%84%e5%85%8d%e4%bb%98%e8%b2%bb%e5%be%b7%e5%9c%8b%e9%8a%80%e8%a1%8c/" target="_blank" rel="noreferrer noopener">介紹</a></p>
+<p class="">詳情優缺點比較請見<a href="/post?slug=german-bank-recommendation">此篇</a><a href="/post?slug=german-bank-recommendation" target="_blank" rel="noreferrer noopener">介紹</a></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p class="">你知道現在在德國定存利率有將近三四趴嗎？想要定存的優惠又不想現金都被綁死嗎？C24是我最近發現一個很好用的銀行，可以讓你有近乎定存的<strong>利率2%*</strong>日存帳戶Tagesgeld（每月結算會到你帳上），然後這些金額又不是像傳統定存一樣是被綁死的，可以隨是匯出來到主帳戶。主帳戶Girokonto有<strong>1,75%*的利率</strong>，還給你一張Debit Mastercard是讓你可以刷卡消費的，他是Check24比價網站出來開的銀行，簡直是一舉三得！ 使用我的代碼<strong><strong>C24KL59F536F2</strong></strong>，或是點以下連結<a href="https://s.c24.de/SxUVpBP1Vp/">https://s.c24.de/</a><a href="https://s.c24.de/SxUVpBP1Vp/" target="_blank" rel="noreferrer noopener">SxUVpBP1Vp</a><a href="https://s.c24.de/SxUVpBP1Vp/">/</a>！<em>(*利率上次更新： 04.12.2024)</em></p>
+<p class="">你知道現在在德國定存利率有將近三四趴嗎？想要定存的優惠又不想現金都被綁死嗎？C24是我最近發現一個很好用的銀行，可以讓你有近乎定存的<strong>利率2%*</strong>日存帳戶Tagesgeld（每月結算會到你帳上），然後這些金額又不是像傳統定存一樣是被綁死的，可以隨是匯出來到主帳戶。主帳戶Girokonto有<strong>1,25%*的利率</strong>，還給你一張Debit Mastercard是讓你可以刷卡消費的，他是Check24比價網站出來開的銀行，簡直是一舉三得！ 使用我的代碼<strong><strong>C24KL59F536F2</strong></strong>，或是點以下連結<a href="https://s.c24.de/SxUVpBP1Vp/">https://s.c24.de/</a><a href="https://s.c24.de/SxUVpBP1Vp/" target="_blank" rel="noreferrer noopener">SxUVpBP1Vp</a><a href="https://s.c24.de/SxUVpBP1Vp/">/</a>！<em>(*利率上次更新： 29.03.2026)</em></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:image {"id":1008,"sizeSlug":"large","linkDestination":"none"} -->
@@ -484,7 +484,7 @@ const POSTS = [
 <!-- /wp:image -->
 
 <!-- wp:paragraph -->
-<p class="">Sicher Dir Deutschlands bestes Girokonto bei der C24 Bank - mit<strong> 1,75 % Zinsen</strong>* auf Dein Girokonto und <strong>2 % Zinsen auf Dein Tagesgeld*.</strong> Nutze einfach meinen Einladungscode C24KL59F536F2 oder melde Dich direkt über den Link an: <a href="https://s.c24.de/SxUVpBP1Vp/">https://s.c24.de/</a><a href="https://s.c24.de/SxUVpBP1Vp/" target="_blank" rel="noreferrer noopener">SxUVpBP1Vp</a><a href="https://s.c24.de/SxUVpBP1Vp/">/</a> <em>(Stand 04.12.2024)</em></p>
+<p class="">Sicher Dir Deutschlands bestes Girokonto bei der C24 Bank - mit<strong> 1,25 % Zinsen</strong>* auf Dein Girokonto und <strong>2 % Zinsen auf Dein Tagesgeld*.</strong> Nutze einfach meinen Einladungscode C24KL59F536F2 oder melde Dich direkt über den Link an: <a href="https://s.c24.de/SxUVpBP1Vp/">https://s.c24.de/</a><a href="https://s.c24.de/SxUVpBP1Vp/" target="_blank" rel="noreferrer noopener">SxUVpBP1Vp</a><a href="https://s.c24.de/SxUVpBP1Vp/">/</a> <em>(Stand 29.03.2026)</em></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:buttons -->
@@ -512,7 +512,7 @@ const POSTS = [
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p class=""><strong>Hey! Wenn du dich über meinen Link bei PayPal anmeldest und innerhalb von 30&nbsp;Tagen 5&nbsp;€ ausgibst, bekommen wir beide die Chance auf eine 10-Euro-Prämie. Hier der Link: <a href="https://py.pl/2GmF6J" target="_blank" rel="noreferrer noopener">https://py.pl/2GmF6J</a> 這邊有活動，若是用我的連結註冊新會員的話，你我都可以獲得10歐哦！但條件是開戶30天內要支付5歐  活動截止日期：2023/10/31</strong></p>
+<p class="">使用以下連結開戶，可享受 PayPal 不定期新用戶優惠（如有活動將顯示於開戶頁面）。</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:buttons -->
@@ -560,7 +560,7 @@ const POSTS = [
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p class="">詳情比較請見<a href="https://taiwanese-in-germany.com/2023-%e5%be%b7%e5%9c%8b%e5%a0%b1%e7%a8%85%e8%bb%9f%e9%ab%94%e6%8e%a8%e8%96%a6/" target="_blank" rel="noreferrer noopener">此篇文章</a></p>
+<p class="">詳情比較請見<a href="/post?slug=tax-software-2024" target="_blank" rel="noreferrer noopener">此篇文章</a></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:heading {"level":4} -->
@@ -568,7 +568,7 @@ const POSTS = [
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p class="">詳情比較請見<a href="https://taiwanese-in-germany.com/2023-%e5%be%b7%e5%9c%8b%e5%a0%b1%e7%a8%85%e8%bb%9f%e9%ab%94%e6%8e%a8%e8%96%a6/">此篇</a><a href="https://taiwanese-in-germany.com/2023-%e5%be%b7%e5%9c%8b%e5%a0%b1%e7%a8%85%e8%bb%9f%e9%ab%94%e6%8e%a8%e8%96%a6/" target="_blank" rel="noreferrer noopener">文章</a></p>
+<p class="">詳情比較請見<a href="/post?slug=tax-software-2024">此篇</a><a href="/post?slug=tax-software-2024" target="_blank" rel="noreferrer noopener">文章</a></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:heading {"level":3} -->
@@ -733,11 +733,11 @@ const POSTS = [
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p class="">你可以使用智慧型手機上的應用程式，例如<a href="https://www.bahn.de/service/mobile/db-navigator" target="_blank" rel="noreferrer noopener">DB Navigator App</a>、你所在地區交通聯盟的應用程式（斯圖加特為例：<a href="https://www.ssb-ag.de/tickets/ticketkauf-und-beratung/ssb-move-app-mit-bestpreis/">SSB Move App</a> 請看下方例子）或是第三方的軟體App（Freenow, DeutschlandCard），購買 Deutschland Ticket。你也可以在網站<a href="http://Bahn.de">bahn.de</a>上使用電腦、平板或手機進行線上購買 Deutschland Ticket。以下用<a href="https://www.bahn.de/service/mobile/db-navigator" target="_blank" rel="noreferrer noopener">DB Navigator App</a>為範例。<strong>個人是認為第三方的程式退訂閱的方式比DB來得更方便一點，可以算是一鍵解除，而且付款方式也不會指定超難用的Lastschrift</strong>，<strong>所以其實比較推薦用<a href="https://m.free-now.com/JGMc/7m2aym3b" target="_blank" rel="noreferrer noopener">Freenow</a></strong>或<strong><a href="https://www.ssb-ag.de/tickets/ticketkauf-und-beratung/ssb-move-app-mit-bestpreis/">SSB Move App</a>來買票，不住在德國的遊客也無法使用Lastschrift！</strong><br><a href="https://taiwanese-in-germany.com/2023-德國-49歐交通月票-deutschland-ticket-訂閱-取消訂閱-解約教學/#用SSB_Move_App來訂票">點這裡直接看如何用SSB訂票跟解約</a> </p>
+<p class="">你可以使用智慧型手機上的應用程式，例如<a href="https://www.bahn.de/service/mobile/db-navigator" target="_blank" rel="noreferrer noopener">DB Navigator App</a>、你所在地區交通聯盟的應用程式（斯圖加特為例：<a href="https://www.ssb-ag.de/tickets/ticketkauf-und-beratung/ssb-move-app-mit-bestpreis/">SSB Move App</a> 請看下方例子）或是第三方的軟體App（Freenow, DeutschlandCard），購買 Deutschland Ticket。你也可以在網站<a href="http://Bahn.de">bahn.de</a>上使用電腦、平板或手機進行線上購買 Deutschland Ticket。以下用<a href="https://www.bahn.de/service/mobile/db-navigator" target="_blank" rel="noreferrer noopener">DB Navigator App</a>為範例。<strong>個人是認為第三方的程式退訂閱的方式比DB來得更方便一點，可以算是一鍵解除，而且付款方式也不會指定超難用的Lastschrift</strong>，<strong>所以其實比較推薦用<a href="https://m.free-now.com/JGMc/7m2aym3b" target="_blank" rel="noreferrer noopener">Freenow</a></strong>或<strong><a href="https://www.ssb-ag.de/tickets/ticketkauf-und-beratung/ssb-move-app-mit-bestpreis/">SSB Move App</a>來買票，不住在德國的遊客也無法使用Lastschrift！</strong><br><a href="/post?slug=deutschland-ticket#用SSB_Move_App來訂票">點這裡直接看如何用SSB訂票跟解約</a> </p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p class=""><a href="https://taiwanese-in-germany.com/2024-%e5%be%b7%e5%9c%8b-49%e6%ad%90%e4%ba%a4%e9%80%9a%e6%9c%88%e7%a5%a8-deutschland-ticket-%e8%a8%82%e9%96%b1-%e5%8f%96%e6%b6%88%e8%a8%82%e9%96%b1-%e8%a7%a3%e7%b4%84%e6%95%99%e5%ad%b8/#用Freenow來訂票">點這裡直接看如何用Freenow訂票跟解約</a> </p>
+<p class=""><a href="/post?slug=deutschland-ticket#用Freenow來訂票">點這裡直接看如何用Freenow訂票跟解約</a> </p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
@@ -753,7 +753,7 @@ const POSTS = [
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p class="">因為是是<strong>月訂閱模式 (Abo)</strong>的關係，App裡面只能使用銀行自動扣款（Lastschrift）方式支付，款項將於月初扣款，網路訂票的話可能只有居住在德國的會比較方便。（延伸閱讀：<a href="https://taiwanese-in-germany.com/2023-%e6%8e%a8%e8%96%a6%e7%9a%84%e5%85%8d%e4%bb%98%e8%b2%bb%e5%be%b7%e5%9c%8b%e9%8a%80%e8%a1%8c/">免費的德國銀行</a>）畢竟如果你是觀光客沒有德國的銀行帳戶，就沒辦法透過網路買票，只能親自前往DB旅遊中心或所在地區交通聯盟的櫃台購買地方交通票，但並非所有交通聯盟都提供此服務。</p>
+<p class="">因為是是<strong>月訂閱模式 (Abo)</strong>的關係，App裡面只能使用銀行自動扣款（Lastschrift）方式支付，款項將於月初扣款，網路訂票的話可能只有居住在德國的會比較方便。（延伸閱讀：<a href="/post?slug=german-bank-recommendation">免費的德國銀行</a>）畢竟如果你是觀光客沒有德國的銀行帳戶，就沒辦法透過網路買票，只能親自前往DB旅遊中心或所在地區交通聯盟的櫃台購買地方交通票，但並非所有交通聯盟都提供此服務。</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:image {"align":"center","id":755,"width":"250px","height":"512px","sizeSlug":"large","linkDestination":"none"} -->
@@ -856,7 +856,7 @@ const POSTS = [
 <!-- /wp:image -->
 
 <!-- wp:image {"align":"center","id":749,"width":"250px","height":"512px","sizeSlug":"large","linkDestination":"none"} -->
-<figure class="wp-block-image aligncenter size-large is-resized"><img src="assets/images/2023/06/img_7419-500x1024.jpg" alt="" class="wp-image-749" style="width:250px;height:512px"/><figcaption class="wp-element-caption">扣款銀行(<a href="https://taiwanese-in-germany.com/2023-%e6%8e%a8%e8%96%a6%e7%9a%84%e5%85%8d%e4%bb%98%e8%b2%bb%e5%be%b7%e5%9c%8b%e9%8a%80%e8%a1%8c/">還沒有N26嗎？</a>)</figcaption></figure>
+<figure class="wp-block-image aligncenter size-large is-resized"><img src="assets/images/2023/06/img_7419-500x1024.jpg" alt="" class="wp-image-749" style="width:250px;height:512px"/><figcaption class="wp-element-caption">扣款銀行(<a href="/post?slug=german-bank-recommendation">還沒有N26嗎？</a>)</figcaption></figure>
 <!-- /wp:image --></div>
 <!-- /wp:group -->
 
@@ -945,7 +945,7 @@ const POSTS = [
 <!-- /wp:image -->
 
 <!-- wp:paragraph -->
-<p class="">也可以Paypal，<a href="https://taiwanese-in-germany.com/2023-歐洲德國-分享碼-回饋金-推薦碼-優惠碼-大匯集-referral-link-prom/#Paypal" target="_blank" rel="noreferrer noopener">還沒有Paypal嗎？點這邊的連結註冊有開戶獎金哦</a></p>
+<p class="">也可以Paypal，<a href="/post?slug=referral-codes-2026#Paypal" target="_blank" rel="noreferrer noopener">還沒有Paypal嗎？點這邊的連結註冊有開戶獎金哦</a></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:image {"align":"center","id":903,"width":"334px","height":"724px","sizeSlug":"large","linkDestination":"none"} -->
@@ -1017,7 +1017,7 @@ const POSTS = [
 <!-- /wp:image -->
 
 <!-- wp:paragraph -->
-<p class="">支付方式可以選擇信用卡或是<a href="https://taiwanese-in-germany.com/2024-%e6%ad%90%e6%b4%b2%e5%be%b7%e5%9c%8b-%e5%88%86%e4%ba%ab%e7%a2%bc-%e5%9b%9e%e9%a5%8b%e9%87%91-%e6%8e%a8%e8%96%a6%e7%a2%bc-%e5%84%aa%e6%83%a0%e7%a2%bc-%e5%a4%a7%e5%8c%af%e9%9b%86-referral-link-prom/#Paypal">Paypal</a>！比德鐵的Lastschrift方便多了</p>
+<p class="">支付方式可以選擇信用卡或是<a href="/post?slug=referral-codes-2026#Paypal">Paypal</a>！比德鐵的Lastschrift方便多了</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:image {"id":980,"sizeSlug":"large","linkDestination":"none"} -->
@@ -1226,7 +1226,7 @@ const POSTS = [
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>若是前往瑞典旅遊，若有必要可以在當地的銀行、ATM機、旅遊中心等地方兌換當地的貨幣。<strong>但強烈不建議兌換！</strong>本次瑞典行完全沒見過任何人在使用紙鈔或硬幣，<strong>瑞典在這方面相當進步，幾乎所到之處無處不配有刷卡機，連路邊的小攤販都可以刷信用卡。</strong>整趟行程完全沒看過瑞典克朗長什麼樣子，不得不佩服瑞典人在這方面真的很進步，所有交易都是無鈔票化了。所以強烈建議你不要換匯，直接刷卡最方便，省得手續費以及沒花完現鈔的問題。我基本上整趟都用Revolut走遍天下，如果你也是長居在歐洲還沒申辦的話，<a href="https://taiwanese-in-germany.com/2023-%e6%8e%a8%e8%96%a6%e7%9a%84%e5%85%8d%e4%bb%98%e8%b2%bb%e5%be%b7%e5%9c%8b%e9%8a%80%e8%a1%8c/" target="_blank" rel="noreferrer noopener">可以參考我這篇</a>，Revolut基本上是我在旅遊行走天下時的最可靠的電子錢包。</p>
+<p>若是前往瑞典旅遊，若有必要可以在當地的銀行、ATM機、旅遊中心等地方兌換當地的貨幣。<strong>但強烈不建議兌換！</strong>本次瑞典行完全沒見過任何人在使用紙鈔或硬幣，<strong>瑞典在這方面相當進步，幾乎所到之處無處不配有刷卡機，連路邊的小攤販都可以刷信用卡。</strong>整趟行程完全沒看過瑞典克朗長什麼樣子，不得不佩服瑞典人在這方面真的很進步，所有交易都是無鈔票化了。所以強烈建議你不要換匯，直接刷卡最方便，省得手續費以及沒花完現鈔的問題。我基本上整趟都用Revolut走遍天下，如果你也是長居在歐洲還沒申辦的話，<a href="/post?slug=german-bank-recommendation" target="_blank" rel="noreferrer noopener">可以參考我這篇</a>，Revolut基本上是我在旅遊行走天下時的最可靠的電子錢包。</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
@@ -1600,7 +1600,7 @@ const POSTS = [
 <!-- /wp:paragraph -->
 
 <!-- wp:heading {"level":1,"backgroundColor":"cyan-bluish-gray"} -->
-<h1 class="wp-block-heading has-cyan-bluish-gray-background-color has-background"><s>Commerzbank 德國商業銀行</s> （不再免費，2025.4即將開始收取管理費）</h1>
+<h1 class="wp-block-heading has-cyan-bluish-gray-background-color has-background"><s>Commerzbank 德國商業銀行</s> （不再免費，自 2025 年 5 月起正式收取帳戶管理費 €4.90/月）</h1>
 <!-- /wp:heading -->
 
 <!-- wp:image {"id":529,"width":"450px","height":"225px","sizeSlug":"full","linkDestination":"none"} -->
@@ -1851,14 +1851,14 @@ const POSTS = [
   },
   {
     slug: 'tax-software-2024',
-    title: '2024 德國報稅軟體推薦',
-    date: '2023-03-28',
+    title: '2026 德國報稅軟體推薦',
+    date: '2026-03-29',
     categories: ["來德生活必辦事項"],
     tags: ["報稅", "德國", "折扣碼", "推薦", "軟體", "退稅"],
-    excerpt: '2022、2023 年度的德國稅務申報的提交期限 對於自行申報稅務的納稅人：（有請稅務師幫忙提交的期限較長） 2022 課稅年度的稅務申報必須在 2023 年 10 月 2 日前提交給稅務局。繳交期限延後了兩個月，原本是 2023 年 9 …',
+    excerpt: '2025 課稅年度申報截止日：2026 年 7 月 31 日。介紹 Taxfix、SteuerBot 等主流德國報稅軟體的優缺點、價格比較與推薦。',
     emoji: '💻',
     content: `<!-- wp:paragraph {"textColor":"vivid-red","fontSize":"medium"} -->
-<p class="has-vivid-red-color has-text-color has-medium-font-size">2022、2023 年度的德國稅務申報的提交期限</p>
+<p class="has-vivid-red-color has-text-color has-medium-font-size">各年度德國稅務申報截止日（2022–2025 課稅年度）</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:image {"id":925,"width":"359px","height":"undefinedpx","aspectRatio":"1","scale":"cover","sizeSlug":"large","linkDestination":"none"} -->
@@ -1880,6 +1880,10 @@ const POSTS = [
 
 <!-- wp:list-item -->
 <li class=""><strong>2024 課稅年度</strong>起，將恢復正常的繳交期限。因此，2024 年的稅務申報最遲必須在 <strong>2025 年 7 月 31 日</strong>前提交給稅務局。</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li class=""><strong>2025 課稅年度</strong>的稅務申報截止日為 <strong>2026 年 7 月 31 日</strong>。委託稅務師（Steuerberater）或薪資稅協助協會（Lohnsteuerhilfeverein）申報者，截止日延至 <strong>2027 年 3 月 1 日</strong>。</li>
 <!-- /wp:list-item --></ul>
 <!-- /wp:list -->
 
@@ -2117,13 +2121,17 @@ const POSTS = [
   },
   {
     slug: 'permanent-residence-2024',
-    title: '2024 德國永居 vs 歐盟永居 懶人包',
-    date: '2023-03-22',
+    title: '2026 德國永居 vs 歐盟永居 懶人包',
+    date: '2026-03-29',
     categories: ["來德生活必辦事項", "德國生活"],
     tags: ["德國", "申請永居"],
     excerpt: '如果你在德國持有居留證至少五年且沒有中斷，你就有申請永久居留權的資格。在特定條件下，即使未滿五年，也可以符合申請永久居留證的資格，最快21個月就可以申請永居，其實相對於美國的綠卡，德國或歐盟算是相對移民門檻較低的地方。至於要申請德國的永久居…',
     emoji: '🏠',
-    content: `<!-- wp:paragraph -->
+    content: `<!-- wp:paragraph {"textColor":"vivid-red","fontSize":"medium"} -->
+<p class="has-vivid-red-color has-text-color has-medium-font-size"><strong>⚠️ 2026年最新更新（2026年3月）：</strong>2024年推行的「快速入籍」（3年可申請德國公民）政策，已於 <strong>2025年10月30日</strong>由新上任的 CDU 領導政府撤回。標準入籍（Einbürgerung）再次回到 <strong>5年</strong>居留要求。注意：此變動影響的是<strong>入籍</strong>（Staatsbürgerschaft），<strong>不影響</strong>本文討論的永久居留權（Niederlassungserlaubnis）申請條件。EU Blue Card + B1 德語：最快 <strong>21個月</strong> 可申請永居，此規則維持不變。</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
 <p class="">如果你在德國持有居留證至少五年且沒有中斷，你就有申請永久居留權的資格。在特定條件下，即使未滿五年，也可以符合申請永久居留證的資格，<strong>最快21個月</strong>就可以申請永居，其實相對於美國的綠卡，<strong>德國或歐盟算是相對移民門檻較低的地方</strong>。至於要申請德國的永久居留還是選擇申請歐盟的永居，這邊大致上做一個小小的比較跟介紹，但本篇將重點放於德國的永久居留權申請的條件與流程。</p>
 <!-- /wp:paragraph -->
 
@@ -2273,7 +2281,7 @@ const POSTS = [
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li class="">證明已繳納退休保險費-->上Rentenversichung網站申請紙本證明（如何申請？<a href="https://taiwanese-in-germany.com/%e5%be%b7%e5%9c%8b%e9%a4%8a%e8%80%81%e9%80%80%e4%bc%91%e9%87%91%e8%ad%89%e6%98%8e%e5%a6%82%e4%bd%95%e7%94%b3%e8%ab%8brentenversicherungsbeitrage/">詳見此文章</a>）</li>
+<li class="">證明已繳納退休保險費-->上Rentenversichung網站申請紙本證明（如何申請？<a href="/post?slug=pension-certificate">詳見此文章</a>）</li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
