@@ -34,28 +34,29 @@ function applyTheme(theme) {
   if (btn) btn.innerHTML = theme === 'dark' ? SVG_SUN : SVG_MOON;
 }
 
-/* ---------- Navbar ---------- */
+/* ---------- Sidebar ---------- */
 function initNavbar() {
-  const navbar = document.getElementById('navbar');
+  const sidebar  = document.getElementById('sidebar');
   const hamburger = document.getElementById('hamburger');
-  const navMenu = document.getElementById('navMenu');
-
-  window.addEventListener('scroll', () => {
-    navbar.classList.toggle('scrolled', window.scrollY > 40);
-  }, { passive: true });
+  const overlay  = document.getElementById('sidebarOverlay');
 
   hamburger.addEventListener('click', () => {
-    hamburger.classList.toggle('open');
-    navMenu.classList.toggle('open');
+    const open = sidebar.classList.toggle('open');
+    hamburger.classList.toggle('open', open);
+    overlay.classList.toggle('visible', open);
   });
 
-  // Close menu on link click (mobile)
-  navMenu.querySelectorAll('.navbar__link').forEach(link => {
-    link.addEventListener('click', () => {
-      hamburger.classList.remove('open');
-      navMenu.classList.remove('open');
-    });
+  overlay.addEventListener('click', closeSidebar);
+
+  sidebar.querySelectorAll('.sidebar__link').forEach(link => {
+    link.addEventListener('click', closeSidebar);
   });
+
+  function closeSidebar() {
+    sidebar.classList.remove('open');
+    hamburger.classList.remove('open');
+    overlay.classList.remove('visible');
+  }
 }
 
 /* ---------- Render Category Cards ---------- */
