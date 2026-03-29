@@ -85,6 +85,10 @@ const POSTS = [
 
 <!-- wp:list-item -->
 <li class=""><strong>2024 課稅年度</strong>起，將恢復正常的繳交期限。因此，2024 年的稅務申報最遲必須在 <strong>2025 年 7 月 31 日</strong>前提交給稅務局。</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li class=""><strong>2025 課稅年度</strong>的稅務申報截止日為 <strong>2026 年 7 月 31 日</strong>。委託稅務師（Steuerberater）或薪資稅協助協會（Lohnsteuerhilfeverein）申報者，截止日延至 <strong>2027 年 3 月 1 日</strong>。</li>
 <!-- /wp:list-item --></ul>
 <!-- /wp:list -->
 
@@ -111,30 +115,42 @@ const POSTS = [
 <!-- /wp:list -->
 
 <!-- wp:heading -->
-<h2 class="wp-block-heading">2023年新年度報稅差異</h2>
+<h2 class="wp-block-heading">2025年新年度報稅差異</h2>
 <!-- /wp:heading -->
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li class="">資本利得免稅額提高至<strong>1000歐元</strong>（如銀行產生的利息：<a href="https://taiwanese-in-germany.com/2024-%e6%8e%a8%e8%96%a6%e7%9a%84%e5%85%8d%e4%bb%98%e8%b2%bb%e5%be%b7%e5%9c%8b%e9%8a%80%e8%a1%8c/">延伸閱讀德國高利息活存銀行推薦</a>）<a href="https://taiwanische-studentenvereine.com/discuz/forum.php?mod=viewthread&amp;tid=202690" target="_blank" rel="noreferrer noopener"></a></li>
+<li class="">個人基本免稅額（Grundfreibetrag）調升至<strong>12,096歐元（單身）／24,192歐元（已婚合併申報）</strong>（2023年為 10,632 歐元）</li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li class="">個人基本免稅額調升至<strong>10632歐元</strong><a href="https://taiwanische-studentenvereine.com/discuz/forum.php?mod=viewthread&amp;tid=202690" target="_blank" rel="noreferrer noopener"></a></li>
+<li class="">子女免稅額（Kinderfreibetrag）：每位子女 <strong>9,600歐元</strong></li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li class="">在家工作整體扣除額(Homeoffice-Pauschale)提高:<!-- wp:list -->
+<li class="">子女津貼（Kindergeld）：<strong>2026年起每位子女每月 259 歐元</strong>（原 255 歐元）</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li class="">資本利得免稅額（Sparerpauschbetrag）：維持 <strong>1,000歐元</strong>（如銀行產生的利息：<a href="https://taiwanese-in-germany.com/2024-%e6%8e%a8%e8%96%a6%e7%9a%84%e5%85%8d%e4%bb%98%e8%b2%bb%e5%be%b7%e5%9c%8b%e9%8a%80%e8%a1%8c/">延伸閱讀德國高利息活存銀行推薦</a>）</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li class="">42% 高稅率門檻（Spitzensteuersatz）：調整至 <strong>68,481歐元</strong>（2024年為 66,760 歐元）</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li class="">在家工作整體扣除額(Homeoffice-Pauschale)：維持不變<!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li class=""><strong>每天6歐元(原5歐元)</strong></li>
+<li class=""><strong>每天6歐元</strong></li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li class=""><strong>每年最多210天(原120天)</strong></li>
+<li class=""><strong>每年最多210天</strong></li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li class=""><strong>最高可扣1260歐元(原600歐元)</strong><a href="https://taiwanische-studentenvereine.com/discuz/forum.php?mod=viewthread&amp;tid=202690" target="_blank" rel="noreferrer noopener"></a></li>
+<li class=""><strong>最高可扣1,260歐元</strong></li>
 <!-- /wp:list-item --></ul>
 <!-- /wp:list --></li>
 <!-- /wp:list-item --></ol>
@@ -219,9 +235,9 @@ const POSTS = [
 <!-- wp:tadv/classic-paragraph -->
 <div class=""><div class="">
 <blockquote>
-<p>DM-Drogerie Markt GmbH + Co. KG </p>
-<p>Am DM-Platz 1 </p>
-<p>76227 Karlsruhe  </p>
+<p>DM-Drogerie Markt GmbH + Co. KG</p>
+<p>Am DM-Platz 1</p>
+<p>76227 Karlsruhe </p>
 </blockquote>
 </div></div>
 <!-- /wp:tadv/classic-paragraph -->
@@ -235,8 +251,8 @@ const POSTS = [
 <blockquote>
 <p class="">TAX REFUND/ Mehrwertsteuer-Rückerstattung </p>
 <p>Bitte überweisen Sie die Beiträge (Höhe XX EUR) zu  (XX = 金額)</p>
-<p>Name: XXXXXX        IBAN: DEXX XXXX XXXX XXXX XX </p>
-<p>BIC: XXXXXXXX  </p>
+<p>Name: XXXXXX       IBAN: DEXX XXXX XXXX XXXX XX</p>
+<p>BIC: XXXXXXXX </p>
 <p>Vielen Dank.</p>
 </blockquote>
 </div></div>
