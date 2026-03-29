@@ -1311,15 +1311,15 @@ const POSTS = [
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li class=""><strong>Debit 卡消費 Cashback 回饋</strong>：使用 BBVA Debit 卡消費，可享固定現金回饋，還有不定期與合作商家的額外優惠活動。</li>
+<li class=""><strong>💰 前 6 個月合計最高 €113 Cashback，真金白銀自動入帳！</strong>使用 BBVA Debit 卡消費，每月 Cashback 自動回饋到帳戶，不需要手動申請。詳細試算如下：<br/>・<strong>第 1 個月最高 €60.50</strong>：3% Cashback €10.50（前 €350 消費）＋限時 10% Extra-Cashback €50（前 €500 消費）<br/>・<strong>第 2–6 個月每月最高 €10.50</strong>：3% Cashback（前 €350 消費）<br/>・<strong>前半年合計最高 €113！</strong></li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li class=""><strong>🎁 使用我的推薦碼開戶：首次消費額外獲得 20 歐元回饋</strong>！用推薦碼 <strong>1E4C0020FB1A6A</strong> 開戶，首次刷 BBVA 卡消費即可獲得 20 歐元現金回饋，加上前 6 個月 3% Cashback，雙重加碼！</li>
+<li class=""><strong>🎁 使用我的推薦碼開戶：首次消費額外獲得 20 歐元回饋</strong>！用推薦碼 <strong>1E4C0020FB1A6A</strong> 開戶，首次刷 BBVA 卡消費即可獲得 20 歐元現金回饋，加上前 6 個月 Cashback，真的是開戶就賺！</li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li class=""><strong>🔥 限時 10% 額外 Cashback（2026/04/07 前）</strong>：首月消費享最高 10% 現金回饋，上限 50 歐元，不需要任何申請，直接回饋入帳，等於直接省錢！</li>
+<li class=""><strong>🔥 限時 10% Extra-Cashback（2026/04/07 前開戶適用）</strong>：第一個月前 €500 消費享 10% 額外現金回饋（最高 €50），加上標準 3% Cashback，第一個月最高可拿回 €60.50！</li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
@@ -1332,7 +1332,11 @@ const POSTS = [
 <!-- /wp:list -->
 
 <!-- wp:image {"sizeSlug":"large","linkDestination":"none"} -->
-<figure class="wp-block-image size-large"><img src="assets/images/bbva/bbva-cashback-promo.png" alt="BBVA 10% 額外 Cashback 限時優惠至 2026 年 4 月 7 日"/><figcaption class="wp-element-caption">首月消費最高享 10% 現金回饋（上限 €50），活動至 2026/04/07</figcaption></figure>
+<figure class="wp-block-image size-large"><img src="assets/images/bbva/bbva-cashback-113.png" alt="BBVA 前 6 個月最高 €113 Cashback 回饋詳細說明"/><figcaption class="wp-element-caption">前 6 個月最高 €113 Cashback：第 1 個月最高 €60.50，第 2–6 個月每月最高 €10.50</figcaption></figure>
+<!-- /wp:image -->
+
+<!-- wp:image {"sizeSlug":"large","linkDestination":"none"} -->
+<figure class="wp-block-image size-large"><img src="assets/images/bbva/bbva-cashback-promo.png" alt="BBVA 10% 額外 Cashback 限時優惠至 2026 年 4 月 7 日"/><figcaption class="wp-element-caption">限時優惠：首月消費最高享 10% 現金回饋（上限 €50），活動至 2026/04/07</figcaption></figure>
 <!-- /wp:image -->
 
 <!-- wp:image {"sizeSlug":"large","linkDestination":"none"} -->
