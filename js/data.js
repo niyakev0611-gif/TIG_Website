@@ -628,14 +628,18 @@ const POSTS = [
   },
   {
     slug: 'deutschland-ticket',
-    title: '2024 德國 49歐交通月票 Deutschland Ticket 訂閱 取消訂閱 解約教學',
-    date: '2023-06-24',
+    title: '2026 德國交通月票 Deutschland Ticket 訂閱 取消訂閱 解約教學（現為63歐元）',
+    date: '2026-03-29',
     categories: ["來德生活必辦事項", "德國生活", "旅行"],
     tags: ["交通票", "取消", "德國", "德國交通", "旅遊", "自助", "解約"],
-    excerpt: '49歐元車票（官方名稱：「Deutschland Ticket」，簡稱：「D-Ticket」）是一種適用於德國全境的公共交通票。於2023年5月1日推出，取代了去年廣受歡迎的9歐元車票，大家還記得去年暑假那三個月9歐元就可以隨便搭到飽，各種…',
+    excerpt: 'Deutschland Ticket（D-Ticket）是一種適用於德國全境的公共交通月票。自2023年5月推出以來，價格從49歐元→2025年漲至58歐元→2026年1月起調漲為63歐元。本文介紹如何訂閱、付款、以及最重要的：如何在到期前取消…',
     emoji: '🚆',
     content: `<!-- wp:paragraph -->
-<p class="">49歐元車票（官方名稱：「Deutschland Ticket」，簡稱：「D-Ticket」）是一種適用於德國全境的公共交通票。於2023年5月1日推出，取代了去年廣受歡迎的9歐元車票，大家還記得去年暑假那三個月9歐元就可以隨便搭到飽，各種交通工具都被擠爆的盛況嗎？沒錯，概念跟9歐票是一模一樣的，只不過今年是<strong>月訂閱模式 (Abo)</strong>，這跟去年是不同的，然後月費用也提高為49歐元（個人認為去年9歐的價格實在太低了，雖然是實驗性質的，不過也導致德國各地的公共交通運輸很多都超過負荷了）。</p>
+<p class=""><strong>⚠️ 2026年最新更新（2026年3月）：</strong>Deutschland Ticket 自 <strong>2026年1月起價格調漲至 63 歐元／月</strong>（2025年為58歐元、2023–2024年原始價格為49歐元）。價格每年由聯邦與各州交通部協商訂定，最遲於每年9月底公布下一年度費率。好消息是：<strong>聯邦與各州已確保 Deutschland Ticket 的財政補貼延續至2030年</strong>，票種不會消失。學生優惠價目前為 <strong>37.80 歐元／月</strong>。訂閱與取消流程詳見下方，仍然有效。</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p class="">Deutschland Ticket（官方名稱，簡稱：「D-Ticket」）是一種適用於德國全境的公共交通月票。於2023年5月1日推出，取代了廣受歡迎的9歐元車票。採<strong>月訂閱模式 (Abo)</strong>，價格歷年調整如下：<strong>49歐元（2023–2024）→ 58歐元（2025）→ 63歐元（2026起）</strong>。</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:image {"id":775,"sizeSlug":"full","linkDestination":"none"} -->
@@ -648,6 +652,10 @@ const POSTS = [
 
 <!-- wp:paragraph -->
 <p class="">簡單來說就是所有德國境內的<strong>短途交通工具</strong>(適用於二等車廂)都可以搭，<strong>只要是公共交通的一部分都適用</strong>！<strong>Deutschlandweit</strong> in allen Verkehrsmitteln des öffentlichen Nahverkehrs gültig! <strong>只要不是ICE(Inter City Express)、IC\\EC或是私鐵(Flixtrain)都可以搭。</strong>言下之意，<strong>火車區間車(Regional)、公車、路面電車(Tram/Straßebahn)、 U-Bahn(地鐵)、 S-Bahn(市區快車)都可以搭！</strong></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p class=""><strong>⚠️ 2026年新變化：</strong>原本柏林出發的兩條 IC 特例路線自2026年起已取消，Deutschland Ticket 在以下路線<strong>不再有效</strong>：<strong>柏林 Berlin ↔ 羅斯托克 Rostock</strong> 及 <strong>柏林 Berlin ↔ 施特拉爾松德 Stralsund</strong>（這兩條過去有特殊協議讓 D-Ticket 可搭 IC，2025年底協議到期未續）。</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:image {"id":986,"sizeSlug":"full","linkDestination":"none"} -->
@@ -705,7 +713,7 @@ const POSTS = [
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p class="">你可以使用智慧型手機上的應用程式，例如<a href="https://www.bahn.de/service/mobile/db-navigator" target="_blank" rel="noreferrer noopener">DB Navigator App</a>、你所在地區交通聯盟的應用程式（斯圖加特為例：<a href="https://www.ssb-ag.de/tickets/ticketkauf-und-beratung/ssb-move-app-mit-bestpreis/">SSB Move App</a> 請看下方例子）或是第三方的軟體App（Freenow, DeutschlandCard），購買49歐元票。你也可以在網站<a href="http://Bahn.de">bahn.de</a>上使用電腦、平板或手機進行線上購買49歐元票。以下用<a href="https://www.bahn.de/service/mobile/db-navigator" target="_blank" rel="noreferrer noopener">DB Navigator App</a>為範例。<strong>個人是認為第三方的程式退訂閱的方式比DB來得更方便一點，可以算是一鍵解除，而且付款方式也不會指定超難用的Lastschrift</strong>，<strong>所以其實比較推薦用<a href="https://m.free-now.com/JGMc/7m2aym3b" target="_blank" rel="noreferrer noopener">Freenow</a></strong>或<strong><a href="https://www.ssb-ag.de/tickets/ticketkauf-und-beratung/ssb-move-app-mit-bestpreis/">SSB Move App</a>來買票，不住在德國的遊客也無法使用Lastschrift！</strong><br><a href="https://taiwanese-in-germany.com/2023-德國-49歐交通月票-deutschland-ticket-訂閱-取消訂閱-解約教學/#用SSB_Move_App來訂票">點這裡直接看如何用SSB訂票跟解約</a> </p>
+<p class="">你可以使用智慧型手機上的應用程式，例如<a href="https://www.bahn.de/service/mobile/db-navigator" target="_blank" rel="noreferrer noopener">DB Navigator App</a>、你所在地區交通聯盟的應用程式（斯圖加特為例：<a href="https://www.ssb-ag.de/tickets/ticketkauf-und-beratung/ssb-move-app-mit-bestpreis/">SSB Move App</a> 請看下方例子）或是第三方的軟體App（Freenow, DeutschlandCard），購買 Deutschland Ticket。你也可以在網站<a href="http://Bahn.de">bahn.de</a>上使用電腦、平板或手機進行線上購買 Deutschland Ticket。以下用<a href="https://www.bahn.de/service/mobile/db-navigator" target="_blank" rel="noreferrer noopener">DB Navigator App</a>為範例。<strong>個人是認為第三方的程式退訂閱的方式比DB來得更方便一點，可以算是一鍵解除，而且付款方式也不會指定超難用的Lastschrift</strong>，<strong>所以其實比較推薦用<a href="https://m.free-now.com/JGMc/7m2aym3b" target="_blank" rel="noreferrer noopener">Freenow</a></strong>或<strong><a href="https://www.ssb-ag.de/tickets/ticketkauf-und-beratung/ssb-move-app-mit-bestpreis/">SSB Move App</a>來買票，不住在德國的遊客也無法使用Lastschrift！</strong><br><a href="https://taiwanese-in-germany.com/2023-德國-49歐交通月票-deutschland-ticket-訂閱-取消訂閱-解約教學/#用SSB_Move_App來訂票">點這裡直接看如何用SSB訂票跟解約</a> </p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
