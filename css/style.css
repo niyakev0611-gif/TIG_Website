@@ -770,8 +770,8 @@ body { padding-left: 64px; }
 }
 .filter-btn:hover { border-color: var(--primary); color: var(--primary); }
 .filter-btn.active {
-  background: var(--primary);
-  border-color: var(--primary);
+  background: var(--accent);
+  border-color: var(--accent);
   color: #fff;
 }
 
