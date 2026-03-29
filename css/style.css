@@ -162,15 +162,15 @@ ul, ol { list-style: none; }
   width: 36px; height: 36px;
   border-radius: 50%;
   display: flex; align-items: center; justify-content: center;
-  font-size: 17px;
   color: var(--secondary);
   background: transparent;
   border: 1.5px solid var(--border);
   cursor: pointer;
-  margin-left: 8px;
+  margin-right: 12px;
   transition: background var(--duration), color var(--duration), border-color var(--duration);
   flex-shrink: 0;
 }
+.theme-toggle svg { display: block; }
 .theme-toggle:hover {
   background: rgba(128,128,128,.1);
   color: var(--primary);
