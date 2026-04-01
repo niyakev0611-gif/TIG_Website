@@ -1047,6 +1047,43 @@ body { padding-left: 64px; }
   box-shadow: 0 2px 8px rgba(0, 102, 204, 0.25);
 }
 
+/* ---------- WordPress Block Compatibility (dark-mode safe) ---------- */
+
+/* Color helper classes — override any inline style="color:…" from WordPress */
+.post-content .has-foreground-color          { color: var(--primary)    !important; }
+.post-content .has-text-color                { color: var(--primary)    !important; }
+.post-content .has-vivid-red-color           { color: #e53e3e           !important; }
+
+/* Background helper classes */
+.post-content .has-tertiary-background-color {
+  background-color: var(--bg-secondary) !important;
+  color: var(--primary) !important;
+}
+
+/* Headings with inline gradient backgrounds — replace with theme-aware bg */
+.post-content .wp-block-heading.has-background {
+  background: var(--bg-secondary) !important;
+  padding: 0.4em 0.8em;
+  border-radius: var(--radius-sm);
+}
+
+/* Two-column comparison layout */
+.post-content .wp-block-columns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  margin: 1.5rem 0;
+}
+.post-content .wp-block-column {
+  flex: 1;
+  min-width: min(100%, 220px);
+}
+.post-content .wp-block-column[style*="border-style:dotted"] {
+  border: 2px dotted var(--border) !important;
+  padding: 1.25rem;
+  border-radius: var(--radius-md);
+}
+
 /* ---------- RESPONSIVE ---------- */
 @media (max-width: 640px) {
   .section { padding: 60px 0; }
