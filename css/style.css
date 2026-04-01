@@ -1084,6 +1084,12 @@ body { padding-left: 64px; }
   border-radius: var(--radius-md);
 }
 
+/* Belt-and-suspenders: catch hardcoded dark inline colors regardless of class */
+.post-content [style*="color:#1F1717"],
+.post-content [style*="color: #1F1717"] {
+  color: var(--primary) !important;
+}
+
 /* ---------- RESPONSIVE ---------- */
 @media (max-width: 640px) {
   .section { padding: 60px 0; }
