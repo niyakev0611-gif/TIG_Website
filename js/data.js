@@ -2116,7 +2116,7 @@ const POSTS = [
 <!-- /wp:paragraph -->`
   },
   {
-    slug: 'permanent-residence-2024',
+    slug: 'permanent-residence-2026',
     title: '2026 德國永居 vs 歐盟永居 懶人包',
     date: '2026-03-29',
     categories: ["來德生活必辦事項", "德國生活"],
@@ -2281,13 +2281,17 @@ const POSTS = [
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li class="">證明有足夠的德語能力-->歌德或是相似語言的證明</li>
+<li class="">證明有足夠的德語能力-->歌德或是相似語言的證明（Goethe-Institut 或 TELC 正式認證）</li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
 <li class="">證明具有足夠的德國法律和社會秩序的基本知識--><strong>Lebens In Deutschland的考試</strong></li>
 <!-- /wp:list-item --></ul>
 <!-- /wp:list -->
+
+<!-- wp:paragraph -->
+<p class=""><strong>📋 注意（柏林）：</strong>自 2024 年 12 月起，柏林 LEA 要求語言證明須為 Goethe-Institut 或 TELC 的<strong>正式認證書</strong>，雇主信或自學證明不再被接受。其他城市規定可能不同，建議提前向當地外管局確認。</p>
+<!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
 <p class="">申請的費用則因為你的身份而有所差異</p>
@@ -2354,11 +2358,7 @@ const POSTS = [
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p class="">下一篇會詳細介紹親身申請德國永居的過程與lessons learned！</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p class="">然後最近剛出台的入德國籍簡化方案也敬請期待！</p>
+<p class="">下一篇會詳細介紹親身申請德國永居的過程與 lessons learned！</p>
 <!-- /wp:paragraph -->`
   },
   {
