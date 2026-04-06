@@ -176,10 +176,11 @@ function initProgressBar() {
 
 /* ---------- 404 ---------- */
 function showNotFound() {
-  document.getElementById('postHeader').style.display = 'none';
-  document.getElementById('breadcrumb').style.display = 'none';
-  document.getElementById('notFound').style.display   = 'block';
-  document.getElementById('pageTitle').textContent    = '找不到文章 | 台勞在德國打工記';
+  document.getElementById('postHeader').style.display    = 'none';
+  document.getElementById('breadcrumb').style.display    = 'none';
+  document.getElementById('commentsSection').style.display = 'none';
+  document.getElementById('notFound').style.display      = 'block';
+  document.getElementById('pageTitle').textContent       = '找不到文章 | 台勞在德國打工記';
 }
 
 /* ---------- Footer Links ---------- */

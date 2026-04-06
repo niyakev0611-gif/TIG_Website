@@ -1090,6 +1090,71 @@ body { padding-left: 64px; }
   color: var(--primary) !important;
 }
 
+/* ============================================================
+   Waline Comments — Theme Override
+   ============================================================ */
+
+/* Map Waline's CSS variables to the site's design tokens */
+:root {
+  --waline-font-family:    var(--font);
+  --waline-font-size:      1rem;
+  --waline-theme-color:    var(--accent);
+  --waline-active-color:   var(--accent-hover);
+  --waline-outline-color:  var(--accent);
+  --waline-color:          var(--primary);
+  --waline-bg:             var(--bg);
+  --waline-bg-grey:        var(--bg-secondary);
+  --waline-border-color:   var(--border);
+  --waline-border:         1px solid var(--border);
+  --waline-disable-bg-color: var(--bg-secondary);
+  --waline-disable-color:  var(--tertiary);
+  --waline-info-bg-color:  var(--bg-secondary);
+  --waline-info-color:     var(--tertiary);
+  --waline-avatar-radius:  50%;
+}
+
+/* Section wrapper */
+.comments-section {
+  margin-top: 64px;
+  padding-top: 48px;
+  border-top: 1px solid var(--border-light);
+}
+
+.comments-section__title {
+  font-size: var(--text-lg);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--primary);
+  margin-bottom: 32px;
+}
+
+/* Clean up Waline's default card shadow to match site */
+.wl-card { box-shadow: none; border: 1px solid var(--border-light); border-radius: var(--radius-md); }
+.wl-card + .wl-card { margin-top: 16px; }
+
+/* Input fields */
+.wl-editor, .wl-input {
+  font-family: var(--font) !important;
+  font-size: var(--text-xs) !important;
+  border-radius: var(--radius-sm) !important;
+  border-color: var(--border) !important;
+  background: var(--bg) !important;
+  color: var(--primary) !important;
+}
+.wl-editor:focus, .wl-input:focus { border-color: var(--accent) !important; }
+
+/* Submit button */
+.wl-btn.primary {
+  background: var(--accent) !important;
+  border-radius: var(--radius-sm) !important;
+  font-family: var(--font) !important;
+  font-size: var(--text-xs) !important;
+  font-weight: 500 !important;
+  letter-spacing: -0.01em !important;
+  transition: background var(--duration) var(--ease) !important;
+}
+.wl-btn.primary:hover { background: var(--accent-hover) !important; }
+
 /* ---------- RESPONSIVE ---------- */
 @media (max-width: 640px) {
   .section { padding: 60px 0; }

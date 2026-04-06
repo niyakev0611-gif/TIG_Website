@@ -6,6 +6,7 @@
   <meta name="description" id="metaDesc" content="台勞在德國打工記" />
   <title id="pageTitle">文章 | 台勞在德國打工記</title>
   <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/@waline/client@v3/dist/waline.css" />
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🇩🇪</text></svg>" />
   <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-2W0SLZF8LC"></script>
@@ -106,6 +107,12 @@
     <div class="related__grid" id="relatedGrid"></div>
   </div>
 
+  <!-- COMMENTS -->
+  <section class="comments-section" id="commentsSection">
+    <h2 class="comments-section__title">留言</h2>
+    <div id="waline"></div>
+  </section>
+
   <div id="notFound" style="display:none;">
     <div class="empty-state">
       <div class="empty-state__icon">😕</div>
@@ -149,5 +156,38 @@
 <script src="js/data.js"></script>
 <script src="js/theme.js"></script>
 <script src="js/post.js"></script>
+
+<!-- Waline Comments Init -->
+<!-- 部署完 Waline 後，將下方 YOUR_WALINE_SERVER_URL 替換為你的 Vercel 網址 -->
+<script type="module">
+  import { init } from 'https://unpkg.com/@waline/client@v3/dist/waline.js';
+  init({
+    el: '#waline',
+    serverURL: 'YOUR_WALINE_SERVER_URL',
+    lang: 'zh-TW',
+    dark: 'html[data-theme="dark"]',
+    emoji: false,
+    login: 'disable',
+    requiredMeta: ['nick'],
+    wordLimit: 0,
+    pageSize: 10,
+    locale: {
+      nick: '名字',
+      nickError: '請輸入名字',
+      mail: 'Email（可選）',
+      mailError: 'Email 格式不正確',
+      link: '網址（可選）',
+      optional: '可選',
+      placeholder: '說點什麼吧…',
+      sofa: '還沒有留言，來當第一個吧！',
+      submit: '送出',
+      reply: '回覆',
+      cancelReply: '取消回覆',
+      comment: '留言',
+      refresh: '重新整理',
+      more: '載入更多',
+    },
+  });
+</script>
 </body>
 </html>
