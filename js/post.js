@@ -56,6 +56,40 @@ function renderPost(post) {
   document.getElementById('pageTitle').textContent   = `${post.title} | 台勞在德國打工記`;
   document.getElementById('metaDesc').setAttribute('content', post.excerpt);
 
+  // Canonical URL
+  const canonical = document.getElementById('canonicalTag');
+  if (canonical) {
+    canonical.setAttribute('href',
+      `https://taiwanese-in-germany.com/post.html?slug=${encodeURIComponent(post.slug)}`
+    );
+  }
+
+  // Open Graph
+  const fullUrl = `https://taiwanese-in-germany.com/post.html?slug=${encodeURIComponent(post.slug)}`;
+  const excerpt = post.excerpt.slice(0, 160);
+  const ogTitle  = document.getElementById('ogTitle');
+  const ogDesc   = document.getElementById('ogDesc');
+  const ogUrl    = document.getElementById('ogUrl');
+  const twTitle  = document.getElementById('twitterTitle');
+  const twDesc   = document.getElementById('twitterDesc');
+  if (ogTitle) ogTitle.setAttribute('content', `${post.title} | 台勞在德國打工記`);
+  if (ogDesc)  ogDesc.setAttribute('content', excerpt);
+  if (ogUrl)   ogUrl.setAttribute('content', fullUrl);
+  if (twTitle) twTitle.setAttribute('content', `${post.title} | 台勞在德國打工記`);
+  if (twDesc)  twDesc.setAttribute('content', excerpt);
+
+  // JSON-LD Structured Data
+  const ldScript = document.getElementById('structuredData');
+  if (ldScript) {
+    const ld = JSON.parse(ldScript.textContent);
+    ld.headline      = post.title;
+    ld.description   = excerpt;
+    ld.url           = fullUrl;
+    ld.datePublished = post.date;
+    ld.dateModified  = post.date;
+    ldScript.textContent = JSON.stringify(ld);
+  }
+
   // Breadcrumb
   const firstCat = post.categories[0] || '';
   if (firstCat) {

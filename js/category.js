@@ -66,6 +66,35 @@ function updateHero(activeCat) {
     descEl.textContent  = '瀏覽全部文章';
     countEl.textContent = `共 ${POSTS.length} 篇文章`;
   }
+
+  // Canonical URL
+  const canonical = document.getElementById('canonicalTag');
+  if (canonical) {
+    const href = activeCat
+      ? `https://taiwanese-in-germany.com/category.html?cat=${encodeURIComponent(activeCat)}`
+      : 'https://taiwanese-in-germany.com/category.html';
+    canonical.setAttribute('href', href);
+  }
+
+  // Open Graph
+  const ogTitle = document.getElementById('ogTitle');
+  const ogDesc  = document.getElementById('ogDesc');
+  const ogUrl   = document.getElementById('ogUrl');
+  const metaDesc = document.getElementById('metaDesc');
+  if (ogTitle) ogTitle.setAttribute('content', pageTitle.textContent);
+  if (ogDesc && catInfo) ogDesc.setAttribute('content', catInfo.desc);
+  if (ogUrl) {
+    const href = activeCat
+      ? `https://taiwanese-in-germany.com/category.html?cat=${encodeURIComponent(activeCat)}`
+      : 'https://taiwanese-in-germany.com/category.html';
+    ogUrl.setAttribute('content', href);
+  }
+  if (metaDesc && catInfo) {
+    const count = getPostsByCategory(activeCat).length;
+    metaDesc.setAttribute('content',
+      `${catInfo.name}相關文章共 ${count} 篇 — ${catInfo.desc}。台灣人在德國生活指南。`
+    );
+  }
 }
 
 /* ---------- Filter Bar ---------- */
