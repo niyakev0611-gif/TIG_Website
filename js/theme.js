@@ -20,6 +20,37 @@ function handleToggleClick() {
   localStorage.setItem('theme', next);
 }
 
+/* ---------- First-Visit Hint Toast ---------- */
+function showFirstVisitToast() {
+  if (localStorage.getItem('hint_shown')) return;
+  localStorage.setItem('hint_shown', '1');
+
+  const toast = document.createElement('div');
+  toast.className = 'night-toast';
+  toast.innerHTML = `
+    <div class="night-toast__icon">🌓</div>
+    <div class="night-toast__body">
+      <div class="night-toast__title">可以自由切換深色／淺色模式</div>
+      <div class="night-toast__sub">點選左側選單底部的按鈕即可切換</div>
+    </div>
+    <button class="night-toast__close" id="hintClose">✕</button>
+  `;
+  document.body.appendChild(toast);
+
+  const dismiss = () => {
+    toast.classList.add('fade-out');
+    setTimeout(() => toast.remove(), 350);
+  };
+
+  let autoTimer = setTimeout(dismiss, 5000);
+  document.getElementById('hintClose').addEventListener('click', () => {
+    clearTimeout(autoTimer);
+    dismiss();
+  });
+  toast.addEventListener('mouseenter', () => clearTimeout(autoTimer));
+  toast.addEventListener('mouseleave', () => { autoTimer = setTimeout(dismiss, 3000); });
+}
+
 /* ---------- Init ---------- */
 function initTheme() {
   const btn = document.getElementById('themeToggle');
@@ -38,6 +69,9 @@ function initTheme() {
   // Follow system/browser preference (no location permission needed)
   const prefersDark = window.matchMedia('(prefers-color-scheme: dark)');
   applyTheme(prefersDark.matches ? 'dark' : 'light');
+
+  // Show hint to first-time visitors
+  showFirstVisitToast();
 
   // Live-update if system preference changes (e.g. OS auto dark mode)
   prefersDark.addEventListener('change', e => {
