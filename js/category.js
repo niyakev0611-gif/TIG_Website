@@ -154,18 +154,19 @@ function createPostCard(post, index) {
 
   const firstCat = post.categories[0] || '';
 
-  a.innerHTML = `
-    <div class="post-card__cover">${post.emoji}</div>
-    <div class="post-card__body">
-      <div class="post-card__cat">${firstCat}</div>
-      <div class="post-card__title">${post.title}</div>
-      <div class="post-card__excerpt">${post.excerpt}</div>
-      <div class="post-card__footer">
-        <span class="post-card__date">${formatDate(post.date)}</span>
-        <span class="post-card__more">閱讀 →</span>
-      </div>
-    </div>
-  `;
+  const body = h('div', 'post-card__body');
+  body.append(
+    h('div', 'post-card__cat',     firstCat),
+    h('div', 'post-card__title',   post.title),
+    h('div', 'post-card__excerpt', post.excerpt)
+  );
+  const footer = h('div', 'post-card__footer');
+  footer.append(
+    h('span', 'post-card__date', formatDate(post.date)),
+    h('span', 'post-card__more', '閱讀 →')
+  );
+  body.appendChild(footer);
+  a.append(h('div', 'post-card__cover', post.emoji), body);
   return a;
 }
 

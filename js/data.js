@@ -2467,6 +2467,14 @@ function formatDate(dateStr) {
   return d.toLocaleDateString('zh-TW', { year: 'numeric', month: 'long', day: 'numeric' });
 }
 
+// Helper: create element with className and textContent (XSS-safe)
+function h(tag, className, text) {
+  const el = document.createElement(tag);
+  if (className) el.className = className;
+  if (text != null) el.textContent = text;
+  return el;
+}
+
 // All unique categories with counts
 const CATEGORIES = [
   { name: '來德生活必辦事項', emoji: '📋', desc: '來德國前後必知的實用資訊' },

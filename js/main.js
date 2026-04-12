@@ -47,12 +47,12 @@ function renderCategories() {
     const card = document.createElement('a');
     card.className = 'cat-card';
     card.href = `category.html?cat=${encodeURIComponent(cat.name)}`;
-    card.innerHTML = `
-      <div class="cat-card__emoji">${cat.emoji}</div>
-      <div class="cat-card__name">${cat.name}</div>
-      <div class="cat-card__desc">${cat.desc}</div>
-      <div class="cat-card__count">${count} 篇文章</div>
-    `;
+    card.append(
+      h('div', 'cat-card__emoji', cat.emoji),
+      h('div', 'cat-card__name',  cat.name),
+      h('div', 'cat-card__desc',  cat.desc),
+      h('div', 'cat-card__count', `${count} 篇文章`)
+    );
     grid.appendChild(card);
   });
 }
@@ -77,18 +77,19 @@ function createPostCard(post) {
 
   const firstCat = post.categories[0] || '';
 
-  a.innerHTML = `
-    <div class="post-card__cover">${post.emoji}</div>
-    <div class="post-card__body">
-      <div class="post-card__cat">${firstCat}</div>
-      <div class="post-card__title">${post.title}</div>
-      <div class="post-card__excerpt">${post.excerpt}</div>
-      <div class="post-card__footer">
-        <span class="post-card__date">${formatDate(post.date)}</span>
-        <span class="post-card__more">閱讀 →</span>
-      </div>
-    </div>
-  `;
+  const body = h('div', 'post-card__body');
+  body.append(
+    h('div', 'post-card__cat',     firstCat),
+    h('div', 'post-card__title',   post.title),
+    h('div', 'post-card__excerpt', post.excerpt)
+  );
+  const footer = h('div', 'post-card__footer');
+  footer.append(
+    h('span', 'post-card__date', formatDate(post.date)),
+    h('span', 'post-card__more', '閱讀 →')
+  );
+  body.appendChild(footer);
+  a.append(h('div', 'post-card__cover', post.emoji), body);
   return a;
 }
 
