@@ -2,6 +2,7 @@
 <html lang="zh-TW">
 <head>
   <meta charset="UTF-8" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https://www.google-analytics.com; connect-src 'self' https://www.google-analytics.com https://analytics.google.com; frame-src 'none'; object-src 'none'; base-uri 'self'" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="台灣人在德國的生活記錄。分享來德生活必辦事項、德國日常、旅行攻略與德語學習。" />
   <meta name="robots" content="index, follow" />
@@ -19,14 +20,8 @@
   <title>台勞在德國打工記 | Taiwanese in Germany</title>
   <link rel="stylesheet" href="css/style.css" />
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🇩🇪</text></svg>" />
-  <!-- Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-2W0SLZF8LC"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-2W0SLZF8LC');
-  </script>
+  <!-- GDPR: GA is loaded only after user consent (see js/consent.js) -->
+  <script src="js/consent.js"></script>
 </head>
 <body>
 
@@ -184,6 +179,7 @@
     <div class="footer__bottom">
       <span>© 2026 台勞在德國打工記</span>
       <span>原站：taiwanese-in-germany.com</span>
+      <button class="footer__cookie-link" onclick="openCookieSettings()">Cookie 設定</button>
     </div>
   </div>
 </footer>

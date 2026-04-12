@@ -1260,3 +1260,101 @@ body { padding-left: 64px; }
     max-width: none;
   }
 }
+
+/* ---------- GDPR Cookie Consent Banner ---------- */
+.cookie-banner {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 10000;
+  padding: 0 20px 20px;
+  opacity: 0;
+  transform: translateY(100%);
+  transition: opacity 0.35s var(--ease), transform 0.35s var(--ease);
+  pointer-events: none;
+}
+.cookie-banner.visible {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+.cookie-banner.hiding {
+  opacity: 0;
+  transform: translateY(100%);
+  pointer-events: none;
+}
+.cookie-banner__inner {
+  max-width: 520px;
+  margin: 0 auto;
+  padding: 22px 26px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+}
+.cookie-banner__title {
+  font-size: var(--text-sm);
+  font-weight: 700;
+  color: var(--primary);
+  margin-bottom: 6px;
+}
+.cookie-banner__desc {
+  font-size: 0.85rem;
+  line-height: 1.6;
+  color: var(--secondary);
+}
+.cookie-banner__actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 16px;
+}
+.cookie-btn {
+  flex: 1;
+  padding: 10px 20px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  border: none;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: background var(--duration) var(--ease), color var(--duration) var(--ease);
+  font-family: var(--font);
+}
+.cookie-btn--accept {
+  background: var(--accent);
+  color: #fff;
+}
+.cookie-btn--accept:hover {
+  background: var(--accent-hover);
+}
+.cookie-btn--reject {
+  background: var(--bg-secondary);
+  color: var(--secondary);
+  border: 1px solid var(--border-light);
+}
+.cookie-btn--reject:hover {
+  background: var(--border-light);
+  color: var(--primary);
+}
+
+/* Footer cookie settings link */
+.footer__cookie-link {
+  font-size: 0.8rem;
+  color: var(--tertiary);
+  cursor: pointer;
+  transition: color var(--duration) var(--ease);
+  background: none;
+  border: none;
+  padding: 0;
+  font-family: var(--font);
+}
+.footer__cookie-link:hover {
+  color: var(--accent);
+}
+
+@media (max-width: 480px) {
+  .cookie-banner { padding: 0 10px 10px; }
+  .cookie-banner__inner { padding: 18px 18px; }
+  .cookie-banner__actions { flex-direction: column; }
+  .cookie-btn { text-align: center; }
+}

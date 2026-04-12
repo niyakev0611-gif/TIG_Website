@@ -175,16 +175,23 @@ function renderRelated(post) {
     const a = document.createElement('a');
     a.className = 'post-card visible';
     a.href = `post.html?slug=${rp.slug}`;
-    a.innerHTML = `
-      <div class="post-card__cover" style="height:100px; font-size:2.5rem;">${rp.emoji}</div>
-      <div class="post-card__body">
-        <div class="post-card__title" style="-webkit-line-clamp:2;">${rp.title}</div>
-        <div class="post-card__footer">
-          <span class="post-card__date font-en">${formatDate(rp.date)}</span>
-          <span class="post-card__arrow">→</span>
-        </div>
-      </div>
-    `;
+
+    const cover = h('div', 'post-card__cover', rp.emoji);
+    cover.style.height = '100px';
+    cover.style.fontSize = '2.5rem';
+
+    const title = h('div', 'post-card__title', rp.title);
+    title.style.webkitLineClamp = '2';
+
+    const footer = h('div', 'post-card__footer');
+    footer.append(
+      h('span', 'post-card__date font-en', formatDate(rp.date)),
+      h('span', 'post-card__arrow', '\u2192')
+    );
+
+    const body = h('div', 'post-card__body');
+    body.append(title, footer);
+    a.append(cover, body);
     grid.appendChild(a);
   });
 }

@@ -81,4 +81,6 @@ function initTheme() {
   });
 }
 
-document.addEventListener('DOMContentLoaded', initTheme);
+// initTheme() is called by each page's own DOMContentLoaded handler
+// (main.js, post.js, category.js) — do NOT auto-init here to avoid
+// double-binding the toggle click listener.

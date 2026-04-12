@@ -1,0 +1,32 @@
+# macOS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+
+# Editor / IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Environment
+.env
+.env.*
+
+# WordPress migration files (not needed in production)
+taiwaneseingermany.*.xml
+taiwaneseingermany.*.json
+import_comments.py
+
+# Development notes
+Web Design CLAUDE.md
+
+# Node (if ever added)
+node_modules/
+package-lock.json
+
+# OS
+Thumbs.db
