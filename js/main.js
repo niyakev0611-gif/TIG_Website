@@ -94,7 +94,7 @@ function createPostCard(post) {
 
 /* ---------- Footer Recent Links ---------- */
 function renderFooterLinks() {
-  const list = document.getElementById('footerRecentLinks');
+  const list = document.getElementById('footerLinks');
   if (!list) return;
   POSTS.slice(0, 5).forEach(post => {
     const li = document.createElement('li');
