@@ -9,6 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   initNavbar();
   initTheme();
+  initBackButton();
   renderFooterLinks();
 
   if (!slug) {
@@ -25,6 +26,19 @@ document.addEventListener('DOMContentLoaded', () => {
   renderPost(post);
   initProgressBar();
 });
+
+/* ---------- Back Button ---------- */
+function initBackButton() {
+  var btn = document.getElementById('backBtn');
+  if (btn) {
+    btn.addEventListener('click', function(e) {
+      if (window.history.length > 1) {
+        e.preventDefault();
+        history.back();
+      }
+    });
+  }
+}
 
 /* ---------- Sidebar ---------- */
 function initNavbar() {
@@ -122,9 +136,9 @@ function renderPost(post) {
   const minutes   = Math.max(1, Math.round(charCount / 350));
   document.getElementById('readingTime').textContent = `${minutes} 分鐘閱讀`;
 
-  // Content — clean up WordPress shortcodes and render
+  // Content — clean up WordPress shortcodes, sanitize, and render
   let html = cleanWordPressContent(post.content);
-  document.getElementById('postContent').innerHTML = html;
+  document.getElementById('postContent').innerHTML = sanitizeHTML(html);
 
   // Tags
   if (post.tags && post.tags.length > 0) {
@@ -140,6 +154,26 @@ function renderPost(post) {
 
   // Related posts
   renderRelated(post);
+}
+
+/* ---------- Sanitize HTML (strip scripts, event handlers, javascript: URLs) ---------- */
+function sanitizeHTML(html) {
+  var doc = new DOMParser().parseFromString(html, 'text/html');
+  doc.querySelectorAll('script, iframe, object, embed, form').forEach(function(el) { el.remove(); });
+  doc.querySelectorAll('*').forEach(function(el) {
+    Array.from(el.attributes).forEach(function(attr) {
+      if (attr.name.startsWith('on') || (typeof attr.value === 'string' && attr.value.trim().toLowerCase().startsWith('javascript:'))) {
+        el.removeAttribute(attr.name);
+      }
+    });
+    if (el.hasAttribute('href') && el.getAttribute('href').trim().toLowerCase().startsWith('javascript:')) {
+      el.removeAttribute('href');
+    }
+    if (el.hasAttribute('src') && el.getAttribute('src').trim().toLowerCase().startsWith('javascript:')) {
+      el.removeAttribute('src');
+    }
+  });
+  return doc.body.innerHTML;
 }
 
 /* ---------- Clean WordPress HTML ---------- */

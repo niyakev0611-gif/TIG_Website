@@ -102,7 +102,7 @@ const POSTS = [
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li class="">自行使用ELSTER等線上報稅軟體（大部分請參照<a href="/post?slug=tax-software-2024">這篇德國報稅軟體推薦</a>）</li>
+<li class="">自行使用ELSTER等線上報稅軟體（大部分請參照<a href="post.html?slug=tax-software-2024">這篇德國報稅軟體推薦</a>）</li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
@@ -132,7 +132,7 @@ const POSTS = [
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li class="">資本利得免稅額（Sparerpauschbetrag）：維持 <strong>1,000歐元</strong>（如銀行產生的利息：<a href="/post?slug=german-bank-recommendation">延伸閱讀德國高利息活存銀行推薦</a>）</li>
+<li class="">資本利得免稅額（Sparerpauschbetrag）：維持 <strong>1,000歐元</strong>（如銀行產生的利息：<a href="post.html?slug=german-bank-recommendation">延伸閱讀德國高利息活存銀行推薦</a>）</li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
@@ -414,7 +414,7 @@ const POSTS = [
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p class="">詳情優缺點比較請見<a href="/post?slug=german-bank-recommendation">此篇</a><a href="/post?slug=german-bank-recommendation" target="_blank" rel="noreferrer noopener">介紹</a></p>
+<p class="">詳情優缺點比較請見<a href="post.html?slug=german-bank-recommendation">此篇</a><a href="post.html?slug=german-bank-recommendation" target="_blank" rel="noreferrer noopener">介紹</a></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:buttons -->
@@ -436,7 +436,7 @@ const POSTS = [
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p class="">詳情優缺點比較請見<a href="/post?slug=german-bank-recommendation" target="_blank" rel="noreferrer noopener">此篇介紹</a></p>
+<p class="">詳情優缺點比較請見<a href="post.html?slug=german-bank-recommendation" target="_blank" rel="noreferrer noopener">此篇介紹</a></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:buttons -->
@@ -454,7 +454,7 @@ const POSTS = [
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p class="">詳情優缺點比較請見<a href="/post?slug=german-bank-recommendation">此篇</a><a href="/post?slug=german-bank-recommendation" target="_blank" rel="noreferrer noopener">介紹</a></p>
+<p class="">詳情優缺點比較請見<a href="post.html?slug=german-bank-recommendation">此篇</a><a href="post.html?slug=german-bank-recommendation" target="_blank" rel="noreferrer noopener">介紹</a></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:buttons -->
@@ -528,7 +528,7 @@ const POSTS = [
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p class="">詳情比較請見<a href="/post?slug=tax-software-2024" target="_blank" rel="noreferrer noopener">此篇文章</a></p>
+<p class="">詳情比較請見<a href="post.html?slug=tax-software-2024" target="_blank" rel="noreferrer noopener">此篇文章</a></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:heading {"level":4} -->
@@ -536,7 +536,7 @@ const POSTS = [
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p class="">詳情比較請見<a href="/post?slug=tax-software-2024">此篇</a><a href="/post?slug=tax-software-2024" target="_blank" rel="noreferrer noopener">文章</a></p>
+<p class="">詳情比較請見<a href="post.html?slug=tax-software-2024">此篇</a><a href="post.html?slug=tax-software-2024" target="_blank" rel="noreferrer noopener">文章</a></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:heading {"level":3} -->
@@ -701,11 +701,11 @@ const POSTS = [
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p class="">你可以使用智慧型手機上的應用程式，例如<a href="https://www.bahn.de/service/mobile/db-navigator" target="_blank" rel="noreferrer noopener">DB Navigator App</a>、你所在地區交通聯盟的應用程式（斯圖加特為例：<a href="https://www.ssb-ag.de/tickets/ticketkauf-und-beratung/ssb-move-app-mit-bestpreis/">SSB Move App</a> 請看下方例子）或是第三方的軟體App（Freenow, DeutschlandCard），購買 Deutschland Ticket。你也可以在網站<a href="http://Bahn.de">bahn.de</a>上使用電腦、平板或手機進行線上購買 Deutschland Ticket。以下用<a href="https://www.bahn.de/service/mobile/db-navigator" target="_blank" rel="noreferrer noopener">DB Navigator App</a>為範例。<strong>個人是認為第三方的程式退訂閱的方式比DB來得更方便一點，可以算是一鍵解除，而且付款方式也不會指定超難用的Lastschrift</strong>，<strong>所以其實比較推薦用<a href="https://m.free-now.com/JGMc/7m2aym3b" target="_blank" rel="noreferrer noopener">Freenow</a></strong>或<strong><a href="https://www.ssb-ag.de/tickets/ticketkauf-und-beratung/ssb-move-app-mit-bestpreis/">SSB Move App</a>來買票，不住在德國的遊客也無法使用Lastschrift！</strong><br><a href="/post?slug=deutschland-ticket#用SSB_Move_App來訂票">點這裡直接看如何用SSB訂票跟解約</a> </p>
+<p class="">你可以使用智慧型手機上的應用程式，例如<a href="https://www.bahn.de/service/mobile/db-navigator" target="_blank" rel="noreferrer noopener">DB Navigator App</a>、你所在地區交通聯盟的應用程式（斯圖加特為例：<a href="https://www.ssb-ag.de/tickets/ticketkauf-und-beratung/ssb-move-app-mit-bestpreis/">SSB Move App</a> 請看下方例子）或是第三方的軟體App（Freenow, DeutschlandCard），購買 Deutschland Ticket。你也可以在網站<a href="http://Bahn.de">bahn.de</a>上使用電腦、平板或手機進行線上購買 Deutschland Ticket。以下用<a href="https://www.bahn.de/service/mobile/db-navigator" target="_blank" rel="noreferrer noopener">DB Navigator App</a>為範例。<strong>個人是認為第三方的程式退訂閱的方式比DB來得更方便一點，可以算是一鍵解除，而且付款方式也不會指定超難用的Lastschrift</strong>，<strong>所以其實比較推薦用<a href="https://m.free-now.com/JGMc/7m2aym3b" target="_blank" rel="noreferrer noopener">Freenow</a></strong>或<strong><a href="https://www.ssb-ag.de/tickets/ticketkauf-und-beratung/ssb-move-app-mit-bestpreis/">SSB Move App</a>來買票，不住在德國的遊客也無法使用Lastschrift！</strong><br><a href="post.html?slug=deutschland-ticket#用SSB_Move_App來訂票">點這裡直接看如何用SSB訂票跟解約</a> </p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p class=""><a href="/post?slug=deutschland-ticket#用Freenow來訂票">點這裡直接看如何用Freenow訂票跟解約</a> </p>
+<p class=""><a href="post.html?slug=deutschland-ticket#用Freenow來訂票">點這裡直接看如何用Freenow訂票跟解約</a> </p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
@@ -721,7 +721,7 @@ const POSTS = [
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p class="">因為是是<strong>月訂閱模式 (Abo)</strong>的關係，App裡面只能使用銀行自動扣款（Lastschrift）方式支付，款項將於月初扣款，網路訂票的話可能只有居住在德國的會比較方便。（延伸閱讀：<a href="/post?slug=german-bank-recommendation">免費的德國銀行</a>）畢竟如果你是觀光客沒有德國的銀行帳戶，就沒辦法透過網路買票，只能親自前往DB旅遊中心或所在地區交通聯盟的櫃台購買地方交通票，但並非所有交通聯盟都提供此服務。</p>
+<p class="">因為是是<strong>月訂閱模式 (Abo)</strong>的關係，App裡面只能使用銀行自動扣款（Lastschrift）方式支付，款項將於月初扣款，網路訂票的話可能只有居住在德國的會比較方便。（延伸閱讀：<a href="post.html?slug=german-bank-recommendation">免費的德國銀行</a>）畢竟如果你是觀光客沒有德國的銀行帳戶，就沒辦法透過網路買票，只能親自前往DB旅遊中心或所在地區交通聯盟的櫃台購買地方交通票，但並非所有交通聯盟都提供此服務。</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:image {"align":"center","id":755,"width":"250px","height":"512px","sizeSlug":"large","linkDestination":"none"} -->
@@ -824,7 +824,7 @@ const POSTS = [
 <!-- /wp:image -->
 
 <!-- wp:image {"align":"center","id":749,"width":"250px","height":"512px","sizeSlug":"large","linkDestination":"none"} -->
-<figure class="wp-block-image aligncenter size-large is-resized"><img src="assets/images/2023/06/img_7419-500x1024.jpg" alt="" class="wp-image-749" style="width:250px;height:512px"/><figcaption class="wp-element-caption">扣款銀行(<a href="/post?slug=german-bank-recommendation">還沒有N26嗎？</a>)</figcaption></figure>
+<figure class="wp-block-image aligncenter size-large is-resized"><img src="assets/images/2023/06/img_7419-500x1024.jpg" alt="" class="wp-image-749" style="width:250px;height:512px"/><figcaption class="wp-element-caption">扣款銀行(<a href="post.html?slug=german-bank-recommendation">還沒有N26嗎？</a>)</figcaption></figure>
 <!-- /wp:image --></div>
 <!-- /wp:group -->
 
@@ -913,7 +913,7 @@ const POSTS = [
 <!-- /wp:image -->
 
 <!-- wp:paragraph -->
-<p class="">也可以Paypal，<a href="/post?slug=referral-codes-2026#Paypal" target="_blank" rel="noreferrer noopener">還沒有Paypal嗎？點這邊的連結註冊有開戶獎金哦</a></p>
+<p class="">也可以Paypal，<a href="post.html?slug=referral-codes-2026#Paypal" target="_blank" rel="noreferrer noopener">還沒有Paypal嗎？點這邊的連結註冊有開戶獎金哦</a></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:image {"align":"center","id":903,"width":"334px","height":"724px","sizeSlug":"large","linkDestination":"none"} -->
@@ -985,7 +985,7 @@ const POSTS = [
 <!-- /wp:image -->
 
 <!-- wp:paragraph -->
-<p class="">支付方式可以選擇信用卡或是<a href="/post?slug=referral-codes-2026#Paypal">Paypal</a>！比德鐵的Lastschrift方便多了</p>
+<p class="">支付方式可以選擇信用卡或是<a href="post.html?slug=referral-codes-2026#Paypal">Paypal</a>！比德鐵的Lastschrift方便多了</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:image {"id":980,"sizeSlug":"large","linkDestination":"none"} -->
@@ -1194,7 +1194,7 @@ const POSTS = [
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>若是前往瑞典旅遊，若有必要可以在當地的銀行、ATM機、旅遊中心等地方兌換當地的貨幣。<strong>但強烈不建議兌換！</strong>本次瑞典行完全沒見過任何人在使用紙鈔或硬幣，<strong>瑞典在這方面相當進步，幾乎所到之處無處不配有刷卡機，連路邊的小攤販都可以刷信用卡。</strong>整趟行程完全沒看過瑞典克朗長什麼樣子，不得不佩服瑞典人在這方面真的很進步，所有交易都是無鈔票化了。所以強烈建議你不要換匯，直接刷卡最方便，省得手續費以及沒花完現鈔的問題。我基本上整趟都用Revolut走遍天下，如果你也是長居在歐洲還沒申辦的話，<a href="/post?slug=german-bank-recommendation" target="_blank" rel="noreferrer noopener">可以參考我這篇</a>，Revolut基本上是我在旅遊行走天下時的最可靠的電子錢包。</p>
+<p>若是前往瑞典旅遊，若有必要可以在當地的銀行、ATM機、旅遊中心等地方兌換當地的貨幣。<strong>但強烈不建議兌換！</strong>本次瑞典行完全沒見過任何人在使用紙鈔或硬幣，<strong>瑞典在這方面相當進步，幾乎所到之處無處不配有刷卡機，連路邊的小攤販都可以刷信用卡。</strong>整趟行程完全沒看過瑞典克朗長什麼樣子，不得不佩服瑞典人在這方面真的很進步，所有交易都是無鈔票化了。所以強烈建議你不要換匯，直接刷卡最方便，省得手續費以及沒花完現鈔的問題。我基本上整趟都用Revolut走遍天下，如果你也是長居在歐洲還沒申辦的話，<a href="post.html?slug=german-bank-recommendation" target="_blank" rel="noreferrer noopener">可以參考我這篇</a>，Revolut基本上是我在旅遊行走天下時的最可靠的電子錢包。</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
@@ -2277,7 +2277,7 @@ const POSTS = [
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li class="">證明已繳納退休保險費-->上Rentenversichung網站申請紙本證明（如何申請？<a href="/post?slug=pension-certificate">詳見此文章</a>）</li>
+<li class="">證明已繳納退休保險費-->上Rentenversichung網站申請紙本證明（如何申請？<a href="post.html?slug=pension-certificate">詳見此文章</a>）</li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
