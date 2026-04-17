@@ -240,6 +240,7 @@ function initProgressBar() {
     const contentBottom = content.getBoundingClientRect().bottom + window.scrollY;
     const start  = content.getBoundingClientRect().top + window.scrollY - window.innerHeight;
     const total  = contentBottom - start - window.innerHeight;
+    if (total <= 0) { bar.style.width = '0%'; return; }
     const scroll = window.scrollY - start;
     const pct    = Math.min(100, Math.max(0, (scroll / total) * 100));
     bar.style.width = pct + '%';

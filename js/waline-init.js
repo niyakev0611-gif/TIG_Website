@@ -1,5 +1,6 @@
-/* Waline comment system initialisation (post pages only) */
-import { init } from 'https://unpkg.com/@waline/client@v3/dist/waline.js';
+/* Waline comment system initialisation (post pages only)
+   Version is pinned — bump intentionally after reviewing release notes. */
+import { init } from 'https://unpkg.com/@waline/client@3.5.7/dist/waline.js';
 
 init({
   el: '#waline',

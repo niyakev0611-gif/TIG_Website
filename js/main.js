@@ -9,8 +9,15 @@ document.addEventListener('DOMContentLoaded', () => {
   renderCategories();
   renderRecentPosts();
   renderFooterLinks();
+  updateArticleCount();
   initScrollReveal();
 });
+
+/* ---------- Keep article count in sync with POSTS ---------- */
+function updateArticleCount() {
+  const el = document.getElementById('articleCount');
+  if (el) el.textContent = `${POSTS.length} 篇`;
+}
 
 /* ---------- Sidebar ---------- */
 function initNavbar() {
