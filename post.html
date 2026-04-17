@@ -2,9 +2,10 @@
 <html lang="zh-TW">
 <head>
   <meta charset="UTF-8" />
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://www.googletagmanager.com https://unpkg.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://unpkg.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https://www.google-analytics.com; connect-src 'self' https://www.google-analytics.com https://analytics.google.com https://waline-server-lemon.vercel.app; frame-src 'none'; object-src 'none'; base-uri 'self'" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://www.googletagmanager.com https://unpkg.com/@waline/; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://unpkg.com/@waline/; font-src 'self' https://fonts.gstatic.com https://unpkg.com/@waline/; img-src 'self' data: https:; connect-src 'self' https://www.google-analytics.com https://analytics.google.com https://waline-server-lemon.vercel.app; frame-src 'none'; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" id="metaDesc" content="台勞在德��打工記" />
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
+  <meta name="description" id="metaDesc" content="台勞在德國打工記" />
   <meta name="robots" content="index, follow" />
   <link rel="canonical" id="canonicalTag" href="https://taiwanese-in-germany.com/post.html" />
   <!-- Open Graph (updated dynamically by post.js) -->
@@ -38,7 +39,8 @@
   </script>
   <title id="pageTitle">文章 | 台勞在德國打工記</title>
   <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" href="https://unpkg.com/@waline/client@v3/dist/waline.css" />
+  <!-- Waline: pinned to an exact version — bump intentionally after checking release notes -->
+  <link rel="stylesheet" href="https://unpkg.com/@waline/client@3.5.7/dist/waline.css" integrity="sha384-rRoXxn2yHlrZYB587Ki9RO1tONhLdM6XfORg7Rw4uwH4/Fh/5nP7IUX91bkaKUgs" crossorigin="anonymous" />
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🇩🇪</text></svg>" />
   <!-- GDPR: GA is loaded only after user consent (see js/consent.js) -->
   <script src="js/consent.js"></script>
@@ -101,7 +103,7 @@
 <!-- POST -->
 <main class="post-layout" id="postLayout">
 
-  <a href="javascript:history.back()" class="back-btn">← 返回</a>
+  <a href="index.html" class="back-btn" id="backBtn">← 返回</a>
 
   <nav class="breadcrumb" id="breadcrumb">
     <a href="index.html">首頁</a>
@@ -175,7 +177,7 @@
     </div>
     <div class="footer__bottom">
       <span>© 2026 台勞在德國打工記</span>
-      <button class="footer__cookie-link" onclick="openCookieSettings()">Cookie 設定</button>
+      <button class="footer__cookie-link" id="cookieSettingsBtn">Cookie 設定</button>
     </div>
   </div>
 </footer>

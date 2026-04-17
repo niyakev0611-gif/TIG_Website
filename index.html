@@ -2,8 +2,9 @@
 <html lang="zh-TW">
 <head>
   <meta charset="UTF-8" />
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https://www.google-analytics.com; connect-src 'self' https://www.google-analytics.com https://analytics.google.com; frame-src 'none'; object-src 'none'; base-uri 'self'" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https://www.google-analytics.com; connect-src 'self' https://www.google-analytics.com https://analytics.google.com; frame-src 'none'; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
   <meta name="description" content="台灣人在德國的生活記錄。分享來德生活必辦事項、德國日常、旅行攻略與德語學習。" />
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://taiwanese-in-germany.com/" />
@@ -139,7 +140,7 @@
         </div>
         <div class="fact-item">
           <div class="fact-item__label">Articles</div>
-          <div class="fact-item__value" id="articleCount">12 篇</div>
+          <div class="fact-item__value" id="articleCount">— 篇</div>
         </div>
         <div class="fact-item">
           <div class="fact-item__label">Language</div>
@@ -179,7 +180,7 @@
     <div class="footer__bottom">
       <span>© 2026 台勞在德國打工記</span>
       <span>原站：taiwanese-in-germany.com</span>
-      <button class="footer__cookie-link" onclick="openCookieSettings()">Cookie 設定</button>
+      <button class="footer__cookie-link" id="cookieSettingsBtn">Cookie 設定</button>
     </div>
   </div>
 </footer>

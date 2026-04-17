@@ -103,6 +103,17 @@
     showBanner();
   };
 
+  /* ---------- Wire footer "Cookie 設定" button (CSP-safe) ---------- */
+  function wireCookieSettingsButton() {
+    var btn = document.getElementById('cookieSettingsBtn');
+    if (btn) btn.addEventListener('click', window.openCookieSettings);
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', wireCookieSettingsButton);
+  } else {
+    wireCookieSettingsButton();
+  }
+
   /* ---------- Init ---------- */
   var consent = getConsent();
 
