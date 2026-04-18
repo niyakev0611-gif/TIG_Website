@@ -173,6 +173,13 @@ function sanitizeHTML(html) {
       el.removeAttribute('src');
     }
   });
+  doc.querySelectorAll('a[href]').forEach(function(a) {
+    var href = a.getAttribute('href') || '';
+    if (/^https?:\/\//i.test(href) && !href.startsWith(location.origin)) {
+      a.setAttribute('target', '_blank');
+      a.setAttribute('rel', 'noreferrer noopener');
+    }
+  });
   return doc.body.innerHTML;
 }
 
