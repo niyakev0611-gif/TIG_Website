@@ -333,7 +333,7 @@ const POSTS = [
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p class=""><a href="https://tier.go.link/aph3zbb/?adj_t=aph3zbb&amp;adj_label=eecdae9c-f164-4f57-ab3a-9996da62bd7c">新註冊的可以有5次5折</a><a href="https://tier.go.link/aph3zbb/?adj_t=aph3zbb&amp;adj_label=eecdae9c-f164-4f57-ab3a-9996da62bd7c" target="_blank" rel="noreferrer noopener">的</a><a href="https://tier.go.link/aph3zbb/?adj_t=aph3zbb&amp;adj_label=eecdae9c-f164-4f57-ab3a-9996da62bd7c">優惠</a></p>
+<p class=""><a href="https://tier.go.link/aph3zbb/?adj_t=aph3zbb&amp;adj_label=eecdae9c-f164-4f57-ab3a-9996da62bd7c" target="_blank" rel="noreferrer noopener">新註冊的可以有5次5折的優惠</a></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:heading {"level":4} -->
@@ -341,7 +341,7 @@ const POSTS = [
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p class=""><a href="https://lime.bike/referral_signin/RJY537B">新註冊的有3歐</a><a href="https://lime.bike/referral_signin/RJY537B" target="_blank" rel="noreferrer noopener">現金折扣</a></p>
+<p class=""><a href="https://lime.bike/referral_signin/RJY537B" target="_blank" rel="noreferrer noopener">新註冊的有3歐現金折扣</a></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
@@ -353,7 +353,7 @@ const POSTS = [
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p class=""><a href="https://ts.la/kevin522006">https://ts.la/kevin522006</a> 使用此連結下訂特斯拉可以折扣250歐！！！</p>
+<p class=""><a href="https://ts.la/kevin522006" target="_blank" rel="noreferrer noopener">https://ts.la/kevin522006</a> 使用此連結下訂特斯拉可以折扣250歐！！！</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
@@ -490,7 +490,7 @@ const POSTS = [
 <!-- /wp:buttons -->
 
 <!-- wp:heading {"level":4} -->
-<h4 class="wp-block-heading"><a href="http://wise.com/invite/ih/kevinl2231" target="_blank" rel="noreferrer noopener">Wise</a></h4>
+<h4 class="wp-block-heading"><a href="https://wise.com/invite/ih/kevinl2231" target="_blank" rel="noreferrer noopener">Wise</a></h4>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
@@ -512,11 +512,11 @@ const POSTS = [
 <!-- /wp:heading -->
 
 <!-- wp:heading {"level":4} -->
-<h4 class="wp-block-heading"><a href="http://americanexpress.com/de-de/referral/kEVINL9I5D?XL=MIANS" target="_blank" rel="noreferrer noopener">American Express</a></h4>
+<h4 class="wp-block-heading"><a href="https://americanexpress.com/de-de/referral/kEVINL9I5D?XL=MIANS" target="_blank" rel="noreferrer noopener">American Express</a></h4>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p class="">德國相當有名的Payback信用卡，使用<a href="http://americanexpress.com/de-de/referral/kEVINL9I5D?XL=MIANS" target="_blank" rel="noreferrer noopener">我的</a><a href="http://americanexpress.com/de-de/referral/kEVINL9I5D?XL=MIANS">連結</a>可以再開卡後有1000點的回饋哦！Rewe跟DM都可以用，開通Payback Pay跟善用他們的App常常可以拿到很多點數。點數100點相當於1歐。小缺點是有時候店家不收Amex的信用卡。</p>
+<p class="">德國相當有名的Payback信用卡，使用<a href="https://americanexpress.com/de-de/referral/kEVINL9I5D?XL=MIANS" target="_blank" rel="noreferrer noopener">我的連結</a>可以再開卡後有1000點的回饋哦！Rewe跟DM都可以用，開通Payback Pay跟善用他們的App常常可以拿到很多點數。點數100點相當於1歐。小缺點是有時候店家不收Amex的信用卡。</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:heading {"level":3} -->
@@ -544,15 +544,15 @@ const POSTS = [
 <!-- /wp:heading -->
 
 <!-- wp:heading {"level":4} -->
-<h4 class="wp-block-heading"> <a href="http://aklam.io/gbtu39" target="_blank" rel="noreferrer noopener">DA Versicherung</a></h4>
+<h4 class="wp-block-heading"> <a href="https://aklam.io/gbtu39" target="_blank" rel="noreferrer noopener">DA Versicherung</a></h4>
 <!-- /wp:heading -->
 
 <!-- wp:image {"id":939,"sizeSlug":"large","linkDestination":"custom"} -->
-<figure class="wp-block-image size-large"><a href="http://aklam.io/gbtu39"><img src="assets/images/2023/11/Screen-Shot-2023-11-25-at-5.10.37-PM-1024x460.png" alt="" class="wp-image-939"/></a></figure>
+<figure class="wp-block-image size-large"><a href="https://aklam.io/gbtu39" target="_blank" rel="noreferrer noopener"><img src="assets/images/2023/11/Screen-Shot-2023-11-25-at-5.10.37-PM-1024x460.png" alt="" class="wp-image-939"/></a></figure>
 <!-- /wp:image -->
 
 <!-- wp:paragraph -->
-<p class="">我自己車子的保險就是使用這間DA Versicherung，一開始會用存粹是因為他們家比較便宜(參考上圖，宣稱最高比同業便宜56%)，後來發覺服務也蠻不錯的，有任何問題打客服都有答案。他們現在不只限於汽車的Kfz保險而已，還有牙醫保、寵物險、律師顯、第三方責任險等等，使用<a href="http://aklam.io/gbtu39" target="_blank" rel="noreferrer noopener">我的</a><a href="http://aklam.io/gbtu39">連結</a>可以獲得<strong>20%回饋</strong>*哦！或結帳時輸入我的折扣碼<strong>MWFUKRDN</strong>  *活動只到12/18截止</p>
+<p class="">我自己車子的保險就是使用這間DA Versicherung，一開始會用存粹是因為他們家比較便宜(參考上圖，宣稱最高比同業便宜56%)，後來發覺服務也蠻不錯的，有任何問題打客服都有答案。他們現在不只限於汽車的Kfz保險而已，還有牙醫保、寵物險、律師顯、第三方責任險等等，使用<a href="https://aklam.io/gbtu39" target="_blank" rel="noreferrer noopener">我的連結</a>可以獲得<strong>20%回饋</strong>*哦！或結帳時輸入我的折扣碼<strong>MWFUKRDN</strong>  *活動只到12/18截止</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:heading {"level":4} -->
@@ -560,7 +560,7 @@ const POSTS = [
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p class="">我目前保的第三方責任險就是這間，使用<a href="https://www.hellogetsafe.com/de-de/referral?n=Kevin&amp;r=L9JV-DCBT&amp;s=1" target="_blank" rel="noreferrer noopener">我的</a><a href="https://www.hellogetsafe.com/de-de/referral?n=Kevin&amp;r=L9JV-DCBT&amp;s=1">連結</a>可以獲得15歐回饋金哦！不太會德文的可以選擇英文介面，App/網站的英文都做得非常好！跟艱澀難懂的保險相關德文詞彙說再見～</p>
+<p class="">我目前保的第三方責任險就是這間，使用<a href="https://www.hellogetsafe.com/de-de/referral?n=Kevin&amp;r=L9JV-DCBT&amp;s=1" target="_blank" rel="noreferrer noopener">我的連結</a>可以獲得15歐回饋金哦！不太會德文的可以選擇英文介面，App/網站的英文都做得非常好！跟艱澀難懂的保險相關德文詞彙說再見～</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:image {"id":849,"sizeSlug":"large","linkDestination":"none"} -->
@@ -582,11 +582,11 @@ const POSTS = [
 <!-- /wp:paragraph -->
 
 <!-- wp:heading {"level":3} -->
-<h3 class="wp-block-heading">DSL固網：<a href="http://eazy.de/?invitecode=FG6BKNR8J6" target="_blank" rel="noreferrer noopener">Eazy</a></h3>
+<h3 class="wp-block-heading">DSL固網：<a href="https://eazy.de/?invitecode=FG6BKNR8J6" target="_blank" rel="noreferrer noopener">Eazy</a></h3>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p class=""><a href="http://eazy.de/?invitecode=FG6BKNR8J6" target="_blank" rel="noreferrer noopener">Eazy</a>吃的是Vodafone的網路，手續簡單很多，沒什麼隱藏的費用，而且他們有方案是整整兩年的flat rate，Check24比出來的大部分都是前面六個月很便宜讓你吃點小甜頭，第七個月開始變貴到合約結束，其實平均起來反而沒有比較便宜。他們現在第七個月開始變貴的方案也有贈送Amazon的現金禮卷還有一開始給你的現金回饋！詳情請參照官網。</p>
+<p class=""><a href="https://eazy.de/?invitecode=FG6BKNR8J6" target="_blank" rel="noreferrer noopener">Eazy</a>吃的是Vodafone的網路，手續簡單很多，沒什麼隱藏的費用，而且他們有方案是整整兩年的flat rate，Check24比出來的大部分都是前面六個月很便宜讓你吃點小甜頭，第七個月開始變貴到合約結束，其實平均起來反而沒有比較便宜。他們現在第七個月開始變貴的方案也有贈送Amazon的現金禮卷還有一開始給你的現金回饋！詳情請參照官網。</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
@@ -610,7 +610,7 @@ const POSTS = [
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p class="">Airbnb就不需要我介紹了吧～大家應該都知道了，不過這次是給想當Airbnb Host的優惠，還沒註冊的新朋友想要把自己的空房租出去的獲得23歐元的機會，使用<a href="http://www.airbnb.de/r/klin92">我的</a><a href="http://www.airbnb.de/r/klin92" target="_blank" rel="noreferrer noopener">連結</a>註冊當房東。</p>
+<p class="">Airbnb就不需要我介紹了吧～大家應該都知道了，不過這次是給想當Airbnb Host的優惠，還沒註冊的新朋友想要把自己的空房租出去的獲得23歐元的機會，使用<a href="https://www.airbnb.de/r/klin92" target="_blank" rel="noreferrer noopener">我的連結</a>註冊當房東。</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->`
   },
@@ -701,7 +701,7 @@ const POSTS = [
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p class="">你可以使用智慧型手機上的應用程式，例如<a href="https://www.bahn.de/service/mobile/db-navigator" target="_blank" rel="noreferrer noopener">DB Navigator App</a>、你所在地區交通聯盟的應用程式（斯圖加特為例：<a href="https://www.ssb-ag.de/tickets/ticketkauf-und-beratung/ssb-move-app-mit-bestpreis/">SSB Move App</a> 請看下方例子）或是第三方的軟體App（Freenow, DeutschlandCard），購買 Deutschland Ticket。你也可以在網站<a href="http://Bahn.de">bahn.de</a>上使用電腦、平板或手機進行線上購買 Deutschland Ticket。以下用<a href="https://www.bahn.de/service/mobile/db-navigator" target="_blank" rel="noreferrer noopener">DB Navigator App</a>為範例。<strong>個人是認為第三方的程式退訂閱的方式比DB來得更方便一點，可以算是一鍵解除，而且付款方式也不會指定超難用的Lastschrift</strong>，<strong>所以其實比較推薦用<a href="https://m.free-now.com/JGMc/7m2aym3b" target="_blank" rel="noreferrer noopener">Freenow</a></strong>或<strong><a href="https://www.ssb-ag.de/tickets/ticketkauf-und-beratung/ssb-move-app-mit-bestpreis/">SSB Move App</a>來買票，不住在德國的遊客也無法使用Lastschrift！</strong><br><a href="post.html?slug=deutschland-ticket#用SSB_Move_App來訂票">點這裡直接看如何用SSB訂票跟解約</a> </p>
+<p class="">你可以使用智慧型手機上的應用程式，例如<a href="https://www.bahn.de/service/mobile/db-navigator" target="_blank" rel="noreferrer noopener">DB Navigator App</a>、你所在地區交通聯盟的應用程式（斯圖加特為例：<a href="https://www.ssb-ag.de/tickets/ticketkauf-und-beratung/ssb-move-app-mit-bestpreis/" target="_blank" rel="noreferrer noopener">SSB Move App</a> 請看下方例子）或是第三方的軟體App（Freenow, DeutschlandCard），購買 Deutschland Ticket。你也可以在網站<a href="https://bahn.de" target="_blank" rel="noreferrer noopener">bahn.de</a>上使用電腦、平板或手機進行線上購買 Deutschland Ticket。以下用<a href="https://www.bahn.de/service/mobile/db-navigator" target="_blank" rel="noreferrer noopener">DB Navigator App</a>為範例。<strong>個人是認為第三方的程式退訂閱的方式比DB來得更方便一點，可以算是一鍵解除，而且付款方式也不會指定超難用的Lastschrift</strong>，<strong>所以其實比較推薦用<a href="https://m.free-now.com/JGMc/7m2aym3b" target="_blank" rel="noreferrer noopener">Freenow</a></strong>或<strong><a href="https://www.ssb-ag.de/tickets/ticketkauf-und-beratung/ssb-move-app-mit-bestpreis/" target="_blank" rel="noreferrer noopener">SSB Move App</a>來買票，不住在德國的遊客也無法使用Lastschrift！</strong><br><a href="post.html?slug=deutschland-ticket#用SSB_Move_App來訂票">點這裡直接看如何用SSB訂票跟解約</a> </p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
@@ -881,7 +881,7 @@ const POSTS = [
 <!-- /wp:image -->
 
 <!-- wp:heading -->
-<h2 class="wp-block-heading">用<a href="https://www.ssb-ag.de/tickets/ticketkauf-und-beratung/ssb-move-app-mit-bestpreis/">SSB Move App</a>來訂票</h2>
+<h2 class="wp-block-heading">用<a href="https://www.ssb-ag.de/tickets/ticketkauf-und-beratung/ssb-move-app-mit-bestpreis/" target="_blank" rel="noreferrer noopener">SSB Move App</a>來訂票</h2>
 <!-- /wp:heading -->
 
 <!-- wp:heading {"level":3} -->
@@ -889,7 +889,7 @@ const POSTS = [
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p class="">先下載<a href="https://www.ssb-ag.de/tickets/ticketkauf-und-beratung/ssb-move-app-mit-bestpreis/">SSB Move App</a>，開啟後選擇Ticket 裡面的 Deutschland Ticket</p>
+<p class="">先下載<a href="https://www.ssb-ag.de/tickets/ticketkauf-und-beratung/ssb-move-app-mit-bestpreis/" target="_blank" rel="noreferrer noopener">SSB Move App</a>，開啟後選擇Ticket 裡面的 Deutschland Ticket</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:image {"align":"center","id":900,"width":"386px","height":"835px","sizeSlug":"large","linkDestination":"none"} -->
@@ -1699,7 +1699,7 @@ const POSTS = [
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li class="">新客戶需要同意接收廣告郵件和電話。在開戶過程中或之後的3個月內在商業銀行分行或在網站 <a href="http://www.commerzbank.de/einwilligungen">www.commerzbank.de/einwilligungen</a> 中進行點選同意，並且至少3個月內不得撤回（取消同意）</li>
+<li class="">新客戶需要同意接收廣告郵件和電話。在開戶過程中或之後的3個月內在商業銀行分行或在網站 <a href="https://www.commerzbank.de/einwilligungen" target="_blank" rel="noreferrer noopener">www.commerzbank.de/einwilligungen</a> 中進行點選同意，並且至少3個月內不得撤回（取消同意）</li>
 <!-- /wp:list-item --></ol>
 <!-- /wp:list -->
 
@@ -2379,7 +2379,7 @@ const POSTS = [
 
 <!-- wp:list {"ordered":true,"textColor":"foreground"} -->
 <ol class="has-foreground-color has-text-color"><!-- wp:list-item -->
-<li>首先先上<a href="http://deutsche-rentenversicherung.de/DRV/DE/Home/home_node.html" target="_blank" rel="noreferrer noopener">德國養老退休金的官方網站（點我！我是</a><a href="http://deutsche-rentenversicherung.de/DRV/DE/Home/home_node.html">超連結）</a></li>
+<li>首先先上<a href="https://deutsche-rentenversicherung.de/DRV/DE/Home/home_node.html" target="_blank" rel="noreferrer noopener">德國養老退休金的官方網站（點我！我是超連結）</a></li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
