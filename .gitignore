@@ -24,6 +24,9 @@ import_comments.py
 # Development notes
 Web Design CLAUDE.md
 
+# Private planning documents
+*.csv
+
 # Node (if ever added)
 node_modules/
 package-lock.json
