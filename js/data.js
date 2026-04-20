@@ -4,14 +4,25 @@
 const POSTS = [
   {
     slug: 'weekly-digest-w12-w16',
-    title: '德國知識小種子 W12–W16 週報精選',
+    title: '德國知識小種子週報精選',
     date: '2026-04-20',
     categories: ['德國時事'],
     tags: ['週報', '德國政策', '時事'],
-    excerpt: '2026 年 W12 至 W16，德國選舉、BER罷工、油價飆升、四月新規、企業補助、兵役爭議等重大事件整理。',
+    excerpt: '德國選舉CDU大勝、BER機場停擺、油價飆升、法蘭克福T3啟用、企業紓困金€1000、梅爾茨民調崩盤——五週重大時事一次整理。',
     emoji: '🌱',
     content: `
-<h2>W16（4月13–19日）</h2>
+<nav class="post-toc" aria-label="本篇目錄">
+  <p class="post-toc__title">快速跳轉</p>
+  <ul>
+    <li><a href="#apr13-19">4月13–19日：油稅減免、梅爾茨民調崩盤</a></li>
+    <li><a href="#apr6-12">4月6–12日：衰退警報、通膨新高、廢核大逆轉</a></li>
+    <li><a href="#mar30-apr5">3月30日–4月5日：油價新高、機場T3啟用</a></li>
+    <li><a href="#mar23-29">3月23–29日：罷工落幕、Bundestag三法通過</a></li>
+    <li><a href="#mar16-22">3月16–22日：RLP選舉CDU大勝、BER機場停擺</a></li>
+  </ul>
+</nav>
+
+<h2 id="apr13-19">4月13–19日：油稅減免、梅爾茨民調崩盤</h2>
 <p>這週黑紅聯盟一連推出兩大民生紓困包、國防部長上演戲劇性政策大逆轉、漢莎再爆勞資衝突，油價與通膨同步失守，Merz 民調更跌到歷史谷底——以下是一週完整回顧。</p>
 
 <img src="assets/images/2026/weekly/W16_圖卡1_油稅減免.png" alt="德國油稅減免方案">
@@ -40,7 +51,7 @@ const POSTS = [
 
 <hr>
 
-<h2>W15（4月6–12日）</h2>
+<h2 id="apr6-12">4月6–12日：衰退警報、通膨新高、廢核大逆轉</h2>
 <p>這一週的德國，充滿了「危」與「轉」的氣氛。經濟數據令人擔憂、物價讓人頭痛、能源政策又在大翻轉。</p>
 
 <img src="assets/images/2026/weekly/W15_圖卡1_經濟衰退.png" alt="德國經濟衰退警報">
@@ -57,7 +68,7 @@ const POSTS = [
 
 <hr>
 
-<h2>W14（3月30日–4月5日）</h2>
+<h2 id="mar30-apr5">3月30日–4月5日：油價新高、機場T3啟用</h2>
 
 <img src="assets/images/2026/weekly/W14_圖卡1_油價飆升.png" alt="德國油價飆升創歷史新高">
 <h3>油價飆升創歷史新高</h3>
@@ -80,7 +91,7 @@ const POSTS = [
 
 <hr>
 
-<h2>W13（3月23–29日）</h2>
+<h2 id="mar23-29">3月23–29日：罷工落幕、Bundestag三法通過</h2>
 
 <img src="assets/images/2026/weekly/W13_圖卡1_油價飛漲.png" alt="德國油價飛漲Diesel創近年新高">
 <h3>油價警報：Diesel 創近年新高 2.31 EUR</h3>
@@ -104,7 +115,7 @@ const POSTS = [
 
 <hr>
 
-<h2>W12（3月16–22日）</h2>
+<h2 id="mar16-22">3月16–22日：RLP選舉CDU大勝、BER機場停擺</h2>
 
 <img src="assets/images/2026/weekly/W12_圖卡1_RLP選舉.png" alt="萊茵蘭-普法茲邦議會選舉CDU大勝">
 <h3>萊茵蘭-普法茲邦（Rheinland-Pfalz）選舉結果</h3>

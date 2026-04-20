@@ -10,6 +10,7 @@
     const results = document.getElementById('searchResults');
     const openBtn = document.getElementById('searchBtn');
     const closeBtn = document.getElementById('searchClose');
+    const sidebar = document.getElementById('sidebar');
 
     if (!overlay || !input) return;
 
@@ -24,6 +25,7 @@
 
     function open() {
       overlay.classList.add('open');
+      sidebar?.classList.add('search-open');
       input.value = '';
       results.innerHTML = hint();
       setTimeout(() => input.focus(), 50);
@@ -31,6 +33,7 @@
 
     function close() {
       overlay.classList.remove('open');
+      sidebar?.classList.remove('search-open');
       input.blur();
     }
 
