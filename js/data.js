@@ -335,7 +335,7 @@ const POSTS = [
 `
   },
   {
-    slug: 'weekly-digest-w12-w19',
+    slug: 'weekly-digest',
     title: '德國知識小種子週報精選',
     date: '2026-05-11',
     categories: ['德國時事'],
