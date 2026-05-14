@@ -335,17 +335,18 @@ const POSTS = [
 `
   },
   {
-    slug: 'weekly-digest-w12-w17',
+    slug: 'weekly-digest-w12-w19',
     title: '德國知識小種子週報精選',
-    date: '2026-04-27',
+    date: '2026-05-10',
     categories: ['德國時事'],
     tags: ['週報', '德國政策', '時事'],
-    excerpt: 'GDP預測腰斬、德國首份軍事戰略、EU-Mercosur自貿協定生效、退休金與通勤津貼新制、油稅減免、法蘭克福T3啟用、梅爾茨民調崩盤——六週重大時事一次整理。',
+    excerpt: 'Merz政府滿週年民調創新低、AfD首次登頂、霍爾木茲海峽危機推升油價、Tankrabatt減稅救急、4月企業破產創20年新高——加上前幾週重大時事一次整理。',
     emoji: '🌱',
     content: `
 <nav class="post-toc" aria-label="本篇目錄">
   <p class="post-toc__title">快速跳轉</p>
   <ul>
+    <li><a href="#may4-10">5月4–10日：Merz政府滿週年、油價衝擊、破產潮新高</a></li>
     <li><a href="#apr20-26">4月20–26日：GDP腰斬、德國首份軍事戰略、Mercosur生效</a></li>
     <li><a href="#apr13-19">4月13–19日：油稅減免、梅爾茨民調崩盤</a></li>
     <li><a href="#apr6-12">4月6–12日：衰退警報、通膨新高、廢核大逆轉</a></li>
@@ -354,6 +355,23 @@ const POSTS = [
     <li><a href="#mar16-22">3月16–22日：RLP選舉CDU大勝、BER機場停擺</a></li>
   </ul>
 </nav>
+
+<h2 id="may4-10">5月4–10日：Merz政府滿週年、油價衝擊、破產潮新高</h2>
+<p>本週是 Merz 黑紅聯盟上任滿一週年的關鍵節點：民調創歷史新低、AfD 首度在 ARD Deutschlandtrend 登上第一大黨；伊朗戰爭引發的霍爾木茲海峽封鎖讓 Brent 原油 5 月初飆破 USD 114，5/10 法蘭克福、慕尼黑、柏林三大機場累計 489 班延誤；4 月企業破產衝上 1,776 件，創 20 年新高。</p>
+
+<img src="assets/images/2026/weekly/W19_圖卡1_Merz政府週年.png" alt="Merz政府滿週年民調創新低AfD首度登頂">
+<h3>Merz 政府滿週年 民調創新低、AfD 首次登頂</h3>
+<p>黑紅聯盟 5/6 上任滿一週年，ZDF Politbarometer 5/I 顯示 <strong>69% 民眾不滿意</strong>、僅 26% 滿意——是上任以來最差。Merz 個人正面評價從一年前的 47% 腰斬到 <strong>28%</strong>、68% 給予不及格。比 Ampel 紅綠燈聯盟與 Scholz 同期還難看。ARD Deutschlandtrend（Infratest dimap）首次出現 AfD 以 <strong>27%（+2）</strong>登頂第一大黨，CDU/CSU 跌至第二；INSA 民調 AfD 27.5%、聯盟黨 24%、SPD 14%、Grüne 13%、Linke 11%。對聯盟撐到 2029 的信心從 3 月 66% 降到 47%，<strong>48% 民眾預期聯盟提前瓦解</strong>。57% 表示政府在任何政策領域都未能說服自己。ZDFheute 標題「比 Scholz 還難看」；Junge Freiheit 評論「這是執政週年，還是訃聞？」；Pravda Deutschland 以「改革停滯、爭吵不斷、支持率下滑」總結。</p>
+
+<img src="assets/images/2026/weekly/W19_圖卡2_伊朗戰爭油價.png" alt="伊朗戰爭油價衝擊Tankrabatt減稅救急">
+<h3>伊朗戰爭油價衝擊 Tankrabatt 減稅救急</h3>
+<p>霍爾木茲海峽封鎖效應持續發酵，<strong>Brent 原油 5 月初飆破 USD 114/桶</strong>，IEA 形容為「全球石油市場史上最大供應中斷」。4 月通膨年增 <strong>2.9%</strong>、能源價格年增 <strong>10.1%</strong>。政府 5/1-6/30 降油稅每公升 17 Cent（含 VAT），財政成本約 16 億歐元。但 Bundeskartellamt 與 ADAC 同聲批評油商沒把優惠完整轉嫁——實際 Super E10 只降 10.9 Cent、柴油只降 11.1 Cent，差價被油商默默吞下。<strong>5/10 法蘭克福 + 慕尼黑 + 柏林布蘭登堡三大機場累計 489 班次延誤、10 班取消</strong>。taz 評論 Tankrabatt 是「回頭路且可能無效」、批 Ampel 時期已證明失敗的舊招重演；Handelsblatt 揭露「加油站只部分轉嫁稅金優惠」；Clean Energy Wire 批「目標瞄得不準、富人受惠多」。雇主可選擇發放最高 €1,000 免稅紓困獎金（自願，不強制），勞工社群則質疑「老闆會給才有鬼」。</p>
+
+<img src="assets/images/2026/weekly/W19_圖卡3_企業破產潮.png" alt="德國企業破產潮創20年新高">
+<h3>企業破產潮創 20 年新高 連健康企業都撐不住</h3>
+<p>IWH Halle（哈勒經研所）數據：<strong>4 月企業破產 1,776 件，創 20 年新高</strong>；Q1 累計 4,573 件；2 月已比 2016-2019 平均高出 58%。Creditreform 警告：「<strong>不再只是體質弱的公司倒，健康企業也撐不住了</strong>」。DATEV CEO 預期 2026 全年破產將創紀錄；Tichys Einblick 推估全年恐達 30,000 件，逼近 2008 金融危機的 32,000 件。重災區產業：<strong>汽車零組件業</strong>（電動車轉型 + 中國競爭夾擊）、<strong>能源密集產業</strong>（高電價長期吞噬利潤）、<strong>中小製造業</strong>。Handelsblatt 標題〈結構性崩潰——專家預期大型破產案創紀錄〉；Table.Briefings 警告「破產海嘯襲來」、呼籲現在就動手。IWH Halle 歸納四大主因：世界貿易疲弱、地緣政治風險、極高能源成本（伊朗戰爭推升油氣價）、柏林與布魯塞爾過度監管。<strong>在德找工作的台灣朋友提醒</strong>：避開重災區產業、留意所在公司財報新聞，特別是中小型供應商。</p>
+
+<hr>
 
 <h2 id="apr20-26">4月20–26日：GDP腰斬、德國首份軍事戰略、Mercosur生效</h2>
 <p>本週德國經濟、政治、外交三線同時出大事：六大研究機構把2026 GDP預測再砍一半，國防部長 Pistorius 公布建國以來第一份正式軍事戰略，EU-Mercosur 自貿協定 5/1 暫時生效；同時退休金、Bürgergeld、通勤津貼、儲氣費補貼、電商退款按鈕等多項民生新制陸續上路。</p>
