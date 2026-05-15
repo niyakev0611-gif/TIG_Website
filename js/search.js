@@ -50,7 +50,7 @@
       if (!matched.length) { results.innerHTML = ''; return; }
 
       results.innerHTML = matched.map(p => `
-        <a class="search-result" href="post.html?slug=${p.slug}">
+        <a class="search-result" href="/posts/${p.slug}.html">
           <div class="search-result__emoji">${p.emoji}</div>
           <div class="search-result__body">
             <div class="search-result__title">${highlight(p.title, q)}</div>
