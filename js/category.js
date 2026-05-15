@@ -149,7 +149,7 @@ function renderPosts(activeCat) {
 function createPostCard(post, index) {
   const a = document.createElement('a');
   a.className = 'post-card';
-  a.href = `post.html?slug=${post.slug}`;
+  a.href = `/posts/${post.slug}.html`;
   a.dataset.delay = index * 60;
 
   const firstCat = post.categories[0] || '';
@@ -177,7 +177,7 @@ function renderFooterLinks() {
   POSTS.slice(0, 5).forEach(post => {
     const li = document.createElement('li');
     const a  = document.createElement('a');
-    a.href = `post.html?slug=${post.slug}`;
+    a.href = `/posts/${post.slug}.html`;
     a.className = 'footer__link';
     a.textContent = post.title.length > 22 ? post.title.slice(0, 22) + '…' : post.title;
     li.appendChild(a);
