@@ -1,8 +1,8 @@
 """Weekly newsletter cards for 德國知識小種子, W21 (May 18-22, 2026).
 Three fresh topics specific to this week (avoiding overlap with W12-W19):
   1) 5/21 Bundestag passes aviation tax cut
-  2) 5/19 Merkel receives first European Order of Merit in Strasbourg
-  3) Northern Germany ÖPNV strikes + Lufthansa policy push (5/19-21)
+  2) 5/20 SC Freiburg loses 0-3 to Aston Villa in Europa League final
+  3) 5/19 E-Auto purchase subsidy opens for online application at BAFA
 """
 from PIL import Image, ImageDraw, ImageFont
 import os
@@ -192,7 +192,6 @@ def build_card(filename, category_zh, category_de, accent, accent_tint,
         draw_mixed(d, ((inner_l + inner_r) // 2, y + 22),
                    highlight["label_top"], 22, TEXT_GREY, anchor="center")
         if highlight.get("single"):
-            # auto-fit value font size so it fits within the box
             avail = inner_r - inner_l - 80
             size = 82
             while size > 32 and measure_mixed(d, highlight["value"], size) > avail:
@@ -254,7 +253,7 @@ def build_card(filename, category_zh, category_de, accent, accent_tint,
     return path
 
 
-# ---------- Card 1: Aviation tax cut (genuinely new this week) ----------
+# ---------- Card 1: Aviation tax cut (5/21 Bundestag) ----------
 build_card(
     filename="W21_圖卡1_機票稅調降.png",
     category_zh="政策", category_de="Politik",
@@ -277,50 +276,50 @@ build_card(
     footer_date="2026.05.18 — 05.22",
 )
 
-# ---------- Card 2: Merkel European Order of Merit (5/19) ----------
+# ---------- Card 2: SC Freiburg Europa League final loss (5/20) ----------
 build_card(
-    filename="W21_圖卡2_梅克爾歐洲勳章.png",
-    category_zh="文化", category_de="Kultur",
-    accent=PALETTE["purple"], accent_tint=TINT["purple"],
-    title="梅克爾獲頒首屆歐洲功勳勳章",
-    subtitle="5/19 斯特拉斯堡受勳｜與華勒沙、澤倫斯基同列首批得主",
+    filename="W21_圖卡2_Freiburg歐霸盃決賽.png",
+    category_zh="體育", category_de="Sport",
+    accent=PALETTE["red"], accent_tint=TINT["red"],
+    title="Freiburg 寫歷史卻惜敗  歐霸盃決賽 0:3 不敵 Aston Villa",
+    subtitle="5/20 伊斯坦堡｜德甲球隊生涯首次踢進歐洲決賽",
     highlight={
         "single": True,
-        "label_top": "Europäischer Verdienstorden｜2026 首屆三位得主",
-        "value": "Merkel · Wałęsa · Zelensky",
-        "sub": "表彰對歐洲一體化與民主價值的傑出貢獻",
-        "tint": TINT["purple"],
+        "label_top": "UEFA Europa League Final｜Beşiktaş Park",
+        "value": "0 : 3",
+        "sub": "2026/05/20 21:00 CET｜伊斯坦堡 · 雙方首次歐霸盃決賽",
+        "tint": TINT["red"],
     },
     stats=[
-        ("purple", "5/19",   "斯特拉斯堡受勳",    "於歐洲議會全會大廳舉行授勳典禮"),
-        ("blue",   "16 年",  "前總理任期",       "2005-2021，史上首位東德出身總理"),
-        ("teal",   "演講",   "呼籲規範社群媒體", "強調對和平、繁榮、民主的承諾"),
-        ("orange", "三人",   "獲獎者背景多元",   "前總理／團結工聯領袖／戰時烏克蘭總統"),
+        ("red",    "41′",    "Tielemans 開局轉折",  "短角球配合 Rogers 後禁區內凌空抽射破門"),
+        ("red",    "45+3′",  "Buendía 半場前致命",  "禁區邊緣弧線球，打進左上死角擴大領先"),
+        ("red",    "58′",    "Rogers 鎖定勝局",     "第三球終結懸念，引爆 Villa 球迷狂歡"),
+        ("orange", "44 年",  "Aston Villa 終於登頂", "自 1982 歐冠以來首座歐洲獎盃，首奪歐霸盃"),
     ],
     footer_date="2026.05.18 — 05.22",
 )
 
-# ---------- Card 3: Strike wave & Lufthansa policy push (life reminder) ----------
+# ---------- Card 3: E-Auto purchase subsidy opens (5/19 BAFA) ----------
 build_card(
-    filename="W21_圖卡3_本週交通提醒.png",
-    category_zh="生活", category_de="Leben",
-    accent=PALETTE["orange"], accent_tint=TINT["orange"],
-    title="本週德國交通三件大事  在德生活提醒",
-    subtitle="北德 ÖPNV 罷工持續｜Lufthansa 政策呼籲限制罷工權",
+    filename="W21_圖卡3_電動車補助開放.png",
+    category_zh="補助", category_de="Förderung",
+    accent=PALETTE["green"], accent_tint=TINT["green"],
+    title="E-Auto 購車補助 5/19 起開放申請",
+    subtitle="BAFA 線上受理｜最高 €6,000，家庭年所得 €80,000 以下可申請",
     highlight={
-        "label_top": "ver.di 北德公共運輸罷工｜5/19-21",
-        "value_left": "Göttingen",
-        "label_left": "5/19-20 公車電車停擺",
-        "value_right": "Hannover",
-        "label_right": "5/20-21 ÜSTRA + Regiobus",
-        "middle": "＋",
-        "tint": TINT["orange"],
+        "label_top": "Elektroauto-Kaufprämie 2026｜BAFA 補助方案",
+        "value_left": "€6,000",
+        "label_left": "依收入最高補助",
+        "value_right": "30 億 €",
+        "label_right": "總預算 ≈ 80 萬輛車",
+        "middle": "／",
+        "tint": TINT["green"],
     },
     stats=[
-        ("orange", "下薩克森", "ÖPNV 罷工最後堡壘", "全國多數已達協議，僅 Niedersachsen 仍在抗爭"),
-        ("blue",   "5/20",   "Lufthansa 政策呼籲", "要求政府立法限制「關鍵基礎建設」罷工權"),
-        ("red",    "2 萬班", "CityLine 關閉影響",  "4 月關閉的支線子公司，10 月前短程航班持續取消"),
-        ("teal",   "5/21",   "EU 春季預測加重",   "布魯塞爾將德 GDP 從 1.2% 砍至 0.6%（背景參考）"),
+        ("green",  "€80,000",  "家庭年所得上限",   "每多 1 個孩子寬限 +€5,000，最高 €90,000"),
+        ("teal",   "2026/1/1", "回溯適用",         "今年初首次在德國登記的純電車皆可申請"),
+        ("orange", "36 個月",  "強制持有期",       "申請後須持有滿 3 年，違者須返還補助"),
+        ("purple", "線上申請", "foerderzentrale.gov.de", "申請流程全數位化；僅私人 PKW 適用，二手車不支援"),
     ],
     footer_date="2026.05.18 — 05.22",
 )
