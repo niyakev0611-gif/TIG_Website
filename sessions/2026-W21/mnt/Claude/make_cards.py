@@ -1,4 +1,9 @@
-"""Weekly newsletter cards for 德國知識小種子, Week 21 (May 18-22, 2026)."""
+"""Weekly newsletter cards for 德國知識小種子, W21 (May 18-22, 2026).
+Three fresh topics specific to this week (avoiding overlap with W12-W19):
+  1) 5/21 Bundestag passes aviation tax cut
+  2) 5/19 Merkel receives first European Order of Merit in Strasbourg
+  3) Northern Germany ÖPNV strikes + Lufthansa policy push (5/19-21)
+"""
 from PIL import Image, ImageDraw, ImageFont
 import os
 
@@ -10,9 +15,9 @@ LATIN_FONT = "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf"
 BG = "#F8F6F2"
 CARD = "#FFFFFF"
 BORDER = "#E8E4DE"
-TEXT_DARK = "#222222"
-TEXT_GREY = "#555555"
-TEXT_LIGHT = "#888888"
+TEXT_DARK = "#1F2937"
+TEXT_GREY = "#6B7280"
+TEXT_LIGHT = "#9CA3AF"
 
 PALETTE = {
     "green":  "#2E8B57",
@@ -22,6 +27,15 @@ PALETTE = {
     "purple": "#7C3AED",
     "teal":   "#0D9488",
 }
+TINT = {
+    "red":    "#FDECEC",
+    "orange": "#FDF3E7",
+    "blue":   "#E8EFFD",
+    "teal":   "#E2F2F0",
+    "green":  "#E6F1EB",
+    "purple": "#EFE7FD",
+    "neutral":"#F1F2F6",
+}
 
 W, H = 1080, 1080
 
@@ -30,7 +44,6 @@ def is_cjk(ch: str) -> bool:
     if not ch:
         return False
     o = ord(ch)
-    # CJK Unified, Compat, Extension A, Hiragana/Katakana, Hangul, Fullwidth forms, CJK punct
     return (
         0x3000 <= o <= 0x303F or
         0x3040 <= o <= 0x30FF or
@@ -43,9 +56,25 @@ def is_cjk(ch: str) -> bool:
 
 
 def load_fonts(size):
-    cjk = ImageFont.truetype(CJK_FONT, size)
-    lat = ImageFont.truetype(LATIN_FONT, size)
-    return cjk, lat
+    return ImageFont.truetype(CJK_FONT, size), ImageFont.truetype(LATIN_FONT, size)
+
+
+def split_runs(text):
+    runs = []
+    if not text:
+        return runs
+    cur = text[0]
+    cur_is = is_cjk(cur)
+    for ch in text[1:]:
+        c = is_cjk(ch)
+        if c == cur_is:
+            cur += ch
+        else:
+            runs.append((cur_is, cur))
+            cur = ch
+            cur_is = c
+    runs.append((cur_is, cur))
+    return runs
 
 
 def measure_run(draw, text, font):
@@ -53,67 +82,36 @@ def measure_run(draw, text, font):
     return bbox[2] - bbox[0]
 
 
-def split_runs(text):
-    """Split text into runs of [(is_cjk, substring)] for font switching."""
-    runs = []
-    if not text:
-        return runs
-    cur = text[0]
-    cur_is_cjk = is_cjk(cur)
-    for ch in text[1:]:
-        ch_is_cjk = is_cjk(ch)
-        if ch_is_cjk == cur_is_cjk:
-            cur += ch
-        else:
-            runs.append((cur_is_cjk, cur))
-            cur = ch
-            cur_is_cjk = ch_is_cjk
-    runs.append((cur_is_cjk, cur))
-    return runs
+def measure_mixed(draw, text, size):
+    cjk_f, lat_f = load_fonts(size)
+    return sum(measure_run(draw, t, cjk_f if c else lat_f) for c, t in split_runs(text))
 
 
 def draw_mixed(draw, xy, text, size, color, anchor="left"):
-    """Draw mixed CJK/Latin text. anchor: 'left', 'center', 'right'."""
-    cjk_font, lat_font = load_fonts(size)
+    cjk_f, lat_f = load_fonts(size)
     runs = split_runs(text)
-    total_w = sum(measure_run(draw, t, cjk_font if c else lat_font) for c, t in runs)
-
+    total = sum(measure_run(draw, t, cjk_f if c else lat_f) for c, t in runs)
     x, y = xy
     if anchor == "center":
-        x -= total_w // 2
+        x -= total // 2
     elif anchor == "right":
-        x -= total_w
-
-    for is_cjk_run, t in runs:
-        f = cjk_font if is_cjk_run else lat_font
+        x -= total
+    for c, t in runs:
+        f = cjk_f if c else lat_f
         draw.text((x, y), t, font=f, fill=color)
         x += measure_run(draw, t, f)
-    return total_w
+    return total
 
 
-def measure_mixed(draw, text, size):
-    cjk_font, lat_font = load_fonts(size)
-    runs = split_runs(text)
-    return sum(measure_run(draw, t, cjk_font if c else lat_font) for c, t in runs)
-
-
-def wrap_mixed(draw, text, size, max_width):
-    """Word-wrap mixed CJK/Latin text to a pixel width. CJK breaks per-char;
-    Latin breaks on spaces."""
-    cjk_font, lat_font = load_fonts(size)
-
-    # Tokenize: CJK chars are individual tokens; Latin words+spaces stick together
+def wrap_mixed(draw, text, size, max_w):
     tokens = []
     buf = ""
-    buf_is_cjk = None
     for ch in text:
-        c = is_cjk(ch)
-        if c:
+        if is_cjk(ch):
             if buf:
                 tokens.append(buf)
                 buf = ""
             tokens.append(ch)
-            buf_is_cjk = None
         else:
             if ch == " " and buf:
                 tokens.append(buf)
@@ -123,13 +121,11 @@ def wrap_mixed(draw, text, size, max_width):
                 buf += ch
     if buf:
         tokens.append(buf)
-
-    lines = []
-    line = ""
+    lines, line = [], ""
     for tok in tokens:
-        candidate = line + tok
-        if measure_mixed(draw, candidate, size) <= max_width:
-            line = candidate
+        cand = line + tok
+        if measure_mixed(draw, cand, size) <= max_w:
+            line = cand
         else:
             if line.strip():
                 lines.append(line.rstrip())
@@ -139,81 +135,118 @@ def wrap_mixed(draw, text, size, max_width):
     return lines
 
 
-def rounded_rect(draw, box, radius, fill=None, outline=None, width=1):
-    draw.rounded_rectangle(box, radius=radius, fill=fill, outline=outline, width=width)
+def rounded(draw, box, r, fill=None, outline=None, width=1):
+    draw.rounded_rectangle(box, radius=r, fill=fill, outline=outline, width=width)
 
 
-def make_card(filename, category, badge_color, title, headline, headline_color,
-              bullets, footer_note):
+def build_card(filename, category_zh, category_de, accent, accent_tint,
+               title, subtitle, highlight, stats, footer_date):
     img = Image.new("RGB", (W, H), BG)
-    draw = ImageDraw.Draw(img)
+    d = ImageDraw.Draw(img)
 
-    # Top color bar
-    draw.rectangle([0, 0, W, 12], fill=badge_color)
+    # Badge & brand
+    top_y = 50
+    badge_pad_x = 22
+    badge_h = 56
+    badge_text = f"{category_zh} {category_de}"
+    bw = measure_mixed(d, badge_text, 26) + badge_pad_x * 2
+    bx = 70
+    rounded(d, [bx, top_y, bx + bw, top_y + badge_h], badge_h // 2,
+            fill=accent_tint, outline=None)
+    draw_mixed(d, (bx + bw // 2, top_y + (badge_h - 32) // 2),
+               badge_text, 26, accent, anchor="center")
+    draw_mixed(d, (W - 70, top_y + (badge_h - 24) // 2),
+               "德國知識小種子", 24, TEXT_GREY, anchor="right")
 
     # Main card
-    margin = 50
-    card_box = [margin, 60, W - margin, H - 80]
-    rounded_rect(draw, card_box, 24, fill=CARD, outline=BORDER, width=2)
+    card_top = top_y + badge_h + 30
+    card_box = [40, card_top, W - 40, H - 60]
+    rounded(d, card_box, 28, fill=CARD, outline=BORDER, width=2)
 
-    # Category badge
-    bx, by = margin + 40, 100
-    badge_text = category
-    bw = measure_mixed(draw, badge_text, 26) + 36
-    bh = 44
-    rounded_rect(draw, [bx, by, bx + bw, by + bh], 22, fill=badge_color)
-    draw_mixed(draw, (bx + bw // 2, by + 7), badge_text, 26, "#FFFFFF", anchor="center")
+    inner_l = 80
+    inner_r = W - 80
+    inner_w = inner_r - inner_l
+    y = card_top + 56
 
-    # Brand top-right
-    brand_y = by + 12
-    draw_mixed(draw, (W - margin - 40, brand_y), "德國知識小種子", 22, TEXT_LIGHT, anchor="right")
-
-    # Title (large, mixed)
-    tx = margin + 40
-    ty = by + bh + 30
-    title_lines = wrap_mixed(draw, title, 44, W - 2 * margin - 80)
+    # Title
+    title_size = 52
+    title_lines = wrap_mixed(d, title, title_size, inner_w)
     for ln in title_lines:
-        draw_mixed(draw, (tx, ty), ln, 44, TEXT_DARK)
-        ty += 56
-    ty += 10
+        draw_mixed(d, (inner_l, y), ln, title_size, TEXT_DARK)
+        y += 68
 
-    # Divider
-    draw.line([(tx, ty), (W - margin - 40, ty)], fill=BORDER, width=2)
-    ty += 30
+    # Subtitle
+    if subtitle:
+        y += 4
+        sub_lines = wrap_mixed(d, subtitle, 24, inner_w)
+        for ln in sub_lines:
+            draw_mixed(d, (inner_l, y), ln, 24, TEXT_GREY)
+            y += 34
+    y += 28
 
-    # Headline (big highlighted number/phrase)
-    if headline:
-        head_lines = wrap_mixed(draw, headline, 60, W - 2 * margin - 80)
-        for ln in head_lines:
-            draw_mixed(draw, (tx, ty), ln, 60, headline_color)
-            ty += 76
-        ty += 18
+    # Highlight box
+    if highlight:
+        box_h = 200
+        hl_tint = highlight.get("tint", accent_tint)
+        rounded(d, [inner_l, y, inner_r, y + box_h], 18, fill=hl_tint)
+        draw_mixed(d, ((inner_l + inner_r) // 2, y + 22),
+                   highlight["label_top"], 22, TEXT_GREY, anchor="center")
+        if highlight.get("single"):
+            # auto-fit value font size so it fits within the box
+            avail = inner_r - inner_l - 80
+            size = 82
+            while size > 32 and measure_mixed(d, highlight["value"], size) > avail:
+                size -= 2
+            draw_mixed(d, ((inner_l + inner_r) // 2, y + 60 + (82 - size) // 2),
+                       highlight["value"], size, accent, anchor="center")
+            if highlight.get("sub"):
+                draw_mixed(d, ((inner_l + inner_r) // 2, y + 160),
+                           highlight["sub"], 22, TEXT_GREY, anchor="center")
+        else:
+            mid_x = (inner_l + inner_r) // 2
+            cl_x = (inner_l + mid_x) // 2
+            cr_x = (mid_x + inner_r) // 2
+            draw_mixed(d, (cl_x, y + 60), highlight["value_left"], 70,
+                       accent, anchor="center")
+            draw_mixed(d, (cl_x, y + 150), highlight["label_left"], 22,
+                       TEXT_GREY, anchor="center")
+            draw_mixed(d, (mid_x, y + 90), highlight.get("middle", "→"),
+                       36, TEXT_GREY, anchor="center")
+            draw_mixed(d, (cr_x, y + 60), highlight["value_right"], 70,
+                       TEXT_DARK, anchor="center")
+            draw_mixed(d, (cr_x, y + 150), highlight["label_right"], 22,
+                       TEXT_GREY, anchor="center")
+        y += box_h + 32
 
-    # Bullets — each is (dot_color, text)
-    for color, text in bullets:
-        # Dot
-        cx = tx + 12
-        cy = ty + 18
-        draw.ellipse([cx - 9, cy - 9, cx + 9, cy + 9], fill=color)
-        # Text wrapped
-        text_x = tx + 40
-        lines = wrap_mixed(draw, text, 28, W - 2 * margin - 80 - 40)
-        for i, ln in enumerate(lines):
-            draw_mixed(draw, (text_x, ty + i * 38), ln, 28, TEXT_DARK)
-        ty += max(38 * len(lines), 38) + 14
+    # Stats rows
+    num_col_w = 280
+    label_x = inner_l + num_col_w + 30
+    row_gap = 16
+    for color_key, big, label, desc in stats:
+        color = PALETTE[color_key]
+        d.ellipse([inner_l - 4, y + 18, inner_l + 10, y + 32], fill=color)
+        draw_mixed(d, (inner_l + 22, y), big, 44, color)
+        draw_mixed(d, (label_x, y + 4), label, 24, TEXT_DARK)
+        desc_lines = wrap_mixed(d, desc, 20, inner_r - label_x)
+        ly = y + 36
+        for ln in desc_lines:
+            draw_mixed(d, (label_x, ly), ln, 20, TEXT_GREY)
+            ly += 28
+        y += max(60, ly - y) + row_gap
 
-    # Footer — two stacked lines so they don't collide
-    fy = H - 80 - 80
-    draw.line([(margin + 40, fy), (W - margin - 40, fy)], fill=BORDER, width=1)
-    # Source note on top line (may be long)
-    src_lines = wrap_mixed(draw, footer_note, 19, W - 2 * margin - 80)
-    sy = fy + 14
-    for ln in src_lines:
-        draw_mixed(draw, (margin + 40, sy), ln, 19, TEXT_LIGHT)
-        sy += 26
-    # Brand date on bottom line
-    draw_mixed(draw, (W - margin - 40, fy + 14 + 26 * max(len(src_lines), 1) + 4),
-               "Das deutsch Wissen ｜ W21 2026/05/18-22", 19, TEXT_LIGHT, anchor="right")
+    # Footer
+    fy = H - 60 - 46
+    left_text = footer_date
+    right_text = "德國週報 W21"
+    sep = "  |  "
+    full_w = measure_mixed(d, left_text + sep + right_text, 22)
+    cx = (inner_l + inner_r) // 2
+    sx = cx - full_w // 2
+    draw_mixed(d, (sx, fy), left_text, 22, TEXT_GREY)
+    sx += measure_mixed(d, left_text, 22)
+    draw_mixed(d, (sx, fy), sep, 22, TEXT_LIGHT)
+    sx += measure_mixed(d, sep, 22)
+    draw_mixed(d, (sx, fy), right_text, 22, TEXT_GREY)
 
     path = os.path.join(OUT_DIR, filename)
     img.save(path, "PNG", optimize=True)
@@ -221,55 +254,75 @@ def make_card(filename, category, badge_color, title, headline, headline_color,
     return path
 
 
-# --- Card 1: Energy crisis & GDP downgrade ---
-make_card(
-    filename="W21_圖卡1_伊朗戰爭能源衝擊.png",
-    category="經濟 Wirtschaft",
-    badge_color=PALETTE["red"],
-    title="伊朗戰爭衝擊德國 政府下修 GDP 預測砍半",
-    headline="GDP 1.0% → 0.5%",
-    headline_color=PALETTE["red"],
-    bullets=[
-        (PALETTE["red"], "通膨預測上修至 2.7-2.8%，失業率 4 月升至 6.4%（3 月為 6.3%）"),
-        (PALETTE["orange"], "復活節高峰：柴油較戰前每公升貴 70 分，E10 貴 41 分"),
-        (PALETTE["blue"], "聯盟通過 16 億歐元燃油減稅，柴油與汽油每公升降約 17 分（兩個月）"),
-        (PALETTE["purple"], "經濟部長 Reiche (CDU) 與財政部長 Klingbeil (SPD) 為「暴利稅」激烈交鋒"),
+# ---------- Card 1: Aviation tax cut (genuinely new this week) ----------
+build_card(
+    filename="W21_圖卡1_機票稅調降.png",
+    category_zh="政策", category_de="Politik",
+    accent=PALETTE["blue"], accent_tint=TINT["blue"],
+    title="機票稅 7/1 起調降  長程每張省 €11",
+    subtitle="聯邦議院 5/21 三黨表決通過｜環團痛批氣候大會期間反向操作",
+    highlight={
+        "single": True,
+        "label_top": "長程航班稅變化（含飛回台灣）",
+        "value": "€70.83 → €59.43",
+        "sub": "每張票減免 €11.40，2026 年 7 月 1 日起生效",
+        "tint": TINT["blue"],
+    },
+    stats=[
+        ("blue",   "−€2.50",  "短程歐洲航線", "€15.53 → €13.03（如柏林飛巴黎）"),
+        ("blue",   "−€6.33",  "中程航線",     "€39.34 → €33.01（如歐洲飛中東）"),
+        ("green",  "3 黨",    "聯合表決通過", "CDU/CSU + SPD + AfD 一致支持本法案"),
+        ("red",    "3.5 億 €", "Greenpeace 痛批「致命訊號」", "BUND：氣候保護地位低落；UBA 反建議加稅"),
     ],
-    footer_note="資料：歐盟執委會、ifo、Handelsblatt、ZDF（2026/04-05）",
+    footer_date="2026.05.18 — 05.22",
 )
 
-# --- Card 2: Aviation tax cut ---
-make_card(
-    filename="W21_圖卡2_機票稅調降.png",
-    category="政策 Politik",
-    badge_color=PALETTE["blue"],
-    title="聯邦議院 5/21 通過調降機票稅 7/1 起生效",
-    headline="長程 −€11.40 /人",
-    headline_color=PALETTE["blue"],
-    bullets=[
-        (PALETTE["blue"], "短程：€15.53 → €13.03（−€2.50）｜中程：€39.34 → €33.01（−€6.33）"),
-        (PALETTE["blue"], "長程：€70.83 → €59.43（−€11.40）— 從德國飛回台灣每張票省約 €11"),
-        (PALETTE["green"], "CDU/CSU、SPD、AfD 三黨共同支持，預計減免 3.5 億歐元稅收"),
-        (PALETTE["red"], "環團強烈反對：Greenpeace 稱「致命訊號」、BUND 批氣候保護地位低落"),
+# ---------- Card 2: Merkel European Order of Merit (5/19) ----------
+build_card(
+    filename="W21_圖卡2_梅克爾歐洲勳章.png",
+    category_zh="文化", category_de="Kultur",
+    accent=PALETTE["purple"], accent_tint=TINT["purple"],
+    title="梅克爾獲頒首屆歐洲功勳勳章",
+    subtitle="5/19 斯特拉斯堡受勳｜與華勒沙、澤倫斯基同列首批得主",
+    highlight={
+        "single": True,
+        "label_top": "Europäischer Verdienstorden｜2026 首屆三位得主",
+        "value": "Merkel · Wałęsa · Zelensky",
+        "sub": "表彰對歐洲一體化與民主價值的傑出貢獻",
+        "tint": TINT["purple"],
+    },
+    stats=[
+        ("purple", "5/19",   "斯特拉斯堡受勳",    "於歐洲議會全會大廳舉行授勳典禮"),
+        ("blue",   "16 年",  "前總理任期",       "2005-2021，史上首位東德出身總理"),
+        ("teal",   "演講",   "呼籲規範社群媒體", "強調對和平、繁榮、民主的承諾"),
+        ("orange", "三人",   "獲獎者背景多元",   "前總理／團結工聯領袖／戰時烏克蘭總統"),
     ],
-    footer_note="資料：t-online、ZDF、Bundestag、Greenpeace、BUND（2026/05/21-22）",
+    footer_date="2026.05.18 — 05.22",
 )
 
-# --- Card 3: Blue Card & Bürgergeld changes (foreigners-relevant) ---
-make_card(
-    filename="W21_圖卡3_藍卡與居留新規.png",
-    category="移民 Migration",
-    badge_color=PALETTE["teal"],
-    title="2026 EU 藍卡門檻調升 Bürgergeld 改名加嚴",
-    headline="一般職 €50,700／短缺職 €45,934",
-    headline_color=PALETTE["teal"],
-    bullets=[
-        (PALETTE["teal"], "EU Blue Card 一般職薪資門檻 €48,300 → €50,700（年增 €2,400）"),
-        (PALETTE["teal"], "IT/工程/醫療等短缺職：€43,759 → €45,934（年增 €2,175）"),
-        (PALETTE["orange"], "Bürgergeld 改名「Neue Grundsicherung」，月領 €563 不變但加強制裁"),
-        (PALETTE["purple"], "3 年加速入籍取消，回到 5 年最低；雇主須依 §45c 告知第三國技工權益"),
+# ---------- Card 3: Strike wave & Lufthansa policy push (life reminder) ----------
+build_card(
+    filename="W21_圖卡3_本週交通提醒.png",
+    category_zh="生活", category_de="Leben",
+    accent=PALETTE["orange"], accent_tint=TINT["orange"],
+    title="本週德國交通三件大事  在德生活提醒",
+    subtitle="北德 ÖPNV 罷工持續｜Lufthansa 政策呼籲限制罷工權",
+    highlight={
+        "label_top": "ver.di 北德公共運輸罷工｜5/19-21",
+        "value_left": "Göttingen",
+        "label_left": "5/19-20 公車電車停擺",
+        "value_right": "Hannover",
+        "label_right": "5/20-21 ÜSTRA + Regiobus",
+        "middle": "＋",
+        "tint": TINT["orange"],
+    },
+    stats=[
+        ("orange", "下薩克森", "ÖPNV 罷工最後堡壘", "全國多數已達協議，僅 Niedersachsen 仍在抗爭"),
+        ("blue",   "5/20",   "Lufthansa 政策呼籲", "要求政府立法限制「關鍵基礎建設」罷工權"),
+        ("red",    "2 萬班", "CityLine 關閉影響",  "4 月關閉的支線子公司，10 月前短程航班持續取消"),
+        ("teal",   "5/21",   "EU 春季預測加重",   "布魯塞爾將德 GDP 從 1.2% 砍至 0.6%（背景參考）"),
     ],
-    footer_note="資料：BMI、Make it in Germany、The Local、iamexpat（2026 元月起）",
+    footer_date="2026.05.18 — 05.22",
 )
 
 print("All cards generated.")
