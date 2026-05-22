@@ -1,8 +1,10 @@
 """Weekly newsletter cards for 德國知識小種子, W21 (May 18-22, 2026).
-Three fresh topics specific to this week (avoiding overlap with W12-W19):
+Five topics this week:
   1) 5/21 Bundestag passes aviation tax cut
-  2) 5/20 SC Freiburg loses 0-3 to Aston Villa in Europa League final
+  2) 5/20 SC Freiburg 0:3 Aston Villa, Europa League final
   3) 5/19 E-Auto purchase subsidy opens for online application at BAFA
+  4) 5/19-20 Putin-Xi state visit, Beijing summit
+  5) 5/15-週內延燒 Merz 對川普嗆聲「不建議子女去美國」
 """
 from PIL import Image, ImageDraw, ImageFont
 import os
@@ -144,7 +146,6 @@ def build_card(filename, category_zh, category_de, accent, accent_tint,
     img = Image.new("RGB", (W, H), BG)
     d = ImageDraw.Draw(img)
 
-    # Badge & brand
     top_y = 50
     badge_pad_x = 22
     badge_h = 56
@@ -158,7 +159,6 @@ def build_card(filename, category_zh, category_de, accent, accent_tint,
     draw_mixed(d, (W - 70, top_y + (badge_h - 24) // 2),
                "德國知識小種子", 24, TEXT_GREY, anchor="right")
 
-    # Main card
     card_top = top_y + badge_h + 30
     card_box = [40, card_top, W - 40, H - 60]
     rounded(d, card_box, 28, fill=CARD, outline=BORDER, width=2)
@@ -168,14 +168,12 @@ def build_card(filename, category_zh, category_de, accent, accent_tint,
     inner_w = inner_r - inner_l
     y = card_top + 56
 
-    # Title
     title_size = 52
     title_lines = wrap_mixed(d, title, title_size, inner_w)
     for ln in title_lines:
         draw_mixed(d, (inner_l, y), ln, title_size, TEXT_DARK)
         y += 68
 
-    # Subtitle
     if subtitle:
         y += 4
         sub_lines = wrap_mixed(d, subtitle, 24, inner_w)
@@ -184,7 +182,6 @@ def build_card(filename, category_zh, category_de, accent, accent_tint,
             y += 34
     y += 28
 
-    # Highlight box
     if highlight:
         box_h = 200
         hl_tint = highlight.get("tint", accent_tint)
@@ -217,7 +214,6 @@ def build_card(filename, category_zh, category_de, accent, accent_tint,
                        TEXT_GREY, anchor="center")
         y += box_h + 32
 
-    # Stats rows
     num_col_w = 280
     label_x = inner_l + num_col_w + 30
     row_gap = 16
@@ -233,7 +229,6 @@ def build_card(filename, category_zh, category_de, accent, accent_tint,
             ly += 28
         y += max(60, ly - y) + row_gap
 
-    # Footer
     fy = H - 60 - 46
     left_text = footer_date
     right_text = "德國週報 W21"
@@ -281,8 +276,8 @@ build_card(
     filename="W21_圖卡2_Freiburg歐霸盃決賽.png",
     category_zh="體育", category_de="Sport",
     accent=PALETTE["red"], accent_tint=TINT["red"],
-    title="Freiburg 寫歷史卻惜敗  歐霸盃決賽 0:3 不敵 Aston Villa",
-    subtitle="5/20 伊斯坦堡｜德甲球隊生涯首次踢進歐洲決賽",
+    title="Freiburg 創歷史卻惜敗  歐霸盃決賽 0:3 不敵 Aston Villa",
+    subtitle="5/20 伊斯坦堡｜德甲球隊隊史首次踢進歐洲決賽",
     highlight={
         "single": True,
         "label_top": "UEFA Europa League Final｜Beşiktaş Park",
@@ -291,10 +286,10 @@ build_card(
         "tint": TINT["red"],
     },
     stats=[
-        ("red",    "41′",    "Tielemans 開局轉折",  "短角球配合 Rogers 後禁區內凌空抽射破門"),
-        ("red",    "45+3′",  "Buendía 半場前致命",  "禁區邊緣弧線球，打進左上死角擴大領先"),
-        ("red",    "58′",    "Rogers 鎖定勝局",     "第三球終結懸念，引爆 Villa 球迷狂歡"),
-        ("orange", "44 年",  "Aston Villa 終於登頂", "自 1982 歐冠以來首座歐洲獎盃，首奪歐霸盃"),
+        ("red",    "41′",    "Tielemans 破門",      "短角球配合 Rogers 後禁區內凌空抽射"),
+        ("red",    "45+3′",  "Buendía 半場前致命",  "禁區邊緣弧線球，球進左上死角擴大領先"),
+        ("red",    "58′",    "Rogers 鎖定比分",     "第三球終結比賽懸念，Villa 球迷狂歡"),
+        ("orange", "44 年",  "Aston Villa 首座歐霸盃", "自 1982 拿下歐洲冠軍盃後再奪歐洲獎盃"),
     ],
     footer_date="2026.05.18 — 05.22",
 )
@@ -309,17 +304,65 @@ build_card(
     highlight={
         "label_top": "Elektroauto-Kaufprämie 2026｜BAFA 補助方案",
         "value_left": "€6,000",
-        "label_left": "依收入最高補助",
+        "label_left": "依所得最高補助",
         "value_right": "30 億 €",
         "label_right": "總預算 ≈ 80 萬輛車",
         "middle": "／",
         "tint": TINT["green"],
     },
     stats=[
-        ("green",  "€80,000",  "家庭年所得上限",   "每多 1 個孩子寬限 +€5,000，最高 €90,000"),
+        ("green",  "€80,000",  "家庭年所得上限",   "每多 1 名子女寬限 +€5,000，最高 €90,000"),
         ("teal",   "2026/1/1", "回溯適用",         "今年初首次在德國登記的純電車皆可申請"),
         ("orange", "36 個月",  "強制持有期",       "申請後須持有滿 3 年，違者須返還補助"),
         ("purple", "線上申請", "foerderzentrale.gov.de", "申請流程全數位化；僅私人 PKW 適用，二手車不支援"),
+    ],
+    footer_date="2026.05.18 — 05.22",
+)
+
+# ---------- Card 4: Putin–Xi Beijing state visit (5/19-20) ----------
+build_card(
+    filename="W21_圖卡4_普習北京峰會.png",
+    category_zh="國際", category_de="International",
+    accent=PALETTE["red"], accent_tint=TINT["red"],
+    title="普京習近平北京峰會  簽逾 40 項合作協議",
+    subtitle="5/19-20 國事訪問｜共同聲明反川普「金穹頂」 宣示「多極世界」",
+    highlight={
+        "label_top": "中俄關係｜據官方說法達「歷來最高水準」",
+        "value_left": "2,280 億 $",
+        "label_left": "2025 雙邊貿易額",
+        "value_right": "40+",
+        "label_right": "新簽合作協議",
+        "middle": "／",
+        "tint": TINT["red"],
+    },
+    stats=[
+        ("red",    "5/19-20", "普京國事訪問北京", "在川普訪中後數日舉行，時機微妙"),
+        ("orange", "能源",   "油氣是雙邊核心",   "兩國強調石油與天然氣貿易持續成長"),
+        ("purple", "金穹頂", "聯手反對美國防衛系統", "川普 1,750 億美元「Golden Dome」遭中俄共同警告"),
+        ("blue",   "2027",  "習近平受邀回訪俄羅斯", "今年 11 月將於華南主持 APEC 峰會"),
+    ],
+    footer_date="2026.05.18 — 05.22",
+)
+
+# ---------- Card 5: Merz: don't recommend my kids go to the US ----------
+build_card(
+    filename="W21_圖卡5_梅爾茨嗆川普.png",
+    category_zh="外交", category_de="Außenpolitik",
+    accent=PALETTE["purple"], accent_tint=TINT["purple"],
+    title="梅爾茨對川普開嗆  「不建議我子女去美國」",
+    subtitle="5/15 埃爾福特天主教大會｜本週持續延燒，跨大西洋關係新低",
+    highlight={
+        "single": True,
+        "label_top": "Friedrich Merz｜Katholikentag in Erfurt",
+        "value": "「nicht empfehlen」",
+        "sub": "「我不會建議我的子女現在去美國讀書或工作」",
+        "tint": TINT["purple"],
+    },
+    stats=[
+        ("purple", "社會氛圍", "Merz 指美國「突然變調」",  "成為他不再推薦下一代赴美的核心理由"),
+        ("orange", "學歷高",  "在美國「也很難找工作」",   "他在天主教大會回答年輕人提問時直言"),
+        ("blue",   "粉絲",   "Merz 自稱仍是美國的崇拜者", "但「我的欽佩此刻並沒在增加」"),
+        ("red",    "緊張",   "中東與北約立場分歧",        "近期 Merz 已多次公開挑戰 Trump 路線"),
     ],
     footer_date="2026.05.18 — 05.22",
 )
