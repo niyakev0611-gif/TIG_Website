@@ -340,13 +340,13 @@ const POSTS = [
     date: '2026-05-31',
     categories: ['德國時事'],
     tags: ['週報', '德國政策', '時事'],
-    excerpt: '入籍 5 年制守住、AfD「改回 8 年」3/25 動議遭駁回（439:135）；4 月通膨升到 2.9%、GDP 下修至 0.5%；AfD 民調 27% 反超 CDU 22%；機票稅 7/1 調降飛台灣每張省 €11；E-Auto 補助 5/19 重啟最高 €6,000；藍卡與機會卡 2026 新門檻；Merz 嗆川普「不建議子女去美國」——再加上前幾週重大時事一次整理。',
+    excerpt: '入籍 5 年制守住、AfD「改回 8 年」3/25 動議遭駁回（439:135）；ifo 5 月 84.9 連 2 月回升、Q1 GDP +0.3%、Telekom 5/26-27 全國警告罷工；AfD 民調 27% 反超 CDU 22%；機票稅 7/1 調降飛台灣每張省 €11；E-Auto 補助 5/19 重啟最高 €6,000；藍卡與機會卡 2026 新門檻；Merz 對川普開嗆「不建議子女赴美」——再加上前幾週重大時事一次整理。',
     emoji: '🌱',
     content: `
 <nav class="post-toc" aria-label="本篇目錄">
   <p class="post-toc__title">快速跳轉</p>
   <ul>
-    <li><a href="#may18-31">5月18日–31日：入籍 5 年制守住、AfD 反超 CDU、4 月通膨 2.9%、機票稅調降、藍卡新門檻、Merz 嗆川普</a></li>
+    <li><a href="#may18-31">5月18日–31日：入籍 5 年制守住、ifo 連 2 月回升、AfD 反超 CDU、機票稅調降、藍卡新門檻、Merz 嗆川普</a></li>
     <li><a href="#may11-17">5月11日–17日：Pistorius 訪基輔、紅場閱兵停火破局、世足噪音放寬、新生兒篩檢加項</a></li>
     <li><a href="#apr27-may10">4月27日–5月10日：梅爾茨執政滿一年、稅收驟減178億、車關稅25%、紓困上路</a></li>
     <li><a href="#apr20-26">4月20–26日：GDP腰斬、德國首份軍事戰略、Mercosur生效</a></li>
@@ -358,16 +358,16 @@ const POSTS = [
   </ul>
 </nav>
 
-<h2 id="may18-31">5月18日–31日：入籍 5 年制守住、AfD 反超 CDU、4 月通膨 2.9%、機票稅調降、藍卡新門檻、Merz 嗆川普</h2>
-<p>本期合併 W21 + W22 兩週重點。對在德台灣人最關鍵的一條：AfD 在國會提案把入籍年限從 5 年改回 8 年，3/25 以 439:135 被壓倒性否決，5 年制續行；CDU 黨大會雖通過「想改 8 年」決議，但 SPD 拒絕、政府層級無立法草案。同時：4 月通膨升到 2.9% 連兩月升溫、GDP 下修至 0.5%、AfD 27% 民調反超 CDU 22%、機票稅 7/1 起調降（飛台灣每張省 €11）、E-Auto 購車補助 5/19 重啟最高 €6,000、藍卡與機會卡 2026 新門檻、Merz 在埃爾福特對川普開嗆「不建議我子女去美國」。</p>
+<h2 id="may18-31">5月18日–31日：入籍 5 年制守住、ifo 連 2 月回升、AfD 反超 CDU、機票稅調降、藍卡新門檻、Merz 嗆川普</h2>
+<p>本期合併 W21 + W22 兩週重點。對在德台灣人最關鍵的一條：AfD 在國會提案把入籍年限從 5 年改回 8 年，3/25 以 439:135 被壓倒性否決，5 年制續行；CDU 黨大會雖通過「想改 8 年」決議，但 SPD 拒絕、政府層級無立法草案。經濟面終於出現新訊號：5/22 ifo 5 月升到 84.9 連 2 月走高、5/23 Destatis 公布 Q1 GDP 季增 +0.3% 由出口帶動、5/21 Bundesbank 月報出爐、5/26-27 Telekom 第四輪談判同步全國警告罷工。同時：AfD 27% 民調反超 CDU 22%、機票稅 7/1 起調降（飛台灣每張省 €11）、E-Auto 購車補助 5/19 重啟最高 €6,000、藍卡與機會卡 2026 新門檻、Merz 在埃爾福特對川普開嗆「不建議子女赴美」、跨大西洋關係 Merz 任內新低。</p>
 
 <img src="assets/images/2026/weekly/W21-22_圖卡1_入籍5年制守住.png" alt="入籍 5 年制守住 AfD 改回 8 年動議遭駁回">
 <h3>入籍 5 年制守住　AfD「改回 8 年」動議遭駁回</h3>
 <p>2024 年 6 月，前 Ampel 政府推動的《國籍法現代化法》（StARModG）正式生效，把標準入籍年限從 8 年降到 5 年、允許多重國籍、並開啟「特殊整合」3 年快速通道。Merz 黑紅政府上任後，2025 年 6 月先廢掉了 3 年快速通道（Turbo-Einbürgerung），但 5 年標準年限保留。2026/2/20-21 CDU 黨大會在斯圖加特通過決議，要求把年限「回到 8 年」——這是黨內訴求，並非政府政策。3/3 AfD 黨團把它寫成國會動議「Eine echte Migrationswende braucht eine reformierte Einbürgerungspolitik」，3/25 進入記名表決，結果以 <strong>439 票反對、135 票贊成</strong>被壓倒性否決，所有非 AfD 黨團一致反對。關鍵：SPD 是當年推 5 年制改革的政黨，現在又是 CDU 執政伙伴，沒有 SPD 同意，CDU 拿不到多數，所以目前政府層級沒有任何延長至 8 年的立法草案，5 年制續行。對於累積居留中、考慮入籍的台灣人來說是可以暫時放心的訊號，但 CDU 的長期壓力不會消失。</p>
 
-<img src="assets/images/2026/weekly/W21-22_圖卡2_4月通膨2.9.png" alt="4 月通膨 2.9% 伊朗戰爭推升能源價格 GDP 下修">
-<h3>4 月通膨 2.9%　伊朗戰爭推升能源價格　GDP 下修至 0.5%</h3>
-<p>Destatis 公布 4 月通膨年增 +2.9%，較 3 月 +2.7% 再升溫，是 2024 年 1 月以來最高。主因仍是伊朗戰爭對能源市場的延燒：汽柴油年增 <strong>+26.2%</strong>、暖氣油更達 <strong>+55.1%</strong>、能源價格整體年增 +10.1%。核心通膨（不含食品能源）+2.3%，價格壓力已外溢到一般商品。聯邦經濟部 4 月將 2026 全年 GDP 預測由 1.0% 砍至 <strong>0.5%</strong>，比戰前 1.3% 預估幾近腰斬。配套上，油料能源稅減免（每公升 -14.04 cent，含 VAT 約 -17 cent）從 5/1 跑到 6/30，財政成本 16 億歐元；DIW 質疑石油公司未必能把減稅完整轉嫁。ifo 4 月企業價格預期攀升到 31.6 點，是 2023 年 1 月以來最高——未來幾個月恐有更多成本被轉嫁到消費者帳單。</p>
+<img src="assets/images/2026/weekly/W21-22_圖卡2_經濟微露曙光.png" alt="ifo 5 月 84.9 連 2 月回升 Q1 GDP +0.3% Telekom 5/26-27 罷工">
+<h3>經濟微露曙光　ifo 5 月 84.9 連 2 月回升　Q1 GDP +0.3%</h3>
+<p>本期經濟新訊號兩條一起出來：5/22 ifo 研究院公布 5 月 Geschäftsklimaindex 升到 <strong>84.9</strong>（4 月 84.5），連續第二個月走高，企業對現況評估改善、對未來預期較不那麼悲觀，是短期景氣轉折訊號。緊接著 5/23 Destatis 公布 Q1 GDP 細節：季增 <strong>+0.3%</strong>（前季 0%），Ruth Brand 院長指出「出口在年初顯著回升、帶動經濟表現」，技術上脫離了 2025 連兩季萎縮。5/21 Bundesbank 月報同步出爐，內容更謹慎：Tarifverdienste（協約薪資）Q1 +2.8%、雖比前期慢但仍偏強；勞動市場略轉弱、社保就業微減、失業微升，伊朗戰爭與 Hormuz 海峽問題仍未消退。本期最大勞資衝突發生在 <strong>5/26-27</strong>——ver.di × Deutsche Telekom 第四輪談判同步全德警告罷工，逾 1 萬員工、12 城市停工，訴求 6.6% 加薪與 Mitgliederbonus；雙方最後在法蘭克福第四輪達成妥協協議。對在德工作族來說，Telekom 第四輪談判結果有指標性，是後續其他工會（IG Metall、ÖPNV）跟進的參考。</p>
 
 <img src="assets/images/2026/weekly/W21-22_圖卡3_AfD民調反超CDU.png" alt="AfD 27% 民調反超 CDU 22% 雙位數差距首見">
 <h3>AfD 27% 民調反超 CDU 22%　雙位數差距首見</h3>
@@ -385,9 +385,9 @@ const POSTS = [
 <h3>藍卡 + 機會卡　2026 新門檻一次看</h3>
 <p>對在德工作的外國人最直接相關的兩條規定本期同步更新：Blue Card 2026 年薪門檻一般職業上調至 <strong>€50,700／年</strong>（較 2025 約 +5%），緊缺職業（IT、醫療、工程等 Mangelberufe）<strong>€45,934／年</strong>。Chancenkarte（機會卡）資金證明上修至 €13,092／年（≈ €1,091／月），點數制度（學歷、語言、年齡、工作經驗加總 6 分以上）維持。同場再次確認：入籍 Einbürgerung 標準居留 5 年制度續行（請對照上方圖卡 1），網路上流傳「黑紅政府已恢復 8 年」是<strong>錯誤訊息</strong>——目前沒有任何政府層級草案在跑。對打算申請藍卡的台灣朋友，今年起年薪準備要往上抓一點，學位認證（ZAB）與履歷在送件前先確認到位。</p>
 
-<img src="assets/images/2026/weekly/W21-22_圖卡7_Merz嗆川普不建議子女去美.png" alt="梅爾茨對川普開嗆 不建議我子女去美國">
-<h3>梅爾茨對川普開嗆　「不建議我子女去美國」</h3>
-<p>5/15 在埃爾福特（Erfurt）舉行的天主教大會（Katholikentag）上，Merz 回答現場年輕人提問時直接說：「我不會建議我的子女現在去美國讀書或工作」（<em>ich würde meinen Kindern derzeit nicht empfehlen, in die USA zu gehen</em>），理由是美國「社會氛圍突然變調」、即使學歷高也「很難找到工作」。他強調自己「仍是美國的崇拜者」，但「我的欽佩此刻並沒在增加」。這段話本週被 ZEIT、Spiegel、FAZ、ZDF 連日跟進，跨大西洋關係再添裂痕——前面 5/1 川普把對歐汽車關稅從 15% 拉至 25%、4 月底通知再從德國撤 5,000 名美軍、北約軍費分歧，Merz 已多次公開挑戰川普路線。對在德或考慮去美國的台灣朋友，這可能是一個額外的訊號，美德關係在實務上正在重新洗牌。</p>
+<img src="assets/images/2026/weekly/W21-22_圖卡7_Merz嗆川普不建議子女赴美.png" alt="梅爾茨對川普開嗆 不建議子女赴美 跨大西洋關係 Merz 任內新低">
+<h3>梅爾茨對川普開嗆　「不建議子女赴美」　跨大西洋關係任內新低</h3>
+<p>5/15 在埃爾福特（Erfurt）舉行的天主教大會（Katholikentag）上，Merz 回答現場年輕人提問時直言：「我不會建議我的子女現在去美國讀書或工作」（<em>ich würde meinen Kindern derzeit nicht empfehlen, in die USA zu gehen</em>），點名理由是美國「社會氛圍突然變調」、即使學歷高也「很難找到工作」。他補一句「我仍是美國的崇拜者」，但隨即說「我的欽佩此刻並沒在增加」——刻意保留外交餘地，但措辭已是德國總理層級對美罕見的負面評價。這段發言本週被 ZEIT、Spiegel、FAZ、ZDF 連日追蹤，把跨大西洋關係的結構性裂痕推到 Merz 任內新低：5/1 川普把對歐汽車關稅從 15% 拉至 <strong>25%</strong>、4 月底美方通知再撤 <strong>5,000</strong> 名駐德美軍並揚言「會再裁更多」、北約軍費分配與烏克蘭援助路線分歧持續。對在德或考慮赴美求職／升學的台灣朋友，這是一個由德國總理親自發出的市場訊號：美德人才流動、商業合作的環境正在重新洗牌，做選擇前可以再多看一下。</p>
 
 <hr>
 
@@ -865,11 +865,11 @@ const POSTS = [
 <!-- /wp:paragraph -->
 
 <!-- wp:image {"id":961,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full"><img src="assets/images/2024/02/Screen-Shot-2024-01-27-at-11.07.27-PM.png" alt="Schufa 官網申請紙本資料副本選項畫面" class="wp-image-961"/><figcaption class="wp-element-caption">選擇左邊紙本的</figcaption></figure>
+<figure class="wp-block-image size-full"><img src="assets/images/2024/02/Screen-Shot-2024-01-27-at-11.07.27-PM.png" alt="" class="wp-image-961"/><figcaption class="wp-element-caption">選擇左邊紙本的</figcaption></figure>
 <!-- /wp:image -->
 
 <!-- wp:image {"id":963,"sizeSlug":"large","linkDestination":"none"} -->
-<figure class="wp-block-image size-large"><img src="assets/images/2024/02/Screen-Shot-2024-01-27-at-11.12.28-PM-1024x820.png" alt="Schufa 申請表填寫姓名出生年月日住址欄位" class="wp-image-963"/><figcaption class="wp-element-caption">填寫個人資料（只有姓名、出生年月日跟住址是必填，我連email都沒給他們，更遑論證件影本了）</figcaption></figure>
+<figure class="wp-block-image size-large"><img src="assets/images/2024/02/Screen-Shot-2024-01-27-at-11.12.28-PM-1024x820.png" alt="" class="wp-image-963"/><figcaption class="wp-element-caption">填寫個人資料（只有姓名、出生年月日跟住址是必填，我連email都沒給他們，更遑論證件影本了）</figcaption></figure>
 <!-- /wp:image -->
 
 <!-- wp:paragraph -->
@@ -877,7 +877,7 @@ const POSTS = [
 <!-- /wp:paragraph -->
 
 <!-- wp:image {"id":962,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full"><img src="assets/images/2024/02/Screen-Shot-2024-01-27-at-11.14.16-PM.png" alt="Schufa 申請送出後等待紙本信寄達的確認畫面" class="wp-image-962"/><figcaption class="wp-element-caption">填完送出後就是這個畫面，接著只要在家等紙本信寄到囉</figcaption></figure>
+<figure class="wp-block-image size-full"><img src="assets/images/2024/02/Screen-Shot-2024-01-27-at-11.14.16-PM.png" alt="" class="wp-image-962"/><figcaption class="wp-element-caption">填完送出後就是這個畫面，接著只要在家等紙本信寄到囉</figcaption></figure>
 <!-- /wp:image -->`
   },
   {
@@ -953,7 +953,7 @@ const POSTS = [
 <!-- /wp:paragraph -->
 
 <!-- wp:image {"id":847,"width":"512px","height":"497px","sizeSlug":"large","linkDestination":"none"} -->
-<figure class="wp-block-image size-large is-resized"><img src="assets/images/2023/06/image-1-1024x994.png" alt="FreeNow 叫車軟體推薦折扣截圖" class="wp-image-847" style="width:512px;height:497px"/></figure>
+<figure class="wp-block-image size-large is-resized"><img src="assets/images/2023/06/image-1-1024x994.png" alt="" class="wp-image-847" style="width:512px;height:497px"/></figure>
 <!-- /wp:image -->
 
 <!-- wp:group {"layout":{"type":"constrained"}} -->
@@ -1120,7 +1120,7 @@ const POSTS = [
 <!-- /wp:heading -->
 
 <!-- wp:image {"id":939,"sizeSlug":"large","linkDestination":"custom"} -->
-<figure class="wp-block-image size-large"><a href="https://aklam.io/gbtu39" target="_blank" rel="noreferrer noopener"><img src="assets/images/2023/11/Screen-Shot-2023-11-25-at-5.10.37-PM-1024x460.png" alt="DA Versicherung 車險比同業最高便宜 56% 廣告圖" class="wp-image-939"/></a></figure>
+<figure class="wp-block-image size-large"><a href="https://aklam.io/gbtu39" target="_blank" rel="noreferrer noopener"><img src="assets/images/2023/11/Screen-Shot-2023-11-25-at-5.10.37-PM-1024x460.png" alt="" class="wp-image-939"/></a></figure>
 <!-- /wp:image -->
 
 <!-- wp:paragraph -->
@@ -1136,7 +1136,7 @@ const POSTS = [
 <!-- /wp:paragraph -->
 
 <!-- wp:image {"id":849,"sizeSlug":"large","linkDestination":"none"} -->
-<figure class="wp-block-image size-large"><img src="assets/images/2023/06/Screen-Shot-2023-06-25-at-11.55.47-PM-1024x352.png" alt="Getsafe 保險 App 英文介面截圖" class="wp-image-849"/></figure>
+<figure class="wp-block-image size-large"><img src="assets/images/2023/06/Screen-Shot-2023-06-25-at-11.55.47-PM-1024x352.png" alt="" class="wp-image-849"/></figure>
 <!-- /wp:image --></div>
 <!-- /wp:group -->
 
@@ -1203,7 +1203,7 @@ const POSTS = [
 <!-- /wp:paragraph -->
 
 <!-- wp:image {"id":775,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full"><img src="assets/images/2023/06/image.png" alt="Deutschland Ticket 德國交通月票宣傳圖" class="wp-image-775"/></figure>
+<figure class="wp-block-image size-full"><img src="assets/images/2023/06/image.png" alt="" class="wp-image-775"/></figure>
 <!-- /wp:image -->
 
 <!-- wp:heading -->
@@ -1219,7 +1219,7 @@ const POSTS = [
 <!-- /wp:paragraph -->
 
 <!-- wp:image {"id":986,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full"><img src="assets/images/2024/02/img_4550-1.jpg" alt="Deutschland Ticket 適用範圍說明圖" class="wp-image-986"/></figure>
+<figure class="wp-block-image size-full"><img src="assets/images/2024/02/img_4550-1.jpg" alt="" class="wp-image-986"/></figure>
 <!-- /wp:image -->
 
 <!-- wp:paragraph -->
@@ -1285,7 +1285,7 @@ const POSTS = [
 <!-- /wp:paragraph -->
 
 <!-- wp:image {"align":"center","id":753,"width":"283px","height":"512px","sizeSlug":"large","linkDestination":"none"} -->
-<figure class="wp-block-image aligncenter size-large is-resized"><img src="assets/images/2023/06/img_7388-566x1024.jpg" alt="DB Navigator App 首頁顯示 Deutschland Ticket 入口" class="wp-image-753" style="width:283px;height:512px"/><figcaption class="wp-element-caption"><a href="https://www.bahn.de/service/mobile/db-navigator">DB Navigator App</a> 打開來，底下可以找到Deutschland Ticket</figcaption></figure>
+<figure class="wp-block-image aligncenter size-large is-resized"><img src="assets/images/2023/06/img_7388-566x1024.jpg" alt="" class="wp-image-753" style="width:283px;height:512px"/><figcaption class="wp-element-caption"><a href="https://www.bahn.de/service/mobile/db-navigator">DB Navigator App</a> 打開來，底下可以找到Deutschland Ticket</figcaption></figure>
 <!-- /wp:image -->
 
 <!-- wp:heading {"level":3} -->
@@ -1297,7 +1297,7 @@ const POSTS = [
 <!-- /wp:paragraph -->
 
 <!-- wp:image {"align":"center","id":755,"width":"250px","height":"512px","sizeSlug":"large","linkDestination":"none"} -->
-<figure class="wp-block-image aligncenter size-large is-resized"><img src="assets/images/2023/06/img_7392-499x1024.jpg" alt="DB Navigator 付款頁顯示 Lastschrift 自動扣款選項" class="wp-image-755" style="width:250px;height:512px"/><figcaption class="wp-element-caption">Lastschrift是德國的銀行自動扣款</figcaption></figure>
+<figure class="wp-block-image aligncenter size-large is-resized"><img src="assets/images/2023/06/img_7392-499x1024.jpg" alt="" class="wp-image-755" style="width:250px;height:512px"/><figcaption class="wp-element-caption">Lastschrift是德國的銀行自動扣款</figcaption></figure>
 <!-- /wp:image -->
 
 <!-- wp:heading {"level":3} -->
@@ -1321,11 +1321,11 @@ const POSTS = [
 <!-- /wp:paragraph -->
 
 <!-- wp:image {"align":"left","id":751,"width":"381px","height":"473px","sizeSlug":"large","linkDestination":"none"} -->
-<figure class="wp-block-image alignleft size-large is-resized"><img src="assets/images/2023/06/img_7389-823x1024.jpg" alt="DB Navigator 申請購買 6 月份德國票畫面" class="wp-image-751" style="width:381px;height:473px"/><figcaption class="wp-element-caption">截圖為6月3日時申請購買6月份的德國票</figcaption></figure>
+<figure class="wp-block-image alignleft size-large is-resized"><img src="assets/images/2023/06/img_7389-823x1024.jpg" alt="" class="wp-image-751" style="width:381px;height:473px"/><figcaption class="wp-element-caption">截圖為6月3日時申請購買6月份的德國票</figcaption></figure>
 <!-- /wp:image -->
 
 <!-- wp:image {"align":"center","id":750,"width":"286px","height":"469px","sizeSlug":"large","linkDestination":"none"} -->
-<figure class="wp-block-image aligncenter size-large is-resized"><img src="assets/images/2023/06/img_7390-623x1024.jpg" alt="Deutschland Ticket 訂閱規則詳細說明畫面" class="wp-image-750" style="width:286px;height:469px"/><figcaption class="wp-element-caption">上面有詳細的規則</figcaption></figure>
+<figure class="wp-block-image aligncenter size-large is-resized"><img src="assets/images/2023/06/img_7390-623x1024.jpg" alt="" class="wp-image-750" style="width:286px;height:469px"/><figcaption class="wp-element-caption">上面有詳細的規則</figcaption></figure>
 <!-- /wp:image -->
 
 <!-- wp:heading {"level":3} -->
@@ -1337,7 +1337,7 @@ const POSTS = [
 <!-- /wp:paragraph -->
 
 <!-- wp:image {"align":"center","id":756,"width":"249px","height":"512px","sizeSlug":"large","linkDestination":"none"} -->
-<figure class="wp-block-image aligncenter size-large is-resized"><img src="assets/images/2023/06/img_7391-497x1024.jpg" alt="DB Navigator 選擇 Für andere buchen 幫他人購票" class="wp-image-756" style="width:249px;height:512px"/><figcaption class="wp-element-caption">選擇Für andere buchen即可幫他人買票</figcaption></figure>
+<figure class="wp-block-image aligncenter size-large is-resized"><img src="assets/images/2023/06/img_7391-497x1024.jpg" alt="" class="wp-image-756" style="width:249px;height:512px"/><figcaption class="wp-element-caption">選擇Für andere buchen即可幫他人買票</figcaption></figure>
 <!-- /wp:image -->
 
 <!-- wp:heading {"level":3} -->
@@ -1349,7 +1349,7 @@ const POSTS = [
 <!-- /wp:paragraph -->
 
 <!-- wp:image {"align":"center","id":800,"width":"620px","height":"621px","sizeSlug":"large","linkDestination":"none"} -->
-<figure class="wp-block-image aligncenter size-large is-resized"><img src="assets/images/2023/06/img_7396-edited.jpg" alt="DB Navigator My Tickets 頁面顯示已購買的德國票" class="wp-image-800" style="width:620px;height:621px"/></figure>
+<figure class="wp-block-image aligncenter size-large is-resized"><img src="assets/images/2023/06/img_7396-edited.jpg" alt="" class="wp-image-800" style="width:620px;height:621px"/></figure>
 <!-- /wp:image -->
 
 <!-- wp:heading -->
@@ -1365,7 +1365,7 @@ const POSTS = [
 <!-- /wp:paragraph -->
 
 <!-- wp:image {"align":"center","id":758,"width":"237px","height":"512px","sizeSlug":"large","linkDestination":"none"} -->
-<figure class="wp-block-image aligncenter size-large is-resized"><img src="assets/images/2023/06/img_7416-473x1024.png" alt="德鐵說明取消下個月訂閱的期限為每月 10 號" class="wp-image-758" style="width:237px;height:512px"/><figcaption class="wp-element-caption">取消下個月訂閱的期限為<em><strong>每個月的10號</strong></em></figcaption></figure>
+<figure class="wp-block-image aligncenter size-large is-resized"><img src="assets/images/2023/06/img_7416-473x1024.png" alt="" class="wp-image-758" style="width:237px;height:512px"/><figcaption class="wp-element-caption">取消下個月訂閱的期限為<em><strong>每個月的10號</strong></em></figcaption></figure>
 <!-- /wp:image -->
 
 <!-- wp:heading {"level":3} -->
@@ -1378,11 +1378,11 @@ const POSTS = [
 
 <!-- wp:group {"layout":{"type":"constrained"}} -->
 <div class="wp-block-group"><!-- wp:image {"align":"left","id":760,"width":"278px","height":"512px","sizeSlug":"large","linkDestination":"none"} -->
-<figure class="wp-block-image alignleft size-large is-resized"><img src="assets/images/2023/06/img_7398-555x1024.jpg" alt="德鐵 Aboportal 訂閱管理平台首頁" class="wp-image-760" style="width:278px;height:512px"/><figcaption class="wp-element-caption"><a href="https://abo.bahn.de/?#/">https://abo.bahn.de/?#/</a></figcaption></figure>
+<figure class="wp-block-image alignleft size-large is-resized"><img src="assets/images/2023/06/img_7398-555x1024.jpg" alt="" class="wp-image-760" style="width:278px;height:512px"/><figcaption class="wp-element-caption"><a href="https://abo.bahn.de/?#/">https://abo.bahn.de/?#/</a></figcaption></figure>
 <!-- /wp:image -->
 
 <!-- wp:image {"align":"center","id":757,"width":"237px","height":"512px","sizeSlug":"large","linkDestination":"none"} -->
-<figure class="wp-block-image aligncenter size-large is-resized"><img src="assets/images/2023/06/img_7417-473x1024.png" alt="德鐵 Aboportal 登入帳戶畫面" class="wp-image-757" style="width:237px;height:512px"/><figcaption class="wp-element-caption">登入帳戶</figcaption></figure>
+<figure class="wp-block-image aligncenter size-large is-resized"><img src="assets/images/2023/06/img_7417-473x1024.png" alt="" class="wp-image-757" style="width:237px;height:512px"/><figcaption class="wp-element-caption">登入帳戶</figcaption></figure>
 <!-- /wp:image --></div>
 <!-- /wp:group -->
 
@@ -1392,11 +1392,11 @@ const POSTS = [
 
 <!-- wp:group {"layout":{"type":"constrained"}} -->
 <div class="wp-block-group"><!-- wp:image {"align":"left","id":813,"width":"237px","height":"512px","sizeSlug":"large","linkDestination":"none"} -->
-<figure class="wp-block-image alignleft size-large is-resized"><img src="assets/images/2023/06/img_7418-1-473x1024.jpg" alt="德鐵訂閱管理頁顯示目前 aktiv 啟用中的車票" class="wp-image-813" style="width:237px;height:512px"/><figcaption class="wp-element-caption">可以看到aktiv的車票</figcaption></figure>
+<figure class="wp-block-image alignleft size-large is-resized"><img src="assets/images/2023/06/img_7418-1-473x1024.jpg" alt="" class="wp-image-813" style="width:237px;height:512px"/><figcaption class="wp-element-caption">可以看到aktiv的車票</figcaption></figure>
 <!-- /wp:image -->
 
 <!-- wp:image {"align":"center","id":749,"width":"250px","height":"512px","sizeSlug":"large","linkDestination":"none"} -->
-<figure class="wp-block-image aligncenter size-large is-resized"><img src="assets/images/2023/06/img_7419-500x1024.jpg" alt="德鐵訂閱頁顯示綁定的自動扣款銀行資訊" class="wp-image-749" style="width:250px;height:512px"/><figcaption class="wp-element-caption">扣款銀行(<a href="post.html?slug=german-bank-recommendation">還沒有N26嗎？</a>)</figcaption></figure>
+<figure class="wp-block-image aligncenter size-large is-resized"><img src="assets/images/2023/06/img_7419-500x1024.jpg" alt="" class="wp-image-749" style="width:250px;height:512px"/><figcaption class="wp-element-caption">扣款銀行(<a href="post.html?slug=german-bank-recommendation">還沒有N26嗎？</a>)</figcaption></figure>
 <!-- /wp:image --></div>
 <!-- /wp:group -->
 
@@ -1406,11 +1406,11 @@ const POSTS = [
 
 <!-- wp:group {"layout":{"type":"constrained"}} -->
 <div class="wp-block-group"><!-- wp:image {"align":"left","id":739,"width":"299px","height":"512px","sizeSlug":"large","linkDestination":"none"} -->
-<figure class="wp-block-image alignleft size-large is-resized"><img src="assets/images/2023/06/img_7427-598x1024.jpg" alt="德鐵 D-Ticket 訂閱詳情顯示日期與 Abonummer 訂閱號碼" class="wp-image-739" style="width:299px;height:512px"/><figcaption class="wp-element-caption">看得到日期跟Abonummer訂閱號碼</figcaption></figure>
+<figure class="wp-block-image alignleft size-large is-resized"><img src="assets/images/2023/06/img_7427-598x1024.jpg" alt="" class="wp-image-739" style="width:299px;height:512px"/><figcaption class="wp-element-caption">看得到日期跟Abonummer訂閱號碼</figcaption></figure>
 <!-- /wp:image -->
 
 <!-- wp:image {"align":"center","id":747,"width":"340px","height":"512px","sizeSlug":"large","linkDestination":"none"} -->
-<figure class="wp-block-image aligncenter size-large is-resized"><img src="assets/images/2023/06/img_7421-680x1024.jpg" alt="德鐵 D-Ticket All Services 服務選單顯示 Kündigung 解約" class="wp-image-747" style="width:340px;height:512px"/><figcaption class="wp-element-caption">服務依序為聯絡、申請新票、帳單、轉換、<strong>解約</strong>、付款資訊</figcaption></figure>
+<figure class="wp-block-image aligncenter size-large is-resized"><img src="assets/images/2023/06/img_7421-680x1024.jpg" alt="" class="wp-image-747" style="width:340px;height:512px"/><figcaption class="wp-element-caption">服務依序為聯絡、申請新票、帳單、轉換、<strong>解約</strong>、付款資訊</figcaption></figure>
 <!-- /wp:image -->
 
 <!-- wp:paragraph -->
@@ -1420,20 +1420,20 @@ const POSTS = [
 
 <!-- wp:group {"layout":{"type":"constrained"}} -->
 <div class="wp-block-group"><!-- wp:image {"align":"left","id":744,"width":"307px","height":"512px","sizeSlug":"large","linkDestination":"none"} -->
-<figure class="wp-block-image alignleft size-large is-resized"><img src="assets/images/2023/06/img_7422-613x1024.jpg" alt="德鐵解約頁面選擇理由與日期" class="wp-image-744" style="width:307px;height:512px"/><figcaption class="wp-element-caption">理由與日期</figcaption></figure>
+<figure class="wp-block-image alignleft size-large is-resized"><img src="assets/images/2023/06/img_7422-613x1024.jpg" alt="" class="wp-image-744" style="width:307px;height:512px"/><figcaption class="wp-element-caption">理由與日期</figcaption></figure>
 <!-- /wp:image -->
 
 <!-- wp:image {"align":"center","id":746,"width":"253px","height":"512px","sizeSlug":"large","linkDestination":"none"} -->
-<figure class="wp-block-image aligncenter size-large is-resized"><img src="assets/images/2023/06/img_7423-506x1024.jpg" alt="德鐵解約理由選擇 Ohne Angabe 不說明" class="wp-image-746" style="width:253px;height:512px"/><figcaption class="wp-element-caption">理由選擇「無」Ohne Angabe</figcaption></figure>
+<figure class="wp-block-image aligncenter size-large is-resized"><img src="assets/images/2023/06/img_7423-506x1024.jpg" alt="" class="wp-image-746" style="width:253px;height:512px"/><figcaption class="wp-element-caption">理由選擇「無」Ohne Angabe</figcaption></figure>
 <!-- /wp:image --></div>
 <!-- /wp:group -->
 
 <!-- wp:image {"align":"left","id":743,"width":"278px","height":"512px","sizeSlug":"large","linkDestination":"none"} -->
-<figure class="wp-block-image alignleft size-large is-resized"><img src="assets/images/2023/06/img_7424-555x1024.jpg" alt="德鐵解約頁選擇到期日畫面" class="wp-image-743" style="width:278px;height:512px"/><figcaption class="wp-element-caption">選擇到期日</figcaption></figure>
+<figure class="wp-block-image alignleft size-large is-resized"><img src="assets/images/2023/06/img_7424-555x1024.jpg" alt="" class="wp-image-743" style="width:278px;height:512px"/><figcaption class="wp-element-caption">選擇到期日</figcaption></figure>
 <!-- /wp:image -->
 
 <!-- wp:image {"align":"center","id":742,"width":"277px","height":"512px","sizeSlug":"large","linkDestination":"none"} -->
-<figure class="wp-block-image aligncenter size-large is-resized"><img src="assets/images/2023/06/img_7425-554x1024.jpg" alt="德鐵解約檢視資訊後點擊 Abo Kündigen 確認解約" class="wp-image-742" style="width:277px;height:512px"/><figcaption class="wp-element-caption">檢視資訊後確認 Abo Kündigen</figcaption></figure>
+<figure class="wp-block-image aligncenter size-large is-resized"><img src="assets/images/2023/06/img_7425-554x1024.jpg" alt="" class="wp-image-742" style="width:277px;height:512px"/><figcaption class="wp-element-caption">檢視資訊後確認 Abo Kündigen</figcaption></figure>
 <!-- /wp:image -->
 
 <!-- wp:paragraph -->
@@ -1441,7 +1441,7 @@ const POSTS = [
 <!-- /wp:paragraph -->
 
 <!-- wp:image {"align":"center","id":740,"width":"278px","height":"512px","sizeSlug":"large","linkDestination":"none"} -->
-<figure class="wp-block-image aligncenter size-large is-resized"><img src="assets/images/2023/06/img_7426-555x1024.jpg" alt="德鐵解約完成等待信箱收到確認 Email 提示畫面" class="wp-image-740" style="width:278px;height:512px"/><figcaption class="wp-element-caption">「幾天內」回覆到你的信箱</figcaption></figure>
+<figure class="wp-block-image aligncenter size-large is-resized"><img src="assets/images/2023/06/img_7426-555x1024.jpg" alt="" class="wp-image-740" style="width:278px;height:512px"/><figcaption class="wp-element-caption">「幾天內」回覆到你的信箱</figcaption></figure>
 <!-- /wp:image -->
 
 <!-- wp:paragraph -->
@@ -1449,7 +1449,7 @@ const POSTS = [
 <!-- /wp:paragraph -->
 
 <!-- wp:image {"align":"center","id":741,"sizeSlug":"large","linkDestination":"none"} -->
-<figure class="wp-block-image aligncenter size-large"><img src="assets/images/2023/06/img_7432-508x1024.jpg" alt="德鐵 Aboportal 顯示 Kündigung zum 6/30 解約成功" class="wp-image-741"/><figcaption class="wp-element-caption">出現只到6/30有效的字樣了！(Kündigung zum XXXXX)</figcaption></figure>
+<figure class="wp-block-image aligncenter size-large"><img src="assets/images/2023/06/img_7432-508x1024.jpg" alt="" class="wp-image-741"/><figcaption class="wp-element-caption">出現只到6/30有效的字樣了！(Kündigung zum XXXXX)</figcaption></figure>
 <!-- /wp:image -->
 
 <!-- wp:heading -->
@@ -1465,15 +1465,15 @@ const POSTS = [
 <!-- /wp:paragraph -->
 
 <!-- wp:image {"align":"center","id":900,"width":"386px","height":"835px","sizeSlug":"large","linkDestination":"none"} -->
-<figure class="wp-block-image aligncenter size-large is-resized"><img src="assets/images/2023/09/img_9361-1-473x1024.jpg" alt="SSB Move App Ticket 選單入口畫面" class="wp-image-900" style="width:386px;height:835px"/></figure>
+<figure class="wp-block-image aligncenter size-large is-resized"><img src="assets/images/2023/09/img_9361-1-473x1024.jpg" alt="" class="wp-image-900" style="width:386px;height:835px"/></figure>
 <!-- /wp:image -->
 
 <!-- wp:image {"align":"center","id":901,"width":"338px","height":"732px","sizeSlug":"large","linkDestination":"none"} -->
-<figure class="wp-block-image aligncenter size-large is-resized"><img src="assets/images/2023/09/img_9363-1-473x1024.png" alt="SSB Move App 選擇 Deutschland Ticket 開始期間" class="wp-image-901" style="width:338px;height:732px"/><figcaption class="wp-element-caption">點進來後會發現他可以選擇開始的期間，基本上跟DB上述解約期限條件一樣</figcaption></figure>
+<figure class="wp-block-image aligncenter size-large is-resized"><img src="assets/images/2023/09/img_9363-1-473x1024.png" alt="" class="wp-image-901" style="width:338px;height:732px"/><figcaption class="wp-element-caption">點進來後會發現他可以選擇開始的期間，基本上跟DB上述解約期限條件一樣</figcaption></figure>
 <!-- /wp:image -->
 
 <!-- wp:image {"align":"center","id":899,"width":"335px","height":"725px","sizeSlug":"large","linkDestination":"none"} -->
-<figure class="wp-block-image aligncenter size-large is-resized"><img src="assets/images/2023/09/img_9364-1-473x1024.png" alt="SSB Move App 填寫個人資料畫面" class="wp-image-899" style="width:335px;height:725px"/></figure>
+<figure class="wp-block-image aligncenter size-large is-resized"><img src="assets/images/2023/09/img_9364-1-473x1024.png" alt="" class="wp-image-899" style="width:335px;height:725px"/></figure>
 <!-- /wp:image -->
 
 <!-- wp:paragraph -->
@@ -1481,7 +1481,7 @@ const POSTS = [
 <!-- /wp:paragraph -->
 
 <!-- wp:image {"align":"center","id":902,"width":"333px","height":"682px","sizeSlug":"large","linkDestination":"none"} -->
-<figure class="wp-block-image aligncenter size-large is-resized"><img src="assets/images/2023/09/img_9365-1-500x1024.jpg" alt="SSB Move App 選擇信用卡付款方式" class="wp-image-902" style="width:333px;height:682px"/></figure>
+<figure class="wp-block-image aligncenter size-large is-resized"><img src="assets/images/2023/09/img_9365-1-500x1024.jpg" alt="" class="wp-image-902" style="width:333px;height:682px"/></figure>
 <!-- /wp:image -->
 
 <!-- wp:paragraph -->
@@ -1489,15 +1489,15 @@ const POSTS = [
 <!-- /wp:paragraph -->
 
 <!-- wp:image {"align":"center","id":903,"width":"334px","height":"724px","sizeSlug":"large","linkDestination":"none"} -->
-<figure class="wp-block-image aligncenter size-large is-resized"><img src="assets/images/2023/09/img_9367-1-473x1024.png" alt="SSB Move App 結帳付款頁說明十號前需解約否則續訂" class="wp-image-903" style="width:334px;height:724px"/><figcaption class="wp-element-caption">結帳付款～下面有說明若是十號以前沒有解除訂閱，便會續訂哦</figcaption></figure>
+<figure class="wp-block-image aligncenter size-large is-resized"><img src="assets/images/2023/09/img_9367-1-473x1024.png" alt="" class="wp-image-903" style="width:334px;height:724px"/><figcaption class="wp-element-caption">結帳付款～下面有說明若是十號以前沒有解除訂閱，便會續訂哦</figcaption></figure>
 <!-- /wp:image -->
 
 <!-- wp:image {"align":"center","id":908,"width":"334px","height":"723px","sizeSlug":"large","linkDestination":"none"} -->
-<figure class="wp-block-image aligncenter size-large is-resized"><img src="assets/images/2023/09/img_9368-1-473x1024.jpg" alt="SSB Move App 付款成功後顯示購票完成畫面" class="wp-image-908" style="width:334px;height:723px"/><figcaption class="wp-element-caption">付款成功就會看到票啦！</figcaption></figure>
+<figure class="wp-block-image aligncenter size-large is-resized"><img src="assets/images/2023/09/img_9368-1-473x1024.jpg" alt="" class="wp-image-908" style="width:334px;height:723px"/><figcaption class="wp-element-caption">付款成功就會看到票啦！</figcaption></figure>
 <!-- /wp:image -->
 
 <!-- wp:image {"align":"center","id":904,"width":"338px","height":"732px","sizeSlug":"large","linkDestination":"none"} -->
-<figure class="wp-block-image aligncenter size-large is-resized"><img src="assets/images/2023/09/img_9370-1-473x1024.jpg" alt="SSB Move 信箱收到 Deutschland Ticket 購票確認信" class="wp-image-904" style="width:338px;height:732px"/><figcaption class="wp-element-caption">信箱裡面也會收到買票的確認信</figcaption></figure>
+<figure class="wp-block-image aligncenter size-large is-resized"><img src="assets/images/2023/09/img_9370-1-473x1024.jpg" alt="" class="wp-image-904" style="width:338px;height:732px"/><figcaption class="wp-element-caption">信箱裡面也會收到買票的確認信</figcaption></figure>
 <!-- /wp:image -->
 
 <!-- wp:heading {"level":3} -->
@@ -1509,23 +1509,23 @@ const POSTS = [
 <!-- /wp:paragraph -->
 
 <!-- wp:image {"align":"center","id":907,"width":"343px","height":"742px","sizeSlug":"large","linkDestination":"none"} -->
-<figure class="wp-block-image aligncenter size-large is-resized"><img src="assets/images/2023/09/img_9371-1-473x1024.png" alt="SSB Move 確認信中 Abo Kündigen 解約連結位置" class="wp-image-907" style="width:343px;height:742px"/><figcaption class="wp-element-caption">點連結進去</figcaption></figure>
+<figure class="wp-block-image aligncenter size-large is-resized"><img src="assets/images/2023/09/img_9371-1-473x1024.png" alt="" class="wp-image-907" style="width:343px;height:742px"/><figcaption class="wp-element-caption">點連結進去</figcaption></figure>
 <!-- /wp:image -->
 
 <!-- wp:image {"align":"center","id":910,"width":"345px","height":"747px","sizeSlug":"large","linkDestination":"none"} -->
-<figure class="wp-block-image aligncenter size-large is-resized"><img src="assets/images/2023/09/img_9372-1-473x1024.png" alt="SSB Move 解約頁填寫姓名與 Email 確認身分" class="wp-image-910" style="width:345px;height:747px"/><figcaption class="wp-element-caption">填寫姓名跟Email來確認身份解約</figcaption></figure>
+<figure class="wp-block-image aligncenter size-large is-resized"><img src="assets/images/2023/09/img_9372-1-473x1024.png" alt="" class="wp-image-910" style="width:345px;height:747px"/><figcaption class="wp-element-caption">填寫姓名跟Email來確認身份解約</figcaption></figure>
 <!-- /wp:image -->
 
 <!-- wp:image {"align":"center","id":906,"width":"377px","height":"778px","sizeSlug":"large","linkDestination":"none"} -->
-<figure class="wp-block-image aligncenter size-large is-resized"><img src="assets/images/2023/09/img_9373-1-496x1024.jpg" alt="SSB Move 顯示車票有效日期與解約截止規則" class="wp-image-906" style="width:377px;height:778px"/><figcaption class="wp-element-caption">會寫是票到哪天有效，若是十一號後解除代表下個月的票也是會自動購買</figcaption></figure>
+<figure class="wp-block-image aligncenter size-large is-resized"><img src="assets/images/2023/09/img_9373-1-496x1024.jpg" alt="" class="wp-image-906" style="width:377px;height:778px"/><figcaption class="wp-element-caption">會寫是票到哪天有效，若是十一號後解除代表下個月的票也是會自動購買</figcaption></figure>
 <!-- /wp:image -->
 
 <!-- wp:image {"align":"center","id":912,"width":"414px","height":"896px","sizeSlug":"large","linkDestination":"none"} -->
-<figure class="wp-block-image aligncenter size-large is-resized"><img src="assets/images/2023/09/img_9375-1-473x1024.png" alt="SSB Move 解約完成確認畫面" class="wp-image-912" style="width:414px;height:896px"/><figcaption class="wp-element-caption">確認後就解除完成！是不是比DB的快很多！</figcaption></figure>
+<figure class="wp-block-image aligncenter size-large is-resized"><img src="assets/images/2023/09/img_9375-1-473x1024.png" alt="" class="wp-image-912" style="width:414px;height:896px"/><figcaption class="wp-element-caption">確認後就解除完成！是不是比DB的快很多！</figcaption></figure>
 <!-- /wp:image -->
 
 <!-- wp:image {"align":"center","id":911,"width":"418px","height":"905px","sizeSlug":"large","linkDestination":"none"} -->
-<figure class="wp-block-image aligncenter size-large is-resized"><img src="assets/images/2023/09/img_9376-1-473x1024.jpg" alt="SSB Move 解除訂閱後收到確認 Email" class="wp-image-911" style="width:418px;height:905px"/><figcaption class="wp-element-caption">送出後也會收到確認解除的Email</figcaption></figure>
+<figure class="wp-block-image aligncenter size-large is-resized"><img src="assets/images/2023/09/img_9376-1-473x1024.jpg" alt="" class="wp-image-911" style="width:418px;height:905px"/><figcaption class="wp-element-caption">送出後也會收到確認解除的Email</figcaption></figure>
 <!-- /wp:image -->
 
 <!-- wp:heading -->
@@ -1541,19 +1541,19 @@ const POSTS = [
 <!-- /wp:paragraph -->
 
 <!-- wp:image {"align":"center","id":952,"width":"486px","height":"auto","sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image aligncenter size-full is-resized"><img src="assets/images/2024/02/img_4287-1.jpg" alt="Freenow App 註冊後首頁畫面" class="wp-image-952" style="width:486px;height:auto"/><figcaption class="wp-element-caption">註冊帳號後打開看到的畫面</figcaption></figure>
+<figure class="wp-block-image aligncenter size-full is-resized"><img src="assets/images/2024/02/img_4287-1.jpg" alt="" class="wp-image-952" style="width:486px;height:auto"/><figcaption class="wp-element-caption">註冊帳號後打開看到的畫面</figcaption></figure>
 <!-- /wp:image -->
 
 <!-- wp:image {"align":"left","id":954,"width":"654px","height":"auto","sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image alignleft size-full is-resized"><img src="assets/images/2024/02/img_4288-1.jpg" alt="Freenow App 選擇 Deutschland-Ticket 選項" class="wp-image-954" style="width:654px;height:auto"/><figcaption class="wp-element-caption">點進去後選擇Deutschland-Ticket</figcaption></figure>
+<figure class="wp-block-image alignleft size-full is-resized"><img src="assets/images/2024/02/img_4288-1.jpg" alt="" class="wp-image-954" style="width:654px;height:auto"/><figcaption class="wp-element-caption">點進去後選擇Deutschland-Ticket</figcaption></figure>
 <!-- /wp:image -->
 
 <!-- wp:image {"id":953,"sizeSlug":"large","linkDestination":"none"} -->
-<figure class="wp-block-image size-large"><img src="assets/images/2024/02/img_4289-1-500x1024.jpg" alt="Freenow App 輸入個人資料並選擇使用期間" class="wp-image-953"/><figcaption class="wp-element-caption">輸入個人資訊及選擇期間(10日以後才會出現下個月的)</figcaption></figure>
+<figure class="wp-block-image size-large"><img src="assets/images/2024/02/img_4289-1-500x1024.jpg" alt="" class="wp-image-953"/><figcaption class="wp-element-caption">輸入個人資訊及選擇期間(10日以後才會出現下個月的)</figcaption></figure>
 <!-- /wp:image -->
 
 <!-- wp:image {"id":977,"sizeSlug":"large","linkDestination":"none"} -->
-<figure class="wp-block-image size-large"><img src="assets/images/2024/02/img_4540-1-473x1024.png" alt="Freenow App 顯示德國票無法退款轉讓的條款" class="wp-image-977"/><figcaption class="wp-element-caption">德國票是無法退款也無法轉嫁給他人的</figcaption></figure>
+<figure class="wp-block-image size-large"><img src="assets/images/2024/02/img_4540-1-473x1024.png" alt="" class="wp-image-977"/><figcaption class="wp-element-caption">德國票是無法退款也無法轉嫁給他人的</figcaption></figure>
 <!-- /wp:image -->
 
 <!-- wp:paragraph -->
@@ -1561,15 +1561,15 @@ const POSTS = [
 <!-- /wp:paragraph -->
 
 <!-- wp:image {"id":980,"sizeSlug":"large","linkDestination":"none"} -->
-<figure class="wp-block-image size-large"><img src="assets/images/2024/02/img_4542-1-473x1024.jpg" alt="Freenow App 購票成功顯示 QR Code 車票" class="wp-image-980"/><figcaption class="wp-element-caption">買完會出現這個畫面，QR Code車票表示已購買成功了！</figcaption></figure>
+<figure class="wp-block-image size-large"><img src="assets/images/2024/02/img_4542-1-473x1024.jpg" alt="" class="wp-image-980"/><figcaption class="wp-element-caption">買完會出現這個畫面，QR Code車票表示已購買成功了！</figcaption></figure>
 <!-- /wp:image -->
 
 <!-- wp:image {"id":985,"sizeSlug":"large","linkDestination":"none"} -->
-<figure class="wp-block-image size-large"><img src="assets/images/2024/02/img_4543-1-473x1024.jpg" alt="Freenow 車票顯示使用期間與持票人姓名出生年月日" class="wp-image-985"/><figcaption class="wp-element-caption">會顯示能使用的期間跟使用者姓名出生年月日</figcaption></figure>
+<figure class="wp-block-image size-large"><img src="assets/images/2024/02/img_4543-1-473x1024.jpg" alt="" class="wp-image-985"/><figcaption class="wp-element-caption">會顯示能使用的期間跟使用者姓名出生年月日</figcaption></figure>
 <!-- /wp:image -->
 
 <!-- wp:image {"id":984,"sizeSlug":"large","linkDestination":"none"} -->
-<figure class="wp-block-image size-large"><img src="assets/images/2024/02/img_4541-1-473x1024.jpg" alt="Freenow 車票加入 Apple Wallet 方便查票" class="wp-image-984"/><figcaption class="wp-element-caption">加入Apple Wallet 方便查票時一鍵讀取</figcaption></figure>
+<figure class="wp-block-image size-large"><img src="assets/images/2024/02/img_4541-1-473x1024.jpg" alt="" class="wp-image-984"/><figcaption class="wp-element-caption">加入Apple Wallet 方便查票時一鍵讀取</figcaption></figure>
 <!-- /wp:image -->
 
 <!-- wp:heading {"level":3} -->
@@ -1577,7 +1577,7 @@ const POSTS = [
 <!-- /wp:heading -->
 
 <!-- wp:image {"id":983,"sizeSlug":"large","linkDestination":"none"} -->
-<figure class="wp-block-image size-large"><img src="assets/images/2024/02/img_4544-1-473x1024.jpg" alt="Freenow App 顯示 Abo kündigen 取消訂閱按鈕" class="wp-image-983"/><figcaption class="wp-element-caption">Abo kündigen 就是訂閱取消的意思</figcaption></figure>
+<figure class="wp-block-image size-large"><img src="assets/images/2024/02/img_4544-1-473x1024.jpg" alt="" class="wp-image-983"/><figcaption class="wp-element-caption">Abo kündigen 就是訂閱取消的意思</figcaption></figure>
 <!-- /wp:image -->
 
 <!-- wp:paragraph -->
@@ -1585,19 +1585,19 @@ const POSTS = [
 <!-- /wp:paragraph -->
 
 <!-- wp:image {"id":978,"sizeSlug":"large","linkDestination":"none"} -->
-<figure class="wp-block-image size-large"><img src="assets/images/2024/02/img_4546-1-473x1024.jpg" alt="Freenow App 解約頁面說明 25 日前可取消下月" class="wp-image-978"/></figure>
+<figure class="wp-block-image size-large"><img src="assets/images/2024/02/img_4546-1-473x1024.jpg" alt="" class="wp-image-978"/></figure>
 <!-- /wp:image -->
 
 <!-- wp:image {"id":979,"sizeSlug":"large","linkDestination":"none"} -->
-<figure class="wp-block-image size-large"><img src="assets/images/2024/02/img_4547-1-473x1024.jpg" alt="Freenow App 按下 Abo kündigen 取消訂閱" class="wp-image-979"/><figcaption class="wp-element-caption">按下Abo kündigen 取消訂閱！</figcaption></figure>
+<figure class="wp-block-image size-large"><img src="assets/images/2024/02/img_4547-1-473x1024.jpg" alt="" class="wp-image-979"/><figcaption class="wp-element-caption">按下Abo kündigen 取消訂閱！</figcaption></figure>
 <!-- /wp:image -->
 
 <!-- wp:image {"id":976,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full"><img src="assets/images/2024/02/img_4548-1.jpg" alt="Freenow App 顯示 Erfolgreich gekündigt 解約成功" class="wp-image-976"/><figcaption class="wp-element-caption">確認後會跳出Erfolgreich gekündigt! 就是解約成功啦！</figcaption></figure>
+<figure class="wp-block-image size-full"><img src="assets/images/2024/02/img_4548-1.jpg" alt="" class="wp-image-976"/><figcaption class="wp-element-caption">確認後會跳出Erfolgreich gekündigt! 就是解約成功啦！</figcaption></figure>
 <!-- /wp:image -->
 
 <!-- wp:image {"id":975,"sizeSlug":"large","linkDestination":"none"} -->
-<figure class="wp-block-image size-large"><img src="assets/images/2024/02/img_4549-1-625x1024.jpg" alt="Freenow 我的車票頁顯示紅字 gekündigt 已解約狀態" class="wp-image-975"/><figcaption class="wp-element-caption">回到自己的票的頁面可以看到紅色的字gekündigt代表已經解約了！想要的話可以點Reaktivieren重新啟用(續約)的意思</figcaption></figure>
+<figure class="wp-block-image size-large"><img src="assets/images/2024/02/img_4549-1-625x1024.jpg" alt="" class="wp-image-975"/><figcaption class="wp-element-caption">回到自己的票的頁面可以看到紅色的字gekündigt代表已經解約了！想要的話可以點Reaktivieren重新啟用(續約)的意思</figcaption></figure>
 
 <!-- wp:separator -->
 <hr class="wp-block-separator has-alpha-channel-opacity"/>
@@ -1662,7 +1662,7 @@ const POSTS = [
 <!-- /wp:paragraph -->
 
 <!-- wp:image {"align":"center","id":677,"width":1024,"height":768,"sizeSlug":"large","linkDestination":"none"} -->
-<figure class="wp-block-image aligncenter size-large is-resized"><img src="assets/images/2023/04/img_6404-1024x768.jpg" alt="斯德哥爾摩市政廳夕陽景色" class="wp-image-677" width="1024" height="768"/><figcaption class="wp-element-caption"><em>斯德哥爾摩市政廳夕陽</em></figcaption></figure>
+<figure class="wp-block-image aligncenter size-large is-resized"><img src="assets/images/2023/04/img_6404-1024x768.jpg" alt="" class="wp-image-677" width="1024" height="768"/><figcaption class="wp-element-caption"><em>斯德哥爾摩市政廳夕陽</em></figcaption></figure>
 <!-- /wp:image -->
 
 <!-- wp:paragraph -->
@@ -1694,7 +1694,7 @@ const POSTS = [
 <!-- /wp:paragraph -->
 
 <!-- wp:image {"align":"center","id":679,"width":1024,"height":576,"sizeSlug":"large","linkDestination":"none"} -->
-<figure class="wp-block-image aligncenter size-large is-resized"><img src="assets/images/2023/04/743112630c0866941883bf64a57c7cf5-1024x576.jpg" alt="斯德哥爾摩老城區四月初空拍俯瞰" class="wp-image-679" width="1024" height="576"/><figcaption class="wp-element-caption"><em>斯德哥爾摩老城區空拍（手快凍僵，四月初大約零度左右）</em></figcaption></figure>
+<figure class="wp-block-image aligncenter size-large is-resized"><img src="assets/images/2023/04/743112630c0866941883bf64a57c7cf5-1024x576.jpg" alt="" class="wp-image-679" width="1024" height="576"/><figcaption class="wp-element-caption"><em>斯德哥爾摩老城區空拍（手快凍僵，四月初大約零度左右）</em></figcaption></figure>
 <!-- /wp:image -->
 
 <!-- wp:paragraph -->
@@ -1710,7 +1710,7 @@ const POSTS = [
 <!-- /wp:paragraph -->
 
 <!-- wp:image {"align":"center","id":675,"sizeSlug":"large","linkDestination":"none"} -->
-<figure class="wp-block-image aligncenter size-large"><img src="assets/images/2023/04/img_6767-1024x768.jpg" alt="瑞典森林裡滑雪的雪地景觀" class="wp-image-675"/><figcaption class="wp-element-caption"><em>在瑞典的森林裡滑雪</em></figcaption></figure>
+<figure class="wp-block-image aligncenter size-large"><img src="assets/images/2023/04/img_6767-1024x768.jpg" alt="" class="wp-image-675"/><figcaption class="wp-element-caption"><em>在瑞典的森林裡滑雪</em></figcaption></figure>
 <!-- /wp:image -->
 
 <!-- wp:heading -->
@@ -1746,11 +1746,11 @@ const POSTS = [
 <!-- /wp:paragraph -->
 
 <!-- wp:image {"id":668,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full"><img src="assets/images/2023/04/image.png" alt="歐洲 Type F Schuko 雙圓腳附接地插頭示意圖" class="wp-image-668"/><figcaption class="wp-element-caption">歐洲Type F 插頭 </figcaption></figure>
+<figure class="wp-block-image size-full"><img src="assets/images/2023/04/image.png" alt="" class="wp-image-668"/><figcaption class="wp-element-caption">歐洲Type F 插頭 </figcaption></figure>
 <!-- /wp:image -->
 
 <!-- wp:image {"id":669,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full"><img src="assets/images/2023/04/image-1.png" alt="歐洲 Type C 兩腳插頭示意圖" class="wp-image-669"/><figcaption class="wp-element-caption">歐洲Type C 插頭</figcaption></figure>
+<figure class="wp-block-image size-full"><img src="assets/images/2023/04/image-1.png" alt="" class="wp-image-669"/><figcaption class="wp-element-caption">歐洲Type C 插頭</figcaption></figure>
 <!-- /wp:image -->
 
 <!-- wp:heading -->
@@ -1970,7 +1970,7 @@ const POSTS = [
 <!-- wp:columns -->
 <div class="wp-block-columns"><!-- wp:column {"width":"100%"} -->
 <div class="wp-block-column" style="flex-basis:100%"><!-- wp:image {"id":498,"width":"495px","height":"330px","sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full is-resized"><img src="assets/images/2023/03/image-2.png" alt="Revolut 實體卡與寄送小信封的精美設計" class="wp-image-498" style="width:495px;height:330px"/><figcaption class="wp-element-caption">卡片很精美跟寄送過來的小信封也很有巧思。</figcaption></figure>
+<figure class="wp-block-image size-full is-resized"><img src="assets/images/2023/03/image-2.png" alt="" class="wp-image-498" style="width:495px;height:330px"/><figcaption class="wp-element-caption">卡片很精美跟寄送過來的小信封也很有巧思。</figcaption></figure>
 <!-- /wp:image --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns -->
@@ -2022,7 +2022,7 @@ const POSTS = [
 <!-- /wp:paragraph -->
 
 <!-- wp:image {"id":496,"sizeSlug":"large","linkDestination":"none"} -->
-<figure class="wp-block-image size-large"><img src="assets/images/2023/03/Screen-Shot-2023-03-29-at-9.17.19-PM-1024x421.png" alt="Revolut 帳戶方案比較含 Premium 與 Metal 升級" class="wp-image-496"/><figcaption class="wp-element-caption">若是想透Revolut常常交易股票或是加密貨幣的可以考慮升級，以節省手續費。</figcaption></figure>
+<figure class="wp-block-image size-large"><img src="assets/images/2023/03/Screen-Shot-2023-03-29-at-9.17.19-PM-1024x421.png" alt="" class="wp-image-496"/><figcaption class="wp-element-caption">若是想透Revolut常常交易股票或是加密貨幣的可以考慮升級，以節省手續費。</figcaption></figure>
 <!-- /wp:image -->
 
 <!-- wp:heading {"level":3} -->
@@ -2052,7 +2052,7 @@ const POSTS = [
 <!-- /wp:list -->
 
 <!-- wp:image {"id":495,"width":"487px","height":"282px","sizeSlug":"large","linkDestination":"none"} -->
-<figure class="wp-block-image size-large is-resized"><img src="assets/images/2023/03/Screen-Shot-2023-03-29-at-9.16.34-PM-1024x594.png" alt="Revolut App 多國貨幣兌換介面截圖" class="wp-image-495" style="width:487px;height:282px"/></figure>
+<figure class="wp-block-image size-large is-resized"><img src="assets/images/2023/03/Screen-Shot-2023-03-29-at-9.16.34-PM-1024x594.png" alt="" class="wp-image-495" style="width:487px;height:282px"/></figure>
 <!-- /wp:image -->
 
 <!-- wp:heading {"level":3} -->
@@ -2082,7 +2082,7 @@ const POSTS = [
 <!-- /wp:paragraph -->
 
 <!-- wp:image {"id":524,"width":"768px","height":"413px","sizeSlug":"large","linkDestination":"none"} -->
-<figure class="wp-block-image size-large is-resized"><img src="assets/images/2023/03/image-3-1024x550.png" alt="N26 柏林新創網路銀行卡片與 App 畫面" class="wp-image-524" style="width:768px;height:413px"/></figure>
+<figure class="wp-block-image size-large is-resized"><img src="assets/images/2023/03/image-3-1024x550.png" alt="" class="wp-image-524" style="width:768px;height:413px"/></figure>
 <!-- /wp:image -->
 
 <!-- wp:heading {"level":3} -->
@@ -2124,7 +2124,7 @@ const POSTS = [
 <!-- /wp:list -->
 
 <!-- wp:image {"id":527,"width":"450px","height":"314px","sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full is-resized"><img src="assets/images/2023/03/image-8.png" alt="N26 Spaces 子帳戶儲蓄目標功能介面" class="wp-image-527" style="width:450px;height:314px"/></figure>
+<figure class="wp-block-image size-full is-resized"><img src="assets/images/2023/03/image-8.png" alt="" class="wp-image-527" style="width:450px;height:314px"/></figure>
 <!-- /wp:image -->
 
 <!-- wp:heading {"level":3} -->
@@ -2142,7 +2142,7 @@ const POSTS = [
 <!-- /wp:list -->
 
 <!-- wp:image {"id":525,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full"><img src="assets/images/2023/03/image-6.png" alt="N26 App 首頁帳戶餘額與交易紀錄畫面" class="wp-image-525"/></figure>
+<figure class="wp-block-image size-full"><img src="assets/images/2023/03/image-6.png" alt="" class="wp-image-525"/></figure>
 <!-- /wp:image -->
 
 <!-- wp:heading {"level":3} -->
@@ -2172,7 +2172,7 @@ const POSTS = [
 <!-- /wp:heading -->
 
 <!-- wp:image {"id":529,"width":"450px","height":"225px","sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full is-resized"><img src="assets/images/2023/03/image-9.png" alt="Commerzbank 德國商業銀行 Logo 與品牌形象" class="wp-image-529" style="width:450px;height:225px"/></figure>
+<figure class="wp-block-image size-full is-resized"><img src="assets/images/2023/03/image-9.png" alt="" class="wp-image-529" style="width:450px;height:225px"/></figure>
 <!-- /wp:image -->
 
 <!-- wp:paragraph -->
@@ -2180,7 +2180,7 @@ const POSTS = [
 <!-- /wp:paragraph -->
 
 <!-- wp:image {"sizeSlug":"large"} -->
-<figure class="wp-block-image size-large"><img src="https://www.merkur.de/bilder/2021/07/07/90847484/25022847-commerzbank-filiale-frankfurt-geldhaus-milliarden-verlust-personal-abbau-2Oea.jpg" alt="法蘭克福 Commerzbank 實體分行外觀"/></figure>
+<figure class="wp-block-image size-large"><img src="https://www.merkur.de/bilder/2021/07/07/90847484/25022847-commerzbank-filiale-frankfurt-geldhaus-milliarden-verlust-personal-abbau-2Oea.jpg" alt=""/></figure>
 <!-- /wp:image -->
 
 <!-- wp:heading {"level":3} -->
@@ -2210,7 +2210,7 @@ const POSTS = [
 <!-- /wp:list -->
 
 <!-- wp:image {"id":874,"sizeSlug":"large","linkDestination":"none"} -->
-<figure class="wp-block-image size-large"><img src="assets/images/2023/08/Screen-Shot-2023-08-30-at-2.37.27-PM-1024x533.png" alt="Commerzbank 線上開戶頁面與 50 歐獎金活動" class="wp-image-874"/></figure>
+<figure class="wp-block-image size-large"><img src="assets/images/2023/08/Screen-Shot-2023-08-30-at-2.37.27-PM-1024x533.png" alt="" class="wp-image-874"/></figure>
 <!-- /wp:image -->
 
 <!-- wp:heading {"level":3} -->
@@ -2228,7 +2228,7 @@ const POSTS = [
 <!-- /wp:list -->
 
 <!-- wp:image {"width":"400px","height":"267px","sizeSlug":"large"} -->
-<figure class="wp-block-image size-large is-resized"><img src="https://cdn2.paysol.de/sonstiges/ueberweisung.jpg" alt="德國銀行 Überweisung 匯款單範例" style="width:400px;height:267px"/></figure>
+<figure class="wp-block-image size-large is-resized"><img src="https://cdn2.paysol.de/sonstiges/ueberweisung.jpg" alt="" style="width:400px;height:267px"/></figure>
 <!-- /wp:image -->
 
 <!-- wp:heading {"level":3} -->
@@ -2254,7 +2254,7 @@ const POSTS = [
 <!-- /wp:paragraph -->
 
 <!-- wp:image {"id":877,"width":"1006px","height":"368px","sizeSlug":"large","linkDestination":"none","align":"center"} -->
-<figure class="wp-block-image aligncenter size-large is-resized"><img src="assets/images/2023/08/Screen-Shot-2023-08-31-at-10.52.52-PM-1024x375.png" alt="Commerzbank 50 歐開戶獎金活動德文條款說明" class="wp-image-877" style="width:1006px;height:368px"/><figcaption class="wp-element-caption">看得懂德文的可以直接看這裡</figcaption></figure>
+<figure class="wp-block-image aligncenter size-large is-resized"><img src="assets/images/2023/08/Screen-Shot-2023-08-31-at-10.52.52-PM-1024x375.png" alt="" class="wp-image-877" style="width:1006px;height:368px"/><figcaption class="wp-element-caption">看得懂德文的可以直接看這裡</figcaption></figure>
 <!-- /wp:image -->
 
 <!-- wp:list {"ordered":true} -->
@@ -2280,7 +2280,7 @@ const POSTS = [
 <!-- /wp:paragraph -->
 
 <!-- wp:image {"id":878,"sizeSlug":"large","linkDestination":"none"} -->
-<figure class="wp-block-image size-large"><img src="assets/images/2023/08/Screen-Shot-2023-08-31-at-10.53.42-PM-1-1024x449.png" alt="Commerzbank 開戶獎金 12-15 週後自動入帳通知" class="wp-image-878"/><figcaption class="wp-element-caption">符合以上條件約莫12-15週開戶獎金就會自動入帳了🥰</figcaption></figure>
+<figure class="wp-block-image size-large"><img src="assets/images/2023/08/Screen-Shot-2023-08-31-at-10.53.42-PM-1-1024x449.png" alt="" class="wp-image-878"/><figcaption class="wp-element-caption">符合以上條件約莫12-15週開戶獎金就會自動入帳了🥰</figcaption></figure>
 <!-- /wp:image -->
 
 <!-- wp:paragraph -->
@@ -2326,7 +2326,7 @@ const POSTS = [
 <!-- /wp:paragraph -->
 
 <!-- wp:image {"id":550,"sizeSlug":"large"} -->
-<figure class="wp-block-image size-large"><img src="assets/images/2023/04/img_6260-514x1024.jpg" alt="Ebay Kleinanzeige 詐騙對話訊息截圖" class="wp-image-550"/><figcaption class="wp-element-caption">我放上截圖，這樣大家也可以看一下，他怎麼一步一步把我帶入陷阱的。</figcaption></figure>
+<figure class="wp-block-image size-large"><img src="assets/images/2023/04/img_6260-514x1024.jpg" alt="" class="wp-image-550"/><figcaption class="wp-element-caption">我放上截圖，這樣大家也可以看一下，他怎麼一步一步把我帶入陷阱的。</figcaption></figure>
 <!-- /wp:image -->
 
 <!-- wp:paragraph -->
@@ -2342,7 +2342,7 @@ const POSTS = [
 <!-- /wp:paragraph -->
 
 <!-- wp:image {"id":556,"sizeSlug":"large"} -->
-<figure class="wp-block-image size-large"><img src="assets/images/2023/04/img_6261-663x1024.jpg" alt="詐騙者要求查看垃圾信件夾的對話截圖" class="wp-image-556"/><figcaption class="wp-element-caption">「我上次賣東西的經驗也是這樣哦，去你的垃圾收件夾看」</figcaption></figure>
+<figure class="wp-block-image size-large"><img src="assets/images/2023/04/img_6261-663x1024.jpg" alt="" class="wp-image-556"/><figcaption class="wp-element-caption">「我上次賣東西的經驗也是這樣哦，去你的垃圾收件夾看」</figcaption></figure>
 <!-- /wp:image -->
 
 <!-- wp:paragraph -->
@@ -2354,7 +2354,7 @@ const POSTS = [
 <!-- /wp:paragraph -->
 
 <!-- wp:image {"id":559,"sizeSlug":"large","linkDestination":"none"} -->
-<figure class="wp-block-image size-large"><img src="assets/images/2023/04/img_6267-534x1024.jpg" alt="偽造 Ebay 釣魚信件含 TM 標誌的截圖" class="wp-image-559"/><figcaption class="wp-element-caption">還有右上角的TM，整個弄得非常逼真</figcaption></figure>
+<figure class="wp-block-image size-large"><img src="assets/images/2023/04/img_6267-534x1024.jpg" alt="" class="wp-image-559"/><figcaption class="wp-element-caption">還有右上角的TM，整個弄得非常逼真</figcaption></figure>
 <!-- /wp:image -->
 
 <!-- wp:paragraph -->
@@ -2362,7 +2362,7 @@ const POSTS = [
 <!-- /wp:paragraph -->
 
 <!-- wp:image {"id":542,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full"><img src="assets/images/2023/04/Screen-Shot-2023-04-01-at-11.42.45-AM.png" alt="Google 警告連結危險的瀏覽器提示畫面" class="wp-image-542"/></figure>
+<figure class="wp-block-image size-full"><img src="assets/images/2023/04/Screen-Shot-2023-04-01-at-11.42.45-AM.png" alt="" class="wp-image-542"/></figure>
 <!-- /wp:image -->
 
 <!-- wp:paragraph -->
@@ -2378,7 +2378,7 @@ const POSTS = [
 <!-- /wp:paragraph -->
 
 <!-- wp:image {"id":541,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full"><img src="assets/images/2023/04/Screen-Shot-2023-04-01-at-11.43.00-AM.png" alt="模仿 Ebay 介面的釣魚網站商品頁面" class="wp-image-541"/><figcaption class="wp-element-caption">很可惜我太晚截圖了，已經被他們煙滅證據。</figcaption></figure>
+<figure class="wp-block-image size-full"><img src="assets/images/2023/04/Screen-Shot-2023-04-01-at-11.43.00-AM.png" alt="" class="wp-image-541"/><figcaption class="wp-element-caption">很可惜我太晚截圖了，已經被他們煙滅證據。</figcaption></figure>
 <!-- /wp:image -->
 
 <!-- wp:paragraph -->
@@ -2410,7 +2410,7 @@ const POSTS = [
 <!-- /wp:paragraph -->
 
 <!-- wp:image {"id":560,"sizeSlug":"large"} -->
-<figure class="wp-block-image size-large"><img src="assets/images/2023/04/img_6266-1.jpg" alt="詐騙信件寄件人為 iCloud 帳號的證據截圖" class="wp-image-560"/><figcaption class="wp-element-caption">事發後細看他們寄來的email是用蘋果iCloud的帳號</figcaption></figure>
+<figure class="wp-block-image size-large"><img src="assets/images/2023/04/img_6266-1.jpg" alt="" class="wp-image-560"/><figcaption class="wp-element-caption">事發後細看他們寄來的email是用蘋果iCloud的帳號</figcaption></figure>
 <!-- /wp:image -->
 
 <!-- wp:paragraph -->
@@ -2430,7 +2430,7 @@ const POSTS = [
 <!-- /wp:paragraph -->
 
 <!-- wp:image {"id":925,"width":"359px","height":"undefinedpx","aspectRatio":"1","scale":"cover","sizeSlug":"large","linkDestination":"none"} -->
-<figure class="wp-block-image size-large is-resized"><img src="assets/images/2023/09/img_0830-1-473x1024.png" alt="德國各年度稅務申報截止日對照表" class="wp-image-925" style="aspect-ratio:1;object-fit:cover;width:359px;height:undefinedpx"/></figure>
+<figure class="wp-block-image size-large is-resized"><img src="assets/images/2023/09/img_0830-1-473x1024.png" alt="" class="wp-image-925" style="aspect-ratio:1;object-fit:cover;width:359px;height:undefinedpx"/></figure>
 <!-- /wp:image -->
 
 <!-- wp:paragraph -->
@@ -2494,7 +2494,7 @@ const POSTS = [
 <!-- /wp:paragraph -->
 
 <!-- wp:image {"id":465,"width":"400px","height":"158px","sizeSlug":"full","linkDestination":"custom"} -->
-<figure class="wp-block-image size-full is-resized"><a href="https://taxfix.page.link/h3Gs"><img src="assets/images/2023/03/image-1.png" alt="Taxfix 德國報稅軟體 Logo" class="wp-image-465" style="width:400px;height:158px"/></a></figure>
+<figure class="wp-block-image size-full is-resized"><a href="https://taxfix.page.link/h3Gs"><img src="assets/images/2023/03/image-1.png" alt="" class="wp-image-465" style="width:400px;height:158px"/></a></figure>
 <!-- /wp:image -->
 
 <!-- wp:heading {"level":3} -->
@@ -2536,7 +2536,7 @@ const POSTS = [
 <!-- /wp:paragraph -->
 
 <!-- wp:image {"id":449,"sizeSlug":"large","linkDestination":"custom"} -->
-<figure class="wp-block-image size-large"><a href="https://taxfix.page.link/ZCdK"><img src="assets/images/2023/03/Screen-Shot-2023-03-26-at-11.21.40-PM-1024x639.png" alt="Taxfix 報稅軟體網頁介面截圖" class="wp-image-449"/></a></figure>
+<figure class="wp-block-image size-large"><a href="https://taxfix.page.link/ZCdK"><img src="assets/images/2023/03/Screen-Shot-2023-03-26-at-11.21.40-PM-1024x639.png" alt="" class="wp-image-449"/></a></figure>
 <!-- /wp:image -->
 
 <!-- wp:paragraph -->
@@ -2552,7 +2552,7 @@ const POSTS = [
 <!-- /wp:paragraph -->
 
 <!-- wp:image {"id":470,"width":"600px","height":"300px","sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full is-resized"><img src="assets/images/2023/03/image-5.png" alt="SteuerBot 報稅 App Logo 與品牌圖" class="wp-image-470" style="width:600px;height:300px"/></figure>
+<figure class="wp-block-image size-full is-resized"><img src="assets/images/2023/03/image-5.png" alt="" class="wp-image-470" style="width:600px;height:300px"/></figure>
 <!-- /wp:image -->
 
 <!-- wp:paragraph -->
@@ -2568,7 +2568,7 @@ const POSTS = [
 <!-- /wp:paragraph -->
 
 <!-- wp:image {"id":450,"sizeSlug":"large","linkDestination":"custom"} -->
-<figure class="wp-block-image size-large"><a href="https://app.steuerbot.com/i/kevinl-25"><img src="assets/images/2023/03/Screen-Shot-2023-03-26-at-11.22.13-PM-1024x557.png" alt="SteuerBot 報稅軟體網頁介面截圖" class="wp-image-450"/></a></figure>
+<figure class="wp-block-image size-large"><a href="https://app.steuerbot.com/i/kevinl-25"><img src="assets/images/2023/03/Screen-Shot-2023-03-26-at-11.22.13-PM-1024x557.png" alt="" class="wp-image-450"/></a></figure>
 <!-- /wp:image -->
 
 <!-- wp:paragraph -->
@@ -2960,7 +2960,7 @@ const POSTS = [
 <!-- /wp:list -->
 
 <!-- wp:image {"id":334,"width":768,"height":503,"sizeSlug":"large","linkDestination":"none","otterConditions":[]} -->
-<figure class="wp-block-image size-large is-resized"><img src="assets/images/Screen%20Shot%202023-03-22%20at%205.10.44%20PM.png" alt="德國養老退休金官網首頁選單 Rente Allgemine Info 位置" class="wp-image-334" style="width:768px;height:503px" width="768" height="503"/></figure>
+<figure class="wp-block-image size-large is-resized"><img src="assets/images/Screen%20Shot%202023-03-22%20at%205.10.44%20PM.png" alt="" class="wp-image-334" style="width:768px;height:503px" width="768" height="503"/></figure>
 <!-- /wp:image -->
 
 <!-- wp:paragraph -->
@@ -2968,7 +2968,7 @@ const POSTS = [
 <!-- /wp:paragraph -->
 
 <!-- wp:image {"id":332,"width":768,"height":484,"sizeSlug":"large","linkDestination":"none","otterConditions":[]} -->
-<figure class="wp-block-image size-large is-resized"><img src="assets/images/Screen%20Shot%202023-03-22%20at%205.11.27%20PM.png" alt="德國養老金網站 Unterlagen anfordern 申請文件選項" class="wp-image-332" style="width:768px;height:484px" width="768" height="484"/></figure>
+<figure class="wp-block-image size-large is-resized"><img src="assets/images/Screen%20Shot%202023-03-22%20at%205.11.27%20PM.png" alt="" class="wp-image-332" style="width:768px;height:484px" width="768" height="484"/></figure>
 <!-- /wp:image -->
 
 <!-- wp:paragraph {"otterConditions":[]} -->
@@ -2976,7 +2976,7 @@ const POSTS = [
 <!-- /wp:paragraph -->
 
 <!-- wp:image {"id":337,"sizeSlug":"large","linkDestination":"none"} -->
-<figure class="wp-block-image size-large"><img src="assets/images/Screen%20Shot%202023-03-22%20at%205.05.39%20PM.png" alt="德國養老金網站選擇 Versicherungsverlauf 保險繳納紀錄" class="wp-image-337"/></figure>
+<figure class="wp-block-image size-large"><img src="assets/images/Screen%20Shot%202023-03-22%20at%205.05.39%20PM.png" alt="" class="wp-image-337"/></figure>
 <!-- /wp:image -->
 
 <!-- wp:paragraph -->
@@ -2984,7 +2984,7 @@ const POSTS = [
 <!-- /wp:paragraph -->
 
 <!-- wp:image {"id":888,"sizeSlug":"large","linkDestination":"none"} -->
-<figure class="wp-block-image size-large"><img src="assets/images/Screen%20Shot%202023-09-12%20at%206.41.54%20PM.png" alt="德國養老金線上申請填寫姓名與養老金號碼" class="wp-image-888"/></figure>
+<figure class="wp-block-image size-large"><img src="assets/images/Screen%20Shot%202023-09-12%20at%206.41.54%20PM.png" alt="" class="wp-image-888"/></figure>
 <!-- /wp:image -->
 
 <!-- wp:paragraph -->
@@ -2992,7 +2992,7 @@ const POSTS = [
 <!-- /wp:paragraph -->
 
 <!-- wp:image {"id":886,"sizeSlug":"large","linkDestination":"none"} -->
-<figure class="wp-block-image size-large"><img src="assets/images/Screen%20Shot%202023-09-12%20at%206.41.42%20PM.png" alt="德國養老金申請完成後顯示提交資訊頁面" class="wp-image-886"/></figure>
+<figure class="wp-block-image size-large"><img src="assets/images/Screen%20Shot%202023-09-12%20at%206.41.42%20PM.png" alt="" class="wp-image-886"/></figure>
 <!-- /wp:image -->
 
 <!-- wp:paragraph -->
@@ -3000,7 +3000,7 @@ const POSTS = [
 <!-- /wp:paragraph -->
 
 <!-- wp:image {"id":889,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full"><img src="assets/images/Screen%20Shot%202023-09-12%20at%206.42.28%20PM.png" alt="德國養老金申請成功的 Email 確認信內容" class="wp-image-889"/></figure>
+<figure class="wp-block-image size-full"><img src="assets/images/Screen%20Shot%202023-09-12%20at%206.42.28%20PM.png" alt="" class="wp-image-889"/></figure>
 <!-- /wp:image -->
 
 <!-- wp:paragraph {"textColor":"foreground"} -->
