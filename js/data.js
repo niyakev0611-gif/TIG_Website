@@ -340,13 +340,13 @@ const POSTS = [
     date: '2026-05-31',
     categories: ['德國時事'],
     tags: ['週報', '德國政策', '時事'],
-    excerpt: '6/12 GEAS 共同歐盟庇護新制全面上路倒數 14 天；ifo 5 月 84.9 連 2 月回升、Q1 GDP +0.3%、Telekom 5/26-27 全國警告罷工；AfD 民調 27% 反超 CDU 22%；機票稅 7/1 調降飛台灣每張省 €11；E-Auto 補助 5/19 重啟最高 €6,000；藍卡與機會卡 2026 新門檻；2024 入籍突破 29 萬創紀錄 + CDU Throm 5/24 趁勢喊話延回 8 年；Merz 對川普開嗆「不建議子女赴美」——再加上前幾週重大時事一次整理。',
+    excerpt: '2024 入籍突破 29 萬創紀錄 + CDU Throm 5/24 趁勢喊話延回 8 年（SPD 擋下）；藍卡與機會卡 2026 新門檻；機票稅 7/1 調降飛台灣每張省 €11；E-Auto 補助 5/19 重啟最高 €6,000；6/12 GEAS 共同歐盟庇護新制全面上路倒數；ifo 5 月 84.9 連 2 月回升、Q1 GDP +0.3%、Telekom 5/26-27 全國警告罷工；AfD 民調 27% 反超 CDU 22%；Merz 對川普開嗆「不建議子女赴美」——再加上前幾週重大時事一次整理。',
     emoji: '🌱',
     content: `
 <nav class="post-toc" aria-label="本篇目錄">
   <p class="post-toc__title">快速跳轉</p>
   <ul>
-    <li><a href="#may18-31">5月18日–31日：GEAS 倒數 14 天、ifo 連 2 月回升、AfD 反超 CDU、機票稅調降、藍卡新門檻、2024 入籍破 29 萬、Merz 嗆川普</a></li>
+    <li><a href="#may18-31">5月18日–31日：2024 入籍破 29 萬、藍卡新門檻、機票稅調降、E-Auto 補助、GEAS 倒數、經濟回穩、AfD 反超 CDU、Merz 嗆川普</a></li>
     <li><a href="#may11-17">5月11日–17日：Pistorius 訪基輔、紅場閱兵停火破局、世足噪音放寬、新生兒篩檢加項</a></li>
     <li><a href="#apr27-may10">4月27日–5月10日：梅爾茨執政滿一年、稅收驟減178億、車關稅25%、紓困上路</a></li>
     <li><a href="#apr20-26">4月20–26日：GDP腰斬、德國首份軍事戰略、Mercosur生效</a></li>
@@ -358,38 +358,38 @@ const POSTS = [
   </ul>
 </nav>
 
-<h2 id="may18-31">5月18日–31日：GEAS 倒數 14 天、ifo 連 2 月回升、AfD 反超 CDU、機票稅調降、藍卡新門檻、2024 入籍破 29 萬、Merz 嗆川普</h2>
-<p>本期合併 W21 + W22 兩週重點。最具體的「即將發生」事件是 6/12 共同歐盟庇護新制（GEAS）全面上路——德國配套法 4/28 已登 Bundesgesetzblatt、邊境快審與責任分配規則同步生效。經濟面終於出現新訊號：5/22 ifo 5 月升到 84.9 連 2 月走高、5/23 Destatis 公布 Q1 GDP 季增 +0.3% 由出口帶動、5/21 Bundesbank 月報出爐、5/26-27 Telekom 第四輪談判同步全國警告罷工。同時：AfD 27% 民調反超 CDU 22%、機票稅 7/1 起調降（飛台灣每張省 €11）、E-Auto 購車補助 5/19 重啟最高 €6,000、藍卡與機會卡 2026 新門檻、5/24 BAMF 公布 2024 入籍突破 29 萬創紀錄、CDU/CSU 黨團 Throm 趁勢喊話延回 8 年（SPD 擋下）、Merz 在埃爾福特對川普開嗆「不建議子女赴美」、跨大西洋關係 Merz 任內新低。</p>
+<h2 id="may18-31">5月18日–31日：2024 入籍破 29 萬、藍卡新門檻、機票稅調降、E-Auto 補助、GEAS 倒數、經濟回穩、AfD 反超 CDU、Merz 嗆川普</h2>
+<p>本期合併 W21 + W22 兩週重點，依在德台灣讀者關注度排序。最熱：5/24 BAMF 公布 2024 入籍突破 29 萬創紀錄、CDU/CSU Throm 趁勢喊話延回 8 年（SPD 擋下）；藍卡與機會卡 2026 新門檻；機票稅 7/1 起調降（飛台灣每張省 €11）；E-Auto 購車補助 5/19 重啟最高 €6,000。再來：6/12 共同歐盟庇護新制（GEAS）全面上路倒數；5/22 ifo 5 月升到 84.9 連 2 月走高、5/23 Q1 GDP +0.3% 由出口帶動、5/26-27 Telekom 第四輪談判同步全國警告罷工；AfD 27% 民調反超 CDU 22%；Merz 在埃爾福特對川普開嗆「不建議子女赴美」、跨大西洋關係 Merz 任內新低。</p>
 
-<img src="assets/images/2026/weekly/W21-22_圖卡1_GEAS倒數14天.png" alt="GEAS 倒數 14 天 6/12 共同歐盟庇護新制全面上路">
-<h3>GEAS 倒數 14 天　6/12 共同歐盟庇護新制全面上路</h3>
-<p>本期最具體的「即將發生」事件——<strong>6/12（兩週後）</strong>共同歐盟庇護體系（GEAS / CEAS, Gemeinsames Europäisches Asylsystem）11 部法規同步生效，全 EU 27 國第一次走同一套庇護程序、邊境快審與責任分配規則。德國這邊的配套法《GEAS-Anpassungsgesetz》與《GEAS-Anpassungsfolgegesetz》已於 <strong>4/28 登 Bundesgesetzblatt</strong>（聯邦公報）——Bundestag 2/27 二、三讀通過、Bundesrat 3/27 同意——主要條文 6/12 同步生效。三大改動：(1) 新增 <strong>Border Procedure（邊境程序）</strong>：低留居機率者改為 12 週內邊境快速處理，識別、安全檢查、決定一條龍；(2) <strong>Verantwortungsverordnung（責任分配新規）</strong>取代失靈多年的都柏林系統，重新劃分各成員國責任；(3) 取消過去的 Familienasyl（家庭庇護）概念，新增 Abschiebungshaft（遣返拘留）法律基礎。對於在德工作、永居、入籍中的台灣人來說，這項改革主要影響庇護申請人，但 6 月起短期入境、邊境檢查可能更嚴，跨境旅遊與商務的朋友可留意 ETIAS 與新邊境程序的銜接。<em>P.S. 最近常被問到「入籍 5 年制是不是要改回 8 年」——本期沒有新動作，5 年制續行；完整背景與時間線會另開一篇專文說明。</em></p>
-
-<img src="assets/images/2026/weekly/W21-22_圖卡2_經濟微露曙光.png" alt="ifo 5 月 84.9 連 2 月回升 Q1 GDP +0.3% Telekom 5/26-27 罷工">
-<h3>經濟微露曙光　ifo 5 月 84.9 連 2 月回升　Q1 GDP +0.3%</h3>
-<p>本期經濟新訊號兩條一起出來：5/22 ifo 研究院公布 5 月 Geschäftsklimaindex 升到 <strong>84.9</strong>（4 月 84.5），連續第二個月走高，企業對現況評估改善、對未來預期較不那麼悲觀，是短期景氣轉折訊號。緊接著 5/23 Destatis 公布 Q1 GDP 細節：季增 <strong>+0.3%</strong>（前季 0%），Ruth Brand 院長指出「出口在年初顯著回升、帶動經濟表現」，技術上脫離了 2025 連兩季萎縮。5/21 Bundesbank 月報同步出爐，內容更謹慎：Tarifverdienste（協約薪資）Q1 +2.8%、雖比前期慢但仍偏強；勞動市場略轉弱、社保就業微減、失業微升，伊朗戰爭與 Hormuz 海峽問題仍未消退。本期最大勞資衝突發生在 <strong>5/26-27</strong>——ver.di × Deutsche Telekom 第四輪談判同步全德警告罷工，逾 1 萬員工、12 城市停工，訴求 6.6% 加薪與 Mitgliederbonus；雙方最後在法蘭克福第四輪達成妥協協議。對在德工作族來說，Telekom 第四輪談判結果有指標性，是後續其他工會（IG Metall、ÖPNV）跟進的參考。</p>
-
-<img src="assets/images/2026/weekly/W21-22_圖卡3_AfD民調反超CDU.png" alt="AfD 27% 民調反超 CDU 22% 雙位數差距首見">
-<h3>AfD 27% 民調反超 CDU 22%　雙位數差距首見</h3>
-<p>5/26 Forsa 為 RTL/n-tv 公布最新聯邦民調（5/19-22 訪問期）：AfD 27%、CDU/CSU 22%、Grüne 15%、SPD 12%、Linke 11%、其他 6%、FDP 4%、BSW 3%。同期 INSA 給 AfD 27-29% 區間，加權聯邦趨勢 AfD 約 27.0%、CDU/CSU 約 23.0%——AfD 對聯盟黨領先擴大到 4-5 個百分點。CDU 黨內對 Merz 領導的討論升溫，Merz 個人滿意度持續低檔，連 CDU 自家選民也有不少表達不滿。<strong>9 月 6 日將舉行的薩克森-安哈爾特（Sachsen-Anhalt）州議會選舉</strong>，AfD 當地民調來到 39-40%、領先當地 CDU 達 12 個百分點，可能成為本年度 AfD 第一個拿下州總理（Ministerpräsident）的舞台，是未來四個月最值得追的德國政治劇本。</p>
-
-<img src="assets/images/2026/weekly/W21-22_圖卡4_機票稅71調降.png" alt="機票稅 7/1 起調降 飛台灣每張省 €11">
-<h3>機票稅 7/1 起調降　飛回台灣每張省 €11</h3>
-<p>聯邦議院 5/21 三黨表決通過《航空運輸稅修正案》（LuftVStG-Änderung），由 CDU/CSU、SPD、AfD 一致支持，反對方為綠黨與左翼。新稅率 <strong>2026 年 7 月 1 日</strong>起生效：短程歐洲航線 €15.53 → €13.03（-€2.50），中程航線 €39.34 → €33.01（-€6.33），長程航線 <strong>€70.83 → €59.43（-€11.40）</strong>。對在德台灣人來說，飛回台灣屬於最長程級距，每張票省 €11.40 是直接到手的減免。航空業端，漢莎、Eurowings、Condor 皆表歡迎；環保陣營這邊，Greenpeace 痛批這是「致命訊號」、聯邦環境署（UBA）反過來建議加稅、BUND 認為氣候政策地位再被弱化、總體財政影響每年約 -3.5 億歐元。注意：這項稅是航空公司繳給聯邦的，價格能不能真的回饋到票面、要看各航空公司的訂價策略，可能要到 7-8 月才看得出實際省多少。</p>
-
-<img src="assets/images/2026/weekly/W21-22_圖卡5_E-Auto購車補助開放.png" alt="E-Auto 購車補助 5/19 重啟 最高 6000 歐">
-<h3>E-Auto 購車補助 5/19 重啟　最高 €6,000</h3>
-<p>聯邦經濟與氣候保護部委由 BAFA 執行的新一輪 Elektroauto-Kaufprämie 自 5/19 起重新開放線上申請。家庭年所得 <strong>€80,000 以下</strong>可申請，每多 1 名子女寬限 +€5,000、上限 €90,000；最高補助 €6,000，總預算 30 億歐元，目標涵蓋約 80 萬輛車。回溯適用條款：<strong>2026 年 1 月 1 日</strong>起首次在德國登記的純電車皆可申請。強制持有 36 個月，提前轉手須返還補助。申請流程全數位化，於 <code>foerderzentrale.gov.de</code> 線上送件；僅限私人 PKW（乘用車），二手車不支援。對打算換車的家庭，這是 2026 年下半年最大一筆民生政策補助，名額用完就停，建議盡早送件。</p>
-
-<img src="assets/images/2026/weekly/W21-22_圖卡6_藍卡機會卡新門檻.png" alt="藍卡與機會卡 2026 新門檻一次看">
-<h3>藍卡 + 機會卡　2026 新門檻一次看</h3>
-<p>對在德工作的外國人最直接相關的兩條規定本期同步更新：Blue Card 2026 年薪門檻一般職業上調至 <strong>€50,700／年</strong>（較 2025 約 +5%），緊缺職業（IT、醫療、工程等 Mangelberufe）<strong>€45,934／年</strong>。Chancenkarte（機會卡）資金證明上修至 €13,092／年（≈ €1,091／月），點數制度（學歷、語言、年齡、工作經驗加總 6 分以上）維持。對打算申請藍卡的台灣朋友，今年起年薪準備要往上抓一點，學位認證（ZAB）與履歷在送件前先確認到位。入籍 Einbürgerung 的最新攻防請見下一張圖卡 8。</p>
-
-<img src="assets/images/2026/weekly/W21-22_圖卡8_Throm524BAMF入籍紀錄.png" alt="2024 入籍突破 29 萬 CDU Throm 5/24 趁勢喊話延回 8 年">
+<img src="assets/images/2026/weekly/W21-22_圖卡1_Throm524BAMF入籍紀錄.png" alt="2024 入籍突破 29 萬 CDU Throm 5/24 趁勢喊話延回 8 年">
 <h3>2024 入籍突破 29 萬　CDU Throm 5/24 趁勢喊話延回 8 年</h3>
 <p>本期 Einbürgerung 真正的新動作發生在 <strong>5/24</strong>。BAMF（Bundesamt für Migration und Flüchtlinge）公布 2024 全年入籍統計：約 <strong>292,000 人</strong>取得德國國籍，是自 2000 年統計以來最高紀錄；2025 年根據部分邦已公布數據加上 Welt am Sonntag 自家調查推估，可能突破 <strong>30 萬人</strong>。同日 CDU/CSU 黨團內政事務發言人 Alexander Throm 接受 Welt am Sonntag 訪問，趁勢喊話三條訴求：(1) 把入籍年限「延回 8 年」、(2) 取消一般情況下的雙重國籍、(3) 退一步——把享有 subsidiärer Schutz / Asyl 身分者直接排除在入籍程序外，要求先轉永居才能起算入籍年限。但 Throm <strong>自己也承認</strong>這些「mit der SPD nicht durchsetzbar」（過不了 SPD 那關）：聯盟內談判能拿下的就是 2025/6 廢除 3 年 Turbo-Einbürgerung 那一仗。Tagesspiegel、Handelsblatt、t-online、Epoch Times Deutschland 同步跟進。結論：5 年制續行、無立法草案；本期 Throm 喊話是黨團發言人立場、不是政府正式提案，但顯示 CDU 內部的長期壓力沒有停下來。完整背景與時間線、對在德台灣人的短中長期策略，我們另開了一篇專文整理。</p>
 
-<img src="assets/images/2026/weekly/W21-22_圖卡7_Merz嗆川普不建議子女赴美.png" alt="梅爾茨對川普開嗆 不建議子女赴美 跨大西洋關係 Merz 任內新低">
+<img src="assets/images/2026/weekly/W21-22_圖卡2_藍卡機會卡新門檻.png" alt="藍卡與機會卡 2026 新門檻一次看">
+<h3>藍卡 + 機會卡　2026 新門檻一次看</h3>
+<p>對在德工作的外國人最直接相關的兩條規定本期同步更新：Blue Card 2026 年薪門檻一般職業上調至 <strong>€50,700／年</strong>（較 2025 約 +5%），緊缺職業（IT、醫療、工程等 Mangelberufe）<strong>€45,934／年</strong>。Chancenkarte（機會卡）資金證明上修至 €13,092／年（≈ €1,091／月），點數制度（學歷、語言、年齡、工作經驗加總 6 分以上）維持。對打算申請藍卡的台灣朋友，今年起年薪準備要往上抓一點，學位認證（ZAB）與履歷在送件前先確認到位。入籍 Einbürgerung 的最新攻防請對照上方圖卡 1。</p>
+
+<img src="assets/images/2026/weekly/W21-22_圖卡3_機票稅71調降.png" alt="機票稅 7/1 起調降 飛台灣每張省 €11">
+<h3>機票稅 7/1 起調降　飛回台灣每張省 €11</h3>
+<p>聯邦議院 5/21 三黨表決通過《航空運輸稅修正案》（LuftVStG-Änderung），由 CDU/CSU、SPD、AfD 一致支持，反對方為綠黨與左翼。新稅率 <strong>2026 年 7 月 1 日</strong>起生效：短程歐洲航線 €15.53 → €13.03（-€2.50），中程航線 €39.34 → €33.01（-€6.33），長程航線 <strong>€70.83 → €59.43（-€11.40）</strong>。對在德台灣人來說，飛回台灣屬於最長程級距，每張票省 €11.40 是直接到手的減免。航空業端，漢莎、Eurowings、Condor 皆表歡迎；環保陣營這邊，Greenpeace 痛批這是「致命訊號」、聯邦環境署（UBA）反過來建議加稅、BUND 認為氣候政策地位再被弱化、總體財政影響每年約 -3.5 億歐元。注意：這項稅是航空公司繳給聯邦的，價格能不能真的回饋到票面、要看各航空公司的訂價策略，可能要到 7-8 月才看得出實際省多少。</p>
+
+<img src="assets/images/2026/weekly/W21-22_圖卡4_E-Auto購車補助開放.png" alt="E-Auto 購車補助 5/19 重啟 最高 6000 歐">
+<h3>E-Auto 購車補助 5/19 重啟　最高 €6,000</h3>
+<p>聯邦經濟與氣候保護部委由 BAFA 執行的新一輪 Elektroauto-Kaufprämie 自 5/19 起重新開放線上申請。家庭年所得 <strong>€80,000 以下</strong>可申請，每多 1 名子女寬限 +€5,000、上限 €90,000；最高補助 €6,000，總預算 30 億歐元，目標涵蓋約 80 萬輛車。回溯適用條款：<strong>2026 年 1 月 1 日</strong>起首次在德國登記的純電車皆可申請。強制持有 36 個月，提前轉手須返還補助。申請流程全數位化，於 <code>foerderzentrale.gov.de</code> 線上送件；僅限私人 PKW（乘用車），二手車不支援。對打算換車的家庭，這是 2026 年下半年最大一筆民生政策補助，名額用完就停，建議盡早送件。</p>
+
+<img src="assets/images/2026/weekly/W21-22_圖卡5_GEAS倒數14天.png" alt="GEAS 倒數 14 天 6/12 共同歐盟庇護新制全面上路">
+<h3>GEAS 倒數 14 天　6/12 共同歐盟庇護新制全面上路</h3>
+<p>本期最具體的「即將發生」事件——<strong>6/12（兩週後）</strong>共同歐盟庇護體系（GEAS / CEAS, Gemeinsames Europäisches Asylsystem）11 部法規同步生效，全 EU 27 國第一次走同一套庇護程序、邊境快審與責任分配規則。德國這邊的配套法《GEAS-Anpassungsgesetz》與《GEAS-Anpassungsfolgegesetz》已於 <strong>4/28 登 Bundesgesetzblatt</strong>（聯邦公報）——Bundestag 2/27 二、三讀通過、Bundesrat 3/27 同意——主要條文 6/12 同步生效。三大改動：(1) 新增 <strong>Border Procedure（邊境程序）</strong>：低留居機率者改為 12 週內邊境快速處理，識別、安全檢查、決定一條龍；(2) <strong>Verantwortungsverordnung（責任分配新規）</strong>取代失靈多年的都柏林系統，重新劃分各成員國責任；(3) 取消過去的 Familienasyl（家庭庇護）概念，新增 Abschiebungshaft（遣返拘留）法律基礎。對於在德工作、永居、入籍中的台灣人來說，這項改革主要影響庇護申請人，但 6 月起短期入境、邊境檢查可能更嚴，跨境旅遊與商務的朋友可留意 ETIAS 與新邊境程序的銜接。</p>
+
+<img src="assets/images/2026/weekly/W21-22_圖卡6_經濟微露曙光.png" alt="ifo 5 月 84.9 連 2 月回升 Q1 GDP +0.3% Telekom 5/26-27 罷工">
+<h3>經濟微露曙光　ifo 5 月 84.9 連 2 月回升　Q1 GDP +0.3%</h3>
+<p>本期經濟新訊號兩條一起出來：5/22 ifo 研究院公布 5 月 Geschäftsklimaindex 升到 <strong>84.9</strong>（4 月 84.5），連續第二個月走高，企業對現況評估改善、對未來預期較不那麼悲觀，是短期景氣轉折訊號。緊接著 5/23 Destatis 公布 Q1 GDP 細節：季增 <strong>+0.3%</strong>（前季 0%），Ruth Brand 院長指出「出口在年初顯著回升、帶動經濟表現」，技術上脫離了 2025 連兩季萎縮。5/21 Bundesbank 月報同步出爐，內容更謹慎：Tarifverdienste（協約薪資）Q1 +2.8%、雖比前期慢但仍偏強；勞動市場略轉弱、社保就業微減、失業微升，伊朗戰爭與 Hormuz 海峽問題仍未消退。本期最大勞資衝突發生在 <strong>5/26-27</strong>——ver.di × Deutsche Telekom 第四輪談判同步全德警告罷工，逾 1 萬員工、12 城市停工，訴求 6.6% 加薪與 Mitgliederbonus；雙方最後在法蘭克福第四輪達成妥協協議。對在德工作族來說，Telekom 第四輪談判結果有指標性，是後續其他工會（IG Metall、ÖPNV）跟進的參考。</p>
+
+<img src="assets/images/2026/weekly/W21-22_圖卡7_AfD民調反超CDU.png" alt="AfD 27% 民調反超 CDU 22% 雙位數差距首見">
+<h3>AfD 27% 民調反超 CDU 22%　雙位數差距首見</h3>
+<p>5/26 Forsa 為 RTL/n-tv 公布最新聯邦民調（5/19-22 訪問期）：AfD 27%、CDU/CSU 22%、Grüne 15%、SPD 12%、Linke 11%、其他 6%、FDP 4%、BSW 3%。同期 INSA 給 AfD 27-29% 區間，加權聯邦趨勢 AfD 約 27.0%、CDU/CSU 約 23.0%——AfD 對聯盟黨領先擴大到 4-5 個百分點。CDU 黨內對 Merz 領導的討論升溫，Merz 個人滿意度持續低檔，連 CDU 自家選民也有不少表達不滿。<strong>9 月 6 日將舉行的薩克森-安哈爾特（Sachsen-Anhalt）州議會選舉</strong>，AfD 當地民調來到 39-40%、領先當地 CDU 達 12 個百分點，可能成為本年度 AfD 第一個拿下州總理（Ministerpräsident）的舞台，是未來四個月最值得追的德國政治劇本。</p>
+
+<img src="assets/images/2026/weekly/W21-22_圖卡8_Merz嗆川普不建議子女赴美.png" alt="梅爾茨對川普開嗆 不建議子女赴美 跨大西洋關係 Merz 任內新低">
 <h3>梅爾茨對川普開嗆　「不建議子女赴美」　跨大西洋關係任內新低</h3>
 <p>5/15 在埃爾福特（Erfurt）舉行的天主教大會（Katholikentag）上，Merz 回答現場年輕人提問時直言：「我不會建議我的子女現在去美國讀書或工作」（<em>ich würde meinen Kindern derzeit nicht empfehlen, in die USA zu gehen</em>），點名理由是美國「社會氛圍突然變調」、即使學歷高也「很難找到工作」。他補一句「我仍是美國的崇拜者」，但隨即說「我的欽佩此刻並沒在增加」——刻意保留外交餘地，但措辭已是德國總理層級對美罕見的負面評價。這段發言本週被 ZEIT、Spiegel、FAZ、ZDF 連日追蹤，把跨大西洋關係的結構性裂痕推到 Merz 任內新低：5/1 川普把對歐汽車關稅從 15% 拉至 <strong>25%</strong>、4 月底美方通知再撤 <strong>5,000</strong> 名駐德美軍並揚言「會再裁更多」、北約軍費分配與烏克蘭援助路線分歧持續。對在德或考慮赴美求職／升學的台灣朋友，這是一個由德國總理親自發出的市場訊號：美德人才流動、商業合作的環境正在重新洗牌，做選擇前可以再多看一下。</p>
 
