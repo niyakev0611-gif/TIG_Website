@@ -86,5 +86,15 @@
 1. 搜新聞 → 比對既有圖卡避免重複
 2. 各方觀點摘要（媒體社論、專家分析、政黨反應）
 3. Python Pillow 製作 1080×1080 圖卡（依本檔字體 / 字重 / 配色）
-4. 撰寫 FB 繁中貼文 + 來源連結
-5. **不直接發布**，呈現給用戶審閱後再 commit
+4. **同時儲存兩份副本**（重要！）：
+   - 工作目錄（`/home/user/output/` 或 session 工作區）
+   - **Repo 路徑 `assets/images/2026/weekly/`**（commit & push 後，
+     用戶在本機 `git pull` 即可同步到 `/Users/Lin/TIG/TIG_Website/assets/images/2026/weekly/`，
+     方便一鍵複製貼文用）
+   - 再用 `SendUserFile` 送到聊天視窗，讓用戶可立即下載
+5. 撰寫 FB 繁中貼文 + 來源連結
+6. **不直接發布**，呈現給用戶審閱後再 commit
+7. 確認 OK 後：
+   - 把 `assets/images/2026/weekly/W{週數}_*.png` 全部 `git add` 進 repo
+   - 用清楚的 commit message（如 `Add W23 weekly cards: 世足/安理會/退休金/破產潮`）
+   - Push 到當前分支並（若尚未開）建立草稿 PR
