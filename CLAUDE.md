@@ -98,3 +98,28 @@
    - 把 `assets/images/2026/weekly/W{週數}_*.png` 全部 `git add` 進 repo
    - 用清楚的 commit message（如 `Add W23 weekly cards: 世足/安理會/退休金/破產潮`）
    - Push 到當前分支並（若尚未開）建立草稿 PR
+
+---
+
+## ⚠️ 每週上稿絕對不能漏的四件事（Routine Checklist）
+
+**圖卡只是視覺資產，網站 `posts/weekly-digest.html` 的內容來源是 `js/data.js`。
+只放圖卡 PNG 不改 data.js → 網站完全不會顯示新一週的週報。**
+這是已踩過兩次的雷（PR #18 也踩過），請務必每週按以下順序執行：
+
+| ✅ | 步驟 | 細節 |
+|---|---|---|
+| ① | **PNG 放進 repo** | `assets/images/2026/weekly/W{N}_圖卡{i}_{主題}.png` |
+| ② | **更新 `js/data.js`** | 在 `slug: 'weekly-digest'` 物件內：<br>　• `date:` 改成該週週日（如 `'2026-06-07'`）<br>　• `excerpt:` 改寫，把本週最大事件擺前面<br>　• `content:` 中 TOC 新增 `<li><a href="#jun{月}-{日}">...</a></li>`（最上方）<br>　• `content:` 中新增 `<h2 id="jun{月}-{日}">` 區段（最上方），包含：<br>　　　1 段 lead `<p>` 講本週重點<br>　　　每張卡：`<img>` → `<h3>` → `<p>` 深度內文 → `<p class="post-sources">📚 來源：...</p>`<br>　　結束接 `<hr>` 分隔 |
+| ③ | **跑 build** | `node scripts/build.js` 重生 `posts/weekly-digest.html`、`sitemap.xml`、`feed.xml` |
+| ④ | **commit、push、開 PR** | commit 訊息要明列「新增 W{N} 圖卡 + 更新 data.js + 重建靜態頁」三件事 |
+
+**驗證網站上線**：合進 main 後 GitHub Pages 約 30–60 秒重新部署。
+打開 https://taiwanese-in-germany.com/posts/weekly-digest.html，
+最上方應該看到新的 `<h2>` 區段、5 張圖卡與「📚 來源」連結。
+如果沒看到 → 99% 是步驟 ② 或 ③ 漏掉了，請重跑。
+
+**樣式約定**：
+- 每張卡內文的「📚 來源」段落用 `<p class="post-sources">`（已在 `css/style.css` 定義）
+- 來源連結一律 `target="_blank" rel="noopener noreferrer"`
+- 區段內可重複使用 `<strong>` 強調關鍵數字與專有名詞，跟既有 W21-22 / W20 段落風格一致

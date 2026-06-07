@@ -1101,6 +1101,22 @@ body { padding-left: 64px; }
   border-top: 1px solid var(--border-light);
 }
 
+.post-sources {
+  font-size: var(--text-sm);
+  color: var(--tertiary);
+  margin-top: -16px;
+  padding: 10px 14px;
+  background: var(--bg-secondary);
+  border-left: 3px solid var(--border);
+  border-radius: 4px;
+}
+.post-sources a {
+  color: var(--secondary);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.post-sources a:hover { color: var(--primary); }
+
 /* Post content typography */
 .post-content {
   font-size: 1.25rem;     /* 20px */
