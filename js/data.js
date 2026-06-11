@@ -340,13 +340,13 @@ const POSTS = [
     date: '2026-06-14',
     categories: ['德國時事'],
     tags: ['週報', '德國政策', '時事'],
-    excerpt: '6/14（日）19:00 德國隊世足首戰古拉索，ARD 免費直播——本屆無官方 Fanmeile，公播資訊一卡看懂；6/10 梅爾茨在總理府邀勞資雙方高層夜談三小時的「改革高峰會」空手而回——年金、稅制、工時全無共識，DGB 批改革議程「只剩省錢與刪減」；Destatis 公布 4 月對美出口年減 12.9%、Q1 對美順差縮水 30.5%，川普關稅效應全面顯現；5 月通膨自兩年高點回落至 2.6%；德國錯過 EU 薪資透明指令 6/7 轉化期限，6/8 起公部門直接適用、求職者可要求薪資範圍；加上 6/14 早餐指令、6/19 一鍵退訂按鈕等六月新制懶人包。',
+    excerpt: '6/14（日）19:00 德國隊世足首戰古拉索，ARD 免費直播——本屆無官方 Fanmeile，公播資訊一卡看懂；6/10 梅爾茨在總理府邀勞資雙方高層夜談三小時的「改革高峰會」空手而回——年金、稅制、工時全無共識，DGB 批改革議程「只剩省錢與刪減」；Destatis 公布 4 月對美出口年減 12.9%、Q1 對美順差縮水 30.5%，川普關稅效應全面顯現；5 月通膨自兩年高點回落至 2.6%；ECB 6/11 升息一碼至 2.25%——2023 年以來首次，劍指伊朗戰事推升的能源通膨；德國錯過 EU 薪資透明指令 6/7 轉化期限，6/8 起公部門直接適用、求職者可要求薪資範圍；加上 6/14 早餐指令、6/19 一鍵退訂按鈕等六月新制懶人包。',
     emoji: '🌱',
     content: `
 <nav class="post-toc" aria-label="本篇目錄">
   <p class="post-toc__title">快速跳轉</p>
   <ul>
-    <li><a href="#jun8-14">6月8日–14日：世足首戰週日 19 點開踢、改革高峰會空手而回、對美出口年減 12.9%、通膨回落 2.6%、薪資透明 6/8 啟動、六月新制懶人包</a></li>
+    <li><a href="#jun8-14">6月8日–14日：世足首戰週日 19 點開踢、改革高峰會空手而回、對美出口年減 12.9%、通膨回落 2.6%、ECB 三年來首升息、薪資透明 6/8 啟動、六月新制懶人包</a></li>
     <li><a href="#jun1-7">6月1日–7日：世足倒數 Neuer 回鍋、安理會競選史上首敗、退休金調漲 4.24%、破產潮 20 年新高</a></li>
     <li><a href="#may18-31">5月18日–31日：2024 入籍破 29 萬、藍卡新門檻、機票稅調降、E-Auto 補助、GEAS 倒數、經濟回穩、AfD 反超 CDU、Merz 嗆川普</a></li>
     <li><a href="#may11-17">5月11日–17日：Pistorius 訪基輔、紅場閱兵停火破局、世足噪音放寬、新生兒篩檢加項</a></li>
@@ -360,8 +360,8 @@ const POSTS = [
   </ul>
 </nav>
 
-<h2 id="jun8-14">6月8日–14日：世足首戰週日 19 點開踢、改革高峰會空手而回、對美出口年減 12.9%、通膨回落 2.6%、薪資透明 6/8 啟動、六月新制懶人包</h2>
-<p>本週的關鍵字是「改革」與「帳單」。最大事件：<strong>6/10 梅爾茨在總理府邀工會與雇主協會高層夜談三小時的「改革高峰會」（Reformgipfel）空手而回</strong>——年金、所得稅、社會保險、工時規定全無共識，DGB 主席 Fahimi 批政府改革議程「只剩省錢與刪減」，NZZ 評會後「結果令人清醒」。同週 Destatis 兩份數據一好一壞：<strong>4 月對美出口年減 12.9%</strong>、Q1 對美順差縮水 30.5%，川普 15% 關稅效應全面顯現；<strong>5 月通膨則自兩年高點回落至 2.6%</strong>，能源漲幅從 +10.1% 收斂到 +6.6%。對在德工作者最實用的一條：德國錯過 EU 薪資透明指令 6/7 轉化期限，<strong>6/8 起公部門直接適用</strong>、法院須依指令解釋現行法——求職可要求薪資範圍、雇主不得追問薪資史。最後附上六月新制懶人包：6/12 GEAS 上路、6/14 早餐指令、6/19 一鍵退訂按鈕。世足方面，6/11 開幕戰墨西哥對南非開踢，<strong>德國隊 6/14（週日）德國時間 19:00 在休士頓首戰古拉索</strong>——時間、轉播、公播注意事項看第一張卡。</p>
+<h2 id="jun8-14">6月8日–14日：世足首戰週日 19 點開踢、改革高峰會空手而回、對美出口年減 12.9%、通膨回落 2.6%、ECB 三年來首升息、薪資透明 6/8 啟動、六月新制懶人包</h2>
+<p>本週的關鍵字是「改革」與「帳單」。最大事件：<strong>6/10 梅爾茨在總理府邀工會與雇主協會高層夜談三小時的「改革高峰會」（Reformgipfel）空手而回</strong>——年金、所得稅、社會保險、工時規定全無共識，DGB 主席 Fahimi 批政府改革議程「只剩省錢與刪減」，NZZ 評會後「結果令人清醒」。同週 Destatis 兩份數據一好一壞：<strong>4 月對美出口年減 12.9%</strong>、Q1 對美順差縮水 30.5%，川普 15% 關稅效應全面顯現；<strong>5 月通膨則自兩年高點回落至 2.6%</strong>，能源漲幅從 +10.1% 收斂到 +6.6%；不過歐元區整體通膨仍達 3.2%，<strong>ECB 6/11 宣布升息一碼至 2.25%</strong>——2023 年以來首次，回應伊朗戰事推升的能源價格。對在德工作者最實用的一條：德國錯過 EU 薪資透明指令 6/7 轉化期限，<strong>6/8 起公部門直接適用</strong>、法院須依指令解釋現行法——求職可要求薪資範圍、雇主不得追問薪資史。最後附上六月新制懶人包：6/12 GEAS 上路、6/14 早餐指令、6/19 一鍵退訂按鈕。世足方面，6/11 開幕戰墨西哥對南非開踢，<strong>德國隊 6/14（週日）德國時間 19:00 在休士頓首戰古拉索</strong>——時間、轉播、公播注意事項看第一張卡。</p>
 
 <img src="assets/images/2026/weekly/W24_圖卡1_世足首戰提醒.png" alt="德國隊世足首戰古拉索 6/14 週日德國時間 19 點 ARD 免費直播 公播資訊">
 <h3>世足首戰提醒：週日 19:00，不用熬夜的黃金時段</h3>
@@ -380,15 +380,20 @@ const POSTS = [
 
 <img src="assets/images/2026/weekly/W24_圖卡4_通膨回落.png" alt="德國 5 月通膨回落至 2.6% 能源仍比去年貴 6.6% 服務通膨 3.1%">
 <h3>通膨回落 2.6%：油價降溫，但房租與服務還在漲</h3>
-<p>Destatis 公布 5 月通膨初值：<strong>2.6%</strong>，較 4 月的兩年高點 2.9% 明顯降溫，物價月對月甚至下跌 0.2%——這是 3 月中東衝突推升油價以來，第一個明確的緩解訊號。拆開看結構：<strong>能源仍比去年貴 6.6%</strong>，但已從 4 月的 +10.1% 大幅收斂；<strong>食品 +0.4%</strong> 幾近持平（4 月 +1.2%）；真正僵固的是<strong>服務類通膨 3.1%</strong>（4 月 2.8%，不降反升）、核心通膨（剔除能源食品）2.5%——房租、保險、外食、理髮這些「躲不掉的支出」漲勢未歇。<strong>對 ECB 的意義</strong>：德國通膨仍高於歐元區 2% 目標，加上服務通膨回彈，經濟學家多認為短期內降息空間有限。<strong>深度觀察</strong>：這次通膨波動的劇本與 2022 能源危機不同——衝擊源（中東油價）來得快去得也快，但服務通膨的「第二輪效應」（工資與租金互相推升）才是 2026 下半年的主戰場。對在德台灣人實用的一句話：加油與超市的壓力放緩了，但簽新租約、續保險、辦健身房會籍前，比價與漲價條款比以前更重要。</p>
+<p>Destatis 公布 5 月通膨初值：<strong>2.6%</strong>，較 4 月的兩年高點 2.9% 明顯降溫，物價月對月甚至下跌 0.2%——這是 3 月中東衝突推升油價以來，第一個明確的緩解訊號。拆開看結構：<strong>能源仍比去年貴 6.6%</strong>，但已從 4 月的 +10.1% 大幅收斂；<strong>食品 +0.4%</strong> 幾近持平（4 月 +1.2%）；真正僵固的是<strong>服務類通膨 3.1%</strong>（4 月 2.8%，不降反升）、核心通膨（剔除能源食品）2.5%——房租、保險、外食、理髮這些「躲不掉的支出」漲勢未歇。<strong>歐元區對照</strong>：德國的 2.6% 在歐元區（5 月整體 3.2%、核心 2.5%）中相對溫和，但距 2% 目標仍有距離——ECB 已在 6/11 以升息回應（見下一張卡）。<strong>深度觀察</strong>：這次通膨波動的劇本與 2022 能源危機不同——衝擊源（中東油價）來得快去得也快，但服務通膨的「第二輪效應」（工資與租金互相推升）才是 2026 下半年的主戰場。對在德台灣人實用的一句話：加油與超市的壓力放緩了，但簽新租約、續保險、辦健身房會籍前，比價與漲價條款比以前更重要。</p>
 <p class="post-sources">📚 來源：<a href="https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/05/PD26_182_611.html" target="_blank" rel="noopener noreferrer">Destatis｜5 月通膨初值</a> · <a href="https://tradingeconomics.com/germany/inflation-cpi" target="_blank" rel="noopener noreferrer">Trading Economics｜結構拆解</a></p>
 
-<img src="assets/images/2026/weekly/W24_圖卡5_薪資透明指令.png" alt="EU 薪資透明指令 德國錯過 6/7 轉化期限 6/8 起公部門直接適用">
+<img src="assets/images/2026/weekly/W24_圖卡5_ECB升息.png" alt="ECB 6/11 升息一碼 存款利率升至 2.25% 2023 年以來首次升息">
+<h3>ECB 升息一碼：三年來首次，劍指戰爭通膨</h3>
+<p>6/11 下午法蘭克福發出本週最重磅的經濟訊號：ECB 管理委員會決議<strong>三大關鍵利率同步調升 25 個基點</strong>，存款利率自 2.00% 升至 <strong>2.25%</strong>——這是 <strong>2023 年以來的首次升息</strong>，正式終結降息循環。成因：伊朗戰事與荷莫茲海峽油運受阻推升能源價格，歐元區 5 月通膨達 <strong>3.2%</strong>、核心通膨 2.5%，距 2% 目標漸行漸遠（德國 2.6% 相對溫和，見上一張卡）。同步公布的新總體預測兩面挨刀：<strong>2026 年通膨上修至 3.0%、GDP 成長下修至 0.8%</strong>；2027 年通膨估 2.3%、2028 年才回到 2.0%。總裁 Lagarde 在記者會強調利率路徑「視數據而定、不預先承諾」；市場分析（如 LBBW）則預期年底前可能再升兩次、存款利率上看 <strong>2.75%</strong>。<strong>深度觀察</strong>：對正陷出口疲弱與破產潮的德國經濟（見前兩張卡），升息無異雪上加霜——融資成本走高將進一步擠壓高負債企業；對個人財務，房貸利率（Bauzinsen）與定存利率將同步走升，正在規劃購屋貸款或轉貸（Anschlussfinanzierung）者，利率比較與鎖定策略的重要性明顯上升。</p>
+<p class="post-sources">📚 來源：<a href="https://www.cnbc.com/amp/2026/06/11/ecb-hikes-interest-rates.html" target="_blank" rel="noopener noreferrer">CNBC｜首次升息</a> · <a href="https://www.lbbw.de/artikel/news-und-einschaetzungen/ezb-zinsentscheid-juni-2026_amy24vq2ba_d.html" target="_blank" rel="noopener noreferrer">LBBW｜決議解析與利率預測</a> · <a href="https://www.bloomberg.com/news/articles/2026-05-11/ecb-to-hike-rates-twice-in-2026-as-inflation-jumps-survey-shows" target="_blank" rel="noopener noreferrer">Bloomberg｜經濟學家調查</a></p>
+
+<img src="assets/images/2026/weekly/W24_圖卡6_薪資透明指令.png" alt="EU 薪資透明指令 德國錯過 6/7 轉化期限 6/8 起公部門直接適用">
 <h3>薪資透明時代 6/8 啟動：德國遲到，你的權利先到</h3>
 <p>EU 薪資透明指令（Entgelttransparenzrichtlinie, EU 2023/970）要求成員國最遲 <strong>2026/6/7</strong> 轉化為國內法——<strong>德國沒趕上</strong>。聯邦政府的轉化立法（修訂版 Entgelttransparenzgesetz）預計 2027 年初才會到位，專家委員會建議稿今年稍早才出爐。但「遲到」不等於「沒事」：依 EU 法理，<strong>6/8 起指令對公部門雇主直接適用</strong>（unmittelbare Wirkung），且所有德國法院從這天起必須「依指令精神解釋」現行法（richtlinienkonforme Auslegung）——私部門員工也間接受惠。指令給工作者的三項新權利：（1）<strong>求職階段</strong>：有權在面試前知道職缺的起薪或薪資範圍，雇主<strong>不得再追問你過去的薪資紀錄</strong>；（2）<strong>在職階段</strong>：可要求雇主提供同職級、按性別拆分的平均薪資資訊，薪資保密條款（Verschwiegenheitsklauseln）失效；（3）<strong>結構面</strong>：性別薪資差距逾 5% 且無法以客觀標準解釋者，雇主須與員工代表會啟動聯合薪資評估。<strong>對在德台灣人的意義</strong>：外籍求職者長期吃「資訊不對稱」的虧——不知道行情、不敢開價、被前一份薪水錨定。這項指令直接拆掉這三道牆。公部門（大學、研究機構、公家單位）工作者 6/8 起即可主張新權利；私部門雖待德國立法，但面試時要求薪資範圍從現在起就是合理請求。</p>
 <p class="post-sources">📚 來源：<a href="https://www.noerr.com/de/insights/keine-rechtzeitige-umsetzung-der-eu-entgelttransparenzrichtlinie-in-deutsches-recht-was-gilt-nach-dem-7-juni-2026" target="_blank" rel="noopener noreferrer">Noerr｜6/7 之後的法律狀態</a> · <a href="https://www.lto.de/recht/hintergruende/h/umsetzung-entgelttransparenz-richtlinie-verschoben-haftung" target="_blank" rel="noopener noreferrer">LTO｜指令無國內法也生效</a> · <a href="https://www.personalwirtschaft.de/news/verguetung/eu-entgelttransparenzrichtlinie-deutschland-verpasst-frist-das-sind-die-konsequenzen-203783/" target="_blank" rel="noopener noreferrer">Personalwirtschaft｜錯過期限的後果</a></p>
 
-<img src="assets/images/2026/weekly/W24_圖卡6_六月新制.png" alt="六月新制懶人包 GEAS 6/12 上路 早餐指令 6/14 撤回按鈕 6/19">
+<img src="assets/images/2026/weekly/W24_圖卡7_六月新制.png" alt="六月新制懶人包 GEAS 6/12 上路 早餐指令 6/14 撤回按鈕 6/19">
 <h3>六月新制懶人包：蜂蜜要標產地、網購一鍵退訂</h3>
 <p>三項新規 6 月陸續生效，由近到遠排：（1）<strong>6/12 GEAS 上路</strong>——歐盟共同庇護體系 11 部法規全 EU 同步適用，統一程序＋邊境快速審查（背景與德國配套法已在 W21-22 深度解析，此處不重複）；（2）<strong>6/14 早餐指令（Frühstücksrichtlinie, EU 2024/1438）</strong>——蜂蜜混合產品必須<strong>逐一標示來源國與重量百分比</strong>、按占比遞減排列，「EU 與非 EU 蜂蜜混合」這種看了等於沒看的字樣走入歷史；果醬<strong>最低果含量從 350g 升到 450g/kg</strong>（Extra 級 500g），且 Konfitüre 終於可以正式稱作 Marmelade——困擾德語學習者多年的名稱之爭落幕；（3）<strong>6/19 線上撤回按鈕（Widerrufsbutton）</strong>——依 EU 指令 2023/2673，凡是讓消費者在網站或 App 上簽約的業者，都必須提供與下單同樣顯眼、同樣容易的「一鍵撤回」功能；<strong>沒提供的話，你的 14 天撤回期自動延長一年</strong>，業者還可能被告誡（Abmahnung）。<strong>對在德台灣人的意義</strong>：訂閱制健身房、電信約、串流服務——以前解約要寫掛號信的時代正式結束；6/19 之後若在網站上找不到撤回按鈕，截圖存證，你的權利反而變大。買蜂蜜也終於看得到真實產地與比例。</p>
 <p class="post-sources">📚 來源：<a href="https://www.verbraucherzentrale.de/wissen/vertraege-reklamation/widerrufsbutton-ab-juni-2026-onlinevertraege-einfacher-widerrufen-118449" target="_blank" rel="noopener noreferrer">Verbraucherzentrale｜撤回按鈕</a> · <a href="https://www.it-recht-kanzlei.de/widerrufsbutton-faq-leitfaden-online-handel.html" target="_blank" rel="noopener noreferrer">IT-Recht Kanzlei｜FAQ</a> · <a href="https://llh.hessen.de/unternehmensfuehrung/erwerbskombinationen/direktvermarktung/honig-saefte-marmelade-eu-regeln-2026/" target="_blank" rel="noopener noreferrer">LLH Hessen｜早餐指令</a> · <a href="https://www.bamf.de/DE/Themen/AsylFluechtlingsschutz/EuropaeischerKontext/GEAS/geas-node.html" target="_blank" rel="noopener noreferrer">BAMF｜GEAS</a></p>
