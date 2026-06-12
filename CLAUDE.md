@@ -46,9 +46,11 @@
 - **CJK**：Noto Sans CJK TC
   - Regular：`/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc` index=3
   - Bold：`/usr/share/fonts/opentype/noto/NotoSansCJK-Bold.ttc` index=3
-- **Latin / 數字 / 符號**：DejaVu Sans
-  - Regular：`/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf`
-  - Bold：`/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf`
+- **Latin / 數字 / 符號**：Noto Sans（W24 起；apt 套件 `fonts-noto-core`）
+  - Regular：`/usr/share/fonts/truetype/noto/NotoSans-Regular.ttf`
+  - Bold：`/usr/share/fonts/truetype/noto/NotoSans-Bold.ttf`
+  - 背景：W12–W23 用 DejaVu Sans，但用戶反映 DejaVu Bold 數字過粗不易讀，
+    W24 起改用與 CJK 同家族的 Noto Sans，**之後一律用 Noto Sans、勿用回 DejaVu**
 
 注意：原始任務 spec 文字描述提到的 `DroidSansFallbackFull.ttf` 與環境中的 `wqy-zenhei` 都**不符**既有圖卡視覺。網站本身使用 Noto Sans TC，圖卡應與網站視覺一致 → Noto Sans CJK TC 才是正解。
 
