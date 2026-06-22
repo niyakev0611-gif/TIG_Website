@@ -340,13 +340,13 @@ const POSTS = [
     date: '2026-06-21',
     categories: ['德國時事'],
     tags: ['週報', '德國政策', '時事'],
-    excerpt: '德國世足首戰 7:1 血洗古拉索、暫居 E 組龍頭，6/20 週六德國時間 22:00 再戰非洲冠軍象牙海岸（ZDF）；6/19 起熱浪席捲西南部、上看 38°C，DWD 逾百縣市發布高溫警告、首批熱帶夜報到；6/18–19 EU 高峰會在布魯塞爾登場，烏克蘭「聯繫會員」、第 21 輪對俄制裁與 2028–34 七年預算（MFR）三大戰場齊開，Merz 挺烏卻反對共同舉債；伊朗戰火持續衝擊航空，漢莎集團德黑蘭、貝魯特、阿曼等中東航點停飛至 10/24、避開伊朗領空，特拉維夫 7/1 例外復飛；中東迎來轉折——巴基斯坦斡旋下美伊 6/14 敲定停火諒解備忘錄、預計 6/19 簽署，將延長停火、解除荷莫茲海峽封鎖並啟動約 60 天核談判；市場提前反映，6/16 ZEW 景氣預期單月跳升 20.7 點、重返正值 +10.5（遠優於預期），但反映當下的現況指標卻續跌至 −81.0。',
+    excerpt: '德國世足兩戰全勝、提前晉級 32 強——首戰 7:1 大勝古拉索、6/20 再靠 Undav 補時絕殺 2:1 逆轉象牙海岸，坐穩 E 組第 1，是 2014 奪冠後首度闖過小組賽；6/19 起熱浪席捲西南部、上看 38°C，DWD 逾百縣市發布高溫警告、首批熱帶夜報到；6/18–19 EU 高峰會在布魯塞爾登場，烏克蘭「聯繫會員」、第 21 輪對俄制裁與 2028–34 七年預算（MFR）三大戰場齊開，Merz 挺烏卻反對共同舉債；伊朗戰火持續衝擊航空，漢莎集團德黑蘭、貝魯特、阿曼等中東航點停飛至 10/24、避開伊朗領空，特拉維夫 7/1 例外復飛；中東迎來轉折——巴基斯坦斡旋下美伊 6/14 敲定停火諒解備忘錄、預計 6/19 簽署，將延長停火、解除荷莫茲海峽封鎖並啟動約 60 天核談判；市場提前反映，6/16 ZEW 景氣預期單月跳升 20.7 點、重返正值 +10.5（遠優於預期），但反映當下的現況指標卻續跌至 −81.0。',
     emoji: '🌱',
     content: `
 <nav class="post-toc" aria-label="本篇目錄">
   <p class="post-toc__title">快速跳轉</p>
   <ul>
-    <li><a href="#jun15-21">6月15日–21日：德國世足 7:1 開門紅、熱浪上看 38°C、EU 高峰會三大戰場、中東航線大停飛至 10/24、伊朗停火協議 6/19 簽署、ZEW 景氣預期重返正值 +10.5</a></li>
+    <li><a href="#jun15-21">6月15日–21日：德國世足 2:1 逆轉象牙海岸晉 32 強、熱浪上看 38°C、EU 高峰會三大戰場、中東航線大停飛至 10/24、伊朗停火協議 6/19 簽署、ZEW 景氣預期重返正值 +10.5</a></li>
     <li><a href="#jun8-14">6月8日–14日：世足首戰週日 19 點開踢、改革高峰會空手而回、對美出口年減 12.9%、通膨回落 2.6%、ECB 三年來首升息、薪資透明 6/8 啟動、六月新制懶人包</a></li>
     <li><a href="#jun1-7">6月1日–7日：世足倒數 Neuer 回鍋、安理會競選史上首敗、退休金調漲 4.24%、破產潮 20 年新高</a></li>
     <li><a href="#may18-31">5月18日–31日：2024 入籍破 29 萬、藍卡新門檻、機票稅調降、E-Auto 補助、GEAS 倒數、經濟回穩、AfD 反超 CDU、Merz 嗆川普</a></li>
@@ -361,13 +361,13 @@ const POSTS = [
   </ul>
 </nav>
 
-<h2 id="jun15-21">6月15日–21日：德國世足 7:1 開門紅、熱浪上看 38°C、EU 高峰會三大戰場、中東航線大停飛、伊朗停火協議 6/19 簽署、ZEW 景氣預期重返正值 +10.5</h2>
-<p>本週德國從綠茵場、天氣到談判桌都有大事。先看球迷最關心的：<strong>德國世足首戰 7:1 血洗古拉索、暫居 E 組龍頭</strong>，6/20 週六深夜再戰非洲冠軍象牙海岸。生活面，<strong>6/19 起熱浪席捲西南部、上看 38°C</strong>，DWD 在逾百縣市發布高溫警告。政治上，<strong>6/18–19 的 EU 高峰會</strong>在布魯塞爾登場，烏克蘭、對俄第 21 輪制裁與 2028–2034 七年預算（MFR）三大議題同台。中東戰火仍讓航空大亂，<strong>漢莎集團多個中東航點停飛至 10/24</strong>、避開伊朗領空。而本週最大的地緣政治轉折，是<strong>美伊在巴基斯坦斡旋下 6/14 敲定停火諒解備忘錄、預計 6/19 簽署</strong>，將延長停火、解除荷莫茲海峽封鎖並啟動約 60 天核談判；市場立刻反映——<strong>6/16 ZEW 景氣預期單月跳升 20.7 點、重返正值 +10.5</strong>，但反映當下的現況指標卻續跌至 −81.0。以下逐題深入。</p>
+<h2 id="jun15-21">6月15日–21日：德國世足 2:1 逆轉象牙海岸、提前晉 32 強、熱浪上看 38°C、EU 高峰會三大戰場、中東航線大停飛、伊朗停火協議 6/19 簽署、ZEW 景氣預期重返正值 +10.5</h2>
+<p>本週德國從綠茵場、天氣到談判桌都有大事。先看球迷最關心的：<strong>德國世足兩戰全勝、提前晉級 32 強</strong>——首戰 7:1 血洗古拉索，6/20 再靠 Undav 補時絕殺 2:1 逆轉象牙海岸，坐穩 E 組第 1，是 2014 奪冠以來首度闖過小組賽。生活面，<strong>6/19 起熱浪席捲西南部、上看 38°C</strong>，DWD 在逾百縣市發布高溫警告。政治上，<strong>6/18–19 的 EU 高峰會</strong>在布魯塞爾登場，烏克蘭、對俄第 21 輪制裁與 2028–2034 七年預算（MFR）三大議題同台。中東戰火仍讓航空大亂，<strong>漢莎集團多個中東航點停飛至 10/24</strong>、避開伊朗領空。而本週最大的地緣政治轉折，是<strong>美伊在巴基斯坦斡旋下 6/14 敲定停火諒解備忘錄、預計 6/19 簽署</strong>，將延長停火、解除荷莫茲海峽封鎖並啟動約 60 天核談判；市場立刻反映——<strong>6/16 ZEW 景氣預期單月跳升 20.7 點、重返正值 +10.5</strong>，但反映當下的現況指標卻續跌至 −81.0。以下逐題深入。</p>
 
-<img src="assets/images/2026/weekly/W25_圖卡1_世足戰況.png" alt="德國世足 2026 首戰 7:1 大勝古拉索 E 組第 1 6/20 對象牙海岸 22:00 ZDF">
-<h3>德國世足開門紅 7:1：E 組暫居龍頭，6/20 週六深夜再戰象牙海岸</h3>
-<p>世足小組賽開打，德國在 E 組以一場大勝開局。<strong>6/14 在休士頓首戰 7:1 痛宰世足新軍古拉索</strong>（Curaçao，加勒比海島國、人口約 15 萬，背景見 W23），這是德國<strong>自 2014 年 7:1 勝巴西以來的世足最大勝</strong>——Havertz 梅開二度、Musiala 進球、Wirtz 送出助攻，攻擊火力一掃連兩屆小組出局的陰霾。同組另一場象牙海岸 1:0 小勝厄瓜多，<strong>德國暫居 E 組第 1</strong>、象牙海岸居次。<strong>本週重頭戲：6/20（週六）德國時間 22:00，德國在多倫多對上非洲冠軍象牙海岸（Afrikameister）</strong>，ZDF 免費轉播、MagentaTV 同步；只要再拿下分數，德國可望提前鎖定 16 強。小組賽最後一戰 <strong>6/25（四）22:00 對厄瓜多</strong>，改由 ARD 轉播。<strong>給在德球迷的提醒</strong>：因北美時差，德國場次多落在深夜（22:00 起），熬夜看球請評估隔天行程；本屆德國<strong>沒有官方 Fanmeile</strong>，大城以酒吧、Biergarten 的店家公播為主，政府已放寬 5/20–7/31 的噪音規範、公播可破例延到午夜後（詳見 W20、W24 解析），熱門場地週末請提早訂位。</p>
-<p class="post-sources">📚 來源：<a href="https://www.dfb.de/news/deutschland-in-gruppe-e-gegen-ecuador-elfenbeinkueste-und-curacao" target="_blank" rel="noopener noreferrer">DFB｜E 組對手</a> · <a href="https://www.sportschau.de/fussball/fifa-wm-2026/der-spielplan-der-fussball-wm-2026,fifawm-dfb-spielplan-100.html" target="_blank" rel="noopener noreferrer">sportschau｜德國賽程與轉播</a> · <a href="https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_E" target="_blank" rel="noopener noreferrer">Wikipedia｜Group E 戰績</a> · <a href="https://www.espn.com/soccer/story/_/id/48939282/2026-fifa-world-cup-fixtures-results-match-schedule-group-stage-knockout-rounds-bracket" target="_blank" rel="noopener noreferrer">ESPN｜賽程與結果</a></p>
+<img src="assets/images/2026/weekly/W25_圖卡1_世足戰況.png" alt="德國世足 2026 6/20 以 2:1 逆轉象牙海岸 Undav 補時絕殺 提前晉級 32 強 E 組第 1">
+<h3>德國 2:1 絕殺象牙海岸、提前晉 32 強：2014 奪冠後首度闖過小組賽</h3>
+<p>世足小組賽第 2 輪，德國在多倫多上演大逆轉。<strong>6/20 對非洲冠軍象牙海岸，德國終場 2:1 獲勝</strong>，過程一波三折：象牙海岸隊長 <strong>Kessié 第 30 分鐘先馳得點</strong>，德國上半場 Pavlović（22'）、Havertz（38'）兩度破門都因進攻犯規遭吹掉，0:1 落後進入中場。Nagelsmann 下半場一口氣三換人扭轉戰局——替補前鋒 <strong>Deniz Undav 第 68 分鐘扳平</strong>（Amiri 助攻），又在 <strong>補時 90+4 分鐘讀秒絕殺</strong>，獨進兩球成為英雄（4.3 萬人客滿的多倫多球場見證）。連同首戰 <strong>7:1 血洗古拉索</strong>（Havertz 梅開二度、Musiala、Wirtz 助攻），德國<strong>兩戰全勝積 6 分</strong>；當天稍晚厄瓜多與古拉索 <strong>0:0 互交白卷</strong>，<strong>德國因此提前鎖定 32 強（48 隊新制的淘汰賽首輪），並坐穩 E 組第 1</strong>——這是德國<strong>自 2014 奪冠以來首度闖過小組賽</strong>，一掃 2018、2022 連兩屆小組出局的陰霾。<strong>末戰預告</strong>：小組賽最後一戰 <strong>6/25（四）德國時間 22:00</strong> 在紐約／新澤西對厄瓜多（ARD 轉播），戰績無關出線、主要影響淘汰賽對戰籤位。<strong>給在德球迷的提醒</strong>：淘汰賽約 6/28 起登場，德國場次仍多落在深夜（22:00 起）；本屆德國<strong>沒有官方 Fanmeile</strong>，大城以酒吧、Biergarten 的店家公播為主，政府已放寬 5/20–7/31 的噪音規範、公播可破例延到午夜後（詳見 W20、W24 解析），週末深夜場地請提早訂位。</p>
+<p class="post-sources">📚 來源：<a href="https://www.sportschau.de/fussball/fifa-wm-2026/undav-schiesst-deutschland-zum-sieg-gegen-die-elfenbeinkueste,wm-spielbericht-deutschland-elfenbeinkueste-100.html" target="_blank" rel="noopener noreferrer">sportschau｜戰報：Undav 絕殺</a> · <a href="https://www.fifa.com/en/match-centre/match/17/285023/289273/400021469" target="_blank" rel="noopener noreferrer">FIFA｜比分與數據</a> · <a href="https://www.espn.com/soccer/match/_/gameId/760448/ivory-coast-germany" target="_blank" rel="noopener noreferrer">ESPN｜Germany 2-1 Ivory Coast</a> · <a href="https://www.sportschau.de/live-und-ergebnisse/fussball/fifa-wm/tabelle/" target="_blank" rel="noopener noreferrer">sportschau｜E 組積分榜</a></p>
 
 <img src="assets/images/2026/weekly/W25_圖卡2_熱浪來襲.png" alt="德國熱浪 6/19 起西南部上看 38 度 DWD 逾百縣市高溫警告 熱帶夜 防暑">
 <h3>熱浪席捲德國上看 38°C：DWD 逾百縣市高溫警告、首批熱帶夜報到</h3>
