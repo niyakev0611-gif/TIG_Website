@@ -340,13 +340,13 @@ const POSTS = [
     date: '2026-06-21',
     categories: ['德國時事'],
     tags: ['週報', '德國政策', '時事'],
-    excerpt: '德國世足兩戰全勝、提前晉級 32 強——首戰 7:1 大勝古拉索、6/20 再靠 Undav 補時絕殺 2:1 逆轉象牙海岸，坐穩 E 組第 1，是 2014 奪冠後首度闖過小組賽；6/19 起熱浪席捲西南部、上看 38°C，DWD 逾百縣市發布高溫警告、首批熱帶夜報到；6/18–19 EU 高峰會在布魯塞爾登場，烏克蘭「聯繫會員」、第 21 輪對俄制裁與 2028–34 七年預算（MFR）三大戰場齊開，Merz 挺烏卻反對共同舉債；伊朗戰火持續衝擊航空，漢莎集團德黑蘭、貝魯特、阿曼等中東航點停飛至 10/24、避開伊朗領空，特拉維夫 7/1 例外復飛；中東迎來轉折——巴基斯坦斡旋下美伊 6/14 敲定停火諒解備忘錄、預計 6/19 簽署，將延長停火、解除荷莫茲海峽封鎖並啟動約 60 天核談判；市場提前反映，6/16 ZEW 景氣預期單月跳升 20.7 點、重返正值 +10.5（遠優於預期），但反映當下的現況指標卻續跌至 −81.0。',
+    excerpt: '德國世足兩戰全勝、提前晉級 32 強——首戰 7:1 大勝古拉索、6/20 再靠 Undav 補時絕殺 2:1 逆轉象牙海岸，坐穩 E 組第 1，是 2014 奪冠後首度闖過小組賽；6/19 起熱浪席捲西南部、上看 40°C，DWD 逾百縣市發布高溫警告、首批熱帶夜報到；6/18–19 EU 高峰會在布魯塞爾登場，烏克蘭「聯繫會員」、第 21 輪對俄制裁與 2028–34 七年預算（MFR）三大戰場齊開，Merz 挺烏卻反對共同舉債；伊朗戰火持續衝擊航空，漢莎集團德黑蘭、貝魯特、阿曼等中東航點停飛至 10/24、避開伊朗領空，特拉維夫 7/1 例外復飛；中東迎來轉折——巴基斯坦斡旋下美伊 6/14 敲定停火諒解備忘錄、6/19 正式簽署，將延長停火、解除荷莫茲海峽封鎖並啟動約 60 天核談判；市場提前反映，6/16 ZEW 景氣預期單月跳升 20.7 點、重返正值 +10.5（遠優於預期），但反映當下的現況指標卻續跌至 −81.0。',
     emoji: '🌱',
     content: `
 <nav class="post-toc" aria-label="本篇目錄">
   <p class="post-toc__title">快速跳轉</p>
   <ul>
-    <li><a href="#jun15-21">6月15日–21日：德國世足 2:1 逆轉象牙海岸晉 32 強、熱浪上看 38°C、EU 高峰會三大戰場、中東航線大停飛至 10/24、伊朗停火協議 6/19 簽署、ZEW 景氣預期重返正值 +10.5</a></li>
+    <li><a href="#jun15-21">6月15日–21日：德國世足 2:1 逆轉象牙海岸晉 32 強、熱浪上看 40°C、EU 高峰會三大戰場、中東航線大停飛至 10/24、伊朗停火協議 6/19 簽署、ZEW 景氣預期重返正值 +10.5</a></li>
     <li><a href="#jun8-14">6月8日–14日：世足首戰週日 19 點開踢、改革高峰會空手而回、對美出口年減 12.9%、通膨回落 2.6%、ECB 三年來首升息、薪資透明 6/8 啟動、六月新制懶人包</a></li>
     <li><a href="#jun1-7">6月1日–7日：世足倒數 Neuer 回鍋、安理會競選史上首敗、退休金調漲 4.24%、破產潮 20 年新高</a></li>
     <li><a href="#may18-31">5月18日–31日：2024 入籍破 29 萬、藍卡新門檻、機票稅調降、E-Auto 補助、GEAS 倒數、經濟回穩、AfD 反超 CDU、Merz 嗆川普</a></li>
@@ -361,8 +361,8 @@ const POSTS = [
   </ul>
 </nav>
 
-<h2 id="jun15-21">6月15日–21日：德國世足 2:1 逆轉象牙海岸、提前晉 32 強、熱浪上看 38°C、EU 高峰會三大戰場、中東航線大停飛、伊朗停火協議 6/19 簽署、ZEW 景氣預期重返正值 +10.5</h2>
-<p>本週德國從綠茵場、天氣到談判桌都有大事。先看球迷最關心的：<strong>德國世足兩戰全勝、提前晉級 32 強</strong>——首戰 7:1 血洗古拉索，6/20 再靠 Undav 補時絕殺 2:1 逆轉象牙海岸，坐穩 E 組第 1，是 2014 奪冠以來首度闖過小組賽。生活面，<strong>6/19 起熱浪席捲西南部、上看 38°C</strong>，DWD 在逾百縣市發布高溫警告。政治上，<strong>6/18–19 的 EU 高峰會</strong>在布魯塞爾登場，烏克蘭、對俄第 21 輪制裁與 2028–2034 七年預算（MFR）三大議題同台。中東戰火仍讓航空大亂，<strong>漢莎集團多個中東航點停飛至 10/24</strong>、避開伊朗領空。而本週最大的地緣政治轉折，是<strong>美伊在巴基斯坦斡旋下 6/14 敲定停火諒解備忘錄、預計 6/19 簽署</strong>，將延長停火、解除荷莫茲海峽封鎖並啟動約 60 天核談判；市場立刻反映——<strong>6/16 ZEW 景氣預期單月跳升 20.7 點、重返正值 +10.5</strong>，但反映當下的現況指標卻續跌至 −81.0。以下逐題深入。</p>
+<h2 id="jun15-21">6月15日–21日：德國世足 2:1 逆轉象牙海岸、提前晉 32 強、熱浪上看 40°C、EU 高峰會三大戰場、中東航線大停飛、伊朗停火協議 6/19 簽署、ZEW 景氣預期重返正值 +10.5</h2>
+<p>本週德國從綠茵場、天氣到談判桌都有大事。先看球迷最關心的：<strong>德國世足兩戰全勝、提前晉級 32 強</strong>——首戰 7:1 血洗古拉索，6/20 再靠 Undav 補時絕殺 2:1 逆轉象牙海岸，坐穩 E 組第 1，是 2014 奪冠以來首度闖過小組賽。生活面，<strong>6/19 起熱浪席捲西南部、上看 40°C</strong>，DWD 在逾百縣市發布高溫警告。政治上，<strong>6/18–19 的 EU 高峰會</strong>在布魯塞爾登場，烏克蘭、對俄第 21 輪制裁與 2028–2034 七年預算（MFR）三大議題同台。中東戰火仍讓航空大亂，<strong>漢莎集團多個中東航點停飛至 10/24</strong>、避開伊朗領空。而本週最大的地緣政治轉折，是<strong>美伊在巴基斯坦斡旋下 6/14 敲定停火諒解備忘錄、並於 6/19 正式簽署</strong>，將延長停火、解除荷莫茲海峽封鎖並啟動約 60 天核談判；市場立刻反映——<strong>6/16 ZEW 景氣預期單月跳升 20.7 點、重返正值 +10.5</strong>，但反映當下的現況指標卻續跌至 −81.0。以下逐題深入。</p>
 
 <img src="assets/images/2026/weekly/W25_圖卡1_世足戰況.png" alt="德國世足 2026 6/20 以 2:1 逆轉象牙海岸 Undav 補時絕殺 提前晉級 32 強 E 組第 1">
 <h3>德國 2:1 絕殺象牙海岸、提前晉 32 強：2014 奪冠後首度闖過小組賽</h3>
@@ -370,8 +370,8 @@ const POSTS = [
 <p class="post-sources">📚 來源：<a href="https://www.sportschau.de/fussball/fifa-wm-2026/undav-schiesst-deutschland-zum-sieg-gegen-die-elfenbeinkueste,wm-spielbericht-deutschland-elfenbeinkueste-100.html" target="_blank" rel="noopener noreferrer">sportschau｜戰報：Undav 絕殺</a> · <a href="https://www.fifa.com/en/match-centre/match/17/285023/289273/400021469" target="_blank" rel="noopener noreferrer">FIFA｜比分與數據</a> · <a href="https://www.espn.com/soccer/match/_/gameId/760448/ivory-coast-germany" target="_blank" rel="noopener noreferrer">ESPN｜Germany 2-1 Ivory Coast</a> · <a href="https://www.sportschau.de/live-und-ergebnisse/fussball/fifa-wm/tabelle/" target="_blank" rel="noopener noreferrer">sportschau｜E 組積分榜</a></p>
 
 <img src="assets/images/2026/weekly/W25_圖卡2_熱浪來襲.png" alt="德國熱浪 6/19 起西南部上看 38 度 DWD 逾百縣市高溫警告 熱帶夜 防暑">
-<h3>熱浪席捲德國上看 38°C：DWD 逾百縣市高溫警告、首批熱帶夜報到</h3>
-<p>德國本週正式入夏，且是猛烈的那種。<strong>6/19 起一波熱浪席捲，西南部氣溫飆到 30–35°C、局部上看 38°C</strong>，DWD（德國氣象局）已在<strong>逾百個縣市（Kreise）發布官方高溫警告</strong>；高峰預估落在 <strong>6/22（下週一）</strong>。最熱的是<strong>巴登-符騰堡、萊茵蘭-普法茲、薩爾蘭與黑森</strong>，部分地區可能挑戰巴符邦的 6 月高溫紀錄（<strong>38.9°C，2019/6/30 曼海姆</strong>）；北部與沿海相對涼爽（24–29°C）。值得注意的是<strong>「熱帶夜」（tropische Nächte）</strong>——許多地方夜間最低溫不再降到 20°C 以下，是今年首批，對睡眠品質與心血管是額外負擔。<strong>防暑提醒</strong>：正午到午後盡量減少外出、隨時補水、<strong>千萬別把人或寵物留在車內</strong>，並多關注獨居長者與幼兒。<strong>因應建議</strong>：德國住宅普遍沒有冷氣，<strong>白天拉上窗簾／遮陽、夜間趁涼對流通風</strong>是降溫關鍵；若職場高溫又無防護措施，依《職場條例》（Arbeitsstättenverordnung）雇主有義務採取降溫措施（遮陽、提供飲水、調整工時等），員工可據此向雇主或員工代表會反映。</p>
+<h3>熱浪席捲德國上看 40°C：DWD 逾百縣市高溫警告、首批熱帶夜報到</h3>
+<p>德國本週正式入夏，且是猛烈的那種。<strong>6/19 起一波熱浪席捲，西南部氣溫飆到 35–40°C</strong>，DWD（德國氣象局）已在<strong>逾百個縣市（Kreise）發布官方高溫警告</strong>；高峰落在 <strong>6/22 前後</strong>，恐改寫多項 6 月高溫紀錄。最熱的是<strong>巴登-符騰堡、萊茵蘭-普法茲、薩爾蘭與黑森</strong>，部分地區可能挑戰巴符邦的 6 月高溫紀錄（<strong>38.9°C，2019/6/30 曼海姆</strong>）；北部與沿海相對涼爽（24–29°C）。值得注意的是<strong>「熱帶夜」（tropische Nächte）</strong>——許多地方夜間最低溫不再降到 20°C 以下，是今年首批，對睡眠品質與心血管是額外負擔。<strong>防暑提醒</strong>：正午到午後盡量減少外出、隨時補水、<strong>千萬別把人或寵物留在車內</strong>，並多關注獨居長者與幼兒。<strong>因應建議</strong>：德國住宅普遍沒有冷氣，<strong>白天拉上窗簾／遮陽、夜間趁涼對流通風</strong>是降溫關鍵；若職場高溫又無防護措施，依《職場條例》（Arbeitsstättenverordnung）雇主有義務採取降溫措施（遮陽、提供飲水、調整工時等），員工可據此向雇主或員工代表會反映。</p>
 <p class="post-sources">📚 來源：<a href="https://www.t-online.de/nachrichten/panorama/wetter/id_101300904/hitzewarnung-in-deutschland-dwd-warnt-amtlich-in-mehr-als-100-kreisen.html" target="_blank" rel="noopener noreferrer">t-online｜DWD 逾百縣市高溫警告</a> · <a href="https://www.t-online.de/nachrichten/panorama/wetter/id_101300208/hitzewelle-in-deutschland-wetterkarten-zeigen-extrem-hitze-fuer-jeden-tag-.html" target="_blank" rel="noopener noreferrer">t-online｜逐日熱浪地圖</a> · <a href="https://www.rnz.de/politik/suedwest_artikel,-Das-Wetter-in-Baden-Wuerttemberg-Hitzewelle-baut-sich-auf-mit-Rekord-im-Juni-_arid,520423.html" target="_blank" rel="noopener noreferrer">RNZ｜巴符邦 6 月紀錄 38.9°C</a> · <a href="https://www.dwd.de/DE/wetter/warnungen_aktuell/wochenvorhersage/wochenvorhersage_node.html" target="_blank" rel="noopener noreferrer">DWD｜週警告預報</a></p>
 
 <img src="assets/images/2026/weekly/W25_圖卡3_EU高峰會.png" alt="EU 高峰會 6/18-19 布魯塞爾 烏克蘭 對俄第 21 輪制裁 2028-34 預算 MFR Merz 反對共同舉債">
@@ -386,7 +386,7 @@ const POSTS = [
 
 <img src="assets/images/2026/weekly/W25_圖卡5_伊朗停火協議.png" alt="伊朗停火協議 6/19 簽署 巴基斯坦斡旋 美伊諒解備忘錄 荷莫茲海峽解封 60 天核談判">
 <h3>伊朗停火協議 6/19 簽署：荷莫茲海峽解封、60 天核談判倒數</h3>
-<p>中東戰場本週迎來最明確的降溫訊號。戰事自 3 月急遽升溫後，<strong>4/8 在巴基斯坦斡旋下達成首次兩週停火</strong>並多次延長；<strong>6/14 巴基斯坦總理 Shehbaz Sharif 宣布，美國與伊朗已敲定一份諒解備忘錄（MoU），預計 6/19 簽署</strong>。協議核心：<strong>延長停火、解除荷莫茲海峽封鎖，並啟動約 60 天談判</strong>處理最棘手的核計畫，協商先經巴基斯坦居中、最終在伊斯蘭瑪巴德定案，目標是在 60 天內讓衝突正式落幕。對德國的意義重大——德國經濟對能源高度依賴，這場戰爭一路推升油價與通膨，逼得 ECB 6/11 三年來首度升息（見上週 W24 解析）；停火若真兌現，能源與通膨壓力可望鬆綁，這也正是 6/16 ZEW 景氣預期大漲的主因（見下一張卡）。<strong>觀察重點</strong>：協議仍脆弱——黎巴嫩零星交火、核查機制與制裁解除節奏都是變數，6/19 簽署只是起點而非終點。能源的「和平紅利」能不能真正落袋，要看接下來這 60 天的談判成色。</p>
+<p>中東戰場本週迎來最明確的降溫訊號。戰事自 3 月急遽升溫後，<strong>4/8 在巴基斯坦斡旋下達成首次兩週停火</strong>並多次延長；<strong>6/14 巴基斯坦總理 Shehbaz Sharif 宣布美伊敲定諒解備忘錄（MoU），並已於 6/19 正式簽署</strong>（川普與伊朗總統 Pezeshkian 遠端簽署）。協議核心：<strong>延長停火、解除荷莫茲海峽封鎖，並啟動約 60 天談判</strong>處理最棘手的核計畫，協商先經巴基斯坦居中、最終在伊斯蘭瑪巴德定案，目標是在 60 天內讓衝突正式落幕。對德國的意義重大——德國經濟對能源高度依賴，這場戰爭一路推升油價與通膨，逼得 ECB 6/11 三年來首度升息（見上週 W24 解析）；停火若真兌現，能源與通膨壓力可望鬆綁，這也正是 6/16 ZEW 景氣預期大漲的主因（見下一張卡）。<strong>觀察重點</strong>：協議仍脆弱——黎巴嫩零星交火、核查機制與制裁解除節奏都是變數，6/19 簽署只是起點而非終點。能源的「和平紅利」能不能真正落袋，要看接下來這 60 天的談判成色。</p>
 <p class="post-sources">📚 來源：<a href="https://en.wikipedia.org/wiki/2026_Iran_war_ceasefire" target="_blank" rel="noopener noreferrer">Wikipedia｜2026 Iran war ceasefire</a> · <a href="https://www.pbs.org/newshour/amp/world/iran-and-u-s-reach-an-initial-deal-to-extend-the-ceasefire-and-open-the-strait-of-hormuz-but-challenges-remain" target="_blank" rel="noopener noreferrer">PBS｜延長停火、解封荷莫茲海峽</a> · <a href="https://commonslibrary.parliament.uk/research-briefings/cbp-10637/" target="_blank" rel="noopener noreferrer">House of Commons Library｜美伊停火與核談判</a> · <a href="https://www.bundesregierung.de/breg-en/news/chancellor-iran-2402610" target="_blank" rel="noopener noreferrer">Bundesregierung｜Merz 對停火的回應</a></p>
 
 <img src="assets/images/2026/weekly/W25_圖卡6_ZEW景氣預期.png" alt="ZEW 景氣預期 6 月重返正值 +10.5 單月跳升 20.7 點 現況指標續跌至 -81 押注伊朗戰爭收尾">
