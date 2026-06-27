@@ -27,6 +27,9 @@ Web Design CLAUDE.md
 # Private planning documents
 *.csv
 
+# Local working drafts（社群文字稿、草稿——本機用，不上網站）
+drafts/
+
 # Node (if ever added)
 node_modules/
 package-lock.json

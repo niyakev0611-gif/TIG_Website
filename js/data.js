@@ -3,6 +3,90 @@
 
 const POSTS = [
   {
+    slug: 'world-cup-2026-special',
+    title: '2026 世界盃特別報導：德國爆冷、日本不敗、黑馬攪局——32 強前夕戰況全解析',
+    date: '2026-06-27',
+    categories: ['專題報導'],
+    tags: ['世界盃', '2026世界盃', '德國隊', '日本隊', '足球', '德國時事'],
+    excerpt: '四屆冠軍德國 6/25 爆冷 1：2 不敵厄瓜多，卻仍以 E 組第一晉級 32 強；日本三戰不敗、次輪硬碰巴西；厄瓜多扳倒德國、挪威 Haaland 兩戰 4 球睽違 28 年回歸、維德角首度參賽就晉級。本屆首見 48 隊新制與史上第一輪「32 強」淘汰賽——六張圖卡＋深度解析一次看懂。',
+    emoji: '⚽',
+    content: `
+<p class="post-meta-line"><em>德國知識小種子｜2026.06.27 發表 · 2026 FIFA 世界盃特別報導</em></p>
+
+<p>2026 美加墨世界盃小組賽進入最後一輪，綠茵場上劇情急轉直下：四屆冠軍<strong>德國 6/25 竟以 1：2 不敵厄瓜多</strong>，卻仍以 E 組第一晉級；<strong>日本三戰不敗</strong>、亞洲之光再起；而從厄瓜多、挪威到大西洋小島維德角，一票「黑馬」正把本屆攪得天翻地覆。本屆首度採 <strong>48 隊新制</strong>，史上第一次出現「32 強」淘汰賽。以下用六張圖卡，帶你一次看懂。</p>
+
+<nav class="post-toc" aria-label="本篇目錄">
+  <p class="post-toc__title">快速跳轉</p>
+  <ul>
+    <li><a href="#germany">德國 1：2 厄瓜多：贏了面子、輸了裡子</a></li>
+    <li><a href="#group-e">E 組最終積分榜</a></li>
+    <li><a href="#bracket">32 強對戰樹狀圖</a></li>
+    <li><a href="#japan">日本：小組不敗，次輪硬碰巴西</a></li>
+    <li><a href="#darkhorses">黑馬巡禮：厄瓜多、挪威、維德角</a></li>
+    <li><a href="#funfacts">本屆冷知識</a></li>
+    <li><a href="#sources">資料來源</a></li>
+  </ul>
+</nav>
+
+<img src="assets/images/2026/weekly/世足特別版_圖卡1_德國爆冷.png" alt="德國 1比2 不敵厄瓜多 仍以E組第一晉級32強">
+<h2 id="germany">德國 1：2 厄瓜多：贏了面子、輸了裡子</h2>
+<p>德國<strong>開賽僅 2 分鐘</strong>就由 Sané 閃電破門，怎料好景不長——<strong>第 9 分鐘</strong> Angulo 立刻扳平，下半場 <strong>77 分鐘</strong> Plata 冷靜推射完成逆轉。這是德國本屆首敗，也讓總教練 Nagelsmann 想締造的全勝紀錄止步。所幸前兩戰（<strong>7：1</strong> 大勝古拉索、補時絕殺 <strong>2：1</strong> 逆轉象牙海岸）已提前鎖定晉級，德國最終以兩勝一敗、<strong>淨勝球 +6</strong> 力壓同積 6 分的象牙海岸（+2），仍居 E 組第一。末戰大幅輪換是出線後的合理操作，但連兩屆（2018、2022）小組出局的陰影未散，真正的考驗將在 <strong>6/29 淘汰賽首輪</strong>登場。</p>
+<p class="post-sources">📚 來源：<a href="https://www.skysports.com/football/news/12098/13556661/world-cup-2026-ecuador-2-1-germany-south-american-side-stun-four-time-winners-to-reach-knockout-stages" target="_blank" rel="noopener noreferrer">Sky Sports｜Ecuador 2-1 Germany</a> · <a href="https://www.aljazeera.com/sports/2026/6/25/ecuador-edge-germany-2-1-to-squeeze-into-world-cup-last-32" target="_blank" rel="noopener noreferrer">Al Jazeera</a> · <a href="https://www.france24.com/en/sport/20260625-world-cup-2026-ecuador-beat-germany-round-of-32-curacao-eliminated" target="_blank" rel="noopener noreferrer">France 24</a></p>
+
+<img src="assets/images/2026/weekly/世足特別版_圖卡2_E組積分榜.png" alt="2026世界盃 E組最終積分榜 德國 象牙海岸 厄瓜多 古拉索">
+<h2 id="group-e">E 組最終積分榜</h2>
+<p>德國、象牙海岸同積 6 分，靠淨勝球分高下；厄瓜多雖以小組第三收尾，仍以「8 隊最佳第三名」之一搭上末班車：</p>
+<ul>
+  <li><strong>1. 德國</strong>　2 勝 0 和 1 敗、進 10 失 4、<strong>6 分</strong>（晉級・首名）</li>
+  <li><strong>2. 象牙海岸（Côte d'Ivoire）</strong>　2 勝 0 和 1 敗、進 4 失 2、<strong>6 分</strong>（晉級・次名）</li>
+  <li><strong>3. 厄瓜多（Ecuador）</strong>　1 勝 1 和 1 敗、進 2 失 2、<strong>4 分</strong>（以最佳第三名晉級）</li>
+  <li><strong>4. 古拉索（Curaçao）</strong>　0 勝 1 和 2 敗、進 1 失 9、<strong>1 分</strong>（淘汰）</li>
+</ul>
+<p class="post-sources">📚 來源：<a href="https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_E" target="_blank" rel="noopener noreferrer">Wikipedia｜2026 FIFA World Cup Group E</a></p>
+
+<img src="assets/images/2026/weekly/世足特別版_圖卡3_32強樹狀圖.png" alt="2026世界盃 32強淘汰賽對戰樹狀圖">
+<h2 id="bracket">32 強對戰樹狀圖</h2>
+<p>本屆首度採 48 隊制，12 組各取前二、外加 8 隊最佳第三，合計 <strong>32 隊</strong>進入淘汰賽（史上首見「32 強」這一輪）。淘汰賽 <strong>6/28 開打</strong>、<strong>7/19</strong> 在紐約大都會人壽球場（MetLife Stadium）決賽。焦點對戰：<strong>德國 6/29 對巴拉圭</strong>（Foxborough）、<strong>巴西 6/29 強碰日本</strong>、荷蘭對摩洛哥、美國對波士尼亞、象牙海岸對挪威、阿根廷對維德角、澳洲對埃及。</p>
+<p class="post-sources">📚 來源：<a href="https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_knockout_stage" target="_blank" rel="noopener noreferrer">Wikipedia｜2026 FIFA World Cup knockout stage</a></p>
+
+<img src="assets/images/2026/weekly/世足特別版_圖卡4_日本.png" alt="日本 小組不敗 次輪對巴西">
+<h2 id="japan">日本：小組不敗，次輪硬碰巴西</h2>
+<p>日本本屆走得沉穩：6/14 <strong>2：2</strong> 逼平荷蘭、6/20 <strong>4：0</strong> 大勝突尼西亞、6/25 <strong>1：1</strong> 戰平瑞典，一勝兩和<strong>積 5 分</strong>、進 7 失 3，以 F 組次名晉級、三戰未嘗敗績。淘汰賽首輪 <strong>6/29 在休士頓對上南美勁旅巴西</strong>，正是本屆最受矚目的對決之一。日本能否複製 2022 年逆轉強權的劇本，將是亞洲足球本屆能走多遠的指標。</p>
+<p class="post-sources">📚 來源：<a href="https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_F" target="_blank" rel="noopener noreferrer">Wikipedia｜2026 FIFA World Cup Group F</a></p>
+
+<img src="assets/images/2026/weekly/世足特別版_圖卡5_黑馬巡禮.png" alt="黑馬巡禮 厄瓜多 挪威Haaland 維德角">
+<h2 id="darkhorses">黑馬巡禮：厄瓜多、挪威、維德角</h2>
+<p><strong>厄瓜多（Ecuador）</strong>——南美鐵衛。世界盃資格賽 18 場僅失 5 球、力壓巴西與烏拉圭排名第二；本屆親手扳倒德國，氣勢正盛。</p>
+<p><strong>挪威（Norway）</strong>——睽違 28 年重返世界盃。Haaland 兩戰狂進 4 球（近 50 年繼 Kane 之後，第二位連兩場世界盃先發都梅開二度的球員），偕隊長 Ødegaard 領軍晉級。</p>
+<p><strong>維德角（Cape Verde）</strong>——人口僅約 52 萬的大西洋島國，<strong>首度參賽就晉級 32 強</strong>、寫下歷史！小組賽 0：0 逼平西班牙、2：2 戰平烏拉圭、再 0：0 逼平沙烏地，三戰全和不敗、以 H 組次名晉級，淘汰賽首輪將對上世界冠軍阿根廷。</p>
+<p class="post-sources">📚 來源：<a href="https://www.aljazeera.com/sports/2026/6/23/haaland-scores-two-as-norway-beat-senegal-3-2-enter-world-cup-knockouts" target="_blank" rel="noopener noreferrer">Al Jazeera｜Haaland／Norway</a> · <a href="https://www.houstonpublicmedia.org/articles/news/sports/world-cup/2026/06/25/555570/underdog-cape-verde-soccer-team-will-make-their-final-bid-in-houston-to-advance-in-world-cup/" target="_blank" rel="noopener noreferrer">Houston Public Media｜Cape Verde</a></p>
+
+<img src="assets/images/2026/weekly/世足特別版_圖卡6_趣聞數據.png" alt="2026世界盃 本屆之最 冷知識">
+<h2 id="funfacts">本屆冷知識</h2>
+<ul>
+  <li><strong>史上首屆 48 隊</strong>：分 12 組、首見「32 強」淘汰賽，全季共 <strong>104 場</strong>（舊制 64 場）。</li>
+  <li><strong>最小國紀錄</strong>：古拉索人口僅約 <strong>15.6 萬</strong>，刷新冰島（約 35 萬）；由 78 歲荷蘭名帥 Advocaat 執教、門將 Room 撲滿全場逼平厄瓜多，搶下隊史首分。</li>
+  <li><strong>四支首次參賽</strong>：維德角、約旦、古拉索、烏茲別克。</li>
+  <li><strong>賽制趣味</strong>：德國末戰落敗，卻因淨勝球仍居小組第一——「輸球照樣當組長」。</li>
+  <li><strong>看球提醒</strong>：多數淘汰賽落在德國深夜 22:00 之後，在德球迷又要熬夜了。</li>
+</ul>
+<p class="post-sources">📚 來源：<a href="https://www.skysports.com/football/news/12098/13545528/world-cup-2026-curacao-caribbean-nations-historic-first-appearance" target="_blank" rel="noopener noreferrer">Sky Sports｜Curaçao smallest nation</a></p>
+
+<h2 id="sources">資料來源</h2>
+<ul>
+  <li><a href="https://www.skysports.com/football/news/12098/13556661/world-cup-2026-ecuador-2-1-germany-south-american-side-stun-four-time-winners-to-reach-knockout-stages" target="_blank" rel="noopener noreferrer">Sky Sports｜Ecuador 2-1 Germany</a></li>
+  <li><a href="https://www.aljazeera.com/sports/2026/6/25/ecuador-edge-germany-2-1-to-squeeze-into-world-cup-last-32" target="_blank" rel="noopener noreferrer">Al Jazeera｜Ecuador edge Germany 2-1</a></li>
+  <li><a href="https://www.france24.com/en/sport/20260625-world-cup-2026-ecuador-beat-germany-round-of-32-curacao-eliminated" target="_blank" rel="noopener noreferrer">France 24｜Ivory Coast, Ecuador reach last 32 as Germany lose</a></li>
+  <li><a href="https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_E" target="_blank" rel="noopener noreferrer">Wikipedia｜2026 FIFA World Cup Group E</a></li>
+  <li><a href="https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_F" target="_blank" rel="noopener noreferrer">Wikipedia｜2026 FIFA World Cup Group F</a></li>
+  <li><a href="https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_knockout_stage" target="_blank" rel="noopener noreferrer">Wikipedia｜2026 FIFA World Cup knockout stage</a></li>
+  <li><a href="https://www.aljazeera.com/sports/2026/6/23/haaland-scores-two-as-norway-beat-senegal-3-2-enter-world-cup-knockouts" target="_blank" rel="noopener noreferrer">Al Jazeera｜Haaland brace sends Norway into knockouts</a></li>
+  <li><a href="https://www.houstonpublicmedia.org/articles/news/sports/world-cup/2026/06/25/555570/underdog-cape-verde-soccer-team-will-make-their-final-bid-in-houston-to-advance-in-world-cup/" target="_blank" rel="noopener noreferrer">Houston Public Media｜Cape Verde's final bid</a></li>
+  <li><a href="https://www.skysports.com/football/news/12098/13545528/world-cup-2026-curacao-caribbean-nations-historic-first-appearance" target="_blank" rel="noopener noreferrer">Sky Sports｜Curaçao, the tournament's smallest ever nation</a></li>
+</ul>
+`
+  },
+  {
     slug: 'bosch-2025-financial-report',
     title: '140 歲德國工業巨擘全面失速中？Bosch 2025 財報深度解析',
     date: '2026-04-28',
