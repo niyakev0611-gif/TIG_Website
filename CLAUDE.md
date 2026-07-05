@@ -113,6 +113,8 @@
      方便一鍵複製貼文用）
    - 再用 `SendUserFile` 送到聊天視窗，讓用戶可立即下載
 5. 撰寫社群貼文（**FB 與 IG 必須是兩個不同版本**，見下方「社群貼文雙版本規範」）
+   - **兩版貼文 txt 也要 commit 進 repo**：`assets/social/{年}/W{週數}_FB貼文.txt`、`W{週數}_IG貼文.txt`
+     （用戶 2026/07 要求：pull 之後要能在本機直接開檔複製，不能只放聊天附件）
 6. **不直接發布**，呈現給用戶審閱後再 commit
 7. 確認 OK 後：
    - 把 `assets/images/2026/weekly/W{週數}_*.png` 全部 `git add` 進 repo
