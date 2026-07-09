@@ -5,8 +5,455 @@
   <link>https://taiwanese-in-germany.com/</link>
   <description>台灣人在德國的生活記錄。分享來德生活必辦事項、德國日常、旅行攻略與德語學習。</description>
   <language>zh-TW</language>
-  <lastBuildDate>Fri, 10 Jul 2026 00:00:00 GMT</lastBuildDate>
+  <lastBuildDate>Sun, 12 Jul 2026 00:00:00 GMT</lastBuildDate>
   <atom:link href="https://taiwanese-in-germany.com/feed.xml" rel="self" type="application/rss+xml" />
+  <item>
+    <title>德國知識小種子週報精選</title>
+    <link>https://taiwanese-in-germany.com/posts/weekly-digest.html</link>
+    <guid isPermaLink="true">https://taiwanese-in-germany.com/posts/weekly-digest.html</guid>
+    <pubDate>Sun, 12 Jul 2026 00:00:00 GMT</pubDate>
+    <description>美伊停火簽署三週即告破局：伊朗攻擊荷姆茲海峽（Straße von Hormus）商船、美軍兩晚打擊 90 個軍事目標，川普宣布「停火已結束」，Brent 油價 7/8 單日漲逾 5%、重回 78 美元上方；哈米尼（Khamenei）2 月底陣亡後的六日國葬 7/9 落幕、繼任的其子 Mojtaba 至今未公開露面；NATO 安卡拉峰會 7/7–8 登場：德國倡議下各國承諾 2026、2027 每年 700 億 € 援烏、2035 前國防與安全支出達 GDP 5%，川普書面重申第 5 條、場邊卻再聲索格陵蘭；兒童金免申請 7/9 三讀通過——2027/3 起第二名子女、2027/11 起頭胎自動發放，現行月額 259 €；GKV 健保 188 億 € 撙節案 7/10 記名表決以 319:286 驚險通過：配偶免費共保 2028 起按在職伴侶應稅所得加收 2.5%、VdK 批背離團結原則；五月工業生產 +0.9%、製造業新訂單 +1.9% 雙雙優於預期，軍工航太大單 +85% 躍居新支柱；KBA／VDA 車市半年報：上半年新車登記 148.4 萬輛（+5.8%）、國內產量 210.9 萬輛（−3%），純電佔比 24.8%、Golf 衛冕銷售王、電動車王 Skoda Elroq。黑紅聯合委員會 7/2 拍板 34 項改革「振興與就業方案」——病假擬自第一天起就要證明、廢除電話開病假單、2027 起所得稅年減稅 100 億 €、富人稅門檻降至 25 萬 €（均為政治協議、尚待立法），家醫協會批「絕對災難」、DGB 斥「對員工的不信任」；德國世足夢碎：6/29 波士頓 32 強戰 120 分鐘 1:1 戰平巴拉圭、PK 3:4 隊史首度十二碼落敗出局，Nagelsmann 去留本週揭曉；7/1 起公民金（Bürgergeld）改制新版基礎保障（Grundsicherungsgeld），制裁更快更重、財產寬限期取消；油稅減免 6/30 到期、7/1 中午 E10 應聲跳漲 18.2 分、柴油 20.4 分；EU 對 150 € 以下第三國小包裹開徵每類商品 3 € 關稅，Temu、Shein 與台灣直送包裹全數適用；六月通膨降至 2.3% 優於預期、失業 293.6 萬人年增 2.2 萬；七月新制：退休金 +4.24% 生效、短程航空稅調降、維修可延長 12 個月保固。德國鐵路 6/23–24 因數位列車無線電（GSM-R）系統故障一度全國停駛、數千旅客滯留；El Niño 助長的歷史性熱浪席捲歐洲，西葡上看 45°C、法國 58 省警戒、德國西南恐達 40°C，並衝擊核電降載、限水與世足公播；德國世足兩戰全勝、6/20 靠 Undav 補時絕殺 2:1 逆轉象牙海岸、提前晉 32 強；6/18–19 EU 高峰會聚焦烏克蘭、對俄第 21 輪制裁與 2028–34 多年期財政框架（MFR），Merz 挺烏卻反對共同舉債；漢莎中東航點停飛至 10/24、避開伊朗領空；美伊停火備忘錄 6/19 正式簽署、解除荷姆茲海峽封鎖並啟動約 60 天核談判；6/16 ZEW 景氣預期單月跳升 20.7 點、重返正值 +10.5，現況指標續跌至 −81.0。</description>
+    <category>德國時事</category>
+    <content:encoded><![CDATA[<nav class="post-toc" aria-label="本篇目錄">
+  <p class="post-toc__title">快速跳轉</p>
+  <ul>
+    <li><a href="#jul6-12">7月6日–12日：美伊停火破局荷姆茲戰火重燃（哈米尼國葬落幕、油價跳漲）、NATO 安卡拉峰會歐洲扛更多、兒童金免申請 7/9 三讀通過、健保 188 億 € 撙節案 7/10 表決通過、五月工業生產訂單雙報喜、車市半年盤點銷量增產量減</a></li>
+    <li><a href="#jun29-jul5">6月29日–7月5日：聯合委員會 34 項改革（病假新規＋所得稅減百億）、德國世足 PK 戰出局隊史首見、公民金改制新版基礎保障、油稅減免退場油價跳漲、EU 小包裹 3 € 關稅、六月通膨 2.3% 失業 294 萬、七月新制懶人包</a></li>
+    <li><a href="#jun15-21">6月15日–28日：德國鐵路全國大停擺、歐洲熱浪上看 45°C、世足晉 32 強、EU 高峰會三大戰場、中東航線大停飛至 10/24、伊朗停火 6/19 簽署、ZEW 景氣預期 +10.5</a></li>
+    <li><a href="#jun8-14">6月8日–14日：世足首戰週日 19 點開踢、改革高峰會空手而回、對美出口年減 12.9%、通膨回落 2.6%、ECB 三年來首升息、薪資透明 6/8 啟動、六月新制懶人包</a></li>
+    <li><a href="#jun1-7">6月1日–7日：世足倒數 Neuer 回鍋、安理會競選史上首敗、退休金調漲 4.24%、破產潮 20 年新高</a></li>
+    <li><a href="#may18-31">5月18日–31日：2024 入籍破 29 萬、藍卡新門檻、機票稅調降、E-Auto 補助、GEAS 倒數、經濟回穩、AfD 反超 CDU、Merz 嗆川普</a></li>
+    <li><a href="#may11-17">5月11日–17日：Pistorius 訪基輔、紅場閱兵停火破局、世足噪音放寬、新生兒篩檢加項</a></li>
+    <li><a href="#apr27-may10">4月27日–5月10日：梅爾茨執政滿一年、稅收驟減178億、車關稅25%、紓困上路</a></li>
+    <li><a href="#apr20-26">4月20–26日：GDP腰斬、德國首份軍事戰略、Mercosur生效</a></li>
+    <li><a href="#apr13-19">4月13–19日：油稅減免、梅爾茨民調崩盤</a></li>
+    <li><a href="#apr6-12">4月6–12日：衰退警報、通膨新高、廢核大逆轉</a></li>
+    <li><a href="#mar30-apr5">3月30日–4月5日：油價新高、機場T3啟用</a></li>
+    <li><a href="#mar23-29">3月23–29日：罷工落幕、Bundestag三法通過</a></li>
+    <li><a href="#mar16-22">3月16–22日：RLP選舉CDU大勝、BER機場停擺</a></li>
+  </ul>
+</nav>
+
+<h2 id="jul6-12">7月6日–12日：美伊停火破局荷姆茲戰火重燃（哈米尼國葬落幕、油價跳漲）、NATO 安卡拉峰會歐洲扛更多、兒童金免申請 7/9 三讀通過、健保 188 億 € 撙節案 7/10 表決通過、五月工業生產訂單雙報喜、車市半年盤點銷量增產量減</h2>
+<p>這一週的關鍵字是「破局」與「表決」。國際上最壞的消息成真：<strong>簽署未滿三週的美伊停火備忘錄告吹</strong>——伊朗攻擊荷姆茲海峽（Straße von Hormus）商船、美軍兩晚打擊 90 個軍事目標，川普宣布「停火已經結束」，<strong>Brent 油價 7/8 單日漲逾 5%、重回 78 美元上方</strong>，德國夏季的能源與物價前景再蒙陰影；幾乎同一時間，<strong>NATO 峰會 7/7–8 在土耳其安卡拉舉行</strong>，德國倡議下各國承諾 2026、2027 每年 700 億 € 援烏，並確立 2035 前國防與安全支出達 GDP 5% 的路線圖。國內則是立法大週：<strong>兒童金免申請 7/9 三讀通過</strong>，2027 年起新生兒的兒童金將自動發放；<strong>法定健保（GKV）188 億 € 撙節案 7/10 記名表決以 319 票對 286 票驚險通過</strong>，配偶免費共保 2028 起限縮是最大爭點。數據面難得報喜：<strong>五月工業生產 +0.9%、新訂單 +1.9% 雙雙優於預期</strong>，軍工與航太大單成為新支柱；<strong>KBA 與 VDA 的車市半年報</strong>同步出爐——新車登記 +5.8%、國內產量卻 −3%，「內熱外冷」與純電佔比破四分之一是兩大看點。以下逐題深入。</p>
+
+<img src="assets/images/2026/weekly/W28_圖卡1_美伊停火破局.png" alt="美伊停火破局 荷姆茲海峽戰火重燃 美軍打擊 90 個伊朗軍事目標 Brent 油價單日漲 5% 破 78 美元 哈米尼國葬">
+<h3>美伊停火破局：荷姆茲戰火重燃，川普宣布「停火已經結束」</h3>
+<p>W25–26 我們報導過 6/19 簽署的美伊停火備忘錄與 60 天核談判時程——三週後這一切化為烏有。<strong>導火線是雙方對備忘錄的南轅北轍解讀</strong>：德黑蘭堅持所有商船通過荷姆茲海峽（Straße von Hormus）都須與伊朗「協調」，華府則認定船隻無須任何批准即可通行。美軍以軍艦護航多艘油輪通過海峽後，<strong>伊朗先警告、後以無人機攻擊了包括卡達與沙烏地油輪在內的多艘商船</strong>；川普在會晤 NATO 秘書長 Rutte 時宣布停火「已經結束」，<strong>美軍隨即兩晚空襲伊朗——CENTCOM 稱共打擊 90 個軍事目標</strong>，涵蓋防空系統、海岸監視設施、飛彈與無人機庫、海軍設施與後勤節點，範圍從 Bandar Abbas、Chabahar 到東北部的 Aq Qala；伊朗則向美國盟友<strong>科威特與巴林</strong>發動報復性打擊，衝突自美伊雙邊擴大為波灣區域危機。<strong>時機格外敏感</strong>：伊朗正處於權力交接的真空期——最高領袖哈米尼（Khamenei）2 月底在美以聯合空襲中身亡，<strong>7/3–9 舉行長達六日的國葬</strong>、德黑蘭送葬人潮估達千萬人以上，7/9 葬於聖城馬什哈德（Mashhad）；<strong>繼任的其子 Mojtaba Khamenei 據信在空襲中重傷、至今從未公開露面</strong>，僅以書面聲明對外溝通，決策黑箱化大幅加深誤判風險。<strong>對德國與在德生活的實質影響</strong>：荷姆茲海峽承載全球約四分之一的海運石油，<strong>Brent 原油 7/8 單日大漲逾 5%、重回 78 美元上方</strong>——油稅減免 6/30 才剛退場（見 W27），國際油價再漲對泵價是雪上加霜，Commerzbank 預告的「7 月通膨回升」風險升高；航空方面漢莎集團中東航點本已停飛至 10/24（W25–26 報導），短期無恢復可能；外長 Wadephul 呼籲伊朗重回談判桌、放棄核武計畫，但原訂 60 天的核談判機制已實質停擺。</p>
+<p class="post-sources">📚 來源：<a href="https://www.aljazeera.com/news/2026/7/8/us-says-conducting-new-wave-of-strikes-on-iran-as-ceasefire-falters-2" target="_blank" rel="noopener noreferrer">Al Jazeera｜美軍新一波打擊與停火動搖</a> · <a href="https://www.cbsnews.com/live-updates/us-iran-war-trump-says-ceasefire-over/" target="_blank" rel="noopener noreferrer">CBS｜川普：停火已結束</a> · <a href="https://www.nbcnews.com/world/iran/live-blog/live-updates-iran-attacks-gulf-us-strikes-tehran-ships-hormuz-oil-rcna353439" target="_blank" rel="noopener noreferrer">NBC｜波灣攻擊即時報導</a> · <a href="https://en.wikipedia.org/wiki/State_funeral_of_Ali_Khamenei" target="_blank" rel="noopener noreferrer">Wikipedia｜哈米尼國葬</a> · <a href="https://www.britannica.com/event/2026-Iran-war" target="_blank" rel="noopener noreferrer">Britannica｜2026 伊朗戰爭背景</a> · <a href="https://www.onvista.de/news/2026/07-08-oelpreise-ziehen-deutlich-an-nach-us-angriffen-auf-iran-0-10-26529853" target="_blank" rel="noopener noreferrer">onvista｜油價應聲大漲</a> · <a href="https://www.energynewsmagazine.at/2026/07/08/brent-oelpreis-legt-auf-7850-us-dollar/" target="_blank" rel="noopener noreferrer">Energy News｜Brent 站上 78.50 美元</a></p>
+
+<img src="assets/images/2026/weekly/W28_圖卡2_NATO安卡拉峰會.png" alt="NATO 安卡拉峰會 7/7-8 援烏 700 億歐元 2035 前國防支出 5% GDP 川普重申第 5 條">
+<h3>NATO 安卡拉峰會：援烏 700 億 €、5% 支出路線圖，川普場邊風波不斷</h3>
+<p>就在波灣戰火重燃的同一天，<strong>NATO 峰會 7/7–8 在土耳其安卡拉（Ankara）舉行</strong>——會場內談團結、會場外看 川普。<strong>三項實質成果</strong>：（1）<strong>對烏克蘭的長期承諾白紙黑字</strong>——在德國倡議下，各國承諾 <strong>2026 與 2027 每年以 700 億 € 支援烏克蘭</strong>，把逐年討價還價改為可預期的多年承諾；（2）<strong>5% 支出路線圖</strong>——2035 年前軍事與安全相關支出達 GDP 的 5%，歐洲各國與加拿大以新預算數字與新軍備專案展示執行決心；（3）<strong>集體防禦再確認</strong>——川普在公報上重申北大西洋公約<strong>第 5 條</strong>「攻擊一國即攻擊全體」。Merz 會後總結：NATO「比以往更歐洲，也依然跨大西洋、強大而團結」。<strong>但 川普的場邊言行仍讓盟邦捏冷汗</strong>：他再度聲索丹麥屬地格陵蘭（Grönland）、揚言終止與西班牙的一切貿易（不滿其國防支出進度），並在與 NATO 秘書長 Rutte 會晤時順勢宣布對伊停火結束——歐洲媒體形容這是「川普的雜音與聯盟的定力」同場較勁。<strong>對德國的意義</strong>：5% 目標意味著國防支出未來十年持續攀升，2025 年設立的國防特別基金（Sondervermögen）用罄後，「錢從哪裡來」的財源辯論——加稅、舉債或排擠其他預算——勢必回到國內政治核心；而峰會與中東戰火同步上演，也預示德國安全政策將同時面對東翼（俄烏）與波灣兩條戰線的資源競逐。</p>
+<p class="post-sources">📚 來源：<a href="https://www.tagesspiegel.de/politik/trumps-tiraden-zum-trotz-das-sind-die-wichtigsten-ergebnisse-des-nato-gipfels-15815577.html" target="_blank" rel="noopener noreferrer">Tagesspiegel｜峰會最重要成果盤點</a> · <a href="https://www.bundeskanzler.de/bk-de/aktuelles/pressekonferenz-kanzler-ankara-nato-2446296" target="_blank" rel="noopener noreferrer">Bundeskanzler｜Merz 安卡拉記者會</a> · <a href="https://www.eurotopics.net/en/360352/nato-summit-in-ankara-major-reshuffle-ahead" target="_blank" rel="noopener noreferrer">eurotopics｜歐洲媒體評論綜覽</a> · <a href="https://www.cnn.com/2026/07/08/world/live-news/iran-war-nato-summit-ukraine-trump" target="_blank" rel="noopener noreferrer">CNN｜峰會與伊朗戰火同日即時</a></p>
+
+<img src="assets/images/2026/weekly/W28_圖卡3_兒童金免申請.png" alt="兒童金免申請 7/9 三讀通過 2027/3 第二名子女起 2027/11 頭胎納入 目前每月 259 歐元">
+<h3>兒童金免申請 7/9 三讀通過：2027 起寶寶出生自動發放</h3>
+<p>在德國生過小孩的家長都知道那疊表格的份量——這件事終於要走入歷史。<strong>聯邦議院 7/9 三讀通過「免申請兒童金」（antragsloses Kindergeld）法案</strong>：未來寶寶出生後，兒童金（Kindergeld，目前<strong>每名子女每月 259 €</strong>）將由家庭金庫（Familienkasse）<strong>主動發放、家長無須遞件</strong>。<strong>分兩階段上路</strong>：（1）<strong>2027 年 3 月起</strong>，已領有兒童金家庭的新生子女（即第二名以後的子女）免申請——因為 Familienkasse 可直接沿用既有資料；（2）<strong>2027 年 11 月起</strong>擴及頭胎子女。這是黑紅政府「官僚減負」的指標案之一，財政部估計每年可省下數十萬件紙本申請；<strong>資格審查與防止溢領的機制照舊</strong>，並非人人自動有錢拿。另一條好消息線：改革包中兒童金本身也將<strong>分兩步在 2028 年前調升至 272 €</strong>。<strong>批評聲音來自兒童保護聯盟（Kinderschutzbund）</strong>：分階段推行有疑慮——第二階段（頭胎）沒有寫死的時程、恐遙遙無期，而頭胎家庭與非就業家長恰恰是最需要簡政的一群，初期卻被排除在自動化之外。<strong>在德台灣家庭注意</strong>：2027 年 3 月前出生的寶寶仍須照現行方式向 Familienkasse 申請，別空等；外籍家長的資格前提（居留身分等）審查維持不變——<strong>自動發放是簡化流程，不是放寬資格</strong>；建議家長們持續保留出生證明（Geburtsurkunde）與稅號（Steuer-ID）文件正本，過渡期銜接時仍可能被要求補件。</p>
+<p class="post-sources">📚 來源：<a href="https://www.bundestag.de/dokumente/textarchiv/2026/kw28-de-antragsloses-kindergeld-1192542" target="_blank" rel="noopener noreferrer">Bundestag｜表決文件</a> · <a href="https://www.zdfheute.de/politik/deutschland/bundestag-kindergeld-beschluss-antragslos-100.html" target="_blank" rel="noopener noreferrer">ZDF｜國會通過免申請兒童金</a> · <a href="https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/kindergeld-ohne-antrag.html" target="_blank" rel="noopener noreferrer">BMF｜制度說明</a> · <a href="https://www.t-online.de/finanzen/ratgeber/leben/kinder/id_101334914/kindergeld-bundestag-beschliesst-antragslose-zahlung.html" target="_blank" rel="noopener noreferrer">t-online｜兩階段時程與批評</a> · <a href="https://www.wiwo.de/politik/deutschland/buerokratieabbau-bundestag-beschliesst-kindergeld-ohne-antrag/100239139.html" target="_blank" rel="noopener noreferrer">WiWo｜官僚減負脈絡</a></p>
+
+<img src="assets/images/2026/weekly/W28_圖卡4_健保撙節法案.png" alt="GKV 健保 188 億歐元撙節案 7/10 表決 平均附加費率 3.13% 配偶免費共保 2028 起加收 2.5%">
+<h3>健保費剎車法案 7/10 通過：188 億 € 怎麼省、配偶共保怎麼改</h3>
+<p>如果你在德國工作，薪資單上的健保費近年只有一個方向：漲。<strong>法定健保（GKV）平均附加費率（Zusatzbeitrag）今年 3 月底已達 3.13%</strong>，而依政府草案估算，<strong>GKV 2027 年將出現 153 億 € 的財務缺口、2030 年恐擴大到約 400 億 €</strong>。為了踩剎車，聯邦議院 7/10 就「GKV 費率穩定法」（GKV-Beitragssatzstabilisierungsgesetz）進行記名表決，<strong>以 319 票贊成、286 票反對、4 票棄權驚險過關</strong>——原訂 6/26 的表決即因醫界與各方抗議延至本日，表決前反對黨更以議事動議要求撤案未果；經衛生委員會大改後的版本，目標 <strong>2027 年填補 188 億 €</strong>、至 2030 年減負上看 381 億 €。<strong>最大爭點是配偶免費共保（Familienversicherung）的限縮</strong>：目前無收入配偶可完全免費共保，<strong>2028 年起改為按在職伴侶的應稅所得加收 2.5% 附加費</strong>——比原草案的 3.5% 已在審議中調降；<strong>子女的免費共保完全不受影響</strong>。此外套案還包含醫院與行政節流、藥費與給付結構調整等多管齊下的措施。<strong>反彈聲浪不小</strong>：社福團體 VdK 批配偶附加費「背離團結原則」、SoVD 指單薪家庭與照顧者首當其衝，工會在聽證會上批評負擔過度轉嫁被保險人、健保財務的結構性成因（稅收應承擔的任務未足額撥補等）未被處理；衛生部長 Warken（CDU）則反駁：不動刀，附加費率將年年失控上漲，最終傷的是所有繳費者。<strong>對在德台灣人的實際帳</strong>：雙薪家庭不受配偶條款影響；<strong>單薪＋配偶共保的家庭要開始試算</strong>——以在職方應稅所得 5 萬 € 估算，2028 起每年約多繳 1,250 €，屆時「配偶找 Minijob／兼職讓自己有保」可能反而划算；法案後續程序（聯邦參議院）與實施細節，本專頁持續追蹤。</p>
+<p class="post-sources">📚 來源：<a href="https://www.bundestag.de/dokumente/textarchiv/2026/kw28-de-gkv-1184352" target="_blank" rel="noopener noreferrer">Bundestag｜7/10 表決預告</a> · <a href="https://www.bundesgesundheitsministerium.de/service/gesetze-und-verordnungen/detail/gkv-beitragssatzstabilisierungsgesetz" target="_blank" rel="noopener noreferrer">BMG｜法案內容</a> · <a href="https://www.ad-hoc-news.de/wirtschaft/gkv-reform-bundestag-stimmt-10-juli-ueber-18-8-mrd-sparpaket-ab/69695897" target="_blank" rel="noopener noreferrer">ad-hoc-news｜188 億撙節包</a> · <a href="https://www.t-online.de/finanzen/ratgeber/versicherungen/krankenversicherung/id_101329840/gkv-reform-familienversicherung-wird-guenstiger-als-geplant.html" target="_blank" rel="noopener noreferrer">t-online｜配偶附加費降至 2.5%</a> · <a href="https://www.das-parlament.de/inland/gesundheit/heftiger-widerstand-gegen-reformplaene-fuer-krankenkassen" target="_blank" rel="noopener noreferrer">Das Parlament｜聽證會反對聲浪</a> · <a href="https://www.sovd.de/aktuelles/meldung/krankenversicherung-sovd-gegen-einschraenkungen-bei-familienversicherung" target="_blank" rel="noopener noreferrer">SoVD｜社福團體立場</a> · <a href="https://www.handelsblatt.com/politik/deutschland/bundespolitik-jetzt-live-bundestag-verabschiedet-gkv-sparpaket/100137034.html" target="_blank" rel="noopener noreferrer">Handelsblatt｜表決通過（319:286）</a></p>
+
+<img src="assets/images/2026/weekly/W28_圖卡5_五月工業數據.png" alt="五月工業生產 +0.9% 優於預期 製造業新訂單 +1.9% 年增 6.2% 其他載具製造大單 +85%">
+<h3>工業微復甦？五月生產 +0.9%、訂單 +1.9% 雙雙優於預期</h3>
+<p>被唱衰許久的德國工業，這週交出兩份難得的好成績單。<strong>製造業新訂單（7/6 公布）：五月經季節與工作日調整後月增 1.9%</strong>——經濟學家原本只預期 +1.1%——<strong>年增更達 6.2%</strong>。細看結構最有戲：<strong>「其他載具製造」（sonstiger Fahrzeugbau，涵蓋飛機、船艦、軌道與軍用車輛）訂單單月暴增 85%</strong>，受惠於多筆大單——國防與航太景氣正把訂單簿灌滿，這與 NATO 5% 支出路線圖（見峰會卡）互為表裡；機械製造 +3.7%、電氣設備 +5.7% 同步走揚，但<strong>汽車業新訂單 −3.8%、資料處理設備 −7.8%</strong>仍在掙扎，且<strong>剔除大單後訂單僅 +1.0%</strong>，基礎動能依舊偏薄。<strong>工業生產（7/7 公布）：五月月增 0.9%</strong>，同樣大幅優於預期的 +0.1%，其中汽車生產 +3.6% 反彈是最大貢獻，能源密集產業也微增 0.2%。<strong>專家怎麼解讀</strong>：Commerzbank 經濟學家 Wagner 認為數據「帶來德國工業溫和復甦的希望」，並指產業先前深受伊朗戰爭衝擊；聯邦經濟部（BMWE）定調訂單「延續 2025 下半年以來的上升趨勢」；但多數經濟學家不願言「拐點」——高成本、法規負擔與缺工三大結構性問題未解，區位競爭力的侵蝕不是一兩個月的好數據能翻轉。<strong>觀察重點</strong>：荷姆茲戰火重燃（見卡 1）恐再推高能源成本、直接威脅這波復甦的續航力；而軍工大單躍居工業新支柱，是本輪數據最重要的結構訊號——德國製造業的重心正在悄悄位移。</p>
+<p class="post-sources">📚 來源：<a href="https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/07/PD26_235_421.html" target="_blank" rel="noopener noreferrer">Destatis｜五月新訂單 +1.9%</a> · <a href="https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/07/PD26_237_421.html" target="_blank" rel="noopener noreferrer">Destatis｜五月生產 +0.9%</a> · <a href="https://www.onvista.de/news/2026/07-06-roundup-2-auftragsplus-sorgt-fuer-hoffnungsschimmer-in-deutscher-industrie-0-10-26529113" target="_blank" rel="noopener noreferrer">onvista/dpa｜經濟學家評析</a> · <a href="https://www.xtb.com/en/market-analysis/economic-calendar-is-german-industry-reviving-07-07-2026" target="_blank" rel="noopener noreferrer">XTB｜數據與預期比較</a></p>
+
+<img src="assets/images/2026/weekly/W28_圖卡6_車市半年盤點.png" alt="德國車市上半年 新車登記 148.4 萬輛年增 5.8% 國內產量 210.9 萬輛年減 3% 純電佔比 24.8% VW Golf 銷售王 Skoda Elroq 電動車王">
+<h3>車市半年盤點：賣得多、產得少——Golf 衛冕銷售王、純電佔比破 1/4</h3>
+<p>KBA（聯邦汽車監理局）與 VDA（德國汽車工業協會）的半年報本週同步出爐，兩份數據放在一起看特別有戲。<strong>先看銷售端（KBA）</strong>：上半年新車登記 <strong>1,484,393 輛、年增 5.8%</strong>（去年同期約 140.3 萬輛），六月單月更大增 15.7%。<strong>銷售王由 VW Golf 衛冕</strong>，T-Roc、Tiguan 跟進——前三名全是 VW，品牌市佔 18.4% 穩坐龍頭，Skoda 以 128,218 輛居次；非 VW 集團最暢銷的則是 Opel Corsa 與 BMW X1，SUV 以 35.5% 的佔比續為最大級距。<strong>最大亮點是電動車</strong>：上半年純電（BEV）<strong>368,006 輛、年增 48%、佔比 24.8%</strong>——去年同期僅約 17.7%；六月單月佔比更衝上 <strong>28.4%（年增 78.2%）</strong>，等於幾乎每 3.5 輛新車就有一輛純電。5 月底重啟的購車補助（本專頁 W21–22 報導）與平價新車型齊發是兩大推手，<strong>上半年電動車王是 Skoda Elroq</strong>、力壓 Tesla Model Y 與 VW ID.3。<strong>再看生產端（VDA），畫風一轉</strong>：上半年國內產量 <strong>210.9 萬輛、年減 3%</strong>，仍比疫情前的 2019 年低 15%，五月甚至一度年減 18%（伊朗戰爭衝擊供應鏈與出口需求）、六月才回升 6%。<strong>產銷背離的解讀</strong>：德國車廠約四分之三產量靠出口，內需回溫補不了出口缺口——對美出口受關稅衝擊（W24 報導年減 12.9%）、對中出口疲軟，加上高電價與人力成本，「在德國生產」的結構性壓力未解，這也是為何各廠一邊在德國市場賣得風生水起、一邊仍在談降本與產能外移。<strong>買車觀察</strong>：電動車供給大增、議價空間漸開；反過來說，燃油車佔比持續下滑，換車時的二手殘值宜提前納入評估。</p>
+<p class="post-sources">📚 來源：<a href="https://www.kba.de/DE/Presse/Pressemitteilungen/Fahrzeugzulassungen/2026/pm25_2026_n_06_26_pm_komplett.html" target="_blank" rel="noopener noreferrer">KBA｜六月與上半年登記統計</a> · <a href="https://www.vda.de/en/press/press-releases/2026/260703_PM_Nationale_PM_Production_in_Germany_in_June_2026" target="_blank" rel="noopener noreferrer">VDA｜六月與上半年產量</a> · <a href="https://www.heise.de/news/KBA-Zahlen-Juni-2026-E-Auto-Anteil-springt-auf-28-Prozent-11352961.html" target="_blank" rel="noopener noreferrer">heise｜六月純電佔比 28%</a> · <a href="https://www.best-selling-cars.com/germany/2026-half-year-germany-best-selling-car-models/" target="_blank" rel="noopener noreferrer">best-selling-cars｜上半年車款排行</a> · <a href="https://insideevs.de/news/800829/elektroautomarkt-deutschland-erstes-halbjahr-2026/" target="_blank" rel="noopener noreferrer">InsideEVs｜上半年電動車市</a> · <a href="https://www.adac.de/news/neuzulassungen-kba/" target="_blank" rel="noopener noreferrer">ADAC｜品牌排行解析</a></p>
+
+<img src="assets/images/2026/weekly/W28_圖卡7_車市動力結構.png" alt="德國車市動力結構統計表 純電 BEV 24.8% 年增 48% 插電混合 10.9% 油電混合約 30% 汽油約 22% 年減 18.2% 柴油約 13%">
+<h3>動力結構一表看懂：純電、油電、燃油的消長</h3>
+<p>把上半年的新車登記按動力類型攤開，德國車市的板塊位移一目了然：<strong>純電（BEV）佔 24.8%（去年同期 17.7%、年增 48.0%）、插電式混合（PHEV）佔 10.9%（年增 25.8%）、一般油電混合（HEV）約 30%（年增 9.8%）</strong>——電動化動力合計已約三分之二；反觀<strong>汽油車年減 18.2%（佔比自約 28.4% 掉到約 22%）、柴油車年減 8.6%（約 13%）</strong>，燃油雙雄的市佔一年之內合計蒸發近 9 個百分點。最具象徵性的一刻在六月：<strong>純電以 28.4% 的單月佔比首度成為當月最強動力類型</strong>（ADAC 語）——這在德國汽車史上是頭一遭。<strong>怎麼解讀</strong>：（1）購車補助的拉動效應明顯，但車廠也真的把「平價電動車」端出來了，3 萬 € 級距的選擇大增（上半年電動車王 Skoda Elroq 正是代表）；（2）一般油電（HEV）作為「不想充電族」的過渡選項持續穩增、柴油退守長途與商用市場；（3）對照 EU 2035 燃油新車禁售目標的政治攻防，德國市場的實際走向已提前給出方向。<strong>註</strong>：表中「約」值為依 KBA 公布之年增率與去年基期推算的近似佔比，其餘為 KBA 公布數。</p>
+<p class="post-sources">📚 來源：<a href="https://www.kba.de/DE/Presse/Pressemitteilungen/Fahrzeugzulassungen/2026/pm25_2026_n_06_26_pm_komplett.html" target="_blank" rel="noopener noreferrer">KBA｜上半年登記按動力類型</a> · <a href="https://www.adac.de/news/neuzulassungen-kba/" target="_blank" rel="noopener noreferrer">ADAC｜純電首度成單月最強動力</a> · <a href="https://ecomento.de/2026/07/03/elektroauto-hybridauto-neuzulassungen-juni-2026/" target="_blank" rel="noopener noreferrer">ecomento｜電動車與油電登記圖表</a> · <a href="https://www.kba.de/DE/Presse/Pressemitteilungen/AlternativeAntriebe/2026/pm23_2026_Antriebe_05_26_komplett.html" target="_blank" rel="noopener noreferrer">KBA｜替代動力年度序列</a></p>
+
+<hr>
+
+<h2 id="jun29-jul5">6月29日–7月5日：聯合委員會 34 項改革（病假新規＋所得稅減百億）、德國世足 PK 戰出局隊史首見、公民金改制新版基礎保障、油稅減免退場油價跳漲、EU 小包裹 3 € 關稅、六月通膨 2.3% 失業 294 萬、七月新制懶人包</h2>
+<p>這一週的德國，政策、錢包與綠茵場同時開演。先說對上班族影響最大的：<strong>黑紅聯合委員會（Koalitionsausschuss）7/2 拍板 34 項改革方案「振興與就業方案」</strong>——病假擬自第一天起就要證明、廢除電話開病假單、2027 起所得稅年減稅 100 億 €——均為政治協議、需立法後才生效，勞資反應兩極。綠茵場上則是心碎一夜：<strong>6/29 德國在波士頓的世足 32 強戰 120 分鐘 1:1 戰平巴拉圭，十二碼 3:4 落敗出局</strong>——隊史世足首度 PK 戰吞敗，Nagelsmann 去留成為全國話題。回到民生面，<strong>7/1 是新制大日</strong>：公民金（Bürgergeld）走入歷史、改制為制裁更嚴的<strong>新版基礎保障（Grundsicherungsgeld）</strong>；實施兩個月的<strong>油稅減免 6/30 到期</strong>，油價應聲跳漲；EU 對 <strong>150 € 以下第三國小包裹開徵每類商品 3 € 的關稅</strong>，Temu、Shein、AliExpress 到台灣直送包裹全數適用；此外退休金調漲 4.24% 正式入帳、短程航空稅調降。數據面則傳來難得的好消息：<strong>六月通膨降至 2.3%、優於市場預期</strong>，但失業人數 293.6 萬、比去年多 2.2 萬，勞動市場依舊欲振乏力。以下逐題深入。</p>
+
+<img src="assets/images/2026/weekly/W27_圖卡1_政府改革包.png" alt="聯合委員會 7/1 拍板 34 項改革 病假第一天起要證明 廢電話病假單 2027 所得稅減稅 100 億歐元 富人稅門檻降至 25 萬">
+<h3>執政聯盟拍板 34 項改革：只是政治協議，這些與你最相關</h3>
+<p>本週的政治重磅來自聯合委員會（Koalitionsausschuss）。<strong>7/2 CDU/CSU 與 SPD 的聯盟高層敲定名為「振興與就業方案」（Programm für Aufschwung und Beschäftigung）的 34 項改革包</strong>，橫跨稅制、勞動市場、退休金、官僚簡化、數位化、住宅與公司法，總理 Merz 稱要「帶領德國走向未來」。<strong>先講清楚它的性質：這是一份 12 頁的政治協議、還不是法律</strong>——每項措施都要先由內閣提出法律草案、再經 Bundestag（部分還需 Bundesrat）通過才會生效，具體條文、過渡規定與時程多數尚未確定；目前只有兩個明確時點：<strong>所得稅改革目標 2027/1/1 生效</strong>、退休金立法包裹（落實 Rentenkommission 建議）目標 2026 年底前通過，而工時法（Arbeitszeitgesetz）改革甚至不在這份文件裡、Merz 說「夏天再談」。<strong>與普羅大眾最相關的措施</strong>：（1）<strong>病假新規</strong>——擬自第一天起要 AU 證明、廢除電話開單，爭議最大，下一張卡單獨解析；（2）<strong>所得稅年減稅約 100 億 €（2027 起）</strong>——調高基本免稅額（Grundfreibetrag）、兒童免稅額與兒童金、上班族免稅額（Arbeitnehmerpauschbetrag）並壓平第二累進區間，<strong>週日與國定假日加給的免稅額度同步提高</strong>；雙薪兩孩、應稅所得 6 萬 € 的家庭 2028 全效後每年可省逾 600 €；<strong>財源由高所得買單</strong>——富人稅（Reichensteuer）45% 門檻自約 27.7 萬降至 25 萬 €、28 萬 € 以上新增 47%；（3）<strong>勞動市場鬆綁，求職簽約要特別留意</strong>——2030 年底前入職者，無理由定期契約（sachgrundlose Befristung）上限自現行 2 年拉長到 <strong>48 個月、最多可延長 6 次</strong>；年收入超過退休保險計費上限（Beitragsbemessungsgrenze）1.75 倍的高薪族，雇主擬自 2027/1/1 起可<strong>支付「適度遣散費」直接終止僱傭關係</strong>（解僱保護鬆綁）；（4）<strong>Aktivrente 續行</strong>——屆齡續工作月入 2,000 € 免稅；另有 Minijob 調整、官僚減量、住宅與 AI 等措施。<strong>各方反應</strong>：DGB 主席 Fahimi 兩面評價——肯定減稅是「就業與成長的正確訊號」、但強烈反對病假新規；ifo 所長 Fuest 稱「不是大手筆，但有邁向成長友善政策的重要步伐」，DIW 所長 Fratzscher 則批本質是「象徵性包裹」；雇主協會 BDA 讚「遲來的政策轉向」，綠黨批「拒絕工作」、AfD 稱「嚴重令人失望」。<strong>觀察重點</strong>：內閣將逐案提出草案，病假與解僱保護的立法攻防、以及 9 月薩克森-安哈特（Sachsen-Anhalt）州選前的政治壓力，是下半年的重頭戲。</p>
+<p class="post-sources">📚 來源：<a href="https://www.bundesregierung.de/breg-de/aktuelles/reformen-rente-arbeitsmarkt-steuern-2445598" target="_blank" rel="noopener noreferrer">Bundesregierung｜改革決議</a> · <a href="https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/koalitionsausschuss-einigung-auf-steuerentlastung.html" target="_blank" rel="noopener noreferrer">BMF｜所得稅減稅細節</a> · <a href="https://www.twobirds.com/de/insights/2026/germany/koalitionsausschuss-juli-2026-arbeitsrechtliche-kernpunkte-des-reformpakets-im-berblick" target="_blank" rel="noopener noreferrer">Bird &amp; Bird｜勞動法重點與立法時程</a> · <a href="https://www.t-online.de/finanzen/aktuelles/wirtschaft/id_101324414/reformpaket-der-koalition-so-gemischt-reagieren-oekonomen-und-gewerkschaft.html" target="_blank" rel="noopener noreferrer">t-online｜經濟學家與工會反應</a> · <a href="https://www.zdfheute.de/politik/deutschland/merz-koalition-treffen-reformen-100.html" target="_blank" rel="noopener noreferrer">ZDF｜改革包總覽</a></p>
+
+<img src="assets/images/2026/weekly/W27_圖卡2_病假新規.png" alt="病假新規 AU 證明擬第一天起提交 廢除電話病假單 尚未立法 現行最遲第 4 天規定不變">
+<h3>病假新規解析：第一天就要證明？——目前僅是協議、現行規定完全未變</h3>
+<p>改革包裡吵得最兇的就是病假這條，值得單獨講清楚。<strong>現行規定（目前完全沒變！）</strong>：依《工資續付法》（Entgeltfortzahlungsgesetz）§5，員工<strong>最遲在生病第 4 個日曆天</strong>須提交勞動能力喪失證明（AU-Bescheinigung），雇主本來就有權要求自第一天起提交（不少僱傭合約已這樣約定）；輕症者可<strong>電話或視訊開立病假單</strong>（限診所熟識病人、一次最多 5 天）——這是 Corona 時期為診所減壓引入、2023 年 12 月常態化的制度。<strong>擬議的變更</strong>：（1）AU 證明改為<strong>自請病假第一天起就有提交義務</strong>；（2）<strong>廢除電話開單</strong>；（3）<strong>不實開立 AU 加重處罰</strong>。Merz 的理由是疫後「病假率暴增至國際高檔」；但專家指出，這個「暴增」很大程度是 <strong>eAU 電子登錄的統計效應</strong>——以前紙本病假單常常根本沒進統計。<strong>反彈罕見地跨黨派</strong>：家醫協會（Hausärzteverband）批「絕對災難」，輕症者全湧進診所、流感季候診室恐爆滿；聯邦醫師公會強調電話開單「行之有效、未見濫用」；ver.di 主席 Werneke 斥「對員工的不信任」、IG Metall 主席 Benner 批「替雇主完成了一張不社會的願望清單」；連 SPD 自家人都開砲——圖林根（Thüringen）衛生部長 Schenk：「想吐的人應該躺在床上，而不是坐進候診室」，薩克森-安哈特（Sachsen-Anhalt）衛生部長 Grimm-Benne 批評新規是對員工的猜疑。爭議延燒後 Merz 澄清「不必第一天就進診所」——那證明到底怎麼開？視訊？線上表單？<strong>配套完全未定</strong>。<strong>最重要的結論</strong>：這一切還在<strong>政治協議階段</strong>，需要內閣草案、國會三讀才會生效，<strong>生效日未定</strong>；在新法生效前<strong>一切照舊：最遲第 4 天交證明、輕症仍可電話開單</strong>（除非你的合約另有約定）。立法進度與過渡規定，本專頁會持續追蹤。</p>
+<p class="post-sources">📚 來源：<a href="https://www.zdfheute.de/politik/deutschland/krankschreibung-schwarz-rote-koalition-reform-aerzte-attest-arbeitsunfaehigkeitsbescheinigung-100.html" target="_blank" rel="noopener noreferrer">ZDF｜病假改革總覽</a> · <a href="https://www.aerzteblatt.de/news/koalitionsausschuss-abschaffung-der-telefon-au-und-krankschreibung-ab-erstem-tag-geplant-80e01212-d746-4679-8376-da1a4330b629" target="_blank" rel="noopener noreferrer">Ärzteblatt｜廢除電話 AU 計畫</a> · <a href="https://www.tagesspiegel.de/politik/sie-mussen-nicht-am-ersten-tag-in-die-arztpraxis-merz-verteidigt-plane-zu-krankschreibungen--kritik-jetzt-auch-aus-der-spd-15790919.html" target="_blank" rel="noopener noreferrer">Tagesspiegel｜Merz 澄清與 SPD 批評</a> · <a href="https://www.t-online.de/nachrichten/deutschland/innenpolitik/id_101324230/krankschreibung-kritik-an-katastrophalen-plaenen-der-bundesregierung.html" target="_blank" rel="noopener noreferrer">t-online｜家醫協會批評</a> · <a href="https://www.anwalt.de/rechtstipps/krankschreibung-ab-dem-1-tag-laengere-befristung-und-neue-regeln-fuer-minijobs-was-die-arbeitsrechtsaenderungen-bedeuten-274802.html" target="_blank" rel="noopener noreferrer">anwalt.de｜法律解析</a></p>
+
+
+<img src="assets/images/2026/weekly/W27_圖卡3_世足出局.png" alt="德國世足 32 強戰 1:1 巴拉圭 PK 3:4 出局 隊史首度十二碼落敗 Nagelsmann 去留">
+<h3>德國 PK 戰不敵巴拉圭出局：隊史世足首度十二碼落敗</h3>
+<p>德國的世足冒險在 32 強戛然而止。<strong>6/29（週一）晚間（德國時間 22:30）在波士頓近郊的 Foxborough</strong>，德國對上南美勁旅巴拉圭：<strong>Enciso 第 42 分鐘先馳得點，Havertz 第 54 分鐘扳平</strong>，此後德國久攻不下，最具爭議的一幕發生在<strong>延長賽第 102 分鐘——Tah 接 Brown 的角球頭槌破網，卻因 Anton 被認定對門將 Gill 犯規、進球遭 VAR 取消</strong>；ZDF 裁判專家 Kinhöfer 直言「這絕對無法理解，根本不是犯規」，FIFA 裁判委員會主席 Collina 則替判決辯護；120 分鐘 1:1 進入十二碼大戰。<strong>PK 戰一波三折</strong>：Havertz、Woltemade 先後罰失，40 歲的 Neuer 撲掉 Balbuena 的射門為德國續命，但 <strong>Tah 第六輪高出橫樑，終場 3:4</strong>——《紐約時報》指出，這是<strong>四屆世界冠軍德國隊史上首度在世足 PK 戰落敗</strong>，也是繼 2018、2022 小組出局後，連續第三屆世足鎩羽而歸。<strong>賽後風暴隨即引爆</strong>：《南德意志報》評「某種程度上比 2022 年的災難更難堪」、西班牙《Marca》寫下「德國什麼都不剩了，連十二碼也是」；Nagelsmann 表態想留任（「我不是會逃跑的人」），但 DFB 主席 Neuendorf 直言「這樣的表現不符合我們的標準」，原本力挺的運動總監 Völler 據報也已轉向，多家媒體點名 Klopp 為熱門接班人選，<strong>教練去留與檢討方向預計本週末前定案</strong>。<strong>後續觀察</strong>：世足淘汰賽仍在進行（16 強起賽事持續到 7/19 決賽），酒吧與 Biergarten 公播照常；沒有德國隊的日子，不妨改追同樣晉級的日本或黑馬球隊。</p>
+<p class="post-sources">📚 來源：<a href="https://www.sportschau.de/fussball/fifa-wm-2026/elfer-drama-gegen-paraguay-deutschland-erlebt-naechstes-wm-debakel,spielbericht-deutschland-paraguay-100.html" target="_blank" rel="noopener noreferrer">sportschau｜戰報：PK 悲劇</a> · <a href="https://www.sportschau.de/fussball/fifa-wm-2026/von-deutschland-ist-nicht-mehr-uebrig-presse-zerreisst-dfb-team,pressestimmen-deutschland-paraguay-100.html" target="_blank" rel="noopener noreferrer">sportschau｜國際媒體評論</a> · <a href="https://www.sportschau.de/fussball/fifa-wm-2026/bin-keiner-der-weglaeuft-nagelsmann-schliesst-ruecktritt-aus,wm-nagelsmann-kein-ruecktritt-100.html" target="_blank" rel="noopener noreferrer">sportschau｜Nagelsmann 排除辭職</a> · <a href="https://www.sport1.de/news/fussball/wm/2026/07/deshalb-will-der-dfb-nagelsmann-zum-ruecktritt-bewegen" target="_blank" rel="noopener noreferrer">SPORT1｜DFB 內部動向</a> · <a href="https://www.zdfheute.de/sport/fussball-wm/fussball-wm-2026-deutschland-paraguay-tor-tah-schiedsrichter-100.html" target="_blank" rel="noopener noreferrer">ZDF｜Tah 進球取消爭議</a> · <a href="https://www.sportschau.de/fussball/fifa-wm-2026/schiriexperte-wagner-sieht-fehlentscheidung,deutschland-paraguay-schiedsrichter-100.html" target="_blank" rel="noopener noreferrer">sportschau｜裁判專家指誤判</a></p>
+
+<img src="assets/images/2026/weekly/W27_圖卡4_新版基礎保障.png" alt="公民金 Bürgergeld 7/1 改制新版基礎保障 Grundsicherungsgeld 制裁更快更重 財產寬限期取消">
+<h3>公民金走入歷史：新版基礎保障 7/1 上路，制裁更快更重</h3>
+<p>德國社福制度迎來近年最大轉折。黑紅聯合政府 3 月通過的改革 <strong>7/1 正式生效：公民金（Bürgergeld）更名為「基礎保障金」（Grundsicherungsgeld）</strong>，單身月額暫維持 563 €，但規則全面收緊。<strong>三大變化</strong>：（1）<strong>就業媒合優先（Vermittlungsvorrang）回歸</strong>——Jobcenter 將優先檢視能否直接媒合工作、而非先安排長期進修，30 歲以下適用尤嚴；無故缺席約談<strong>首次尚無罰則、第 2 次起標準給付砍 30%（為期一個月）、連續第 3 次全額停發標準給付</strong>、房租改由 Jobcenter 直接匯給房東；拒絕合理工作或中斷輔導措施者，30% 減發（為期三個月）成為標準制裁，<strong>持續拒絕工作者（Totalverweigerer）最重可全額停發、連住房費用都不保</strong>。（2）<strong>財產規則收緊</strong>——原本首年最高 40,000 € 的財產寬限期（Karenzzeit）廢除，改為<strong>自申請首日起按年齡與工作年資適用 5,000–20,000 € 的免計額</strong>；社福團體警告這是「懲罰預先儲蓄的訊號」，因為 ETF 定期定額等長期儲蓄的保護大幅縮水。（3）<strong>單親義務提前</strong>——單親家長自孩子滿 1 歲起即有就業或參加培力措施的義務，婦女團體批評此舉衝擊的絕大多數是母親。<strong>各方反應罕見一面倒</strong>：勞動部長 Bas（SPD）辯護「能工作的人就必須努力找工作」、強調同時打擊社福詐欺；DGB（德國工會聯合會）批評是「社會倒退」，SoVD 警告最重制裁形同把人推向無家可歸，《taz》的評論標題更直接——「最高刑罰：流落街頭」；第一線 Jobcenter 則抱怨新制是「官僚怪獸」、行政量暴增。<strong>權益提醒</strong>：領取者 7 月起務必準時赴 Jobcenter 約談並保留請假證明；財產接近免計門檻者，建議先向 Caritas、Diakonie 等社福諮詢單位確認自身情況。</p>
+<p class="post-sources">📚 來源：<a href="https://www.bundesregierung.de/breg-de/aktuelles/bundesrat-neue-grundsicherung-2399562" target="_blank" rel="noopener noreferrer">Bundesregierung｜新版基礎保障</a> · <a href="https://www.zdfheute.de/politik/deutschland/grundsicherung-bas-arbeitsministerin-sozialleistungen-100.html" target="_blank" rel="noopener noreferrer">ZDF｜勞動部長 Bas 專訪</a> · <a href="https://www.sovd.de/aktuelles/meldung/reform-der-grundsicherung-beschlossen-sovd-warnt-vor-folgen" target="_blank" rel="noopener noreferrer">SoVD｜社福團體警告</a> · <a href="https://taz.de/Kabinett-beschliesst-Grundsicherung/!6139324/" target="_blank" rel="noopener noreferrer">taz｜評論：最高刑罰是無家可歸</a> · <a href="https://www.buerger-geld.org/news/grundsicherung/buergergeld-wird-grundsicherungsgeld-strengere-regeln-beim-schonvermoegen-ab-1-juli-2026/" target="_blank" rel="noopener noreferrer">buerger-geld.org｜免計財產新規</a> · <a href="https://www.buerger-geld.org/news/grundsicherung/sanktionen-beim-grundsicherungsgeld-30-prozent-dreimal-plus-eins-totalsperre/" target="_blank" rel="noopener noreferrer">buerger-geld.org｜制裁階梯詳解</a></p>
+
+<img src="assets/images/2026/weekly/W27_圖卡5_油稅減免退場.png" alt="油稅減免 6/30 到期 7/1 中午 E10 漲 18.2 分 柴油漲 20.4 分 ADAC 實測 超過稅負減免">
+<h3>油稅減免 6/30 到期：7/1 中午油價應聲跳漲、柴油漲逾稅額</h3>
+<p>開了兩個月的「加油紅利」正式關門。5/1 起實施的<strong>燃油稅減免（能源稅調降約 14 分、含增值稅減負 16.7 分／公升，慣稱 17 分）於 6/30 到期</strong>。ADAC 的統計顯示，減免期間這筆讓利<strong>大致確實轉嫁給了消費者</strong>——6/29 全國均價 E10 約 1.81 €／公升、柴油約 1.73 €；但減免一到期，加油站毫不猶豫：<strong>7/1 中午 12 時起 ADAC 實測 E10 一口氣漲 18.2 分、柴油漲 20.4 分</strong>——柴油漲幅甚至<strong>超過稅負減免本身</strong>，ADAC 提醒近日加油多比價、避開調價後的首日尖峰。<strong>與通膨的連動</strong>：六月通膨之所以意外降至 2.3%（見數據卡），油稅減免與油價回落正是兩大功臣；Commerzbank 首席經濟學家 Krämer 因此警告，「<strong>7 月通膨將因減免退場而再度上揚</strong>」。有趣的是，《Handelsblatt》的評論則替這項常被罵「補貼油商」的政策平反，稱其為「被低估的成功」——這次減免大致確實反映到了泵價上。<strong>加油提醒</strong>：7 月起每公升約貴 17 分，加滿 50 公升油箱約多付 8.5 €；傍晚 18–22 時加油通常最便宜，出發前可用 ADAC Spritpreise 等比價 App，住邊境的朋友不妨比較盧森堡、奧地利的油價；通勤族也可趁機重算 Deutschlandticket 與開車成本的損益點。</p>
+<p class="post-sources">📚 來源：<a href="https://www.adac.de/news/aktueller-spritpreis/" target="_blank" rel="noopener noreferrer">ADAC｜油價與批評聲明</a> · <a href="https://www.handelsblatt.com/finanzen/geldpolitik/tankrabatt-inflationsrate-in-deutschland-faellt-auf-23-prozent/100235017.html" target="_blank" rel="noopener noreferrer">Handelsblatt｜油稅減免與通膨</a> · <a href="https://www.handelsblatt.com/meinung/kommentare/kommentar-der-unterschaetzte-erfolg-des-tankrabatts/100236664.html" target="_blank" rel="noopener noreferrer">Handelsblatt｜評論：被低估的成功</a> · <a href="https://presse.online/2026/07/01/spritpreise-steigen-nach-tankrabatt-aus/" target="_blank" rel="noopener noreferrer">Presse.Online｜7/1 實測漲幅</a> · <a href="https://ms-aktuell.de/welt/spritpreise-nach-tankrabatt-juli-2026/" target="_blank" rel="noopener noreferrer">MS aktuell｜7 月油價展望</a></p>
+
+<img src="assets/images/2026/weekly/W27_圖卡6_包裹關稅.png" alt="EU 7/1 起對 150 歐元以下第三國小包裹課每類商品 3 歐元關稅 Temu Shein 台灣直送適用">
+<h3>境外網購新關稅：150 € 以下小包裹每類商品收 3 €</h3>
+<p>網購族請注意，<strong>7/1 起 EU 對來自第三國、貨值 150 € 以下的小包裹開徵定額關稅：每一「商品種類」（Warenart）3 €</strong>——行之多年的 150 € 免稅門檻走入歷史。<strong>關鍵細節在「按類計費、不是按包裹」</strong>：一個包裹裡有三類不同商品（例如衣服＋手機殼＋文具）要收 9 €，同類商品多件則只收 3 €——品項越雜、費用越高。<strong>成因</strong>：EU 每年湧入數十億件來自中國電商平台（Temu、Shein、AliExpress、TikTok Shop 等）的直送小包裹，低價傾銷壓垮歐洲零售並衍生大量不合規商品，此案即為堵住漏洞的<strong>過渡方案（暫行至 2028/7/1）</strong>；<strong>11/1 起還將加收小包裹處理費（Bearbeitungsgebühr）</strong>，2028 年起更擬讓所有包裹自第 1 € 起全面課稅。<strong>對在德台灣人的影響要特別留意</strong>：台灣同樣是關稅意義上的第三國，<strong>從台灣網購直送德國的包裹一體適用</strong>；請家人代購、寄送時盡量合併同類品項、簡化分類可省下疊加費用，而<strong>私人親友之間的禮品件（Geschenksendung）45 € 以下依現行規定仍免稅</strong>。收件時 DHL 等貨運業者可能代收關稅並外加代辦手續費，金額有疑義可要求出示海關計算單據。</p>
+<p class="post-sources">📚 來源：<a href="https://www.bundesregierung.de/breg-de/aktuelles/gesetzliche-neuregelungen-juli-2026-2445388" target="_blank" rel="noopener noreferrer">Bundesregierung｜七月法規新制</a> · <a href="https://www.biallo.de/verbraucherschutz/news/neuer-zoll-ab-juli-2026-warum-aus-3-euro-schnell-15-werden/" target="_blank" rel="noopener noreferrer">biallo｜3 € 如何變 15 €</a> · <a href="https://www.techbook.de/shop-pay/shops-marktplaetze/temu-zoll-abgabe-juli-2026" target="_blank" rel="noopener noreferrer">TECHBOOK｜Temu 新關稅解析</a> · <a href="https://www.ihk.de/elbeweser/branchen-channel/handel-channel/eu-schafft-zollfreigrenze-ab-6803732" target="_blank" rel="noopener noreferrer">IHK｜150 € 免稅門檻取消</a></p>
+
+<img src="assets/images/2026/weekly/W27_圖卡7_六月經濟數據.png" alt="六月通膨 2.3% 核心通膨 2.5% 失業率 6.2% 失業 293.6 萬人 年增 2.2 萬">
+<h3>六月數據雙響：通膨 2.3% 優於預期、失業 294 萬回暖乏力</h3>
+<p>兩份月度數據同週出爐，一好一壞。<strong>通膨（6/30 公布）</strong>：六月通膨率<strong>初估 2.3%</strong>，較 5 月的 2.6%、4 月的 2.9% 連續第三個月回落，也<strong>明顯低於經濟學家預期的持平 2.6%</strong>；月比物價還下跌 0.3%，核心通膨（不含食品與能源）為 2.5%。主因是<strong>能源降溫</strong>——能源價格年漲幅從 4 月的 10.1%、5 月的 6.6% 一路收斂到 3.4%，Berenberg 銀行經濟學家 Schmidt 指出「伊朗衝突的緩和讓全球油價回到危機前水準」；HQ Trust 首席經濟學家 Heise 稱這是「給消費者的好消息」。但好消息有保存期限：通膨下滑靠的是油價與 6/30 剛退場的油稅減免（見油價卡），屬一次性因素，Commerzbank 的 Krämer 預告 7 月將回升；正式數據 7/10 公布。<strong>勞動市場（7/1 公布）</strong>：六月失業 <strong>293.6 萬人</strong>，月減 1.5 萬、<strong>比去年同期多 2.2 萬</strong>，失業率 6.2%（月減 0.1 個百分點）；季調後僅減 1,000 人，聯邦就業總署（BA）以「<strong>春季回暖尾聲欲振乏力</strong>」定調，署長 Nahles 直言「勞動市場幾無變化」，繳納社保的就業人數持續微降，登錄職缺 64.8 萬個（年增 1.6 萬）。<strong>數據解讀</strong>：對消費者是喘息——實質購買力回升；對求職者仍是逆風——景氣預期改善（ZEW 六月 +10.5）尚未傳導到徵才端，企業聘僱依舊保守，打算換工作的朋友宜多留財務與時間緩衝。</p>
+<p class="post-sources">📚 來源：<a href="https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/06/PD26_229_611.html" target="_blank" rel="noopener noreferrer">Destatis｜六月通膨初估 +2.3%</a> · <a href="https://www.arbeitsagentur.de/presse/2026-22-arbeitsmarkt-im-juni-2026" target="_blank" rel="noopener noreferrer">BA｜六月勞動市場報告</a> · <a href="https://www.handelsblatt.com/politik/deutschland/arbeitsmarkt-deutsche-arbeitslosenzahl-sinkt-im-juni-nur-leicht/100236758.html" target="_blank" rel="noopener noreferrer">Handelsblatt｜失業僅微降</a> · <a href="https://www.wiwo.de/politik/konjunktur/tankrabatt-und-niedrigerer-oelpreis-deutsche-inflationsrate-sinkt-im-juni/100236915.html" target="_blank" rel="noopener noreferrer">WiWo｜通膨下滑解析</a></p>
+
+<img src="assets/images/2026/weekly/W27_圖卡8_七月新制.png" alt="七月新制 退休金調漲 4.24% 生效 短程航空稅調降 維修延長保固 12 個月 扣押保護額度調高">
+<h3>七月新制懶人包：退休金入帳變多、機票稅調降、維修更划算</h3>
+<p>7/1 生效的新制不只前面三張卡，這裡一次整理。<strong>錢包篇</strong>：（1）<strong>退休金調漲 4.24% 正式生效</strong>——退休金點值（Rentenwert）自 40.79 € 升至 42.52 €，7 月給付起入帳變多（本專頁 W23 已深入解析過調漲背景與世代正義爭論）；（2）<strong>薪資扣押保護額度（Pfändungsfreigrenze）調高</strong>——單身債務人每月不可扣押的基本額度自 1,559.99 € 升至 1,589.99 €。<strong>消費篇</strong>：（3）<strong>航空稅調降</strong>——2,500 公里內航線每位乘客的稅額自 15.53 € 降至 13.03 €（5 月底通過的減稅案此時生效，暑假訂票可留意票價是否反映）；（4）<strong>維修延長保固</strong>——商品保固期內選擇<strong>維修而非退換</strong>，法定保固自動延長 12 個月，鼓勵修理文化；（5）<strong>電子菸回收擴大</strong>——Kiosk、加油站等小型販售點也必須免費回收廢棄電子菸；（6）<strong>長照最低工資調升</strong>——照護輔助人力時薪自 16.10 € 升至 16.52 €、具資格輔助人力 17.80 €、專業照護師 21.03 €；（7）<strong>Minijob 年金新選項</strong>——曾申請免除年金保險義務的 Minijob 工作者，7 月起首度可撤銷該決定、讓工時重新計入年金年資。<strong>行動建議</strong>：領退休金的朋友請核對 7 月給付通知單；家電、3C 在保固內故障，先詢價維修——多換 12 個月保固往往比換新划算；順帶一提，公民金改制（卡 4）、油稅減免退場（卡 5）、小包裹關稅（卡 6）都在同一天生效，堪稱近年變動最密集的一個 7/1。</p>
+<p class="post-sources">📚 來源：<a href="https://www.bundesregierung.de/breg-de/aktuelles/gesetzliche-neuregelungen-juli-2026-2445388" target="_blank" rel="noopener noreferrer">Bundesregierung｜七月法規新制總覽</a> · <a href="https://www.finanzen.net/nachricht/aktien/neues-im-juli-verbraucher-aufgepasst-neuerungen-gesetze-das-aendert-sich-ab-juli-2026-00-15751948" target="_blank" rel="noopener noreferrer">finanzen.net｜七月消費者新制</a> · <a href="https://web.de/magazine/ratgeber/finanzen-verbraucher/aenderungen-juli-2026-42415150" target="_blank" rel="noopener noreferrer">WEB.DE｜七月變動整理</a> · <a href="https://www.t-online.de/finanzen/aktuelles/verbraucher/id_101312298/rente-tankrabatt-grundsicherung-das-aendert-sich-zum-1-juli-2026.html" target="_blank" rel="noopener noreferrer">t-online｜7/1 變動總覽</a></p>
+
+<hr>
+
+<h2 id="jun15-21">6月15日–28日：德國鐵路全國大停擺、歐洲熱浪上看 45°C、世足晉 32 強、EU 高峰會三大戰場、中東航線大停飛、伊朗停火 6/19 簽署、ZEW 景氣預期 +10.5</h2>
+<p>本週德國從鐵軌、天氣到綠茵場，民生大小事接連登場。截稿前的最大意外在鐵軌上：<strong>6/23–24 德國鐵路因數位列車無線電（GSM-R）系統故障一度全國停駛</strong>，數千旅客滯留。天氣上，<strong>El Niño 助長的「歷史性熱浪」席捲歐洲</strong>——西葡上看 45°C、法國 58 省拉警戒、德國西南恐達 40°C，連帶衝擊核電、用水與世足公播。綠茵場則傳捷報：<strong>德國世足兩戰全勝、提前晉 32 強</strong>（6/20 靠 Undav 補時絕殺 2:1 逆轉象牙海岸、坐穩 E 組第 1）。此外，<strong>6/18–19 EU 高峰會</strong>聚焦烏克蘭、對俄第 21 輪制裁與 2028–34 多年期財政框架（MFR）；伊朗戰火仍讓<strong>漢莎中東航點停飛至 10/24</strong>；而<strong>美伊停火備忘錄已於 6/19 正式簽署</strong>、解除荷姆茲海峽封鎖並啟動 60 天核談判；市場提前反映，<strong>6/16 ZEW 景氣預期重返正值 +10.5</strong>。以下逐題深入。</p>
+
+<img src="assets/images/2026/weekly/W25-26_圖卡1_鐵路大停擺.png" alt="德國鐵路 6/23-24 全國大停擺 數位列車無線電 GSM-R 系統故障 數千旅客滯留">
+<h3>德國鐵路全國大停擺：數位列車無線電（GSM-R）系統故障</h3>
+<p>截稿前的最大意外發生在鐵軌上。<strong>6/23（週二）約 22:30 起、延續到 6/24 凌晨</strong>，德國鐵路（DB）的數位列車無線電系統（GSM-R）全國大範圍故障，<strong>ICE 長途、區域列車、S-Bahn 與貨運全面停駛約兩小時</strong>（至 0:50 才恢復），連 Metronom、Erixx 等非 DB 業者也因共用 GSM-R 一併中斷——形同<strong>整個德國鐵路網一度停擺</strong>（德鐵平日單日載運逾 <strong>520 萬</strong>旅客、2024 全年達 19 億人次，可見波及之廣）。據 DB InfraGO 董事長說明，故障源於「計畫性更換一個技術元件」（另有報導指向 IT 更新出錯），安全機關初步排除蓄意破壞（Sabotage）；無法確保行車安全，列車只能停在車站與機廠。官方並未公布受影響的精確班次或旅客人數，僅以「全網停駛」描述規模。災情遍及全國，北威邦（Nordrhein-Westfalen／NRW）尤重——例如 Gelsenkirchen 一場海蓮娜·費雪（Helene Fischer）演唱會散場後約 3,000 人受困、只能自行揪團搭計程車與 Uber；DB 發放計程車與旅館券、並提供過夜的 Aufenthaltszüge。<strong>善後</strong>：6/24 上午雖宣稱恢復，但因車輛運用（Umläufe）被打亂，延誤與取消整個上午持續，夜間運行的貨運受創最深；旅客協會（Fahrgastverband）批評資訊發布混亂、應變不足。<strong>搭車提醒</strong>：近期搭 DB 出發前先查 bahn.de 即時動態與 Störungskarte、預留轉乘緩衝；凡因這類系統性故障導致長途列車延誤逾 60 分鐘，仍可依旅客權利（Fahrgastrechte）申請部分退費或改票，記得保留車票與延誤證明。</p>
+<p class="post-sources">📚 來源：<a href="https://de.euronews.com/my-europe/2026/06/24/totalausfall-deutsche-bahn" target="_blank" rel="noopener noreferrer">Euronews｜全國 Totalausfall</a> · <a href="https://www.heise.de/news/Bahnverkehr-wegen-Funkstoerung-deutschlandweit-eingestellt-11342136.html" target="_blank" rel="noopener noreferrer">heise｜全德停駛、22:30–0:50</a> · <a href="https://www.werra-rundschau.de/panorama/zugverkehr-in-deutschland-lahmgelegt-funkstoerung-sorgt-fuer-bundesweiten-stillstand-zr-94365685.html" target="_blank" rel="noopener noreferrer">Werra-Rundschau｜GSM-R 故障原因</a> · <a href="https://borncity.com/blog/2026/06/24/ausfall-zugfunk-zugbetrieb-steht-in-deutschland-23-juni-2026/" target="_blank" rel="noopener noreferrer">Borncity｜Zugfunk 技術背景</a></p>
+
+<img src="assets/images/2026/weekly/W25-26_圖卡2_歐洲熱浪.png" alt="歐洲歷史性熱浪 西葡 45 度 法國 58 省警戒 德國 40 度 El Nino 熱帶夜">
+<h3>歐洲歷史性熱浪上看 45°C：西葡 45 度、法國 58 省警戒、德國 40 度</h3>
+<p>一波被 ZDF 氣象專家 Özden Terli 稱為「<strong>歷史性熱浪</strong>」的高溫籠罩西歐，背後推手是<strong>聖嬰現象（El Niño）</strong>強化的「熱蓋」。<strong>規模</strong>：葡萄牙、西班牙部分地區上看 <strong>45°C</strong>，法國 <strong>58 個省</strong>拉起 orange 警戒。德國西南部（<strong>Baden-Württemberg、Rheinland-Pfalz、Saarland、Hessen</strong>）<strong>6/22 前後恐達 40°C</strong>、可能改寫多項 6 月高溫紀錄（巴登-符騰堡 Baden-Württemberg 6 月紀錄為 2019/6/30 曼海姆 38.9°C），北部與沿海相對涼爽（24–29°C）。多地並出現今年首批<strong>「熱帶夜」（tropische Nächte）</strong>——夜溫不降到 20°C 以下，對睡眠品質與心血管是額外負擔。對民生、能源與世足的連鎖衝擊，見下一張卡。</p>
+<p class="post-sources">📚 來源：<a href="https://www.wetter.com/news/historische-hitzewelle-deutschland-steuert-auf-temperaturrekord-im-juni-zu_aid_6a3a4ee292429153300c9e88.html" target="_blank" rel="noopener noreferrer">wetter.com｜德國恐破 6 月紀錄</a> · <a href="https://www.cleanthinking.de/el-nino-hitzewelle-europa-2026/" target="_blank" rel="noopener noreferrer">cleanthinking｜El Niño 與歐洲熱浪</a> · <a href="https://www.dwd.de/DE/wetter/warnungen_aktuell/wochenvorhersage/wochenvorhersage_node.html" target="_blank" rel="noopener noreferrer">DWD｜週警告預報</a></p>
+
+<img src="assets/images/2026/weekly/W25-26_圖卡3_熱浪民生.png" alt="熱浪衝擊民生 法國核電降載 限水 巴黎禁酒 野火戒備 馬德里世足公播取消">
+<h3>熱浪衝擊民生：核電降載、限水、禁酒，連世足公播都喊停</h3>
+<p>這波高溫不只是熱，更直接打到民生與基礎設施。<strong>能源與用水</strong>：法國多座<strong>核電廠因河水溫度過高被迫降載</strong>、多省祭出<strong>用水限制</strong>，西班牙部分地區實施<strong>灌溉禁令</strong>；巴黎更在<strong>音樂節（Fête de la Musique）一度禁酒</strong>以防高溫脫水鬧事。<strong>健康與野火</strong>：各國當局對脆弱族群發出「重大危險」警告，EU 已在希臘、義大利、西班牙、葡萄牙、法國、賽普勒斯部署破紀錄的消防員與滅火飛機嚴防野火。<strong>連世足也中暑</strong>：西班牙馬德里一場世足公播因 40°C 高溫<strong>取消</strong>，德國多地公播則場場爆滿、飲料攤供不應求。<strong>因應建議</strong>：德國住宅普遍沒有冷氣，<strong>白天拉窗簾遮陽、夜間趁涼對流通風</strong>是關鍵；正午到午後少出門、勤補水，別把人或寵物留在車內，並多關注獨居長者與幼兒；職場若高溫又無防護，依《職場條例》（Arbeitsstättenverordnung）雇主有義務採取降溫措施，員工可據此反映。</p>
+<p class="post-sources">📚 來源：<a href="https://www.cleanthinking.de/el-nino-hitzewelle-europa-2026/" target="_blank" rel="noopener noreferrer">cleanthinking｜核電降載</a> · <a href="https://www.euronews.com/2026/06/21/france-bans-alcohol-at-fete-de-la-musique-as-heatwave-grips-europe" target="_blank" rel="noopener noreferrer">Euronews｜巴黎音樂節禁酒</a> · <a href="https://www.t-online.de/sport/fussball/wm/id_101303246/wm-news-aktuell-public-viewing-in-madrid-wegen-hitze-abgesagt.html" target="_blank" rel="noopener noreferrer">t-online｜馬德里世足公播取消</a></p>
+
+<img src="assets/images/2026/weekly/W25-26_圖卡4_世足戰況.png" alt="德國世足 2026 6/20 以 2:1 逆轉象牙海岸 Undav 補時絕殺 提前晉級 32 強 E 組第 1">
+<h3>德國 2:1 絕殺象牙海岸、提前晉 32 強：2014 奪冠後首度闖過小組賽</h3>
+<p>世足小組賽第 2 輪，德國在多倫多上演大逆轉。<strong>6/20 對非洲冠軍象牙海岸，德國終場 2:1 獲勝</strong>，過程一波三折：象牙海岸隊長 <strong>Kessié 第 30 分鐘先馳得點</strong>，德國上半場 Pavlović（22'）、Havertz（38'）兩度破門都因進攻犯規遭吹掉，0:1 落後進入中場。Nagelsmann 下半場一口氣三換人扭轉戰局——替補前鋒 <strong>Deniz Undav 第 68 分鐘扳平</strong>（Amiri 助攻），又在 <strong>補時 90+4 分鐘讀秒絕殺</strong>，獨進兩球成為英雄（4.3 萬人客滿的多倫多球場見證）。連同首戰 <strong>7:1 血洗古拉索</strong>（Havertz 梅開二度、Musiala、Wirtz 助攻），德國<strong>兩戰全勝積 6 分</strong>；當天稍晚厄瓜多與古拉索 <strong>0:0 互交白卷</strong>，<strong>德國因此提前鎖定 32 強（48 隊新制的淘汰賽首輪），並坐穩 E 組第 1</strong>——這是德國<strong>自 2014 奪冠以來首度闖過小組賽</strong>，一掃 2018、2022 連兩屆小組出局的陰霾。<strong>末戰預告</strong>：小組賽最後一戰 <strong>6/25（四）德國時間 22:00</strong> 在紐約／新澤西對厄瓜多（ARD 轉播），戰績無關出線、主要影響淘汰賽對戰籤位。<strong>給在德球迷的提醒</strong>：淘汰賽約 6/28 起登場，德國場次仍多落在深夜（22:00 起）；本屆德國<strong>沒有官方 Fanmeile</strong>，大城以酒吧、Biergarten 的店家公播為主，週末深夜場地請提早訂位。高溫看球也別忘了補水、慎防中暑（熱浪與公播的衝擊見上一張卡）。</p>
+<p class="post-sources">📚 來源：<a href="https://www.sportschau.de/fussball/fifa-wm-2026/undav-schiesst-deutschland-zum-sieg-gegen-die-elfenbeinkueste,wm-spielbericht-deutschland-elfenbeinkueste-100.html" target="_blank" rel="noopener noreferrer">sportschau｜戰報：Undav 絕殺</a> · <a href="https://www.fifa.com/en/match-centre/match/17/285023/289273/400021469" target="_blank" rel="noopener noreferrer">FIFA｜比分與數據</a> · <a href="https://www.espn.com/soccer/match/_/gameId/760448/ivory-coast-germany" target="_blank" rel="noopener noreferrer">ESPN｜Germany 2-1 Ivory Coast</a> · <a href="https://www.sportschau.de/live-und-ergebnisse/fussball/fifa-wm/tabelle/" target="_blank" rel="noopener noreferrer">sportschau｜E 組積分榜</a></p>
+
+<img src="assets/images/2026/weekly/W25-26_圖卡5_EU高峰會.png" alt="EU 高峰會 6/18-19 布魯塞爾 烏克蘭 對俄第 21 輪制裁 2028-34 預算 MFR Merz 反對共同舉債">
+<h3>EU 高峰會 6/18–19：烏克蘭、制裁、七年預算三大戰場</h3>
+<p>歐洲理事會（European Council）6/18–19 在布魯塞爾召開，27 國領袖議程橫跨<strong>烏克蘭、中東局勢、2028–2034 多年期財政框架（MFR）、歐洲防務與安全、移民與毒品</strong>。總理 Merz（CDU）在 6/11 的政府聲明已先定調德國立場：（1）<strong>挺烏到底</strong>——主張盡快讓烏克蘭以「聯繫會員」（associated membership）身分在政治上綁進 EU，並對俄施加更大壓力，目標是「兼顧我方安全利益的公正而持久的和平」；（2）<strong>對俄加壓</strong>——EU 著手第 <strong>21 輪</strong>對俄制裁（繼 4/23 第 20 輪鎖定能源收入、軍工複合體與金融服務後），並加強打擊規避禁運的「影子艦隊」（shadow fleet）油輪，6/15 外長理事會已先行表態團結挺烏；烏克蘭方面，<strong>900 億歐元貸款的首筆撥款 6 月到位、直接投入無人機</strong>。（3）<strong>預算談判</strong>——新版多年期財政框架（MFR）首度上桌，國防、移民、農業補貼與「淨出資國」分攤是最大爭點，Merz <strong>明確反對 EU 共同舉債</strong>。<strong>影響評估</strong>：EU 預算與制裁牽動德國的財政紀律與能源價格，高峰會結論將左右下半年的補貼力道、國防支出與對中政策走向——這些最終都會反映在你我的稅、電價與就業市場上。</p>
+<p class="post-sources">📚 來源：<a href="https://www.consilium.europa.eu/en/meetings/european-council/2026/06/18-19/" target="_blank" rel="noopener noreferrer">Consilium｜歐洲理事會 6/18–19 議程</a> · <a href="https://www.bundestag.de/dokumente/textarchiv/2026/kw24-de-regierungserklaerung-1181878" target="_blank" rel="noopener noreferrer">Bundestag｜Merz 政府聲明（挺烏、反對 EU 舉債）</a> · <a href="https://www.consilium.europa.eu/en/press/press-releases/2026/04/23/russia-s-war-of-aggression-against-ukraine-20th-round-of-stern-eu-sanctions-hits-energy-military-industrial-complex-trade-and-financial-services-including-crypto/" target="_blank" rel="noopener noreferrer">Consilium｜第 20 輪對俄制裁</a> · <a href="https://www.consilium.europa.eu/en/meetings/fac/2026/06/15/" target="_blank" rel="noopener noreferrer">Consilium｜6/15 外長理事會</a></p>
+
+<img src="assets/images/2026/weekly/W25-26_圖卡6_中東航線停飛.png" alt="漢莎集團中東航點停飛至 10/24 避開伊朗領空 特拉維夫 7/1 復飛 轉機旅客注意">
+<h3>中東航線大停飛至 10/24：避開伊朗領空，轉機旅客請先查狀態</h3>
+<p>伊朗戰爭雖見停火曙光，對航空的衝擊仍在持續。<strong>漢莎集團（Lufthansa Group，含 Lufthansa、SWISS、Austrian、ITA、Eurowings 等）將多個中東航點停飛延長至 2026/10/24</strong>，包括<strong>德黑蘭、貝魯特、阿曼（Amman）、達曼、利雅德、艾比爾、馬斯喀特、阿布達比</strong>等；唯一例外是<strong>特拉維夫，7/1 起復飛</strong>（Austrian 已於 6/1 先行）。<strong>成因</strong>：依 EASA（歐洲航空安全局）4/9 的警告，全集團避開伊朗領空；而伊拉克、敘利亞更在 <strong>6/7 因伊朗對以色列發動飛彈攻擊一度關閉領空</strong>，連帶讓經該區的轉機航班大亂。Handelsblatt 直指「伊朗戰爭正壓抑德國的航空運能」。<strong>訂票提醒</strong>：飛台灣的直飛與經<strong>歐洲</strong>轉機航線多半不受影響；但若你習慣經<strong>杜拜、多哈、伊斯坦堡、阿布達比</strong>等中東樞紐轉機，近期航班改道、航時拉長甚至調整時刻的機率都升高。出發前務必：（1）比對停飛清單與你的出發日；（2）<strong>登機前再查一次航班狀態</strong>；（3）訂票時多留一點轉機緩衝時間，降低銜接失敗的風險。</p>
+<p class="post-sources">📚 來源：<a href="https://www.travelperfect.de/news/fluege/airlines-streichungen-nahost-2026" target="_blank" rel="noopener noreferrer">travelperfect｜漢莎集團中東停飛清單</a> · <a href="https://www.handelsblatt.com/unternehmen/dienstleister/luftverkehr-iran-krieg-daempft-das-angebot-im-luftverkehr-in-deutschland/100233835.html" target="_blank" rel="noopener noreferrer">Handelsblatt｜伊朗戰爭壓抑航空運能</a> · <a href="https://www.airliners.de/iran-krieg-trifft-luftverkehr-hart/86877" target="_blank" rel="noopener noreferrer">airliners.de｜領空封閉衝擊</a> · <a href="https://www.adac.de/news/reise-nahostkrieg-dubai-drehkreuz-ostern/" target="_blank" rel="noopener noreferrer">ADAC｜中東旅遊現況</a></p>
+
+<img src="assets/images/2026/weekly/W25-26_圖卡7_伊朗停火協議.png" alt="伊朗停火協議 6/19 簽署 巴基斯坦斡旋 美伊諒解備忘錄 荷姆茲海峽解封 60 天核談判">
+<h3>伊朗停火協議 6/19 簽署：荷姆茲海峽解封、60 天核談判倒數</h3>
+<p>中東戰場本週迎來最明確的降溫訊號。戰事自 3 月急遽升溫後，<strong>4/8 在巴基斯坦斡旋下達成首次兩週停火</strong>並多次延長；<strong>6/14 巴基斯坦總理 Shehbaz Sharif 宣布美伊敲定諒解備忘錄（MoU），並已於 6/19 正式簽署</strong>（川普與伊朗總統 Pezeshkian 遠端簽署）。協議核心：<strong>延長停火、解除荷姆茲海峽封鎖，並啟動約 60 天談判</strong>處理最棘手的核計畫，協商先經巴基斯坦居中、最終在伊斯蘭瑪巴德定案，目標是在 60 天內讓衝突正式落幕。對德國的意義重大——德國經濟對能源高度依賴，這場戰爭一路推升油價與通膨，逼得 ECB 6/11 三年來首度升息（見上週 W24 解析）；停火若真兌現，能源與通膨壓力可望鬆綁，這也正是 6/16 ZEW 景氣預期大漲的主因（見下一張卡）。<strong>觀察重點</strong>：協議仍脆弱——黎巴嫩零星交火、核查機制與制裁解除節奏都是變數，6/19 簽署只是起點而非終點。能源的「和平紅利」能不能真正落袋，要看接下來這 60 天的談判成色。</p>
+<p class="post-sources">📚 來源：<a href="https://en.wikipedia.org/wiki/2026_Iran_war_ceasefire" target="_blank" rel="noopener noreferrer">Wikipedia｜2026 Iran war ceasefire</a> · <a href="https://www.pbs.org/newshour/amp/world/iran-and-u-s-reach-an-initial-deal-to-extend-the-ceasefire-and-open-the-strait-of-hormuz-but-challenges-remain" target="_blank" rel="noopener noreferrer">PBS｜延長停火、解封荷姆茲海峽</a> · <a href="https://commonslibrary.parliament.uk/research-briefings/cbp-10637/" target="_blank" rel="noopener noreferrer">House of Commons Library｜美伊停火與核談判</a> · <a href="https://www.bundesregierung.de/breg-en/news/chancellor-iran-2402610" target="_blank" rel="noopener noreferrer">Bundesregierung｜Merz 對停火的回應</a></p>
+
+<img src="assets/images/2026/weekly/W25-26_圖卡8_ZEW景氣預期.png" alt="ZEW 景氣預期 6 月重返正值 +10.5 單月跳升 20.7 點 現況指標續跌至 -81 押注伊朗戰爭收尾">
+<h3>ZEW 景氣預期重返正值 +10.5：期待回暖，現況仍冷</h3>
+<p>ZEW（萊布尼茲歐洲經濟研究中心）6/16 公布 6 月調查：反映金融市場專家對未來半年看法的<strong>景氣預期指數，單月大漲 20.7 點、從 −10.2 躍升至 +10.5</strong>，不僅重返正值，更遠優於市場預期（經濟學家原估僅小幅回升）。<strong>主因</strong>：ZEW 主席 Achim Wambach 直言，專家押注<strong>伊朗衝突接近尾聲</strong>，能源價格與通膨的龐大壓力可望減弱，將嘉惠能源密集產業與家庭消費、進而帶動內需。但這份調查呈現「分裂」的兩面：反映<strong>當下</strong>景氣的現況指標（Lagebeurteilung）不升反降，<strong>再跌至 −81.0</strong>（前值 −77.8）。對照基準更能看出情緒擺盪——伊朗戰爭爆發前的 2 月，預期指數還高達約 +60，高能源價格與斷供疑慮一度讓信心崩跌。<strong>數據解讀</strong>：ZEW 是「領先指標」，反映的是<strong>預期</strong>而非現況；情緒回暖值得高興，但 −81 的現況指標才是當下實況。求職、轉職與大額投資仍宜謹慎，別把「期待」當成「已經發生」。</p>
+<p class="post-sources">📚 來源：<a href="https://www.zew.de/en/press/latest-press-releases/economic-expectations-show-signs-of-improvement" target="_blank" rel="noopener noreferrer">ZEW 官方新聞稿</a> · <a href="https://www.finanzen.net/nachricht/aktien/stimmung-hellt-sich-auf-zew-index-ueberrascht-positiv-konjunkturerwartungen-steigen-im-juni-staerker-als-gedacht-15747383" target="_blank" rel="noopener noreferrer">finanzen.net｜數據與市場預期</a> · <a href="https://www.datev-magazin.de/nachrichten-steuern-recht/wirtschaft/hoffnung-auf-ende-des-iran-konflikts-laesst-erwartungen-kraeftig-steigen-147212" target="_blank" rel="noopener noreferrer">DATEV magazin｜Wambach 解讀</a></p>
+
+<hr>
+
+<h2 id="jun8-14">6月8日–14日：世足首戰週日 19 點開踢、改革高峰會空手而回、對美出口年減 12.9%、通膨回落 2.6%、ECB 三年來首升息、薪資透明 6/8 啟動、六月新制懶人包</h2>
+<p>本週的關鍵字是「改革」與「帳單」。最大事件：<strong>6/10 梅爾茨在總理府邀工會與雇主協會高層夜談三小時的「改革高峰會」（Reformgipfel）空手而回</strong>——年金、所得稅、社會保險、工時規定全無共識，DGB 主席 Fahimi 批政府改革議程「只剩省錢與刪減」，NZZ 評會後「結果令人清醒」。同週 Destatis 兩份數據一好一壞：<strong>4 月對美出口年減 12.9%</strong>、Q1 對美順差縮水 30.5%，川普 15% 關稅效應全面顯現；<strong>5 月通膨則自兩年高點回落至 2.6%</strong>，能源漲幅從 +10.1% 收斂到 +6.6%；不過歐元區整體通膨仍達 3.2%，<strong>ECB 6/11 宣布升息一碼至 2.25%</strong>——2023 年以來首次，回應伊朗戰事推升的能源價格。對在德工作者最實用的一條：德國錯過 EU 薪資透明指令 6/7 轉化期限，<strong>6/8 起公部門直接適用</strong>、法院須依指令解釋現行法——求職可要求薪資範圍、雇主不得追問薪資史。最後附上六月新制懶人包：6/12 GEAS 上路、6/14 早餐指令、6/19 一鍵退訂按鈕，以及 6/11 聯盟黨團拍板——<strong>油價減免（Tankrabatt）6/30 確定到期、不再延長</strong>，7 月起每公升回升約 17 歐分。世足方面，6/11 開幕戰墨西哥對南非開踢，<strong>德國隊 6/14（週日）德國時間 19:00 在休士頓首戰古拉索</strong>——時間、轉播、公播注意事項看第一張卡。</p>
+
+<img src="assets/images/2026/weekly/W24_圖卡1_世足首戰提醒.png" alt="德國隊世足首戰古拉索 6/14 週日德國時間 19 點 ARD 免費直播 公播資訊">
+<h3>世足首戰提醒：週日 19:00，不用熬夜的黃金時段</h3>
+<p>世界盃 6/11 晚間 21:00（德國時間）在墨西哥城阿茲特克體育場揭幕，由地主墨西哥對南非；德國隊 <strong>6/14（週日）德國時間 19:00</strong> 在休士頓首戰世足新軍<strong>古拉索</strong>（Curaçao，加勒比小島國、人口約 15 萬，背景詳見上週 W23）。轉播：<strong>ARD 免費直播</strong>，線上看 ARD Mediathek 或 sportschau.de，MagentaTV 同步——這是本屆少見對德國觀眾友善的時段，之後因北美時差，多數比賽落在深夜甚至凌晨。公播（Public Viewing）方面有個壞消息：<strong>本屆德國沒有官方 Fanmeile</strong>——柏林市府已闢謠布蘭登堡門前不辦大型 Fanzone，大城市中只有<strong>漢諾威與多特蒙德</strong>規劃官方公播活動，其他城市以 Biergarten、酒吧、餐廳的店家公播為主，週日晚間黃金時段熱門場地建議提早訂位。要注意的規則：聯邦政府已放寬噪音保護規範，<strong>5/20–7/31 期間地方政府可破例允許公播活動進行到午夜之後</strong>（詳見 W20 解析）——這對之後的深夜淘汰賽很重要，但也代表住家附近的公播場地可能熱鬧到深夜，怕吵的朋友先查好附近場地。</p>
+<p class="post-sources">📚 來源：<a href="https://www.sportschau.de/fussball/fifa-wm-2026/daten-fakten-termine-so-laeuft-die-fussball-wm-2026,fragen-und-antworten-zur-wm-zwanzigsechsundzwanzig-100.html" target="_blank" rel="noopener noreferrer">sportschau｜賽程與轉播</a> · <a href="https://www.berlin.de/en/events/specials/public-screening-berlin/2606075-8787655-fan-mile-brandenburg-gate.en.html" target="_blank" rel="noopener noreferrer">Berlin.de｜布蘭登堡門不辦 Fanzone</a> · <a href="https://ran.joyn.de/sports/fussball/wm/wm2026-wo-gibt-es-public-viewing-in-deutschland-135104" target="_blank" rel="noopener noreferrer">ran｜各大城市公播規劃</a></p>
+
+<img src="assets/images/2026/weekly/W24_圖卡2_改革高峰會.png" alt="總理府改革高峰會空手而回 6/10 梅爾茨邀勞資高層夜談三小時無共識">
+<h3>總理府改革高峰會空手而回：年金、稅制、工時全卡關</h3>
+<p>6/10 晚間 7 點起，總理 Merz（CDU）與 CSU 黨魁 Söder、SPD 雙主席 Bas 與 Klingbeil，在總理府接待德國勞資兩邊的最高層：工會方有 DGB（德國工會聯合會）主席 Yasmin Fahimi、IG Metall 主席 Benner、Verdi 主席 Werneke；資方有雇主協會（BDA）主席 Dulger、工業聯合會（BDI）主席 Leibinger、工商總會（DIHK）主席 Adrian。議程直指德國最敏感的四塊：<strong>年金、所得稅與社會保險改革、勞動市場（含鬆綁八小時工時制）、官僚減量</strong>——聯盟自訂目標是 7 月中夏休前端出「根本性改革」方案。會談超過三小時，<strong>沒有任何具體決議</strong>，只同意「繼續再談」。立場落差大到難以掩飾：Fahimi 會前直言「目前討論的所謂改革議程，焦點全在省錢與刪減」、「經濟上與社會上完全錯誤」，對鬆綁每日八小時工時制更撂話「沒什麼好談的」、是「純意識形態的迷途」；CDU 秘書長 Linnemann 反擊，工會不能只談現況、「必須談競爭力如何回升」；資方則要求降低非工資勞動成本（Lohnnebenkosten）、規則彈性化。在野黨看戲：綠黨黨團主席 Dröge 會前就警告，若無具體結果這場會只是「咖啡聚會」（Kaffeekränzchen）。NZZ 會後標題一針見血：「高峰會以清醒收場」。<strong>後續發展</strong>：高峰會無果的隔天上午（6/11），Merz 隨即在聯邦議院發表政府聲明——名義上的主題是下週布魯塞爾 EU 高峰會（烏克蘭、對中關係、EU 中期財政規劃），實際上大半篇幅都在談內政，呼籲所有人檢視「自己能為整體的運作貢獻什麼」，被輿論解讀為高峰會破局後的信心喊話。<strong>深度觀察</strong>：Merz 政府把年金、稅制、社保三大改革全押在 7 月中前——但社保費率已逼近 42% 大關，任何「根本性改革」不是加費就是砍給付，勞資必有一方買單。這場高峰會證明：共識還很遠，時鐘卻在走。</p>
+<p class="post-sources">📚 來源：<a href="https://www.handelsblatt.com/politik/deutschland/koalition-koalition-sucht-bei-reformen-konsens-mit-sozialpartnern/100231511.html" target="_blank" rel="noopener noreferrer">Handelsblatt</a> · <a href="https://www.zdfheute.de/politik/deutschland/friedrich-merz-gewerkschaft-arbeitgeber-kanzleramt-treffen-100.html" target="_blank" rel="noopener noreferrer">ZDFheute</a> · <a href="https://www.nzz.ch/deutschland/politik/gipfel-endet-ernuechternd-die-koalitionsspitze-spricht-mit-vertretern-von-wirtschaft-und-gewerkschaften-praesentiert-aber-keine-ergebnisse-ld.10010707" target="_blank" rel="noopener noreferrer">NZZ｜會後評析</a> · <a href="https://www.t-online.de/nachrichten/deutschland/id_101288928/koalition-sucht-bei-reformen-konsens-mit-sozialpartnern.html" target="_blank" rel="noopener noreferrer">t-online</a> · <a href="https://www.zdfheute.de/politik/deutschland/merz-regierungserklaerung-bundestag-reformen-100.html" target="_blank" rel="noopener noreferrer">ZDFheute｜6/11 政府聲明</a></p>
+
+<img src="assets/images/2026/weekly/W24_圖卡3_對美出口重挫.png" alt="德國 4 月對美出口年減 12.9% Q1 對美順差縮水 30.5% 川普關稅效應">
+<h3>對美出口年減 12.9%：川普關稅的帳單到了</h3>
+<p>Destatis（聯邦統計局）6/9 公布 4 月外貿數據：整體出口 <strong>1,366 億歐元</strong>、月增 0.9%，表面撐住；但拆開看，<strong>對美出口 114 億歐元、較去年同期重挫 12.9%</strong>——美國仍是德國最大單一出口市場，卻也是衰退最深的市場。把時間軸拉長更怵目：Destatis 上月已公布 <strong>Q1 對美貿易順差僅 124 億歐元、年減 30.5%</strong>（2025 年 Q1 還有 178 億）；汽車與零組件是重災區，<strong>2025 年 4 至 12 月對美汽車出口年減 26.4%</strong>。成因不是謎：2025 年 4 月起美國對歐盟商品課徵 <strong>15% 關稅</strong>（汽車尤重），歐盟以貿易協議換得稅率封頂，但帳單由出口商照付。展望更冷：聯邦外貿促進機構 <strong>GTAI 預估 2026 全年對美出口再減 8–9%</strong>——美國景氣轉弱加上關稅，德國供應商被「雙重打擊」（直接關稅成本＋客戶需求下滑）。<strong>深度觀察</strong>：這組數據與上週 W23 的破產潮（Q1 4,573 家、20 年新高）互為表裡——汽車經銷破產暴增近 200%、金屬製品躍居破產榜首，出口引擎熄火正是源頭之一。對在德台灣工程師而言，汽車與機械供應鏈的雇主曝險值得放進求職與轉職的評估清單。</p>
+<p class="post-sources">📚 來源：<a href="https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/06/PD26_190_51.html" target="_blank" rel="noopener noreferrer">Destatis｜4 月出口</a> · <a href="https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/05/PD26_172_51.html" target="_blank" rel="noopener noreferrer">Destatis｜Q1 對美順差 -30.5%</a> · <a href="https://www.gtai.de/de/trade/usa/wirtschaftsumfeld/prognose-aussenhandel-usa-1945698" target="_blank" rel="noopener noreferrer">GTAI｜2026 對美出口預測</a></p>
+
+<img src="assets/images/2026/weekly/W24_圖卡4_通膨回落.png" alt="德國 5 月通膨回落至 2.6% 能源仍比去年貴 6.6% 服務通膨 3.1%">
+<h3>通膨回落 2.6%：油價降溫，但房租與服務還在漲</h3>
+<p>Destatis 公布 5 月通膨初值：<strong>2.6%</strong>，較 4 月的兩年高點 2.9% 明顯降溫，物價月對月甚至下跌 0.2%——這是 3 月中東衝突推升油價以來，第一個明確的緩解訊號。拆開看結構：<strong>能源仍比去年貴 6.6%</strong>，但已從 4 月的 +10.1% 大幅收斂；<strong>食品 +0.4%</strong> 幾近持平（4 月 +1.2%）；真正僵固的是<strong>服務類通膨 3.1%</strong>（4 月 2.8%，不降反升）、核心通膨（剔除能源食品）2.5%——房租、保險、外食、理髮這些「躲不掉的支出」漲勢未歇。<strong>歐元區對照</strong>：德國的 2.6% 在歐元區（5 月整體 3.2%、核心 2.5%）中相對溫和，但距 2% 目標仍有距離——ECB 已在 6/11 以升息回應（見下一張卡）。<strong>深度觀察</strong>：這次通膨波動的劇本與 2022 能源危機不同——衝擊源（中東油價）來得快去得也快，但服務通膨的「第二輪效應」（工資與租金互相推升）才是 2026 下半年的主戰場。對在德台灣人實用的一句話：加油與超市的壓力放緩了，但簽新租約、續保險、辦健身房會籍前，比價與漲價條款比以前更重要。另一個七月變數：5/1 上路的油價減免（Tankrabatt）將於 <strong>6/30 到期且確定不延長</strong>，屆時每公升燃油估回升約 <strong>17 歐分</strong>——能源項的降溫，七月可能被部分吃回去。</p>
+<p class="post-sources">📚 來源：<a href="https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/05/PD26_182_611.html" target="_blank" rel="noopener noreferrer">Destatis｜5 月通膨初值</a> · <a href="https://tradingeconomics.com/germany/inflation-cpi" target="_blank" rel="noopener noreferrer">Trading Economics｜結構拆解</a></p>
+
+<img src="assets/images/2026/weekly/W24_圖卡5_ECB升息.png" alt="ECB 6/11 升息一碼 存款利率升至 2.25% 2023 年以來首次升息">
+<h3>ECB 升息一碼：三年來首次，劍指戰爭通膨</h3>
+<p>6/11 下午法蘭克福發出本週最重磅的經濟訊號：ECB 管理委員會決議<strong>三大關鍵利率同步調升 25 個基點</strong>，存款利率自 2.00% 升至 <strong>2.25%</strong>——這是 <strong>2023 年以來的首次升息</strong>，正式終結降息循環。成因：伊朗戰事與荷姆茲海峽油運受阻推升能源價格，歐元區 5 月通膨達 <strong>3.2%</strong>、核心通膨 2.5%，距 2% 目標漸行漸遠（德國 2.6% 相對溫和，見上一張卡）。同步公布的新總體預測兩面挨刀：<strong>2026 年通膨上修至 3.0%、GDP 成長下修至 0.8%</strong>；2027 年通膨估 2.3%、2028 年才回到 2.0%。總裁 Lagarde 在記者會強調利率路徑「視數據而定、不預先承諾」；市場分析（如 LBBW）則預期年底前可能再升兩次、存款利率上看 <strong>2.75%</strong>。<strong>深度觀察</strong>：對正陷出口疲弱與破產潮的德國經濟（見前兩張卡），升息無異雪上加霜——融資成本走高將進一步擠壓高負債企業；對個人財務，房貸利率（Bauzinsen）與定存利率將同步走升，正在規劃購屋貸款或轉貸（Anschlussfinanzierung）者，利率比較與鎖定策略的重要性明顯上升。</p>
+<p class="post-sources">📚 來源：<a href="https://www.cnbc.com/amp/2026/06/11/ecb-hikes-interest-rates.html" target="_blank" rel="noopener noreferrer">CNBC｜首次升息</a> · <a href="https://www.lbbw.de/artikel/news-und-einschaetzungen/ezb-zinsentscheid-juni-2026_amy24vq2ba_d.html" target="_blank" rel="noopener noreferrer">LBBW｜決議解析與利率預測</a> · <a href="https://www.bloomberg.com/news/articles/2026-05-11/ecb-to-hike-rates-twice-in-2026-as-inflation-jumps-survey-shows" target="_blank" rel="noopener noreferrer">Bloomberg｜經濟學家調查</a></p>
+
+<img src="assets/images/2026/weekly/W24_圖卡6_薪資透明指令.png" alt="EU 薪資透明指令 德國錯過 6/7 轉化期限 6/8 起公部門直接適用">
+<h3>薪資透明時代 6/8 啟動：德國遲到，你的權利先到</h3>
+<p>EU 薪資透明指令（Entgelttransparenzrichtlinie, EU 2023/970）要求成員國最遲 <strong>2026/6/7</strong> 轉化為國內法——<strong>德國沒趕上</strong>。聯邦政府的轉化立法（修訂版 Entgelttransparenzgesetz）預計 2027 年初才會到位，專家委員會建議稿今年稍早才出爐。但「遲到」不等於「沒事」：依 EU 法理，<strong>6/8 起指令對公部門雇主直接適用</strong>（unmittelbare Wirkung），且所有德國法院從這天起必須「依指令精神解釋」現行法（richtlinienkonforme Auslegung）——私部門員工也間接受惠。指令給工作者的三項新權利：（1）<strong>求職階段</strong>：有權在面試前知道職缺的起薪或薪資範圍，雇主<strong>不得再追問你過去的薪資紀錄</strong>；（2）<strong>在職階段</strong>：可要求雇主提供同職級、按性別拆分的平均薪資資訊，薪資保密條款（Verschwiegenheitsklauseln）失效；（3）<strong>結構面</strong>：性別薪資差距逾 5% 且無法以客觀標準解釋者，雇主須與員工代表會啟動聯合薪資評估。<strong>對在德台灣人的意義</strong>：外籍求職者長期吃「資訊不對稱」的虧——不知道行情、不敢開價、被前一份薪水錨定。這項指令直接拆掉這三道牆。公部門（大學、研究機構、公家單位）工作者 6/8 起即可主張新權利；私部門雖待德國立法，但面試時要求薪資範圍從現在起就是合理請求。</p>
+<p class="post-sources">📚 來源：<a href="https://www.noerr.com/de/insights/keine-rechtzeitige-umsetzung-der-eu-entgelttransparenzrichtlinie-in-deutsches-recht-was-gilt-nach-dem-7-juni-2026" target="_blank" rel="noopener noreferrer">Noerr｜6/7 之後的法律狀態</a> · <a href="https://www.lto.de/recht/hintergruende/h/umsetzung-entgelttransparenz-richtlinie-verschoben-haftung" target="_blank" rel="noopener noreferrer">LTO｜指令無國內法也生效</a> · <a href="https://www.personalwirtschaft.de/news/verguetung/eu-entgelttransparenzrichtlinie-deutschland-verpasst-frist-das-sind-die-konsequenzen-203783/" target="_blank" rel="noopener noreferrer">Personalwirtschaft｜錯過期限的後果</a></p>
+
+<img src="assets/images/2026/weekly/W24_圖卡7_六月新制.png" alt="六月新制懶人包 GEAS 6/12 上路 早餐指令 6/14 撤回按鈕 6/19">
+<h3>六月新制懶人包：蜂蜜要標產地、一鍵退訂、油價減免到期</h3>
+<p>四項變動 6 月陸續生效，由近到遠排：（1）<strong>6/12 GEAS 上路</strong>——歐盟共同庇護體系 11 部法規全 EU 同步適用，統一程序＋邊境快速審查（背景與德國配套法已在 W21-22 深度解析，此處不重複）；（2）<strong>6/14 早餐指令（Frühstücksrichtlinie, EU 2024/1438）</strong>——蜂蜜混合產品必須<strong>逐一標示來源國與重量百分比</strong>、按占比遞減排列，「EU 與非 EU 蜂蜜混合」這種看了等於沒看的字樣走入歷史；果醬<strong>最低果含量從 350g 升到 450g/kg</strong>（Extra 級 500g），且 Konfitüre 終於可以正式稱作 Marmelade——困擾德語學習者多年的名稱之爭落幕；（3）<strong>6/19 線上撤回按鈕（Widerrufsbutton）</strong>——依 EU 指令 2023/2673，凡是讓消費者在網站或 App 上簽約的業者，都必須提供與下單同樣顯眼、同樣容易的「一鍵撤回」功能；<strong>沒提供的話，你的 14 天撤回期自動延長一年</strong>，業者還可能被告誡（Abmahnung）；（4）<strong>6/30 油價減免（Tankrabatt）到期</strong>——因應伊朗戰事油價飆漲、5/1 起實施的能源稅減免（見 W16 解析），聯盟兩黨團 6/11 確認如期結束、不再延長，<strong>7/1 起每公升燃油估回升約 17 歐分</strong>（目前 Diesel 均價 1.852 €、E10 1.871 €）。<strong>對在德台灣人的意義</strong>：訂閱制健身房、電信約、串流服務——以前解約要寫掛號信的時代正式結束；6/19 之後若在網站上找不到撤回按鈕，截圖存證，你的權利反而變大。買蜂蜜終於看得到真實產地與比例；開車族則記得 <strong>6 月底前把油加滿</strong>——7 月起加油每 50 公升油箱約多付 8.5 €。</p>
+<p class="post-sources">📚 來源：<a href="https://www.verbraucherzentrale.de/wissen/vertraege-reklamation/widerrufsbutton-ab-juni-2026-onlinevertraege-einfacher-widerrufen-118449" target="_blank" rel="noopener noreferrer">Verbraucherzentrale｜撤回按鈕</a> · <a href="https://www.it-recht-kanzlei.de/widerrufsbutton-faq-leitfaden-online-handel.html" target="_blank" rel="noopener noreferrer">IT-Recht Kanzlei｜FAQ</a> · <a href="https://llh.hessen.de/unternehmensfuehrung/erwerbskombinationen/direktvermarktung/honig-saefte-marmelade-eu-regeln-2026/" target="_blank" rel="noopener noreferrer">LLH Hessen｜早餐指令</a> · <a href="https://www.bamf.de/DE/Themen/AsylFluechtlingsschutz/EuropaeischerKontext/GEAS/geas-node.html" target="_blank" rel="noopener noreferrer">BAMF｜GEAS</a> · <a href="https://www.t-online.de/finanzen/aktuelles/id_101291548/koalition-einig-tankrabatt-laeuft-ende-juni-aus.html" target="_blank" rel="noopener noreferrer">t-online｜Tankrabatt 確定不延長</a> · <a href="https://www.adac.de/news/spritpreise-steigen-durch-krieg-in-nahost/" target="_blank" rel="noopener noreferrer">ADAC｜當前油價</a></p>
+
+<hr>
+
+<h2 id="jun1-7">6月1日–7日：世足倒數 Neuer 回鍋、安理會競選史上首敗、退休金調漲 4.24%、破產潮 20 年新高</h2>
+<p>本週德國從綠茵場到聯合國、再到企業財報，迎來一場「信心測驗」。最大事件：<strong>6/3 聯合國大會改選安理會非常任理事國，德國 104 票墊底落選</strong>——這是兩德統一以來德國首度在安理會改選失利，外長 Wadephul 形容為「苦澀的挫敗」。6/11 美加墨世足開踢倒數，Nagelsmann 端出 26 人名單，40 歲 Neuer 退休兩年後回鍋當第一門將、球迷民調分裂；勞動部公布 7/1 退休金調漲 4.24%，逾 2,100 萬人受惠，但世代正義辯論同步升溫；IWH Halle 公布 Q1 企業破產 4,573 家寫下 2005 年第 3 季以來新高，「去工業化從預測變成現實」。</p>
+
+<img src="assets/images/2026/weekly/W23_圖卡1_德國隊出征世足.png" alt="德國隊出征 2026 美加墨世足 Nagelsmann 26 人名單 Neuer 回鍋">
+<h3>德國隊出征世界盃：連兩屆出局後的救贖之戰</h3>
+<p>2026 FIFA 世界盃 6/11 在美國、加拿大、墨西哥三地開踢，德國分在 <strong>E 組</strong>，6/14 首戰加勒比海島國「<strong>古拉索</strong>」（Curaçao，人口僅約 15 萬，FIFA 排名長期 80–90 名），續戰象牙海岸、厄瓜多。總教練 Nagelsmann 端出 26 人名單，最大焦點是 40 歲的 Neuer 退休兩年後回鍋鎮守球門；攻擊端由 Wirtz、Musiala 領銜，前者迎來世界盃首秀（2022 因十字韌帶傷缺席）。球迷分裂：t-online 民調顯示 <strong>43% 不滿 Sané 入選、39% 質疑 Neuer 回鍋擠掉 Baumann、36% 認為 Rüdiger 帶傷入選不妥</strong>。sportschau 評論直言 Nagelsmann 數月來無法主導名單敘事「相當不專業」。隱憂在防線：3 月友誼賽贏瑞士 4:3、迦納 1:0 卻失 4 球。<strong>深度觀察：</strong>對 4 度奪冠的德國而言，2018、2022 連兩屆小組出局是奇恥大辱。真正考驗在淘汰賽——能否擋住法國、西班牙，將決定這是復興還是再崩盤。</p>
+<p class="post-sources">📚 來源：<a href="https://www.dfb.de/news/bundestrainer-nagelsmann-gibt-wm-kader-bekannt" target="_blank" rel="noopener noreferrer">DFB 官方</a> · <a href="https://www.sportschau.de/regional/ndr/kommentar-zum-wm-kader-nagelsmanns-kommunikationsproblem,dfb-wm-kader-100.html" target="_blank" rel="noopener noreferrer">sportschau 評論</a> · <a href="https://www.t-online.de/sport/fussball/wm/id_101273306/wm-2026-kader-von-julian-nagelsmann-fans-zweifeln-an-dfb-stars.html" target="_blank" rel="noopener noreferrer">t-online 球迷民調</a></p>
+
+<img src="assets/images/2026/weekly/W23_圖卡2_安理會是什麼.png" alt="聯合國安理會制度說明 5 常任握否決權 10 非常任輪選">
+<h3>先搞懂：聯合國安理會是什麼？</h3>
+<p>安理會（Security Council）是聯合國最高的「和平與安全」決策機構，共 <strong>15 個理事國</strong>：美、英、法、俄、中 5 個「常任理事國」握有否決權——任一國一票就能擋下任何決議；其餘 10 個「非常任理事國」由 193 個會員國在聯合國大會（UNGA）投票選出，任期 2 年，須拿下 2/3 多數（約 127 票）。它是聯合國唯一決議具「<strong>法律約束力</strong>」的機構——能對一國祭出經濟制裁、部署維和部隊、甚至授權動武。坐上這張桌子，等於握有全球安全議題的發言權與議程主導權。席次按「區域組」分配，德國屬於「西歐及其他國家組」（WEOG, Western European and Others Group），這個組每兩年釋出 2 席輪選。</p>
+<p class="post-sources">📚 來源：<a href="https://main.un.org/securitycouncil/en/content/voting-system" target="_blank" rel="noopener noreferrer">UN 安理會官方投票制度</a> · <a href="https://passblue.com/2026/06/03/five-new-countries-elected-to-the-un-security-councils-2027-28-term/" target="_blank" rel="noopener noreferrer">PassBlue 選舉詳述</a></p>
+
+<img src="assets/images/2026/weekly/W23_圖卡3_德國安理會落選.png" alt="德國競選聯合國安理會落選 兩德統一以來首敗 104 票墊底">
+<h3>史上頭一遭：德國競選安理會落選</h3>
+<p>這次 WEOG 組開出 2 個非常任席，德國、奧地利、葡萄牙「三搶二」。6/3 聯大投票結果出爐：<strong>葡萄牙 134 票、奧地利 131 票當選；德國僅 104 票墊底落選</strong>。這是兩德統一（1990）以來，德國首度在安理會改選中失利——德國過去曾 6 度入選、從未落敗。外長 Johann Wadephul 形容這是「苦澀的挫敗」、對德國國際地位的「沉重打擊」。<strong>敗因解讀</strong>：（1）Wadephul 親口坦言，德國堅定支持以色列（加薩戰爭背景）恐是國際反對的關鍵因素，這在 Al Jazeera、Euronews 等國際媒體深度分析皆獲呼應；（2）德國 2019 年才宣布參選，比對手晚；總理 Merz 去年更缺席聯合國大會、僅派外長出席，被外交圈視為「在聯合國刷存在感不足」。<strong>嚴重性</strong>：德國是聯合國主要金主、自詡多邊主義支柱，並長年透過 G4（與日本、印度、巴西聯手）爭取「常任理事國」席次。如今連 2 年期的非常任席都拿不下，等於宣告常任夢碎，也暴露它對「全球南方」（Global South）影響力的流失。這是 Merz 政府的外交警鐘，朝野齊批：綠黨外交發言人 Brugger「這筆帳算在 Merz 與 Wadephul 頭上」，SPD 外交發言人 Ahmetović 稱之為「明顯的外交挫敗」；Hessen 邦甚至揚言檢討德國對 UN 的金援。</p>
+<p class="post-sources">📚 來源：<a href="https://www.euronews.com/my-europe/2026/06/03/germany-fails-to-gain-seat-on-un-security-council" target="_blank" rel="noopener noreferrer">Euronews</a> · <a href="https://www.aljazeera.com/news/2026/6/4/did-germany-lose-its-unsc-seat-because-of-support-for-israel" target="_blank" rel="noopener noreferrer">Al Jazeera｜以色列因素分析</a> · <a href="https://www.zdfheute.de/politik/ausland/un-sicherheitsrat-deutschland-bedeutung-100.html" target="_blank" rel="noopener noreferrer">ZDFheute｜對 Merz 的意義</a> · <a href="https://www.t-online.de/nachrichten/ausland/internationale-politik/id_101281614/niederlage-im-un-sicherheitsrat-heftige-kritik-an-merz-und-wadephul.html" target="_blank" rel="noopener noreferrer">t-online｜朝野批評</a></p>
+
+<img src="assets/images/2026/weekly/W23_圖卡4_退休金與世代正義.png" alt="退休金 7/1 起調漲 4.24% 逾 2100 萬人受惠 世代正義爭議升溫">
+<h3>退休金調漲 4.24%——但世代帳單誰來付？</h3>
+<p>7/1 起德國法定退休金（gesetzliche Rente）調漲 <strong>4.24%</strong>，點值（Rentenwert）從 40.79 € 升到 42.52 €，逾 <strong>2,100 萬</strong>退休族受惠。勞動部長 Bärbel Bas（SPD）：「體面退休金不是奢侈，是對辛勞一生者的績效正義。」但這份「正義」並非沒有代價：（1）<strong>通膨吃掉漲幅</strong>，實質增加有限，不少退休族直呼無感；（2）<strong>世代爭議升溫</strong>，知名退休金經濟學者 <strong>Axel Börsch-Supan</strong>（MEA / 馬普所）痛批，新版 Rentenpaket「讓老一輩免責、把成本甩給年輕世代」——48% 給付保證線（Haltelinie）撐到 2031 年，背後是聯邦補貼逐年攀升，<strong>預估 2031 年單年補貼達約 110 億 €</strong>，全由年輕繳費者買單；（3）<strong>連動衝擊</strong>：「基礎保障」（原 Bürgergeld，7 月起改稱 Neue Grundsicherung）同步上路新規，房租最高僅認列「合理冷租 1.5 倍」，超額須自付差額——例如地方基準 480 €，最多補 720 €，實際暖租 900 € 須自付 180 €。<strong>對在德台灣人的意義</strong>：在德工作繳退休保險（Rentenversicherung）的你，就是這筆世代帳單的一部分；若你領取社會給付，7 月起的租金封頂要特別留意。</p>
+<p class="post-sources">📚 來源：<a href="https://www.deutsche-rentenversicherung.de/DRV/DE/Ueber-uns-und-Presse/Presse/Meldungen/2026/260305-rentenanpassung-2026.html" target="_blank" rel="noopener noreferrer">Deutsche Rentenversicherung 官方</a> · <a href="https://www.zdfheute.de/wirtschaft/rente-generationengerechtigkeit-steigende-beitraege-100.html" target="_blank" rel="noopener noreferrer">ZDFheute｜Börsch-Supan 批評</a> · <a href="https://www.buerger-geld.org/news/grundsicherung/buergergeld-zu-grundsicherung-15-fach-deckel-bei-der-miete-das-kommt-zum-1-juli-2026/" target="_blank" rel="noopener noreferrer">bürger-geld.org｜1.5 倍租金封頂</a></p>
+
+<img src="assets/images/2026/weekly/W23_圖卡5_破產潮.png" alt="德國 Q1 2026 企業破產 4573 家創 2005 年來新高 去工業化成真">
+<h3>破產潮創 20 年新高：去工業化從預測變成現實</h3>
+<p>IWH Halle 公布最新企業破產統計：德國 <strong>Q1 2026 企業破產 4,573 家</strong>，寫下 <strong>2005 年第 3 季以來新高</strong>；單是 3 月，破產家數較疫前均值 <strong>+71%</strong>，前 10% 最大破產案波及約 <strong>1.4 萬個工作</strong>。三條成因線同時拉緊：（1）<strong>殭屍企業清算</strong>——疫情補貼退場，體質虛弱企業被「斷奶」後集中倒閉；（2）<strong>能源與利率雙殺</strong>——德國工業電價 18.3 ct/kWh，較美國 7.5、中國 8.2 逾兩倍以上，高利率壓垮高負債企業；（3）<strong>重災區擴散</strong>：營建、汽車、零售創新高，金屬製品躍居破產榜首（+35%），汽車經銷破產暴增近 200%。專家定調：IWH 破產研究主管 <strong>Steffen Müller</strong> 對 Q2「不抱樂觀」，預期 3 月高點將重演；信用險業者 Atradius 預估全年破產上看 3 萬件、違約金額 <strong>650 億 €</strong>；Handelsblatt 引用業者觀點直指「結構性崩壞」。<strong>對在德台灣人的意義</strong>：IWH 直言「去工業化已從預測變成現實」。在德求職者宜留意汽車供應鏈、營建等高風險產業；若遇短工或裁員，務必先搞懂 <strong>Kurzarbeitergeld</strong>（短時工津貼）與 <strong>Arbeitslosengeld I</strong>（失業金）的權益。</p>
+<p class="post-sources">📚 來源：<a href="https://www.iwh-halle.de/en/press/press-releases/detail/iwh-insolvenztrend-firmenpleiten-auf-hoechstem-stand-seit-mehr-als-zwei-jahrzehnten" target="_blank" rel="noopener noreferrer">IWH Halle 研究報告</a> · <a href="https://www.handelsblatt.com/unternehmen/unternehmen-in-deutschland-struktureller-kollaps-experten-erwarten-rekord-bei-grossinsolvenzen/100179752.html" target="_blank" rel="noopener noreferrer">Handelsblatt</a> · <a href="https://www.t-online.de/finanzen/aktuelles/id_101280954/insolvenz-biotech-firma-aus-umfeld-von-sap-gruender-dietmar-hopp-ist-pleite.html" target="_blank" rel="noopener noreferrer">t-online｜個案 Molecular Health 破產</a></p>
+
+<hr>
+
+<h2 id="may18-31">5月18日–31日：2024 入籍破 29 萬、藍卡新門檻、機票稅調降、E-Auto 補助、GEAS 倒數、經濟回穩、AfD 反超 CDU、Merz 嗆川普</h2>
+<p>本期合併 W21 + W22 兩週重點，依在德台灣讀者關注度排序。最熱：5/24 BAMF 公布 2024 入籍突破 29 萬創紀錄、CDU/CSU Throm 趁勢喊話延回 8 年（SPD 擋下）；藍卡與機會卡 2026 新門檻；機票稅 7/1 起調降（飛台灣每張省 €11）；E-Auto 購車補助 5/19 重啟最高 €6,000。再來：6/12 共同歐盟庇護新制（GEAS）全面上路倒數；5/22 ifo 5 月升到 84.9 連 2 月走高、5/23 Q1 GDP +0.3% 由出口帶動、5/26-27 Telekom 第四輪談判同步全國警告罷工；AfD 27% 民調反超 CDU 22%；Merz 在埃爾福特對川普開嗆「不建議子女赴美」、跨大西洋關係 Merz 任內新低。</p>
+
+<img src="assets/images/2026/weekly/W21-22_圖卡1_Throm524BAMF入籍紀錄.png" alt="2024 入籍突破 29 萬 CDU Throm 5/24 趁勢喊話延回 8 年">
+<h3>2024 入籍突破 29 萬　CDU Throm 5/24 趁勢喊話延回 8 年</h3>
+<p>本期 Einbürgerung 真正的新動作發生在 <strong>5/24</strong>。BAMF（Bundesamt für Migration und Flüchtlinge）公布 2024 全年入籍統計：約 <strong>292,000 人</strong>取得德國國籍，是自 2000 年統計以來最高紀錄；2025 年根據部分邦已公布數據加上 Welt am Sonntag 自家調查推估，可能突破 <strong>30 萬人</strong>。同日 CDU/CSU 黨團內政事務發言人 Alexander Throm 接受 Welt am Sonntag 訪問，趁勢喊話三條訴求：(1) 把入籍年限「延回 8 年」、(2) 取消一般情況下的雙重國籍、(3) 退一步——把享有 subsidiärer Schutz / Asyl 身分者直接排除在入籍程序外，要求先轉永居才能起算入籍年限。但 Throm <strong>自己也承認</strong>這些「mit der SPD nicht durchsetzbar」（過不了 SPD 那關）：聯盟內談判能拿下的就是 2025/6 廢除 3 年 Turbo-Einbürgerung 那一仗。Tagesspiegel、Handelsblatt、t-online、Epoch Times Deutschland 同步跟進。結論：5 年制續行、無立法草案；本期 Throm 喊話是黨團發言人立場、不是政府正式提案，但顯示 CDU 內部的長期壓力沒有停下來。完整背景與時間線、對在德台灣人的短中長期策略，我們另開了一篇專文整理。</p>
+
+<img src="assets/images/2026/weekly/W21-22_圖卡2_藍卡機會卡新門檻.png" alt="藍卡與機會卡 2026 新門檻一次看">
+<h3>藍卡 + 機會卡　2026 新門檻一次看</h3>
+<p>對在德工作的外國人最直接相關的兩條規定本期同步更新：Blue Card 2026 年薪門檻一般職業上調至 <strong>€50,700／年</strong>（較 2025 約 +5%），緊缺職業（IT、醫療、工程等 Mangelberufe）<strong>€45,934／年</strong>。Chancenkarte（機會卡）資金證明上修至 €13,092／年（≈ €1,091／月），點數制度（學歷、語言、年齡、工作經驗加總 6 分以上）維持。對打算申請藍卡的台灣朋友，今年起年薪準備要往上抓一點，學位認證（ZAB）與履歷在送件前先確認到位。入籍 Einbürgerung 的最新攻防請對照上方圖卡 1。</p>
+
+<img src="assets/images/2026/weekly/W21-22_圖卡3_機票稅71調降.png" alt="機票稅 7/1 起調降 飛台灣每張省 €11">
+<h3>機票稅 7/1 起調降　飛回台灣每張省 €11</h3>
+<p>聯邦議院 5/21 三黨表決通過《航空運輸稅修正案》（LuftVStG-Änderung），由 CDU/CSU、SPD、AfD 一致支持，反對方為綠黨與左翼。新稅率 <strong>2026 年 7 月 1 日</strong>起生效：短程歐洲航線 €15.53 → €13.03（-€2.50），中程航線 €39.34 → €33.01（-€6.33），長程航線 <strong>€70.83 → €59.43（-€11.40）</strong>。對在德台灣人來說，飛回台灣屬於最長程級距，每張票省 €11.40 是直接到手的減免。航空業端，漢莎、Eurowings、Condor 皆表歡迎；環保陣營這邊，Greenpeace 痛批這是「致命訊號」、聯邦環境署（UBA）反過來建議加稅、BUND 認為氣候政策地位再被弱化、總體財政影響每年約 -3.5 億歐元。注意：這項稅是航空公司繳給聯邦的，價格能不能真的回饋到票面、要看各航空公司的訂價策略，可能要到 7-8 月才看得出實際省多少。</p>
+
+<img src="assets/images/2026/weekly/W21-22_圖卡4_E-Auto購車補助開放.png" alt="E-Auto 購車補助 5/19 重啟 最高 6000 歐">
+<h3>E-Auto 購車補助 5/19 重啟　最高 €6,000</h3>
+<p>聯邦經濟與氣候保護部委由 BAFA 執行的新一輪 Elektroauto-Kaufprämie 自 5/19 起重新開放線上申請。家庭年所得 <strong>€80,000 以下</strong>可申請，每多 1 名子女寬限 +€5,000、上限 €90,000；最高補助 €6,000，總預算 30 億歐元，目標涵蓋約 80 萬輛車。回溯適用條款：<strong>2026 年 1 月 1 日</strong>起首次在德國登記的純電車皆可申請。強制持有 36 個月，提前轉手須返還補助。申請流程全數位化，於 <code>foerderzentrale.gov.de</code> 線上送件；僅限私人 PKW（乘用車），二手車不支援。對打算換車的家庭，這是 2026 年下半年最大一筆民生政策補助，名額用完就停，建議盡早送件。</p>
+
+<img src="assets/images/2026/weekly/W21-22_圖卡5_GEAS倒數14天.png" alt="GEAS 倒數 14 天 6/12 共同歐盟庇護新制全面上路">
+<h3>GEAS 倒數 14 天　6/12 共同歐盟庇護新制全面上路</h3>
+<p>本期最具體的「即將發生」事件——<strong>6/12（兩週後）</strong>共同歐盟庇護體系（GEAS / CEAS, Gemeinsames Europäisches Asylsystem）11 部法規同步生效，全 EU 27 國第一次走同一套庇護程序、邊境快審與責任分配規則。德國這邊的配套法《GEAS-Anpassungsgesetz》與《GEAS-Anpassungsfolgegesetz》已於 <strong>4/28 登 Bundesgesetzblatt</strong>（聯邦公報）——Bundestag 2/27 二、三讀通過、Bundesrat 3/27 同意——主要條文 6/12 同步生效。三大改動：(1) 新增 <strong>Border Procedure（邊境程序）</strong>：低留居機率者改為 12 週內邊境快速處理，識別、安全檢查、決定一條龍；(2) <strong>Verantwortungsverordnung（責任分配新規）</strong>取代失靈多年的都柏林系統，重新劃分各成員國責任；(3) 取消過去的 Familienasyl（家庭庇護）概念，新增 Abschiebungshaft（遣返拘留）法律基礎。對於在德工作、永居、入籍中的台灣人來說，這項改革主要影響庇護申請人，但 6 月起短期入境、邊境檢查可能更嚴，跨境旅遊與商務的朋友可留意 ETIAS 與新邊境程序的銜接。</p>
+
+<img src="assets/images/2026/weekly/W21-22_圖卡6_經濟微露曙光.png" alt="ifo 5 月 84.9 連 2 月回升 Q1 GDP +0.3% Telekom 5/26-27 罷工">
+<h3>經濟微露曙光　ifo 5 月 84.9 連 2 月回升　Q1 GDP +0.3%</h3>
+<p>本期經濟新訊號兩條一起出來：5/22 ifo 研究院公布 5 月 Geschäftsklimaindex 升到 <strong>84.9</strong>（4 月 84.5），連續第二個月走高，企業對現況評估改善、對未來預期較不那麼悲觀，是短期景氣轉折訊號。緊接著 5/23 Destatis 公布 Q1 GDP 細節：季增 <strong>+0.3%</strong>（前季 0%），Ruth Brand 院長指出「出口在年初顯著回升、帶動經濟表現」，技術上脫離了 2025 連兩季萎縮。5/21 Bundesbank 月報同步出爐，內容更謹慎：Tarifverdienste（協約薪資）Q1 +2.8%、雖比前期慢但仍偏強；勞動市場略轉弱、社保就業微減、失業微升，伊朗戰爭與 Hormuz 海峽問題仍未消退。本期最大勞資衝突發生在 <strong>5/26-27</strong>——ver.di × Deutsche Telekom 第四輪談判同步全德警告罷工，逾 1 萬員工、12 城市停工，訴求 6.6% 加薪與 Mitgliederbonus；雙方最後在法蘭克福第四輪達成妥協協議。對在德工作族來說，Telekom 第四輪談判結果有指標性，是後續其他工會（IG Metall、ÖPNV）跟進的參考。</p>
+
+<img src="assets/images/2026/weekly/W21-22_圖卡7_AfD民調反超CDU.png" alt="AfD 27% 民調反超 CDU 22% 雙位數差距首見">
+<h3>AfD 27% 民調反超 CDU 22%　雙位數差距首見</h3>
+<p>5/26 Forsa 為 RTL/n-tv 公布最新聯邦民調（5/19-22 訪問期）：AfD 27%、CDU/CSU 22%、Grüne 15%、SPD 12%、Linke 11%、其他 6%、FDP 4%、BSW 3%。同期 INSA 給 AfD 27-29% 區間，加權聯邦趨勢 AfD 約 27.0%、CDU/CSU 約 23.0%——AfD 對聯盟黨領先擴大到 4-5 個百分點。CDU 黨內對 Merz 領導的討論升溫，Merz 個人滿意度持續低檔，連 CDU 自家選民也有不少表達不滿。<strong>9 月 6 日將舉行的薩克森-安哈爾特（Sachsen-Anhalt）州議會選舉</strong>，AfD 當地民調來到 39-40%、領先當地 CDU 達 12 個百分點，可能成為本年度 AfD 第一個拿下州總理（Ministerpräsident）的舞台，是未來四個月最值得追的德國政治劇本。</p>
+
+<img src="assets/images/2026/weekly/W21-22_圖卡8_Merz嗆川普不建議子女赴美.png" alt="梅爾茨對川普開嗆 不建議子女赴美 跨大西洋關係 Merz 任內新低">
+<h3>梅爾茨對川普開嗆　「不建議子女赴美」　跨大西洋關係任內新低</h3>
+<p>5/15 在埃爾福特（Erfurt）舉行的天主教大會（Katholikentag）上，Merz 回答現場年輕人提問時直言：「我不會建議我的子女現在去美國讀書或工作」（<em>ich würde meinen Kindern derzeit nicht empfehlen, in die USA zu gehen</em>），點名理由是美國「社會氛圍突然變調」、即使學歷高也「很難找到工作」。他補一句「我仍是美國的崇拜者」，但隨即說「我的欽佩此刻並沒在增加」——刻意保留外交餘地，但措辭已是德國總理層級對美罕見的負面評價。這段發言本週被 ZEIT、Spiegel、FAZ、ZDF 連日追蹤，把跨大西洋關係的結構性裂痕推到 Merz 任內新低：5/1 川普把對歐汽車關稅從 15% 拉至 <strong>25%</strong>、4 月底美方通知再撤 <strong>5,000</strong> 名駐德美軍並揚言「會再裁更多」、北約軍費分配與烏克蘭援助路線分歧持續。對在德或考慮赴美求職／升學的台灣朋友，這是一個由德國總理親自發出的市場訊號：美德人才流動、商業合作的環境正在重新洗牌，做選擇前可以再多看一下。</p>
+
+<hr>
+
+<h2 id="may11-17">5月11日–17日：Pistorius 訪基輔、紅場閱兵停火破局、世足噪音放寬、新生兒篩檢加項</h2>
+<p>本週德國目光大多落在烏克蘭與紅場之間：國防部長 Pistorius 5/11 突訪基輔，與烏克蘭簽下「Brave Germany」聯合國防創新計畫；川普牽線的三日停火於 5/11 期滿即破，Merz 同步公開警告親赴莫斯科的斯洛伐克總理 Fico。國內這邊，Bundesrat 5/8 通過為 6/11 世足量身打造的 Public Viewing 噪音特例，5/15 起新生兒擴大篩檢更加進 B12 缺乏症等 4 項代謝病。</p>
+
+<img src="assets/images/2026/weekly/W20_圖卡1_皮斯托留斯訪基輔.png" alt="德國國防部長突訪基輔簽下Brave Germany聯合研發協議">
+<h3>國防部長突訪基輔　德烏「Brave Germany」共同打造長程武器</h3>
+<p>為安全考量，行程事前完全保密——德國國防部長 Pistorius 於 5/11 飛抵基輔，與烏克蘭國防部長 Fedorov 簽下「Brave Germany」聯合國防創新計畫意向書。同步公布的 <strong>€40 億</strong>國防包，含數百枚 Patriot 飛彈、36 套 IRIS-T 防空系統，並首次撥 <strong>€3 億</strong>專款支援烏克蘭「深打能力」（deep-strike capabilities），雙方聯合生產的 AI 中程打擊無人機首批 5,000 架交由烏軍。Zelensky 親自接見，並透露雙方已有 6 項聯合武器生產案推進中。Pistorius 形容此行是「俄烏戰爭的轉折訊號」，德國對烏支援從「援助」正式升級為「共同生產」。Fedorov 稱此為「前所未有的援助包」，明年起首批飛彈交付。</p>
+
+<img src="assets/images/2026/weekly/W20_圖卡2_紅場閱兵停火破局.png" alt="紅場閱兵縮水停火三日破局Merz對Fico出手">
+<h3>紅場閱兵縮水　停火三日破局　Merz 對 Fico 出手</h3>
+<p>川普牽線俄烏 5/9-5/11 三日停火，雙方同步釋放 <strong>1,000 對 1,000</strong> 戰俘，是本輪最大規模交換。同日紅場閱兵全程僅 45 分鐘，20 年來首次沒有任何坦克、飛彈等重型武器亮相，只剩戰機飛越與預錄前線影片，CFR、The Bulwark 等智庫普遍解讀為俄方軍力疲態的訊號。然而停火期間雙方仍持續交火，5/11 期滿後戰線立即恢復，烏方稱當日前線仍有近 150 場接觸戰。Putin 對外宣稱「戰爭接近尾聲」，多數國際分析持疑。歐洲這邊，斯洛伐克總理 Fico 是唯一出席紅場閱兵的 EU 政府首長，Merz 隨即取消原訂 5/29 的訪斯洛伐克行程，公開警告 Fico「要在 EU 內接受一場談話」，可能牽動斯國 EU 資金分配——這是 Merz 任內首次對 EU 內部親俄成員直接施壓。俄外交部發言人 Zakharova 反嗆 Merz 言論為「歐洲傲慢」。</p>
+
+<img src="assets/images/2026/weekly/W20_圖卡3_世足倒數放映放寬.png" alt="世足倒數Bundesrat通過Public Viewing噪音特例">
+<h3>世足倒數　Bundesrat 通過 Public Viewing 噪音特例</h3>
+<p>2026 FIFA 世界盃將於 6/11 在美國、加拿大、墨西哥三地開賽。雖然不在德國辦，但因時差關係，多數比賽落在德國時間 21:00、22:00、00:00、03:00 開球——若照現行 22:00–06:00 夜間靜音規定，公開放映幾乎全部違法。Bundesrat 5/8 通過聯邦環境部（BMUKN）草擬的《公開放映規例》（Public-Viewing-Verordnung），地方主管機關可權衡公益核可夜間活動，規例自登《Bundesgesetzblatt》翌日起生效、<strong>2026 年 7 月 31 日自動失效</strong>，比照 2024 歐國盃模式。同梯次通過的還有 13 部其他法案，含體育促進法、心理諮詢強化、歐盟氫能與天然氣管道指令落地。柏林、慕尼黑、漢堡 Fan Zone 已公布動工計畫；DEHOGA 餐飲協會估計，本次將為餐廳、酒吧帶來夏季營收高峰。</p>
+
+<img src="assets/images/2026/weekly/W20_圖卡4_新生兒B12篩檢.png" alt="5月15日起新生兒擴大篩檢B12缺乏症納入健保">
+<h3>5/15 起：新生兒篩檢加項　B12 缺乏症納入健保</h3>
+<p>5 月 15 日起，依共同聯邦委員會（Gemeinsamer Bundesausschuss, G-BA）擴大《兒童健康指引》（Kinder-Richtlinie）的決議，德國法定健保（GKV）正式將維生素 B12 缺乏、同型半胱胺酸尿症（Homocystinurie）、丙酸血症（Propionazidämie）、甲基丙二酸尿症（Methylmalonazidurie）4 項代謝病納入新生兒擴大篩檢，目標疾病清單從 16 項擴大為 <strong>20 項</strong>，全德同步上路、100% GKV 給付。原本部分診所要自費約 35 €，新制上路後完全免費。聯邦醫師協會（KBV）同步調整對應檢驗項目 GOP 01724 給付，增加 5.48 € 反映實驗室成本。德國兒科醫學會（DGKJ）強調，B12 缺乏若未及早診治可造成嬰兒發展遲緩、貧血甚至不可逆神經損傷，這次擴大覆蓋對在德育兒的家庭——不分國籍、只要持 GKV 健保卡——都是直接受惠。</p>
+
+<hr>
+
+<h2 id="apr27-may10">4月27日–5月10日：梅爾茨執政滿一年、稅收驟減 178 億、車關稅 25%、紓困上路</h2>
+<p>5/6 是梅爾茨黑紅內閣執政滿一週年。這兩週把整個任期的問題一次攤開來：民調寫戰後新低、財政部突傳稅收短少 178 億、川普對歐車關稅由 15% 拉至 25%、雙 B 利潤恐遭兩位數重擊；同一時間，5/1 起多項聯邦紓困上路、電費全面下修、Telekom 12 萬人警告罷工。</p>
+
+<img src="assets/images/2026/weekly/W18-19_圖卡1_梅爾茨執政滿一年.png" alt="梅爾茨執政滿一年深陷三重風暴">
+<h3>執政滿週年：梅爾茨深陷三重風暴</h3>
+<p>5/9 INSA 民調，AfD 以 28% 首度大幅領先 CDU/CSU 的 23%；Forsa 同期顯示梅爾茨個人滿意度跌到 13%，是戰後德國總理首年最低紀錄，並較上週再 -2 個百分點。ZDF 政治晴雨表 5/8 公布的評價更直接：28% 認為梅爾茨表現好、68% 認為差，一年內幾近腰斬。三條壓力線同時失守：（1）民意支持寫戰後新低，連 CDU 自家選民都不滿；（2）聯盟內訌——CSU 與 SPD 在退休金、Bürgergeld 與軍購預算上多次互嗆；（3）跨大西洋關係生變，川普 5/1 把對歐汽車關稅由原協議 15% 拉至 25%，並揚言再從德國撤 5,000 名美軍、「之後還會更多」。</p>
+
+<img src="assets/images/2026/weekly/W18-19_圖卡2_稅收暴跌經濟雪上加霜.png" alt="德國稅收驟減178億財政警鐘響">
+<h3>稅收驟減 178 億　德國財政警鐘響</h3>
+<p>聯邦財政部長 Lars Klingbeil（SPD）5/7 公布最新稅收預估：2026 全年短少 <strong>178 億歐元</strong>，2030 年前累計缺口將達 <strong>875 億歐元</strong>。同步公布的數據看似有起色——首季 GDP 季增 +0.3%（2025 Q4 為 0%），但 4 月 CPI 通膨升到 2.9%（3 月為 2.7%），4 月失業率仍卡在 6.4%、失業人口 300.8 萬，月持平、年 +0.1pp。三個觀察點：能源價格年增 10.1%，仍受伊朗戰爭與荷姆茲海峽中斷影響；Klingbeil 把缺口責任推給川普關稅，綠黨反擊「預算蓋在沙土上」；ifo 4 月企業價格預期攀升至 31.6，是 2023 年 1 月以來最高，意味更多企業準備把成本轉嫁給消費者。</p>
+
+<img src="assets/images/2026/weekly/W18-19_圖卡3_川普25關稅德國車業.png" alt="川普25%關稅德國車業亮紅燈">
+<h3>汽車關稅暴漲 25%　德國車業亮紅燈</h3>
+<p>川普 5/1 起把對歐進口車關稅由原協議 15% 拉至 <strong>25%</strong>，直接打在德國車業最痛的位置。Bernstein 估算雙 B 利潤衝擊：BMW 2026 年 -12%、2027 年 -15%；Mercedes-Benz 2026 年 -14%、2027 年 -18%，皆是兩位數重擊。市場立刻反應：5/4 開盤 BMW、賓士、福斯、保時捷股價齊跌 2 至 3%。VDA 主席 Hildegard Müller 呼籲恢復談判，公開警告「美國消費者也將受害」。受創最重的是豪華車市場——這個區段的價格敏感度最高，多 10% 關稅幾乎都得吞，難以轉嫁。</p>
+
+<img src="assets/images/2026/weekly/W18-19_圖卡4_在德生活兩週整理.png" alt="紓困上路電費下修Telekom罷工">
+<h3>紓困上路、電費下修、Telekom 罷工</h3>
+<p>5/1 起聯邦三項紓困同步啟動：油稅減免 17 Cent／升（5/1-6/30）、雇主可自願發 €1,000 免稅紓困金（Entlastungsprämie）、電費補貼第二輪到位。家庭端最有感的是電費：5 月新一波換約方案普遍下修約 9.4%，每度約 €0.24，全德平均年帳單約 €172，比 2024 年初再省約 €8，多數家庭換約最多可省 €244。勞資面則出狀況：ver.di 工會對德國電信 Telekom 啟動警告罷工，訴求 6.0% 加薪、低薪族月加 €170，全德約 12 萬人受影響，5/6 已有約 2,000 人於 Bonn、Düsseldorf 等地停工，後續可能擴大；勞資 5/14-16 進入第五輪談判，這週是關鍵。</p>
+
+<hr>
+
+<h2 id="apr20-26">4月20–26日：GDP腰斬、德國首份軍事戰略、Mercosur生效</h2>
+<p>本週德國經濟、政治、外交三線同時出大事：六大研究機構把2026 GDP預測再砍一半，國防部長 Pistorius 公布建國以來第一份正式軍事戰略，EU-Mercosur 自貿協定 5/1 暫時生效；同時退休金、Bürgergeld、通勤津貼、儲氣費補貼、電商退款按鈕等多項民生新制陸續上路。</p>
+
+<img src="assets/images/2026/weekly/W17_圖卡1_經濟預測腰斬.png" alt="德國經濟成長預測腰斬">
+<h3>經濟成長預測腰斬：2026 GDP 0.5%、通膨 2.7%、失業率 6.4%</h3>
+<p>聯邦經濟部長 Katherina Reiche（CDU）4/22 公布春季預測，2026 年 GDP 從原預估的 1.0% 一口氣下修至 <strong>0.5%</strong>，2027 年也從 1.3% 降到 0.9%。3 月通膨 2.7%（兩年來最高）、3 月失業率 6.4%（失業人口 302 萬），Q1 企業破產 4,573 件創 20 年新高。能源價格年增 7.2%、燃油 +20%、暖氣油 +44.4%；投資信心跌至 2022 年末以來最低。綠黨 Banaszak 批扣除復活節假日效應後實質零成長；AfD 稱這份報告是「衰退文件」，真實成長僅 0.2%。主因是中東伊朗戰爭與能源衝擊持續發酵。</p>
+
+<img src="assets/images/2026/weekly/W17_圖卡2_軍事戰略.png" alt="德國史上首份軍事戰略Pistorius公布">
+<h3>德國首份軍事戰略：目標歐洲最強常規軍</h3>
+<p>國防部長 Pistorius 4/22 公布德國史上第一份正式軍事戰略（Militärische Strategie），目標 2030 年代成為「歐洲最強常規軍」（stärkste konventionelle Streitkraft Europas）。現役兵員從現在約 186,000 人擴編到 <strong>26 萬</strong>、後備從 7 萬增至 <strong>20 萬</strong>，並首度在官方文件明列俄羅斯為主要威脅。能力重點：防空、遠程武器系統、反水雷。ZDF 稱「最強常規軍」是核心目標；taz 批評計畫「宏大但模糊」、缺乏具體細節；綠黨 Nanni 指缺乏歐洲指南針視角；Tagesspiegel 報導大部分戰略文件列為機密，國防部要求媒體勿公布完整文件。</p>
+
+<img src="assets/images/2026/weekly/W17_圖卡3_Mercosur自貿.png" alt="梅爾茨會晤魯拉 EU-Mercosur協定5/1暫時生效">
+<h3>梅爾茨會晤魯拉：EU-Mercosur 自貿協定 5/1 暫時生效</h3>
+<p>巴西總統 Lula 4/20-21 訪德，於漢諾威 Herrenhausen 宮受軍禮接待，與梅爾茨總理共同出席 Hannover Messe 開幕典禮，雙邊政府進行第一次完整磋商，共 15 位部長（巴 7 + 德 8）出席。Merz 稱 EU-Mercosur 自貿協定是對抗「強權政治」（Machtpolitik）的象徵，協定 5/1 起暫時生效，涵蓋人口超過 7 億，是史上規模最大之一。合作領域含貿易、原料、國防、數位、研究、氣候。德國商界（BDI）看好可分散供應鏈、降低對中依賴；法國農業界與環團則擔心南美農產衝擊、雨林保護不足。4/21 柏林彼得斯堡氣候對話同步登場。</p>
+
+<img src="assets/images/2026/weekly/W17_圖卡4_家計政策.png" alt="德國家計政策三大變動退休金Bürgergeld通勤津貼">
+<h3>家計政策三大變動：退休金 +4.24%、Bürgergeld 連三年凍漲、通勤津貼擴增</h3>
+<ul>
+<li><strong>退休金 7/1 上調 +4.24%</strong>，月均多 78 歐，全德約 2,150 萬退休人士受惠。但低收入族群因稅後實際入袋金額縮水，「明面漲、實質縮」。</li>
+<li><strong>Bürgergeld 單身戶 €563 連 3 年凍漲</strong>。原本應依物價指數調降，靠既得保護條款（Bestandsschutz）避免實際削減。</li>
+<li><strong>通勤津貼 1/1 起統一 38 Cent／公里</strong>，從第 1 公里就能扣抵（過去前 20 公里只能 30 Cent），通勤族整體減稅約 11 億歐元。</li>
+</ul>
+
+<img src="assets/images/2026/weekly/W17_圖卡5_民生新制.png" alt="2026德國民生法規新制氣費電網電商">
+<h3>2026 民生法規新制：氣費結構簡化、電網注資 €65 億、電商強制設退款按鈕</h3>
+<ul>
+<li><strong>Gasspeicherumlage（儲氣費）2026 年起廢除</strong>，這是 2022 能源危機時期加在每度燃氣上的政府收費，廢除後天然氣帳單結構簡化、家庭負擔減少。</li>
+<li><strong>輸電網費聯邦 2026 注資 65 億歐元</strong>（4 年共 260 億），把原本由用戶承擔的網路擴建成本部分轉給聯邦預算，私戶與企業電費壓力減輕。</li>
+<li><strong>6/19 起電商強制「一鍵撤單／退款按鈕」（Kündigungsbutton／Widerrufsbutton）</strong>，解約與簽約一樣簡單，訂閱族最有感。</li>
+</ul>
+
+<hr>
+
+<h2 id="apr13-19">4月13–19日：油稅減免、梅爾茨民調崩盤</h2>
+<p>這週黑紅聯盟一連推出兩大民生紓困包、國防部長上演戲劇性政策大逆轉、漢莎再爆勞資衝突，油價與通膨同步失守，Merz 民調更跌到歷史谷底——以下是一週完整回顧。</p>
+
+<img src="assets/images/2026/weekly/W16_圖卡1_油稅減免.png" alt="德國油稅減免方案">
+<h3>油稅減免 17 Cent／升（5/1 - 6/30）</h3>
+<p>4/12 CDU/CSU + SPD 聯合委員會 Koalitionsausschuss 定案，4/13 Merz 總理與勞動部長 Bas 召開記者會公開宣布，4/16 送進 Bundestag 一讀並交由財政委員會審議，預計下週（4/20-26）完成二、三讀表決，5/1 正式上路，6/30 到期。法條實際是降能源稅 14.04 Cent／升，加上連帶增值稅效應才湊到 17 Cent。整體減收規模約 16 億歐元，財源由 2026 年提前調高菸稅 Tabaksteuer 補洞。DIW 警告：石油公司未必會把減稅完整轉嫁給消費者，實際到加油站的降幅可能打折。受惠族群主要是通勤族、長途駕駛與運輸業。</p>
+
+<img src="assets/images/2026/weekly/W16_圖卡2_企業補助1000歐.png" alt="德國企業補助1000歐方案">
+<h3>雇主可發 €1,000 紓困金（Entlastungsprämie）</h3>
+<p>完全免稅、免社保，全額進員工口袋，參考過去 2022-24 年的 Inflationsausgleichsprämie 模式。4/12 黑紅聯盟決議，4/13 政府公開宣布，接下來 4-5 月會把所得稅法 EStG 修正草案送進 Bundestag，修法通過後雇主即可開始自願發放，2026 年全年都能發，12/31 截止。關鍵：錢不是政府發，是企業自願發——自由業、自僱者完全領不到；DGB 工會也批 2026 一年時限太短，呼籲延到 2027。只要有德國勞動合約、雇主願意發，就能拿到全額 €1,000。</p>
+
+<img src="assets/images/2026/weekly/W16_圖卡3_漢莎CityLine.png" alt="漢莎CityLine無預警關閉">
+<h3>漢莎 CityLine 無預警關閉</h3>
+<p>兩週內四度罷工（VC 飛行員工會 + UFO 空服員工會）、4/15-17 停飛 80-90% 航班，漢莎再宣布區域子公司 CityLine 提前兩年結束營運（原訂 2028 退場），2,200 名員工一夜失業。CityLine 是漢莎集團 1958 年成立的區域子公司，主飛德國國內線與歐洲中短程，使用 Embraer E190/E195、CRJ900 等支線客機，法蘭克福、慕尼黑為主要樞紐，是飛往中小型城市（如 Bremen、Graz）的主力。漢莎理由：煤油成本暴漲＋罷工損失過重；UFO 工會批「這是對自家員工宣戰」。</p>
+
+<img src="assets/images/2026/weekly/W16_圖卡4_油價通膨.png" alt="德國油價破€2與通膨">
+<h3>油價破 €2／升，德國 GDP 下修至 0.5%</h3>
+<p>德國汽油、柴油雙雙突破 €2／升，3 月通膨率升至 2.7%（兩年新高）。GDP 預測從戰前的 1.3% 大幅下修到 0.5%，失業率預計升至 6.4%，ifo 景氣指數跌至 86.4。主因是伊朗一度封鎖荷姆茲海峽（Straße von Hormuz），阻斷全球 20% 石油流量，4/8 美伊停火後船運量仍未恢復戰前水準。IMF 4/14 同步下修全球成長預測，德國首當其衝。</p>
+
+<img src="assets/images/2026/weekly/W16_圖卡5_梅爾茨民調.png" alt="梅爾茨民調崩盤AfD首度領先">
+<h3>梅爾茨民調崩盤，AfD 首度領先</h3>
+<p>Morning Consult 4 月民調：滿意度 19%、不滿 76%，成為 24 國元首中最不受歡迎者。ZDF 政治晴雨表顯示 AfD 26% 首度超越 CDU/CSU 25%，65% 民眾評梅爾茨表現「差」，超過半數 CDU 自家選民也對自家總理不滿。Insa 分析：主因是違背競選承諾、經濟持續下行。</p>
+
+<img src="assets/images/2026/weekly/W16_圖卡6_兵役爭議.png" alt="德國兵役爭議大逆轉Pistorius讓步">
+<h3>兵役法出國爭議大逆轉（Pistorius 讓步）</h3>
+<p>源頭是 2025/12/5 Bundestag 通過、2026/1/1 生效的《兵役現代化法》Wehrdienstgesetz。4 月初媒體揭露法條細節：17-45 歲德國籍男性出國逾 3 個月須先向聯邦國防軍申請同意——而且這條原本只適用於「戰備狀態 Spannungs- und Verteidigungsfall」，新法版本把它擴張到和平時期也適用。Z 世代立刻炸鍋、柏林、漢堡、慕尼黑等地陸續出現抗議；BSW 黨魁 Wagenknecht 4/6 公開要求 Pistorius 下台。Pistorius 4/10 讓步，承認「溝通不清」（nicht ausreichend durchdacht），本週透過 Allgemeinverfügung（普通處分）登上聯邦公報 Bundesanzeiger，明文寫「只要 Wehrpflicht 仍處於暫停狀態，出國同意就視為已授予」。重點：法條本身沒有修改，只是行政命令暫時凍結——未來一旦政治情勢變動、宣布戰備或恢復強制徵兵，這條隨時可以啟動。</p>
+
+<hr>
+
+<h2 id="apr6-12">4月6–12日：衰退警報、通膨新高、廢核大逆轉</h2>
+<p>這一週的德國，充滿了「危」與「轉」的氣氛。經濟數據令人擔憂、物價讓人頭痛、能源政策又在大翻轉。</p>
+
+<img src="assets/images/2026/weekly/W15_圖卡1_經濟衰退.png" alt="德國經濟衰退警報">
+<h3>德國經濟衰退警報：增長預測腰斬</h3>
+<p>德國六大經濟研究機構本週聯合發布春季預測報告，2026 年經濟成長率從原本預估的 1.3% 大幅下修至 0.6%，幾乎腰斬！2027 年預測也從 1.4% 降到 0.9%。問題核心：中東伊朗戰爭導致荷姆茲海峽受阻，國際油氣價格飆升。德國作為高度依賴進口能源的工業大國，首當其衝。第一季度 GDP 幾近停滯，工業訂單持續萎縮，化工、金屬加工、造紙等能源密集產業受創最重。</p>
+
+<img src="assets/images/2026/weekly/W15_圖卡2_通膨危機.png" alt="德國通膨飆到23個月新高">
+<h3>德國通膨飆到 23 個月新高</h3>
+<p>3 月德國通膨率跳升至 2.7%，較 2 月的 1.9% 大幅上升，創下近兩年新高。能源成本是最大推手：燃油價格上漲 20%、供暖油飆升 44.4%、整體能源成本年增 7.2%。德國政府已緊急通過「加油站每日限漲一次」的臨時措施（中午 12 時後才能調漲）。在德生活小提醒：租約續約季，許多房東以「能源成本上升」為由調漲房租，建議查詢所在地區的 Mietspiegel（房租指標）；早上加油可能比下午划算；建議重新檢視每月開支，特別是能源和食品支出。</p>
+
+<img src="assets/images/2026/weekly/W15_圖卡3_能源政策.png" alt="德國能源政策大轉向梅爾茨承認廢核是錯誤">
+<h3>德國能源政策大轉向：梅爾茨承認廢核是錯誤</h3>
+<p>梅爾茨總理罕見承認：上屆政府的「全面廢核」決定是一個「重大戰略錯誤」，德國現在正以「全世界最昂貴的方式」推動能源轉型。新政府能源政策方向：重新評估核能，開放小型模組反應爐（SMR）；新增 12GW 天然氣發電容量；維持 2045 淨零排放目標，但「不讓氣候政策綁手綁腳」。綠黨和環保團體強烈反對，認為不該為短期經濟利益背棄氣候承諾；工業界和工會則大力支持，認為不穩定且昂貴的電力正在逼走德國製造業。</p>
+
+<hr>
+
+<h2 id="mar30-apr5">3月30日–4月5日：油價新高、機場T3啟用</h2>
+
+<img src="assets/images/2026/weekly/W14_圖卡1_油價飆升.png" alt="德國油價飆升創歷史新高">
+<h3>油價飆升創歷史新高</h3>
+<p>伊朗戰爭導致荷姆茲海峽關閉，全球 25% 石油運輸中斷。德國柴油飆至 EUR 2.376 /公升，布倫特原油突破 USD 126 /桶。政府 4/1 起實施「每日中午 12:00 限漲一次」，違者罰款最高 EUR 10 萬。IEA 已警告 4 月油價情況只會更糟，不排除繼續走高。想省錢加油，推薦兩款 App：CleverTanken（全德油站即時地圖，cleveres-tanken.de）、PACE Drive（顏色地圖一目了然，可直接 App 付款免排隊，支援 Android Auto / CarPlay）。</p>
+
+<img src="assets/images/2026/weekly/W14_圖卡2_經濟預測.png" alt="德國經濟成長預測腰斬">
+<h3>德國經濟成長預測腰斬</h3>
+<p>2026 年 GDP 成長率從 1.3% 大幅下修至 0.6%，通膨升至 2.7%。總理梅爾茨坦言「德國經濟正處於十字路口」，Ifo 調查顯示僅 25% 的經濟學家看好政府目前的應對措施。</p>
+
+<img src="assets/images/2026/weekly/W14_圖卡4_法蘭克福T3.png" alt="法蘭克福機場第三航廈啟用">
+<h3>法蘭克福機場 Terminal 3（4/22 啟用）</h3>
+<p>EUR 40 億打造，年容量 1,900 萬旅客。台灣旅客請注意：中華航空（CI）4/23 起搬入 T3，報到與安檢全部在 T3；長榮航空（BR）屬 Star Alliance，繼續在 T1，不受影響。CT 安檢升級：21 條通道，液體和筆電不需從包包取出。SkyTeam 貴賓室 550m² 同步啟用，華航商務/菁英旅客可使用。搭火車的旅客先到 T1（Fernbahnhof），再轉 SkyLine 輕軌（8 分鐘）前往 T3。</p>
+
+<img src="assets/images/2026/weekly/W14_圖卡3_四月新規.png" alt="德國四月新規">
+<h3>四月其他新規</h3>
+<ul>
+<li>公務員加薪 +2.8%（最低 EUR 100 /月），4/1 起生效</li>
+<li>入籍男性提醒：45 歲以下若長期居住德國境外（連續超過 3 個月），須向地區兵役局辦理海外申報，建議入籍前先諮詢移民律師</li>
+</ul>
+
+<hr>
+
+<h2 id="mar23-29">3月23–29日：罷工落幕、Bundestag三法通過</h2>
+
+<img src="assets/images/2026/weekly/W13_圖卡1_油價飛漲.png" alt="德國油價飛漲Diesel創近年新高">
+<h3>油價警報：Diesel 創近年新高 2.31 EUR</h3>
+<p>因伊朗封鎖荷姆茲海峽，全球油價急升——布蘭特原油 3 月初一度突破 120 美元/桶。目前德國加油站均價：Super E10 約 2.086€，Diesel 達 2.310€/公升。Bundestag 已於 3/26 緊急通過油價減免方案，細節待公告。省錢小訣竅：避開早上 7-8 點，下午 4 點後加油通常較便宜！</p>
+
+<img src="assets/images/2026/weekly/W13_圖卡1_RLP選舉.png" alt="RLP選舉後組閣進展">
+<h3>RLP 選舉後組閣進展</h3>
+<p>萊茵蘭-普法茲邦選舉結果確認後，CDU 的 Gordon Schnieder 籌組新政府，CDU + SPD 大聯合政府談判正式展開，終結 SPD 35 年執政的歷史轉折進入新篇章。</p>
+
+<img src="assets/images/2026/weekly/W13_圖卡2_交通罷工達成.png" alt="NRW交通罷工達成協議">
+<h3>罷工落幕：NRW 交通工人五大訴求全數達成</h3>
+<p>歷時近兩個月的 ver.di 大罷工本週出現重大進展：3/26 北萊茵-西伐利亞邦（NRW）與雇主達成協議，約 10 萬名交通從業人員受惠。週工時分階段降至 38 小時、班次間休息延長至 11 小時、週日加班費提升。BW、Hessen、NRW 均已簽署，其他各邦談判仍持續中。</p>
+
+<img src="assets/images/2026/weekly/W13_圖卡3_Bundestag生活提醒.png" alt="Bundestag三大政策通過與生活提醒">
+<h3>Bundestag 本週三大政策</h3>
+<p>3/26 緊急油價補貼方案通過；3/27 新版聯邦氣候保護計畫上路；3/27 年金新規通過，附加健保費 3 月起也影響退休人士。在德台灣人本週必知：3/29 凌晨 2:00 → 3:00，夏令時間（Sommerzeit）開始，少睡一小時。陸地邊境管制延長至 2026 年 9 月，過境請備妥護照。</p>
+
+<img src="assets/images/2026/weekly/W13_圖卡3_德國經濟Q1.png" alt="德國2026 Q1經濟數據">
+<h3>德國 2026 Q1 經濟數據</h3>
+<p>第一季度 GDP 幾近停滯，各大機構開始下調全年預測。消費信心持續低迷，能源成本衝擊工業生產，Q2 走向成為觀察重點。</p>
+
+<hr>
+
+<h2 id="mar16-22">3月16–22日：RLP選舉CDU大勝、BER機場停擺</h2>
+
+<img src="assets/images/2026/weekly/W12_圖卡1_RLP選舉.png" alt="萊茵蘭-普法茲邦議會選舉CDU大勝">
+<h3>萊茵蘭-普法茲邦（Rheinland-Pfalz）選舉結果</h3>
+<p>CDU 30.9% 大勝，終結 SPD 35 年執政！SPD 25.9%（-10.2%）慘跌至第二，AfD 20.1%（+11.9%）飆升成第三大黨，綠黨 8.1% 勉強進入議會，FDP、自由選民、左翼黨全部未過 5% 門檻。CDU 的 Gordon Schnieder 將成為新任邦長，最可能組閣：CDU + SPD 大聯合政府。</p>
+
+<img src="assets/images/2026/weekly/W12_圖卡2_BER罷工.png" alt="柏林BER機場大罷工全面停擺19小時">
+<h3>柏林 BER 機場大罷工！全面停擺 19 小時</h3>
+<p>3/18 Verdi 工會發起全面罷工：445 航班取消，57,000 名旅客受影響，Lufthansa、Ryanair、easyJet 全部停飛。原因：工會要求加薪 6%，資方僅願 1-1.5%。下一輪談判：3/25，短期內仍有罷工風險！</p>
+
+<img src="assets/images/2026/weekly/W12_圖卡3_經濟景氣.png" alt="德國經濟復甦放緩景氣指數">
+<h3>德國經濟：復甦放緩</h3>
+<p>消費信心指數跌至 -24.7 點，2 月破產企業 1,466 家（+5%），影響 23,000 名員工。三大隱憂：中東危機推高油氣價格、美國關稅衝擊出口、通膨回升壓抑消費。好消息：各機構預測 2026 GDP 仍有 +0.6~1.5% 成長，Q2 起有望逐步回溫。</p>]]></content:encoded>
+  </item>
   <item>
     <title>2026 推薦的免付費德國銀行</title>
     <link>https://taiwanese-in-germany.com/posts/german-bank-recommendation.html</link>
@@ -529,412 +976,6 @@
 
 
 <p class=""></p>]]></content:encoded>
-  </item>
-  <item>
-    <title>德國知識小種子週報精選</title>
-    <link>https://taiwanese-in-germany.com/posts/weekly-digest.html</link>
-    <guid isPermaLink="true">https://taiwanese-in-germany.com/posts/weekly-digest.html</guid>
-    <pubDate>Sun, 05 Jul 2026 00:00:00 GMT</pubDate>
-    <description>黑紅聯合委員會 7/2 拍板 34 項改革「振興與就業方案」——病假擬自第一天起就要證明、廢除電話開病假單、2027 起所得稅年減稅 100 億 €、富人稅門檻降至 25 萬 €（均為政治協議、尚待立法），家醫協會批「絕對災難」、DGB 斥「對員工的不信任」；德國世足夢碎：6/29 波士頓 32 強戰 120 分鐘 1:1 戰平巴拉圭、PK 3:4 隊史首度十二碼落敗出局，Nagelsmann 去留本週揭曉；7/1 起公民金（Bürgergeld）改制新版基礎保障（Grundsicherungsgeld），制裁更快更重、財產寬限期取消；油稅減免 6/30 到期、7/1 中午 E10 應聲跳漲 18.2 分、柴油 20.4 分；EU 對 150 € 以下第三國小包裹開徵每類商品 3 € 關稅，Temu、Shein 與台灣直送包裹全數適用；六月通膨降至 2.3% 優於預期、失業 293.6 萬人年增 2.2 萬；七月新制：退休金 +4.24% 生效、短程航空稅調降、維修可延長 12 個月保固。德國鐵路 6/23–24 因數位列車無線電（GSM-R）系統故障一度全國停駛、數千旅客滯留；El Niño 助長的歷史性熱浪席捲歐洲，西葡上看 45°C、法國 58 省警戒、德國西南恐達 40°C，並衝擊核電降載、限水與世足公播；德國世足兩戰全勝、6/20 靠 Undav 補時絕殺 2:1 逆轉象牙海岸、提前晉 32 強；6/18–19 EU 高峰會聚焦烏克蘭、對俄第 21 輪制裁與 2028–34 多年期財政框架（MFR），Merz 挺烏卻反對共同舉債；漢莎中東航點停飛至 10/24、避開伊朗領空；美伊停火備忘錄 6/19 正式簽署、解除荷姆茲海峽封鎖並啟動約 60 天核談判；6/16 ZEW 景氣預期單月跳升 20.7 點、重返正值 +10.5，現況指標續跌至 −81.0。</description>
-    <category>德國時事</category>
-    <content:encoded><![CDATA[<nav class="post-toc" aria-label="本篇目錄">
-  <p class="post-toc__title">快速跳轉</p>
-  <ul>
-    <li><a href="#jun29-jul5">6月29日–7月5日：聯合委員會 34 項改革（病假新規＋所得稅減百億）、德國世足 PK 戰出局隊史首見、公民金改制新版基礎保障、油稅減免退場油價跳漲、EU 小包裹 3 € 關稅、六月通膨 2.3% 失業 294 萬、七月新制懶人包</a></li>
-    <li><a href="#jun15-21">6月15日–28日：德國鐵路全國大停擺、歐洲熱浪上看 45°C、世足晉 32 強、EU 高峰會三大戰場、中東航線大停飛至 10/24、伊朗停火 6/19 簽署、ZEW 景氣預期 +10.5</a></li>
-    <li><a href="#jun8-14">6月8日–14日：世足首戰週日 19 點開踢、改革高峰會空手而回、對美出口年減 12.9%、通膨回落 2.6%、ECB 三年來首升息、薪資透明 6/8 啟動、六月新制懶人包</a></li>
-    <li><a href="#jun1-7">6月1日–7日：世足倒數 Neuer 回鍋、安理會競選史上首敗、退休金調漲 4.24%、破產潮 20 年新高</a></li>
-    <li><a href="#may18-31">5月18日–31日：2024 入籍破 29 萬、藍卡新門檻、機票稅調降、E-Auto 補助、GEAS 倒數、經濟回穩、AfD 反超 CDU、Merz 嗆川普</a></li>
-    <li><a href="#may11-17">5月11日–17日：Pistorius 訪基輔、紅場閱兵停火破局、世足噪音放寬、新生兒篩檢加項</a></li>
-    <li><a href="#apr27-may10">4月27日–5月10日：梅爾茨執政滿一年、稅收驟減178億、車關稅25%、紓困上路</a></li>
-    <li><a href="#apr20-26">4月20–26日：GDP腰斬、德國首份軍事戰略、Mercosur生效</a></li>
-    <li><a href="#apr13-19">4月13–19日：油稅減免、梅爾茨民調崩盤</a></li>
-    <li><a href="#apr6-12">4月6–12日：衰退警報、通膨新高、廢核大逆轉</a></li>
-    <li><a href="#mar30-apr5">3月30日–4月5日：油價新高、機場T3啟用</a></li>
-    <li><a href="#mar23-29">3月23–29日：罷工落幕、Bundestag三法通過</a></li>
-    <li><a href="#mar16-22">3月16–22日：RLP選舉CDU大勝、BER機場停擺</a></li>
-  </ul>
-</nav>
-
-<h2 id="jun29-jul5">6月29日–7月5日：聯合委員會 34 項改革（病假新規＋所得稅減百億）、德國世足 PK 戰出局隊史首見、公民金改制新版基礎保障、油稅減免退場油價跳漲、EU 小包裹 3 € 關稅、六月通膨 2.3% 失業 294 萬、七月新制懶人包</h2>
-<p>這一週的德國，政策、錢包與綠茵場同時開演。先說對上班族影響最大的：<strong>黑紅聯合委員會（Koalitionsausschuss）7/2 拍板 34 項改革方案「振興與就業方案」</strong>——病假擬自第一天起就要證明、廢除電話開病假單、2027 起所得稅年減稅 100 億 €——均為政治協議、需立法後才生效，勞資反應兩極。綠茵場上則是心碎一夜：<strong>6/29 德國在波士頓的世足 32 強戰 120 分鐘 1:1 戰平巴拉圭，十二碼 3:4 落敗出局</strong>——隊史世足首度 PK 戰吞敗，Nagelsmann 去留成為全國話題。回到民生面，<strong>7/1 是新制大日</strong>：公民金（Bürgergeld）走入歷史、改制為制裁更嚴的<strong>新版基礎保障（Grundsicherungsgeld）</strong>；實施兩個月的<strong>油稅減免 6/30 到期</strong>，油價應聲跳漲；EU 對 <strong>150 € 以下第三國小包裹開徵每類商品 3 € 的關稅</strong>，Temu、Shein、AliExpress 到台灣直送包裹全數適用；此外退休金調漲 4.24% 正式入帳、短程航空稅調降。數據面則傳來難得的好消息：<strong>六月通膨降至 2.3%、優於市場預期</strong>，但失業人數 293.6 萬、比去年多 2.2 萬，勞動市場依舊欲振乏力。以下逐題深入。</p>
-
-<img src="assets/images/2026/weekly/W27_圖卡1_政府改革包.png" alt="聯合委員會 7/1 拍板 34 項改革 病假第一天起要證明 廢電話病假單 2027 所得稅減稅 100 億歐元 富人稅門檻降至 25 萬">
-<h3>執政聯盟拍板 34 項改革：只是政治協議，這些與你最相關</h3>
-<p>本週的政治重磅來自聯合委員會（Koalitionsausschuss）。<strong>7/2 CDU/CSU 與 SPD 的聯盟高層敲定名為「振興與就業方案」（Programm für Aufschwung und Beschäftigung）的 34 項改革包</strong>，橫跨稅制、勞動市場、退休金、官僚簡化、數位化、住宅與公司法，總理 Merz 稱要「帶領德國走向未來」。<strong>先講清楚它的性質：這是一份 12 頁的政治協議、還不是法律</strong>——每項措施都要先由內閣提出法律草案、再經 Bundestag（部分還需 Bundesrat）通過才會生效，具體條文、過渡規定與時程多數尚未確定；目前只有兩個明確時點：<strong>所得稅改革目標 2027/1/1 生效</strong>、退休金立法包裹（落實 Rentenkommission 建議）目標 2026 年底前通過，而工時法（Arbeitszeitgesetz）改革甚至不在這份文件裡、Merz 說「夏天再談」。<strong>與普羅大眾最相關的措施</strong>：（1）<strong>病假新規</strong>——擬自第一天起要 AU 證明、廢除電話開單，爭議最大，下一張卡單獨解析；（2）<strong>所得稅年減稅約 100 億 €（2027 起）</strong>——調高基本免稅額（Grundfreibetrag）、兒童免稅額與兒童金、上班族免稅額（Arbeitnehmerpauschbetrag）並壓平第二累進區間，<strong>週日與國定假日加給的免稅額度同步提高</strong>；雙薪兩孩、應稅所得 6 萬 € 的家庭 2028 全效後每年可省逾 600 €；<strong>財源由高所得買單</strong>——富人稅（Reichensteuer）45% 門檻自約 27.7 萬降至 25 萬 €、28 萬 € 以上新增 47%；（3）<strong>勞動市場鬆綁，求職簽約要特別留意</strong>——2030 年底前入職者，無理由定期契約（sachgrundlose Befristung）上限自現行 2 年拉長到 <strong>48 個月、最多可延長 6 次</strong>；年收入超過退休保險計費上限（Beitragsbemessungsgrenze）1.75 倍的高薪族，雇主擬自 2027/1/1 起可<strong>支付「適度遣散費」直接終止僱傭關係</strong>（解僱保護鬆綁）；（4）<strong>Aktivrente 續行</strong>——屆齡續工作月入 2,000 € 免稅；另有 Minijob 調整、官僚減量、住宅與 AI 等措施。<strong>各方反應</strong>：DGB 主席 Fahimi 兩面評價——肯定減稅是「就業與成長的正確訊號」、但強烈反對病假新規；ifo 所長 Fuest 稱「不是大手筆，但有邁向成長友善政策的重要步伐」，DIW 所長 Fratzscher 則批本質是「象徵性包裹」；雇主協會 BDA 讚「遲來的政策轉向」，綠黨批「拒絕工作」、AfD 稱「嚴重令人失望」。<strong>觀察重點</strong>：內閣將逐案提出草案，病假與解僱保護的立法攻防、以及 9 月薩克森-安哈特（Sachsen-Anhalt）州選前的政治壓力，是下半年的重頭戲。</p>
-<p class="post-sources">📚 來源：<a href="https://www.bundesregierung.de/breg-de/aktuelles/reformen-rente-arbeitsmarkt-steuern-2445598" target="_blank" rel="noopener noreferrer">Bundesregierung｜改革決議</a> · <a href="https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/koalitionsausschuss-einigung-auf-steuerentlastung.html" target="_blank" rel="noopener noreferrer">BMF｜所得稅減稅細節</a> · <a href="https://www.twobirds.com/de/insights/2026/germany/koalitionsausschuss-juli-2026-arbeitsrechtliche-kernpunkte-des-reformpakets-im-berblick" target="_blank" rel="noopener noreferrer">Bird &amp; Bird｜勞動法重點與立法時程</a> · <a href="https://www.t-online.de/finanzen/aktuelles/wirtschaft/id_101324414/reformpaket-der-koalition-so-gemischt-reagieren-oekonomen-und-gewerkschaft.html" target="_blank" rel="noopener noreferrer">t-online｜經濟學家與工會反應</a> · <a href="https://www.zdfheute.de/politik/deutschland/merz-koalition-treffen-reformen-100.html" target="_blank" rel="noopener noreferrer">ZDF｜改革包總覽</a></p>
-
-<img src="assets/images/2026/weekly/W27_圖卡2_病假新規.png" alt="病假新規 AU 證明擬第一天起提交 廢除電話病假單 尚未立法 現行最遲第 4 天規定不變">
-<h3>病假新規解析：第一天就要證明？——目前僅是協議、現行規定完全未變</h3>
-<p>改革包裡吵得最兇的就是病假這條，值得單獨講清楚。<strong>現行規定（目前完全沒變！）</strong>：依《工資續付法》（Entgeltfortzahlungsgesetz）§5，員工<strong>最遲在生病第 4 個日曆天</strong>須提交勞動能力喪失證明（AU-Bescheinigung），雇主本來就有權要求自第一天起提交（不少僱傭合約已這樣約定）；輕症者可<strong>電話或視訊開立病假單</strong>（限診所熟識病人、一次最多 5 天）——這是 Corona 時期為診所減壓引入、2023 年 12 月常態化的制度。<strong>擬議的變更</strong>：（1）AU 證明改為<strong>自請病假第一天起就有提交義務</strong>；（2）<strong>廢除電話開單</strong>；（3）<strong>不實開立 AU 加重處罰</strong>。Merz 的理由是疫後「病假率暴增至國際高檔」；但專家指出，這個「暴增」很大程度是 <strong>eAU 電子登錄的統計效應</strong>——以前紙本病假單常常根本沒進統計。<strong>反彈罕見地跨黨派</strong>：家醫協會（Hausärzteverband）批「絕對災難」，輕症者全湧進診所、流感季候診室恐爆滿；聯邦醫師公會強調電話開單「行之有效、未見濫用」；ver.di 主席 Werneke 斥「對員工的不信任」、IG Metall 主席 Benner 批「替雇主完成了一張不社會的願望清單」；連 SPD 自家人都開砲——圖林根（Thüringen）衛生部長 Schenk：「想吐的人應該躺在床上，而不是坐進候診室」，薩克森-安哈特（Sachsen-Anhalt）衛生部長 Grimm-Benne 批評新規是對員工的猜疑。爭議延燒後 Merz 澄清「不必第一天就進診所」——那證明到底怎麼開？視訊？線上表單？<strong>配套完全未定</strong>。<strong>最重要的結論</strong>：這一切還在<strong>政治協議階段</strong>，需要內閣草案、國會三讀才會生效，<strong>生效日未定</strong>；在新法生效前<strong>一切照舊：最遲第 4 天交證明、輕症仍可電話開單</strong>（除非你的合約另有約定）。立法進度與過渡規定，本專頁會持續追蹤。</p>
-<p class="post-sources">📚 來源：<a href="https://www.zdfheute.de/politik/deutschland/krankschreibung-schwarz-rote-koalition-reform-aerzte-attest-arbeitsunfaehigkeitsbescheinigung-100.html" target="_blank" rel="noopener noreferrer">ZDF｜病假改革總覽</a> · <a href="https://www.aerzteblatt.de/news/koalitionsausschuss-abschaffung-der-telefon-au-und-krankschreibung-ab-erstem-tag-geplant-80e01212-d746-4679-8376-da1a4330b629" target="_blank" rel="noopener noreferrer">Ärzteblatt｜廢除電話 AU 計畫</a> · <a href="https://www.tagesspiegel.de/politik/sie-mussen-nicht-am-ersten-tag-in-die-arztpraxis-merz-verteidigt-plane-zu-krankschreibungen--kritik-jetzt-auch-aus-der-spd-15790919.html" target="_blank" rel="noopener noreferrer">Tagesspiegel｜Merz 澄清與 SPD 批評</a> · <a href="https://www.t-online.de/nachrichten/deutschland/innenpolitik/id_101324230/krankschreibung-kritik-an-katastrophalen-plaenen-der-bundesregierung.html" target="_blank" rel="noopener noreferrer">t-online｜家醫協會批評</a> · <a href="https://www.anwalt.de/rechtstipps/krankschreibung-ab-dem-1-tag-laengere-befristung-und-neue-regeln-fuer-minijobs-was-die-arbeitsrechtsaenderungen-bedeuten-274802.html" target="_blank" rel="noopener noreferrer">anwalt.de｜法律解析</a></p>
-
-
-<img src="assets/images/2026/weekly/W27_圖卡3_世足出局.png" alt="德國世足 32 強戰 1:1 巴拉圭 PK 3:4 出局 隊史首度十二碼落敗 Nagelsmann 去留">
-<h3>德國 PK 戰不敵巴拉圭出局：隊史世足首度十二碼落敗</h3>
-<p>德國的世足冒險在 32 強戛然而止。<strong>6/29（週一）晚間（德國時間 22:30）在波士頓近郊的 Foxborough</strong>，德國對上南美勁旅巴拉圭：<strong>Enciso 第 42 分鐘先馳得點，Havertz 第 54 分鐘扳平</strong>，此後德國久攻不下，最具爭議的一幕發生在<strong>延長賽第 102 分鐘——Tah 接 Brown 的角球頭槌破網，卻因 Anton 被認定對門將 Gill 犯規、進球遭 VAR 取消</strong>；ZDF 裁判專家 Kinhöfer 直言「這絕對無法理解，根本不是犯規」，FIFA 裁判委員會主席 Collina 則替判決辯護；120 分鐘 1:1 進入十二碼大戰。<strong>PK 戰一波三折</strong>：Havertz、Woltemade 先後罰失，40 歲的 Neuer 撲掉 Balbuena 的射門為德國續命，但 <strong>Tah 第六輪高出橫樑，終場 3:4</strong>——《紐約時報》指出，這是<strong>四屆世界冠軍德國隊史上首度在世足 PK 戰落敗</strong>，也是繼 2018、2022 小組出局後，連續第三屆世足鎩羽而歸。<strong>賽後風暴隨即引爆</strong>：《南德意志報》評「某種程度上比 2022 年的災難更難堪」、西班牙《Marca》寫下「德國什麼都不剩了，連十二碼也是」；Nagelsmann 表態想留任（「我不是會逃跑的人」），但 DFB 主席 Neuendorf 直言「這樣的表現不符合我們的標準」，原本力挺的運動總監 Völler 據報也已轉向，多家媒體點名 Klopp 為熱門接班人選，<strong>教練去留與檢討方向預計本週末前定案</strong>。<strong>後續觀察</strong>：世足淘汰賽仍在進行（16 強起賽事持續到 7/19 決賽），酒吧與 Biergarten 公播照常；沒有德國隊的日子，不妨改追同樣晉級的日本或黑馬球隊。</p>
-<p class="post-sources">📚 來源：<a href="https://www.sportschau.de/fussball/fifa-wm-2026/elfer-drama-gegen-paraguay-deutschland-erlebt-naechstes-wm-debakel,spielbericht-deutschland-paraguay-100.html" target="_blank" rel="noopener noreferrer">sportschau｜戰報：PK 悲劇</a> · <a href="https://www.sportschau.de/fussball/fifa-wm-2026/von-deutschland-ist-nicht-mehr-uebrig-presse-zerreisst-dfb-team,pressestimmen-deutschland-paraguay-100.html" target="_blank" rel="noopener noreferrer">sportschau｜國際媒體評論</a> · <a href="https://www.sportschau.de/fussball/fifa-wm-2026/bin-keiner-der-weglaeuft-nagelsmann-schliesst-ruecktritt-aus,wm-nagelsmann-kein-ruecktritt-100.html" target="_blank" rel="noopener noreferrer">sportschau｜Nagelsmann 排除辭職</a> · <a href="https://www.sport1.de/news/fussball/wm/2026/07/deshalb-will-der-dfb-nagelsmann-zum-ruecktritt-bewegen" target="_blank" rel="noopener noreferrer">SPORT1｜DFB 內部動向</a> · <a href="https://www.zdfheute.de/sport/fussball-wm/fussball-wm-2026-deutschland-paraguay-tor-tah-schiedsrichter-100.html" target="_blank" rel="noopener noreferrer">ZDF｜Tah 進球取消爭議</a> · <a href="https://www.sportschau.de/fussball/fifa-wm-2026/schiriexperte-wagner-sieht-fehlentscheidung,deutschland-paraguay-schiedsrichter-100.html" target="_blank" rel="noopener noreferrer">sportschau｜裁判專家指誤判</a></p>
-
-<img src="assets/images/2026/weekly/W27_圖卡4_新版基礎保障.png" alt="公民金 Bürgergeld 7/1 改制新版基礎保障 Grundsicherungsgeld 制裁更快更重 財產寬限期取消">
-<h3>公民金走入歷史：新版基礎保障 7/1 上路，制裁更快更重</h3>
-<p>德國社福制度迎來近年最大轉折。黑紅聯合政府 3 月通過的改革 <strong>7/1 正式生效：公民金（Bürgergeld）更名為「基礎保障金」（Grundsicherungsgeld）</strong>，單身月額暫維持 563 €，但規則全面收緊。<strong>三大變化</strong>：（1）<strong>就業媒合優先（Vermittlungsvorrang）回歸</strong>——Jobcenter 將優先檢視能否直接媒合工作、而非先安排長期進修，30 歲以下適用尤嚴；無故缺席約談<strong>首次尚無罰則、第 2 次起標準給付砍 30%（為期一個月）、連續第 3 次全額停發標準給付</strong>、房租改由 Jobcenter 直接匯給房東；拒絕合理工作或中斷輔導措施者，30% 減發（為期三個月）成為標準制裁，<strong>持續拒絕工作者（Totalverweigerer）最重可全額停發、連住房費用都不保</strong>。（2）<strong>財產規則收緊</strong>——原本首年最高 40,000 € 的財產寬限期（Karenzzeit）廢除，改為<strong>自申請首日起按年齡與工作年資適用 5,000–20,000 € 的免計額</strong>；社福團體警告這是「懲罰預先儲蓄的訊號」，因為 ETF 定期定額等長期儲蓄的保護大幅縮水。（3）<strong>單親義務提前</strong>——單親家長自孩子滿 1 歲起即有就業或參加培力措施的義務，婦女團體批評此舉衝擊的絕大多數是母親。<strong>各方反應罕見一面倒</strong>：勞動部長 Bas（SPD）辯護「能工作的人就必須努力找工作」、強調同時打擊社福詐欺；DGB（德國工會聯合會）批評是「社會倒退」，SoVD 警告最重制裁形同把人推向無家可歸，《taz》的評論標題更直接——「最高刑罰：流落街頭」；第一線 Jobcenter 則抱怨新制是「官僚怪獸」、行政量暴增。<strong>權益提醒</strong>：領取者 7 月起務必準時赴 Jobcenter 約談並保留請假證明；財產接近免計門檻者，建議先向 Caritas、Diakonie 等社福諮詢單位確認自身情況。</p>
-<p class="post-sources">📚 來源：<a href="https://www.bundesregierung.de/breg-de/aktuelles/bundesrat-neue-grundsicherung-2399562" target="_blank" rel="noopener noreferrer">Bundesregierung｜新版基礎保障</a> · <a href="https://www.zdfheute.de/politik/deutschland/grundsicherung-bas-arbeitsministerin-sozialleistungen-100.html" target="_blank" rel="noopener noreferrer">ZDF｜勞動部長 Bas 專訪</a> · <a href="https://www.sovd.de/aktuelles/meldung/reform-der-grundsicherung-beschlossen-sovd-warnt-vor-folgen" target="_blank" rel="noopener noreferrer">SoVD｜社福團體警告</a> · <a href="https://taz.de/Kabinett-beschliesst-Grundsicherung/!6139324/" target="_blank" rel="noopener noreferrer">taz｜評論：最高刑罰是無家可歸</a> · <a href="https://www.buerger-geld.org/news/grundsicherung/buergergeld-wird-grundsicherungsgeld-strengere-regeln-beim-schonvermoegen-ab-1-juli-2026/" target="_blank" rel="noopener noreferrer">buerger-geld.org｜免計財產新規</a> · <a href="https://www.buerger-geld.org/news/grundsicherung/sanktionen-beim-grundsicherungsgeld-30-prozent-dreimal-plus-eins-totalsperre/" target="_blank" rel="noopener noreferrer">buerger-geld.org｜制裁階梯詳解</a></p>
-
-<img src="assets/images/2026/weekly/W27_圖卡5_油稅減免退場.png" alt="油稅減免 6/30 到期 7/1 中午 E10 漲 18.2 分 柴油漲 20.4 分 ADAC 實測 超過稅負減免">
-<h3>油稅減免 6/30 到期：7/1 中午油價應聲跳漲、柴油漲逾稅額</h3>
-<p>開了兩個月的「加油紅利」正式關門。5/1 起實施的<strong>燃油稅減免（能源稅調降約 14 分、含增值稅減負 16.7 分／公升，慣稱 17 分）於 6/30 到期</strong>。ADAC 的統計顯示，減免期間這筆讓利<strong>大致確實轉嫁給了消費者</strong>——6/29 全國均價 E10 約 1.81 €／公升、柴油約 1.73 €；但減免一到期，加油站毫不猶豫：<strong>7/1 中午 12 時起 ADAC 實測 E10 一口氣漲 18.2 分、柴油漲 20.4 分</strong>——柴油漲幅甚至<strong>超過稅負減免本身</strong>，ADAC 提醒近日加油多比價、避開調價後的首日尖峰。<strong>與通膨的連動</strong>：六月通膨之所以意外降至 2.3%（見數據卡），油稅減免與油價回落正是兩大功臣；Commerzbank 首席經濟學家 Krämer 因此警告，「<strong>7 月通膨將因減免退場而再度上揚</strong>」。有趣的是，《Handelsblatt》的評論則替這項常被罵「補貼油商」的政策平反，稱其為「被低估的成功」——這次減免大致確實反映到了泵價上。<strong>加油提醒</strong>：7 月起每公升約貴 17 分，加滿 50 公升油箱約多付 8.5 €；傍晚 18–22 時加油通常最便宜，出發前可用 ADAC Spritpreise 等比價 App，住邊境的朋友不妨比較盧森堡、奧地利的油價；通勤族也可趁機重算 Deutschlandticket 與開車成本的損益點。</p>
-<p class="post-sources">📚 來源：<a href="https://www.adac.de/news/aktueller-spritpreis/" target="_blank" rel="noopener noreferrer">ADAC｜油價與批評聲明</a> · <a href="https://www.handelsblatt.com/finanzen/geldpolitik/tankrabatt-inflationsrate-in-deutschland-faellt-auf-23-prozent/100235017.html" target="_blank" rel="noopener noreferrer">Handelsblatt｜油稅減免與通膨</a> · <a href="https://www.handelsblatt.com/meinung/kommentare/kommentar-der-unterschaetzte-erfolg-des-tankrabatts/100236664.html" target="_blank" rel="noopener noreferrer">Handelsblatt｜評論：被低估的成功</a> · <a href="https://presse.online/2026/07/01/spritpreise-steigen-nach-tankrabatt-aus/" target="_blank" rel="noopener noreferrer">Presse.Online｜7/1 實測漲幅</a> · <a href="https://ms-aktuell.de/welt/spritpreise-nach-tankrabatt-juli-2026/" target="_blank" rel="noopener noreferrer">MS aktuell｜7 月油價展望</a></p>
-
-<img src="assets/images/2026/weekly/W27_圖卡6_包裹關稅.png" alt="EU 7/1 起對 150 歐元以下第三國小包裹課每類商品 3 歐元關稅 Temu Shein 台灣直送適用">
-<h3>境外網購新關稅：150 € 以下小包裹每類商品收 3 €</h3>
-<p>網購族請注意，<strong>7/1 起 EU 對來自第三國、貨值 150 € 以下的小包裹開徵定額關稅：每一「商品種類」（Warenart）3 €</strong>——行之多年的 150 € 免稅門檻走入歷史。<strong>關鍵細節在「按類計費、不是按包裹」</strong>：一個包裹裡有三類不同商品（例如衣服＋手機殼＋文具）要收 9 €，同類商品多件則只收 3 €——品項越雜、費用越高。<strong>成因</strong>：EU 每年湧入數十億件來自中國電商平台（Temu、Shein、AliExpress、TikTok Shop 等）的直送小包裹，低價傾銷壓垮歐洲零售並衍生大量不合規商品，此案即為堵住漏洞的<strong>過渡方案（暫行至 2028/7/1）</strong>；<strong>11/1 起還將加收小包裹處理費（Bearbeitungsgebühr）</strong>，2028 年起更擬讓所有包裹自第 1 € 起全面課稅。<strong>對在德台灣人的影響要特別留意</strong>：台灣同樣是關稅意義上的第三國，<strong>從台灣網購直送德國的包裹一體適用</strong>；請家人代購、寄送時盡量合併同類品項、簡化分類可省下疊加費用，而<strong>私人親友之間的禮品件（Geschenksendung）45 € 以下依現行規定仍免稅</strong>。收件時 DHL 等貨運業者可能代收關稅並外加代辦手續費，金額有疑義可要求出示海關計算單據。</p>
-<p class="post-sources">📚 來源：<a href="https://www.bundesregierung.de/breg-de/aktuelles/gesetzliche-neuregelungen-juli-2026-2445388" target="_blank" rel="noopener noreferrer">Bundesregierung｜七月法規新制</a> · <a href="https://www.biallo.de/verbraucherschutz/news/neuer-zoll-ab-juli-2026-warum-aus-3-euro-schnell-15-werden/" target="_blank" rel="noopener noreferrer">biallo｜3 € 如何變 15 €</a> · <a href="https://www.techbook.de/shop-pay/shops-marktplaetze/temu-zoll-abgabe-juli-2026" target="_blank" rel="noopener noreferrer">TECHBOOK｜Temu 新關稅解析</a> · <a href="https://www.ihk.de/elbeweser/branchen-channel/handel-channel/eu-schafft-zollfreigrenze-ab-6803732" target="_blank" rel="noopener noreferrer">IHK｜150 € 免稅門檻取消</a></p>
-
-<img src="assets/images/2026/weekly/W27_圖卡7_六月經濟數據.png" alt="六月通膨 2.3% 核心通膨 2.5% 失業率 6.2% 失業 293.6 萬人 年增 2.2 萬">
-<h3>六月數據雙響：通膨 2.3% 優於預期、失業 294 萬回暖乏力</h3>
-<p>兩份月度數據同週出爐，一好一壞。<strong>通膨（6/30 公布）</strong>：六月通膨率<strong>初估 2.3%</strong>，較 5 月的 2.6%、4 月的 2.9% 連續第三個月回落，也<strong>明顯低於經濟學家預期的持平 2.6%</strong>；月比物價還下跌 0.3%，核心通膨（不含食品與能源）為 2.5%。主因是<strong>能源降溫</strong>——能源價格年漲幅從 4 月的 10.1%、5 月的 6.6% 一路收斂到 3.4%，Berenberg 銀行經濟學家 Schmidt 指出「伊朗衝突的緩和讓全球油價回到危機前水準」；HQ Trust 首席經濟學家 Heise 稱這是「給消費者的好消息」。但好消息有保存期限：通膨下滑靠的是油價與 6/30 剛退場的油稅減免（見油價卡），屬一次性因素，Commerzbank 的 Krämer 預告 7 月將回升；正式數據 7/10 公布。<strong>勞動市場（7/1 公布）</strong>：六月失業 <strong>293.6 萬人</strong>，月減 1.5 萬、<strong>比去年同期多 2.2 萬</strong>，失業率 6.2%（月減 0.1 個百分點）；季調後僅減 1,000 人，聯邦就業總署（BA）以「<strong>春季回暖尾聲欲振乏力</strong>」定調，署長 Nahles 直言「勞動市場幾無變化」，繳納社保的就業人數持續微降，登錄職缺 64.8 萬個（年增 1.6 萬）。<strong>數據解讀</strong>：對消費者是喘息——實質購買力回升；對求職者仍是逆風——景氣預期改善（ZEW 六月 +10.5）尚未傳導到徵才端，企業聘僱依舊保守，打算換工作的朋友宜多留財務與時間緩衝。</p>
-<p class="post-sources">📚 來源：<a href="https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/06/PD26_229_611.html" target="_blank" rel="noopener noreferrer">Destatis｜六月通膨初估 +2.3%</a> · <a href="https://www.arbeitsagentur.de/presse/2026-22-arbeitsmarkt-im-juni-2026" target="_blank" rel="noopener noreferrer">BA｜六月勞動市場報告</a> · <a href="https://www.handelsblatt.com/politik/deutschland/arbeitsmarkt-deutsche-arbeitslosenzahl-sinkt-im-juni-nur-leicht/100236758.html" target="_blank" rel="noopener noreferrer">Handelsblatt｜失業僅微降</a> · <a href="https://www.wiwo.de/politik/konjunktur/tankrabatt-und-niedrigerer-oelpreis-deutsche-inflationsrate-sinkt-im-juni/100236915.html" target="_blank" rel="noopener noreferrer">WiWo｜通膨下滑解析</a></p>
-
-<img src="assets/images/2026/weekly/W27_圖卡8_七月新制.png" alt="七月新制 退休金調漲 4.24% 生效 短程航空稅調降 維修延長保固 12 個月 扣押保護額度調高">
-<h3>七月新制懶人包：退休金入帳變多、機票稅調降、維修更划算</h3>
-<p>7/1 生效的新制不只前面三張卡，這裡一次整理。<strong>錢包篇</strong>：（1）<strong>退休金調漲 4.24% 正式生效</strong>——退休金點值（Rentenwert）自 40.79 € 升至 42.52 €，7 月給付起入帳變多（本專頁 W23 已深入解析過調漲背景與世代正義爭論）；（2）<strong>薪資扣押保護額度（Pfändungsfreigrenze）調高</strong>——單身債務人每月不可扣押的基本額度自 1,559.99 € 升至 1,589.99 €。<strong>消費篇</strong>：（3）<strong>航空稅調降</strong>——2,500 公里內航線每位乘客的稅額自 15.53 € 降至 13.03 €（5 月底通過的減稅案此時生效，暑假訂票可留意票價是否反映）；（4）<strong>維修延長保固</strong>——商品保固期內選擇<strong>維修而非退換</strong>，法定保固自動延長 12 個月，鼓勵修理文化；（5）<strong>電子菸回收擴大</strong>——Kiosk、加油站等小型販售點也必須免費回收廢棄電子菸；（6）<strong>長照最低工資調升</strong>——照護輔助人力時薪自 16.10 € 升至 16.52 €、具資格輔助人力 17.80 €、專業照護師 21.03 €；（7）<strong>Minijob 年金新選項</strong>——曾申請免除年金保險義務的 Minijob 工作者，7 月起首度可撤銷該決定、讓工時重新計入年金年資。<strong>行動建議</strong>：領退休金的朋友請核對 7 月給付通知單；家電、3C 在保固內故障，先詢價維修——多換 12 個月保固往往比換新划算；順帶一提，公民金改制（卡 4）、油稅減免退場（卡 5）、小包裹關稅（卡 6）都在同一天生效，堪稱近年變動最密集的一個 7/1。</p>
-<p class="post-sources">📚 來源：<a href="https://www.bundesregierung.de/breg-de/aktuelles/gesetzliche-neuregelungen-juli-2026-2445388" target="_blank" rel="noopener noreferrer">Bundesregierung｜七月法規新制總覽</a> · <a href="https://www.finanzen.net/nachricht/aktien/neues-im-juli-verbraucher-aufgepasst-neuerungen-gesetze-das-aendert-sich-ab-juli-2026-00-15751948" target="_blank" rel="noopener noreferrer">finanzen.net｜七月消費者新制</a> · <a href="https://web.de/magazine/ratgeber/finanzen-verbraucher/aenderungen-juli-2026-42415150" target="_blank" rel="noopener noreferrer">WEB.DE｜七月變動整理</a> · <a href="https://www.t-online.de/finanzen/aktuelles/verbraucher/id_101312298/rente-tankrabatt-grundsicherung-das-aendert-sich-zum-1-juli-2026.html" target="_blank" rel="noopener noreferrer">t-online｜7/1 變動總覽</a></p>
-
-<hr>
-
-<h2 id="jun15-21">6月15日–28日：德國鐵路全國大停擺、歐洲熱浪上看 45°C、世足晉 32 強、EU 高峰會三大戰場、中東航線大停飛、伊朗停火 6/19 簽署、ZEW 景氣預期 +10.5</h2>
-<p>本週德國從鐵軌、天氣到綠茵場，民生大小事接連登場。截稿前的最大意外在鐵軌上：<strong>6/23–24 德國鐵路因數位列車無線電（GSM-R）系統故障一度全國停駛</strong>，數千旅客滯留。天氣上，<strong>El Niño 助長的「歷史性熱浪」席捲歐洲</strong>——西葡上看 45°C、法國 58 省拉警戒、德國西南恐達 40°C，連帶衝擊核電、用水與世足公播。綠茵場則傳捷報：<strong>德國世足兩戰全勝、提前晉 32 強</strong>（6/20 靠 Undav 補時絕殺 2:1 逆轉象牙海岸、坐穩 E 組第 1）。此外，<strong>6/18–19 EU 高峰會</strong>聚焦烏克蘭、對俄第 21 輪制裁與 2028–34 多年期財政框架（MFR）；伊朗戰火仍讓<strong>漢莎中東航點停飛至 10/24</strong>；而<strong>美伊停火備忘錄已於 6/19 正式簽署</strong>、解除荷姆茲海峽封鎖並啟動 60 天核談判；市場提前反映，<strong>6/16 ZEW 景氣預期重返正值 +10.5</strong>。以下逐題深入。</p>
-
-<img src="assets/images/2026/weekly/W25-26_圖卡1_鐵路大停擺.png" alt="德國鐵路 6/23-24 全國大停擺 數位列車無線電 GSM-R 系統故障 數千旅客滯留">
-<h3>德國鐵路全國大停擺：數位列車無線電（GSM-R）系統故障</h3>
-<p>截稿前的最大意外發生在鐵軌上。<strong>6/23（週二）約 22:30 起、延續到 6/24 凌晨</strong>，德國鐵路（DB）的數位列車無線電系統（GSM-R）全國大範圍故障，<strong>ICE 長途、區域列車、S-Bahn 與貨運全面停駛約兩小時</strong>（至 0:50 才恢復），連 Metronom、Erixx 等非 DB 業者也因共用 GSM-R 一併中斷——形同<strong>整個德國鐵路網一度停擺</strong>（德鐵平日單日載運逾 <strong>520 萬</strong>旅客、2024 全年達 19 億人次，可見波及之廣）。據 DB InfraGO 董事長說明，故障源於「計畫性更換一個技術元件」（另有報導指向 IT 更新出錯），安全機關初步排除蓄意破壞（Sabotage）；無法確保行車安全，列車只能停在車站與機廠。官方並未公布受影響的精確班次或旅客人數，僅以「全網停駛」描述規模。災情遍及全國，北威邦（Nordrhein-Westfalen／NRW）尤重——例如 Gelsenkirchen 一場海蓮娜·費雪（Helene Fischer）演唱會散場後約 3,000 人受困、只能自行揪團搭計程車與 Uber；DB 發放計程車與旅館券、並提供過夜的 Aufenthaltszüge。<strong>善後</strong>：6/24 上午雖宣稱恢復，但因車輛運用（Umläufe）被打亂，延誤與取消整個上午持續，夜間運行的貨運受創最深；旅客協會（Fahrgastverband）批評資訊發布混亂、應變不足。<strong>搭車提醒</strong>：近期搭 DB 出發前先查 bahn.de 即時動態與 Störungskarte、預留轉乘緩衝；凡因這類系統性故障導致長途列車延誤逾 60 分鐘，仍可依旅客權利（Fahrgastrechte）申請部分退費或改票，記得保留車票與延誤證明。</p>
-<p class="post-sources">📚 來源：<a href="https://de.euronews.com/my-europe/2026/06/24/totalausfall-deutsche-bahn" target="_blank" rel="noopener noreferrer">Euronews｜全國 Totalausfall</a> · <a href="https://www.heise.de/news/Bahnverkehr-wegen-Funkstoerung-deutschlandweit-eingestellt-11342136.html" target="_blank" rel="noopener noreferrer">heise｜全德停駛、22:30–0:50</a> · <a href="https://www.werra-rundschau.de/panorama/zugverkehr-in-deutschland-lahmgelegt-funkstoerung-sorgt-fuer-bundesweiten-stillstand-zr-94365685.html" target="_blank" rel="noopener noreferrer">Werra-Rundschau｜GSM-R 故障原因</a> · <a href="https://borncity.com/blog/2026/06/24/ausfall-zugfunk-zugbetrieb-steht-in-deutschland-23-juni-2026/" target="_blank" rel="noopener noreferrer">Borncity｜Zugfunk 技術背景</a></p>
-
-<img src="assets/images/2026/weekly/W25-26_圖卡2_歐洲熱浪.png" alt="歐洲歷史性熱浪 西葡 45 度 法國 58 省警戒 德國 40 度 El Nino 熱帶夜">
-<h3>歐洲歷史性熱浪上看 45°C：西葡 45 度、法國 58 省警戒、德國 40 度</h3>
-<p>一波被 ZDF 氣象專家 Özden Terli 稱為「<strong>歷史性熱浪</strong>」的高溫籠罩西歐，背後推手是<strong>聖嬰現象（El Niño）</strong>強化的「熱蓋」。<strong>規模</strong>：葡萄牙、西班牙部分地區上看 <strong>45°C</strong>，法國 <strong>58 個省</strong>拉起 orange 警戒。德國西南部（<strong>Baden-Württemberg、Rheinland-Pfalz、Saarland、Hessen</strong>）<strong>6/22 前後恐達 40°C</strong>、可能改寫多項 6 月高溫紀錄（巴登-符騰堡 Baden-Württemberg 6 月紀錄為 2019/6/30 曼海姆 38.9°C），北部與沿海相對涼爽（24–29°C）。多地並出現今年首批<strong>「熱帶夜」（tropische Nächte）</strong>——夜溫不降到 20°C 以下，對睡眠品質與心血管是額外負擔。對民生、能源與世足的連鎖衝擊，見下一張卡。</p>
-<p class="post-sources">📚 來源：<a href="https://www.wetter.com/news/historische-hitzewelle-deutschland-steuert-auf-temperaturrekord-im-juni-zu_aid_6a3a4ee292429153300c9e88.html" target="_blank" rel="noopener noreferrer">wetter.com｜德國恐破 6 月紀錄</a> · <a href="https://www.cleanthinking.de/el-nino-hitzewelle-europa-2026/" target="_blank" rel="noopener noreferrer">cleanthinking｜El Niño 與歐洲熱浪</a> · <a href="https://www.dwd.de/DE/wetter/warnungen_aktuell/wochenvorhersage/wochenvorhersage_node.html" target="_blank" rel="noopener noreferrer">DWD｜週警告預報</a></p>
-
-<img src="assets/images/2026/weekly/W25-26_圖卡3_熱浪民生.png" alt="熱浪衝擊民生 法國核電降載 限水 巴黎禁酒 野火戒備 馬德里世足公播取消">
-<h3>熱浪衝擊民生：核電降載、限水、禁酒，連世足公播都喊停</h3>
-<p>這波高溫不只是熱，更直接打到民生與基礎設施。<strong>能源與用水</strong>：法國多座<strong>核電廠因河水溫度過高被迫降載</strong>、多省祭出<strong>用水限制</strong>，西班牙部分地區實施<strong>灌溉禁令</strong>；巴黎更在<strong>音樂節（Fête de la Musique）一度禁酒</strong>以防高溫脫水鬧事。<strong>健康與野火</strong>：各國當局對脆弱族群發出「重大危險」警告，EU 已在希臘、義大利、西班牙、葡萄牙、法國、賽普勒斯部署破紀錄的消防員與滅火飛機嚴防野火。<strong>連世足也中暑</strong>：西班牙馬德里一場世足公播因 40°C 高溫<strong>取消</strong>，德國多地公播則場場爆滿、飲料攤供不應求。<strong>因應建議</strong>：德國住宅普遍沒有冷氣，<strong>白天拉窗簾遮陽、夜間趁涼對流通風</strong>是關鍵；正午到午後少出門、勤補水，別把人或寵物留在車內，並多關注獨居長者與幼兒；職場若高溫又無防護，依《職場條例》（Arbeitsstättenverordnung）雇主有義務採取降溫措施，員工可據此反映。</p>
-<p class="post-sources">📚 來源：<a href="https://www.cleanthinking.de/el-nino-hitzewelle-europa-2026/" target="_blank" rel="noopener noreferrer">cleanthinking｜核電降載</a> · <a href="https://www.euronews.com/2026/06/21/france-bans-alcohol-at-fete-de-la-musique-as-heatwave-grips-europe" target="_blank" rel="noopener noreferrer">Euronews｜巴黎音樂節禁酒</a> · <a href="https://www.t-online.de/sport/fussball/wm/id_101303246/wm-news-aktuell-public-viewing-in-madrid-wegen-hitze-abgesagt.html" target="_blank" rel="noopener noreferrer">t-online｜馬德里世足公播取消</a></p>
-
-<img src="assets/images/2026/weekly/W25-26_圖卡4_世足戰況.png" alt="德國世足 2026 6/20 以 2:1 逆轉象牙海岸 Undav 補時絕殺 提前晉級 32 強 E 組第 1">
-<h3>德國 2:1 絕殺象牙海岸、提前晉 32 強：2014 奪冠後首度闖過小組賽</h3>
-<p>世足小組賽第 2 輪，德國在多倫多上演大逆轉。<strong>6/20 對非洲冠軍象牙海岸，德國終場 2:1 獲勝</strong>，過程一波三折：象牙海岸隊長 <strong>Kessié 第 30 分鐘先馳得點</strong>，德國上半場 Pavlović（22'）、Havertz（38'）兩度破門都因進攻犯規遭吹掉，0:1 落後進入中場。Nagelsmann 下半場一口氣三換人扭轉戰局——替補前鋒 <strong>Deniz Undav 第 68 分鐘扳平</strong>（Amiri 助攻），又在 <strong>補時 90+4 分鐘讀秒絕殺</strong>，獨進兩球成為英雄（4.3 萬人客滿的多倫多球場見證）。連同首戰 <strong>7:1 血洗古拉索</strong>（Havertz 梅開二度、Musiala、Wirtz 助攻），德國<strong>兩戰全勝積 6 分</strong>；當天稍晚厄瓜多與古拉索 <strong>0:0 互交白卷</strong>，<strong>德國因此提前鎖定 32 強（48 隊新制的淘汰賽首輪），並坐穩 E 組第 1</strong>——這是德國<strong>自 2014 奪冠以來首度闖過小組賽</strong>，一掃 2018、2022 連兩屆小組出局的陰霾。<strong>末戰預告</strong>：小組賽最後一戰 <strong>6/25（四）德國時間 22:00</strong> 在紐約／新澤西對厄瓜多（ARD 轉播），戰績無關出線、主要影響淘汰賽對戰籤位。<strong>給在德球迷的提醒</strong>：淘汰賽約 6/28 起登場，德國場次仍多落在深夜（22:00 起）；本屆德國<strong>沒有官方 Fanmeile</strong>，大城以酒吧、Biergarten 的店家公播為主，週末深夜場地請提早訂位。高溫看球也別忘了補水、慎防中暑（熱浪與公播的衝擊見上一張卡）。</p>
-<p class="post-sources">📚 來源：<a href="https://www.sportschau.de/fussball/fifa-wm-2026/undav-schiesst-deutschland-zum-sieg-gegen-die-elfenbeinkueste,wm-spielbericht-deutschland-elfenbeinkueste-100.html" target="_blank" rel="noopener noreferrer">sportschau｜戰報：Undav 絕殺</a> · <a href="https://www.fifa.com/en/match-centre/match/17/285023/289273/400021469" target="_blank" rel="noopener noreferrer">FIFA｜比分與數據</a> · <a href="https://www.espn.com/soccer/match/_/gameId/760448/ivory-coast-germany" target="_blank" rel="noopener noreferrer">ESPN｜Germany 2-1 Ivory Coast</a> · <a href="https://www.sportschau.de/live-und-ergebnisse/fussball/fifa-wm/tabelle/" target="_blank" rel="noopener noreferrer">sportschau｜E 組積分榜</a></p>
-
-<img src="assets/images/2026/weekly/W25-26_圖卡5_EU高峰會.png" alt="EU 高峰會 6/18-19 布魯塞爾 烏克蘭 對俄第 21 輪制裁 2028-34 預算 MFR Merz 反對共同舉債">
-<h3>EU 高峰會 6/18–19：烏克蘭、制裁、七年預算三大戰場</h3>
-<p>歐洲理事會（European Council）6/18–19 在布魯塞爾召開，27 國領袖議程橫跨<strong>烏克蘭、中東局勢、2028–2034 多年期財政框架（MFR）、歐洲防務與安全、移民與毒品</strong>。總理 Merz（CDU）在 6/11 的政府聲明已先定調德國立場：（1）<strong>挺烏到底</strong>——主張盡快讓烏克蘭以「聯繫會員」（associated membership）身分在政治上綁進 EU，並對俄施加更大壓力，目標是「兼顧我方安全利益的公正而持久的和平」；（2）<strong>對俄加壓</strong>——EU 著手第 <strong>21 輪</strong>對俄制裁（繼 4/23 第 20 輪鎖定能源收入、軍工複合體與金融服務後），並加強打擊規避禁運的「影子艦隊」（shadow fleet）油輪，6/15 外長理事會已先行表態團結挺烏；烏克蘭方面，<strong>900 億歐元貸款的首筆撥款 6 月到位、直接投入無人機</strong>。（3）<strong>預算談判</strong>——新版多年期財政框架（MFR）首度上桌，國防、移民、農業補貼與「淨出資國」分攤是最大爭點，Merz <strong>明確反對 EU 共同舉債</strong>。<strong>影響評估</strong>：EU 預算與制裁牽動德國的財政紀律與能源價格，高峰會結論將左右下半年的補貼力道、國防支出與對中政策走向——這些最終都會反映在你我的稅、電價與就業市場上。</p>
-<p class="post-sources">📚 來源：<a href="https://www.consilium.europa.eu/en/meetings/european-council/2026/06/18-19/" target="_blank" rel="noopener noreferrer">Consilium｜歐洲理事會 6/18–19 議程</a> · <a href="https://www.bundestag.de/dokumente/textarchiv/2026/kw24-de-regierungserklaerung-1181878" target="_blank" rel="noopener noreferrer">Bundestag｜Merz 政府聲明（挺烏、反對 EU 舉債）</a> · <a href="https://www.consilium.europa.eu/en/press/press-releases/2026/04/23/russia-s-war-of-aggression-against-ukraine-20th-round-of-stern-eu-sanctions-hits-energy-military-industrial-complex-trade-and-financial-services-including-crypto/" target="_blank" rel="noopener noreferrer">Consilium｜第 20 輪對俄制裁</a> · <a href="https://www.consilium.europa.eu/en/meetings/fac/2026/06/15/" target="_blank" rel="noopener noreferrer">Consilium｜6/15 外長理事會</a></p>
-
-<img src="assets/images/2026/weekly/W25-26_圖卡6_中東航線停飛.png" alt="漢莎集團中東航點停飛至 10/24 避開伊朗領空 特拉維夫 7/1 復飛 轉機旅客注意">
-<h3>中東航線大停飛至 10/24：避開伊朗領空，轉機旅客請先查狀態</h3>
-<p>伊朗戰爭雖見停火曙光，對航空的衝擊仍在持續。<strong>漢莎集團（Lufthansa Group，含 Lufthansa、SWISS、Austrian、ITA、Eurowings 等）將多個中東航點停飛延長至 2026/10/24</strong>，包括<strong>德黑蘭、貝魯特、阿曼（Amman）、達曼、利雅德、艾比爾、馬斯喀特、阿布達比</strong>等；唯一例外是<strong>特拉維夫，7/1 起復飛</strong>（Austrian 已於 6/1 先行）。<strong>成因</strong>：依 EASA（歐洲航空安全局）4/9 的警告，全集團避開伊朗領空；而伊拉克、敘利亞更在 <strong>6/7 因伊朗對以色列發動飛彈攻擊一度關閉領空</strong>，連帶讓經該區的轉機航班大亂。Handelsblatt 直指「伊朗戰爭正壓抑德國的航空運能」。<strong>訂票提醒</strong>：飛台灣的直飛與經<strong>歐洲</strong>轉機航線多半不受影響；但若你習慣經<strong>杜拜、多哈、伊斯坦堡、阿布達比</strong>等中東樞紐轉機，近期航班改道、航時拉長甚至調整時刻的機率都升高。出發前務必：（1）比對停飛清單與你的出發日；（2）<strong>登機前再查一次航班狀態</strong>；（3）訂票時多留一點轉機緩衝時間，降低銜接失敗的風險。</p>
-<p class="post-sources">📚 來源：<a href="https://www.travelperfect.de/news/fluege/airlines-streichungen-nahost-2026" target="_blank" rel="noopener noreferrer">travelperfect｜漢莎集團中東停飛清單</a> · <a href="https://www.handelsblatt.com/unternehmen/dienstleister/luftverkehr-iran-krieg-daempft-das-angebot-im-luftverkehr-in-deutschland/100233835.html" target="_blank" rel="noopener noreferrer">Handelsblatt｜伊朗戰爭壓抑航空運能</a> · <a href="https://www.airliners.de/iran-krieg-trifft-luftverkehr-hart/86877" target="_blank" rel="noopener noreferrer">airliners.de｜領空封閉衝擊</a> · <a href="https://www.adac.de/news/reise-nahostkrieg-dubai-drehkreuz-ostern/" target="_blank" rel="noopener noreferrer">ADAC｜中東旅遊現況</a></p>
-
-<img src="assets/images/2026/weekly/W25-26_圖卡7_伊朗停火協議.png" alt="伊朗停火協議 6/19 簽署 巴基斯坦斡旋 美伊諒解備忘錄 荷姆茲海峽解封 60 天核談判">
-<h3>伊朗停火協議 6/19 簽署：荷姆茲海峽解封、60 天核談判倒數</h3>
-<p>中東戰場本週迎來最明確的降溫訊號。戰事自 3 月急遽升溫後，<strong>4/8 在巴基斯坦斡旋下達成首次兩週停火</strong>並多次延長；<strong>6/14 巴基斯坦總理 Shehbaz Sharif 宣布美伊敲定諒解備忘錄（MoU），並已於 6/19 正式簽署</strong>（川普與伊朗總統 Pezeshkian 遠端簽署）。協議核心：<strong>延長停火、解除荷姆茲海峽封鎖，並啟動約 60 天談判</strong>處理最棘手的核計畫，協商先經巴基斯坦居中、最終在伊斯蘭瑪巴德定案，目標是在 60 天內讓衝突正式落幕。對德國的意義重大——德國經濟對能源高度依賴，這場戰爭一路推升油價與通膨，逼得 ECB 6/11 三年來首度升息（見上週 W24 解析）；停火若真兌現，能源與通膨壓力可望鬆綁，這也正是 6/16 ZEW 景氣預期大漲的主因（見下一張卡）。<strong>觀察重點</strong>：協議仍脆弱——黎巴嫩零星交火、核查機制與制裁解除節奏都是變數，6/19 簽署只是起點而非終點。能源的「和平紅利」能不能真正落袋，要看接下來這 60 天的談判成色。</p>
-<p class="post-sources">📚 來源：<a href="https://en.wikipedia.org/wiki/2026_Iran_war_ceasefire" target="_blank" rel="noopener noreferrer">Wikipedia｜2026 Iran war ceasefire</a> · <a href="https://www.pbs.org/newshour/amp/world/iran-and-u-s-reach-an-initial-deal-to-extend-the-ceasefire-and-open-the-strait-of-hormuz-but-challenges-remain" target="_blank" rel="noopener noreferrer">PBS｜延長停火、解封荷姆茲海峽</a> · <a href="https://commonslibrary.parliament.uk/research-briefings/cbp-10637/" target="_blank" rel="noopener noreferrer">House of Commons Library｜美伊停火與核談判</a> · <a href="https://www.bundesregierung.de/breg-en/news/chancellor-iran-2402610" target="_blank" rel="noopener noreferrer">Bundesregierung｜Merz 對停火的回應</a></p>
-
-<img src="assets/images/2026/weekly/W25-26_圖卡8_ZEW景氣預期.png" alt="ZEW 景氣預期 6 月重返正值 +10.5 單月跳升 20.7 點 現況指標續跌至 -81 押注伊朗戰爭收尾">
-<h3>ZEW 景氣預期重返正值 +10.5：期待回暖，現況仍冷</h3>
-<p>ZEW（萊布尼茲歐洲經濟研究中心）6/16 公布 6 月調查：反映金融市場專家對未來半年看法的<strong>景氣預期指數，單月大漲 20.7 點、從 −10.2 躍升至 +10.5</strong>，不僅重返正值，更遠優於市場預期（經濟學家原估僅小幅回升）。<strong>主因</strong>：ZEW 主席 Achim Wambach 直言，專家押注<strong>伊朗衝突接近尾聲</strong>，能源價格與通膨的龐大壓力可望減弱，將嘉惠能源密集產業與家庭消費、進而帶動內需。但這份調查呈現「分裂」的兩面：反映<strong>當下</strong>景氣的現況指標（Lagebeurteilung）不升反降，<strong>再跌至 −81.0</strong>（前值 −77.8）。對照基準更能看出情緒擺盪——伊朗戰爭爆發前的 2 月，預期指數還高達約 +60，高能源價格與斷供疑慮一度讓信心崩跌。<strong>數據解讀</strong>：ZEW 是「領先指標」，反映的是<strong>預期</strong>而非現況；情緒回暖值得高興，但 −81 的現況指標才是當下實況。求職、轉職與大額投資仍宜謹慎，別把「期待」當成「已經發生」。</p>
-<p class="post-sources">📚 來源：<a href="https://www.zew.de/en/press/latest-press-releases/economic-expectations-show-signs-of-improvement" target="_blank" rel="noopener noreferrer">ZEW 官方新聞稿</a> · <a href="https://www.finanzen.net/nachricht/aktien/stimmung-hellt-sich-auf-zew-index-ueberrascht-positiv-konjunkturerwartungen-steigen-im-juni-staerker-als-gedacht-15747383" target="_blank" rel="noopener noreferrer">finanzen.net｜數據與市場預期</a> · <a href="https://www.datev-magazin.de/nachrichten-steuern-recht/wirtschaft/hoffnung-auf-ende-des-iran-konflikts-laesst-erwartungen-kraeftig-steigen-147212" target="_blank" rel="noopener noreferrer">DATEV magazin｜Wambach 解讀</a></p>
-
-<hr>
-
-<h2 id="jun8-14">6月8日–14日：世足首戰週日 19 點開踢、改革高峰會空手而回、對美出口年減 12.9%、通膨回落 2.6%、ECB 三年來首升息、薪資透明 6/8 啟動、六月新制懶人包</h2>
-<p>本週的關鍵字是「改革」與「帳單」。最大事件：<strong>6/10 梅爾茨在總理府邀工會與雇主協會高層夜談三小時的「改革高峰會」（Reformgipfel）空手而回</strong>——年金、所得稅、社會保險、工時規定全無共識，DGB 主席 Fahimi 批政府改革議程「只剩省錢與刪減」，NZZ 評會後「結果令人清醒」。同週 Destatis 兩份數據一好一壞：<strong>4 月對美出口年減 12.9%</strong>、Q1 對美順差縮水 30.5%，川普 15% 關稅效應全面顯現；<strong>5 月通膨則自兩年高點回落至 2.6%</strong>，能源漲幅從 +10.1% 收斂到 +6.6%；不過歐元區整體通膨仍達 3.2%，<strong>ECB 6/11 宣布升息一碼至 2.25%</strong>——2023 年以來首次，回應伊朗戰事推升的能源價格。對在德工作者最實用的一條：德國錯過 EU 薪資透明指令 6/7 轉化期限，<strong>6/8 起公部門直接適用</strong>、法院須依指令解釋現行法——求職可要求薪資範圍、雇主不得追問薪資史。最後附上六月新制懶人包：6/12 GEAS 上路、6/14 早餐指令、6/19 一鍵退訂按鈕，以及 6/11 聯盟黨團拍板——<strong>油價減免（Tankrabatt）6/30 確定到期、不再延長</strong>，7 月起每公升回升約 17 歐分。世足方面，6/11 開幕戰墨西哥對南非開踢，<strong>德國隊 6/14（週日）德國時間 19:00 在休士頓首戰古拉索</strong>——時間、轉播、公播注意事項看第一張卡。</p>
-
-<img src="assets/images/2026/weekly/W24_圖卡1_世足首戰提醒.png" alt="德國隊世足首戰古拉索 6/14 週日德國時間 19 點 ARD 免費直播 公播資訊">
-<h3>世足首戰提醒：週日 19:00，不用熬夜的黃金時段</h3>
-<p>世界盃 6/11 晚間 21:00（德國時間）在墨西哥城阿茲特克體育場揭幕，由地主墨西哥對南非；德國隊 <strong>6/14（週日）德國時間 19:00</strong> 在休士頓首戰世足新軍<strong>古拉索</strong>（Curaçao，加勒比小島國、人口約 15 萬，背景詳見上週 W23）。轉播：<strong>ARD 免費直播</strong>，線上看 ARD Mediathek 或 sportschau.de，MagentaTV 同步——這是本屆少見對德國觀眾友善的時段，之後因北美時差，多數比賽落在深夜甚至凌晨。公播（Public Viewing）方面有個壞消息：<strong>本屆德國沒有官方 Fanmeile</strong>——柏林市府已闢謠布蘭登堡門前不辦大型 Fanzone，大城市中只有<strong>漢諾威與多特蒙德</strong>規劃官方公播活動，其他城市以 Biergarten、酒吧、餐廳的店家公播為主，週日晚間黃金時段熱門場地建議提早訂位。要注意的規則：聯邦政府已放寬噪音保護規範，<strong>5/20–7/31 期間地方政府可破例允許公播活動進行到午夜之後</strong>（詳見 W20 解析）——這對之後的深夜淘汰賽很重要，但也代表住家附近的公播場地可能熱鬧到深夜，怕吵的朋友先查好附近場地。</p>
-<p class="post-sources">📚 來源：<a href="https://www.sportschau.de/fussball/fifa-wm-2026/daten-fakten-termine-so-laeuft-die-fussball-wm-2026,fragen-und-antworten-zur-wm-zwanzigsechsundzwanzig-100.html" target="_blank" rel="noopener noreferrer">sportschau｜賽程與轉播</a> · <a href="https://www.berlin.de/en/events/specials/public-screening-berlin/2606075-8787655-fan-mile-brandenburg-gate.en.html" target="_blank" rel="noopener noreferrer">Berlin.de｜布蘭登堡門不辦 Fanzone</a> · <a href="https://ran.joyn.de/sports/fussball/wm/wm2026-wo-gibt-es-public-viewing-in-deutschland-135104" target="_blank" rel="noopener noreferrer">ran｜各大城市公播規劃</a></p>
-
-<img src="assets/images/2026/weekly/W24_圖卡2_改革高峰會.png" alt="總理府改革高峰會空手而回 6/10 梅爾茨邀勞資高層夜談三小時無共識">
-<h3>總理府改革高峰會空手而回：年金、稅制、工時全卡關</h3>
-<p>6/10 晚間 7 點起，總理 Merz（CDU）與 CSU 黨魁 Söder、SPD 雙主席 Bas 與 Klingbeil，在總理府接待德國勞資兩邊的最高層：工會方有 DGB（德國工會聯合會）主席 Yasmin Fahimi、IG Metall 主席 Benner、Verdi 主席 Werneke；資方有雇主協會（BDA）主席 Dulger、工業聯合會（BDI）主席 Leibinger、工商總會（DIHK）主席 Adrian。議程直指德國最敏感的四塊：<strong>年金、所得稅與社會保險改革、勞動市場（含鬆綁八小時工時制）、官僚減量</strong>——聯盟自訂目標是 7 月中夏休前端出「根本性改革」方案。會談超過三小時，<strong>沒有任何具體決議</strong>，只同意「繼續再談」。立場落差大到難以掩飾：Fahimi 會前直言「目前討論的所謂改革議程，焦點全在省錢與刪減」、「經濟上與社會上完全錯誤」，對鬆綁每日八小時工時制更撂話「沒什麼好談的」、是「純意識形態的迷途」；CDU 秘書長 Linnemann 反擊，工會不能只談現況、「必須談競爭力如何回升」；資方則要求降低非工資勞動成本（Lohnnebenkosten）、規則彈性化。在野黨看戲：綠黨黨團主席 Dröge 會前就警告，若無具體結果這場會只是「咖啡聚會」（Kaffeekränzchen）。NZZ 會後標題一針見血：「高峰會以清醒收場」。<strong>後續發展</strong>：高峰會無果的隔天上午（6/11），Merz 隨即在聯邦議院發表政府聲明——名義上的主題是下週布魯塞爾 EU 高峰會（烏克蘭、對中關係、EU 中期財政規劃），實際上大半篇幅都在談內政，呼籲所有人檢視「自己能為整體的運作貢獻什麼」，被輿論解讀為高峰會破局後的信心喊話。<strong>深度觀察</strong>：Merz 政府把年金、稅制、社保三大改革全押在 7 月中前——但社保費率已逼近 42% 大關，任何「根本性改革」不是加費就是砍給付，勞資必有一方買單。這場高峰會證明：共識還很遠，時鐘卻在走。</p>
-<p class="post-sources">📚 來源：<a href="https://www.handelsblatt.com/politik/deutschland/koalition-koalition-sucht-bei-reformen-konsens-mit-sozialpartnern/100231511.html" target="_blank" rel="noopener noreferrer">Handelsblatt</a> · <a href="https://www.zdfheute.de/politik/deutschland/friedrich-merz-gewerkschaft-arbeitgeber-kanzleramt-treffen-100.html" target="_blank" rel="noopener noreferrer">ZDFheute</a> · <a href="https://www.nzz.ch/deutschland/politik/gipfel-endet-ernuechternd-die-koalitionsspitze-spricht-mit-vertretern-von-wirtschaft-und-gewerkschaften-praesentiert-aber-keine-ergebnisse-ld.10010707" target="_blank" rel="noopener noreferrer">NZZ｜會後評析</a> · <a href="https://www.t-online.de/nachrichten/deutschland/id_101288928/koalition-sucht-bei-reformen-konsens-mit-sozialpartnern.html" target="_blank" rel="noopener noreferrer">t-online</a> · <a href="https://www.zdfheute.de/politik/deutschland/merz-regierungserklaerung-bundestag-reformen-100.html" target="_blank" rel="noopener noreferrer">ZDFheute｜6/11 政府聲明</a></p>
-
-<img src="assets/images/2026/weekly/W24_圖卡3_對美出口重挫.png" alt="德國 4 月對美出口年減 12.9% Q1 對美順差縮水 30.5% 川普關稅效應">
-<h3>對美出口年減 12.9%：川普關稅的帳單到了</h3>
-<p>Destatis（聯邦統計局）6/9 公布 4 月外貿數據：整體出口 <strong>1,366 億歐元</strong>、月增 0.9%，表面撐住；但拆開看，<strong>對美出口 114 億歐元、較去年同期重挫 12.9%</strong>——美國仍是德國最大單一出口市場，卻也是衰退最深的市場。把時間軸拉長更怵目：Destatis 上月已公布 <strong>Q1 對美貿易順差僅 124 億歐元、年減 30.5%</strong>（2025 年 Q1 還有 178 億）；汽車與零組件是重災區，<strong>2025 年 4 至 12 月對美汽車出口年減 26.4%</strong>。成因不是謎：2025 年 4 月起美國對歐盟商品課徵 <strong>15% 關稅</strong>（汽車尤重），歐盟以貿易協議換得稅率封頂，但帳單由出口商照付。展望更冷：聯邦外貿促進機構 <strong>GTAI 預估 2026 全年對美出口再減 8–9%</strong>——美國景氣轉弱加上關稅，德國供應商被「雙重打擊」（直接關稅成本＋客戶需求下滑）。<strong>深度觀察</strong>：這組數據與上週 W23 的破產潮（Q1 4,573 家、20 年新高）互為表裡——汽車經銷破產暴增近 200%、金屬製品躍居破產榜首，出口引擎熄火正是源頭之一。對在德台灣工程師而言，汽車與機械供應鏈的雇主曝險值得放進求職與轉職的評估清單。</p>
-<p class="post-sources">📚 來源：<a href="https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/06/PD26_190_51.html" target="_blank" rel="noopener noreferrer">Destatis｜4 月出口</a> · <a href="https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/05/PD26_172_51.html" target="_blank" rel="noopener noreferrer">Destatis｜Q1 對美順差 -30.5%</a> · <a href="https://www.gtai.de/de/trade/usa/wirtschaftsumfeld/prognose-aussenhandel-usa-1945698" target="_blank" rel="noopener noreferrer">GTAI｜2026 對美出口預測</a></p>
-
-<img src="assets/images/2026/weekly/W24_圖卡4_通膨回落.png" alt="德國 5 月通膨回落至 2.6% 能源仍比去年貴 6.6% 服務通膨 3.1%">
-<h3>通膨回落 2.6%：油價降溫，但房租與服務還在漲</h3>
-<p>Destatis 公布 5 月通膨初值：<strong>2.6%</strong>，較 4 月的兩年高點 2.9% 明顯降溫，物價月對月甚至下跌 0.2%——這是 3 月中東衝突推升油價以來，第一個明確的緩解訊號。拆開看結構：<strong>能源仍比去年貴 6.6%</strong>，但已從 4 月的 +10.1% 大幅收斂；<strong>食品 +0.4%</strong> 幾近持平（4 月 +1.2%）；真正僵固的是<strong>服務類通膨 3.1%</strong>（4 月 2.8%，不降反升）、核心通膨（剔除能源食品）2.5%——房租、保險、外食、理髮這些「躲不掉的支出」漲勢未歇。<strong>歐元區對照</strong>：德國的 2.6% 在歐元區（5 月整體 3.2%、核心 2.5%）中相對溫和，但距 2% 目標仍有距離——ECB 已在 6/11 以升息回應（見下一張卡）。<strong>深度觀察</strong>：這次通膨波動的劇本與 2022 能源危機不同——衝擊源（中東油價）來得快去得也快，但服務通膨的「第二輪效應」（工資與租金互相推升）才是 2026 下半年的主戰場。對在德台灣人實用的一句話：加油與超市的壓力放緩了，但簽新租約、續保險、辦健身房會籍前，比價與漲價條款比以前更重要。另一個七月變數：5/1 上路的油價減免（Tankrabatt）將於 <strong>6/30 到期且確定不延長</strong>，屆時每公升燃油估回升約 <strong>17 歐分</strong>——能源項的降溫，七月可能被部分吃回去。</p>
-<p class="post-sources">📚 來源：<a href="https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/05/PD26_182_611.html" target="_blank" rel="noopener noreferrer">Destatis｜5 月通膨初值</a> · <a href="https://tradingeconomics.com/germany/inflation-cpi" target="_blank" rel="noopener noreferrer">Trading Economics｜結構拆解</a></p>
-
-<img src="assets/images/2026/weekly/W24_圖卡5_ECB升息.png" alt="ECB 6/11 升息一碼 存款利率升至 2.25% 2023 年以來首次升息">
-<h3>ECB 升息一碼：三年來首次，劍指戰爭通膨</h3>
-<p>6/11 下午法蘭克福發出本週最重磅的經濟訊號：ECB 管理委員會決議<strong>三大關鍵利率同步調升 25 個基點</strong>，存款利率自 2.00% 升至 <strong>2.25%</strong>——這是 <strong>2023 年以來的首次升息</strong>，正式終結降息循環。成因：伊朗戰事與荷姆茲海峽油運受阻推升能源價格，歐元區 5 月通膨達 <strong>3.2%</strong>、核心通膨 2.5%，距 2% 目標漸行漸遠（德國 2.6% 相對溫和，見上一張卡）。同步公布的新總體預測兩面挨刀：<strong>2026 年通膨上修至 3.0%、GDP 成長下修至 0.8%</strong>；2027 年通膨估 2.3%、2028 年才回到 2.0%。總裁 Lagarde 在記者會強調利率路徑「視數據而定、不預先承諾」；市場分析（如 LBBW）則預期年底前可能再升兩次、存款利率上看 <strong>2.75%</strong>。<strong>深度觀察</strong>：對正陷出口疲弱與破產潮的德國經濟（見前兩張卡），升息無異雪上加霜——融資成本走高將進一步擠壓高負債企業；對個人財務，房貸利率（Bauzinsen）與定存利率將同步走升，正在規劃購屋貸款或轉貸（Anschlussfinanzierung）者，利率比較與鎖定策略的重要性明顯上升。</p>
-<p class="post-sources">📚 來源：<a href="https://www.cnbc.com/amp/2026/06/11/ecb-hikes-interest-rates.html" target="_blank" rel="noopener noreferrer">CNBC｜首次升息</a> · <a href="https://www.lbbw.de/artikel/news-und-einschaetzungen/ezb-zinsentscheid-juni-2026_amy24vq2ba_d.html" target="_blank" rel="noopener noreferrer">LBBW｜決議解析與利率預測</a> · <a href="https://www.bloomberg.com/news/articles/2026-05-11/ecb-to-hike-rates-twice-in-2026-as-inflation-jumps-survey-shows" target="_blank" rel="noopener noreferrer">Bloomberg｜經濟學家調查</a></p>
-
-<img src="assets/images/2026/weekly/W24_圖卡6_薪資透明指令.png" alt="EU 薪資透明指令 德國錯過 6/7 轉化期限 6/8 起公部門直接適用">
-<h3>薪資透明時代 6/8 啟動：德國遲到，你的權利先到</h3>
-<p>EU 薪資透明指令（Entgelttransparenzrichtlinie, EU 2023/970）要求成員國最遲 <strong>2026/6/7</strong> 轉化為國內法——<strong>德國沒趕上</strong>。聯邦政府的轉化立法（修訂版 Entgelttransparenzgesetz）預計 2027 年初才會到位，專家委員會建議稿今年稍早才出爐。但「遲到」不等於「沒事」：依 EU 法理，<strong>6/8 起指令對公部門雇主直接適用</strong>（unmittelbare Wirkung），且所有德國法院從這天起必須「依指令精神解釋」現行法（richtlinienkonforme Auslegung）——私部門員工也間接受惠。指令給工作者的三項新權利：（1）<strong>求職階段</strong>：有權在面試前知道職缺的起薪或薪資範圍，雇主<strong>不得再追問你過去的薪資紀錄</strong>；（2）<strong>在職階段</strong>：可要求雇主提供同職級、按性別拆分的平均薪資資訊，薪資保密條款（Verschwiegenheitsklauseln）失效；（3）<strong>結構面</strong>：性別薪資差距逾 5% 且無法以客觀標準解釋者，雇主須與員工代表會啟動聯合薪資評估。<strong>對在德台灣人的意義</strong>：外籍求職者長期吃「資訊不對稱」的虧——不知道行情、不敢開價、被前一份薪水錨定。這項指令直接拆掉這三道牆。公部門（大學、研究機構、公家單位）工作者 6/8 起即可主張新權利；私部門雖待德國立法，但面試時要求薪資範圍從現在起就是合理請求。</p>
-<p class="post-sources">📚 來源：<a href="https://www.noerr.com/de/insights/keine-rechtzeitige-umsetzung-der-eu-entgelttransparenzrichtlinie-in-deutsches-recht-was-gilt-nach-dem-7-juni-2026" target="_blank" rel="noopener noreferrer">Noerr｜6/7 之後的法律狀態</a> · <a href="https://www.lto.de/recht/hintergruende/h/umsetzung-entgelttransparenz-richtlinie-verschoben-haftung" target="_blank" rel="noopener noreferrer">LTO｜指令無國內法也生效</a> · <a href="https://www.personalwirtschaft.de/news/verguetung/eu-entgelttransparenzrichtlinie-deutschland-verpasst-frist-das-sind-die-konsequenzen-203783/" target="_blank" rel="noopener noreferrer">Personalwirtschaft｜錯過期限的後果</a></p>
-
-<img src="assets/images/2026/weekly/W24_圖卡7_六月新制.png" alt="六月新制懶人包 GEAS 6/12 上路 早餐指令 6/14 撤回按鈕 6/19">
-<h3>六月新制懶人包：蜂蜜要標產地、一鍵退訂、油價減免到期</h3>
-<p>四項變動 6 月陸續生效，由近到遠排：（1）<strong>6/12 GEAS 上路</strong>——歐盟共同庇護體系 11 部法規全 EU 同步適用，統一程序＋邊境快速審查（背景與德國配套法已在 W21-22 深度解析，此處不重複）；（2）<strong>6/14 早餐指令（Frühstücksrichtlinie, EU 2024/1438）</strong>——蜂蜜混合產品必須<strong>逐一標示來源國與重量百分比</strong>、按占比遞減排列，「EU 與非 EU 蜂蜜混合」這種看了等於沒看的字樣走入歷史；果醬<strong>最低果含量從 350g 升到 450g/kg</strong>（Extra 級 500g），且 Konfitüre 終於可以正式稱作 Marmelade——困擾德語學習者多年的名稱之爭落幕；（3）<strong>6/19 線上撤回按鈕（Widerrufsbutton）</strong>——依 EU 指令 2023/2673，凡是讓消費者在網站或 App 上簽約的業者，都必須提供與下單同樣顯眼、同樣容易的「一鍵撤回」功能；<strong>沒提供的話，你的 14 天撤回期自動延長一年</strong>，業者還可能被告誡（Abmahnung）；（4）<strong>6/30 油價減免（Tankrabatt）到期</strong>——因應伊朗戰事油價飆漲、5/1 起實施的能源稅減免（見 W16 解析），聯盟兩黨團 6/11 確認如期結束、不再延長，<strong>7/1 起每公升燃油估回升約 17 歐分</strong>（目前 Diesel 均價 1.852 €、E10 1.871 €）。<strong>對在德台灣人的意義</strong>：訂閱制健身房、電信約、串流服務——以前解約要寫掛號信的時代正式結束；6/19 之後若在網站上找不到撤回按鈕，截圖存證，你的權利反而變大。買蜂蜜終於看得到真實產地與比例；開車族則記得 <strong>6 月底前把油加滿</strong>——7 月起加油每 50 公升油箱約多付 8.5 €。</p>
-<p class="post-sources">📚 來源：<a href="https://www.verbraucherzentrale.de/wissen/vertraege-reklamation/widerrufsbutton-ab-juni-2026-onlinevertraege-einfacher-widerrufen-118449" target="_blank" rel="noopener noreferrer">Verbraucherzentrale｜撤回按鈕</a> · <a href="https://www.it-recht-kanzlei.de/widerrufsbutton-faq-leitfaden-online-handel.html" target="_blank" rel="noopener noreferrer">IT-Recht Kanzlei｜FAQ</a> · <a href="https://llh.hessen.de/unternehmensfuehrung/erwerbskombinationen/direktvermarktung/honig-saefte-marmelade-eu-regeln-2026/" target="_blank" rel="noopener noreferrer">LLH Hessen｜早餐指令</a> · <a href="https://www.bamf.de/DE/Themen/AsylFluechtlingsschutz/EuropaeischerKontext/GEAS/geas-node.html" target="_blank" rel="noopener noreferrer">BAMF｜GEAS</a> · <a href="https://www.t-online.de/finanzen/aktuelles/id_101291548/koalition-einig-tankrabatt-laeuft-ende-juni-aus.html" target="_blank" rel="noopener noreferrer">t-online｜Tankrabatt 確定不延長</a> · <a href="https://www.adac.de/news/spritpreise-steigen-durch-krieg-in-nahost/" target="_blank" rel="noopener noreferrer">ADAC｜當前油價</a></p>
-
-<hr>
-
-<h2 id="jun1-7">6月1日–7日：世足倒數 Neuer 回鍋、安理會競選史上首敗、退休金調漲 4.24%、破產潮 20 年新高</h2>
-<p>本週德國從綠茵場到聯合國、再到企業財報，迎來一場「信心測驗」。最大事件：<strong>6/3 聯合國大會改選安理會非常任理事國，德國 104 票墊底落選</strong>——這是兩德統一以來德國首度在安理會改選失利，外長 Wadephul 形容為「苦澀的挫敗」。6/11 美加墨世足開踢倒數，Nagelsmann 端出 26 人名單，40 歲 Neuer 退休兩年後回鍋當第一門將、球迷民調分裂；勞動部公布 7/1 退休金調漲 4.24%，逾 2,100 萬人受惠，但世代正義辯論同步升溫；IWH Halle 公布 Q1 企業破產 4,573 家寫下 2005 年第 3 季以來新高，「去工業化從預測變成現實」。</p>
-
-<img src="assets/images/2026/weekly/W23_圖卡1_德國隊出征世足.png" alt="德國隊出征 2026 美加墨世足 Nagelsmann 26 人名單 Neuer 回鍋">
-<h3>德國隊出征世界盃：連兩屆出局後的救贖之戰</h3>
-<p>2026 FIFA 世界盃 6/11 在美國、加拿大、墨西哥三地開踢，德國分在 <strong>E 組</strong>，6/14 首戰加勒比海島國「<strong>古拉索</strong>」（Curaçao，人口僅約 15 萬，FIFA 排名長期 80–90 名），續戰象牙海岸、厄瓜多。總教練 Nagelsmann 端出 26 人名單，最大焦點是 40 歲的 Neuer 退休兩年後回鍋鎮守球門；攻擊端由 Wirtz、Musiala 領銜，前者迎來世界盃首秀（2022 因十字韌帶傷缺席）。球迷分裂：t-online 民調顯示 <strong>43% 不滿 Sané 入選、39% 質疑 Neuer 回鍋擠掉 Baumann、36% 認為 Rüdiger 帶傷入選不妥</strong>。sportschau 評論直言 Nagelsmann 數月來無法主導名單敘事「相當不專業」。隱憂在防線：3 月友誼賽贏瑞士 4:3、迦納 1:0 卻失 4 球。<strong>深度觀察：</strong>對 4 度奪冠的德國而言，2018、2022 連兩屆小組出局是奇恥大辱。真正考驗在淘汰賽——能否擋住法國、西班牙，將決定這是復興還是再崩盤。</p>
-<p class="post-sources">📚 來源：<a href="https://www.dfb.de/news/bundestrainer-nagelsmann-gibt-wm-kader-bekannt" target="_blank" rel="noopener noreferrer">DFB 官方</a> · <a href="https://www.sportschau.de/regional/ndr/kommentar-zum-wm-kader-nagelsmanns-kommunikationsproblem,dfb-wm-kader-100.html" target="_blank" rel="noopener noreferrer">sportschau 評論</a> · <a href="https://www.t-online.de/sport/fussball/wm/id_101273306/wm-2026-kader-von-julian-nagelsmann-fans-zweifeln-an-dfb-stars.html" target="_blank" rel="noopener noreferrer">t-online 球迷民調</a></p>
-
-<img src="assets/images/2026/weekly/W23_圖卡2_安理會是什麼.png" alt="聯合國安理會制度說明 5 常任握否決權 10 非常任輪選">
-<h3>先搞懂：聯合國安理會是什麼？</h3>
-<p>安理會（Security Council）是聯合國最高的「和平與安全」決策機構，共 <strong>15 個理事國</strong>：美、英、法、俄、中 5 個「常任理事國」握有否決權——任一國一票就能擋下任何決議；其餘 10 個「非常任理事國」由 193 個會員國在聯合國大會（UNGA）投票選出，任期 2 年，須拿下 2/3 多數（約 127 票）。它是聯合國唯一決議具「<strong>法律約束力</strong>」的機構——能對一國祭出經濟制裁、部署維和部隊、甚至授權動武。坐上這張桌子，等於握有全球安全議題的發言權與議程主導權。席次按「區域組」分配，德國屬於「西歐及其他國家組」（WEOG, Western European and Others Group），這個組每兩年釋出 2 席輪選。</p>
-<p class="post-sources">📚 來源：<a href="https://main.un.org/securitycouncil/en/content/voting-system" target="_blank" rel="noopener noreferrer">UN 安理會官方投票制度</a> · <a href="https://passblue.com/2026/06/03/five-new-countries-elected-to-the-un-security-councils-2027-28-term/" target="_blank" rel="noopener noreferrer">PassBlue 選舉詳述</a></p>
-
-<img src="assets/images/2026/weekly/W23_圖卡3_德國安理會落選.png" alt="德國競選聯合國安理會落選 兩德統一以來首敗 104 票墊底">
-<h3>史上頭一遭：德國競選安理會落選</h3>
-<p>這次 WEOG 組開出 2 個非常任席，德國、奧地利、葡萄牙「三搶二」。6/3 聯大投票結果出爐：<strong>葡萄牙 134 票、奧地利 131 票當選；德國僅 104 票墊底落選</strong>。這是兩德統一（1990）以來，德國首度在安理會改選中失利——德國過去曾 6 度入選、從未落敗。外長 Johann Wadephul 形容這是「苦澀的挫敗」、對德國國際地位的「沉重打擊」。<strong>敗因解讀</strong>：（1）Wadephul 親口坦言，德國堅定支持以色列（加薩戰爭背景）恐是國際反對的關鍵因素，這在 Al Jazeera、Euronews 等國際媒體深度分析皆獲呼應；（2）德國 2019 年才宣布參選，比對手晚；總理 Merz 去年更缺席聯合國大會、僅派外長出席，被外交圈視為「在聯合國刷存在感不足」。<strong>嚴重性</strong>：德國是聯合國主要金主、自詡多邊主義支柱，並長年透過 G4（與日本、印度、巴西聯手）爭取「常任理事國」席次。如今連 2 年期的非常任席都拿不下，等於宣告常任夢碎，也暴露它對「全球南方」（Global South）影響力的流失。這是 Merz 政府的外交警鐘，朝野齊批：綠黨外交發言人 Brugger「這筆帳算在 Merz 與 Wadephul 頭上」，SPD 外交發言人 Ahmetović 稱之為「明顯的外交挫敗」；Hessen 邦甚至揚言檢討德國對 UN 的金援。</p>
-<p class="post-sources">📚 來源：<a href="https://www.euronews.com/my-europe/2026/06/03/germany-fails-to-gain-seat-on-un-security-council" target="_blank" rel="noopener noreferrer">Euronews</a> · <a href="https://www.aljazeera.com/news/2026/6/4/did-germany-lose-its-unsc-seat-because-of-support-for-israel" target="_blank" rel="noopener noreferrer">Al Jazeera｜以色列因素分析</a> · <a href="https://www.zdfheute.de/politik/ausland/un-sicherheitsrat-deutschland-bedeutung-100.html" target="_blank" rel="noopener noreferrer">ZDFheute｜對 Merz 的意義</a> · <a href="https://www.t-online.de/nachrichten/ausland/internationale-politik/id_101281614/niederlage-im-un-sicherheitsrat-heftige-kritik-an-merz-und-wadephul.html" target="_blank" rel="noopener noreferrer">t-online｜朝野批評</a></p>
-
-<img src="assets/images/2026/weekly/W23_圖卡4_退休金與世代正義.png" alt="退休金 7/1 起調漲 4.24% 逾 2100 萬人受惠 世代正義爭議升溫">
-<h3>退休金調漲 4.24%——但世代帳單誰來付？</h3>
-<p>7/1 起德國法定退休金（gesetzliche Rente）調漲 <strong>4.24%</strong>，點值（Rentenwert）從 40.79 € 升到 42.52 €，逾 <strong>2,100 萬</strong>退休族受惠。勞動部長 Bärbel Bas（SPD）：「體面退休金不是奢侈，是對辛勞一生者的績效正義。」但這份「正義」並非沒有代價：（1）<strong>通膨吃掉漲幅</strong>，實質增加有限，不少退休族直呼無感；（2）<strong>世代爭議升溫</strong>，知名退休金經濟學者 <strong>Axel Börsch-Supan</strong>（MEA / 馬普所）痛批，新版 Rentenpaket「讓老一輩免責、把成本甩給年輕世代」——48% 給付保證線（Haltelinie）撐到 2031 年，背後是聯邦補貼逐年攀升，<strong>預估 2031 年單年補貼達約 110 億 €</strong>，全由年輕繳費者買單；（3）<strong>連動衝擊</strong>：「基礎保障」（原 Bürgergeld，7 月起改稱 Neue Grundsicherung）同步上路新規，房租最高僅認列「合理冷租 1.5 倍」，超額須自付差額——例如地方基準 480 €，最多補 720 €，實際暖租 900 € 須自付 180 €。<strong>對在德台灣人的意義</strong>：在德工作繳退休保險（Rentenversicherung）的你，就是這筆世代帳單的一部分；若你領取社會給付，7 月起的租金封頂要特別留意。</p>
-<p class="post-sources">📚 來源：<a href="https://www.deutsche-rentenversicherung.de/DRV/DE/Ueber-uns-und-Presse/Presse/Meldungen/2026/260305-rentenanpassung-2026.html" target="_blank" rel="noopener noreferrer">Deutsche Rentenversicherung 官方</a> · <a href="https://www.zdfheute.de/wirtschaft/rente-generationengerechtigkeit-steigende-beitraege-100.html" target="_blank" rel="noopener noreferrer">ZDFheute｜Börsch-Supan 批評</a> · <a href="https://www.buerger-geld.org/news/grundsicherung/buergergeld-zu-grundsicherung-15-fach-deckel-bei-der-miete-das-kommt-zum-1-juli-2026/" target="_blank" rel="noopener noreferrer">bürger-geld.org｜1.5 倍租金封頂</a></p>
-
-<img src="assets/images/2026/weekly/W23_圖卡5_破產潮.png" alt="德國 Q1 2026 企業破產 4573 家創 2005 年來新高 去工業化成真">
-<h3>破產潮創 20 年新高：去工業化從預測變成現實</h3>
-<p>IWH Halle 公布最新企業破產統計：德國 <strong>Q1 2026 企業破產 4,573 家</strong>，寫下 <strong>2005 年第 3 季以來新高</strong>；單是 3 月，破產家數較疫前均值 <strong>+71%</strong>，前 10% 最大破產案波及約 <strong>1.4 萬個工作</strong>。三條成因線同時拉緊：（1）<strong>殭屍企業清算</strong>——疫情補貼退場，體質虛弱企業被「斷奶」後集中倒閉；（2）<strong>能源與利率雙殺</strong>——德國工業電價 18.3 ct/kWh，較美國 7.5、中國 8.2 逾兩倍以上，高利率壓垮高負債企業；（3）<strong>重災區擴散</strong>：營建、汽車、零售創新高，金屬製品躍居破產榜首（+35%），汽車經銷破產暴增近 200%。專家定調：IWH 破產研究主管 <strong>Steffen Müller</strong> 對 Q2「不抱樂觀」，預期 3 月高點將重演；信用險業者 Atradius 預估全年破產上看 3 萬件、違約金額 <strong>650 億 €</strong>；Handelsblatt 引用業者觀點直指「結構性崩壞」。<strong>對在德台灣人的意義</strong>：IWH 直言「去工業化已從預測變成現實」。在德求職者宜留意汽車供應鏈、營建等高風險產業；若遇短工或裁員，務必先搞懂 <strong>Kurzarbeitergeld</strong>（短時工津貼）與 <strong>Arbeitslosengeld I</strong>（失業金）的權益。</p>
-<p class="post-sources">📚 來源：<a href="https://www.iwh-halle.de/en/press/press-releases/detail/iwh-insolvenztrend-firmenpleiten-auf-hoechstem-stand-seit-mehr-als-zwei-jahrzehnten" target="_blank" rel="noopener noreferrer">IWH Halle 研究報告</a> · <a href="https://www.handelsblatt.com/unternehmen/unternehmen-in-deutschland-struktureller-kollaps-experten-erwarten-rekord-bei-grossinsolvenzen/100179752.html" target="_blank" rel="noopener noreferrer">Handelsblatt</a> · <a href="https://www.t-online.de/finanzen/aktuelles/id_101280954/insolvenz-biotech-firma-aus-umfeld-von-sap-gruender-dietmar-hopp-ist-pleite.html" target="_blank" rel="noopener noreferrer">t-online｜個案 Molecular Health 破產</a></p>
-
-<hr>
-
-<h2 id="may18-31">5月18日–31日：2024 入籍破 29 萬、藍卡新門檻、機票稅調降、E-Auto 補助、GEAS 倒數、經濟回穩、AfD 反超 CDU、Merz 嗆川普</h2>
-<p>本期合併 W21 + W22 兩週重點，依在德台灣讀者關注度排序。最熱：5/24 BAMF 公布 2024 入籍突破 29 萬創紀錄、CDU/CSU Throm 趁勢喊話延回 8 年（SPD 擋下）；藍卡與機會卡 2026 新門檻；機票稅 7/1 起調降（飛台灣每張省 €11）；E-Auto 購車補助 5/19 重啟最高 €6,000。再來：6/12 共同歐盟庇護新制（GEAS）全面上路倒數；5/22 ifo 5 月升到 84.9 連 2 月走高、5/23 Q1 GDP +0.3% 由出口帶動、5/26-27 Telekom 第四輪談判同步全國警告罷工；AfD 27% 民調反超 CDU 22%；Merz 在埃爾福特對川普開嗆「不建議子女赴美」、跨大西洋關係 Merz 任內新低。</p>
-
-<img src="assets/images/2026/weekly/W21-22_圖卡1_Throm524BAMF入籍紀錄.png" alt="2024 入籍突破 29 萬 CDU Throm 5/24 趁勢喊話延回 8 年">
-<h3>2024 入籍突破 29 萬　CDU Throm 5/24 趁勢喊話延回 8 年</h3>
-<p>本期 Einbürgerung 真正的新動作發生在 <strong>5/24</strong>。BAMF（Bundesamt für Migration und Flüchtlinge）公布 2024 全年入籍統計：約 <strong>292,000 人</strong>取得德國國籍，是自 2000 年統計以來最高紀錄；2025 年根據部分邦已公布數據加上 Welt am Sonntag 自家調查推估，可能突破 <strong>30 萬人</strong>。同日 CDU/CSU 黨團內政事務發言人 Alexander Throm 接受 Welt am Sonntag 訪問，趁勢喊話三條訴求：(1) 把入籍年限「延回 8 年」、(2) 取消一般情況下的雙重國籍、(3) 退一步——把享有 subsidiärer Schutz / Asyl 身分者直接排除在入籍程序外，要求先轉永居才能起算入籍年限。但 Throm <strong>自己也承認</strong>這些「mit der SPD nicht durchsetzbar」（過不了 SPD 那關）：聯盟內談判能拿下的就是 2025/6 廢除 3 年 Turbo-Einbürgerung 那一仗。Tagesspiegel、Handelsblatt、t-online、Epoch Times Deutschland 同步跟進。結論：5 年制續行、無立法草案；本期 Throm 喊話是黨團發言人立場、不是政府正式提案，但顯示 CDU 內部的長期壓力沒有停下來。完整背景與時間線、對在德台灣人的短中長期策略，我們另開了一篇專文整理。</p>
-
-<img src="assets/images/2026/weekly/W21-22_圖卡2_藍卡機會卡新門檻.png" alt="藍卡與機會卡 2026 新門檻一次看">
-<h3>藍卡 + 機會卡　2026 新門檻一次看</h3>
-<p>對在德工作的外國人最直接相關的兩條規定本期同步更新：Blue Card 2026 年薪門檻一般職業上調至 <strong>€50,700／年</strong>（較 2025 約 +5%），緊缺職業（IT、醫療、工程等 Mangelberufe）<strong>€45,934／年</strong>。Chancenkarte（機會卡）資金證明上修至 €13,092／年（≈ €1,091／月），點數制度（學歷、語言、年齡、工作經驗加總 6 分以上）維持。對打算申請藍卡的台灣朋友，今年起年薪準備要往上抓一點，學位認證（ZAB）與履歷在送件前先確認到位。入籍 Einbürgerung 的最新攻防請對照上方圖卡 1。</p>
-
-<img src="assets/images/2026/weekly/W21-22_圖卡3_機票稅71調降.png" alt="機票稅 7/1 起調降 飛台灣每張省 €11">
-<h3>機票稅 7/1 起調降　飛回台灣每張省 €11</h3>
-<p>聯邦議院 5/21 三黨表決通過《航空運輸稅修正案》（LuftVStG-Änderung），由 CDU/CSU、SPD、AfD 一致支持，反對方為綠黨與左翼。新稅率 <strong>2026 年 7 月 1 日</strong>起生效：短程歐洲航線 €15.53 → €13.03（-€2.50），中程航線 €39.34 → €33.01（-€6.33），長程航線 <strong>€70.83 → €59.43（-€11.40）</strong>。對在德台灣人來說，飛回台灣屬於最長程級距，每張票省 €11.40 是直接到手的減免。航空業端，漢莎、Eurowings、Condor 皆表歡迎；環保陣營這邊，Greenpeace 痛批這是「致命訊號」、聯邦環境署（UBA）反過來建議加稅、BUND 認為氣候政策地位再被弱化、總體財政影響每年約 -3.5 億歐元。注意：這項稅是航空公司繳給聯邦的，價格能不能真的回饋到票面、要看各航空公司的訂價策略，可能要到 7-8 月才看得出實際省多少。</p>
-
-<img src="assets/images/2026/weekly/W21-22_圖卡4_E-Auto購車補助開放.png" alt="E-Auto 購車補助 5/19 重啟 最高 6000 歐">
-<h3>E-Auto 購車補助 5/19 重啟　最高 €6,000</h3>
-<p>聯邦經濟與氣候保護部委由 BAFA 執行的新一輪 Elektroauto-Kaufprämie 自 5/19 起重新開放線上申請。家庭年所得 <strong>€80,000 以下</strong>可申請，每多 1 名子女寬限 +€5,000、上限 €90,000；最高補助 €6,000，總預算 30 億歐元，目標涵蓋約 80 萬輛車。回溯適用條款：<strong>2026 年 1 月 1 日</strong>起首次在德國登記的純電車皆可申請。強制持有 36 個月，提前轉手須返還補助。申請流程全數位化，於 <code>foerderzentrale.gov.de</code> 線上送件；僅限私人 PKW（乘用車），二手車不支援。對打算換車的家庭，這是 2026 年下半年最大一筆民生政策補助，名額用完就停，建議盡早送件。</p>
-
-<img src="assets/images/2026/weekly/W21-22_圖卡5_GEAS倒數14天.png" alt="GEAS 倒數 14 天 6/12 共同歐盟庇護新制全面上路">
-<h3>GEAS 倒數 14 天　6/12 共同歐盟庇護新制全面上路</h3>
-<p>本期最具體的「即將發生」事件——<strong>6/12（兩週後）</strong>共同歐盟庇護體系（GEAS / CEAS, Gemeinsames Europäisches Asylsystem）11 部法規同步生效，全 EU 27 國第一次走同一套庇護程序、邊境快審與責任分配規則。德國這邊的配套法《GEAS-Anpassungsgesetz》與《GEAS-Anpassungsfolgegesetz》已於 <strong>4/28 登 Bundesgesetzblatt</strong>（聯邦公報）——Bundestag 2/27 二、三讀通過、Bundesrat 3/27 同意——主要條文 6/12 同步生效。三大改動：(1) 新增 <strong>Border Procedure（邊境程序）</strong>：低留居機率者改為 12 週內邊境快速處理，識別、安全檢查、決定一條龍；(2) <strong>Verantwortungsverordnung（責任分配新規）</strong>取代失靈多年的都柏林系統，重新劃分各成員國責任；(3) 取消過去的 Familienasyl（家庭庇護）概念，新增 Abschiebungshaft（遣返拘留）法律基礎。對於在德工作、永居、入籍中的台灣人來說，這項改革主要影響庇護申請人，但 6 月起短期入境、邊境檢查可能更嚴，跨境旅遊與商務的朋友可留意 ETIAS 與新邊境程序的銜接。</p>
-
-<img src="assets/images/2026/weekly/W21-22_圖卡6_經濟微露曙光.png" alt="ifo 5 月 84.9 連 2 月回升 Q1 GDP +0.3% Telekom 5/26-27 罷工">
-<h3>經濟微露曙光　ifo 5 月 84.9 連 2 月回升　Q1 GDP +0.3%</h3>
-<p>本期經濟新訊號兩條一起出來：5/22 ifo 研究院公布 5 月 Geschäftsklimaindex 升到 <strong>84.9</strong>（4 月 84.5），連續第二個月走高，企業對現況評估改善、對未來預期較不那麼悲觀，是短期景氣轉折訊號。緊接著 5/23 Destatis 公布 Q1 GDP 細節：季增 <strong>+0.3%</strong>（前季 0%），Ruth Brand 院長指出「出口在年初顯著回升、帶動經濟表現」，技術上脫離了 2025 連兩季萎縮。5/21 Bundesbank 月報同步出爐，內容更謹慎：Tarifverdienste（協約薪資）Q1 +2.8%、雖比前期慢但仍偏強；勞動市場略轉弱、社保就業微減、失業微升，伊朗戰爭與 Hormuz 海峽問題仍未消退。本期最大勞資衝突發生在 <strong>5/26-27</strong>——ver.di × Deutsche Telekom 第四輪談判同步全德警告罷工，逾 1 萬員工、12 城市停工，訴求 6.6% 加薪與 Mitgliederbonus；雙方最後在法蘭克福第四輪達成妥協協議。對在德工作族來說，Telekom 第四輪談判結果有指標性，是後續其他工會（IG Metall、ÖPNV）跟進的參考。</p>
-
-<img src="assets/images/2026/weekly/W21-22_圖卡7_AfD民調反超CDU.png" alt="AfD 27% 民調反超 CDU 22% 雙位數差距首見">
-<h3>AfD 27% 民調反超 CDU 22%　雙位數差距首見</h3>
-<p>5/26 Forsa 為 RTL/n-tv 公布最新聯邦民調（5/19-22 訪問期）：AfD 27%、CDU/CSU 22%、Grüne 15%、SPD 12%、Linke 11%、其他 6%、FDP 4%、BSW 3%。同期 INSA 給 AfD 27-29% 區間，加權聯邦趨勢 AfD 約 27.0%、CDU/CSU 約 23.0%——AfD 對聯盟黨領先擴大到 4-5 個百分點。CDU 黨內對 Merz 領導的討論升溫，Merz 個人滿意度持續低檔，連 CDU 自家選民也有不少表達不滿。<strong>9 月 6 日將舉行的薩克森-安哈爾特（Sachsen-Anhalt）州議會選舉</strong>，AfD 當地民調來到 39-40%、領先當地 CDU 達 12 個百分點，可能成為本年度 AfD 第一個拿下州總理（Ministerpräsident）的舞台，是未來四個月最值得追的德國政治劇本。</p>
-
-<img src="assets/images/2026/weekly/W21-22_圖卡8_Merz嗆川普不建議子女赴美.png" alt="梅爾茨對川普開嗆 不建議子女赴美 跨大西洋關係 Merz 任內新低">
-<h3>梅爾茨對川普開嗆　「不建議子女赴美」　跨大西洋關係任內新低</h3>
-<p>5/15 在埃爾福特（Erfurt）舉行的天主教大會（Katholikentag）上，Merz 回答現場年輕人提問時直言：「我不會建議我的子女現在去美國讀書或工作」（<em>ich würde meinen Kindern derzeit nicht empfehlen, in die USA zu gehen</em>），點名理由是美國「社會氛圍突然變調」、即使學歷高也「很難找到工作」。他補一句「我仍是美國的崇拜者」，但隨即說「我的欽佩此刻並沒在增加」——刻意保留外交餘地，但措辭已是德國總理層級對美罕見的負面評價。這段發言本週被 ZEIT、Spiegel、FAZ、ZDF 連日追蹤，把跨大西洋關係的結構性裂痕推到 Merz 任內新低：5/1 川普把對歐汽車關稅從 15% 拉至 <strong>25%</strong>、4 月底美方通知再撤 <strong>5,000</strong> 名駐德美軍並揚言「會再裁更多」、北約軍費分配與烏克蘭援助路線分歧持續。對在德或考慮赴美求職／升學的台灣朋友，這是一個由德國總理親自發出的市場訊號：美德人才流動、商業合作的環境正在重新洗牌，做選擇前可以再多看一下。</p>
-
-<hr>
-
-<h2 id="may11-17">5月11日–17日：Pistorius 訪基輔、紅場閱兵停火破局、世足噪音放寬、新生兒篩檢加項</h2>
-<p>本週德國目光大多落在烏克蘭與紅場之間：國防部長 Pistorius 5/11 突訪基輔，與烏克蘭簽下「Brave Germany」聯合國防創新計畫；川普牽線的三日停火於 5/11 期滿即破，Merz 同步公開警告親赴莫斯科的斯洛伐克總理 Fico。國內這邊，Bundesrat 5/8 通過為 6/11 世足量身打造的 Public Viewing 噪音特例，5/15 起新生兒擴大篩檢更加進 B12 缺乏症等 4 項代謝病。</p>
-
-<img src="assets/images/2026/weekly/W20_圖卡1_皮斯托留斯訪基輔.png" alt="德國國防部長突訪基輔簽下Brave Germany聯合研發協議">
-<h3>國防部長突訪基輔　德烏「Brave Germany」共同打造長程武器</h3>
-<p>為安全考量，行程事前完全保密——德國國防部長 Pistorius 於 5/11 飛抵基輔，與烏克蘭國防部長 Fedorov 簽下「Brave Germany」聯合國防創新計畫意向書。同步公布的 <strong>€40 億</strong>國防包，含數百枚 Patriot 飛彈、36 套 IRIS-T 防空系統，並首次撥 <strong>€3 億</strong>專款支援烏克蘭「深打能力」（deep-strike capabilities），雙方聯合生產的 AI 中程打擊無人機首批 5,000 架交由烏軍。Zelensky 親自接見，並透露雙方已有 6 項聯合武器生產案推進中。Pistorius 形容此行是「俄烏戰爭的轉折訊號」，德國對烏支援從「援助」正式升級為「共同生產」。Fedorov 稱此為「前所未有的援助包」，明年起首批飛彈交付。</p>
-
-<img src="assets/images/2026/weekly/W20_圖卡2_紅場閱兵停火破局.png" alt="紅場閱兵縮水停火三日破局Merz對Fico出手">
-<h3>紅場閱兵縮水　停火三日破局　Merz 對 Fico 出手</h3>
-<p>川普牽線俄烏 5/9-5/11 三日停火，雙方同步釋放 <strong>1,000 對 1,000</strong> 戰俘，是本輪最大規模交換。同日紅場閱兵全程僅 45 分鐘，20 年來首次沒有任何坦克、飛彈等重型武器亮相，只剩戰機飛越與預錄前線影片，CFR、The Bulwark 等智庫普遍解讀為俄方軍力疲態的訊號。然而停火期間雙方仍持續交火，5/11 期滿後戰線立即恢復，烏方稱當日前線仍有近 150 場接觸戰。Putin 對外宣稱「戰爭接近尾聲」，多數國際分析持疑。歐洲這邊，斯洛伐克總理 Fico 是唯一出席紅場閱兵的 EU 政府首長，Merz 隨即取消原訂 5/29 的訪斯洛伐克行程，公開警告 Fico「要在 EU 內接受一場談話」，可能牽動斯國 EU 資金分配——這是 Merz 任內首次對 EU 內部親俄成員直接施壓。俄外交部發言人 Zakharova 反嗆 Merz 言論為「歐洲傲慢」。</p>
-
-<img src="assets/images/2026/weekly/W20_圖卡3_世足倒數放映放寬.png" alt="世足倒數Bundesrat通過Public Viewing噪音特例">
-<h3>世足倒數　Bundesrat 通過 Public Viewing 噪音特例</h3>
-<p>2026 FIFA 世界盃將於 6/11 在美國、加拿大、墨西哥三地開賽。雖然不在德國辦，但因時差關係，多數比賽落在德國時間 21:00、22:00、00:00、03:00 開球——若照現行 22:00–06:00 夜間靜音規定，公開放映幾乎全部違法。Bundesrat 5/8 通過聯邦環境部（BMUKN）草擬的《公開放映規例》（Public-Viewing-Verordnung），地方主管機關可權衡公益核可夜間活動，規例自登《Bundesgesetzblatt》翌日起生效、<strong>2026 年 7 月 31 日自動失效</strong>，比照 2024 歐國盃模式。同梯次通過的還有 13 部其他法案，含體育促進法、心理諮詢強化、歐盟氫能與天然氣管道指令落地。柏林、慕尼黑、漢堡 Fan Zone 已公布動工計畫；DEHOGA 餐飲協會估計，本次將為餐廳、酒吧帶來夏季營收高峰。</p>
-
-<img src="assets/images/2026/weekly/W20_圖卡4_新生兒B12篩檢.png" alt="5月15日起新生兒擴大篩檢B12缺乏症納入健保">
-<h3>5/15 起：新生兒篩檢加項　B12 缺乏症納入健保</h3>
-<p>5 月 15 日起，依共同聯邦委員會（Gemeinsamer Bundesausschuss, G-BA）擴大《兒童健康指引》（Kinder-Richtlinie）的決議，德國法定健保（GKV）正式將維生素 B12 缺乏、同型半胱胺酸尿症（Homocystinurie）、丙酸血症（Propionazidämie）、甲基丙二酸尿症（Methylmalonazidurie）4 項代謝病納入新生兒擴大篩檢，目標疾病清單從 16 項擴大為 <strong>20 項</strong>，全德同步上路、100% GKV 給付。原本部分診所要自費約 35 €，新制上路後完全免費。聯邦醫師協會（KBV）同步調整對應檢驗項目 GOP 01724 給付，增加 5.48 € 反映實驗室成本。德國兒科醫學會（DGKJ）強調，B12 缺乏若未及早診治可造成嬰兒發展遲緩、貧血甚至不可逆神經損傷，這次擴大覆蓋對在德育兒的家庭——不分國籍、只要持 GKV 健保卡——都是直接受惠。</p>
-
-<hr>
-
-<h2 id="apr27-may10">4月27日–5月10日：梅爾茨執政滿一年、稅收驟減 178 億、車關稅 25%、紓困上路</h2>
-<p>5/6 是梅爾茨黑紅內閣執政滿一週年。這兩週把整個任期的問題一次攤開來：民調寫戰後新低、財政部突傳稅收短少 178 億、川普對歐車關稅由 15% 拉至 25%、雙 B 利潤恐遭兩位數重擊；同一時間，5/1 起多項聯邦紓困上路、電費全面下修、Telekom 12 萬人警告罷工。</p>
-
-<img src="assets/images/2026/weekly/W18-19_圖卡1_梅爾茨執政滿一年.png" alt="梅爾茨執政滿一年深陷三重風暴">
-<h3>執政滿週年：梅爾茨深陷三重風暴</h3>
-<p>5/9 INSA 民調，AfD 以 28% 首度大幅領先 CDU/CSU 的 23%；Forsa 同期顯示梅爾茨個人滿意度跌到 13%，是戰後德國總理首年最低紀錄，並較上週再 -2 個百分點。ZDF 政治晴雨表 5/8 公布的評價更直接：28% 認為梅爾茨表現好、68% 認為差，一年內幾近腰斬。三條壓力線同時失守：（1）民意支持寫戰後新低，連 CDU 自家選民都不滿；（2）聯盟內訌——CSU 與 SPD 在退休金、Bürgergeld 與軍購預算上多次互嗆；（3）跨大西洋關係生變，川普 5/1 把對歐汽車關稅由原協議 15% 拉至 25%，並揚言再從德國撤 5,000 名美軍、「之後還會更多」。</p>
-
-<img src="assets/images/2026/weekly/W18-19_圖卡2_稅收暴跌經濟雪上加霜.png" alt="德國稅收驟減178億財政警鐘響">
-<h3>稅收驟減 178 億　德國財政警鐘響</h3>
-<p>聯邦財政部長 Lars Klingbeil（SPD）5/7 公布最新稅收預估：2026 全年短少 <strong>178 億歐元</strong>，2030 年前累計缺口將達 <strong>875 億歐元</strong>。同步公布的數據看似有起色——首季 GDP 季增 +0.3%（2025 Q4 為 0%），但 4 月 CPI 通膨升到 2.9%（3 月為 2.7%），4 月失業率仍卡在 6.4%、失業人口 300.8 萬，月持平、年 +0.1pp。三個觀察點：能源價格年增 10.1%，仍受伊朗戰爭與荷姆茲海峽中斷影響；Klingbeil 把缺口責任推給川普關稅，綠黨反擊「預算蓋在沙土上」；ifo 4 月企業價格預期攀升至 31.6，是 2023 年 1 月以來最高，意味更多企業準備把成本轉嫁給消費者。</p>
-
-<img src="assets/images/2026/weekly/W18-19_圖卡3_川普25關稅德國車業.png" alt="川普25%關稅德國車業亮紅燈">
-<h3>汽車關稅暴漲 25%　德國車業亮紅燈</h3>
-<p>川普 5/1 起把對歐進口車關稅由原協議 15% 拉至 <strong>25%</strong>，直接打在德國車業最痛的位置。Bernstein 估算雙 B 利潤衝擊：BMW 2026 年 -12%、2027 年 -15%；Mercedes-Benz 2026 年 -14%、2027 年 -18%，皆是兩位數重擊。市場立刻反應：5/4 開盤 BMW、賓士、福斯、保時捷股價齊跌 2 至 3%。VDA 主席 Hildegard Müller 呼籲恢復談判，公開警告「美國消費者也將受害」。受創最重的是豪華車市場——這個區段的價格敏感度最高，多 10% 關稅幾乎都得吞，難以轉嫁。</p>
-
-<img src="assets/images/2026/weekly/W18-19_圖卡4_在德生活兩週整理.png" alt="紓困上路電費下修Telekom罷工">
-<h3>紓困上路、電費下修、Telekom 罷工</h3>
-<p>5/1 起聯邦三項紓困同步啟動：油稅減免 17 Cent／升（5/1-6/30）、雇主可自願發 €1,000 免稅紓困金（Entlastungsprämie）、電費補貼第二輪到位。家庭端最有感的是電費：5 月新一波換約方案普遍下修約 9.4%，每度約 €0.24，全德平均年帳單約 €172，比 2024 年初再省約 €8，多數家庭換約最多可省 €244。勞資面則出狀況：ver.di 工會對德國電信 Telekom 啟動警告罷工，訴求 6.0% 加薪、低薪族月加 €170，全德約 12 萬人受影響，5/6 已有約 2,000 人於 Bonn、Düsseldorf 等地停工，後續可能擴大；勞資 5/14-16 進入第五輪談判，這週是關鍵。</p>
-
-<hr>
-
-<h2 id="apr20-26">4月20–26日：GDP腰斬、德國首份軍事戰略、Mercosur生效</h2>
-<p>本週德國經濟、政治、外交三線同時出大事：六大研究機構把2026 GDP預測再砍一半，國防部長 Pistorius 公布建國以來第一份正式軍事戰略，EU-Mercosur 自貿協定 5/1 暫時生效；同時退休金、Bürgergeld、通勤津貼、儲氣費補貼、電商退款按鈕等多項民生新制陸續上路。</p>
-
-<img src="assets/images/2026/weekly/W17_圖卡1_經濟預測腰斬.png" alt="德國經濟成長預測腰斬">
-<h3>經濟成長預測腰斬：2026 GDP 0.5%、通膨 2.7%、失業率 6.4%</h3>
-<p>聯邦經濟部長 Katherina Reiche（CDU）4/22 公布春季預測，2026 年 GDP 從原預估的 1.0% 一口氣下修至 <strong>0.5%</strong>，2027 年也從 1.3% 降到 0.9%。3 月通膨 2.7%（兩年來最高）、3 月失業率 6.4%（失業人口 302 萬），Q1 企業破產 4,573 件創 20 年新高。能源價格年增 7.2%、燃油 +20%、暖氣油 +44.4%；投資信心跌至 2022 年末以來最低。綠黨 Banaszak 批扣除復活節假日效應後實質零成長；AfD 稱這份報告是「衰退文件」，真實成長僅 0.2%。主因是中東伊朗戰爭與能源衝擊持續發酵。</p>
-
-<img src="assets/images/2026/weekly/W17_圖卡2_軍事戰略.png" alt="德國史上首份軍事戰略Pistorius公布">
-<h3>德國首份軍事戰略：目標歐洲最強常規軍</h3>
-<p>國防部長 Pistorius 4/22 公布德國史上第一份正式軍事戰略（Militärische Strategie），目標 2030 年代成為「歐洲最強常規軍」（stärkste konventionelle Streitkraft Europas）。現役兵員從現在約 186,000 人擴編到 <strong>26 萬</strong>、後備從 7 萬增至 <strong>20 萬</strong>，並首度在官方文件明列俄羅斯為主要威脅。能力重點：防空、遠程武器系統、反水雷。ZDF 稱「最強常規軍」是核心目標；taz 批評計畫「宏大但模糊」、缺乏具體細節；綠黨 Nanni 指缺乏歐洲指南針視角；Tagesspiegel 報導大部分戰略文件列為機密，國防部要求媒體勿公布完整文件。</p>
-
-<img src="assets/images/2026/weekly/W17_圖卡3_Mercosur自貿.png" alt="梅爾茨會晤魯拉 EU-Mercosur協定5/1暫時生效">
-<h3>梅爾茨會晤魯拉：EU-Mercosur 自貿協定 5/1 暫時生效</h3>
-<p>巴西總統 Lula 4/20-21 訪德，於漢諾威 Herrenhausen 宮受軍禮接待，與梅爾茨總理共同出席 Hannover Messe 開幕典禮，雙邊政府進行第一次完整磋商，共 15 位部長（巴 7 + 德 8）出席。Merz 稱 EU-Mercosur 自貿協定是對抗「強權政治」（Machtpolitik）的象徵，協定 5/1 起暫時生效，涵蓋人口超過 7 億，是史上規模最大之一。合作領域含貿易、原料、國防、數位、研究、氣候。德國商界（BDI）看好可分散供應鏈、降低對中依賴；法國農業界與環團則擔心南美農產衝擊、雨林保護不足。4/21 柏林彼得斯堡氣候對話同步登場。</p>
-
-<img src="assets/images/2026/weekly/W17_圖卡4_家計政策.png" alt="德國家計政策三大變動退休金Bürgergeld通勤津貼">
-<h3>家計政策三大變動：退休金 +4.24%、Bürgergeld 連三年凍漲、通勤津貼擴增</h3>
-<ul>
-<li><strong>退休金 7/1 上調 +4.24%</strong>，月均多 78 歐，全德約 2,150 萬退休人士受惠。但低收入族群因稅後實際入袋金額縮水，「明面漲、實質縮」。</li>
-<li><strong>Bürgergeld 單身戶 €563 連 3 年凍漲</strong>。原本應依物價指數調降，靠既得保護條款（Bestandsschutz）避免實際削減。</li>
-<li><strong>通勤津貼 1/1 起統一 38 Cent／公里</strong>，從第 1 公里就能扣抵（過去前 20 公里只能 30 Cent），通勤族整體減稅約 11 億歐元。</li>
-</ul>
-
-<img src="assets/images/2026/weekly/W17_圖卡5_民生新制.png" alt="2026德國民生法規新制氣費電網電商">
-<h3>2026 民生法規新制：氣費結構簡化、電網注資 €65 億、電商強制設退款按鈕</h3>
-<ul>
-<li><strong>Gasspeicherumlage（儲氣費）2026 年起廢除</strong>，這是 2022 能源危機時期加在每度燃氣上的政府收費，廢除後天然氣帳單結構簡化、家庭負擔減少。</li>
-<li><strong>輸電網費聯邦 2026 注資 65 億歐元</strong>（4 年共 260 億），把原本由用戶承擔的網路擴建成本部分轉給聯邦預算，私戶與企業電費壓力減輕。</li>
-<li><strong>6/19 起電商強制「一鍵撤單／退款按鈕」（Kündigungsbutton／Widerrufsbutton）</strong>，解約與簽約一樣簡單，訂閱族最有感。</li>
-</ul>
-
-<hr>
-
-<h2 id="apr13-19">4月13–19日：油稅減免、梅爾茨民調崩盤</h2>
-<p>這週黑紅聯盟一連推出兩大民生紓困包、國防部長上演戲劇性政策大逆轉、漢莎再爆勞資衝突，油價與通膨同步失守，Merz 民調更跌到歷史谷底——以下是一週完整回顧。</p>
-
-<img src="assets/images/2026/weekly/W16_圖卡1_油稅減免.png" alt="德國油稅減免方案">
-<h3>油稅減免 17 Cent／升（5/1 - 6/30）</h3>
-<p>4/12 CDU/CSU + SPD 聯合委員會 Koalitionsausschuss 定案，4/13 Merz 總理與勞動部長 Bas 召開記者會公開宣布，4/16 送進 Bundestag 一讀並交由財政委員會審議，預計下週（4/20-26）完成二、三讀表決，5/1 正式上路，6/30 到期。法條實際是降能源稅 14.04 Cent／升，加上連帶增值稅效應才湊到 17 Cent。整體減收規模約 16 億歐元，財源由 2026 年提前調高菸稅 Tabaksteuer 補洞。DIW 警告：石油公司未必會把減稅完整轉嫁給消費者，實際到加油站的降幅可能打折。受惠族群主要是通勤族、長途駕駛與運輸業。</p>
-
-<img src="assets/images/2026/weekly/W16_圖卡2_企業補助1000歐.png" alt="德國企業補助1000歐方案">
-<h3>雇主可發 €1,000 紓困金（Entlastungsprämie）</h3>
-<p>完全免稅、免社保，全額進員工口袋，參考過去 2022-24 年的 Inflationsausgleichsprämie 模式。4/12 黑紅聯盟決議，4/13 政府公開宣布，接下來 4-5 月會把所得稅法 EStG 修正草案送進 Bundestag，修法通過後雇主即可開始自願發放，2026 年全年都能發，12/31 截止。關鍵：錢不是政府發，是企業自願發——自由業、自僱者完全領不到；DGB 工會也批 2026 一年時限太短，呼籲延到 2027。只要有德國勞動合約、雇主願意發，就能拿到全額 €1,000。</p>
-
-<img src="assets/images/2026/weekly/W16_圖卡3_漢莎CityLine.png" alt="漢莎CityLine無預警關閉">
-<h3>漢莎 CityLine 無預警關閉</h3>
-<p>兩週內四度罷工（VC 飛行員工會 + UFO 空服員工會）、4/15-17 停飛 80-90% 航班，漢莎再宣布區域子公司 CityLine 提前兩年結束營運（原訂 2028 退場），2,200 名員工一夜失業。CityLine 是漢莎集團 1958 年成立的區域子公司，主飛德國國內線與歐洲中短程，使用 Embraer E190/E195、CRJ900 等支線客機，法蘭克福、慕尼黑為主要樞紐，是飛往中小型城市（如 Bremen、Graz）的主力。漢莎理由：煤油成本暴漲＋罷工損失過重；UFO 工會批「這是對自家員工宣戰」。</p>
-
-<img src="assets/images/2026/weekly/W16_圖卡4_油價通膨.png" alt="德國油價破€2與通膨">
-<h3>油價破 €2／升，德國 GDP 下修至 0.5%</h3>
-<p>德國汽油、柴油雙雙突破 €2／升，3 月通膨率升至 2.7%（兩年新高）。GDP 預測從戰前的 1.3% 大幅下修到 0.5%，失業率預計升至 6.4%，ifo 景氣指數跌至 86.4。主因是伊朗一度封鎖荷姆茲海峽（Straße von Hormuz），阻斷全球 20% 石油流量，4/8 美伊停火後船運量仍未恢復戰前水準。IMF 4/14 同步下修全球成長預測，德國首當其衝。</p>
-
-<img src="assets/images/2026/weekly/W16_圖卡5_梅爾茨民調.png" alt="梅爾茨民調崩盤AfD首度領先">
-<h3>梅爾茨民調崩盤，AfD 首度領先</h3>
-<p>Morning Consult 4 月民調：滿意度 19%、不滿 76%，成為 24 國元首中最不受歡迎者。ZDF 政治晴雨表顯示 AfD 26% 首度超越 CDU/CSU 25%，65% 民眾評梅爾茨表現「差」，超過半數 CDU 自家選民也對自家總理不滿。Insa 分析：主因是違背競選承諾、經濟持續下行。</p>
-
-<img src="assets/images/2026/weekly/W16_圖卡6_兵役爭議.png" alt="德國兵役爭議大逆轉Pistorius讓步">
-<h3>兵役法出國爭議大逆轉（Pistorius 讓步）</h3>
-<p>源頭是 2025/12/5 Bundestag 通過、2026/1/1 生效的《兵役現代化法》Wehrdienstgesetz。4 月初媒體揭露法條細節：17-45 歲德國籍男性出國逾 3 個月須先向聯邦國防軍申請同意——而且這條原本只適用於「戰備狀態 Spannungs- und Verteidigungsfall」，新法版本把它擴張到和平時期也適用。Z 世代立刻炸鍋、柏林、漢堡、慕尼黑等地陸續出現抗議；BSW 黨魁 Wagenknecht 4/6 公開要求 Pistorius 下台。Pistorius 4/10 讓步，承認「溝通不清」（nicht ausreichend durchdacht），本週透過 Allgemeinverfügung（普通處分）登上聯邦公報 Bundesanzeiger，明文寫「只要 Wehrpflicht 仍處於暫停狀態，出國同意就視為已授予」。重點：法條本身沒有修改，只是行政命令暫時凍結——未來一旦政治情勢變動、宣布戰備或恢復強制徵兵，這條隨時可以啟動。</p>
-
-<hr>
-
-<h2 id="apr6-12">4月6–12日：衰退警報、通膨新高、廢核大逆轉</h2>
-<p>這一週的德國，充滿了「危」與「轉」的氣氛。經濟數據令人擔憂、物價讓人頭痛、能源政策又在大翻轉。</p>
-
-<img src="assets/images/2026/weekly/W15_圖卡1_經濟衰退.png" alt="德國經濟衰退警報">
-<h3>德國經濟衰退警報：增長預測腰斬</h3>
-<p>德國六大經濟研究機構本週聯合發布春季預測報告，2026 年經濟成長率從原本預估的 1.3% 大幅下修至 0.6%，幾乎腰斬！2027 年預測也從 1.4% 降到 0.9%。問題核心：中東伊朗戰爭導致荷姆茲海峽受阻，國際油氣價格飆升。德國作為高度依賴進口能源的工業大國，首當其衝。第一季度 GDP 幾近停滯，工業訂單持續萎縮，化工、金屬加工、造紙等能源密集產業受創最重。</p>
-
-<img src="assets/images/2026/weekly/W15_圖卡2_通膨危機.png" alt="德國通膨飆到23個月新高">
-<h3>德國通膨飆到 23 個月新高</h3>
-<p>3 月德國通膨率跳升至 2.7%，較 2 月的 1.9% 大幅上升，創下近兩年新高。能源成本是最大推手：燃油價格上漲 20%、供暖油飆升 44.4%、整體能源成本年增 7.2%。德國政府已緊急通過「加油站每日限漲一次」的臨時措施（中午 12 時後才能調漲）。在德生活小提醒：租約續約季，許多房東以「能源成本上升」為由調漲房租，建議查詢所在地區的 Mietspiegel（房租指標）；早上加油可能比下午划算；建議重新檢視每月開支，特別是能源和食品支出。</p>
-
-<img src="assets/images/2026/weekly/W15_圖卡3_能源政策.png" alt="德國能源政策大轉向梅爾茨承認廢核是錯誤">
-<h3>德國能源政策大轉向：梅爾茨承認廢核是錯誤</h3>
-<p>梅爾茨總理罕見承認：上屆政府的「全面廢核」決定是一個「重大戰略錯誤」，德國現在正以「全世界最昂貴的方式」推動能源轉型。新政府能源政策方向：重新評估核能，開放小型模組反應爐（SMR）；新增 12GW 天然氣發電容量；維持 2045 淨零排放目標，但「不讓氣候政策綁手綁腳」。綠黨和環保團體強烈反對，認為不該為短期經濟利益背棄氣候承諾；工業界和工會則大力支持，認為不穩定且昂貴的電力正在逼走德國製造業。</p>
-
-<hr>
-
-<h2 id="mar30-apr5">3月30日–4月5日：油價新高、機場T3啟用</h2>
-
-<img src="assets/images/2026/weekly/W14_圖卡1_油價飆升.png" alt="德國油價飆升創歷史新高">
-<h3>油價飆升創歷史新高</h3>
-<p>伊朗戰爭導致荷姆茲海峽關閉，全球 25% 石油運輸中斷。德國柴油飆至 EUR 2.376 /公升，布倫特原油突破 USD 126 /桶。政府 4/1 起實施「每日中午 12:00 限漲一次」，違者罰款最高 EUR 10 萬。IEA 已警告 4 月油價情況只會更糟，不排除繼續走高。想省錢加油，推薦兩款 App：CleverTanken（全德油站即時地圖，cleveres-tanken.de）、PACE Drive（顏色地圖一目了然，可直接 App 付款免排隊，支援 Android Auto / CarPlay）。</p>
-
-<img src="assets/images/2026/weekly/W14_圖卡2_經濟預測.png" alt="德國經濟成長預測腰斬">
-<h3>德國經濟成長預測腰斬</h3>
-<p>2026 年 GDP 成長率從 1.3% 大幅下修至 0.6%，通膨升至 2.7%。總理梅爾茨坦言「德國經濟正處於十字路口」，Ifo 調查顯示僅 25% 的經濟學家看好政府目前的應對措施。</p>
-
-<img src="assets/images/2026/weekly/W14_圖卡4_法蘭克福T3.png" alt="法蘭克福機場第三航廈啟用">
-<h3>法蘭克福機場 Terminal 3（4/22 啟用）</h3>
-<p>EUR 40 億打造，年容量 1,900 萬旅客。台灣旅客請注意：中華航空（CI）4/23 起搬入 T3，報到與安檢全部在 T3；長榮航空（BR）屬 Star Alliance，繼續在 T1，不受影響。CT 安檢升級：21 條通道，液體和筆電不需從包包取出。SkyTeam 貴賓室 550m² 同步啟用，華航商務/菁英旅客可使用。搭火車的旅客先到 T1（Fernbahnhof），再轉 SkyLine 輕軌（8 分鐘）前往 T3。</p>
-
-<img src="assets/images/2026/weekly/W14_圖卡3_四月新規.png" alt="德國四月新規">
-<h3>四月其他新規</h3>
-<ul>
-<li>公務員加薪 +2.8%（最低 EUR 100 /月），4/1 起生效</li>
-<li>入籍男性提醒：45 歲以下若長期居住德國境外（連續超過 3 個月），須向地區兵役局辦理海外申報，建議入籍前先諮詢移民律師</li>
-</ul>
-
-<hr>
-
-<h2 id="mar23-29">3月23–29日：罷工落幕、Bundestag三法通過</h2>
-
-<img src="assets/images/2026/weekly/W13_圖卡1_油價飛漲.png" alt="德國油價飛漲Diesel創近年新高">
-<h3>油價警報：Diesel 創近年新高 2.31 EUR</h3>
-<p>因伊朗封鎖荷姆茲海峽，全球油價急升——布蘭特原油 3 月初一度突破 120 美元/桶。目前德國加油站均價：Super E10 約 2.086€，Diesel 達 2.310€/公升。Bundestag 已於 3/26 緊急通過油價減免方案，細節待公告。省錢小訣竅：避開早上 7-8 點，下午 4 點後加油通常較便宜！</p>
-
-<img src="assets/images/2026/weekly/W13_圖卡1_RLP選舉.png" alt="RLP選舉後組閣進展">
-<h3>RLP 選舉後組閣進展</h3>
-<p>萊茵蘭-普法茲邦選舉結果確認後，CDU 的 Gordon Schnieder 籌組新政府，CDU + SPD 大聯合政府談判正式展開，終結 SPD 35 年執政的歷史轉折進入新篇章。</p>
-
-<img src="assets/images/2026/weekly/W13_圖卡2_交通罷工達成.png" alt="NRW交通罷工達成協議">
-<h3>罷工落幕：NRW 交通工人五大訴求全數達成</h3>
-<p>歷時近兩個月的 ver.di 大罷工本週出現重大進展：3/26 北萊茵-西伐利亞邦（NRW）與雇主達成協議，約 10 萬名交通從業人員受惠。週工時分階段降至 38 小時、班次間休息延長至 11 小時、週日加班費提升。BW、Hessen、NRW 均已簽署，其他各邦談判仍持續中。</p>
-
-<img src="assets/images/2026/weekly/W13_圖卡3_Bundestag生活提醒.png" alt="Bundestag三大政策通過與生活提醒">
-<h3>Bundestag 本週三大政策</h3>
-<p>3/26 緊急油價補貼方案通過；3/27 新版聯邦氣候保護計畫上路；3/27 年金新規通過，附加健保費 3 月起也影響退休人士。在德台灣人本週必知：3/29 凌晨 2:00 → 3:00，夏令時間（Sommerzeit）開始，少睡一小時。陸地邊境管制延長至 2026 年 9 月，過境請備妥護照。</p>
-
-<img src="assets/images/2026/weekly/W13_圖卡3_德國經濟Q1.png" alt="德國2026 Q1經濟數據">
-<h3>德國 2026 Q1 經濟數據</h3>
-<p>第一季度 GDP 幾近停滯，各大機構開始下調全年預測。消費信心持續低迷，能源成本衝擊工業生產，Q2 走向成為觀察重點。</p>
-
-<hr>
-
-<h2 id="mar16-22">3月16–22日：RLP選舉CDU大勝、BER機場停擺</h2>
-
-<img src="assets/images/2026/weekly/W12_圖卡1_RLP選舉.png" alt="萊茵蘭-普法茲邦議會選舉CDU大勝">
-<h3>萊茵蘭-普法茲邦（Rheinland-Pfalz）選舉結果</h3>
-<p>CDU 30.9% 大勝，終結 SPD 35 年執政！SPD 25.9%（-10.2%）慘跌至第二，AfD 20.1%（+11.9%）飆升成第三大黨，綠黨 8.1% 勉強進入議會，FDP、自由選民、左翼黨全部未過 5% 門檻。CDU 的 Gordon Schnieder 將成為新任邦長，最可能組閣：CDU + SPD 大聯合政府。</p>
-
-<img src="assets/images/2026/weekly/W12_圖卡2_BER罷工.png" alt="柏林BER機場大罷工全面停擺19小時">
-<h3>柏林 BER 機場大罷工！全面停擺 19 小時</h3>
-<p>3/18 Verdi 工會發起全面罷工：445 航班取消，57,000 名旅客受影響，Lufthansa、Ryanair、easyJet 全部停飛。原因：工會要求加薪 6%，資方僅願 1-1.5%。下一輪談判：3/25，短期內仍有罷工風險！</p>
-
-<img src="assets/images/2026/weekly/W12_圖卡3_經濟景氣.png" alt="德國經濟復甦放緩景氣指數">
-<h3>德國經濟：復甦放緩</h3>
-<p>消費信心指數跌至 -24.7 點，2 月破產企業 1,466 家（+5%），影響 23,000 名員工。三大隱憂：中東危機推高油氣價格、美國關稅衝擊出口、通膨回升壓抑消費。好消息：各機構預測 2026 GDP 仍有 +0.6~1.5% 成長，Q2 起有望逐步回溫。</p>]]></content:encoded>
   </item>
   <item>
     <title>2026 世界盃特別報導：德國爆冷、日本不敗、黑馬攪局——32 強前夕戰況全解析</title>
