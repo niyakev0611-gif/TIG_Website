@@ -1,0 +1,18 @@
+{
+  "_說明": "每週貼文 JSON 範本。正式檔放 drafts/social/2026/W{N}_posts.json（drafts/ 已 gitignore，不會進 repo）。fb_message 放 FB 條列版全文、ig_message 放 IG 精簡版（≤1500 字元、不放網址）。schedule 是 FB 原生排程時間、ig_schedule 是 IG 本機 launchd 排程時間，都是 Europe/Berlin 當地時間。images 用 repo 相對路徑，IG 會自動轉成網站公開 URL（PNG 需先合進 main 並部署上線）。",
+  "posts": [
+    {
+      "id": "w28-weekly",
+      "type": "multi_photo",
+      "platforms": ["fb", "ig"],
+      "schedule": "2026-07-12 19:00",
+      "ig_schedule": "2026-07-12 19:05",
+      "images": [
+        "assets/images/2026/weekly/W28_圖卡1_主題A.png",
+        "assets/images/2026/weekly/W28_圖卡2_主題B.png"
+      ],
+      "fb_message": "🇩🇪【德國週報 W28】…（FB 條列版全文，含 📚 資料來源連結與 hashtag）",
+      "ig_message": "🇩🇪 德國週報 W28\n…（IG 精簡版，每題一行，≤1500 字元，不放網址）\n\n📚 完整解析與資料來源 → FB 粉專或網站（連結在 bio）\n\n#德國 #在德台灣人"
+    }
+  ]
+}

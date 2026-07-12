@@ -123,6 +123,7 @@ function renderPost(post) {
   const desc = (post.excerpt || '').slice(0, 160);
   const mins = readingTime(cleanContent);
   const dateZh = fmtDateZh(post.date);
+  const updatedZh = post.updated ? fmtDateZh(post.updated) : null;
   const related = getRelated(post);
   const firstCat = post.categories[0] || '';
 
@@ -134,7 +135,7 @@ function renderPost(post) {
     image: ogImage,
     url: canonical,
     datePublished: post.date,
-    dateModified: post.date,
+    dateModified: post.updated || post.date,
     author: { "@type": "Person", name: AUTHOR, url: SITE },
     publisher: {
       "@type": "Organization",
@@ -210,6 +211,7 @@ ${HEAD_CSP}
 <meta property="og:image" content="${escapeAttr(ogImage)}" />
 <meta property="og:locale" content="zh_TW" />
 <meta property="article:published_time" content="${escapeAttr(post.date)}" />
+${post.updated ? `<meta property="article:modified_time" content="${escapeAttr(post.updated)}" />` : ''}
 ${(post.tags||[]).map(t => `<meta property="article:tag" content="${escapeAttr(t)}" />`).join('\n')}
 <meta name="twitter:card" content="${twitterCardType}" />
 <meta name="twitter:title" content="${escapeAttr(fullTitle)}" />
@@ -233,7 +235,9 @@ ${SIDEBAR_ABS}
     <div class="post-header__cats">${catsHtml}</div>
     <h1 class="post-header__title">${escapeAttr(post.title)}</h1>
     <div class="post-header__meta">
-      <span>${dateZh}</span>
+      <span>${dateZh} 發布</span>${updatedZh ? `
+      <span class="post-header__sep">·</span>
+      <span>${updatedZh} 更新</span>` : ''}
       <span class="post-header__sep">·</span>
       <span>${mins} 分鐘閱讀</span>
     </div>
@@ -282,7 +286,7 @@ function renderSitemap() {
   for (const p of POSTS) {
     urls.push({
       loc: `${SITE}/posts/${p.slug}.html`,
-      lastmod: p.date,
+      lastmod: p.updated || p.date,
       priority: '0.9',
       changefreq: p.slug === 'weekly-digest' ? 'weekly' : 'monthly'
     });
