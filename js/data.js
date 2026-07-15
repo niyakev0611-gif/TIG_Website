@@ -2152,6 +2152,7 @@ const POSTS = [
     slug: 'german-bank-recommendation',
     title: '2026 推薦的免付費德國銀行',
     date: '2026-07-10',
+    updated: '2026-07-15',
     categories: ["來德生活必辦事項", "德國生活"],
     tags: ["免費", "德國", "折扣碼", "推薦", "銀行"],
     excerpt: '在德國生活的這些年來，用過不少間銀行，Deutsche Bank德意志銀行、Sparkasse、Comdirekt、Revolut、N26還有Commerzbank德國商業銀行。這篇會來介紹四間我推薦的銀行（含最新加入的 BBVA 高 Cashback 首選），以及分析其優缺點。至於為什麼不介…',
@@ -2304,6 +2305,14 @@ const POSTS = [
 
 <!-- wp:image {"sizeSlug":"large","linkDestination":"none"} -->
 <figure class="wp-block-image size-large"><img src="assets/images/bbva/promo/BBVA_圖卡7_信用卡.png" alt="BBVA 信用卡：6 個月 5% 回饋、上限 €150、前 6 個月免月費、可隨時取消"/><figcaption class="wp-element-caption">BBVA 信用卡：旅遊＋線上消費 5% 回饋（半年上限 €150），前 6 個月免月費</figcaption></figure>
+
+<!-- wp:paragraph -->
+<p class="">（2026/07/15 更新）我自己申辦的卡片<strong>實體開箱</strong>——到貨速度不錯，包裝也蠻有質感的：</p>
+<!-- /wp:paragraph -->
+
+<figure class="wp-block-image size-large"><img src="assets/images/bbva/unboxing/BBVA_信用卡開箱_1_信封.jpg" alt="BBVA 信用卡開箱：信封 Deine neue Kreditkarte ist da"/><figcaption class="wp-element-caption">開箱 ①：卡片信封「Deine neue Kreditkarte ist da」（你的新信用卡到了）</figcaption></figure>
+
+<figure class="wp-block-image size-large"><img src="assets/images/bbva/unboxing/BBVA_信用卡開箱_2_實卡包裝.jpg" alt="BBVA 信用卡開箱：實卡與包裝，卡面無卡號設計"/><figcaption class="wp-element-caption">開箱 ②：實卡深藍質感，<strong>卡面完全無卡號</strong>——號碼與動態 CVV 都在 App 裡管理，被偷拍也不怕</figcaption></figure>
 <!-- /wp:image -->
 
 <!-- wp:list -->
