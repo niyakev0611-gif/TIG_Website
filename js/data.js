@@ -908,7 +908,7 @@ const POSTS = [
     slug: 'german-tax-guide-2026',
     title: '2026 德國報稅攻略',
     date: '2026-03-29',
-    updated: '2026-07-12',
+    updated: '2026-07-17',
     categories: ["來德生活必辦事項"],
     tags: [],
     excerpt: '為何報稅 在德國雖然不是所有人都有報稅義務，但只要月收入超過410歐元就會被自動扣稅。而我們每個人都有可能被預扣比較多稅，加上我們又有一些因為家庭、工作或學校的開銷，申報這些開銷每年可以讓你有機會拿回被多扣的稅款，多退少補，大部分的人都是可…',
@@ -1014,6 +1014,52 @@ const POSTS = [
 <li class="">沒有申報義務、純自願申報（Antragsveranlagung）者不受 7/31 限制：可回溯 <strong>4 年</strong>——2025 年度最晚可於 <strong>2029 年 12 月 31 日</strong>前提交，退稅照領。</li>
 <!-- /wp:list-item --></ul>
 <!-- /wp:list -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">誰有報稅義務？（Wer muss eine Steuererklärung abgeben?）</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="">（2026/07 更新）上面提到「有申報義務」跟「純自願申報」差很多——有義務者受 7/31 期限與逾期罰款約束，自願申報者則可以慢慢報、回溯 4 年都行。但到底哪些人才算「有義務」？《所得稅法》§46 EStG 列出了幾種常見情況，只要符合<strong>任一項</strong>就必須申報：</p>
+<!-- /wp:paragraph -->
+
+<img src="assets/images/2026/tax/Steuerfrist2026_圖卡3_報稅義務.png" alt="你有報稅義務嗎？同時受僱2個以上雇主（第2份薪資按稅卡VI＝第6級）、配偶稅卡組合III/V（第3＋5級）或IV＋因子法Faktor、薪資以外收入每年超過410歐元、失業金ALG I育嬰津貼Elterngeld等給付每年超過410歐元、已在ELStAM登記免稅額度、自雇者自由業者個體戶都有申報義務；沒有以上情況通常沒有義務但建議申報退稅">
+
+<!-- wp:list -->
+<ul class="wp-block-list"><!-- wp:list-item -->
+<li class=""><strong>同時受僱於 2 個以上雇主</strong>：第二份起的薪資會被歸入稅卡 VI（第 6 級——預扣稅率最高的一級）</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li class=""><strong>配偶／登記伴侶選了稅卡組合 III/V（第 3＋5 級），或 IV（第 4 級）搭配因子法（Faktorverfahren）</strong>——因子法是配偶間依收入比例分攤預扣稅的機制</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li class=""><strong>薪資以外收入每年超過 410 €</strong>：房租、接案、投資獲利等（不含薪資本身）</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li class=""><strong>領取「工資替代給付」（Lohnersatzleistungen）每年超過 410 €</strong>：失業金 I（Arbeitslosengeld I／ALG I）、育嬰津貼（Elterngeld）、病假津貼（Krankengeld）、短工津貼（Kurzarbeitergeld）等。這類給付本身免稅，但會透過「累進保留條款」（Progressionsvorbehalt）拉高其餘所得的稅率，所以超過門檻就得申報。<strong>注意：公民金（Bürgergeld，前身為 ALG II／Hartz IV）屬社會救助，不在累進保留條款清單內，不會因此觸發申報義務</strong>——別跟 ALG I 搞混</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li class=""><strong>已在 ELStAM 登記免稅額度（Freibetrag）</strong>：例如預先登記子女撫養或通勤扣除額，每月薪資已因此少扣了稅</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li class=""><strong>自雇者、自由業者、個體戶（Selbständige／Freiberufler／Gewerbetreibende）</strong>：這類收入本來就不透過雇主預扣薪資稅</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li class="">稅務局主動發函要求申報（Aufforderung vom Finanzamt）：收到信一律得報，不論是否符合以上任一條件</li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list -->
+
+<!-- wp:paragraph -->
+<p class="">如果以上都不符合——例如單身、只有一份薪資（稅卡 I）、沒有其他收入——通常就<strong>沒有法定申報義務</strong>。但還是建議申報：這種「純自願申報」不受 7/31 限制，最晚可回溯 <strong>4 年</strong>申請，多數人都能拿回被多扣的稅款。</p>
+<!-- /wp:paragraph -->
+
+<p class="post-sources">📚 來源：<a href="https://www.gesetze-im-internet.de/estg/__46.html" target="_blank" rel="noopener noreferrer">§46 EStG｜法源全文（gesetze-im-internet.de）</a> · <a href="https://www.finanztip.de/steuererklaerung/steuererklaerung-pflicht/" target="_blank" rel="noopener noreferrer">Finanztip｜報稅義務總覽</a> · <a href="https://www.lohnsteuer-kompakt.de/steuerwissen/abgabepflicht-fuer-die-steuererklaerung/" target="_blank" rel="noopener noreferrer">Lohnsteuer kompakt｜Abgabepflicht 說明</a></p>
 
 <!-- wp:heading -->
 <h2 class="wp-block-heading">如何報稅</h2>
