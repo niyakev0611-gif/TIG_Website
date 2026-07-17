@@ -33,6 +33,15 @@ CJK_B = '/usr/share/fonts/opentype/noto/NotoSansCJK-Bold.ttc'
 LAT_R = '/usr/share/fonts/truetype/noto/NotoSans-Regular.ttf'
 LAT_B = '/usr/share/fonts/truetype/noto/NotoSans-Bold.ttf'
 
+# macOS fallback（本機字型由 Homebrew 裝在 ~/Library/Fonts，OTF 無 ttc index）
+import os as _os
+if not _os.path.exists(CJK_R):
+    _MAC = _os.path.expanduser('~/Library/Fonts')
+    CJK_R = f'{_MAC}/NotoSansCJKtc-Regular.otf'
+    CJK_B = f'{_MAC}/NotoSansCJKtc-Bold.otf'
+    LAT_R = f'{_MAC}/NotoSans-Regular.ttf'
+    LAT_B = f'{_MAC}/NotoSans-Bold.ttf'
+
 _font_cache = {}
 def F(path, size, index=None):
     key = (path, size, index)
@@ -44,7 +53,8 @@ def F(path, size, index=None):
     return _font_cache[key]
 
 def cjk(size, bold=False):
-    return F(CJK_B if bold else CJK_R, size, index=3)
+    path = CJK_B if bold else CJK_R
+    return F(path, size, index=3 if path.endswith('.ttc') else None)
 
 def lat(size, bold=False):
     return F(LAT_B if bold else LAT_R, size)
@@ -446,13 +456,13 @@ CARDS = [
   file='W29_圖卡2_德法部長理事會.png'),
  dict(
   theme='#D4740E', badges=[('財政', True), ('預算', False)], illu='coins',
-  title='2027 預算案：5,554 億 € 新高',
+  title='2027 預算案：5,554 億歐元新高',
   subtitle='7/6 內閣拍板、秋季國會審議；舉債與國防雙雙大增',
-  stats=[('5,554 億 €', '2027 核心預算支出（+5.9%）'),
-         ('+32.7%', '國防預算增至 1,097 億 €')],
+  stats=[('5,554 億歐元', '2027 核心預算支出（+5.9%）'),
+         ('+32.7%', '國防預算增至 1,097 億歐元')],
   bullets=[
-   ('錢往哪去', '勞動社會部 2,015 億 € 最大宗；國防單年暴增 270 億 €；聯邦債務利息 436 億 € 已是第三大支出項。'),
-   ('債怎麼堆', '含特別基金，2027 整體新債約 2,000 億 €、2030 年恐達 2,195 億 €——「安全優先」全靠舉債支撐。'),
+   ('錢往哪去', '勞動社會部 2,015 億歐元最大宗；國防單年暴增 270 億歐元；聯邦債務利息 436 億歐元已是第三大支出項。'),
+   ('債怎麼堆', '含特別基金，2027 整體新債約 2,000 億歐元、2030 年恐達 2,195 億歐元——「安全優先」全靠舉債支撐。'),
    ('各方砲火', 'BDI 執行長 Gönner 批「支出與舉債增幅令人警覺」；Greenpeace 斥挪用氣候轉型基金（KTF）是「無恥挪用」。'),
   ],
   takeaway=('數據解讀', '國防 +32.7% 直接對應 NATO「2035 前 GDP 5%」路線圖；但利息負擔持續攀升、財政空間快速收窄，秋季攻防可期。'),
