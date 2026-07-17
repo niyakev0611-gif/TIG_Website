@@ -1,6 +1,6 @@
 # 德國知識小種子 — FB + IG 自動發文設定指南
 
-用 `scripts/social-post.mjs` 把 `drafts/social/2026/W{N}_posts.json` 的貼文透過 Meta Graph API 自動送出。
+用 `scripts/social-post.mjs` 把 `social/weekly/W{N}_posts.json` 的貼文透過 Meta Graph API 自動送出。
 架構移植自 oasis 的 `fb-post.mjs`（`/Users/Lin/oasis/web/scripts/`），並擴充 Instagram 支援：
 
 - **Facebook**：用 FB 內建排程（上傳 + 設定發布時間），到點由 FB 自動公開，腳本不用一直開著。
@@ -47,7 +47,7 @@ FB_PAGE_TOKEN=<System User Token>
 ## 每週例行（全自動流程）
 
 1. 週報 PR 合進 main、GitHub Pages 部署完成（約 30–60 秒）。
-2. Claude 產生 `drafts/social/2026/W{N}_posts.json`（FB 條列版 + IG 精簡版 + 圖卡清單 + 排程時間）。
+2. Claude 產生 `social/weekly/W{N}_posts.json`（FB 條列版 + IG 精簡版 + 圖卡清單 + 排程時間）。
 3. 預覽：`node scripts/social-post.mjs --week {N} --dry-run`
 4. 排程：`node scripts/social-post.mjs --week {N}`
    - FB → 排進 FB 端，到點自動公開
@@ -76,7 +76,7 @@ node scripts/social-post.mjs --ig-cancel w28-weekly  # 取消 IG launchd 排程
 - **IG 圖片來源**：`images` 的 repo 相對路徑會自動轉成 `https://taiwanese-in-germany.com/...`，
   發 IG 前腳本會先 HEAD 檢查是否上線，沒上線會擋下並提示。
 - **launchd 排程**：Mac 關機（非睡眠）期間到點的任務**不會**補跑；睡眠會在喚醒後補跑。
-  發文日盡量讓 Mac 保持睡眠而非關機。記錄檔：`drafts/social/ig-post.log`。
+  發文日盡量讓 Mac 保持睡眠而非關機。記錄檔：`social/ig-post.log`。
 - **排程貼文在哪看**：FB → 粉專 Professional-Dashboard → Inhalte → Planer
   （⚠️ Meta Business Suite 的 Planner 常不顯示 API 排的貼文，別慌）。
 - token 過期／權限錯誤：重跑上面步驟 4 產新 token 換進 `.env.local` 即可。

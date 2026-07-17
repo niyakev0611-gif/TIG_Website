@@ -27,8 +27,11 @@ Web Design CLAUDE.md
 # Private planning documents
 *.csv
 
-# Local working drafts（社群文字稿、草稿——本機用，不上網站）
+# Local working drafts（設計參考圖等——本機用，不上網站）
 drafts/
+
+# 社群發文執行紀錄（social/ 文字稿與 JSON 要進 repo，log 不用）
+social/ig-post.log
 
 # Node (if ever added)
 node_modules/

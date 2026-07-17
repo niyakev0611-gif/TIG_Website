@@ -3,7 +3,8 @@
  * social-post.mjs — 德國知識小種子（Das deutsche Wissen）FB + IG 自動發文
  *
  * 移植自 oasis 的 fb-post.mjs，擴充 Instagram Content Publishing 支援。
- * 把 drafts/social/2026/W{N}_posts.json 裡的貼文，透過 Meta Graph API 送出：
+ * 把 social/weekly/W{N}_posts.json 裡的貼文，透過 Meta Graph API 送出
+ * （單篇主題貼文放 social/{主題}/，用 --file 指定）：
  *
  *   Facebook  → 用 FB 內建排程（published=false + scheduled_publish_time），
  *               到點由 FB 自動公開，腳本不用一直開著。
@@ -122,7 +123,7 @@ function fmt(unix) {
 // ── 讀貼文資料 ────────────────────────────────────────────────
 function resolvePostsFile() {
   if (FILE) return path.isAbsolute(FILE) ? FILE : path.join(REPO_ROOT, FILE);
-  if (WEEK) return path.join(REPO_ROOT, "drafts", "social", "2026", `W${WEEK}_posts.json`);
+  if (WEEK) return path.join(REPO_ROOT, "social", "weekly", `W${WEEK}_posts.json`);
   return null;
 }
 const POSTS_FILE = resolvePostsFile();
@@ -284,7 +285,7 @@ function igScheduleLaunchd(post, scheduleStr) {
   const [y, mo, d, h, mi] = parseSchedule(scheduleStr); // launchd 用本機時區＝Europe/Berlin
   const label = igLaunchdLabel(post.id);
   const plist = igPlistPath(label);
-  const logDir = path.join(REPO_ROOT, "drafts", "social");
+  const logDir = path.join(REPO_ROOT, "social");
   const log = path.join(logDir, "ig-post.log");
   fs.mkdirSync(logDir, { recursive: true });
   const q = s => `'${s.replace(/'/g, `'\\''`)}'`;
@@ -389,7 +390,7 @@ async function processPost(post) {
     } else {
       const { label } = igScheduleLaunchd(post, igScheduleStr);
       console.log(`  ✅ IG 已排 launchd：${igScheduleStr}（${label}）`);
-      console.log(`     到點自動發、跑完自我移除；記錄在 drafts/social/ig-post.log`);
+      console.log(`     到點自動發、跑完自我移除；記錄在 social/ig-post.log`);
     }
   }
 }
