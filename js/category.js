@@ -1,6 +1,6 @@
 /* ============================================================
    category.js — Category listing page
-   Taiwanese in Germany
+   德國知識小種子 Das deutsche Wissen
    ============================================================ */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -60,7 +60,7 @@ function updateHero(activeCat) {
     titleEl.textContent   = catInfo.name;
     descEl.textContent    = catInfo.desc;
     countEl.textContent   = `共 ${count} 篇文章`;
-    pageTitle.textContent = `${catInfo.name} | 台勞在德國打工記`;
+    pageTitle.textContent = `${catInfo.name} | 德國知識小種子`;
   } else {
     titleEl.textContent = '所有文章';
     descEl.textContent  = '瀏覽全部文章';

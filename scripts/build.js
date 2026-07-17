@@ -16,9 +16,10 @@ import url from 'node:url';
 
 const ROOT = path.resolve(path.dirname(url.fileURLToPath(import.meta.url)), '..');
 const SITE = 'https://taiwanese-in-germany.com';
-const SITE_NAME = '台勞在德國打工記';
-const SITE_DESC = '台灣人在德國的生活記錄。分享來德生活必辦事項、德國日常、旅行攻略與德語學習。';
-const AUTHOR = '台勞在德國';
+const SITE_NAME = '德國知識小種子';
+const SITE_NAME_FULL = '德國知識小種子 Das deutsche Wissen';
+const SITE_DESC = '寫給台灣人的德國知識誌：德國時事解析、來德必辦、德文學習與生活旅行攻略。種下一顆知識的種子。';
+const AUTHOR = '德國知識小種子';
 
 // ---------- Load POSTS from data.js ----------
 const dataSrc = fs.readFileSync(path.join(ROOT, 'js/data.js'), 'utf8');
@@ -139,7 +140,7 @@ function renderPost(post) {
     author: { "@type": "Person", name: AUTHOR, url: SITE },
     publisher: {
       "@type": "Organization",
-      name: SITE_NAME,
+      name: SITE_NAME_FULL,
       url: SITE,
       logo: { "@type": "ImageObject", url: `${SITE}/assets/logo.png` }
     },
@@ -204,7 +205,7 @@ ${HEAD_CSP}
 <meta name="robots" content="index, follow" />
 <link rel="canonical" href="${escapeAttr(canonical)}" />
 <meta property="og:type" content="article" />
-<meta property="og:site_name" content="${escapeAttr(SITE_NAME)}" />
+<meta property="og:site_name" content="${escapeAttr(SITE_NAME_FULL)}" />
 <meta property="og:title" content="${escapeAttr(fullTitle)}" />
 <meta property="og:description" content="${escapeAttr(desc)}" />
 <meta property="og:url" content="${escapeAttr(canonical)}" />
@@ -222,7 +223,7 @@ ${(post.tags||[]).map(t => `<meta property="article:tag" content="${escapeAttr(t
 <link rel="stylesheet" href="/css/style.css" />
 <link rel="stylesheet" href="https://unpkg.com/@waline/client@3.5.7/dist/waline.css" integrity="sha384-rRoXxn2yHlrZYB587Ki9RO1tONhLdM6XfORg7Rw4uwH4/Fh/5nP7IUX91bkaKUgs" crossorigin="anonymous" />
 <link rel="alternate" type="application/rss+xml" title="${escapeAttr(SITE_NAME)} RSS" href="/feed.xml" />
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🇩🇪</text></svg>" />
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌱</text></svg>" />
 <script src="/js/consent.js"></script>
 </head>
 <body>
@@ -315,7 +316,7 @@ function renderFeed() {
   return `<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
 <channel>
-  <title>${escapeXml(SITE_NAME)}</title>
+  <title>${escapeXml(SITE_NAME_FULL)}</title>
   <link>${SITE}/</link>
   <description>${escapeXml(SITE_DESC)}</description>
   <language>zh-TW</language>

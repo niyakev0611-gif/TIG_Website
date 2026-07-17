@@ -1,5 +1,5 @@
 // Auto-generated from WordPress XML export
-// Taiwanese in Germany (台勞在德國打工記)
+// 德國知識小種子 Das deutsche Wissen
 
 const POSTS = [
   {
@@ -3522,4 +3522,5 @@ const CATEGORIES = [
   { name: '旅行',             emoji: '✈️', desc: '歐洲旅遊攻略與紀錄' },
   { name: '德文',             emoji: '📚', desc: '德語學習與小知識' },
   { name: '德國時事',         emoji: '📰', desc: '德國每週大事與政策動態' },
+  { name: '專題報導',         emoji: '🔎', desc: '深度專題與特別企劃' },
 ];

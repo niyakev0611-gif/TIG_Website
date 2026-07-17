@@ -1,6 +1,6 @@
 /* ============================================================
    post.js — Single post page
-   Taiwanese in Germany
+   德國知識小種子 Das deutsche Wissen
    ============================================================ */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -67,7 +67,7 @@ function initNavbar() {
 /* ---------- Render Post ---------- */
 function renderPost(post) {
   // <title> and meta
-  document.getElementById('pageTitle').textContent   = `${post.title} | 台勞在德國打工記`;
+  document.getElementById('pageTitle').textContent   = `${post.title} | 德國知識小種子`;
   document.getElementById('metaDesc').setAttribute('content', post.excerpt);
 
   // Canonical URL
@@ -86,10 +86,10 @@ function renderPost(post) {
   const ogUrl    = document.getElementById('ogUrl');
   const twTitle  = document.getElementById('twitterTitle');
   const twDesc   = document.getElementById('twitterDesc');
-  if (ogTitle) ogTitle.setAttribute('content', `${post.title} | 台勞在德國打工記`);
+  if (ogTitle) ogTitle.setAttribute('content', `${post.title} | 德國知識小種子`);
   if (ogDesc)  ogDesc.setAttribute('content', excerpt);
   if (ogUrl)   ogUrl.setAttribute('content', fullUrl);
-  if (twTitle) twTitle.setAttribute('content', `${post.title} | 台勞在德國打工記`);
+  if (twTitle) twTitle.setAttribute('content', `${post.title} | 德國知識小種子`);
   if (twDesc)  twDesc.setAttribute('content', excerpt);
 
   // JSON-LD Structured Data
@@ -263,7 +263,7 @@ function showNotFound() {
   document.getElementById('breadcrumb').style.display    = 'none';
   document.getElementById('commentsSection').style.display = 'none';
   document.getElementById('notFound').style.display      = 'block';
-  document.getElementById('pageTitle').textContent       = '找不到文章 | 台勞在德國打工記';
+  document.getElementById('pageTitle').textContent       = '找不到文章 | 德國知識小種子';
 }
 
 /* ---------- Footer Links ---------- */

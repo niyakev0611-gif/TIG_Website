@@ -1,6 +1,6 @@
 /* ============================================================
    consent.js — GDPR Cookie Consent (Google Analytics gating)
-   Taiwanese in Germany
+   德國知識小種子 Das deutsche Wissen
 
    Blocks GA until user explicitly accepts.
    Stores preference in localStorage ('cookie_consent').

@@ -1,6 +1,6 @@
 /* ============================================================
    main.js — Home page logic
-   Taiwanese in Germany
+   德國知識小種子 Das deutsche Wissen
    ============================================================ */
 
 document.addEventListener('DOMContentLoaded', () => {

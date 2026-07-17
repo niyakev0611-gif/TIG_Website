@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
 <channel>
-  <title>台勞在德國打工記</title>
+  <title>德國知識小種子 Das deutsche Wissen</title>
   <link>https://taiwanese-in-germany.com/</link>
-  <description>台灣人在德國的生活記錄。分享來德生活必辦事項、德國日常、旅行攻略與德語學習。</description>
+  <description>寫給台灣人的德國知識誌：德國時事解析、來德必辦、德文學習與生活旅行攻略。種下一顆知識的種子。</description>
   <language>zh-TW</language>
   <lastBuildDate>Sun, 19 Jul 2026 00:00:00 GMT</lastBuildDate>
   <atom:link href="https://taiwanese-in-germany.com/feed.xml" rel="self" type="application/rss+xml" />

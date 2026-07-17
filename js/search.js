@@ -1,6 +1,6 @@
 /* ============================================================
    search.js — Global search overlay
-   Taiwanese in Germany
+   德國知識小種子 Das deutsche Wissen
    ============================================================ */
 
 (function () {
