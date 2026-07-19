@@ -13,6 +13,7 @@
 | `tax/` | 報稅系列（期限提醒 Steuerfrist、申報義務 Steuerpflicht…） | `assets/images/2026/tax/` |
 | `bbva/` | BBVA 銀行推薦／開箱／信用卡 | `assets/images/bbva/` |
 | `worldcup/` | 世足特別版 | `assets/images/2026/weekly/`（世足卡混在週報卡中） |
+| `visa/` | Visa Bonus 回饋活動（海外刷卡 2%、秋季網購檔） | `assets/images/2026/visa/` |
 
 新主題 → 開新資料夾（小寫英文短名），並在上表加一列。
 

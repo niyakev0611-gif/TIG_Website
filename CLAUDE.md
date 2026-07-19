@@ -93,6 +93,12 @@
 - 卡片：`#FFFFFF`，邊框 `#E8E4DE`
 - 圓角矩形 + 彩色圓點 bullet
 - 頂部色條 + 分類 badge
+- **右上角品牌 lockup（用戶 2026/07 定稿）**：一律貼「手寫字＋小6圈圈底線＋🌱」lockup，
+  `make_weekly_cards.paste_wordmark()` 會自動貼上——**勿再用 Noto 印刷體畫右上角品牌字**。
+  原稿是用戶以 Claude Design 畫的 `assets/images/Social Media/brand_手寫風.png`（勿改動），
+  經 `scripts/cardgen/prep_brand_lockup.py` 去背輸出 `scripts/cardgen/brand_lockup.png` 給產卡用；
+  原稿更新後重跑 prep 腳本＋重產圖卡即可（去背用背景色距離法，勿用灰階法——會毀掉彩色 🌱）。
+  另：badge 等框內文字用 `draw_mixed_vcentered()` 以實際字面 bbox 垂直置中，勿手動加 offset
 - 主題色：綠 `#2E8B57`、紅 `#C0392B`、橙 `#D4740E`、藍 `#2563EB`、紫 `#7C3AED`、青 `#0D9488`
 
 ### 精緻插畫（Seedling Flat，W29 起每張必備）

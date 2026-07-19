@@ -2,15 +2,21 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://taiwanese-in-germany.com/</loc>
-    <lastmod>2026-06-27</lastmod>
+    <lastmod>2026-07-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://taiwanese-in-germany.com/category.html</loc>
-    <lastmod>2026-06-27</lastmod>
+    <lastmod>2026-07-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://taiwanese-in-germany.com/category.html?cat=%E5%BE%B7%E5%9C%8B%E7%94%9F%E6%B4%BB</loc>
+    <lastmod>2026-07-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://taiwanese-in-germany.com/category.html?cat=%E5%B0%88%E9%A1%8C%E5%A0%B1%E5%B0%8E</loc>
@@ -31,12 +37,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://taiwanese-in-germany.com/category.html?cat=%E5%BE%B7%E5%9C%8B%E7%94%9F%E6%B4%BB</loc>
-    <lastmod>2026-07-10</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://taiwanese-in-germany.com/category.html?cat=%E6%97%85%E8%A1%8C</loc>
     <lastmod>2026-03-29</lastmod>
     <changefreq>monthly</changefreq>
@@ -47,6 +47,12 @@
     <lastmod>2023-03-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://taiwanese-in-germany.com/posts/visa-bonus-cashback-2026.html</loc>
+    <lastmod>2026-07-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
   </url>
   <url>
     <loc>https://taiwanese-in-germany.com/posts/world-cup-2026-special.html</loc>
@@ -86,7 +92,7 @@
   </url>
   <url>
     <loc>https://taiwanese-in-germany.com/posts/referral-codes-2026.html</loc>
-    <lastmod>2026-03-29</lastmod>
+    <lastmod>2026-07-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -104,7 +110,7 @@
   </url>
   <url>
     <loc>https://taiwanese-in-germany.com/posts/german-bank-recommendation.html</loc>
-    <lastmod>2026-07-15</lastmod>
+    <lastmod>2026-07-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>

@@ -134,6 +134,29 @@ def wrap_mixed(text, size, max_w, bold=False):
         lines.append(line.rstrip())
     return lines
 
+def mixed_vbbox(text, size, bold=False):
+    """整段文字相對 baseline 的視覺上下緣（逐段取各字體實際 bbox）"""
+    top, bot = 1e9, -1e9
+    for c, s in segments(text):
+        f = cjk(size, bold) if c else lat(size, bold)
+        asc = f.getmetrics()[0]
+        bb = f.getbbox(s)
+        if bb[3] > bb[1]:
+            top = min(top, bb[1] - asc)
+            bot = max(bot, bb[3] - asc)
+    if top > bot:
+        return 0, 0
+    return top, bot
+
+def draw_mixed_vcentered(d, xy, text, size, fill, bold=False, anchor='left'):
+    """以字面實際 bbox 對 y_mid 垂直置中——badge 等「框內文字」一律用這個，
+    別用 draw_mixed 手動加 offset（CJK baseline 偏低，肉眼會覺得字沉底）。"""
+    x, y_mid = xy
+    top, bot = mixed_vbbox(text, size, bold)
+    base = y_mid - (top + bot) / 2
+    return draw_mixed(d, (x, base - cjk(size, bold).getmetrics()[0]),
+                      text, size, fill, bold, anchor)
+
 def tint(hexcolor, alpha):
     hexcolor = hexcolor.lstrip('#')
     r, g, b = (int(hexcolor[i:i+2], 16) for i in (0, 2, 4))
@@ -151,6 +174,23 @@ def star_pts(cx, cy, r_out, r_in, n=5, rot=-90):
         a = math.radians(rot + i*180/n)
         pts += [cx + r*math.cos(a), cy + r*math.sin(a)]
     return pts
+
+# ── 品牌 lockup（右上角：手寫字＋小6圈底線＋🌱）─────────────
+# 用戶 2026/07 以 Claude Design 定稿：assets/images/Social Media/brand_手寫風.png，
+# 經 prep_brand_lockup.py 去背輸出 brand_lockup.png（本資料夾）。
+# 之後所有圖卡右上角一律貼這個 lockup，勿用 Noto 印刷體；原稿更新後
+# 重跑 prep_brand_lockup.py ＋ 重產圖卡即可。
+_WORDMARK = None
+def paste_wordmark(img, right=980, top=102, width=365):
+    """右緣對齊 right、頂緣 top、寬 width（皆 1x 座標）"""
+    global _WORDMARK
+    if _WORDMARK is None:
+        _WORDMARK = Image.open(_os.path.join(
+            _os.path.dirname(_os.path.abspath(__file__)), 'brand_lockup.png')).convert('RGBA')
+    w = width * S
+    h = round(_WORDMARK.height * w / _WORDMARK.width)
+    wm = _WORDMARK.resize((w, h), Image.LANCZOS)
+    img.paste(wm, (right * S - w, top * S), wm)
 
 # ── 色彩常數 ────────────────────────────────────────────────
 BG      = '#F8F6F2'
@@ -329,8 +369,59 @@ def illu_trophy(d, R, S, cx, cy, theme):
                  bx + 19*math.cos(a), by + 19*math.sin(a)), fill=OUTLINE, width=3*S)
     d.polygon(R(*pent), fill=OUTLINE)
 
+def illu_bankcard(d, R, S, cx, cy, theme):
+    """銀行卡＋感應波＋歐元金幣（刷卡／現金回饋／支付）"""
+    ow = 5*S
+    _dots(d, R, cx, cy, ((-64, -48, 3, GOLD), (52, -54, 3, tint(theme, 0.5)), (72, -12, 3, theme)))
+    d.ellipse(R(cx-56, cy+42, cx+50, cy+56), fill=tint(theme, 0.18))
+    # 卡片本體＋頂部高光條
+    d.rounded_rectangle(R(cx-66, cy-40, cx+42, cy+30), radius=10*S, fill=theme, outline=OUTLINE, width=ow)
+    d.rounded_rectangle(R(cx-58, cy-32, cx-18, cy-25), radius=3*S, fill=tint(theme, 0.45))
+    # 晶片
+    d.rounded_rectangle(R(cx-56, cy-12, cx-36, cy+2), radius=3*S, fill=GOLD, outline=OUTLINE, width=3*S)
+    d.line(R(cx-46, cy-12, cx-46, cy+2), fill=OUTLINE, width=2*S)
+    # 感應波（卡右上）
+    for r in (8, 15):
+        d.arc(R(cx+16-r, cy-18-r, cx+16+r, cy-18+r), start=-40, end=40, fill='white', width=4*S)
+    # 卡號線
+    d.line(R(cx-56, cy+14, cx-8, cy+14), fill=tint(theme, 0.55), width=5*S)
+    # 焦點細節：€ 金幣（回饋入帳）
+    ex, ey, er = cx+42, cy+20, 24
+    d.ellipse(R(ex-er, ey-er, ex+er, ey+er), fill=GOLD, outline=OUTLINE, width=ow)
+    d.ellipse(R(ex-er+7, ey-er+7, ex+er-7, ey+er-7), outline=GOLD_D, width=3*S)
+    d.arc(R(ex-er+4, ey-er+4, ex+er-4, ey+er-4), start=195, end=250, fill=GOLD_HI, width=4*S)
+    draw_mixed(d, R(ex, ey-17), '€', 28*S, OUTLINE, bold=True, anchor='center')
+
+def illu_checklist(d, R, S, cx, cy, theme):
+    """資格清單板（條件檢查／申請資格）"""
+    ow = 5*S
+    _dots(d, R, cx, cy, ((-66, -40, 3, GOLD), (58, -50, 3, tint(theme, 0.5)), (72, 2, 3, theme)))
+    d.ellipse(R(cx-54, cy+44, cx+50, cy+58), fill=tint(theme, 0.18))
+    # 板身＋夾子
+    d.rounded_rectangle(R(cx-54, cy-44, cx+40, cy+44), radius=8*S, fill='white', outline=OUTLINE, width=ow)
+    d.rounded_rectangle(R(cx-22, cy-52, cx+8, cy-38), radius=5*S, fill=theme, outline=OUTLINE, width=3*S)
+    d.ellipse(R(cx-11, cy-49, cx-3, cy-41), fill='white', outline=OUTLINE, width=2*S)
+    # 三列：兩勾一叉
+    for dy, ok in ((-24, True), (0, True), (24, False)):
+        bx1, by1 = cx-44, cy+dy-7
+        d.rounded_rectangle(R(bx1, by1, bx1+14, by1+14), radius=3*S,
+                            fill=theme if ok else 'white', outline=OUTLINE, width=3*S)
+        if ok:
+            d.line(R(bx1+3, by1+7, bx1+6, by1+11), fill='white', width=3*S)
+            d.line(R(bx1+6, by1+11, bx1+11, by1+3), fill='white', width=3*S)
+        else:
+            d.line(R(bx1+4, by1+4, bx1+10, by1+10), fill=OUTLINE, width=3*S)
+            d.line(R(bx1+10, by1+4, bx1+4, by1+10), fill=OUTLINE, width=3*S)
+        d.line(R(bx1+22, by1+7, cx+28, by1+7), fill=tint(theme, 0.5), width=4*S)
+    # 焦點細節：金色核可徽章
+    bx, by, br = cx+42, cy+28, 20
+    d.ellipse(R(bx-br, by-br, bx+br, by+br), fill=GOLD, outline=OUTLINE, width=ow)
+    d.line(R(bx-8, by+1, bx-2, by+8), fill=OUTLINE, width=4*S)
+    d.line(R(bx-2, by+8, bx+9, by-6), fill=OUTLINE, width=4*S)
+
 ILLUS = dict(podium=illu_podium, flags=illu_flags, coins=illu_coins,
-             idcard=illu_idcard, camera=illu_camera, trophy=illu_trophy)
+             idcard=illu_idcard, camera=illu_camera, trophy=illu_trophy,
+             bankcard=illu_bankcard, checklist=illu_checklist)
 
 # ── 版型 ────────────────────────────────────────────────────
 
@@ -357,13 +448,13 @@ def make_card(spec, path, week_label='W?', date_label=''):
         y1, y2 = 100, 146
         if filled:
             d.rounded_rectangle(R(bx, y1, bx+bw, y2), radius=23*S, fill=theme)
-            draw_mixed(d, R(bx+26, y1+6), label, 30*S, 'white', bold=True)
+            draw_mixed_vcentered(d, R(bx+26, (y1+y2)/2), label, 30*S, 'white', bold=True)
         else:
             d.rounded_rectangle(R(bx, y1, bx+bw, y2), radius=23*S, outline=theme, width=3*S)
-            draw_mixed(d, R(bx+26, y1+6), label, 30*S, theme, bold=True)
+            draw_mixed_vcentered(d, R(bx+26, (y1+y2)/2), label, 30*S, theme, bold=True)
         bx += bw + 18
 
-    draw_mixed(d, R(980, 108), '德國知識小種子', 32*S, SUB_C, anchor='right')
+    paste_wordmark(img)
 
     tsize = 62
     while mixed_width(spec['title'], tsize*S, bold=True) > 884*S and tsize > 46:
