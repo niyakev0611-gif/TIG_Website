@@ -1,0 +1,83 @@
+================================================================
+德國週報 W30（7/20–7/26）— 社群貼文（FB 條列版 ＋ IG 精簡版）
+圖卡：assets/images/2026/weekly/W30_圖卡1–5（5 張，兩平台共用）
+建議排程：週六 2026-07-25 21:30（FB）／21:35（IG）
+　　　　　（草稿排程，實際時間由版主確認；IG 需 PR 合併、GitHub Pages 部署後才能排）
+================================================================
+
+
+────────────────  FB 版（條列版）  ────────────────
+
+🇩🇪【德國週報 W30｜7/20–7/26】聯盟黨團主席請辭、繼任卡位；2025 全職月薪中位數 4,217 €；德鐵 5,400 站全面禁酒；護理保險改革 225 億歐元缺口；團體協約覆蓋率剩 49%
+
+國會夏休，政治與荷包的大事卻沒停。這週一口氣有：執政黨團換帥、你的薪水落點、搭火車新規、護理保險改革，以及決定你薪資高低的「協約」隱形推手。五張圖卡一次看懂。
+
+🏛️ 一、聯盟黨團主席 Spahn 請辭【繼任 7/29 揭曉】
+7/18 聯盟黨（CDU/CSU）黨團主席 Jens Spahn 請辭，夏休期投下震撼彈。
+▪️ 導火線是家庭模式爭議：與伴侶經美國代孕育兒，而代孕在德國法律禁止；總理 Merz 稱去職「無可避免」
+▪️ 黨團訂【7/29】票選繼任；總理府部長 Thorsten Frei 獲 Merz 與 CSU 黨魁 Söder 共同推舉領跑
+▪️ 衛生部長 Warken、內政部長 Dobrindt、黨秘書長 Linnemann 也曾在名單
+▪️ 若由現任閣員接任，恐再牽動內閣改組——黨團主席是掌握國會多數、貫徹立法的樞紐
+
+💶 二、2025 全職月薪中位數【4,217 €】
+聯邦勞工局 7/20 發布年度薪資地圖（Entgeltatlas），給你一把衡量薪水的尺。
+▪️ 全職投保者月薪中位數（稅前）升至【4,217 €】，較 2024 年增 203 €（+5.1%）
+▪️ 男性 4,328 €、女性 4,019 €，差距 309 €、再縮 37 €；性別差距東部（6%）小於西部（11%）
+▪️ 學歷落差近一倍：無資格者 3,133 €、有職業資格 4,069 €、大學學歷【6,146 €】
+▪️ 最高在漢堡（Hamburg）、最低在梅克倫堡-西波美拉尼亞（Mecklenburg-Vorpommern／MV）
+▪️ 中位數＝一半人高於、一半人低於，比「平均薪資」更貼近多數人
+📖 延伸閱讀｜2026 德國報稅攻略：https://taiwanese-in-germany.com/posts/german-tax-guide-2026.html
+
+🚉 三、德鐵 5,400 站【全面禁酒】
+7/21 宣布，分階段至 10 月中旬全國生效。
+▪️ 導火線：7/18 一名保全於時速約 120 公里的區間車上墜車重傷
+▪️ 9/1 起柏林中央車站（Berlin Hbf）、Gesundbrunnen、基爾（Kiel）、布倫瑞克（Braunschweig）先行
+▪️ 例外：站內餐飲業者不受限、行李箱內密封攜帶仍可
+▪️ 罰則：違規先驅離（Platzverweis），累犯祭出禁足令（Hausverbot）
+📖 延伸閱讀｜Deutschland-Ticket 訂閱與解約教學：https://taiwanese-in-germany.com/posts/deutschland-ticket.html
+
+🩺 四、護理保險改革（PNOG）：要補【225 億歐元】缺口
+衛生部長 Warken 主導的護理重整法草案，目標填補年度大洞。
+▪️ 錢從哪補：調高保費計算上限、無子女者加收 0.1 個百分點、迷你工作（Minijob）納保年挹注約 12 億歐元
+▪️ 給付變革：2027 年起以「減負預算」（Entlastungsbudget）取代照護津貼（Pflegegeld），月額調升、整合分項給付
+▪️ 一再卡關：內閣原訂 5、6 月審議屢延，最快【7/29】才上桌
+▪️ 護理界憂：新增等待期恐延後給付到位
+
+🤝 五、團體協約覆蓋率【僅 49%】：內閣通過國家行動計畫
+7/22 內閣拍板，勞工部長 Bas（SPD）主導。
+▪️ 為何做：歐盟最低工資指令要求，協約覆蓋率低於【80%】的成員國須提國家行動計畫；德國僅 49%
+▪️ 端了什麼：《聯邦協約忠誠法》（5/1 生效、5 萬歐元以上公共標案適用）、工會數位進場權、工會會費可抵稅
+▪️ 勞方不買單：DGB 批力道不足、「進一步、退兩步」，要求更強制措施
+▪️ 與你有關：這正是「薪資中位數」差距的一大成因——有協約的企業通常薪資與保障更佳
+
+本週完整深度解析（含全部資料來源）都在網站週報：
+https://taiwanese-in-germany.com/posts/weekly-digest.html
+
+📚 主要資料來源：
+▪️ Tagesspiegel｜Merz 稱 Spahn 請辭「無可避免」 https://www.tagesspiegel.de/politik/nach-kritik-wegen-leihmutterschaft-kanzler-merz-nennt-spahns-rucktritt-unvermeidlich-15848089.html
+▪️ ZDF｜黨團 7/29 決定繼任 https://www.zdfheute.de/politik/deutschland/spahn-cdu-ruecktritt-sitzung-beratungen-100.html
+▪️ BA 新聞稿第 27 號｜2025 全職薪資 https://www.presseportal.de/pm/6776/6317387
+▪️ Deutsche Bahn｜車站禁酒官方稿 https://www.deutschebahn.com/de/presse/pressestart_zentrales_uebersicht/Deutsche-Bahn-Alkoholkonsumverbot-an-allen-Bahnhoefen-13980686
+▪️ ad-hoc-news｜護理改革 225 億歐元缺口 https://www.ad-hoc-news.de/wissenschaft/pflegereform-22-5-milliarden-defizit-soll-durch-beitragshub-geloest/69692028
+▪️ BMAS｜促進團體協商國家行動計畫 https://www.bmas.de/DE/Service/Presse/Pressemitteilungen/2026/nationaler-aktionsplan-zur-foerderung-von-tarifverhandlungen.html
+▪️ Handelsblatt｜行動計畫重點 https://www.handelsblatt.com/politik/deutschland/arbeitsmarkt-regierung-praesentiert-aktionsplan-fuer-mehr-tarifbindung/100242072.html
+
+#德國生活 #在德台灣人 #德國知識小種子 #德國週報 #Spahn #德國薪資 #Entgeltatlas #DeutscheBahn #Alkoholverbot #Pflegereform #Tarifbindung #Tarifvertrag
+
+
+────────────────  IG 版（精簡版，不放網址）  ────────────────
+
+🇩🇪 德國週報 W30｜7/20–7/26
+
+夏休期政治與荷包的五件大事，五張圖卡一次看懂👇
+
+🏛️ 聯盟黨團主席請辭｜Spahn 因家庭模式爭議去職，7/29 改選、Frei 領跑接班
+💶 全職月薪中位數｜2025 年升至 4,217 €（+5.1%），大學學歷 6,146 €、學歷落差近一倍
+🚉 德鐵全站禁酒｜全德 5,400 座車站分階段禁酒，10 月中旬前上路
+🩺 護理保險改革｜草案要補 225 億歐元缺口，2027 年照護津貼改「減負預算」
+🤝 團體協約剩 49%｜內閣通過國家行動計畫，遠低於歐盟 80% 門檻
+
+滑動看圖卡了解更多 👇
+📚 完整深度解析與資料來源 → FB 粉專或網站（連結在 bio）
+
+#德國生活 #在德台灣人 #德國知識小種子 #德國週報 #德國薪資 #DeutscheBahn #Pflege #Tarifbindung #Spahn #德國時事
