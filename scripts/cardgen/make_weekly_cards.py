@@ -419,9 +419,74 @@ def illu_checklist(d, R, S, cx, cy, theme):
     d.line(R(bx-8, by+1, bx-2, by+8), fill=OUTLINE, width=4*S)
     d.line(R(bx-2, by+8, bx+9, by-6), fill=OUTLINE, width=4*S)
 
+def illu_noalcohol(d, R, S, cx, cy, theme):
+    """酒瓶＋禁止環（禁酒令／站內管制）"""
+    ow = 5*S
+    _dots(d, R, cx, cy, ((-66, -30, 4, GOLD), (58, -46, 3, tint(theme, 0.5)),
+                         (68, 20, 3, theme)))
+    d.ellipse(R(cx-40, cy+46, cx+40, cy+58), fill=tint(theme, 0.18))
+    # 酒瓶：瓶身＋瓶頸＋瓶蓋＋金色酒標
+    d.rounded_rectangle(R(cx-19, cy-4, cx+19, cy+40), radius=8*S, fill=tint(theme, 0.30), outline=OUTLINE, width=ow)
+    d.rectangle(R(cx-7, cy-28, cx+7, cy-2), fill=tint(theme, 0.30), outline=OUTLINE, width=ow)
+    d.rounded_rectangle(R(cx-9, cy-38, cx+9, cy-27), radius=3*S, fill=GOLD, outline=OUTLINE, width=3*S)
+    d.rounded_rectangle(R(cx-15, cy+8, cx+15, cy+26), radius=4*S, fill=GOLD, outline=OUTLINE, width=3*S)
+    # 禁止環＋斜槓（焦點細節）
+    r = 50
+    d.ellipse(R(cx-r, cy-r+2, cx+r, cy+r+2), outline=theme, width=ow+3*S)
+    d.line(R(cx-36, cy+38, cx+36, cy-34), fill=theme, width=ow+3*S)
+
+def illu_carehand(d, R, S, cx, cy, theme):
+    """雙手托愛心＋白十字（照護／護理保險）"""
+    ow = 5*S
+    _dots(d, R, cx, cy, ((-64, -42, 4, GOLD), (0, -56, 3, tint(theme, 0.5)),
+                         (58, -46, 4, theme), (70, -6, 3, GOLD)))
+    d.ellipse(R(cx-50, cy+48, cx+50, cy+60), fill=tint(theme, 0.18))
+    # 托手（下方碗形雙手）
+    d.pieslice(R(cx-52, cy+4, cx+52, cy+60), start=0, end=180, fill=tint(theme, 0.28), outline=OUTLINE, width=ow)
+    for dx in (-26, 0, 26):
+        d.line(R(cx+dx, cy+32, cx+dx, cy+48), fill=OUTLINE, width=3*S)
+    # 愛心（金色，雙圓弧＋三角身）
+    hy = cy - 6
+    d.pieslice(R(cx-28, hy-24, cx, hy+4), start=180, end=360, fill=GOLD)
+    d.pieslice(R(cx, hy-24, cx+28, hy+4), start=180, end=360, fill=GOLD)
+    d.polygon(R(cx-27, hy-10, cx+27, hy-10, cx, hy+26), fill=GOLD)
+    d.arc(R(cx-28, hy-24, cx, hy+4), start=180, end=360, fill=OUTLINE, width=ow)
+    d.arc(R(cx, hy-24, cx+28, hy+4), start=180, end=360, fill=OUTLINE, width=ow)
+    d.line(R(cx-27, hy-10, cx, hy+26), fill=OUTLINE, width=ow)
+    d.line(R(cx+27, hy-10, cx, hy+26), fill=OUTLINE, width=ow)
+    # 白十字（焦點細節）
+    d.line(R(cx, hy-5, cx, hy+13), fill='white', width=5*S)
+    d.line(R(cx-9, hy+4, cx+9, hy+4), fill='white', width=5*S)
+
+def illu_contract(d, R, S, cx, cy, theme):
+    """協約文件＋簽名＋金印（團體協約／官方方案）"""
+    ow = 5*S
+    _dots(d, R, cx, cy, ((-66, -44, 3, GOLD), (54, -52, 3, tint(theme, 0.5)),
+                         (70, 2, 3, theme)))
+    d.ellipse(R(cx-48, cy+46, cx+52, cy+58), fill=tint(theme, 0.18))
+    # 紙張本體（右上折角）
+    x1, y1, x2, y2 = cx-46, cy-46, cx+40, cy+46
+    fold = 16
+    d.polygon(R(x1, y1, x2-fold, y1, x2, y1+fold, x2, y2, x1, y2), fill='white', outline=OUTLINE, width=ow)
+    d.line(R(x2-fold, y1, x2-fold, y1+fold), fill=OUTLINE, width=3*S)
+    d.line(R(x2-fold, y1+fold, x2, y1+fold), fill=OUTLINE, width=3*S)
+    # 標題色塊＋內文線
+    d.rounded_rectangle(R(x1+13, y1+13, x1+50, y1+21), radius=3*S, fill=theme)
+    for i, yy in enumerate((y1+34, y1+46)):
+        d.line(R(x1+13, yy, x2-16, yy), fill='#9CA3AF', width=4*S)
+    d.line(R(x1+13, y1+58, cx+6, y1+58), fill='#9CA3AF', width=4*S)
+    # 簽名 swoosh（焦點細節）
+    d.line(R(x1+13, y2-22, x1+28, y2-30), fill=theme, width=4*S)
+    d.arc(R(x1+24, y2-36, x1+46, y2-16), start=110, end=360, fill=theme, width=4*S)
+    # 金印（右下）
+    sx, sy, sr = x2-4, y2-6, 15
+    d.ellipse(R(sx-sr, sy-sr, sx+sr, sy+sr), fill=GOLD, outline=OUTLINE, width=ow)
+    d.polygon(R(*star_pts(sx, sy, 8, 3.4)), fill=theme, outline=OUTLINE)
+
 ILLUS = dict(podium=illu_podium, flags=illu_flags, coins=illu_coins,
              idcard=illu_idcard, camera=illu_camera, trophy=illu_trophy,
-             bankcard=illu_bankcard, checklist=illu_checklist)
+             bankcard=illu_bankcard, checklist=illu_checklist,
+             noalcohol=illu_noalcohol, carehand=illu_carehand, contract=illu_contract)
 
 # ── 版型 ────────────────────────────────────────────────────
 
@@ -515,88 +580,75 @@ def make_card(spec, path, week_label='W?', date_label=''):
 # ════════════════════════════════════════════════════════════
 # 每週卡片內容（範本：W29）——之後每週改這一段即可
 # ════════════════════════════════════════════════════════════
-WEEK = 'W29'
-DATE_RANGE = '2026/07/13–07/19'
+WEEK = 'W30'
+DATE_RANGE = '2026/07/20–07/26'
 
 CARDS = [
  dict(
   theme='#2563EB', badges=[('政治', True), ('柏林', False)], illu='podium',
-  title='Merz 夏季記者會：「還遠遠不夠」',
-  subtitle='7/15 柏林登場；90 分鐘問答語氣明顯轉趨謹慎',
-  stats=[('90 分鐘', '面對首都記者團全程問答'),
-         ('2 場', '9 月東部兩州議會選舉')],
+  title='聯盟黨團主席請辭、繼任開跑',
+  subtitle='7/18 Spahn 因家庭模式爭議去職；7/29 票選新主席',
+  stats=[('7/29', '黨團票選新主席'),
+         ('3 人', '繼任熱門人選')],
   bullets=[
-   ('成績自評「還不夠」', '「我們完成了很多，但還遠遠不夠」——點名基礎建設未來法、健保改革已完成立法，秋季續推退休金與勞動市場改革。'),
-   ('「混合戰爭」警告', '「大規模破壞、刺探行動、對資料網路的攻擊——我們不處於戰爭，但也並非和平」；矛頭直指俄羅斯。'),
-   ('州選與 AfD', '對 9 月薩克森-安哈特（Sachsen-Anhalt）、梅克倫堡-西波美拉尼亞（MV）州選表態沉穩，稱有信心擋下 AfD 過半。'),
+   ('請辭導火線', 'Spahn 7/15 公開與伴侶經美國代孕育兒（代孕在德國違法），引發黨內外爭論；總理 Merz 稱其去職「無可避免」。'),
+   ('繼任卡位', '總理府部長 Frei 獲 Merz 與 CSU 黨魁 Söder 共同推舉領跑；衛生部長 Warken、內政部長 Dobrindt 亦在名單。'),
+   ('連鎖效應', '黨團主席是掌握國會多數、貫徹立法的樞紐；若由現任閣員接任，恐再牽動內閣改組。'),
   ],
-  takeaway=('觀察重點', 'ZDF 評「謹慎、控制、刻意期望管理」；NZZ 點出「政府自我滿意、民意不買單」的落差——9 月兩場州選就是期中考。'),
-  file='W29_圖卡1_Merz夏季記者會.png'),
+  takeaway=('政治觀察', 'Spahn 是聯盟黨連結內閣與國會的橋樑；夏休後改革衝刺期臨陣換將，7/29 人選底定前柏林政壇短暫盤整。'),
+  file='W30_圖卡1_聯盟黨團主席請辭.png'),
  dict(
-  theme='#0D9488', badges=[('外交', True), ('德法', False)], illu='flags',
-  title='德法部長理事會：核威懾同桌',
-  subtitle='7/16 Macron 抵德、7/17 第 26 屆理事會 NRW 登場',
-  stats=[('第 26 屆', '德法部長理事會（DFMR）'),
-         ('7/17', '防衛安全理事會 Nörvenich')],
+  theme='#D4740E', badges=[('經濟', True), ('薪資', False)], illu='coins',
+  title='全職月薪中位數 4,217 €',
+  subtitle='聯邦勞工局 7/20 發布 2025 年薪資地圖（Entgeltatlas）',
+  stats=[('4,217 €', '全職月薪中位數（稅前）'),
+         ('+5.1%', '較 2024 年增 203 €')],
   bullets=[
-   ('兩天議程', '7/16 傍晚 Merz 於科隆近郊接待 Macron；7/17 移師布呂爾（Brühl）奧古斯圖斯堡宮（Schloss Augustusburg）會談。'),
-   ('核威懾指導小組', '兩國擬新設「核指導小組」深化威懾合作——法國核保護傘是否延伸「挺歐洲」，是最敏感的一步棋。'),
-   ('FCAS 戰機案', '第六代戰機計畫因分工之爭瀕臨破局後尋求解方；另談烏克蘭多國部隊演訓、經濟與競爭力議程。'),
+   ('男女差距收窄', '男性中位數 4,328 €、女性 4,019 €，差距 309 €、年減 37 €；性別差距東部（6%）小於西部（11%）。'),
+   ('學歷落差近一倍', '無資格者 3,133 €、有職業資格 4,069 €、大學學歷 6,146 €——文憑差距近一倍。'),
+   ('城鄉兩端', '最高在漢堡（Hamburg）、最低在梅克倫堡-西波美拉尼亞（MV）；為全職投保者中位數、非全體平均。'),
   ],
-  takeaway=('外交觀察', '柏林—巴黎軸心因 FCAS、貿易與財政齟齬多時，此次以「重新提速」為基調；有無白紙黑字成果，看 7/17 聯合記者會。'),
-  file='W29_圖卡2_德法部長理事會.png'),
+  takeaway=('數據解讀', '中位數＝一半人高於、一半人低於，比平均更貼近多數人；來德工作者可對照職業與邦別評估 offer 高低。'),
+  file='W30_圖卡2_全職薪資中位數.png'),
  dict(
-  theme='#D4740E', badges=[('財政', True), ('預算', False)], illu='coins',
-  title='2027 預算案：5,554 億歐元新高',
-  subtitle='7/6 內閣拍板、秋季國會審議；舉債與國防雙雙大增',
-  stats=[('5,554 億歐元', '2027 核心預算支出（+5.9%）'),
-         ('+32.7%', '國防預算增至 1,097 億歐元')],
+  theme='#C0392B', badges=[('民生', True), ('交通', False)], illu='noalcohol',
+  title='德鐵 5,400 站全面禁酒',
+  subtitle='7/21 宣布；分階段實施至 10 月中旬全國生效',
+  stats=[('5,400 站', '全德車站分階段禁酒'),
+         ('10 月中', '全國全面上路')],
   bullets=[
-   ('錢往哪去', '勞動社會部 2,015 億歐元最大宗；國防單年暴增 270 億歐元；聯邦債務利息 436 億歐元已是第三大支出項。'),
-   ('債怎麼堆', '含特別基金，2027 整體新債約 2,000 億歐元、2030 年恐達 2,195 億歐元——「安全優先」全靠舉債支撐。'),
-   ('各方砲火', 'BDI 執行長 Gönner 批「支出與舉債增幅令人警覺」；Greenpeace 斥挪用氣候轉型基金（KTF）是「無恥挪用」。'),
+   ('導火線', '7/18 一名德鐵（Deutsche Bahn）保全於時速約 120 公里的區間車上墜車重傷，成為全面禁酒的直接推手。'),
+   ('分階段上路', '9/1 起柏林中央車站（Berlin Hbf）、基爾（Kiel）、布倫瑞克（Braunschweig）等先行，10 月中旬前全國跟進。'),
+   ('例外與罰則', '站內餐飲業者不受限、行李箱內密封攜帶亦可；違規先驅離（Platzverweis），累犯祭出禁足令（Hausverbot）。'),
   ],
-  takeaway=('數據解讀', '國防 +32.7% 直接對應 NATO「2035 前 GDP 5%」路線圖；但利息負擔持續攀升、財政空間快速收窄，秋季攻防可期。'),
-  file='W29_圖卡3_2027預算案.png'),
+  takeaway=('搭車提醒', '常搭火車的你請留意：月台與大廳將陸續禁止飲酒，想小酌得移步站內餐廳；攜帶未開封酒類通關無虞。'),
+  file='W30_圖卡3_德鐵全站禁酒.png'),
  dict(
-  theme='#2E8B57', badges=[('居留', True), ('新法', False)], illu='idcard',
-  title='續居留免再按指紋：新法過關',
-  subtitle='7/9 聯邦議院通過移民管理數位化法（MDWG）',
-  stats=[('7 年', '成人生物特徵可重複使用'),
-         ('2026/11', '簽證申請流程改革上路')],
+  theme='#0D9488', badges=[('社福', True), ('照護', False)], illu='carehand',
+  title='護理保險改革：225 億歐元缺口',
+  subtitle='護理重整法（PNOG）草案；內閣 7/29 待審',
+  stats=[('225 億歐元', '護理保險年度缺口'),
+         ('2027 年', '照護津貼改制上路')],
   bullets=[
-   ('對持 eAT 的你最有感', '辦電子居留卡（eAT）存的指紋、照片與簽名可重複使用——延長或換發居留，不必再為按指紋跑一趟外事局。'),
-   ('資料一次到位', '身分文件與申請紀錄集中存入外國人中央登記冊（AZR），機關間自動介接、免重複繳件，加速審理。'),
-   ('正反聲音', '德國郡議會聯合會（Landkreistag）讚「近年最重要法案之一」；資料保護界與 Pro Asyl 憂 AZR 淪為監控基礎設施。'),
+   ('錢從哪補', '草案擬調高保費計算上限、無子女者加收 0.1 個百分點；迷你工作（Minijob）納保後每年約挹注 12 億歐元。'),
+   ('津貼變革', '2027 年起以「減負預算」（Entlastungsbudget）取代現行照護津貼（Pflegegeld），月額調升、整合分項給付。'),
+   ('一再卡關', '內閣原訂 5、6 月審議屢延，最快 7/29 上桌；衛生部長 Warken（CDU）主導，護理界憂新增等待期恐延後給付。'),
   ],
-  takeaway=('對在德台灣人的意義', '「約不到 Termin」的痛點有望緩解——續簽省下生物特徵採集一關；但個資集中也代表足跡變長，留意資料正確性。'),
-  file='W29_圖卡4_移民數位化法.png'),
+  takeaway=('政策觀察', '護理保險連年入不敷出，改革在加保費與砍給付間拉鋸；家有需照護長輩或從事照護者，2027 年保費與給付都牽動荷包。'),
+  file='W30_圖卡4_護理保險改革.png'),
  dict(
-  theme='#7C3AED', badges=[('內政', True), ('法治', False)], illu='camera',
-  title='車站即時人臉辨識過關',
-  subtitle='7/10 聯邦警察法改革表決通過；秋季還要過聯邦參議院',
-  stats=[('135＋14', '規劃布建車站＋機場數'),
-         ('秋季', '聯邦參議院表決（曾卡關）')],
+  theme='#2E8B57', badges=[('勞動', True), ('薪資', False)], illu='contract',
+  title='團體協約覆蓋率僅 49%',
+  subtitle='內閣 7/22 通過促進團體協商國家行動計畫',
+  stats=[('49%', '德國團體協約覆蓋率'),
+         ('80%', 'EU 指令門檻')],
   bullets=[
-   ('新增哪些權限', '綁架、恐攻等重大危險情境可即時比對監視影像與生物特徵；另獲 AI 行為影像分析與電信監控權限。'),
-   ('表決立場', '聯盟黨與 SPD 贊成、綠黨與左翼黨（Linke）反對、AfD 棄權；前一版改革曾在聯邦參議院功敗垂成。'),
-   ('批評與後續', '自由權利協會（GFF）批「擴權卻不處理歧視性盤查」、揚言違憲審查；netzpolitik 稱「自動化監控時代開啟」。'),
+   ('為何要做', '歐盟最低工資指令規定：協約覆蓋率低於 80% 的成員國須提國家行動計畫；德國僅 49%、遠低於門檻。'),
+   ('端了什麼', '含《聯邦協約忠誠法》（5/1 生效、5 萬歐元以上公共標案適用）、工會數位進場權、工會會費可抵稅等。'),
+   ('勞方不買單', '勞工部長 Bas（SPD）主導；德國工會聯合會（DGB）批力道不足、「進一步、退兩步」，要求更強制措施。'),
   ],
-  takeaway=('政策觀察', '基礎設施一旦建成、用途極易逐步擴張；知道攝影機正在辨識臉孔與行為，人的行為就會改變——寒蟬效應是核心疑慮。'),
-  file='W29_圖卡5_聯邦警察法人臉辨識.png'),
- dict(
-  theme='#C0392B', badges=[('世足', True), ('看球', False)], illu='trophy',
-  title='世足壓軸：西班牙 vs 阿根廷',
-  subtitle='準決賽落幕；決賽 7/19（日）德國時間 21:00 開踢',
-  stats=[('2:0', '準決賽西班牙勝法國 7/14'),
-         ('2:1', '阿根廷逆轉英格蘭 7/15')],
-  bullets=[
-   ('歐洲冠軍 vs 衛冕軍', '西班牙 2:0 制伏法國；阿根廷半場 0:0 後逆轉 2:1 淘汰英格蘭——歐國盃冠軍對決世界盃衛冕軍。'),
-   ('季軍戰先登場', '法國 vs 英格蘭 7/18（六）德國時間 23:00、邁阿密硬石球場（Hard Rock Stadium）；德國僅 MagentaTV 轉播。'),
-   ('決賽怎麼看', '7/19 東魯瑟福（East Rutherford）MetLife 球場；ZDF 19:30 起免費轉播、MagentaTV 4K 同步，首度有中場秀。'),
-  ],
-  takeaway=('看球提醒', '決賽在免費台 ZDF、週日 21 點正好揪團；若戰至 PK 恐拖過午夜，週一上班自行斟酌——季軍戰只在 MagentaTV。'),
-  file='W29_圖卡6_世足決賽週.png'),
+  takeaway=('勞動觀察', '有沒有團體協約，直接牽動薪資、工時與加班費——這也是「薪資中位數」差距的成因之一；有協約企業通常保障更佳。'),
+  file='W30_圖卡5_團體協約行動計畫.png'),
 ]
 
 if __name__ == '__main__':
