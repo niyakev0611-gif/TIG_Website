@@ -483,10 +483,88 @@ def illu_contract(d, R, S, cx, cy, theme):
     d.ellipse(R(sx-sr, sy-sr, sx+sr, sy+sr), fill=GOLD, outline=OUTLINE, width=ow)
     d.polygon(R(*star_pts(sx, sy, 8, 3.4)), fill=theme, outline=OUTLINE)
 
+def illu_reichstag(d, R, S, cx, cy, theme):
+    """國會大廈（國會／內閣人事／立法）"""
+    ow = 5*S
+    _dots(d, R, cx, cy, ((-66, -36, 3, GOLD), (58, -48, 3, tint(theme, 0.5)),
+                         (72, -8, 3, theme)))
+    d.ellipse(R(cx-58, cy+46, cx+58, cy+58), fill=tint(theme, 0.18))
+    # 基座台階
+    d.rounded_rectangle(R(cx-66, cy+36, cx+66, cy+48), radius=4*S,
+                        fill=tint(theme, 0.25), outline=OUTLINE, width=3*S)
+    # 柱廊：5 根柱（奇數韻律）
+    for dx in (-48, -24, 0, 24, 48):
+        d.rectangle(R(cx+dx-6, cy+2, cx+dx+6, cy+36), fill='white', outline=OUTLINE, width=3*S)
+    # 簷部橫樑＋金星
+    d.rounded_rectangle(R(cx-62, cy-14, cx+62, cy+4), radius=4*S, fill=theme, outline=OUTLINE, width=ow)
+    d.polygon(R(*star_pts(cx, cy-5, 7, 3)), fill=GOLD, outline=OUTLINE)
+    # 玻璃圓頂（焦點細節）＋肋線＋橫箍
+    d.pieslice(R(cx-30, cy-44, cx+30, cy+16), start=180, end=360,
+               fill=tint(theme, 0.30), outline=OUTLINE, width=ow)
+    for dx, top in ((-15, -38), (0, -42), (15, -38)):
+        d.line(R(cx+dx, cy-16, cx+dx, cy+top+2), fill=OUTLINE, width=3*S)
+    d.arc(R(cx-30, cy-44, cx+30, cy+16), start=200, end=340, fill=OUTLINE, width=3*S)
+    # 頂端金球
+    d.line(R(cx, cy-52, cx, cy-44), fill=OUTLINE, width=3*S)
+    d.ellipse(R(cx-5, cy-58, cx+5, cy-48), fill=GOLD, outline=OUTLINE, width=3*S)
+
+def illu_candle(d, R, S, cx, cy, theme):
+    """悼念蠟燭＋愛心（追悼／重大社會事件）"""
+    ow = 5*S
+    _dots(d, R, cx, cy, ((-64, -40, 3, GOLD), (52, -52, 3, tint(theme, 0.5)),
+                         (70, -10, 3, theme)))
+    d.ellipse(R(cx-52, cy+46, cx+54, cy+58), fill=tint(theme, 0.18))
+    # 小蠟燭（後層）
+    d.rounded_rectangle(R(cx-58, cy+10, cx-30, cy+44), radius=5*S, fill='white')
+    d.rectangle(R(cx-58, cy+24, cx-30, cy+32), fill=tint(theme, 0.30))
+    d.rounded_rectangle(R(cx-58, cy+10, cx-30, cy+44), radius=5*S, outline=OUTLINE, width=ow)
+    d.line(R(cx-44, cy+2, cx-44, cy+10), fill=OUTLINE, width=3*S)
+    d.ellipse(R(cx-49, cy-12, cx-39, cy+2), fill=GOLD, outline=OUTLINE, width=3*S)
+    # 主蠟燭
+    d.rounded_rectangle(R(cx-14, cy-14, cx+18, cy+44), radius=6*S, fill='white')
+    d.rectangle(R(cx-14, cy+4, cx+18, cy+14), fill=tint(theme, 0.30))
+    d.rounded_rectangle(R(cx-14, cy-14, cx+18, cy+44), radius=6*S, outline=OUTLINE, width=ow)
+    d.line(R(cx+2, cy-22, cx+2, cy-14), fill=OUTLINE, width=3*S)
+    # 火焰（焦點細節：金色外焰＋亮色內焰）＋光暈弧
+    d.ellipse(R(cx-7, cy-46, cx+11, cy-20), fill=GOLD, outline=OUTLINE, width=3*S)
+    d.ellipse(R(cx-2, cy-38, cx+6, cy-26), fill=GOLD_HI)
+    d.arc(R(cx-17, cy-54, cx+21, cy-16), start=210, end=330, fill=GOLD_D, width=3*S)
+    # 主題色愛心（右側前景）
+    hx, hy = cx+48, cy+24
+    d.pieslice(R(hx-16, hy-14, hx, hy+2), start=180, end=360, fill=theme)
+    d.pieslice(R(hx, hy-14, hx+16, hy+2), start=180, end=360, fill=theme)
+    d.polygon(R(hx-15, hy-6, hx+15, hy-6, hx, hy+14), fill=theme)
+    d.arc(R(hx-16, hy-14, hx, hy+2), start=180, end=360, fill=OUTLINE, width=3*S)
+    d.arc(R(hx, hy-14, hx+16, hy+2), start=180, end=360, fill=OUTLINE, width=3*S)
+    d.line(R(hx-15, hy-6, hx, hy+14), fill=OUTLINE, width=3*S)
+    d.line(R(hx+15, hy-6, hx, hy+14), fill=OUTLINE, width=3*S)
+
+def illu_briefcase(d, R, S, cx, cy, theme):
+    """公事包＋放大鏡（就業／勞動市場／求職）"""
+    ow = 5*S
+    _dots(d, R, cx, cy, ((-64, -44, 3, GOLD), (54, -52, 3, tint(theme, 0.5)),
+                         (72, -14, 3, theme)))
+    d.ellipse(R(cx-54, cy+42, cx+52, cy+56), fill=tint(theme, 0.18))
+    # 提把（先畫，包身壓住下端）
+    d.rounded_rectangle(R(cx-28, cy-38, cx+12, cy-10), radius=10*S, outline=OUTLINE, width=ow)
+    # 包身＋頂部高光條
+    d.rounded_rectangle(R(cx-62, cy-18, cx+46, cy+40), radius=10*S, fill=theme, outline=OUTLINE, width=ow)
+    d.rounded_rectangle(R(cx-54, cy-11, cx-20, cy-4), radius=3*S, fill=tint(theme, 0.45))
+    # 中線與金釦
+    d.line(R(cx-62, cy+10, cx+46, cy+10), fill=OUTLINE, width=3*S)
+    d.rounded_rectangle(R(cx-16, cy+2, cx, cy+18), radius=3*S, fill=GOLD, outline=OUTLINE, width=3*S)
+    # 焦點細節：放大鏡（求職搜尋）
+    gx, gy, gr = cx+52, cy+12, 20
+    d.ellipse(R(gx-gr, gy-gr, gx+gr, gy+gr), fill='white', outline=OUTLINE, width=ow)
+    d.ellipse(R(gx-gr+6, gy-gr+6, gx+gr-6, gy+gr-6), fill=tint(theme, 0.15))
+    d.arc(R(gx-gr+4, gy-gr+4, gx+gr-4, gy+gr-4), start=195, end=250, fill='white', width=4*S)
+    d.line(R(gx+13, gy+13, gx+26, gy+26), fill=OUTLINE, width=ow+2*S)
+
 ILLUS = dict(podium=illu_podium, flags=illu_flags, coins=illu_coins,
              idcard=illu_idcard, camera=illu_camera, trophy=illu_trophy,
              bankcard=illu_bankcard, checklist=illu_checklist,
-             noalcohol=illu_noalcohol, carehand=illu_carehand, contract=illu_contract)
+             noalcohol=illu_noalcohol, carehand=illu_carehand, contract=illu_contract,
+             reichstag=illu_reichstag, candle=illu_candle, briefcase=illu_briefcase)
 
 # ── 版型 ────────────────────────────────────────────────────
 
@@ -580,75 +658,75 @@ def make_card(spec, path, week_label='W?', date_label=''):
 # ════════════════════════════════════════════════════════════
 # 每週卡片內容（範本：W29）——之後每週改這一段即可
 # ════════════════════════════════════════════════════════════
-WEEK = 'W30'
-DATE_RANGE = '2026/07/20–07/26'
+WEEK = 'W31'
+DATE_RANGE = '2026/07/27–08/02'
 
 CARDS = [
  dict(
-  theme='#2563EB', badges=[('政治', True), ('柏林', False)], illu='podium',
-  title='聯盟黨團主席請辭、繼任開跑',
-  subtitle='7/18 Spahn 因家庭模式爭議去職；7/29 票選新主席',
-  stats=[('7/29', '黨團票選新主席'),
-         ('3 人', '繼任熱門人選')],
+  theme='#2563EB', badges=[('政治', True), ('柏林', False)], illu='reichstag',
+  title='內閣改組：Frei 接掌聯盟黨團',
+  subtitle='7/29 當選黨團主席；總理府、衛生、交通三部會換將',
+  stats=[('91.9%', 'Frei 得票率（170/185 票）'),
+         ('3 部會', '總理府・衛生・交通換將')],
   bullets=[
-   ('請辭導火線', 'Spahn 7/15 公開與伴侶經美國代孕育兒（代孕在德國違法），引發黨內外爭論；總理 Merz 稱其去職「無可避免」。'),
-   ('繼任卡位', '總理府部長 Frei 獲 Merz 與 CSU 黨魁 Söder 共同推舉領跑；衛生部長 Warken、內政部長 Dobrindt 亦在名單。'),
-   ('連鎖效應', '黨團主席是掌握國會多數、貫徹立法的樞紐；若由現任閣員接任，恐再牽動內閣改組。'),
+   ('黨團補選', 'Frei 7/29 以 91.9% 高票當選聯盟黨（CDU/CSU）黨團主席，接替因代孕爭議請辭的 Spahn，黨政樞紐重新到位。'),
+   ('內閣三換', 'Warken 轉掌總理府、黨秘書長 Linnemann 接衛生部、Bilger 接交通部；Schnieder 數日拉鋸後主動求去。'),
+   ('過程失分', 'Merz 屬意的交通人選 Güntzler 自認不具專業婉拒；新閣員 9/9 國會復會才宣誓，改組被批演成「溝通災難」。'),
   ],
-  takeaway=('政治觀察', 'Spahn 是聯盟黨連結內閣與國會的橋樑；夏休後改革衝刺期臨陣換將，7/29 人選底定前柏林政壇短暫盤整。'),
-  file='W30_圖卡1_聯盟黨團主席請辭.png'),
+  takeaway=('政治觀察', 'AfD 黨魁 Weidel 譏改組是「難堪方案大集合」；Linnemann 無衛生政策歷練直接掌部，專業性質疑恐伴隨上任。'),
+  file='W31_圖卡1_內閣改組.png'),
  dict(
-  theme='#D4740E', badges=[('經濟', True), ('薪資', False)], illu='coins',
-  title='全職月薪中位數 4,217 €',
-  subtitle='聯邦勞工局 7/20 發布 2025 年薪資地圖（Entgeltatlas）',
-  stats=[('4,217 €', '全職月薪中位數（稅前）'),
-         ('+5.1%', '較 2024 年增 203 €')],
+  theme='#C0392B', badges=[('治安', True), ('柏林', False)], illu='candle',
+  title='柏林 CSD 遇襲：1 死 31 傷',
+  subtitle='7/25 遊行遭車輛與砍刀攻擊；安全政策辯論升溫',
+  stats=[('1 死 31 傷', '7/25 CSD 攻擊事件'),
+         ('16 歲起', '嫌犯遭安全單位列管')],
   bullets=[
-   ('男女差距收窄', '男性中位數 4,328 €、女性 4,019 €，差距 309 €、年減 37 €；性別差距東部（6%）小於西部（11%）。'),
-   ('學歷落差近一倍', '無資格者 3,133 €、有職業資格 4,069 €、大學學歷 6,146 €——文憑差距近一倍。'),
-   ('城鄉兩端', '最高在漢堡（Hamburg）、最低在梅克倫堡-西波美拉尼亞（MV）；為全職投保者中位數、非全體平均。'),
+   ('案發經過', '21 歲男子駕小巴在蒂爾加滕（Tiergarten）衝撞 CSD 遊行人群、再持砍刀攻擊；翌日圍捕時拒捕遭警方擊斃。'),
+   ('列管卻未攔下', '嫌犯為列管伊斯蘭主義危險分子（Gefährder），今年 5 月才因預備恐攻罪判緩刑釋放，「為何在外」成質問焦點。'),
+   ('政策急轉', '內政部長 Dobrindt 提三點方案：危險分子電子監控常態化、預防性拘留全國一致入法、成年危險分子不適用少年刑法。'),
   ],
-  takeaway=('數據解讀', '中位數＝一半人高於、一半人低於，比平均更貼近多數人；來德工作者可對照職業與邦別評估 offer 高低。'),
-  file='W30_圖卡2_全職薪資中位數.png'),
+  takeaway=('後續觀察', '情報機關擴權與安全法案 8 月排入內閣；電子腳鐐與預防性拘留涉基本權限制，立法與違憲審查攻防勢將展開。'),
+  file='W31_圖卡2_柏林CSD遇襲.png'),
  dict(
-  theme='#C0392B', badges=[('民生', True), ('交通', False)], illu='noalcohol',
-  title='德鐵 5,400 站全面禁酒',
-  subtitle='7/21 宣布；分階段實施至 10 月中旬全國生效',
-  stats=[('5,400 站', '全德車站分階段禁酒'),
-         ('10 月中', '全國全面上路')],
+  theme='#2E8B57', badges=[('經濟', True), ('數據', False)], illu='coins',
+  title='Q2 成長 0.2%、通膨回升 2.8%',
+  subtitle='Destatis 7/30 公布；能源推升通膨至四月以來新高',
+  stats=[('+0.2%', 'Q2 GDP 季增（優於預期）'),
+         ('2.8%', '七月通膨（六月 2.3%）')],
   bullets=[
-   ('導火線', '7/18 一名德鐵（Deutsche Bahn）保全於時速約 120 公里的區間車上墜車重傷，成為全面禁酒的直接推手。'),
-   ('分階段上路', '9/1 起柏林中央車站（Berlin Hbf）、基爾（Kiel）、布倫瑞克（Braunschweig）等先行，10 月中旬前全國跟進。'),
-   ('例外與罰則', '站內餐飲業者不受限、行李箱內密封攜帶亦可；違規先驅離（Platzverweis），累犯祭出禁足令（Hausverbot）。'),
+   ('連兩季正成長', 'Q2 GDP 季增 0.2%、優於市場預期的 0.1%，年增 0.9%；Q1 同步上修至 +0.4%，復甦動能比預想強。'),
+   ('通膨反彈', '七月通膨 2.8% 創四月以來新高：中東緊張推升油價，能源年漲幅自 3.4% 跳升至 8.3% 是最大推手。'),
+   ('展望上修', 'Commerzbank 將 2026 全年成長預測自 0.6% 上調至 1.0%，直言「德國經濟的復甦比先前以為的更明顯」。'),
   ],
-  takeaway=('搭車提醒', '常搭火車的你請留意：月台與大廳將陸續禁止飲酒，想小酌得移步站內餐廳；攜帶未開封酒類通關無虞。'),
-  file='W30_圖卡3_德鐵全站禁酒.png'),
+  takeaway=('數據解讀', '成長回穩、通膨卻重新逼近 3%，呼應 ECB 六月升息的判斷；油價若居高不下，秋冬能源帳單宜預留緩衝。'),
+  file='W31_圖卡3_Q2經濟與通膨.png'),
  dict(
-  theme='#0D9488', badges=[('社福', True), ('照護', False)], illu='carehand',
-  title='護理保險改革：225 億歐元缺口',
-  subtitle='護理重整法（PNOG）草案；內閣 7/29 待審',
-  stats=[('225 億歐元', '護理保險年度缺口'),
-         ('2027 年', '照護津貼改制上路')],
+  theme='#D4740E', badges=[('勞動', True), ('就業', False)], illu='briefcase',
+  title='失業人數重返 300 萬',
+  subtitle='聯邦勞工局 7/31 公布七月就業市場數據',
+  stats=[('300.7 萬', '七月失業人數'),
+         ('6.4%', '失業率（月增 0.2 個百分點）')],
   bullets=[
-   ('錢從哪補', '草案擬調高保費計算上限、無子女者加收 0.1 個百分點；迷你工作（Minijob）納保後每年約挹注 12 億歐元。'),
-   ('津貼變革', '2027 年起以「減負預算」（Entlastungsbudget）取代現行照護津貼（Pflegegeld），月額調升、整合分項給付。'),
-   ('一再卡關', '內閣原訂 5、6 月審議屢延，最快 7/29 上桌；衛生部長 Warken（CDU）主導，護理界憂新增等待期恐延後給付。'),
+   ('季節性攀升', '七月失業較六月增 7.1 萬人，主因暑休與畢業季例行波動；經季節調整僅增 6 千人、失業率 6.4%。'),
+   ('年比仍偏弱', '失業人數較去年同期多 2.8 萬；勞工局理事 Terzenbach 直言，就業市場「延續近幾個月的疲弱走勢」。'),
+   ('與景氣背離', '同週公布的 Q2 GDP 優於預期，但企業徵才仍觀望——就業向來落後景氣，招聘回暖通常再晚兩、三季。'),
   ],
-  takeaway=('政策觀察', '護理保險連年入不敷出，改革在加保費與砍給付間拉鋸；家有需照護長輩或從事照護者，2027 年保費與給付都牽動荷包。'),
-  file='W30_圖卡4_護理保險改革.png'),
+  takeaway=('求職提醒', '職缺整體偏緊，IT、護理與技術職種仍缺工；求職與轉職者可鎖定缺工職業，並留意失業保險與試用期權益。'),
+  file='W31_圖卡4_失業重返300萬.png'),
  dict(
-  theme='#2E8B57', badges=[('勞動', True), ('薪資', False)], illu='contract',
-  title='團體協約覆蓋率僅 49%',
-  subtitle='內閣 7/22 通過促進團體協商國家行動計畫',
-  stats=[('49%', '德國團體協約覆蓋率'),
-         ('80%', 'EU 指令門檻')],
+  theme='#0D9488', badges=[('民生', True), ('新制', False)], illu='checklist',
+  title='八月新制：課後照顧入法',
+  subtitle='小一課後照顧成法定權利；AI 內容 8/2 起強制標示',
+  stats=[('8 小時', '小一每日課後照顧保障'),
+         ('8/2', 'AI 內容標示義務生效')],
   bullets=[
-   ('為何要做', '歐盟最低工資指令規定：協約覆蓋率低於 80% 的成員國須提國家行動計畫；德國僅 49%、遠低於門檻。'),
-   ('端了什麼', '含《聯邦協約忠誠法》（5/1 生效、5 萬歐元以上公共標案適用）、工會數位進場權、工會會費可抵稅等。'),
-   ('勞方不買單', '勞工部長 Bas（SPD）主導；德國工會聯合會（DGB）批力道不足、「進一步、退兩步」，要求更強制措施。'),
+   ('課後照顧', '8/1 起小一新生依法享每週 5 天、每日 8 小時課後照顧（Ganztagsbetreuung），逐年擴及 2029/30 全體小學生。'),
+   ('AI 標示', 'EU AI 法新階段 8/2 生效：AI 生成影音圖文須明確標示，違者最高罰 1,500 萬歐元或全球年營收 3%。'),
+   ('交通能源', '德鐵 BahnBonus 改動態點數，早鳥兌換 750 點起、彈性票調漲 25%；新太陽能躉購費率例行調降 1%。'),
   ],
-  takeaway=('勞動觀察', '有沒有團體協約，直接牽動薪資、工時與加班費——這也是「薪資中位數」差距的成因之一；有協約企業通常保障更佳。'),
-  file='W30_圖卡5_團體協約行動計畫.png'),
+  takeaway=('民生提醒', '家有學童可向學校或青少年局申請課後名額；經營內容、電商或使用聊天機器人者，檢查 AI 標示義務是否已合規。'),
+  file='W31_圖卡5_八月新制.png'),
 ]
 
 if __name__ == '__main__':
