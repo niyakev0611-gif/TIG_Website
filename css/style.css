@@ -1216,6 +1216,45 @@ body { padding-left: 64px; }
   margin-top: 8px;
 }
 
+/* 人物肖像小圖（政治人物等）。圖片一律取自 Wikimedia Commons 自由授權，
+   由 scripts/fetch_portraits.py 產生；figcaption 的攝影者與授權標示是
+   CC BY / CC BY-SA 的義務，不可刪除。 */
+.post-content .post-portrait {
+  float: right;
+  width: 168px;
+  margin: 4px 0 20px 28px;
+}
+.post-content .post-portrait img {
+  width: 168px;
+  height: 168px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 0;
+  display: block;
+  border: 3px solid var(--border-light);
+}
+.post-content .post-portrait figcaption {
+  margin-top: 10px;
+  line-height: 1.5;
+}
+.post-portrait__name {
+  display: block;
+  font-weight: 600;
+  font-size: var(--text-xs);
+  color: var(--secondary);
+}
+.post-portrait__credit {
+  display: block;
+  font-size: 11px;
+  color: var(--tertiary);
+  margin-top: 2px;
+}
+.post-portrait__credit a { color: inherit; text-decoration: underline; }
+@media (max-width: 600px) {
+  .post-content .post-portrait { float: none; width: 132px; margin: 20px auto; }
+  .post-content .post-portrait img { width: 132px; height: 132px; }
+}
+
 .post-tags {
   display: flex;
   align-items: center;
