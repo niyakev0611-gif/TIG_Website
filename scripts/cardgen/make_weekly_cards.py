@@ -768,7 +768,11 @@ def make_card(spec, path, week_label='W?', date_label=''):
     while mixed_width(spec['title'], tsize*S, bold=True) > 884*S and tsize > 46:
         tsize -= 2
     draw_mixed(d, R(100, 186 + (62-tsize)//2), spec['title'], tsize*S, TITLE_C, bold=True)
-    draw_mixed(d, R(100, 266), spec['subtitle'], 36*S, SUB_C)
+    # 副標同樣做自動縮放，避免長邦名（含德文全名）撐出卡片右緣
+    ssize = 36
+    while mixed_width(spec['subtitle'], ssize*S) > 884*S and ssize > 27:
+        ssize -= 1
+    draw_mixed(d, R(100, 266 + (36-ssize)//2), spec['subtitle'], ssize*S, SUB_C)
 
     # stats 兩格（第三格空間留給插畫）
     for (x1, x2), (num, label) in zip([(100, 380), (400, 680)], spec['stats'][:2]):
@@ -828,7 +832,7 @@ DATE_RANGE = '2026/08/03–08/09'
 
 CARDS = [
  dict(
-  theme='#C0392B', badges=[('治安', True), ('薩克森', False)], illu='drone',
+  theme='#C0392B', badges=[('治安', True), ('薩克森邦', False)], illu='drone',
   title='機場尋獲掛炸藥無人機',
   subtitle='萊比錫／哈勒機場 8/5 凌晨；聯邦檢察總長接手偵辦',
   stats=[('8/5 凌晨', '南跑道安全區尋獲'),
@@ -836,7 +840,7 @@ CARDS = [
   bullets=[
    ('發現經過', '機場員工 8/5 凌晨在南跑道安全區發現一架掛載爆裂裝置的無人機並將其擊落，聯邦警察出動拆彈機器人卸除引信。'),
    ('裝置細節', '炸藥是填滿 Semtex 的市售罐頭、底部鑽孔裝引信，另有投擲機構與兩張 SIM 卡；未爆的唯一原因是引信失效。'),
-   ('偵測全失靈', '無人機為高專業度自製、以行動網路操控，機場頻率掃描器無法與手機區分——專家稱「偵測的最壞情況」。'),
+   ('偵測全失靈', '無人機為高專業度自製、以行動網路操控，薩克森邦（Sachsen）警方指機場頻率掃描器無法與手機區分。'),
   ],
   takeaway=('安全提醒', '聯邦檢察總長認定 8/4 晚間意圖引爆，Dobrindt 稱「混合攻擊情境」；目擊可疑無人機請撥 110，勿自行接近。'),
   file='W32_圖卡1_機場無人機炸彈.png'),
@@ -848,7 +852,7 @@ CARDS = [
          ('40 公升', '七月雨量（基準 78 公升）')],
   bullets=[
    ('先看成因', '德國氣象局（DWD）：七月均溫 19.7 度、高於基準 2.8 度，雨量僅約 40 公升／平方公尺，乾旱深達 1.8 公尺土層。'),
-   ('河道見底', '萊茵蘭-普法茲（Rheinland-Pfalz）考布（Kaub）8/7 跌至 19 公分、科隆 60 公分；自科隆至埃默里希全線破紀錄。'),
+   ('河道見底', '萊茵蘭-普法茲邦（Rheinland-Pfalz）考布（Kaub）8/7 跌至 19 公分、科隆 60 公分；下萊茵河全線破紀錄。'),
    ('產業扛衝擊', 'BASF 約四成產品仰賴這條水路、已加派淺水船；交通部長 Bilger 考慮暫解卡車假日禁行令以疏運。'),
   ],
   takeaway=('影響評估', '德國經濟研究所（IW）估久旱恐吃掉全年成長最多 0.4 個百分點；燃油與建材運費看漲，加油宜提前。'),
@@ -869,12 +873,12 @@ CARDS = [
  dict(
   theme='#2563EB', badges=[('政治', True), ('選舉', False)], illu='ballotbox',
   title='九月三場邦選舉倒數一個月',
-  subtitle='薩克森-安哈特 9/6；柏林、MV 9/20 同日投票',
-  stats=[('41%', 'AfD 薩克森-安哈特民調'),
+  subtitle='薩克森-安哈特邦 9/6 投票；柏林、梅克倫堡-佛波門邦 9/20',
+  stats=[('41%', 'AfD 薩克森-安哈特邦民調'),
          ('3 場', '九月邦議會改選')],
   bullets=[
-   ('東部領先明顯', '薩克森-安哈特（Sachsen-Anhalt）9/6 投票，INSA 民調 AfD 41%、CDU 24%、左翼黨 13%，領先逾 15 個百分點。'),
-   ('梅克倫堡-佛波門（MV）', '9/20 投票，AfD 36%、SPD 29%、左翼黨 12%、CDU 僅 9%；SPD、左翼黨與綠黨聯手仍可能勉強過半。'),
+   ('東部領先明顯', '薩克森-安哈特邦（Sachsen-Anhalt）9/6 投票，INSA 民調 AfD 41%、CDU 24%、左翼黨 13%，領先逾 15 個百分點。'),
+   ('梅克倫堡-佛波門邦（Mecklenburg-Vorpommern）', '9/20 投票，AfD 36%、SPD 29%、左翼黨 12%、CDU 僅 9%；SPD、左翼黨與綠黨聯手仍可能勉強過半。'),
    ('柏林四黨混戰', '柏林 9/20 改選：左翼黨 21%、CDU 19%、AfD 18%、綠黨 17%；Wegner 因停電說法不實退選，改由 Evers 領軍。'),
   ],
   takeaway=('政治觀察', '三場選舉將檢驗聯盟黨（CDU/CSU）對 AfD 的「防火牆」，結果也牽動 Merz 政府秋季的施政能量。'),
