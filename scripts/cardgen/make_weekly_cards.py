@@ -560,11 +560,176 @@ def illu_briefcase(d, R, S, cx, cy, theme):
     d.arc(R(gx-gr+4, gy-gr+4, gx+gr-4, gy+gr-4), start=195, end=250, fill='white', width=4*S)
     d.line(R(gx+13, gy+13, gx+26, gy+26), fill=OUTLINE, width=ow+2*S)
 
+def illu_drone(d, R, S, cx, cy, theme):
+    """四旋翼無人機＋掛載包裹（無人機事件／空域安全）"""
+    ow = 5*S
+    _dots(d, R, cx, cy, ((-70, -46, 3, GOLD), (60, -50, 3, tint(theme, 0.5)),
+                         (72, 6, 3, theme)))
+    d.ellipse(R(cx-46, cy+46, cx+46, cy+58), fill=tint(theme, 0.18))
+    # 機臂（先畫，機身壓住中央接點）
+    for sx, sy in ((-1, -1), (1, -1), (-1, 1), (1, 1)):
+        d.line(R(cx, cy-6, cx+sx*46, cy-6+sy*20), fill=OUTLINE, width=ow+2*S)
+    # 四具旋翼：淺色槳盤＋深色軸心
+    for sx, sy in ((-1, -1), (1, -1), (-1, 1), (1, 1)):
+        rx, ry = cx+sx*46, cy-6+sy*20
+        d.ellipse(R(rx-17, ry-6, rx+17, ry+6), fill=tint(theme, 0.30), outline=OUTLINE, width=3*S)
+        d.ellipse(R(rx-4, ry-4, rx+4, ry+4), fill=OUTLINE)
+    # 機身＋頂部高光條
+    d.rounded_rectangle(R(cx-24, cy-18, cx+24, cy+8), radius=8*S, fill=theme, outline=OUTLINE, width=ow)
+    d.rounded_rectangle(R(cx-17, cy-12, cx+1, cy-6), radius=3*S, fill=tint(theme, 0.45))
+    # 鏡頭
+    d.ellipse(R(cx+4, cy-8, cx+18, cy+2), fill='white', outline=OUTLINE, width=3*S)
+    # 焦點細節：掛載的金色包裹（可疑裝置）
+    d.line(R(cx-10, cy+8, cx-10, cy+16), fill=OUTLINE, width=3*S)
+    d.line(R(cx+10, cy+8, cx+10, cy+16), fill=OUTLINE, width=3*S)
+    d.rounded_rectangle(R(cx-18, cy+16, cx+18, cy+40), radius=5*S, fill=GOLD, outline=OUTLINE, width=ow)
+    d.line(R(cx, cy+16, cx, cy+40), fill=GOLD_D, width=3*S)
+    d.line(R(cx-18, cy+27, cx+18, cy+27), fill=GOLD_D, width=3*S)
+
+def illu_lowwater(d, R, S, cx, cy, theme):
+    """水位標尺＋擱淺貨船（河川低水位／內河航運）"""
+    ow = 5*S
+    _dots(d, R, cx, cy, ((-70, -44, 3, GOLD), (44, -50, 3, tint(theme, 0.5)),
+                         (72, -18, 3, theme)))
+    # 乾涸河床（底層淺色）
+    d.rounded_rectangle(R(cx-72, cy+16, cx+72, cy+48), radius=8*S, fill=tint(theme, 0.14))
+    # 低水位水體（僅剩薄薄一層）
+    d.rounded_rectangle(R(cx-72, cy+32, cx+72, cy+48), radius=8*S,
+                        fill=tint(theme, 0.42), outline=OUTLINE, width=3*S)
+    # 貨船：船身＋駕駛艙＋金色貨櫃
+    d.polygon(R(cx-58, cy+2, cx+30, cy+2, cx+18, cy+32, cx-46, cy+32), fill=theme)
+    d.line(R(cx-58, cy+2, cx+30, cy+2), fill=OUTLINE, width=ow)
+    d.line(R(cx+30, cy+2, cx+18, cy+32), fill=OUTLINE, width=ow)
+    d.line(R(cx+18, cy+32, cx-46, cy+32), fill=OUTLINE, width=ow)
+    d.line(R(cx-46, cy+32, cx-58, cy+2), fill=OUTLINE, width=ow)
+    d.rounded_rectangle(R(cx-56, cy-18, cx-32, cy+2), radius=4*S, fill='white', outline=OUTLINE, width=3*S)
+    d.rounded_rectangle(R(cx-20, cy-14, cx+12, cy+2), radius=4*S, fill=GOLD, outline=OUTLINE, width=3*S)
+    # 焦點細節：水位標尺（刻度＋指向低水位的金色三角）
+    px1, px2 = cx+44, cy
+    d.rounded_rectangle(R(px1, cy-46, px1+16, cy+44), radius=4*S, fill='white', outline=OUTLINE, width=ow)
+    for dy in (-34, -22, -10, 2, 14, 26):
+        d.line(R(px1+3, cy+dy, px1+10, cy+dy), fill=OUTLINE, width=2*S)
+    d.polygon(R(px1+30, cy+22, px1+30, cy+38, px1+18, cy+30), fill=GOLD, outline=OUTLINE, width=3*S)
+
+def illu_ballotbox(d, R, S, cx, cy, theme):
+    """投票箱＋選票（選舉／民調）"""
+    ow = 5*S
+    _dots(d, R, cx, cy, ((-68, -34, 3, GOLD), (58, -46, 3, tint(theme, 0.5)),
+                         (72, 4, 3, theme)))
+    d.ellipse(R(cx-54, cy+46, cx+54, cy+58), fill=tint(theme, 0.18))
+    # 選票（後層，正要投入）
+    d.rounded_rectangle(R(cx-20, cy-52, cx+22, cy-2), radius=5*S, fill='white', outline=OUTLINE, width=ow)
+    d.line(R(cx-11, cy-42, cx+13, cy-42), fill=tint(theme, 0.5), width=4*S)
+    d.line(R(cx-11, cy-22, cx+13, cy-22), fill=tint(theme, 0.5), width=4*S)
+    # 焦點細節：選票上的金色勾選格
+    d.rounded_rectangle(R(cx-14, cy-36, cx-2, cy-24), radius=3*S, fill=GOLD, outline=OUTLINE, width=3*S)
+    d.line(R(cx-11, cy-30, cx-8, cy-26), fill=OUTLINE, width=3*S)
+    d.line(R(cx-8, cy-26, cx-4, cy-34), fill=OUTLINE, width=3*S)
+    # 箱體＋頂蓋＋投票口
+    d.rounded_rectangle(R(cx-52, cy-4, cx+52, cy+44), radius=8*S, fill=theme, outline=OUTLINE, width=ow)
+    d.rounded_rectangle(R(cx-58, cy-16, cx+58, cy+4), radius=6*S, fill=tint(theme, 0.30), outline=OUTLINE, width=ow)
+    d.rounded_rectangle(R(cx-22, cy-10, cx+22, cy-2), radius=3*S, fill=OUTLINE)
+    d.rounded_rectangle(R(cx-44, cy+12, cx-14, cy+19), radius=3*S, fill=tint(theme, 0.45))
+
+def illu_fakevideo(d, R, S, cx, cy, theme):
+    """播放畫面＋警告標誌（假訊息／深偽影片）"""
+    ow = 5*S
+    _dots(d, R, cx, cy, ((-70, -44, 3, GOLD), (52, -50, 3, tint(theme, 0.5)),
+                         (74, -14, 3, theme)))
+    d.ellipse(R(cx-52, cy+48, cx+40, cy+58), fill=tint(theme, 0.18))
+    # 螢幕支架
+    d.polygon(R(cx-16, cy+18, cx+2, cy+18, cx+8, cy+42, cx-22, cy+42), fill=tint(theme, 0.30),
+              outline=OUTLINE, width=3*S)
+    d.rounded_rectangle(R(cx-34, cy+40, cx+20, cy+48), radius=4*S, fill=theme, outline=OUTLINE, width=3*S)
+    # 螢幕外框＋畫面
+    d.rounded_rectangle(R(cx-66, cy-42, cx+52, cy+22), radius=9*S, fill='white', outline=OUTLINE, width=ow)
+    d.rounded_rectangle(R(cx-57, cy-33, cx+43, cy+13), radius=4*S, fill=tint(theme, 0.22))
+    d.arc(R(cx-62, cy-38, cx-30, cy-6), start=180, end=270, fill='white', width=4*S)
+    # 播放鍵
+    d.polygon(R(cx-16, cy-22, cx+4, cy-10, cx-16, cy+2), fill=theme, outline=OUTLINE, width=3*S)
+    # 焦點細節：金色警告三角＋驚嘆號（右下前景）
+    tx, ty = cx+42, cy+16
+    d.polygon(R(tx, ty-26, tx+26, ty+18, tx-26, ty+18), fill=GOLD, outline=OUTLINE, width=ow)
+    d.line(R(tx, ty-12, tx, ty+4), fill=OUTLINE, width=4*S)
+    d.ellipse(R(tx-3, ty+9, tx+3, ty+15), fill=OUTLINE)
+
+def illu_factory(d, R, S, cx, cy, theme):
+    """工廠＋上升折線（工業生產／訂單回升）"""
+    ow = 5*S
+    _dots(d, R, cx, cy, ((-70, -40, 3, GOLD), (30, -52, 3, tint(theme, 0.5)),
+                         (70, -44, 3, theme)))
+    d.ellipse(R(cx-58, cy+44, cx+50, cy+56), fill=tint(theme, 0.18))
+    # 煙囪（後層）
+    d.rounded_rectangle(R(cx-56, cy-30, cx-38, cy+6), radius=3*S, fill=tint(theme, 0.30),
+                        outline=OUTLINE, width=ow)
+    # 廠房本體＋鋸齒屋頂
+    d.rounded_rectangle(R(cx-64, cy+2, cx+16, cy+42), radius=6*S, fill=theme, outline=OUTLINE, width=ow)
+    for i in range(3):
+        x0 = cx-58 + i*24
+        d.polygon(R(x0, cy+2, x0+11, cy-12, x0+22, cy+2), fill=tint(theme, 0.30),
+                  outline=OUTLINE, width=3*S)
+    # 廠房窗與門
+    for i in range(3):
+        wx = cx-54 + i*24
+        d.rounded_rectangle(R(wx, cy+12, wx+14, cy+24), radius=2*S, fill='white', outline=OUTLINE, width=2*S)
+    d.rounded_rectangle(R(cx-12, cy+28, cx+8, cy+42), radius=2*S, fill=tint(theme, 0.45))
+    # 焦點細節：金色上升折線＋箭頭（訂單回升）
+    d.line(R(cx+8, cy+4, cx+34, cy-20), fill=GOLD, width=ow+2*S)
+    d.line(R(cx+34, cy-20, cx+52, cy-6), fill=GOLD, width=ow+2*S)
+    d.line(R(cx+52, cy-6, cx+70, cy-40), fill=GOLD, width=ow+2*S)
+    d.polygon(R(cx+70, cy-46, cx+78, cy-24, cx+58, cy-30), fill=GOLD, outline=OUTLINE, width=3*S)
+
+def illu_heatwave(d, R, S, cx, cy, theme):
+    """烈日＋溫度計（熱浪／高溫對經濟與健康的衝擊）"""
+    ow = 5*S
+    _dots(d, R, cx, cy, ((-70, -42, 3, GOLD), (4, -50, 3, tint(theme, 0.5)),
+                         (72, 26, 3, theme)))
+    d.ellipse(R(cx-52, cy+46, cx+52, cy+58), fill=tint(theme, 0.18))
+    # 烈日：光芒（先畫）＋日盤
+    sx, sy = cx+42, cy-24
+    for k in range(8):
+        a = math.radians(k*45)
+        d.line(R(sx+22*math.cos(a), sy+22*math.sin(a),
+                 sx+30*math.cos(a), sy+30*math.sin(a)), fill=GOLD_D, width=4*S)
+    d.ellipse(R(sx-20, sy-20, sx+20, sy+20), fill=GOLD, outline=OUTLINE, width=ow)
+    d.arc(R(sx-14, sy-14, sx+14, sy+14), start=195, end=250, fill=GOLD_HI, width=4*S)
+    # 熱氣波紋（日與溫度計之間）
+    for dy in (12, 26):
+        d.arc(R(cx+8, cy+dy-8, cx+30, cy+dy+8), start=180, end=360, fill=tint(theme, 0.45), width=3*S)
+        d.arc(R(cx+30, cy+dy-8, cx+52, cy+dy+8), start=0, end=180, fill=tint(theme, 0.45), width=3*S)
+    # 溫度計：管身＋水銀柱＋球部（焦點細節）
+    tx = cx-40
+    d.rounded_rectangle(R(tx-11, cy-46, tx+11, cy+18), radius=11*S, fill='white', outline=OUTLINE, width=ow)
+    d.rounded_rectangle(R(tx-4, cy-34, tx+4, cy+18), radius=4*S, fill=theme)
+    for dy in (-30, -18, -6):
+        d.line(R(tx+4, cy+dy, tx+9, cy+dy), fill=OUTLINE, width=2*S)
+    d.ellipse(R(tx-18, cy+14, tx+18, cy+50), fill=theme, outline=OUTLINE, width=ow)
+    d.arc(R(tx-12, cy+20, tx+2, cy+34), start=140, end=220, fill='white', width=3*S)
+
+def illu_ailabel(d, R, S, cx, cy, theme):
+    """影像框＋AI 標籤徽章（AI 生成內容標示義務）"""
+    ow = 5*S
+    _dots(d, R, cx, cy, ((-70, -40, 3, GOLD), (44, -50, 3, tint(theme, 0.5)),
+                         (74, -12, 3, theme)))
+    d.ellipse(R(cx-54, cy+46, cx+46, cy+58), fill=tint(theme, 0.18))
+    # 影像框＋畫面內容（山景＋小太陽，代表 AI 生成圖像）
+    d.rounded_rectangle(R(cx-64, cy-44, cx+36, cy+28), radius=9*S, fill='white', outline=OUTLINE, width=ow)
+    d.rounded_rectangle(R(cx-55, cy-35, cx+27, cy+19), radius=4*S, fill=tint(theme, 0.22))
+    d.ellipse(R(cx-45, cy-27, cx-31, cy-13), fill=GOLD, outline=OUTLINE, width=3*S)
+    d.polygon(R(cx-52, cy+19, cx-24, cy-10, cx+4, cy+19), fill=theme, outline=OUTLINE, width=3*S)
+    d.polygon(R(cx-10, cy+19, cx+10, cy-2, cx+27, cy+19), fill=tint(theme, 0.55), outline=OUTLINE, width=3*S)
+    # 焦點細節：金色 AI 標籤徽章（右下前景）
+    d.rounded_rectangle(R(cx+8, cy+14, cx+70, cy+48), radius=9*S, fill=GOLD, outline=OUTLINE, width=ow)
+    draw_mixed_vcentered(d, R(cx+39, cy+31), 'AI', 26*S, OUTLINE, bold=True, anchor='center')
+
 ILLUS = dict(podium=illu_podium, flags=illu_flags, coins=illu_coins,
              idcard=illu_idcard, camera=illu_camera, trophy=illu_trophy,
              bankcard=illu_bankcard, checklist=illu_checklist,
              noalcohol=illu_noalcohol, carehand=illu_carehand, contract=illu_contract,
-             reichstag=illu_reichstag, candle=illu_candle, briefcase=illu_briefcase)
+             reichstag=illu_reichstag, candle=illu_candle, briefcase=illu_briefcase,
+             drone=illu_drone, lowwater=illu_lowwater, ballotbox=illu_ballotbox,
+             fakevideo=illu_fakevideo, factory=illu_factory,
+             heatwave=illu_heatwave, ailabel=illu_ailabel)
 
 # ── 版型 ────────────────────────────────────────────────────
 
@@ -603,7 +768,11 @@ def make_card(spec, path, week_label='W?', date_label=''):
     while mixed_width(spec['title'], tsize*S, bold=True) > 884*S and tsize > 46:
         tsize -= 2
     draw_mixed(d, R(100, 186 + (62-tsize)//2), spec['title'], tsize*S, TITLE_C, bold=True)
-    draw_mixed(d, R(100, 266), spec['subtitle'], 36*S, SUB_C)
+    # 副標同樣做自動縮放，避免長邦名（含德文全名）撐出卡片右緣
+    ssize = 36
+    while mixed_width(spec['subtitle'], ssize*S) > 884*S and ssize > 27:
+        ssize -= 1
+    draw_mixed(d, R(100, 266 + (36-ssize)//2), spec['subtitle'], ssize*S, SUB_C)
 
     # stats 兩格（第三格空間留給插畫）
     for (x1, x2), (num, label) in zip([(100, 380), (400, 680)], spec['stats'][:2]):
@@ -658,75 +827,101 @@ def make_card(spec, path, week_label='W?', date_label=''):
 # ════════════════════════════════════════════════════════════
 # 每週卡片內容（範本：W29）——之後每週改這一段即可
 # ════════════════════════════════════════════════════════════
-WEEK = 'W31'
-DATE_RANGE = '2026/07/27–08/02'
+WEEK = 'W32'
+DATE_RANGE = '2026/08/03–08/09'
 
 CARDS = [
  dict(
-  theme='#2563EB', badges=[('政治', True), ('柏林', False)], illu='reichstag',
-  title='內閣改組：Frei 接掌聯盟黨團',
-  subtitle='7/29 當選黨團主席；總理府、衛生、交通三部會換將',
-  stats=[('91.9%', 'Frei 得票率（170/185 票）'),
-         ('3 部會', '總理府・衛生・交通換將')],
+  theme='#C0392B', badges=[('治安', True), ('薩克森邦', False)], illu='drone',
+  title='機場尋獲掛炸藥無人機',
+  subtitle='萊比錫／哈勒機場 8/5 凌晨；聯邦檢察總長接手偵辦',
+  stats=[('8/5 凌晨', '南跑道安全區尋獲'),
+         ('Semtex', '藏在罐頭裡的軍用炸藥')],
   bullets=[
-   ('黨團補選', 'Frei 7/29 以 91.9% 高票當選聯盟黨（CDU/CSU）黨團主席，接替因代孕爭議請辭的 Spahn，黨政樞紐重新到位。'),
-   ('內閣三換', 'Warken 轉掌總理府、黨秘書長 Linnemann 接衛生部、Bilger 接交通部；Schnieder 數日拉鋸後主動求去。'),
-   ('過程失分', 'Merz 屬意的交通人選 Güntzler 自認不具專業婉拒；新閣員 9/9 國會復會才宣誓，改組被批演成「溝通災難」。'),
+   ('發現經過', '機場員工 8/5 凌晨在南跑道安全區發現一架掛載爆裂裝置的無人機並將其擊落，聯邦警察出動拆彈機器人卸除引信。'),
+   ('裝置細節', '炸藥是填滿 Semtex 的市售罐頭、底部鑽孔裝引信，另有投擲機構與兩張 SIM 卡；未爆的唯一原因是引信失效。'),
+   ('偵測全失靈', '無人機為高專業度自製、以行動網路操控，薩克森邦（Sachsen）警方指機場頻率掃描器無法與手機區分。'),
   ],
-  takeaway=('政治觀察', 'AfD 黨魁 Weidel 譏改組是「難堪方案大集合」；Linnemann 無衛生政策歷練直接掌部，專業性質疑恐伴隨上任。'),
-  file='W31_圖卡1_內閣改組.png'),
+  takeaway=('安全提醒', '聯邦檢察總長認定 8/4 晚間意圖引爆，Dobrindt 稱「混合攻擊情境」；目擊可疑無人機請撥 110，勿自行接近。'),
+  file='W32_圖卡1_機場無人機炸彈.png'),
  dict(
-  theme='#C0392B', badges=[('治安', True), ('柏林', False)], illu='candle',
-  title='柏林 CSD 遇襲：1 死 31 傷',
-  subtitle='7/25 遊行遭車輛與砍刀攻擊；安全政策辯論升溫',
-  stats=[('1 死 31 傷', '7/25 CSD 攻擊事件'),
-         ('16 歲起', '嫌犯遭安全單位列管')],
+  theme='#0D9488', badges=[('經濟', True), ('氣候', False)], illu='lowwater',
+  title='熱浪曬乾萊茵河：水位破紀錄',
+  subtitle='七月雨量不到基準六成；考布測站僅剩 19 公分',
+  stats=[('19 公分', '考布 8/7 水位新低'),
+         ('40 公升', '七月雨量（基準 78 公升）')],
   bullets=[
-   ('案發經過', '21 歲男子駕小巴在蒂爾加滕（Tiergarten）衝撞 CSD 遊行人群、再持砍刀攻擊；翌日圍捕時拒捕遭警方擊斃。'),
-   ('列管卻未攔下', '嫌犯為列管伊斯蘭主義危險分子（Gefährder），今年 5 月才因預備恐攻罪判緩刑釋放，「為何在外」成質問焦點。'),
-   ('政策急轉', '內政部長 Dobrindt 提三點方案：危險分子電子監控常態化、預防性拘留全國一致入法、成年危險分子不適用少年刑法。'),
+   ('先看成因', '德國氣象局（DWD）：七月均溫 19.7 度、高於基準 2.8 度，雨量僅約 40 公升／平方公尺，乾旱深達 1.8 公尺土層。'),
+   ('河道見底', '萊茵蘭-普法茲邦（Rheinland-Pfalz）考布（Kaub）8/7 跌至 19 公分、科隆 60 公分；下萊茵河全線破紀錄。'),
+   ('產業扛衝擊', 'BASF 約四成產品仰賴這條水路、已加派淺水船；交通部長 Bilger 考慮暫解卡車假日禁行令以疏運。'),
   ],
-  takeaway=('後續觀察', '情報機關擴權與安全法案 8 月排入內閣；電子腳鐐與預防性拘留涉基本權限制，立法與違憲審查攻防勢將展開。'),
-  file='W31_圖卡2_柏林CSD遇襲.png'),
+  takeaway=('影響評估', '德國經濟研究所（IW）估久旱恐吃掉全年成長最多 0.4 個百分點；燃油與建材運費看漲，加油宜提前。'),
+  file='W32_圖卡2_萊茵河水位新低.png'),
  dict(
-  theme='#2E8B57', badges=[('經濟', True), ('數據', False)], illu='coins',
-  title='Q2 成長 0.2%、通膨回升 2.8%',
-  subtitle='Destatis 7/30 公布；能源推升通膨至四月以來新高',
-  stats=[('+0.2%', 'Q2 GDP 季增（優於預期）'),
-         ('2.8%', '七月通膨（六月 2.3%）')],
+  theme='#D4740E', badges=[('經濟', True), ('勞動', False)], illu='heatwave',
+  title='高溫的經濟帳：一天 4.31 億歐元',
+  subtitle='每個 30 度以上的高溫日，德國付出的產值代價',
+  stats=[('4.31 億歐元', '每個高溫日經濟損失'),
+         ('-3%', '30 度以上每升 1 度生產力')],
   bullets=[
-   ('連兩季正成長', 'Q2 GDP 季增 0.2%、優於市場預期的 0.1%，年增 0.9%；Q1 同步上修至 +0.4%，復甦動能比預想強。'),
-   ('通膨反彈', '七月通膨 2.8% 創四月以來新高：中東緊張推升油價，能源年漲幅自 3.4% 跳升至 8.3% 是最大推手。'),
-   ('展望上修', 'Commerzbank 將 2026 全年成長預測自 0.6% 上調至 1.0%，直言「德國經濟的復甦比先前以為的更明顯」。'),
+   ('損失怎麼算', '聯邦勞動部委託 Prognos 研究：一個 30 度以上高溫日讓德國經濟少掉 4.31 億歐元，其中 97% 來自生產力下滑。'),
+   ('健康也計價', '每個高溫日估增約 7.65 萬個病假日；Allianz Trade 估 2026–2030 年累計損失上看 1,310 億美元。'),
+   ('工業雙重夾擊', '高溫壓低產線效率、推高冷卻與電力成本，同時乾旱又卡住河運——供應鏈與產能兩頭同時受壓。'),
   ],
-  takeaway=('數據解讀', '成長回穩、通膨卻重新逼近 3%，呼應 ECB 六月升息的判斷；油價若居高不下，秋冬能源帳單宜預留緩衝。'),
-  file='W31_圖卡3_Q2經濟與通膨.png'),
+  takeaway=('勞權提醒', 'ASR A3.5：室溫逾 26 度雇主應處置、逾 30 度須採有效措施、逾 35 度不得作為工作場所。'),
+  file='W32_圖卡3_高溫經濟衝擊.png'),
  dict(
-  theme='#D4740E', badges=[('勞動', True), ('就業', False)], illu='briefcase',
-  title='失業人數重返 300 萬',
-  subtitle='聯邦勞工局 7/31 公布七月就業市場數據',
-  stats=[('300.7 萬', '七月失業人數'),
-         ('6.4%', '失業率（月增 0.2 個百分點）')],
+  theme='#2563EB', badges=[('政治', True), ('選舉', False)], illu='ballotbox',
+  title='九月三場邦選舉倒數一個月',
+  subtitle='薩克森-安哈特邦 9/6 投票；柏林、梅克倫堡-佛波門邦 9/20',
+  stats=[('41%', 'AfD 薩克森-安哈特邦民調'),
+         ('3 場', '九月邦議會改選')],
   bullets=[
-   ('季節性攀升', '七月失業較六月增 7.1 萬人，主因暑休與畢業季例行波動；經季節調整僅增 6 千人、失業率 6.4%。'),
-   ('年比仍偏弱', '失業人數較去年同期多 2.8 萬；勞工局理事 Terzenbach 直言，就業市場「延續近幾個月的疲弱走勢」。'),
-   ('與景氣背離', '同週公布的 Q2 GDP 優於預期，但企業徵才仍觀望——就業向來落後景氣，招聘回暖通常再晚兩、三季。'),
+   ('東部領先明顯', '薩克森-安哈特邦（Sachsen-Anhalt）9/6 投票，INSA 民調 AfD 41%、CDU 24%、左翼黨 13%，領先逾 15 個百分點。'),
+   ('梅克倫堡-佛波門邦（Mecklenburg-Vorpommern）', '9/20 投票，AfD 36%、SPD 29%、左翼黨 12%、CDU 僅 9%；SPD、左翼黨與綠黨聯手仍可能勉強過半。'),
+   ('柏林四黨混戰', '柏林 9/20 改選：左翼黨 21%、CDU 19%、AfD 18%、綠黨 17%；Wegner 因停電說法不實退選，改由 Evers 領軍。'),
   ],
-  takeaway=('求職提醒', '職缺整體偏緊，IT、護理與技術職種仍缺工；求職與轉職者可鎖定缺工職業，並留意失業保險與試用期權益。'),
-  file='W31_圖卡4_失業重返300萬.png'),
+  takeaway=('政治觀察', '三場選舉將檢驗聯盟黨（CDU/CSU）對 AfD 的「防火牆」，結果也牽動 Merz 政府秋季的施政能量。'),
+  file='W32_圖卡4_九月三場邦選舉.png'),
  dict(
-  theme='#0D9488', badges=[('民生', True), ('新制', False)], illu='checklist',
-  title='八月新制：課後照顧入法',
-  subtitle='小一課後照顧成法定權利；AI 內容 8/2 起強制標示',
-  stats=[('8 小時', '小一每日課後照顧保障'),
-         ('8/2', 'AI 內容標示義務生效')],
+  theme='#7C3AED', badges=[('假訊息', True), ('數位', False)], illu='fakevideo',
+  title='假「Merz 辭職」影片流竄',
+  subtitle='《商報》（Handelsblatt）出面澄清：從未有過這則報導',
+  stats=[('8/10', '影片捏造的辭職日期'),
+         ('0 篇', '《商報》相關報導')],
   bullets=[
-   ('課後照顧', '8/1 起小一新生依法享每週 5 天、每日 8 小時課後照顧（Ganztagsbetreuung），逐年擴及 2029/30 全體小學生。'),
-   ('AI 標示', 'EU AI 法新階段 8/2 生效：AI 生成影音圖文須明確標示，違者最高罰 1,500 萬歐元或全球年營收 3%。'),
-   ('交通能源', '德鐵 BahnBonus 改動態點數，早鳥兌換 750 點起、彈性票調漲 25%；新太陽能躉購費率例行調降 1%。'),
+   ('偽造手法', '影片題為「CDU 內部文件：Merz 8/10 辭職」，宣稱引自《商報》取得的黨內通信，並嵌入偽造的商報網頁。'),
+   ('媒體打假', '商報公開聲明：手上沒有這份通信、也從未做過相關報導，影片中的網頁是假的；多家俄語系網站仍持續轉載。'),
+   ('不是單一事件', '商報指出，網路上幾乎每天出現總理的假政策倡議，目的在削弱他與所屬政黨的公信力。'),
   ],
-  takeaway=('民生提醒', '家有學童可向學校或青少年局申請課後名額；經營內容、電商或使用聊天機器人者，檢查 AI 標示義務是否已合規。'),
-  file='W31_圖卡5_八月新制.png'),
+  takeaway=('查證提醒', '看到「某媒體獨家」影片，先上該媒體官網搜尋原文；找不到就別轉傳，這正是 EU AI 標示義務要處理的問題。'),
+  file='W32_圖卡5_假Merz辭職影片.png'),
+ dict(
+  theme='#7C3AED', badges=[('數位', True), ('法規', False)], illu='ailabel',
+  title='AI 內容標示義務正式上路',
+  subtitle='EU AI 法第 50 條 8/2 生效，聯邦網路局主管',
+  stats=[('1,500 萬歐元', '罰則上限或年營收 3%'),
+         ('第 50 條', 'EU AI 法透明義務')],
+  bullets=[
+   ('誰被管到', '不只 AI 公司——網站掛聊天機器人、行銷用 AI 生圖、發布 AI 生成影音的企業與個人創作者，都在適用範圍內。'),
+   ('四類義務', '聊天機器人須表明身分；AI 生成內容須加「機器可讀」標記；情緒辨識須告知；深偽與涉公共利益的 AI 文章須揭露。'),
+   ('例外與執法', '明顯的藝術、諷刺或虛構作品可改用不破壞觀賞的方式揭露；德國由聯邦網路局（BNetzA）監理，KI-MIG 法 7/29 生效。'),
+  ],
+  takeaway=('合規提醒', '經營部落格、電商或社群的讀者：盤點聊天機器人與 AI 生成素材、補上標示；純內部使用不受本條規範。'),
+  file='W32_圖卡6_AI內容標示義務.png'),
+ dict(
+  theme='#2E8B57', badges=[('經濟', True), ('數據', False)], illu='factory',
+  title='六月工業訂單月增 3.1%',
+  subtitle='Destatis 8/6 公布；扣掉大額訂單則轉為負成長',
+  stats=[('+3.1%', '六月製造業訂單月增'),
+         ('-0.5%', '扣除大額訂單後月變動')],
+  bullets=[
+   ('遠優於預期', '經季節與工作日調整，六月製造業實質訂單較五月增 3.1%，市場原本只預期 0.5%～0.7%，連續第二個月超乎預期。'),
+   ('大單撐盤', '成長主要來自機械製造 +12.7%、資通訊與光學產品 +22.7%、汽車 +3.8%；扣除大額訂單後反而月減 0.5%。'),
+   ('內外冷熱不均', '國內訂單月增 7.8%、國外僅增 0.2%——歐元區訂單大減 14.0%，全靠歐元區以外的 +10.2% 撐住。'),
+  ],
+  takeaway=('數據解讀', '訂單回升的底氣仍薄：拿掉大單即轉負、歐元區需求明顯轉弱，要說工業已重回擴張言之過早。'),
+  file='W32_圖卡7_六月工業訂單.png'),
 ]
 
 if __name__ == '__main__':
