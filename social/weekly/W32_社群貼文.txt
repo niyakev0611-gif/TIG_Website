@@ -18,6 +18,10 @@
 ▪️ 事件期間機場航班運作【一度全面中斷】；薩克森（Sachsen）邦刑事警察局（LKA）當日中午證實無人機裝有爆裂裝置
 ▪️ 最敏感的是落點：鄰近一架停放中的【烏克蘭 Antonov AN-124 大型運輸機】——萊比錫／哈勒是歐洲重要空運樞紐，也是對烏軍援與人道物資的中轉點
 ▪️ 本案已由【聯邦檢察總長（Generalbundesanwalt）接手】，罪嫌為引爆爆裂物未遂與危害航空交通安全，警察偵查交由聯邦刑事警察局（BKA）執行
+▪️ 本週稍晚披露的細節：爆裂物是【填滿軍用炸藥 Semtex 的市售罐頭】，內容物清空後重新封罐、罐底鑽孔裝引信；【未爆的唯一原因是引信失效】
+▪️ 機體是【高專業度自製】、非市售產品，裝有投擲機構與兩張 SIM 卡（偵查中：是否分別用於操控與觸發投擲），以【LTE 行動網路】遠端操控
+▪️ 最令人不安的是偵測面：該技術【現行標準偵測系統無法辨識】，機場頻率掃描器無法把它和一支手機區分開來，既有系統顯然沒有觸發——專家稱這是【「偵測的最壞情況」】
+▪️ 聯邦檢察總長認定：有足夠事實證據顯示行為人意圖於【8/4 晚間】在該機場引發爆炸
 ▪️ 內政部長 Dobrindt 定性為【「混合攻擊情境」】，不排除外國勢力意圖在德國製造重大不安
 ▪️ 與你有關：機場空域事件短期恐再現，出發前先查班機動態；目擊可疑無人機請撥【110】，切勿自行接近或觸碰
 
@@ -27,7 +31,9 @@
 ▪️ 關鍵在雨：七月降水僅約每平方公尺【40 公升】，只比基準期（78 公升）的一半多一點；薩爾蘭（Saarland）以約 350 小時日照創當地新高
 ▪️ 乾旱已擴及幾乎全德、深入地下【1.8 公尺】整個土壤剖面——就算現在下雨也得先「還債」給土壤，河川補水嚴重滯後
 ▪️ 萊茵蘭-普法茲（Rheinland-Pfalz）羅蕾萊附近的考布（Kaub）測站水位僅剩【19 公分】，兩週前還在 50 公分以上；預報週六可能再降到 17 公分
-▪️ 科隆（Köln）8/1 也以【67 公分】刷新站史新低，比 2018 年紀錄再低 2 公分
+▪️ 考布下跌曲線很陡：週一（8/3）24 公分已破 2018 年紀錄、週二 21 公分、週五（8/7）19 公分，甚至低於前一日預報的 18 公分
+▪️ 下游同樣改寫紀錄：科隆（Köln）8/7 凌晨跌至【60 公分】（週四 63、舊紀錄 66）、杜塞道夫（Düsseldorf）【15 公分】
+▪️ 埃默里希（Emmerich）水位已【連日負值】、測站浮筒乾擱河床只能靠探針取數；杜易斯堡與埃默里希雙雙低於歷史紀錄——【從科隆到荷蘭邊境整段下萊茵河都在破紀錄】
 ▪️ 貨船常只能裝到滿載的【五分之一至三分之一】；當地工商會（IHK）指水位低於 40 公分「有意義的內河航運幾乎不可能」
 ▪️ 化工首當其衝：BASF、Evonik、Covestro 主力廠都在河畔，BASF 約【四成產品】仰賴這條水路，已加派低水位船；Lanxess 轉走鐵公路
 ▪️ 交通部長 Bilger 考慮【暫時鬆綁卡車週日與假日禁行令】，把水路量能挪到公路
@@ -47,7 +53,7 @@
 🗳️ 四、九月三場邦選舉倒數一個月【AfD 東部大幅領先】
 ▪️ 薩克森-安哈特（Sachsen-Anhalt）9/6 投票：INSA 民調【AfD 41%、CDU 24%】、左翼黨 13%、SPD 7%、綠黨 5%、BSW 4%，領先逾 15 個百分點
 ▪️ 該邦執政 15 年的 Haseloff 已交棒，CDU 由今年 1 月底接任邦總理的 Sven Schulze 領軍應戰
-▪️ 梅克倫堡-前波美拉尼亞（Mecklenburg-Vorpommern／MV）9/20：AfD 36%、SPD（現任邦總理 Schwesig）29%、左翼黨 12%、CDU 僅 9%；但【SPD＋左翼黨＋綠黨仍可能極微弱過半】，AfD 即使第一大黨未必能組閣
+▪️ 梅克倫堡-佛波門（Mecklenburg-Vorpommern／MV）9/20：AfD 36%、SPD（現任邦總理 Schwesig）29%、左翼黨 12%、CDU 僅 9%；但【SPD＋左翼黨＋綠黨仍可能極微弱過半】，AfD 即使第一大黨未必能組閣
 ▪️ 柏林 9/20 四黨混戰：【左翼黨 21%、CDU 19%、AfD 18%、綠黨 17%】、SPD 12%，FDP 與 BSW 各 3% 落在門檻外
 ▪️ 柏林 CDU 換將：市長 Kai Wegner 因今年 1 月大停電期間「曾多次與 Merz 通話」的說法遭總理府否認而退選，改由財政參議員 Stefan Evers 領軍——但民調顯示【換將未替 CDU 帶來反彈】
 ▪️ 觀察重點：三場選舉是對聯盟黨（CDU/CSU）與 AfD「防火牆」（Brandmauer）最直接的壓力測試
@@ -89,8 +95,12 @@ https://taiwanese-in-germany.com/posts/weekly-digest.html
 ▪️ ZDFheute｜LKA 證實無人機裝有爆裂裝置 https://www.zdfheute.de/panorama/leipzig-flughafen-drohne-zwischenfall-100.html
 ▪️ Tagesspiegel｜員工以腳踢落無人機 https://www.tagesspiegel.de/gesellschaft/panorama/suche-nach-zweitem-objekt-an-flughafen-leipzighalle-lauft-weiter-mitarbeiter-holte-sprengstoff-drohne-mit-fusstritt-aus-der-luft-15914691.html
 ▪️ t-online｜聯邦檢察總長接手、Dobrindt 稱混合攻擊情境 https://www.t-online.de/nachrichten/deutschland/innenpolitik/id_101376382/leipzig-busfahrer-soll-drohne-mit-fusstritt-gestoppt-haben.html
+▪️ t-online｜炸藥無人機的技術細節 https://www.t-online.de/nachrichten/deutschland/id_101378890/flughafen-leipzig-halle-neue-details-zur-technik-der-sprengstoff-drohne.html
+▪️ Euronews｜罐頭裝 Semtex 的新細節 https://de.euronews.com/my-europe/2026/08/07/sprengstoff-in-konservendose-neue-details-zum-drohnen-vorfall-in-leipzig
 ▪️ DWD｜2026 年七月德國天氣總結 https://www.dwd.de/DE/presse/pressemitteilungen/DE/2026/20260730_deutschlandwetter_juli_news.html
 ▪️ NR-Kurier｜考布水位僅 19 公分 https://www.nr-kurier.de/artikel/174108-rhein-verliert-wasser---pegel-kaub-meldet-nur-19-zentimeter
+▪️ t-online 科隆｜8/7 科隆跌至 60 公分 https://koeln.t-online.de/region/koeln/id_101378406/rhein-pegel-am-freitag-rekordtief-bei-koeln-viel-niedriger-als-prognose.html
+▪️ daswetter｜科隆到埃默里希全線破紀錄 https://www.daswetter.com/nachrichten/aktuelles/rhein-niedrigwasser-rekordtiefs-von-koeln-bis-emmerich.html
 ▪️ Prognos｜氣候變遷下的勞動保護（BMAS 委託） https://www.prognos.com/de/projekt/arbeitsschutz-klimawandel-hitze-wirtschaft
 ▪️ Allianz Trade｜極端高溫的數十億損失 https://www.allianz-trade.de/presse/pressemitteilungen/extreme-hitze-kostet-deutschland-milliarden-und-laehmt-wirtschaftswachstum.html
 ▪️ BAuA｜ASR A3.5 室內溫度規則 https://www.baua.de/DE/Angebote/Regelwerk/ASR/pdf/ASR-A3-5.pdf?__blob=publicationFile
@@ -109,19 +119,19 @@ https://taiwanese-in-germany.com/posts/weekly-digest.html
 #德國生活 #在德台灣人 #德國知識小種子 #德國週報 #萊比錫 #萊茵河 #德國選舉 #AfD #假訊息 #Deepfake #德國經濟 #熱浪 #AIAct #Handelsblatt
 
 
-────────────────  IG 版（精簡版・981 字元 / 上限 2,200）  ────────────────
+────────────────  IG 版（精簡版・1067 字元 / 上限 2,200）  ────────────────
 
 🇩🇪 德國週報 W32｜8/3–8/9
 
 安全、熱浪、選舉三重壓力同時上身，七張圖卡一次看懂👇
 
-🚁 機場無人機｜8/5 凌晨萊比錫／哈勒機場南跑道尋獲掛爆裂裝置的無人機，員工一腳踢落、航班一度全面中斷；落點鄰近一架烏克蘭 AN-124 運輸機，已由聯邦檢察總長接手，Dobrindt 稱「混合攻擊情境」
+🚁 機場無人機｜8/5 凌晨萊比錫／哈勒機場南跑道尋獲掛爆裂裝置的無人機，員工一腳踢落、航班一度全面中斷。新披露細節：炸藥是填滿 Semtex 的罐頭，未爆只因引信失效；機體高專業度自製、LTE 遠端操控，且標準偵測系統無法辨識——專家稱「偵測的最壞情況」。已由聯邦檢察總長接手，Dobrindt 稱「混合攻擊情境」
 
-🚢 熱浪曬乾萊茵河｜DWD：七月均溫 19.7 度、高於基準 2.8 度，雨量僅 40 公升／平方公尺不到基準六成，乾旱深達 1.8 公尺土層。考布水位僅 19 公分、科隆 67 公分雙創新低，貨船只能裝五分之一，IW 估全年成長恐減最多 0.4 個百分點
+🚢 熱浪曬乾萊茵河｜DWD：七月均溫 19.7 度、高於基準 2.8 度，雨量僅 40 公升／平方公尺不到基準六成，乾旱深達 1.8 公尺土層。考布 8/7 跌至 19 公分、科隆 60 公分、杜塞道夫 15 公分，埃默里希連日負值，從科隆到荷蘭邊境全線破紀錄；貨船只能裝五分之一，IW 估全年成長恐減最多 0.4 個百分點
 
 🌡️ 高溫的經濟帳｜Prognos 研究：一個 30 度以上高溫日讓德國少掉 4.31 億歐元，97% 來自生產力下滑；每超過 30 度再升 1 度生產力掉 3%，每個高溫日增約 7.65 萬個病假日。德國沒有法定高溫假，但 ASR A3.5 規定室溫逾 26 度雇主應處置、逾 30 度須採有效措施、逾 35 度不得當工作場所
 
-🗳️ 九月三場邦選舉｜薩克森-安哈特 9/6：AfD 41%、CDU 24%；梅克倫堡-前波美拉尼亞與柏林 9/20 投票，MV 為 AfD 36%、SPD 29%，柏林則是左翼黨 21%、CDU 19%、AfD 18%、綠黨 17% 的四黨混戰
+🗳️ 九月三場邦選舉｜薩克森-安哈特 9/6：AfD 41%、CDU 24%；梅克倫堡-佛波門與柏林 9/20 投票，MV 為 AfD 36%、SPD 29%，柏林則是左翼黨 21%、CDU 19%、AfD 18%、綠黨 17% 的四黨混戰
 
 🎬 假影片流竄｜「Merz 8/10 辭職」影片宣稱引自《商報》內部文件，商報公開打假：沒有這份通信、從未報導，嵌入的網頁是偽造的。看到「獨家」先上官網搜原文，找不到就別轉傳
 
