@@ -679,13 +679,57 @@ def illu_factory(d, R, S, cx, cy, theme):
     d.line(R(cx+52, cy-6, cx+70, cy-40), fill=GOLD, width=ow+2*S)
     d.polygon(R(cx+70, cy-46, cx+78, cy-24, cx+58, cy-30), fill=GOLD, outline=OUTLINE, width=3*S)
 
+def illu_heatwave(d, R, S, cx, cy, theme):
+    """烈日＋溫度計（熱浪／高溫對經濟與健康的衝擊）"""
+    ow = 5*S
+    _dots(d, R, cx, cy, ((-70, -42, 3, GOLD), (4, -50, 3, tint(theme, 0.5)),
+                         (72, 26, 3, theme)))
+    d.ellipse(R(cx-52, cy+46, cx+52, cy+58), fill=tint(theme, 0.18))
+    # 烈日：光芒（先畫）＋日盤
+    sx, sy = cx+42, cy-24
+    for k in range(8):
+        a = math.radians(k*45)
+        d.line(R(sx+22*math.cos(a), sy+22*math.sin(a),
+                 sx+30*math.cos(a), sy+30*math.sin(a)), fill=GOLD_D, width=4*S)
+    d.ellipse(R(sx-20, sy-20, sx+20, sy+20), fill=GOLD, outline=OUTLINE, width=ow)
+    d.arc(R(sx-14, sy-14, sx+14, sy+14), start=195, end=250, fill=GOLD_HI, width=4*S)
+    # 熱氣波紋（日與溫度計之間）
+    for dy in (12, 26):
+        d.arc(R(cx+8, cy+dy-8, cx+30, cy+dy+8), start=180, end=360, fill=tint(theme, 0.45), width=3*S)
+        d.arc(R(cx+30, cy+dy-8, cx+52, cy+dy+8), start=0, end=180, fill=tint(theme, 0.45), width=3*S)
+    # 溫度計：管身＋水銀柱＋球部（焦點細節）
+    tx = cx-40
+    d.rounded_rectangle(R(tx-11, cy-46, tx+11, cy+18), radius=11*S, fill='white', outline=OUTLINE, width=ow)
+    d.rounded_rectangle(R(tx-4, cy-34, tx+4, cy+18), radius=4*S, fill=theme)
+    for dy in (-30, -18, -6):
+        d.line(R(tx+4, cy+dy, tx+9, cy+dy), fill=OUTLINE, width=2*S)
+    d.ellipse(R(tx-18, cy+14, tx+18, cy+50), fill=theme, outline=OUTLINE, width=ow)
+    d.arc(R(tx-12, cy+20, tx+2, cy+34), start=140, end=220, fill='white', width=3*S)
+
+def illu_ailabel(d, R, S, cx, cy, theme):
+    """影像框＋AI 標籤徽章（AI 生成內容標示義務）"""
+    ow = 5*S
+    _dots(d, R, cx, cy, ((-70, -40, 3, GOLD), (44, -50, 3, tint(theme, 0.5)),
+                         (74, -12, 3, theme)))
+    d.ellipse(R(cx-54, cy+46, cx+46, cy+58), fill=tint(theme, 0.18))
+    # 影像框＋畫面內容（山景＋小太陽，代表 AI 生成圖像）
+    d.rounded_rectangle(R(cx-64, cy-44, cx+36, cy+28), radius=9*S, fill='white', outline=OUTLINE, width=ow)
+    d.rounded_rectangle(R(cx-55, cy-35, cx+27, cy+19), radius=4*S, fill=tint(theme, 0.22))
+    d.ellipse(R(cx-45, cy-27, cx-31, cy-13), fill=GOLD, outline=OUTLINE, width=3*S)
+    d.polygon(R(cx-52, cy+19, cx-24, cy-10, cx+4, cy+19), fill=theme, outline=OUTLINE, width=3*S)
+    d.polygon(R(cx-10, cy+19, cx+10, cy-2, cx+27, cy+19), fill=tint(theme, 0.55), outline=OUTLINE, width=3*S)
+    # 焦點細節：金色 AI 標籤徽章（右下前景）
+    d.rounded_rectangle(R(cx+8, cy+14, cx+70, cy+48), radius=9*S, fill=GOLD, outline=OUTLINE, width=ow)
+    draw_mixed_vcentered(d, R(cx+39, cy+31), 'AI', 26*S, OUTLINE, bold=True, anchor='center')
+
 ILLUS = dict(podium=illu_podium, flags=illu_flags, coins=illu_coins,
              idcard=illu_idcard, camera=illu_camera, trophy=illu_trophy,
              bankcard=illu_bankcard, checklist=illu_checklist,
              noalcohol=illu_noalcohol, carehand=illu_carehand, contract=illu_contract,
              reichstag=illu_reichstag, candle=illu_candle, briefcase=illu_briefcase,
              drone=illu_drone, lowwater=illu_lowwater, ballotbox=illu_ballotbox,
-             fakevideo=illu_fakevideo, factory=illu_factory)
+             fakevideo=illu_fakevideo, factory=illu_factory,
+             heatwave=illu_heatwave, ailabel=illu_ailabel)
 
 # ── 版型 ────────────────────────────────────────────────────
 
@@ -798,17 +842,30 @@ CARDS = [
   file='W32_圖卡1_機場無人機炸彈.png'),
  dict(
   theme='#0D9488', badges=[('經濟', True), ('氣候', False)], illu='lowwater',
-  title='萊茵河水位跌破歷史新低',
-  subtitle='考布測站僅 19 公分；貨船載重剩五分之一',
+  title='熱浪曬乾萊茵河：水位破紀錄',
+  subtitle='七月雨量不到基準六成；考布測站僅剩 19 公分',
   stats=[('19 公分', '考布（Kaub）水位新低'),
-         ('67 公分', '科隆 8/1 同創新低')],
+         ('40 公升', '七月雨量（基準 78 公升）')],
   bullets=[
-   ('破紀錄低水位', '萊茵蘭-普法茲（Rheinland-Pfalz）羅蕾萊附近的考布（Kaub）測站僅剩 19 公分，兩週前尚有 50 公分以上。'),
-   ('航運近乎停擺', '貨船常只能裝到滿載的五分之一至三分之一；當地工商會（IHK）指水位低於 40 公分幾乎無法正常航行。'),
-   ('化工首當其衝', 'BASF 約四成產品仰賴萊茵河運輸、已加派淺水船；交通部長 Bilger 考慮暫解卡車假日禁行令以疏運。'),
+   ('先看成因', '德國氣象局（DWD）：七月均溫 19.7 度、高於基準 2.8 度，雨量僅約 40 公升／平方公尺，乾旱深達 1.8 公尺土層。'),
+   ('河道見底', '萊茵蘭-普法茲（Rheinland-Pfalz）考布（Kaub）僅剩 19 公分、科隆 67 公分雙創新低；貨船只能裝五分之一。'),
+   ('產業扛衝擊', 'BASF 約四成產品仰賴這條水路、已加派淺水船；交通部長 Bilger 考慮暫解卡車假日禁行令以疏運。'),
   ],
   takeaway=('影響評估', '德國經濟研究所（IW）估久旱恐吃掉全年成長最多 0.4 個百分點；燃油與建材運費看漲，加油宜提前。'),
   file='W32_圖卡2_萊茵河水位新低.png'),
+ dict(
+  theme='#D4740E', badges=[('經濟', True), ('勞動', False)], illu='heatwave',
+  title='高溫的經濟帳：一天 4.31 億歐元',
+  subtitle='每個 30 度以上的高溫日，德國付出的產值代價',
+  stats=[('4.31 億歐元', '每個高溫日經濟損失'),
+         ('-3%', '30 度以上每升 1 度生產力')],
+  bullets=[
+   ('損失怎麼算', '聯邦勞動部委託 Prognos 研究：一個 30 度以上高溫日讓德國經濟少掉 4.31 億歐元，其中 97% 來自生產力下滑。'),
+   ('健康也計價', '每個高溫日估增約 7.65 萬個病假日；Allianz Trade 估 2026–2030 年累計損失上看 1,310 億美元。'),
+   ('工業雙重夾擊', '高溫壓低產線效率、推高冷卻與電力成本，同時乾旱又卡住河運——供應鏈與產能兩頭同時受壓。'),
+  ],
+  takeaway=('勞權提醒', 'ASR A3.5：室溫逾 26 度雇主應處置、逾 30 度須採有效措施、逾 35 度不得作為工作場所。'),
+  file='W32_圖卡3_高溫經濟衝擊.png'),
  dict(
   theme='#2563EB', badges=[('政治', True), ('選舉', False)], illu='ballotbox',
   title='九月三場邦選舉倒數一個月',
@@ -821,7 +878,7 @@ CARDS = [
    ('柏林四黨混戰', '柏林 9/20 改選：左翼黨 21%、CDU 19%、AfD 18%、綠黨 17%；Wegner 因停電說法不實退選，改由 Evers 領軍。'),
   ],
   takeaway=('政治觀察', '三場選舉將檢驗聯盟黨（CDU/CSU）對 AfD 的「防火牆」，結果也牽動 Merz 政府秋季的施政能量。'),
-  file='W32_圖卡3_九月三場邦選舉.png'),
+  file='W32_圖卡4_九月三場邦選舉.png'),
  dict(
   theme='#7C3AED', badges=[('假訊息', True), ('數位', False)], illu='fakevideo',
   title='假「Merz 辭職」影片流竄',
@@ -834,7 +891,20 @@ CARDS = [
    ('不是單一事件', '商報指出，網路上幾乎每天出現總理的假政策倡議，目的在削弱他與所屬政黨的公信力。'),
   ],
   takeaway=('查證提醒', '看到「某媒體獨家」影片，先上該媒體官網搜尋原文；找不到就別轉傳，這正是 EU AI 標示義務要處理的問題。'),
-  file='W32_圖卡4_假Merz辭職影片.png'),
+  file='W32_圖卡5_假Merz辭職影片.png'),
+ dict(
+  theme='#7C3AED', badges=[('數位', True), ('法規', False)], illu='ailabel',
+  title='AI 內容標示義務正式上路',
+  subtitle='EU AI 法第 50 條 8/2 生效，聯邦網路局主管',
+  stats=[('1,500 萬歐元', '罰則上限或年營收 3%'),
+         ('第 50 條', 'EU AI 法透明義務')],
+  bullets=[
+   ('誰被管到', '不只 AI 公司——網站掛聊天機器人、行銷用 AI 生圖、發布 AI 生成影音的企業與個人創作者，都在適用範圍內。'),
+   ('四類義務', '聊天機器人須表明身分；AI 生成內容須加「機器可讀」標記；情緒辨識須告知；深偽與涉公共利益的 AI 文章須揭露。'),
+   ('例外與執法', '明顯的藝術、諷刺或虛構作品可改用不破壞觀賞的方式揭露；德國由聯邦網路局（BNetzA）監理，KI-MIG 法 7/29 生效。'),
+  ],
+  takeaway=('合規提醒', '經營部落格、電商或社群的讀者：盤點聊天機器人與 AI 生成素材、補上標示；純內部使用不受本條規範。'),
+  file='W32_圖卡6_AI內容標示義務.png'),
  dict(
   theme='#2E8B57', badges=[('經濟', True), ('數據', False)], illu='factory',
   title='六月工業訂單月增 3.1%',
@@ -847,7 +917,7 @@ CARDS = [
    ('內外冷熱不均', '國內訂單月增 7.8%、國外僅增 0.2%——歐元區訂單大減 14.0%，全靠歐元區以外的 +10.2% 撐住。'),
   ],
   takeaway=('數據解讀', '訂單回升的底氣仍薄：拿掉大單即轉負、歐元區需求明顯轉弱，要說工業已重回擴張言之過早。'),
-  file='W32_圖卡5_六月工業訂單.png'),
+  file='W32_圖卡7_六月工業訂單.png'),
 ]
 
 if __name__ == '__main__':

@@ -1,6 +1,6 @@
 ================================================================
 德國週報 W32（8/3–8/9）— 社群貼文（FB 條列版 ＋ IG 精簡版）
-圖卡：assets/images/2026/weekly/W32_圖卡1–5（5 張，兩平台共用）
+圖卡：assets/images/2026/weekly/W32_圖卡1–7（7 張，兩平台共用）
 建議排程：週日 2026-08-09 22:30（FB）／22:35（IG）
 　　　　　（草稿排程，實際時間由版主確認；IG 需 PR 合併、GitHub Pages 部署後才能排）
 ================================================================
@@ -8,9 +8,9 @@
 
 ────────────────  FB 版（條列版）  ────────────────
 
-🇩🇪【德國週報 W32｜8/3–8/9】萊比錫機場尋獲掛炸藥無人機；萊茵河水位破紀錄新低；九月三場邦選舉倒數；假「Merz 辭職」影片流竄；六月工業訂單月增 3.1%
+🇩🇪【德國週報 W32｜8/3–8/9】萊比錫機場尋獲掛炸藥無人機；熱浪曬乾萊茵河；高溫一天燒掉 4.31 億歐元；九月三場邦選舉倒數；假「Merz 辭職」影片流竄；AI 標示義務上路；六月工業訂單月增 3.1%
 
-本週德國被三種壓力同時夾擊：安全（機場出現掛爆裂物的無人機）、自然條件（萊茵河跌到有紀錄以來最低）、政治（九月三場邦選舉剩一個月）。再加上一支偽造《商報》報導的假影片，與一份表面亮眼、拆開卻另有故事的工業訂單數據。五張圖卡一次看懂。
+本週德國被三種壓力同時夾擊：安全（機場出現掛爆裂物的無人機）、氣候（熱浪曬乾萊茵河，還一天燒掉 4.31 億歐元產值）、政治（九月三場邦選舉剩一個月）。再加上一支偽造《商報》報導的假影片、正式上路的 AI 標示義務，與一份表面亮眼、拆開卻另有故事的工業訂單數據。七張圖卡一次看懂。
 
 🚁 一、萊比錫／哈勒機場尋獲掛爆裂物無人機【聯邦檢察總長接手】
 8/5 凌晨的事件，偵辦層級迅速拉到最高。
@@ -21,8 +21,11 @@
 ▪️ 內政部長 Dobrindt 定性為【「混合攻擊情境」】，不排除外國勢力意圖在德國製造重大不安
 ▪️ 與你有關：機場空域事件短期恐再現，出發前先查班機動態；目擊可疑無人機請撥【110】，切勿自行接近或觸碰
 
-🚢 二、萊茵河水位跌破歷史新低【考布僅 19 公分】
-高溫與少雨把歐洲最重要的內陸水道逼到極限。
+🚢 二、熱浪曬乾萊茵河：水位跌破歷史新低
+先講因果——河水不是自己消失的。
+▪️ 德國氣象局（DWD）七月總結：全國均溫【19.7 度】、比 1961–1990 基準高 2.8 度，連續第五個月日照高於平均（約 272 小時）
+▪️ 關鍵在雨：七月降水僅約每平方公尺【40 公升】，只比基準期（78 公升）的一半多一點；薩爾蘭（Saarland）以約 350 小時日照創當地新高
+▪️ 乾旱已擴及幾乎全德、深入地下【1.8 公尺】整個土壤剖面——就算現在下雨也得先「還債」給土壤，河川補水嚴重滯後
 ▪️ 萊茵蘭-普法茲（Rheinland-Pfalz）羅蕾萊附近的考布（Kaub）測站水位僅剩【19 公分】，兩週前還在 50 公分以上；預報週六可能再降到 17 公分
 ▪️ 科隆（Köln）8/1 也以【67 公分】刷新站史新低，比 2018 年紀錄再低 2 公分
 ▪️ 貨船常只能裝到滿載的【五分之一至三分之一】；當地工商會（IHK）指水位低於 40 公分「有意義的內河航運幾乎不可能」
@@ -31,7 +34,17 @@
 ▪️ 德國經濟研究所（IW）估：萊茵河若長時間受限，恐讓全年經濟成長【減少最多 0.4 個百分點】——幾乎吃掉整個預期的復甦幅度
 ▪️ 與你有關：燃油、建材與部分民生用品運費看漲，加油、囤暖氣油或裝修採購宜提前；郊遊請留意各邦森林火災警戒
 
-🗳️ 三、九月三場邦選舉倒數一個月【AfD 東部大幅領先】
+🌡️ 三、高溫的經濟帳：一個高溫日【4.31 億歐元】
+熱浪的代價不只寫在河床上，也寫在生產力上。
+▪️ 聯邦勞動部（BMAS）委託 Prognos 研究：一個 30 度以上高溫日讓德國經濟少掉約【4.31 億歐元】，其中【97%】來自生產力損失、而非財產損害
+▪️ 斜率很陡：氣溫每超過 30 度再升 1 度，生產力就下降約【3%】
+▪️ 健康成本另計：因熱相關疾病與高溫工安事故，每個高溫日估增約【7.65 萬個病假日】
+▪️ Allianz Trade 估 2026–2030 年累計損失可達約【1,310 億美元】，未來四年 GDP 折損上看【3%】
+▪️ 工業兩頭夾擊：一頭是產線降溫成本與效率下滑，另一頭正是乾旱卡住河運——本週萊茵河與工業訂單兩則新聞，其實是同一個氣候問題的兩個切面
+▪️ 勞權重點：德國【沒有法定「高溫假」】，但雇主有明確作為義務。依 ASR A3.5——室溫逾 26 度雇主「應」處置、逾 30 度「必須」採取有效措施（遮陽、調整工時、供水、放寬服裝）、逾 35 度該空間不得作為工作場所
+▪️ 若工作環境長時間逾 30 度而雇主毫無作為，可向主管或員工代表會（Betriebsrat）反映，必要時向邦勞動保護機關（Gewerbeaufsicht）申訴
+
+🗳️ 四、九月三場邦選舉倒數一個月【AfD 東部大幅領先】
 ▪️ 薩克森-安哈特（Sachsen-Anhalt）9/6 投票：INSA 民調【AfD 41%、CDU 24%】、左翼黨 13%、SPD 7%、綠黨 5%、BSW 4%，領先逾 15 個百分點
 ▪️ 該邦執政 15 年的 Haseloff 已交棒，CDU 由今年 1 月底接任邦總理的 Sven Schulze 領軍應戰
 ▪️ 梅克倫堡-前波美拉尼亞（Mecklenburg-Vorpommern／MV）9/20：AfD 36%、SPD（現任邦總理 Schwesig）29%、左翼黨 12%、CDU 僅 9%；但【SPD＋左翼黨＋綠黨仍可能極微弱過半】，AfD 即使第一大黨未必能組閣
@@ -39,7 +52,7 @@
 ▪️ 柏林 CDU 換將：市長 Kai Wegner 因今年 1 月大停電期間「曾多次與 Merz 通話」的說法遭總理府否認而退選，改由財政參議員 Stefan Evers 領軍——但民調顯示【換將未替 CDU 帶來反彈】
 ▪️ 觀察重點：三場選舉是對聯盟黨（CDU/CSU）與 AfD「防火牆」（Brandmauer）最直接的壓力測試
 
-🎬 四、假「Merz 8/10 辭職」影片流竄【《商報》出面打假】
+🎬 五、假「Merz 8/10 辭職」影片流竄【《商報》出面打假】
 一支標題為「內部 CDU 文件：Merz 8 月 10 日辭職」的影片本週在德語網路圈流傳。
 ▪️ 影片宣稱依據《商報》（Handelsblatt）掌握的 CDU 黨內通信，總理計劃 8/10 宣布辭職——【這是偽造的】
 ▪️ 《商報》以「本報聲明」公開澄清：手上沒有這份通信、從未做過相關報導，影片中嵌入的所謂商報網頁【是假的】
@@ -49,7 +62,17 @@
 ▪️ 呼應 8/2 剛生效的 EU AI 法透明義務（AI 生成影音圖文須標示，違者最高罰 1,500 萬歐元或全球年營收 3%）——但法規到實際嚇阻仍有落差
 📖 延伸閱讀｜Ebay Kleinanzeigen 網路釣魚詐騙拆解：https://taiwanese-in-germany.com/posts/ebay-phishing.html
 
-🏭 五、六月工業訂單月增【3.1%】：表面亮眼，拆開仍脆弱
+🏷️ 六、AI 內容標示義務正式上路【8/2 生效】
+EU AI 法第 50 條全面適用——影響範圍比多數人以為的大得多。
+▪️ 不是「只管 AI 公司」：網站掛聊天機器人、行銷用 AI 生圖、發布 AI 生成影音的企業與個人創作者都可能適用
+▪️ 四類義務：①聊天機器人須讓使用者知道在跟 AI 對話 ②AI 生成內容須帶【機器可讀標記】③情緒辨識須告知當事人 ④深偽與【涉公共利益】的 AI 文章須揭露來源
+▪️ 注意範圍：文字的揭露義務綁定在「公共利益議題」，一般商品文案通常不在此列，但時事、政策、選舉等內容會被涵蓋
+▪️ 例外比想像中窄：明顯的藝術、諷刺或虛構作品可用「不損害觀賞體驗的適當方式」揭露——這是【換一種揭露方式，不是免於揭露】
+▪️ 德國執法架構才剛就位：德國錯過歐盟 2025 年 8 月指定機關的期限，《AI 法施行法》遲至【7/29】才生效，新設 KI-MIG 法指定【聯邦網路局（BNetzA）】為中央市場監理機關，並設免費企業服務台
+▪️ 罰則：最高【1,500 萬歐元】或全球年營收 3%（取其高），中小企業有減輕規定
+▪️ 與你有關：在德經營部落格、電商、自媒體或接案的讀者，這個月做一次盤點——客服機器人是否標明為 AI？AI 生成的圖片影片是否加註？【純內部使用不受本條規範】，義務綁定的是對外提供或發布
+
+🏭 七、六月工業訂單月增【3.1%】：表面亮眼，拆開仍脆弱
 Destatis 8/6 公布，數字遠優於預期，但但書寫在同一份新聞稿裡。
 ▪️ 經季節與工作日調整，六月製造業實質訂單較五月增【3.1%】；市場原本只預期 0.5%～0.7%，連續第二個月超乎預期
 ▪️ 關鍵但書：【扣除大額訂單後反而月減 0.5%】——成長幾乎全由少數幾筆一次性大單撐起
@@ -66,7 +89,11 @@ https://taiwanese-in-germany.com/posts/weekly-digest.html
 ▪️ ZDFheute｜LKA 證實無人機裝有爆裂裝置 https://www.zdfheute.de/panorama/leipzig-flughafen-drohne-zwischenfall-100.html
 ▪️ Tagesspiegel｜員工以腳踢落無人機 https://www.tagesspiegel.de/gesellschaft/panorama/suche-nach-zweitem-objekt-an-flughafen-leipzighalle-lauft-weiter-mitarbeiter-holte-sprengstoff-drohne-mit-fusstritt-aus-der-luft-15914691.html
 ▪️ t-online｜聯邦檢察總長接手、Dobrindt 稱混合攻擊情境 https://www.t-online.de/nachrichten/deutschland/innenpolitik/id_101376382/leipzig-busfahrer-soll-drohne-mit-fusstritt-gestoppt-haben.html
+▪️ DWD｜2026 年七月德國天氣總結 https://www.dwd.de/DE/presse/pressemitteilungen/DE/2026/20260730_deutschlandwetter_juli_news.html
 ▪️ NR-Kurier｜考布水位僅 19 公分 https://www.nr-kurier.de/artikel/174108-rhein-verliert-wasser---pegel-kaub-meldet-nur-19-zentimeter
+▪️ Prognos｜氣候變遷下的勞動保護（BMAS 委託） https://www.prognos.com/de/projekt/arbeitsschutz-klimawandel-hitze-wirtschaft
+▪️ Allianz Trade｜極端高溫的數十億損失 https://www.allianz-trade.de/presse/pressemitteilungen/extreme-hitze-kostet-deutschland-milliarden-und-laehmt-wirtschaftswachstum.html
+▪️ BAuA｜ASR A3.5 室內溫度規則 https://www.baua.de/DE/Angebote/Regelwerk/ASR/pdf/ASR-A3-5.pdf?__blob=publicationFile
 ▪️ WirtschaftsWoche｜IW 經濟學家：情勢嚴峻 https://www.wiwo.de/unternehmen/folgen-fuer-die-wirtschaft-niedrigwasser-am-rhein-iw-oekonom-haelt-lage-fuer-dramatisch/100245401.html
 ▪️ K-Zeitung｜低水位成化工業風險 https://www.k-zeitung.de/niedrigwasser-deutschland-chemie-kunststoffindustrie
 ▪️ Euronews｜三場邦選舉總覽 https://de.euronews.com/my-europe/2026/08/06/landtagswahlen-2026-umfragen-afd-themen-ueberblick
@@ -74,28 +101,35 @@ https://taiwanese-in-germany.com/posts/weekly-digest.html
 ▪️ Tagesspiegel｜柏林民調 https://www.tagesspiegel.de/berlin/umfrage-zur-berlin-wahl-linke-springt-auf-platz-eins--wegner-ruckzug-nutzt-cdu-nicht-15913067.html
 ▪️ Handelsblatt｜本報聲明：偽造的 Merz 影片流傳中 https://www.handelsblatt.com/politik/deutschland/handelsblatt-in-eigener-sache-gefaelschtes-merz-video-im-umlauf/100245619.html
 ▪️ dpa 事實查核｜Merz 深偽影片遭用於詐騙 https://dpa-factchecking.com/germany/250627-99-289731/
+▪️ LTO｜AI 法背後的德國施行法生效 https://www.lto.de/recht/hintergruende/h/kuenstliche-intelligenz-ai-act-ki-mg-aufsicht-bussgeld
+▪️ Börse Express｜聯邦網路局接掌 AI 市場監理 https://www.boerse-express.com/news/articles/ki-aufsicht-bundesnetzagentur-uebernimmt-marktueberwachung-ab-2-august-934352
+▪️ TÜV Rheinland｜AI 法第 50 條透明義務解析 https://consulting.tuv.com/aktuelles/ki-im-fokus/transparenzpflichten-eu-ai-act-art-50
 ▪️ Destatis 新聞稿｜六月製造業訂單 +3.1% https://www.presseportal.de/pm/32102/6328142
 
-#德國生活 #在德台灣人 #德國知識小種子 #德國週報 #萊比錫 #萊茵河 #德國選舉 #AfD #假訊息 #Deepfake #德國經濟 #Handelsblatt
+#德國生活 #在德台灣人 #德國知識小種子 #德國週報 #萊比錫 #萊茵河 #德國選舉 #AfD #假訊息 #Deepfake #德國經濟 #熱浪 #AIAct #Handelsblatt
 
 
-────────────────  IG 版（精簡版・632 字元 / 上限 2,200）  ────────────────
+────────────────  IG 版（精簡版・981 字元 / 上限 2,200）  ────────────────
 
 🇩🇪 德國週報 W32｜8/3–8/9
 
-安全、乾旱、選舉三重壓力同時上身，五張圖卡一次看懂👇
+安全、熱浪、選舉三重壓力同時上身，七張圖卡一次看懂👇
 
 🚁 機場無人機｜8/5 凌晨萊比錫／哈勒機場南跑道尋獲掛爆裂裝置的無人機，員工一腳踢落、航班一度全面中斷；落點鄰近一架烏克蘭 AN-124 運輸機，已由聯邦檢察總長接手，Dobrindt 稱「混合攻擊情境」
 
-🚢 萊茵河破紀錄｜考布（Kaub）水位僅 19 公分、科隆 67 公分雙創新低；貨船只能裝五分之一至三分之一，BASF 四成產品靠這條水路，IW 估全年成長恐減最多 0.4 個百分點
+🚢 熱浪曬乾萊茵河｜DWD：七月均溫 19.7 度、高於基準 2.8 度，雨量僅 40 公升／平方公尺不到基準六成，乾旱深達 1.8 公尺土層。考布水位僅 19 公分、科隆 67 公分雙創新低，貨船只能裝五分之一，IW 估全年成長恐減最多 0.4 個百分點
+
+🌡️ 高溫的經濟帳｜Prognos 研究：一個 30 度以上高溫日讓德國少掉 4.31 億歐元，97% 來自生產力下滑；每超過 30 度再升 1 度生產力掉 3%，每個高溫日增約 7.65 萬個病假日。德國沒有法定高溫假，但 ASR A3.5 規定室溫逾 26 度雇主應處置、逾 30 度須採有效措施、逾 35 度不得當工作場所
 
 🗳️ 九月三場邦選舉｜薩克森-安哈特 9/6：AfD 41%、CDU 24%；梅克倫堡-前波美拉尼亞與柏林 9/20 投票，MV 為 AfD 36%、SPD 29%，柏林則是左翼黨 21%、CDU 19%、AfD 18%、綠黨 17% 的四黨混戰
 
 🎬 假影片流竄｜「Merz 8/10 辭職」影片宣稱引自《商報》內部文件，商報公開打假：沒有這份通信、從未報導，嵌入的網頁是偽造的。看到「獨家」先上官網搜原文，找不到就別轉傳
+
+🏷️ AI 標示義務上路｜EU AI 法第 50 條 8/2 全面適用：聊天機器人須表明身分、AI 生成內容須帶機器可讀標記、深偽與涉公共利益的 AI 文章須揭露；最高罰 1,500 萬歐元或年營收 3%。德國由聯邦網路局監理，施行法 7/29 才生效。有網站、電商或自媒體的讀者記得盤點
 
 🏭 工業訂單｜六月月增 3.1%、遠優於預期，但扣掉大額訂單反而月減 0.5%；歐元區訂單大減 14%，要說工業重回擴張言之過早
 
 滑動看圖卡了解更多 👇
 完整深度解析與資料來源 → FB 粉專或網站（連結在 bio）
 
-#德國生活 #在德台灣人 #德國知識小種子 #德國週報 #萊茵河 #德國選舉 #假訊息 #德國經濟 #萊比錫 #德國時事
+#德國生活 #在德台灣人 #德國知識小種子 #德國週報 #萊茵河 #熱浪 #德國選舉 #假訊息 #AIAct #德國經濟
