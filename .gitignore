@@ -20,6 +20,8 @@
 taiwaneseingermany.*.xml
 taiwaneseingermany.*.json
 import_comments.py
+# ⚠️ 一次性遷移腳本，內含 MongoDB 與 Waline 管理員的明文憑證，絕不可進版控
+init_waline_db.py
 
 # Development notes
 Web Design CLAUDE.md
