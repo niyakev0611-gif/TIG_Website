@@ -1552,13 +1552,17 @@ const POSTS = [
     slug: 'referral-codes-2026',
     title: '2026 歐洲德國 分享碼 回饋金 推薦碼 優惠碼 大匯集 Referral Link Promo Code',
     date: '2026-03-29',
-    updated: '2026-07-19',
+    updated: '2026-08-14',
     categories: ["來德生活必辦事項", "德國生活"],
     tags: ["promo code", "referral link", "免費", "分享碼", "回饋金", "德國", "德國交通", "折扣碼", "推薦", "推薦碼", "旅遊", "自助", "銀行"],
     excerpt: '在這邊分享一下，我在德國經常使用的一些軟體跟服務，很多都可以有朋友介紹的回饋金，讓你在第一次使用註冊時也可以有些優惠哦！ 交通類 兩輪類(電動滑板車/電動腳踏車) Tier (e-scooter) 新註冊的可以有5次5折的優惠 LIME (…',
     emoji: '🎁',
     content: `<!-- wp:paragraph -->
 <p class="">在這邊分享一下，我在德國經常使用的一些軟體跟服務，很多都可以有朋友介紹的回饋金，讓你在第一次使用註冊時也可以有些優惠哦！</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p class=""><strong>📌 2026/08/14 全面查核更新。</strong>推薦活動的金額與條件業者隨時在改，<strong>本頁只寫「有／沒有」與最近一次查到的條件，實際回饋一律以你點進去看到的當期活動頁為準</strong>——寫死的數字反而會害你白高興一場。這次查核已處理的異動：Tier 併入 Dott（原連結失效）、Payback 的超市夥伴從 REWE 換成 Edeka、fraenk 資費升級、Tesla 推薦條件改制、McFIT 與 PayPal 推薦連結換新、Lime 漲到 5 €、Airbnb 房東獎金漲到 61 €、FreeNow 與 Peaks 的短連結不再帶推薦參數（改用手動輸入代碼）、Taxfix 推薦連結移除（報稅軟體只留 SteuerBot）。<strong>本頁所有連結均於 2026/08/14 逐一實際開啟測試過。</strong></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:heading -->
@@ -1570,11 +1574,11 @@ const POSTS = [
 <!-- /wp:heading -->
 
 <!-- wp:heading {"level":4} -->
-<h4 class="wp-block-heading">Tier (e-scooter)</h4>
+<h4 class="wp-block-heading">Tier → 已改名 Dott (e-scooter)</h4>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p class=""><a href="https://tier.go.link/aph3zbb/?adj_t=aph3zbb&amp;adj_label=eecdae9c-f164-4f57-ab3a-9996da62bd7c" target="_blank" rel="noreferrer noopener">新註冊的可以有5次5折的優惠</a></p>
+<p class=""><strong>（2026/08 更新）Tier 這個品牌已經不存在了。</strong>Dott 與 Tier 兩家共享電動滑板車業者合併後，德國的 Tier 車輛全面換成 Dott 的藍白塗裝、<strong>Tier App 也已關閉</strong>，用戶被移轉到 Dott 平台——原本掛在這裡的 Tier 推薦連結已失效（實測 404），我先移除。<strong>要騎的話直接下載 <a href="https://ridedott.com/" target="_blank" rel="noreferrer noopener">Dott</a> App</strong>；Dott 目前是否有推薦碼制度、給多少優惠，等我實際試過再補上來，不先寫沒查證過的數字。</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:heading {"level":4} -->
@@ -1582,7 +1586,7 @@ const POSTS = [
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p class=""><a href="https://lime.bike/referral_signin/RJY537B" target="_blank" rel="noreferrer noopener">新註冊的有3歐現金折扣</a></p>
+<p class=""><a href="https://lime.bike/referral_signin/RJY537B" target="_blank" rel="noreferrer noopener">用我的推薦連結註冊可拿 <strong>5 € 騎乘金</strong></a>（2026/08 實測：頁面顯示「Sign up to claim your free €5 credit」，比先前的 3 € 更好；金額仍可能隨城市與檔期調整，以你點進去看到的為準）</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
@@ -1594,19 +1598,29 @@ const POSTS = [
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p class=""><a href="https://ts.la/kevin522006" target="_blank" rel="noreferrer noopener">https://ts.la/kevin522006</a> 使用此連結下訂特斯拉可以折扣250歐！！！</p>
+<p class=""><a href="https://ts.la/kevin522006" target="_blank" rel="noreferrer noopener">https://ts.la/kevin522006</a></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p class="">Get <strong>1,000 Supercharging 公里</strong> or <strong>€250</strong> Per Referral</p>
+<p class=""><strong>（2026/08 更新）Tesla 把推薦方案的給法改了</strong>，現在買方拿到什麼要看你買哪一種車：</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:paragraph -->
-<p class="">hat Ihnen <strong>250 € Rabatt</strong> auf einen neuen Tesla verschafft</p>
-<!-- /wp:paragraph -->
+<!-- wp:list -->
+<ul class="wp-block-list"><!-- wp:list-item -->
+<li class=""><strong>新車客製訂單（Custom Order）</strong>：買方獲得 <strong>1,000 公里免費超級充電</strong>（不再是現金折扣）</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li class=""><strong>庫存車（Inventory）</strong>：買方直接折 <strong>500 €</strong></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li class="">推薦人（也就是我）拿到的 <strong>250 €</strong> 是 Tesla 商城點數／充電里程，跟買方的優惠是兩回事——舊版本文寫成「下訂折 250 歐」是不對的，這次一併更正</li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list -->
 
 <!-- wp:paragraph -->
-<p class=""><em>(Stand 29.03.2026)</em></p>
+<p class=""><em>金額與方案 Tesla 隨時在調整，下訂前請以官網 <a href="https://www.tesla.com/support/refer-and-earn" target="_blank" rel="noreferrer noopener">Empfehlen und Verdienen</a> 頁面的當期條款為準。（查核日：2026/08/14）</em></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:heading {"level":3} -->
@@ -1618,7 +1632,7 @@ const POSTS = [
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p class="">基本上就是歐洲的Uber，很多大城市都可以使用，這是我目前在德國使用最多次的叫車軟體。現在不只叫計程車，連騎兩輪的電動滑板車e-scooter也可以使用哦！使用<a href="https://m.free-now.com/JGMc/7m2aym3b">我的</a><a href="https://m.free-now.com/JGMc/7m2aym3b" target="_blank" rel="noreferrer noopener">連結</a>可以有7歐的折扣券哦，如果已經下載好軟體，輸入我的折扣碼：<strong>5xaw20mud</strong></p>
+<p class="">基本上就是歐洲的Uber，很多大城市都可以使用，這是我目前在德國使用最多次的叫車軟體。現在不只叫計程車，連騎兩輪的電動滑板車e-scooter也可以使用哦！<strong>（2026/08 實測提醒：請直接用折扣碼，不要只點連結。）</strong>原本的 <code>m.free-now.com</code> 短連結現在會 301 轉到 FreeNow 的一般 App 下載頁、<strong>不再帶推薦參數</strong>，所以點連結不一定算得到推薦。正確做法是：下載 <a href="https://www.free-now.com/de/" target="_blank" rel="noreferrer noopener">FreeNow</a> App、註冊後在優惠代碼欄位手動輸入我的折扣碼 <strong>5xaw20mud</strong>（我當初拿到 7 € 折扣券，金額依當期活動浮動）。</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:image {"id":847,"width":"512px","height":"497px","sizeSlug":"large","linkDestination":"none"} -->
@@ -1639,7 +1653,7 @@ const POSTS = [
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p class="">你有興趣在德國投資ETF嗎？使用我的代碼<strong>TINGJ32OC</strong>，可以獲得10歐元的起始金額！</p>
+<p class="">你有興趣在德國投資 ETF 嗎？使用我的代碼 <strong>TINGJ32OC</strong> 可以拿到起始投資金（我當初是 10 €，<strong>依當期活動浮動</strong>，以 App 內顯示為準）。Peaks 是「零錢進位投資」（Round-up）型的 App，2026 年仍在德國營運。<strong>（2026/08 實測提醒）</strong>舊的 onelink 短連結現在只會轉到 Peaks 的一般 onboarding 頁、<strong>不會自動帶入推薦碼</strong>，所以請在註冊流程中<strong>手動輸入代碼 TINGJ32OC</strong>。</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
@@ -1655,12 +1669,12 @@ const POSTS = [
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p class="">詳情優缺點比較請見<a href="post.html?slug=german-bank-recommendation">此篇</a><a href="post.html?slug=german-bank-recommendation" target="_blank" rel="noreferrer noopener">介紹</a></p>
+<p class="">詳情優缺點比較請見<a href="post.html?slug=german-bank-recommendation">此篇介紹</a>。<strong>⚠️ 2026/08 提醒：Commerzbank 已經沒有免費帳戶了</strong>——自 2025 年 5 月起一般帳戶一律收<strong>每月 4.90 €</strong> 管理費（除非在行資產達 50,000 €）。新戶 <strong>50 € 開戶獎金</strong>仍在跑（官方活動至 2026/9/30，需連續 3 個月每月至少 5 筆、每筆 ≥ 25 € 的交易），但獎金是一次性、月費是每個月的，開戶前請自己算一下划不划算。</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:buttons -->
 <div class="wp-block-buttons"><!-- wp:button -->
-<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="https://www.commerzbank.de/girokonto-antrag?path=/pk/de/Abschluss/GD41_Girokonto_DD_MCD_50Start_KwK&amp;x-werbecode=5AK786" target="_blank" rel="noreferrer noopener">Commerzbank 點我開戶</a></div>
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="https://www.commerzbank.de/girokonto-antrag?path=/pk/de/Abschluss/GD51_Girokonto_DD_MCD_TGK_50Start_KwK&amp;x-werbecode=5UHRCE" target="_blank" rel="noreferrer noopener">Commerzbank 點我開戶（推薦碼 5UHRCE）</a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons -->
 
@@ -1677,7 +1691,7 @@ const POSTS = [
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p class="">詳情優缺點比較請見<a href="post.html?slug=german-bank-recommendation" target="_blank" rel="noreferrer noopener">此篇介紹</a>。Revolut 有「邀請好友」（Kunden werben Kunden）活動：用下方邀請連結註冊並完成指定任務即可獲得獎勵（金額與條件依當期活動為準，2026/07 檔期進行中）。卡片以 Visa 為主——正逢 <a href="post.html?slug=visa-bonus-cashback-2026" target="_blank" rel="noreferrer noopener">Visa 官方海外刷卡 2% 回饋活動</a>（至 9/1），開卡順便把回饋一起領。</p>
+<p class="">詳情優缺點比較請見<a href="post.html?slug=german-bank-recommendation" target="_blank" rel="noreferrer noopener">此篇介紹</a>。Revolut 有「邀請好友」（Kunden werben Kunden）活動：用下方邀請連結註冊並完成指定任務即可獲得獎勵，<strong>金額與條件依當期檔期浮動</strong>（Revolut 的邀請連結本身也會隨檔期更換，若點進去顯示過期，請留言告訴我，我換上新的）。卡片以 Visa 為主——<a href="post.html?slug=visa-bonus-cashback-2026" target="_blank" rel="noreferrer noopener">Visa 官方海外刷卡 2% 回饋活動</a>的夏季檔到 <strong>9/1</strong> 為止、秋季線上購物檔 <strong>9/15–11/15</strong> 接力，開卡順便把回饋一起領。</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:buttons -->
@@ -1695,7 +1709,7 @@ const POSTS = [
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p class="">詳情優缺點比較請見<a href="post.html?slug=german-bank-recommendation">此篇</a><a href="post.html?slug=german-bank-recommendation" target="_blank" rel="noreferrer noopener">介紹</a></p>
+<p class="">詳情優缺點比較請見<a href="post.html?slug=german-bank-recommendation">此篇介紹</a>。<strong>N26 的推薦獎金是浮動的</strong>——金額由 N26 依當期活動調整（過去給過現金，2026 年初也辦過股票獎金檔期），實際能拿多少請以你點進去看到的頁面、或 App「Explore／邀請好友」區塊顯示為準。<strong>2026/08 實測：邀請連結有效</strong>，流程是「註冊免費帳戶 →首次使用實體或虛擬卡消費 → N26 發放獎金」，入帳最長可能要 60 天。</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:buttons -->
@@ -1713,7 +1727,7 @@ const POSTS = [
 <!-- /wp:heading -->
 
 <!-- wp:heading {"level":4} -->
-<h4 class="wp-block-heading"><a href="https://py.pl/1DfxrU" target="_blank" rel="noreferrer noopener">Paypal</a></h4>
+<h4 class="wp-block-heading"><a href="https://www.paypal.com/de/webapps/mpp/account-selection" target="_blank" rel="noreferrer noopener">Paypal</a></h4>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
@@ -1721,12 +1735,30 @@ const POSTS = [
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p class="">使用以下連結開戶，可享受 PayPal 不定期新用戶優惠（如有活動將顯示於開戶頁面）。</p>
+<p class=""><strong>🎁（2026/08 更新：邀請連結已換新）</strong>用我的邀請連結註冊 PayPal，<strong>雙方各可獲得 10 € Cashback（1,000 點 PayPal Rewards 點數）</strong>。領取條件（依 PayPal 官方活動條款）：</p>
 <!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul class="wp-block-list"><!-- wp:list-item -->
+<li class="">你必須是<strong>新用戶</strong>（尚未有 PayPal 帳戶）、年滿 18 歲、居住在德國</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li class="">完成註冊後<strong>綁定銀行帳戶或金融卡／信用卡</strong>，並驗證手機號碼</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li class="">註冊後 <strong>30 天內</strong>用新帳戶完成一筆 <strong>5 € 以上</strong>的付款或轉帳（須為歐元交易；書籍、菸品、報章雜誌、處方藥等類別不列入）</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li class="">活動期間至 <strong>2026 年 9 月 30 日</strong>止；回饋以點數形式發放</li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list -->
 
 <!-- wp:buttons -->
 <div class="wp-block-buttons"><!-- wp:button -->
-<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="https://py.pl/2GmF6J" target="_blank" rel="noreferrer noopener">Paypal 點我開戶</a></div>
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="https://py.pl/2JRGoM" target="_blank" rel="noreferrer noopener">Paypal 點我開戶（雙方各 10 € Cashback）</a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons -->
 
@@ -1757,7 +1789,7 @@ const POSTS = [
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p class="">德國相當有名的Payback信用卡，使用<a href="https://americanexpress.com/de-de/referral/kEVINL9I5D?XL=MIANS" target="_blank" rel="noreferrer noopener">我的連結</a>可以再開卡後有1000點的回饋哦！Rewe跟DM都可以用，開通Payback Pay跟善用他們的App常常可以拿到很多點數。點數100點相當於1歐。小缺點是有時候店家不收Amex的信用卡。</p>
+<p class="">德國相當有名的 Payback 信用卡，使用<a href="https://americanexpress.com/de-de/referral/kEVINL9I5D?XL=MIANS" target="_blank" rel="noreferrer noopener">我的連結</a>開卡可以拿到 Payback 點數回饋（我當初拿的是 1,000 點，<strong>點數依當期活動浮動</strong>，以申辦頁顯示為準）。點數 <strong>100 點 = 1 €</strong>。<strong>⚠️ 2026/08 更新：能收點的超市換人了。</strong>REWE 與 Penny 已於 2024 年底退出 Payback、改用自家的回饋方案，<strong>2025 年 1 月起改由 Edeka、Netto Marken-Discount 與 Marktkauf 加入</strong>——所以現在是「Edeka／Netto 跟 DM 都可以用」，不再是 REWE。另外提醒：2023 年 12 月起 Amex 的 Payback 集點率已調降為<strong>每消費 3 € 給 1 點</strong>。小缺點是有時候店家不收 Amex 的信用卡。</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:heading {"level":3} -->
@@ -1769,15 +1801,7 @@ const POSTS = [
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p class="">詳情比較請見<a href="post.html?slug=tax-software-2024" target="_blank" rel="noreferrer noopener">此篇文章</a></p>
-<!-- /wp:paragraph -->
-
-<!-- wp:heading {"level":4} -->
-<h4 class="wp-block-heading"> <a href="https://taxfix.page.link/CFWo" target="_blank" rel="noreferrer noopener">Taxfix</a></h4>
-<!-- /wp:heading -->
-
-<!-- wp:paragraph -->
-<p class="">詳情比較請見<a href="post.html?slug=tax-software-2024">此篇</a><a href="post.html?slug=tax-software-2024" target="_blank" rel="noreferrer noopener">文章</a></p>
+<p class="">報稅 App 這一項我只推 SteuerBot：<strong>退稅金額低於 50 € 免費、超過才收 39.99 €</strong>，可以先把資料填完看試算金額再決定要不要送出。<strong>🎁 用我的<a href="https://app.steuerbot.com/i/kevinl-25" target="_blank" rel="noreferrer noopener">邀請連結</a>註冊可以折 10 €</strong>（註冊或登入後邀請自動啟用）。詳情比較請見<a href="post.html?slug=tax-software-2024" target="_blank" rel="noreferrer noopener">此篇文章</a>。</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:heading {"level":3} -->
@@ -1793,7 +1817,7 @@ const POSTS = [
 <!-- /wp:image -->
 
 <!-- wp:paragraph -->
-<p class="">我自己車子的保險就是使用這間DA Versicherung，一開始會用存粹是因為他們家比較便宜(參考上圖，宣稱最高比同業便宜56%)，後來發覺服務也蠻不錯的，有任何問題打客服都有答案。他們現在不只限於汽車的Kfz保險而已，還有牙醫保、寵物險、律師顯、第三方責任險等等，使用<a href="https://aklam.io/gbtu39" target="_blank" rel="noreferrer noopener">我的連結</a>可以獲得<strong>20%回饋</strong>*哦！或結帳時輸入我的折扣碼<strong>MWFUKRDN</strong>  *活動只到12/18截止</p>
+<p class="">我自己車子的保險就是使用這間DA Versicherung，一開始會用存粹是因為他們家比較便宜(參考上圖，宣稱最高比同業便宜56%)，後來發覺服務也蠻不錯的，有任何問題打客服都有答案。他們現在不只限於汽車的Kfz保險而已，還有牙醫保、寵物險、律師顯、第三方責任險等等，使用<a href="https://aklam.io/gbtu39" target="_blank" rel="noreferrer noopener">我的連結</a>、或在投保時的「Aktionscode」欄位輸入推薦碼 <strong>MWFUKRDN</strong>，可享 <strong>保費 20% 的永久折扣</strong>（dauerhafter Rabatt）。<strong>2026/08 實測</strong>：連結有效，DA Direkt 官方頁面明載此優惠<strong>適用於汽車與機車保險（Auto- oder Motorradversicherung）</strong>的投保；折扣比例與適用險種仍以你點進去看到的當期頁面為準。（原本寫在這裡的「活動只到 12/18」是 2023 年的舊檔期，已移除。）</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:heading {"level":4} -->
@@ -1801,7 +1825,7 @@ const POSTS = [
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p class="">我目前保的第三方責任險就是這間，使用<a href="https://www.hellogetsafe.com/de-de/referral?n=Kevin&amp;r=L9JV-DCBT&amp;s=1" target="_blank" rel="noreferrer noopener">我的連結</a>可以獲得15歐回饋金哦！不太會德文的可以選擇英文介面，App/網站的英文都做得非常好！跟艱澀難懂的保險相關德文詞彙說再見～</p>
+<p class="">我目前保的第三方責任險就是這間，使用<a href="https://www.hellogetsafe.com/de-de/referral?n=Kevin&amp;r=L9JV-DCBT&amp;s=1" target="_blank" rel="noreferrer noopener">我的連結</a>可以獲得 <strong>15 € Getsafe 帳戶額度</strong>（2026/08 實測仍是 15 €：點進去頁面直接顯示「Du hast 15 € Getsafe Guthaben erhalten」，投保第一張保單後自動折抵保費）！不太會德文的可以選擇英文介面，App/網站的英文都做得非常好！跟艱澀難懂的保險相關德文詞彙說再見～</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:image {"id":849,"sizeSlug":"large","linkDestination":"none"} -->
@@ -1815,11 +1839,11 @@ const POSTS = [
 <!-- /wp:heading -->
 
 <!-- wp:heading {"level":3} -->
-<h3 class="wp-block-heading">手機網路Fraenk ：<strong><a href="https://fraenk.page.link/?link=https%3A%2F%2Ffraenk.de%2Fdeeplink%2Fmgm%3FfriendCode%3DKEVL52&amp;apn=de.congstar.fraenk&amp;amv=1040000&amp;imv=1.4&amp;isi=1493980266&amp;ibi=de.congstar.fraenk&amp;ius=fraenk&amp;ofl=https%3A%2F%2Ffraenk.de">分享碼</a><a href="https://fraenk.page.link/?link=https%3A%2F%2Ffraenk.de%2Fdeeplink%2Fmgm%3FfriendCode%3DKEVL52&amp;apn=de.congstar.fraenk&amp;amv=1040000&amp;imv=1.4&amp;isi=1493980266&amp;ibi=de.congstar.fraenk&amp;ius=fraenk&amp;ofl=https%3A%2F%2Ffraenk.de" target="_blank" rel="noreferrer noopener">KEVL52</a></strong></h3>
+<h3 class="wp-block-heading">手機網路 fraenk：分享碼 <strong>KEVL52</strong>（<a href="https://fraenk.de/" target="_blank" rel="noreferrer noopener">fraenk.de</a>）</h3>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p class="">優點蠻多的，可以選擇使用eSIM，直接在家輕鬆註冊開卡到連上網路只要三十分鐘，吃的網路Telekom的，但價格很便宜，一個月<strong>10歐12GB</strong>（活動期間可以讓你永久增加到16GB，輸入我的<strong><a href="https://fraenk.page.link/?link=https%3A%2F%2Ffraenk.de%2Fdeeplink%2Fmgm%3FfriendCode%3DKEVL52&amp;apn=de.congstar.fraenk&amp;amv=1040000&amp;imv=1.4&amp;isi=1493980266&amp;ibi=de.congstar.fraenk&amp;ius=fraenk&amp;ofl=https%3A%2F%2Ffraenk.de" target="_blank" rel="noreferrer noopener">分享</a><a href="https://fraenk.page.link/?link=https%3A%2F%2Ffraenk.de%2Fdeeplink%2Fmgm%3FfriendCode%3DKEVL52&amp;apn=de.congstar.fraenk&amp;amv=1040000&amp;imv=1.4&amp;isi=1493980266&amp;ibi=de.congstar.fraenk&amp;ius=fraenk&amp;ofl=https%3A%2F%2Ffraenk.de">碼KEVL52</a> </strong>即可<strong>+4 GB</strong> ），Fraenk的缺點是，<strong>只適合在歐洲或德國有居留證的人申請，來歐洲短期旅遊的無法使用，</strong>原本朋友來德國旅遊，想要幫她申請，發現證件認證無法勾選台灣發行的護照，因此作罷。來短期旅遊的建議去DM或是超市直接購買O2的預付卡。</p>
+<p class="">優點蠻多的，可以選擇使用 eSIM，直接在家輕鬆註冊開卡到連上網路只要三十分鐘，吃的是 Telekom 的網路，但價格很便宜：<strong>（2026/08 更新）現在是一個月 10 € / 25 GB</strong>——fraenk 於 2026 年 6 月 1 日把各方案的流量調升 5 GB、價格不變，另有 15 € / 50 GB 的方案（原文寫的「10 歐 12 GB」是舊資費）。註冊時輸入我的分享碼 <strong>KEVL52</strong> 可以<strong>永久 +4 GB</strong>（每次推薦都加，最多累積 20 次）。<strong>⚠️ 原本掛在這裡的 fraenk 分享短連結已經失效</strong>——那是 Google Firebase Dynamic Links（page.link）的短網址，該服務已於 2025 年 8 月 25 日全面關閉，所有 page.link 連結都不再運作，所以改成直接到官網 <a href="https://fraenk.de/" target="_blank" rel="noreferrer noopener">fraenk.de</a> 下載 App、註冊時手動輸入分享碼 KEVL52。fraenk 的缺點是，<strong>只適合在歐洲或德國有居留證的人申請，來歐洲短期旅遊的無法使用，</strong>原本朋友來德國旅遊，想要幫她申請，發現證件認證無法勾選台灣發行的護照，因此作罷。來短期旅遊的建議去 DM 或是超市直接購買 O2 的預付卡。</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:heading {"level":3} -->
@@ -1837,8 +1861,18 @@ const POSTS = [
 <!-- /wp:heading -->
 
 <!-- wp:heading {"level":3} -->
-<h3 class="wp-block-heading">健身房Mcfit : <a href="https://secure.mcfit.com/checkout?referralCode=4KKKGO">德國連鎖</a><a href="https://secure.mcfit.com/checkout?referralCode=4KKKGO" target="_blank" rel="noreferrer noopener">的</a><a href="https://secure.mcfit.com/checkout?referralCode=4KKKGO">健身房Mcfit</a></h3>
-<!-- /wp:heading --></div>
+<h3 class="wp-block-heading">健身房 McFIT：推薦碼 <strong>D81D514</strong></h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="">德國連鎖健身房 McFIT，全歐洲 230 家以上分店通用。<strong>（2026/08 更新：推薦碼已換新）</strong>用<a href="https://www.mcfit.com/checkout?referralCode=D81D514" target="_blank" rel="noreferrer noopener">我的推薦連結</a>簽約（或在入會流程裡輸入推薦碼 <strong>D81D514</strong>），可以獲得一個 <strong>McFIT 運動提袋</strong>（Sporttasche，送完為止）。舊的 <code>secure.mcfit.com</code> 連結已失效，這裡放的是可用的新連結。</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:buttons -->
+<div class="wp-block-buttons"><!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="https://www.mcfit.com/checkout?referralCode=D81D514" target="_blank" rel="noreferrer noopener">McFIT 點我入會（推薦碼 D81D514）</a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons --></div>
 <!-- /wp:group -->
 
 <!-- wp:group {"layout":{"type":"constrained"}} -->
@@ -1851,7 +1885,7 @@ const POSTS = [
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p class="">Airbnb就不需要我介紹了吧～大家應該都知道了，不過這次是給想當Airbnb Host的優惠，還沒註冊的新朋友想要把自己的空房租出去的獲得23歐元的機會，使用<a href="https://www.airbnb.de/r/klin92" target="_blank" rel="noreferrer noopener">我的連結</a>註冊當房東。</p>
+<p class="">Airbnb 就不需要我介紹了吧～大家應該都知道了，不過這是給想當 Airbnb 房東（Host）的優惠：還沒註冊、想把自己空房租出去的朋友，可以用<a href="https://www.airbnb.de/r/klin92" target="_blank" rel="noreferrer noopener">我的連結</a>註冊當房東。<strong>（2026/08 實測：獎金漲了，現在是 61 €）</strong>——頁面明載「刊登房源後 <strong>180 天內</strong>完成<strong>第一筆符合資格的訂房</strong>，即可獲得 <strong>61 € 獎金</strong>」，且該檔期金額<strong>於 2026 年 10 月 13 日到期</strong>，要當房東的話趁早。舊版本文寫的 23 € 是前一個檔期，已更正；金額仍以你點進去看到的頁面為準。</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->`
   },
@@ -2478,7 +2512,7 @@ const POSTS = [
     slug: 'german-bank-recommendation',
     title: '2026 推薦的免付費德國銀行',
     date: '2026-07-10',
-    updated: '2026-07-19',
+    updated: '2026-08-14',
     categories: ["來德生活必辦事項", "德國生活"],
     tags: ["免費", "德國", "折扣碼", "推薦", "銀行"],
     excerpt: '在德國生活的這些年來，用過不少間銀行，Deutsche Bank德意志銀行、Sparkasse、Comdirekt、Revolut、N26還有Commerzbank德國商業銀行。這篇會來介紹四間我推薦的銀行（含最新加入的 BBVA 高 Cashback 首選），以及分析其優缺點。至於為什麼不介…',
@@ -2502,13 +2536,13 @@ const POSTS = [
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li class=""><a href="#commerzbank">🏛️ Commerzbank — 實體銀行（已收取管理費）</a></li>
+<li class=""><a href="#commerzbank">🏛️ Commerzbank — 實體銀行（帳戶管理費每月 4.90 €）</a></li>
 <!-- /wp:list-item --></ul>
 <!-- /wp:list --></div>
 <!-- /wp:group -->
 
 <!-- wp:paragraph {"fontSize":"small"} -->
-<p class="has-small-font-size" style="color:#888;">最後更新：2026 年 7 月 10 日</p>
+<p class="has-small-font-size" style="color:#888;">最後更新：2026 年 8 月 14 日</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
@@ -2866,7 +2900,7 @@ const POSTS = [
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p class=""><em>點以下連結開戶的話你也有30歐的獎勵金哦！也是給我繼續維持此網站的小小贊助！</em></p>
+<p class=""><em>點以下連結開戶可以拿 N26 的推薦獎勵金（<strong>金額浮動、依當期活動而定</strong>——我當初的檔期是 30 €，2026 年也出現過股票形式的獎金，實際以你點進去看到的頁面為準；通常要開戶後完成一筆指定金額的交易，入帳最長可能 60 天）！也是給我繼續維持此網站的小小贊助！</em></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:buttons -->
@@ -2880,7 +2914,7 @@ const POSTS = [
 <!-- /wp:paragraph -->
 
 <!-- wp:heading {"level":1,"backgroundColor":"cyan-bluish-gray"} -->
-<h1 id="commerzbank" class="wp-block-heading has-cyan-bluish-gray-background-color has-background"><s>Commerzbank 德國商業銀行</s> （不再免費，自 2025 年 5 月起正式收取帳戶管理費 €4.90/月）</h1>
+<h1 id="commerzbank" class="wp-block-heading has-cyan-bluish-gray-background-color has-background">Commerzbank 德國商業銀行（付費帳戶：每月 4.90 €）</h1>
 <!-- /wp:heading -->
 
 <!-- wp:image {"id":529,"width":"450px","height":"225px","sizeSlug":"full","linkDestination":"none"} -->
@@ -2889,6 +2923,14 @@ const POSTS = [
 
 <!-- wp:paragraph -->
 <p class="">作為一家德國商業銀行，Commerzbank是該國最大的銀行之一，擁有許多實體分行，類似於我們的台灣銀行或第一銀行的感覺。</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"textColor":"vivid-red"} -->
+<p class="has-vivid-red-color has-text-color"><strong>⚠️ 2026/08 更新：Commerzbank 已經沒有免費方案了。</strong>自 <strong>2025 年 5 月 1 日</strong>起，一般 Girokonto 一律收取<strong>每月 4.90 €</strong> 的帳戶管理費（一年 58.80 €）——過去「每月薪資／金流入帳滿 700 € 就免月費」的條件<strong>已經取消</strong>。目前唯一免月費的情況是<strong>同一客戶編號下在 Commerzbank 的資產達 50,000 € 以上</strong>；未成年帳戶（18 歲以下）與學生帳戶另有專案。因此本文把 Commerzbank 定位為<strong>「付費的實體銀行」</strong>：要的是分行臨櫃、支票兌現、房貸這些網路銀行給不了的服務，這筆錢就有意義；只想要一個免費的日常帳戶，請看上面的 <a href="#bbva">BBVA</a>、<a href="#revolut">Revolut</a> 或 <a href="#n26">N26</a>。</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p class="post-sources">📚 來源：<a href="https://www.commerzbank.de/privatkunden/girokonten/girokonto-eroeffnen/" target="_blank" rel="noopener noreferrer">Commerzbank 官網｜Girokonto 開戶頁</a> · <a href="https://www.handelsblatt.com/finanzen/banken-versicherungen/banken/commerzbank-bank-schafft-kostenloses-girokonto-ab-01/100107618.html" target="_blank" rel="noopener noreferrer">Handelsblatt｜Commerzbank 取消免費帳戶</a></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:image {"sizeSlug":"large"} -->
@@ -2909,7 +2951,7 @@ const POSTS = [
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li class="">有<strong>免帳戶管理費的方案</strong>：條件目前為每月帳戶流入金額達<strong>700歐</strong>以上，基本上有在工作的把它當成薪轉銀行就沒問題啦！</li>
+<li class=""><strong>臨櫃與電話服務</strong>：帳戶出問題可以走進分行找真人處理，這是月費換來的東西——網路銀行只能在 App 裡等客服回覆。</li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
@@ -2931,7 +2973,7 @@ const POSTS = [
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li class=""><s><strong>基本帳戶管理費</strong>：若是沒有穩定金流流入700歐以上，就要繳帳戶管理費，這部分跟上面兩家新創銀行比，Revolut跟N26對沒穩定收入的學生來說，還是相對吃香，尤其交換學生來半年一年而已的。</s></li>
+<li class=""><strong>帳戶管理費每月 4.90 €（最大缺點）</strong>：不論薪資是否入帳都要繳，一年 58.80 €；除非在行資產達 50,000 €，否則沒有免除的辦法。跟上面三家免費帳戶相比這是實打實的固定成本——用不到分行的人（尤其交換學生、只待半年一年的短期停留者）沒必要付這筆錢。</li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
@@ -2948,7 +2990,7 @@ const POSTS = [
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p class="">整體來說，Commerzbank我用下來還是相對滿意的，補足了以上兩間網路銀行沒有的服務，我個人也把它當作我的薪轉銀行。像是<strong>支票兌現服務還有房屋貸款</strong>，我都是用Commerzbank。老實說，他們房貸利率其實蠻不錯的，下次再詳細寫一篇房屋貸款及德國買房的攻略！</p>
+<p class="">整體來說，Commerzbank 補足了上面幾間網路銀行沒有的服務，我個人也把它當作我的薪轉銀行。像是<strong>支票兌現服務還有房屋貸款</strong>，我都是用 Commerzbank。老實說，他們房貸利率其實蠻不錯的，下次再詳細寫一篇房屋貸款及德國買房的攻略！<strong>但要講清楚：這是本篇四間裡唯一要付月費的一間（每月 4.90 €）。</strong>值不值得，取決於你有沒有真的用到分行、支票或房貸——如果只是要一個收薪水、繳房租的日常帳戶，上面三間免費的就夠了。</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
@@ -2988,7 +3030,7 @@ const POSTS = [
 <!-- /wp:list -->
 
 <!-- wp:paragraph -->
-<p class="">這些條件符合的新客戶才能獲得<strong>50歐元</strong>的開戶獎金。</p>
+<p class="">這些條件符合的新客戶才能獲得<strong>50歐元</strong>的開戶獎金。（2026/08 查核：50 € 新戶獎金仍在跑，官方活動期間至 <strong>2026/9/30</strong>，推薦人另可拿 100 €；金額與條件依開戶頁當期公告為準。<strong>提醒：獎金是一次性的，月費 4.90 € 是每個月都要繳的</strong>——第一年等於 58.80 € 扣掉 50 €。）</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:image {"id":878,"sizeSlug":"large","linkDestination":"none"} -->
@@ -3133,12 +3175,13 @@ const POSTS = [
     slug: 'tax-software-2024',
     title: '2026 德國報稅軟體推薦',
     date: '2026-03-29',
+    updated: '2026-08-14',
     categories: ["來德生活必辦事項"],
     tags: ["報稅", "德國", "折扣碼", "推薦", "軟體", "退稅"],
-    excerpt: '2025 課稅年度申報截止日：2026 年 7 月 31 日。介紹 Taxfix、SteuerBot 等主流德國報稅軟體的優缺點、價格比較與推薦。',
+    excerpt: '2025 課稅年度的申報截止日 2026 年 7 月 31 日已經過了——逾期會怎樣、自願申報還來得及嗎，本文一次說清楚。並比較 SteuerBot（39.99 €、退稅低於 50 € 免費）與 Taxfix（49.99 €、夫妻合併 69.99 €）等主流德國報稅軟體的優缺點與 2026 年最新價格。',
     emoji: '💻',
     content: `<!-- wp:paragraph {"textColor":"vivid-red","fontSize":"medium"} -->
-<p class="has-vivid-red-color has-text-color has-medium-font-size">各年度德國稅務申報截止日（2022–2025 課稅年度）</p>
+<p class="has-vivid-red-color has-text-color has-medium-font-size">各年度德國稅務申報截止日（2022–2026 課稅年度）</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:image {"id":925,"width":"359px","height":"undefinedpx","aspectRatio":"1","scale":"cover","sizeSlug":"large","linkDestination":"none"} -->
@@ -3164,8 +3207,16 @@ const POSTS = [
 
 <!-- wp:list-item -->
 <li class=""><strong>2025 課稅年度</strong>的稅務申報截止日為 <strong>2026 年 7 月 31 日</strong>。委託稅務師（Steuerberater）或薪資稅協助協會（Lohnsteuerhilfeverein）申報者，截止日延至 <strong>2027 年 3 月 1 日</strong>。</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li class=""><strong>2026 課稅年度</strong>（明年才要申報的這一年）自行申報截止日為 <strong>2027 年 7 月 31 日</strong>；委託稅務師者延至 <strong>2028 年 2 月底</strong>。</li>
 <!-- /wp:list-item --></ul>
 <!-- /wp:list -->
+
+<!-- wp:paragraph {"textColor":"vivid-red"} -->
+<p class="has-vivid-red-color has-text-color"><strong>⏰ 2026/08 提醒：2025 課稅年度的自行申報期限（2026 年 7 月 31 日）已經過了。</strong>接下來分兩種情況：<strong>①有申報義務的人</strong>——已算逾期，逾期金（Verspätungszuschlag）每逾一個月加收應納稅額的 0.25%、每月至少 <strong>25 €</strong>，越拖越貴，請盡快補報；若確有正當理由，可向稅務局申請事後延期（Fristverlängerung），但要主動聯繫。<strong>②沒有申報義務、純粹想退稅的人</strong>——完全不受 7/31 限制，可回溯 <strong>4 年</strong>，2025 年度最晚在 <strong>2029 年 12 月 31 日</strong>前提交都還能領退稅，現在報一點都不遲。分不清自己屬於哪一種，看<a href="post.html?slug=german-tax-guide-2026">2026 德國報稅攻略</a>的「誰有報稅義務」一節。</p>
+<!-- /wp:paragraph -->
 
 <!-- wp:heading {"level":3} -->
 <h3 class="wp-block-heading">稅務局從何時開始加徵遲繳罰款？</h3>
@@ -3198,7 +3249,7 @@ const POSTS = [
 <!-- /wp:paragraph -->
 
 <!-- wp:heading {"className":"o-typing-delay-2s o-typing-slower"} -->
-<h2 class="o-typing-delay-2s o-typing-slower wp-block-heading">推薦首選 <a href="https://taxfix.page.link/h3Gs" target="_blank" rel="noreferrer noopener">Taxfix <sub><sup>(我是超連結)</sup></sub></a></h2>
+<h2 class="o-typing-delay-2s o-typing-slower wp-block-heading">Taxfix <sub><sup>（介面最好，但今年價格最貴）</sup></sub></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
@@ -3206,7 +3257,7 @@ const POSTS = [
 <!-- /wp:paragraph -->
 
 <!-- wp:image {"id":465,"width":"400px","height":"158px","sizeSlug":"full","linkDestination":"custom"} -->
-<figure class="wp-block-image size-full is-resized"><a href="https://taxfix.page.link/h3Gs"><img src="assets/images/2023/03/image-1.png" alt="" class="wp-image-465" style="width:400px;height:158px"/></a></figure>
+<figure class="wp-block-image size-full is-resized"><img src="assets/images/2023/03/image-1.png" alt="Taxfix 報稅 App 介面" class="wp-image-465" style="width:400px;height:158px"/></figure>
 <!-- /wp:image -->
 
 <!-- wp:heading {"level":3} -->
@@ -3240,15 +3291,15 @@ const POSTS = [
 <!-- /wp:paragraph -->
 
 <!-- wp:heading {"level":3} -->
-<h3 class="wp-block-heading">價格：正常價39.99歐 <a href="https://taxfix.page.link/FQE1" target="_blank" rel="noreferrer noopener">  (使用我的連結可以半價哦！！！）</a></h3>
+<h3 class="wp-block-heading">價格（2026/08 更新）：單人 49.99 €、夫妻合併申報 69.99 €</h3>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p class="">跟他們稅務人員諮詢的話就是20%你的退稅金額要給他們，至少60歐💸</p>
+<p class="">若要請他們的稅務人員代辦（Expertenservice），費用另計、起價約 <strong>99.99 €</strong>，實際金額依案件複雜度而定，以官網當期報價為準 💸</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:image {"id":449,"sizeSlug":"large","linkDestination":"custom"} -->
-<figure class="wp-block-image size-large"><a href="https://taxfix.page.link/ZCdK"><img src="assets/images/2023/03/Screen-Shot-2023-03-26-at-11.21.40-PM-1024x639.png" alt="" class="wp-image-449"/></a></figure>
+<figure class="wp-block-image size-large"><img src="assets/images/2023/03/Screen-Shot-2023-03-26-at-11.21.40-PM-1024x639.png" alt="Taxfix 報稅流程截圖" class="wp-image-449"/></figure>
 <!-- /wp:image -->
 
 <!-- wp:paragraph -->
@@ -3256,7 +3307,7 @@ const POSTS = [
 <!-- /wp:paragraph -->
 
 <!-- wp:heading {"className":"o-typing-delay-1s o-typing-slower"} -->
-<h2 class="o-typing-delay-1s o-typing-slower wp-block-heading">推薦No.2 <a href="https://app.steuerbot.com/i/kevinl-25" target="_blank" rel="noreferrer noopener">SteuerBot<sub><o-anim-typing><sup>(我是超連結)</sup></o-anim-typing></sub></a><sub><sup><o-anim-typing> </o-anim-typing></sup></sub></h2>
+<h2 class="o-typing-delay-1s o-typing-slower wp-block-heading">推薦首選 <a href="https://app.steuerbot.com/i/kevinl-25" target="_blank" rel="noreferrer noopener">SteuerBot<sub><o-anim-typing><sup>(我是超連結，折 10 €)</sup></o-anim-typing></sub></a><sub><sup><o-anim-typing> </o-anim-typing></sup></sub></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
@@ -3272,19 +3323,29 @@ const POSTS = [
 <!-- /wp:paragraph -->
 
 <!-- wp:heading {"level":3} -->
-<h3 class="wp-block-heading"><strong>價格：若退稅金額在100歐以下免費</strong></h3>
+<h3 class="wp-block-heading"><strong>價格（2026/08 更新）：退稅金額低於 50 € 免費</strong></h3>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p class="">超過100歐的話<strong>價格29.95歐  </strong> <a href="https://taxfix.page.link/88An" target="_blank" rel="noreferrer noopener">(使用我的連結可以折十歐哦！！！</a><a href="https://app.steuerbot.com/i/kevinl-25">）</a></p>
+<p class="">退稅超過 50 € 才收費，<strong>提交時一次收 39.99 €</strong>——可以先把資料全部填完、看到試算金額再決定要不要送出，不滿意就不用付錢。跟 Taxfix 的 49.99 € 相比便宜 10 €，夫妻合併申報的價差更大，這也是我自己現在固定用 SteuerBot 的原因。<strong>🎁 用我的邀請連結註冊還可以再折 10 €</strong>（註冊或登入後邀請自動啟用）：</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:buttons -->
+<div class="wp-block-buttons"><!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="https://app.steuerbot.com/i/kevinl-25" target="_blank" rel="noreferrer noopener">SteuerBot 邀請連結（折 10 €）</a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons -->
+
+<!-- wp:paragraph -->
+<p class=""></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:image {"id":450,"sizeSlug":"large","linkDestination":"custom"} -->
-<figure class="wp-block-image size-large"><a href="https://app.steuerbot.com/i/kevinl-25"><img src="assets/images/2023/03/Screen-Shot-2023-03-26-at-11.22.13-PM-1024x557.png" alt="" class="wp-image-450"/></a></figure>
+<figure class="wp-block-image size-large"><a href="https://app.steuerbot.com/i/kevinl-25" target="_blank" rel="noreferrer noopener"><img src="assets/images/2023/03/Screen-Shot-2023-03-26-at-11.22.13-PM-1024x557.png" alt="SteuerBot 報稅 App 介面" class="wp-image-450"/></a></figure>
 <!-- /wp:image -->
 
 <!-- wp:paragraph -->
-<p class="">整體來說兩個軟體我都使用過，比較有趣的是我基本上兩個都會輸入一次，然後比較一下兩邊試算出來的金額，然後取高者使用😂 沒錯！你沒看錯，我發現就算兩邊提供一樣的數字跟資料，出來的結果也不一樣，不過我也沒有特別去追究小差異在哪。<strong>介面上我比較喜歡Taxfix，但價格也比較貴，Steuerbot的價格比較親民</strong>，之前疫情期間都不定時有免費的折扣碼優惠飽受疫情折磨的納稅人😂</p>
+<p class="">整體來說兩個軟體我都使用過，比較有趣的是我基本上兩個都會輸入一次，然後比較一下兩邊試算出來的金額，然後取高者使用😂 沒錯！你沒看錯，我發現就算兩邊提供一樣的數字跟資料，出來的結果也不一樣，不過我也沒有特別去追究小差異在哪。<strong>介面上我比較喜歡 Taxfix，但價格也比較貴（49.99 € vs 39.99 €），Steuerbot 的價格比較親民</strong>，而且退稅低於 50 € 還不用錢，所以我自己後來都固定用 Steuerbot。</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
