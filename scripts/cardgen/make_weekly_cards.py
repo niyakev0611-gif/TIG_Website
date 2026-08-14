@@ -722,6 +722,107 @@ def illu_ailabel(d, R, S, cx, cy, theme):
     d.rounded_rectangle(R(cx+8, cy+14, cx+70, cy+48), radius=9*S, fill=GOLD, outline=OUTLINE, width=ow)
     draw_mixed_vcentered(d, R(cx+39, cy+31), 'AI', 26*S, OUTLINE, bold=True, anchor='center')
 
+def illu_piggybank(d, R, S, cx, cy, theme):
+    """小豬撲滿＋投入的金幣（兒童儲蓄／長期資本累積）"""
+    ow = 5*S
+    _dots(d, R, cx, cy, ((-68, -40, 3, GOLD), (54, -50, 3, tint(theme, 0.5)),
+                         (72, 4, 3, theme)))
+    d.ellipse(R(cx-46, cy+46, cx+46, cy+58), fill=tint(theme, 0.18))
+    # 金幣（先畫，落在投幣口上方）
+    d.ellipse(R(cx-16, cy-40, cx+10, cy-14), fill=GOLD, outline=OUTLINE, width=ow)
+    draw_mixed_vcentered(d, R(cx-3, cy-27), '€', 20*S, OUTLINE, bold=True, anchor='center')
+    # 豬腳（先畫，藏在豬身之後）
+    for lx in (-34, 8):
+        d.rounded_rectangle(R(cx+lx, cy+30, cx+lx+16, cy+50), radius=4*S,
+                            fill=tint(theme, 0.30), outline=OUTLINE, width=ow)
+    # 耳朵
+    d.polygon(R(cx-18, cy-6, cx-2, cy-6, cx-10, cy-26), fill=theme, outline=OUTLINE, width=3*S)
+    # 豬身＋鼻子
+    d.ellipse(R(cx-46, cy-8, cx+38, cy+44), fill=tint(theme, 0.30), outline=OUTLINE, width=ow)
+    d.ellipse(R(cx+28, cy+6, cx+52, cy+28), fill=theme, outline=OUTLINE, width=ow)
+    for nx in (36, 44):
+        d.ellipse(R(cx+nx, cy+14, cx+nx+4, cy+20), fill=OUTLINE)
+    d.ellipse(R(cx+12, cy+2, cx+20, cy+10), fill=OUTLINE)
+    # 投幣口（焦點細節）
+    d.rounded_rectangle(R(cx-20, cy-4, cx+6, cy+2), radius=3*S, fill=OUTLINE)
+
+def illu_shieldeye(d, R, S, cx, cy, theme):
+    """盾牌＋監看之眼（情報機關／國安權限）"""
+    ow = 5*S
+    _dots(d, R, cx, cy, ((-66, -44, 3, GOLD), (52, -50, 3, tint(theme, 0.5)),
+                         (70, 6, 3, theme)))
+    d.ellipse(R(cx-38, cy+48, cx+38, cy+58), fill=tint(theme, 0.18))
+    # 盾牌本體
+    d.polygon(R(cx-40, cy-42, cx, cy-52, cx+40, cy-42, cx+40, cy+6, cx, cy+50, cx-40, cy+6),
+              fill=tint(theme, 0.28), outline=OUTLINE, width=ow)
+    # 金色橫飾帶
+    d.rounded_rectangle(R(cx-26, cy-36, cx+26, cy-28), radius=4*S, fill=GOLD, outline=OUTLINE, width=2*S)
+    # 監看之眼（焦點細節）
+    d.ellipse(R(cx-26, cy-16, cx+26, cy+16), fill='white', outline=OUTLINE, width=ow)
+    d.ellipse(R(cx-11, cy-11, cx+11, cy+11), fill=theme, outline=OUTLINE, width=3*S)
+    d.ellipse(R(cx-4, cy-4, cx+4, cy+4), fill=OUTLINE)
+    d.ellipse(R(cx-8, cy-9, cx-3, cy-4), fill='white')
+
+def illu_agelimit(d, R, S, cx, cy, theme):
+    """啤酒杯＋年齡下限徽章（青少年保護／飲酒年齡）"""
+    ow = 5*S
+    _dots(d, R, cx, cy, ((-68, -38, 3, GOLD), (46, -50, 3, tint(theme, 0.5)),
+                         (72, -8, 3, theme)))
+    d.ellipse(R(cx-44, cy+46, cx+34, cy+58), fill=tint(theme, 0.18))
+    # 提把
+    d.rounded_rectangle(R(cx+2, cy-12, cx+26, cy+22), radius=12*S, outline=OUTLINE, width=ow)
+    # 杯身＋酒液
+    d.rounded_rectangle(R(cx-36, cy-28, cx+6, cy+42), radius=7*S, fill='white', outline=OUTLINE, width=ow)
+    d.rounded_rectangle(R(cx-29, cy-6, cx-1, cy+35), radius=4*S, fill=GOLD)
+    # 泡沫
+    d.rounded_rectangle(R(cx-34, cy-42, cx+4, cy-18), radius=11*S, fill='white', outline=OUTLINE, width=ow)
+    # 年齡徽章（焦點細節）
+    d.rounded_rectangle(R(cx+14, cy+14, cx+72, cy+48), radius=9*S, fill=theme, outline=OUTLINE, width=ow)
+    draw_mixed_vcentered(d, R(cx+43, cy+31), '16', 26*S, 'white', bold=True, anchor='center')
+
+def illu_heathealth(d, R, S, cx, cy, theme):
+    """生命徵象監測＋烈日（高溫致死／健康衝擊）"""
+    ow = 5*S
+    _dots(d, R, cx, cy, ((-70, -40, 3, GOLD), (-16, -50, 3, tint(theme, 0.5)),
+                         (72, 22, 3, theme)))
+    d.ellipse(R(cx-48, cy+48, cx+40, cy+58), fill=tint(theme, 0.18))
+    # 烈日（先畫，從螢幕右上探出）
+    sx, sy = cx+44, cy-36
+    for k in range(8):
+        a = math.radians(k*45)
+        d.line(R(sx+15*math.cos(a), sy+15*math.sin(a),
+                 sx+21*math.cos(a), sy+21*math.sin(a)), fill=GOLD_D, width=4*S)
+    d.ellipse(R(sx-14, sy-14, sx+14, sy+14), fill=GOLD, outline=OUTLINE, width=ow)
+    # 監測器：支架＋機身＋螢幕
+    d.rounded_rectangle(R(cx-13, cy+26, cx+1, cy+42), radius=3*S, fill=tint(theme, 0.30), outline=OUTLINE, width=3*S)
+    d.rounded_rectangle(R(cx-30, cy+38, cx+18, cy+50), radius=5*S, fill=tint(theme, 0.30), outline=OUTLINE, width=ow)
+    d.rounded_rectangle(R(cx-56, cy-32, cx+38, cy+30), radius=9*S, fill='white', outline=OUTLINE, width=ow)
+    d.rounded_rectangle(R(cx-47, cy-23, cx+29, cy+21), radius=4*S, fill=tint(theme, 0.22))
+    # 心電圖折線（焦點細節）
+    base = cy + 2
+    pts = [(-42, 0), (-30, 0), (-23, -17), (-15, 15), (-7, 0), (24, 0)]
+    d.line(R(*[v for (dx, dy) in pts for v in (cx+dx, base+dy)]), fill=theme, width=4*S, joint='curve')
+
+def illu_harvest(d, R, S, cx, cy, theme):
+    """麥穗＋乾裂土地（乾旱／收成減產）"""
+    ow = 5*S
+    _dots(d, R, cx, cy, ((-70, -34, 3, GOLD), (6, -50, 3, tint(theme, 0.5)),
+                         (70, -14, 3, theme)))
+    d.ellipse(R(cx-52, cy+48, cx+52, cy+58), fill=tint(theme, 0.18))
+    # 麥穗三株（中間較高）
+    for dx, top in ((-34, cy-12), (0, cy-34), (34, cy-12)):
+        d.line(R(cx+dx, cy+26, cx+dx, top+8), fill=theme, width=4*S)
+        for k in range(4):
+            gy = top + k*11
+            d.ellipse(R(cx+dx-13, gy, cx+dx-2, gy+10), fill=GOLD, outline=OUTLINE, width=2*S)
+            d.ellipse(R(cx+dx+2, gy, cx+dx+13, gy+10), fill=GOLD, outline=OUTLINE, width=2*S)
+        d.ellipse(R(cx+dx-5, top-10, cx+dx+5, top+2), fill=GOLD, outline=OUTLINE, width=2*S)
+    # 乾裂土地（焦點細節）
+    d.rounded_rectangle(R(cx-58, cy+26, cx+58, cy+48), radius=6*S,
+                        fill=tint(theme, 0.28), outline=OUTLINE, width=ow)
+    for gx, gy in ((-30, 30), (4, 34), (36, 30)):
+        d.line(R(cx+gx, cy+gy, cx+gx-5, cy+gy+13), fill=OUTLINE, width=3*S)
+
 ILLUS = dict(podium=illu_podium, flags=illu_flags, coins=illu_coins,
              idcard=illu_idcard, camera=illu_camera, trophy=illu_trophy,
              bankcard=illu_bankcard, checklist=illu_checklist,
@@ -729,7 +830,10 @@ ILLUS = dict(podium=illu_podium, flags=illu_flags, coins=illu_coins,
              reichstag=illu_reichstag, candle=illu_candle, briefcase=illu_briefcase,
              drone=illu_drone, lowwater=illu_lowwater, ballotbox=illu_ballotbox,
              fakevideo=illu_fakevideo, factory=illu_factory,
-             heatwave=illu_heatwave, ailabel=illu_ailabel)
+             heatwave=illu_heatwave, ailabel=illu_ailabel,
+             piggybank=illu_piggybank, shieldeye=illu_shieldeye,
+             agelimit=illu_agelimit, heathealth=illu_heathealth,
+             harvest=illu_harvest)
 
 # ── 版型 ────────────────────────────────────────────────────
 
@@ -827,101 +931,75 @@ def make_card(spec, path, week_label='W?', date_label=''):
 # ════════════════════════════════════════════════════════════
 # 每週卡片內容（範本：W29）——之後每週改這一段即可
 # ════════════════════════════════════════════════════════════
-WEEK = 'W32'
-DATE_RANGE = '2026/08/03–08/09'
+WEEK = 'W33'
+DATE_RANGE = '2026/08/10–08/16'
 
 CARDS = [
  dict(
-  theme='#C0392B', badges=[('治安', True), ('薩克森邦', False)], illu='drone',
-  title='機場尋獲掛炸藥無人機',
-  subtitle='萊比錫／哈勒機場 8/5 凌晨；聯邦檢察總長接手偵辦',
-  stats=[('8/5 凌晨', '南跑道安全區尋獲'),
-         ('Semtex', '藏在罐頭裡的軍用炸藥')],
+  theme='#2E8B57', badges=[('家庭', True), ('退休金', False)], illu='piggybank',
+  title='早鳥退休金：國家替孩子每月存 10 €',
+  subtitle='內閣 8/12 通過草案；6 歲存到 18 歲、預計 2027 年上路',
+  stats=[('每月 10 €', '國家存入孩子帳戶'),
+         ('6–18 歲', '補助年齡區間')],
   bullets=[
-   ('發現經過', '機場員工 8/5 凌晨在南跑道安全區發現一架掛載爆裂裝置的無人機並將其擊落，聯邦警察出動拆彈機器人卸除引信。'),
-   ('裝置細節', '炸藥是填滿 Semtex 的市售罐頭、底部鑽孔裝引信，另有投擲機構與兩張 SIM 卡；未爆的唯一原因是引信失效。'),
-   ('偵測全失靈', '無人機為高專業度自製、以行動網路操控，薩克森邦（Sachsen）警方指機場頻率掃描器無法與手機區分。'),
+   ('制度設計', '財政部長 Klingbeil（SPD）提案：孩子滿 6 歲到 18 歲，聯邦每月存 10 € 進其名下的資本市場退休帳戶。'),
+   ('何時能領', '收益在給付前免稅，本金原則上要到 65 歲才能動用；未自選帳戶者由德國聯邦銀行（Bundesbank）代管。'),
+   ('預算規模', '2027 年補助支出估 1.98 億歐元，2030 年隨受益孩子增加升至 4.11 億歐元。'),
   ],
-  takeaway=('安全提醒', '聯邦檢察總長認定 8/4 晚間意圖引爆，Dobrindt 稱「混合攻擊情境」；目擊可疑無人機請撥 110，勿自行接近。'),
-  file='W32_圖卡1_機場無人機炸彈.png'),
+  takeaway=('家長須知', '消費者保護團體警告恐成「兩級制退休金」，要求帳戶費用上限從 1% 降到 0.5%。'),
+  file='W33_圖卡1_早鳥退休金.png'),
  dict(
-  theme='#0D9488', badges=[('經濟', True), ('氣候', False)], illu='lowwater',
-  title='熱浪曬乾萊茵河：水位破紀錄',
-  subtitle='七月雨量不到基準六成；考布測站僅剩 19 公分',
-  stats=[('19 公分', '考布 8/7 水位新低'),
-         ('40 公升', '七月雨量（基準 78 公升）')],
+  theme='#2563EB', badges=[('政治', True), ('國安', False)], illu='shieldeye',
+  title='情報機關擴權法案闖關內閣',
+  subtitle='Dobrindt 提案逾 700 頁；聯邦情報局與憲法保衛局權限鬆綁',
+  stats=[('700 頁', '草案篇幅'),
+         ('8/12', '內閣通過日')],
   bullets=[
-   ('先看成因', '德國氣象局（DWD）：七月均溫 19.7 度、高於基準 2.8 度，雨量僅約 40 公升／平方公尺，乾旱深達 1.8 公尺土層。'),
-   ('河道見底', '萊茵蘭-普法茲邦（Rheinland-Pfalz）考布（Kaub）8/7 跌至 19 公分、科隆 60 公分；下萊茵河全線破紀錄。'),
-   ('產業扛衝擊', 'BASF 約四成產品仰賴這條水路、已加派淺水船；交通部長 Bilger 考慮暫解卡車假日禁行令以疏運。'),
+   ('從蒐集到行動', '草案首度允許情報機關主動出手——聯邦情報局（BND）可在對方進行中的網攻或假訊息行動中反制。'),
+   ('新增手段', '擴大線上搜索、生物特徵比對與 AI 分析；憲法保衛局例外時可進入住宅排除危險物品。'),
+   ('朝野交鋒', 'FDP 主席 Kubicki 稱「歷史性的破戒」；綠黨 von Notz 認為改革必要，但擴權「必須合乎基本法」。'),
   ],
-  takeaway=('影響評估', '德國經濟研究所（IW）估久旱恐吃掉全年成長最多 0.4 個百分點；燃油與建材運費看漲，加油宜提前。'),
-  file='W32_圖卡2_萊茵河水位新低.png'),
+  takeaway=('立法觀察', '草案仍須送聯邦議院（Bundestag）審議，進入住宅與線上搜索是否需法官保留是最大爭點。'),
+  file='W33_圖卡2_情報機關擴權.png'),
  dict(
-  theme='#D4740E', badges=[('經濟', True), ('勞動', False)], illu='heatwave',
-  title='高溫的經濟帳：一天 4.31 億歐元',
-  subtitle='每個 30 度以上的高溫日，德國付出的產值代價',
-  stats=[('4.31 億歐元', '每個高溫日經濟損失'),
-         ('-3%', '30 度以上每升 1 度生產力')],
+  theme='#D4740E', badges=[('社會', True), ('青少年保護', False)], illu='agelimit',
+  title='「陪同飲酒」走入歷史：一律 16 歲起',
+  subtitle='內閣 8/12 通過修法；14、15 歲不得再由家長陪同飲酒',
+  stats=[('16 歲', '啤酒與葡萄酒新下限'),
+         ('14–15 歲', '被取消的例外年齡')],
   bullets=[
-   ('損失怎麼算', '聯邦勞動部委託 Prognos 研究：一個 30 度以上高溫日讓德國經濟少掉 4.31 億歐元，其中 97% 來自生產力下滑。'),
-   ('健康也計價', '每個高溫日估增約 7.65 萬個病假日；Allianz Trade 估 2026–2030 年累計損失上看 1,310 億美元。'),
-   ('工業雙重夾擊', '高溫壓低產線效率、推高冷卻與電力成本，同時乾旱又卡住河運——供應鏈與產能兩頭同時受壓。'),
+   ('修了什麼', '原本 14、15 歲可在監護人陪同下喝啤酒、葡萄酒與氣泡酒，《青少年保護法》這項例外將刪除。'),
+   ('適用範圍', '該法只規範餐廳、酒吧、商店等公共場域的提供與飲用，家中私領域不在管轄範圍內。'),
+   ('理由與後盾', '家庭部長 Prien（CDU）指陪同飲酒無教育效果；各邦衛生部長會議 2025 年 6 月已全票要求禁止。'),
   ],
-  takeaway=('勞權提醒', 'ASR A3.5：室溫逾 26 度雇主應處置、逾 30 度須採有效措施、逾 35 度不得作為工作場所。'),
-  file='W32_圖卡3_高溫經濟衝擊.png'),
+  takeaway=('家長提醒', '草案仍待聯邦議院表決；通過後帶青少年上餐廳，14、15 歲即使家長同桌也不能點啤酒。'),
+  file='W33_圖卡3_青少年飲酒新規.png'),
  dict(
-  theme='#2563EB', badges=[('政治', True), ('選舉', False)], illu='ballotbox',
-  title='九月三場邦選舉倒數一個月',
-  subtitle='薩克森-安哈特邦 9/6 投票；柏林、梅克倫堡-佛波門邦 9/20',
-  stats=[('41%', 'AfD 薩克森-安哈特邦民調'),
-         ('3 場', '九月邦議會改選')],
+  theme='#C0392B', badges=[('健康', True), ('氣候', False)], illu='heathealth',
+  title='今夏高溫致死 12,500 人',
+  subtitle='羅伯特科赫研究所（RKI）估 4/6–8/2；1992 年統計以來最致命',
+  stats=[('12,500 人', '今夏高溫相關死亡'),
+         ('75 歲以上', '受衝擊最重族群')],
   bullets=[
-   ('東部領先明顯', '薩克森-安哈特邦（Sachsen-Anhalt）9/6 投票，INSA 民調 AfD 41%、CDU 24%、左翼黨 13%，領先逾 15 個百分點。'),
-   ('梅克倫堡-佛波門邦（Mecklenburg-Vorpommern）', '9/20 投票，AfD 36%、SPD 29%、左翼黨 12%、CDU 僅 9%；SPD、左翼黨與綠黨聯手仍可能勉強過半。'),
-   ('柏林四黨混戰', '柏林 9/20 改選：左翼黨 21%、CDU 19%、AfD 18%、綠黨 17%；Wegner 因停電說法不實退選，改由 Evers 領軍。'),
+   ('數字有多重', '今年到 8/2 約 1.25 萬人死於高溫，超過近十年任一整年（2018 年 9,400 人、2019 年 7,700 人）。'),
+   ('集中在六月', '逾 5,000 人死於六月下旬逼近 40 度的熱浪；聯邦統計局估同期超額死亡約 6,800 人。'),
+   ('醫界喊話', '逾 80 個衛生團體與聯邦醫師公會要求歐盟層級高溫防護計畫與緊急基金。'),
   ],
-  takeaway=('政治觀察', '三場選舉將檢驗聯盟黨（CDU/CSU）對 AfD 的「防火牆」，結果也牽動 Merz 政府秋季的施政能量。'),
-  file='W32_圖卡4_九月三場邦選舉.png'),
+  takeaway=('健康提醒', '綠黨衛生政策發言人 Dahmen 8/11 要求訂定全國性、帶強制警戒分級的高溫防護計畫。'),
+  file='W33_圖卡4_高溫致死人數.png'),
  dict(
-  theme='#7C3AED', badges=[('假訊息', True), ('數位', False)], illu='fakevideo',
-  title='假「Merz 辭職」影片流竄',
-  subtitle='《商報》（Handelsblatt）出面澄清：從未有過這則報導',
-  stats=[('8/10', '影片捏造的辭職日期'),
-         ('0 篇', '《商報》相關報導')],
+  theme='#0D9488', badges=[('經濟', True), ('農業', False)], illu='harvest',
+  title='乾旱燒掉收成：穀物年減 5.6%',
+  subtitle='德國農業合作社協會八月最新預估：全年 4,270 萬噸',
+  stats=[('4,270 萬噸', '2026 年穀物預估產量'),
+         ('-11.7%', '冬小麥產量年變動')],
   bullets=[
-   ('偽造手法', '影片題為「CDU 內部文件：Merz 8/10 辭職」，宣稱引自《商報》取得的黨內通信，並嵌入偽造的商報網頁。'),
-   ('媒體打假', '商報公開聲明：手上沒有這份通信、也從未做過相關報導，影片中的網頁是假的；多家俄語系網站仍持續轉載。'),
-   ('不是單一事件', '商報指出，網路上幾乎每天出現總理的假政策倡議，目的在削弱他與所屬政黨的公信力。'),
+   ('下修幅度', '德國農業合作社協會（Deutscher Raiffeisenverband）把全年穀物產量下修至 4,270 萬噸、年減 5.6%。'),
+   ('損失集中', '六月中以來穀物與油菜少了約 300 萬噸，南部受害最深；每公頃單產從 75.5 降至 70.3 公擔。'),
+   ('連鎖效應', '農民協會主席 Rukwied 指久旱與反覆熱浪同時傷到牧草與青貯玉米，飼料供應吃緊。'),
   ],
-  takeaway=('查證提醒', '看到「某媒體獨家」影片，先上該媒體官網搜尋原文；找不到就別轉傳，這正是 EU AI 標示義務要處理的問題。'),
-  file='W32_圖卡5_假Merz辭職影片.png'),
- dict(
-  theme='#7C3AED', badges=[('數位', True), ('法規', False)], illu='ailabel',
-  title='AI 內容標示義務正式上路',
-  subtitle='EU AI 法第 50 條 8/2 生效，聯邦網路局主管',
-  stats=[('1,500 萬歐元', '罰則上限或年營收 3%'),
-         ('第 50 條', 'EU AI 法透明義務')],
-  bullets=[
-   ('誰被管到', '不只 AI 公司——網站掛聊天機器人、行銷用 AI 生圖、發布 AI 生成影音的企業與個人創作者，都在適用範圍內。'),
-   ('四類義務', '聊天機器人須表明身分；AI 生成內容須加「機器可讀」標記；情緒辨識須告知；深偽與涉公共利益的 AI 文章須揭露。'),
-   ('例外與執法', '明顯的藝術、諷刺或虛構作品可改用不破壞觀賞的方式揭露；德國由聯邦網路局（BNetzA）監理，KI-MIG 法 7/29 生效。'),
-  ],
-  takeaway=('合規提醒', '經營部落格、電商或社群的讀者：盤點聊天機器人與 AI 生成素材、補上標示；純內部使用不受本條規範。'),
-  file='W32_圖卡6_AI內容標示義務.png'),
- dict(
-  theme='#2E8B57', badges=[('經濟', True), ('數據', False)], illu='factory',
-  title='六月工業訂單月增 3.1%',
-  subtitle='Destatis 8/6 公布；扣掉大額訂單則轉為負成長',
-  stats=[('+3.1%', '六月製造業訂單月增'),
-         ('-0.5%', '扣除大額訂單後月變動')],
-  bullets=[
-   ('遠優於預期', '經季節與工作日調整，六月製造業實質訂單較五月增 3.1%，市場原本只預期 0.5%～0.7%，連續第二個月超乎預期。'),
-   ('大單撐盤', '成長主要來自機械製造 +12.7%、資通訊與光學產品 +22.7%、汽車 +3.8%；扣除大額訂單後反而月減 0.5%。'),
-   ('內外冷熱不均', '國內訂單月增 7.8%、國外僅增 0.2%——歐元區訂單大減 14.0%，全靠歐元區以外的 +10.2% 撐住。'),
-  ],
-  takeaway=('數據解讀', '訂單回升的底氣仍薄：拿掉大單即轉負、歐元區需求明顯轉弱，要說工業已重回擴張言之過早。'),
-  file='W32_圖卡7_六月工業訂單.png'),
+  takeaway=('數據解讀', '德國穀物多作飼料與工業用途，壓力點在飼料成本，秋冬肉品與乳品報價值得觀察。'),
+  file='W33_圖卡5_乾旱歉收.png'),
 ]
 
 if __name__ == '__main__':
