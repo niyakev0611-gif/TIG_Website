@@ -1562,7 +1562,7 @@ const POSTS = [
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p class=""><strong>📌 2026/08/14 全面查核更新。</strong>推薦活動的金額與條件業者隨時在改，<strong>本頁只寫「有／沒有」與最近一次查到的條件，實際回饋一律以你點進去看到的當期活動頁為準</strong>——寫死的數字反而會害你白高興一場。這次查核已處理的異動：Tier 併入 Dott（原連結失效）、Payback 的超市夥伴從 REWE 換成 Edeka、fraenk 資費升級、Tesla 推薦條件改制、McFIT 與 PayPal 推薦連結換新、Lime 漲到 5 €、Airbnb 房東獎金漲到 61 €、FreeNow 與 Peaks 換上新的推薦連結（首趟 5 折最高 10 €／10 € 起始投資金）、Taxfix 推薦連結移除（報稅軟體只留 SteuerBot）。<strong>本頁所有連結均於 2026/08/14 逐一實際開啟測試過。</strong></p>
+<p class=""><strong>📌 2026/08/14 全面查核更新。</strong>推薦活動的金額與條件業者隨時在改，<strong>本頁只寫「有／沒有」與最近一次查到的條件，實際回饋一律以你點進去看到的當期活動頁為準</strong>——寫死的數字反而會害你白高興一場。這次查核已處理的異動：Tier 併入 Dott（附上新的 Dott 推薦碼）、Payback 的超市夥伴從 REWE 換成 Edeka、fraenk 資費升級、Tesla 推薦條件改制、McFIT 與 PayPal 推薦連結換新、Lime 漲到 5 €、Airbnb 房東獎金漲到 61 €、FreeNow 與 Peaks 換上新的推薦連結（首趟 5 折最高 10 €／10 € 起始投資金）、Taxfix 推薦連結移除（報稅軟體只留 SteuerBot）。<strong>本頁所有連結均於 2026/08/14 逐一實際開啟測試過。</strong></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:heading -->
@@ -1578,7 +1578,11 @@ const POSTS = [
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p class=""><strong>（2026/08 更新）Tier 這個品牌已經不存在了。</strong>Dott 與 Tier 兩家共享電動滑板車業者合併後，德國的 Tier 車輛全面換成 Dott 的藍白塗裝、<strong>Tier App 也已關閉</strong>，用戶被移轉到 Dott 平台——原本掛在這裡的 Tier 推薦連結已失效（實測 404），我先移除。<strong>要騎的話直接下載 <a href="https://ridedott.com/" target="_blank" rel="noreferrer noopener">Dott</a> App</strong>；Dott 目前是否有推薦碼制度、給多少優惠，等我實際試過再補上來，不先寫沒查證過的數字。</p>
+<p class=""><strong>（2026/08 更新）Tier 這個品牌已經不存在了。</strong>Dott 與 Tier 兩家共享電動滑板車業者合併後，德國的 Tier 車輛全面換成 Dott 的藍白塗裝、<strong>Tier App 也已關閉</strong>，用戶被移轉到 Dott 平台——原本掛在這裡的 Tier 推薦連結已失效（實測 404），已移除。</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p class=""><strong>🛴 Dott 推薦碼：<a href="https://referral.ridedott.com/PPHJC48" target="_blank" rel="noreferrer noopener">PPHJC48</a></strong>——用這個連結註冊（<strong>建議直接用手機開啟</strong>，桌機點會轉到 App Store），或是下載 Dott App 後在「<strong>Promos</strong>」欄位輸入代碼 <strong>PPHJC48</strong>，即可獲得<strong>一趟免費車程</strong>。</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:heading {"level":4} -->
@@ -1598,24 +1602,24 @@ const POSTS = [
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p class=""><a href="https://ts.la/kevin522006" target="_blank" rel="noreferrer noopener">https://ts.la/kevin522006</a></p>
+<p class=""><a href="https://www.tesla.com/de_de/referral/kevin522006" target="_blank" rel="noreferrer noopener">https://www.tesla.com/de_de/referral/kevin522006</a></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p class=""><strong>（2026/08 更新）Tesla 把推薦方案的給法改了</strong>，現在買方拿到什麼要看你買哪一種車：</p>
+<p class=""><strong>（2026/08 更新：連結與優惠都換新了）</strong>Tesla 把推薦方案的給法改了，<strong>不再是現金折扣</strong>。2026/08/14 實測官方推薦頁的內容：</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li class=""><strong>新車客製訂單（Custom Order）</strong>：買方獲得 <strong>1,000 公里免費超級充電</strong>（不再是現金折扣）</li>
+<li class=""><strong>Model 3 或 Model Y 新車訂單</strong>：買方獲得 <strong>1,000 公里免費超級充電</strong>（Supercharging）</li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li class=""><strong>庫存車（Inventory）</strong>：買方直接折 <strong>500 €</strong></li>
+<li class="">庫存車（Bestand）另有方案，點進頁面的「Bestand erkunden」查看當期條件</li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li class="">推薦人（也就是我）拿到的 <strong>250 €</strong> 是 Tesla 商城點數／充電里程，跟買方的優惠是兩回事——舊版本文寫成「下訂折 250 歐」是不對的，這次一併更正</li>
+<li class="">推薦人（也就是我）拿到的是 Tesla 的商城點數／充電里程，跟買方的優惠是兩回事——舊版本文寫成「下訂折 250 歐」是不對的，這次一併更正</li>
 <!-- /wp:list-item --></ul>
 <!-- /wp:list -->
 
