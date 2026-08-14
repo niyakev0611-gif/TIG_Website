@@ -90,7 +90,7 @@ function getRelated(post) {
 }
 
 // ---------- Shared HTML chunks (copy verbatim from post.html so look/feel matches) ----------
-const HEAD_CSP = `<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://www.googletagmanager.com https://unpkg.com/@waline/; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://unpkg.com/@waline/; font-src 'self' https://fonts.gstatic.com https://unpkg.com/@waline/; img-src 'self' data: https:; connect-src 'self' https://www.google-analytics.com https://analytics.google.com https://waline-server-lemon.vercel.app; frame-src 'none'; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests" />`;
+const HEAD_CSP = `<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self' https://www.google-analytics.com https://analytics.google.com; frame-src 'none'; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests" />`;
 
 // Extract sidebar (hamburger + nav) and search overlay as separate, balanced blocks
 const POST_SRC = fs.readFileSync(path.join(ROOT, 'post.html'), 'utf8');
@@ -221,7 +221,6 @@ ${(post.tags||[]).map(t => `<meta property="article:tag" content="${escapeAttr(t
 <script type="application/ld+json">${escapeJsonLd(JSON.stringify(ldJson))}</script>
 <script type="application/ld+json">${escapeJsonLd(JSON.stringify(breadcrumbLd))}</script>
 <link rel="stylesheet" href="/css/style.css" />
-<link rel="stylesheet" href="https://unpkg.com/@waline/client@3.5.7/dist/waline.css" integrity="sha384-rRoXxn2yHlrZYB587Ki9RO1tONhLdM6XfORg7Rw4uwH4/Fh/5nP7IUX91bkaKUgs" crossorigin="anonymous" />
 <link rel="alternate" type="application/rss+xml" title="${escapeAttr(SITE_NAME)} RSS" href="/feed.xml" />
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌱</text></svg>" />
 <script src="/js/consent.js"></script>
@@ -247,17 +246,12 @@ ${SIDEBAR_ABS}
   <article class="post-content">${cleanContent}</article>
   ${tagsHtml}
   ${relatedHtml}
-  <section class="comments-section" id="commentsSection">
-    <h2 class="comments-section__title">留言</h2>
-    <div id="waline"></div>
-  </section>
 </main>
 ${FOOTER_ABS}
 <script src="/js/data.js"></script>
 <script src="/js/theme.js"></script>
 <script src="/js/search.js"></script>
 <script src="/js/post-static.js"></script>
-<script type="module" src="/js/waline-init.js"></script>
 </body>
 </html>
 `;
