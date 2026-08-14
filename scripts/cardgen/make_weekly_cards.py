@@ -823,6 +823,32 @@ def illu_harvest(d, R, S, cx, cy, theme):
     for gx, gy in ((-30, 30), (4, 34), (36, 30)):
         d.line(R(cx+gx, cy+gy, cx+gx-5, cy+gy+13), fill=OUTLINE, width=3*S)
 
+def illu_fuelpump(d, R, S, cx, cy, theme):
+    """加油機＋加油槍＋上升箭頭（油價／燃油成本）"""
+    ow = 5*S
+    _dots(d, R, cx, cy, ((-70, -46, 3, GOLD), (-40, -56, 3, tint(theme, 0.5)),
+                         (72, 30, 3, theme)))
+    d.ellipse(R(cx-64, cy+50, cx+8, cy+60), fill=tint(theme, 0.18))
+    # 加油機本體：機箱＋頂蓋
+    d.rounded_rectangle(R(cx-60, cy-46, cx+2, cy+50), radius=10*S, fill=theme, outline=OUTLINE, width=ow)
+    d.rounded_rectangle(R(cx-60, cy-46, cx+2, cy-28), radius=10*S, fill=shade(theme, 0.72))
+    d.rectangle(R(cx-60, cy-36, cx+2, cy-28), fill=shade(theme, 0.72))
+    d.rounded_rectangle(R(cx-60, cy-46, cx+2, cy+50), radius=10*S, outline=OUTLINE, width=ow)
+    # 價格螢幕（焦點細節：跳動中的數字）
+    d.rounded_rectangle(R(cx-51, cy-20, cx-7, cy+12), radius=5*S, fill='white', outline=OUTLINE, width=3*S)
+    d.rounded_rectangle(R(cx-45, cy-13, cx-13, cy-6), radius=3*S, fill=GOLD)
+    d.rounded_rectangle(R(cx-45, cy-1, cx-25, cy+6), radius=3*S, fill=tint(theme, 0.45))
+    # 操作面板
+    d.rounded_rectangle(R(cx-51, cy+24, cx-19, cy+31), radius=3*S, fill=tint(theme, 0.45))
+    # 軟管＋加油槍（金色，第二焦點）
+    d.arc(R(cx-16, cy+6, cx+24, cy+46), start=270, end=360, fill=OUTLINE, width=ow)
+    d.rounded_rectangle(R(cx+16, cy+26, cx+58, cy+42), radius=6*S, fill=GOLD, outline=OUTLINE, width=ow)
+    d.polygon(R(cx+52, cy+28, cx+70, cy+18, cx+74, cy+25, cx+56, cy+35), fill=GOLD_D, outline=OUTLINE)
+    d.rounded_rectangle(R(cx+22, cy+40, cx+34, cy+48), radius=3*S, fill=GOLD_D, outline=OUTLINE, width=3*S)
+    # 上升箭頭（漲價）
+    d.line(R(cx+18, cy-4, cx+58, cy-44), fill=theme, width=ow+2*S)
+    d.polygon(R(cx+40, cy-48, cx+64, cy-52, cx+58, cy-28), fill=theme)
+
 ILLUS = dict(podium=illu_podium, flags=illu_flags, coins=illu_coins,
              idcard=illu_idcard, camera=illu_camera, trophy=illu_trophy,
              bankcard=illu_bankcard, checklist=illu_checklist,
@@ -833,7 +859,7 @@ ILLUS = dict(podium=illu_podium, flags=illu_flags, coins=illu_coins,
              heatwave=illu_heatwave, ailabel=illu_ailabel,
              piggybank=illu_piggybank, shieldeye=illu_shieldeye,
              agelimit=illu_agelimit, heathealth=illu_heathealth,
-             harvest=illu_harvest)
+             harvest=illu_harvest, fuelpump=illu_fuelpump)
 
 # ── 版型 ────────────────────────────────────────────────────
 
@@ -936,6 +962,19 @@ DATE_RANGE = '2026/08/10–08/16'
 
 CARDS = [
  dict(
+  theme='#C0392B', badges=[('油價', True), ('生活成本', False)], illu='fuelpump',
+  title='柴油重回 2.20 €：三股推力',
+  subtitle='能源稅減免 6/30 退場、原油逼近 90 美元、萊茵河低水位推升運費',
+  stats=[('2.20 €', '柴油全國均價（8/11）'),
+         ('約 17 歐分', '稅減免退場／每公升')],
+  bullets=[
+   ('稅費：減免已經退場', '5/1–6/30 的能源稅減免每公升 14.04 歐分未獲延長；聯邦卡特爾局統計 7/1 當天汽油即漲 9.6 歐分、柴油漲 10.4 歐分。'),
+   ('原油：煉油廠接連遇襲', 'Brent 一週自約 79 美元漲到 89.5 美元；俄羅斯與沙烏地阿拉伯煉油廠遇襲讓柴油吃緊，漲勢比汽油更猛。'),
+   ('物流：萊茵河水位偏低', '油輪部分只能載約四分之一，運費轉嫁牌價；北威邦（Nordrhein-Westfalen）與黑森邦（Hessen）最貴。'),
+  ],
+  takeaway=('省錢提醒', '4/1 起加油站每天只能在中午 12 點漲一次：11:30 前最便宜，12 點後 E10 平均跳漲 14.6 歐分、柴油 18.4 歐分。'),
+  file='W33_圖卡1_油價上漲原因.png'),
+ dict(
   theme='#2E8B57', badges=[('家庭', True), ('退休金', False)], illu='piggybank',
   title='早鳥退休金：國家替孩子每月存 10 €',
   subtitle='內閣 8/12 通過草案；6 歲存到 18 歲、預計 2027 年上路',
@@ -947,7 +986,7 @@ CARDS = [
    ('預算規模', '2027 年補助支出估 1.98 億歐元，2030 年隨受益孩子增加升至 4.11 億歐元。'),
   ],
   takeaway=('家長須知', '消費者保護團體警告恐成「兩級制退休金」，要求帳戶費用上限從 1% 降到 0.5%。'),
-  file='W33_圖卡1_早鳥退休金.png'),
+  file='W33_圖卡2_早鳥退休金.png'),
  dict(
   theme='#C0392B', badges=[('健康', True), ('氣候', False)], illu='heathealth',
   title='今夏高溫致死 12,500 人',
@@ -960,7 +999,7 @@ CARDS = [
    ('醫界喊話', '逾 80 個衛生團體與聯邦醫師公會要求歐盟層級高溫防護計畫與緊急基金。'),
   ],
   takeaway=('健康提醒', '綠黨衛生政策發言人 Dahmen 8/11 要求訂定全國性、帶強制警戒分級的高溫防護計畫。'),
-  file='W33_圖卡2_高溫致死人數.png'),
+  file='W33_圖卡3_高溫致死人數.png'),
  dict(
   theme='#D4740E', badges=[('社會', True), ('青少年保護', False)], illu='agelimit',
   title='「陪同飲酒」走入歷史：一律 16 歲起',
@@ -973,7 +1012,7 @@ CARDS = [
    ('理由與後盾', '家庭部長 Prien（CDU）指陪同飲酒無教育效果；各邦衛生部長會議 2025 年 6 月已全票要求禁止。'),
   ],
   takeaway=('家長提醒', '草案仍待聯邦議院表決；通過後帶青少年上餐廳，14、15 歲即使家長同桌也不能點啤酒。'),
-  file='W33_圖卡3_青少年飲酒新規.png'),
+  file='W33_圖卡4_青少年飲酒新規.png'),
  dict(
   theme='#0D9488', badges=[('經濟', True), ('農業', False)], illu='harvest',
   title='乾旱燒掉收成：穀物年減 5.6%',
@@ -986,7 +1025,7 @@ CARDS = [
    ('連鎖效應', '農民協會主席 Rukwied 指久旱與反覆熱浪同時傷到牧草與青貯玉米，飼料供應吃緊。'),
   ],
   takeaway=('數據解讀', '德國穀物多作飼料與工業用途，壓力點在飼料成本，秋冬肉品與乳品報價值得觀察。'),
-  file='W33_圖卡4_乾旱歉收.png'),
+  file='W33_圖卡5_乾旱歉收.png'),
  dict(
   theme='#2563EB', badges=[('政治', True), ('國安', False)], illu='shieldeye',
   title='情報機關擴權法案闖關內閣',
@@ -999,7 +1038,7 @@ CARDS = [
    ('朝野交鋒', 'FDP 主席 Kubicki 稱「歷史性的破戒」；綠黨 von Notz 認為改革必要，但擴權「必須合乎基本法」。'),
   ],
   takeaway=('立法觀察', '草案仍須送聯邦議院（Bundestag）審議，進入住宅與線上搜索是否需法官保留是最大爭點。'),
-  file='W33_圖卡5_情報機關擴權.png'),
+  file='W33_圖卡6_情報機關擴權.png'),
 ]
 
 if __name__ == '__main__':
