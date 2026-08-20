@@ -849,6 +849,109 @@ def illu_fuelpump(d, R, S, cx, cy, theme):
     d.line(R(cx+18, cy-4, cx+58, cy-44), fill=theme, width=ow+2*S)
     d.polygon(R(cx+40, cy-48, cx+64, cy-52, cx+58, cy-28), fill=theme)
 
+def illu_crane(d, R, S, cx, cy, theme):
+    """塔式起重機＋新屋（住宅興建／建照核發）"""
+    ow = 5*S
+    _dots(d, R, cx, cy, ((-72, -28, 3, GOLD), (14, -56, 3, tint(theme, 0.5)),
+                         (74, -22, 3, theme)))
+    d.ellipse(R(cx-56, cy+48, cx+56, cy+58), fill=tint(theme, 0.18))
+    # 塔式起重機（後層）：塔柱＋桁架斜撐
+    d.rounded_rectangle(R(cx-58, cy-44, cx-40, cy+46), radius=3*S,
+                        fill=tint(theme, 0.30), outline=OUTLINE, width=ow)
+    for k in range(3):
+        yy = cy - 32 + k*26
+        d.line(R(cx-58, yy, cx-40, yy+14), fill=OUTLINE, width=2*S)
+    # 水平吊臂＋吊索
+    d.rounded_rectangle(R(cx-64, cy-58, cx+32, cy-44), radius=4*S,
+                        fill=tint(theme, 0.30), outline=OUTLINE, width=ow)
+    d.line(R(cx+16, cy-44, cx+16, cy-38), fill=OUTLINE, width=3*S)
+    # 焦點細節：吊掛中的金色構件（懸在屋脊上方，留出空隙）
+    d.rounded_rectangle(R(cx+4, cy-38, cx+28, cy-22), radius=3*S, fill=GOLD,
+                        outline=OUTLINE, width=3*S)
+    # 新屋：屋頂＋屋身＋門窗
+    d.polygon(R(cx-26, cy+6, cx+18, cy-14, cx+62, cy+6), fill=tint(theme, 0.45),
+              outline=OUTLINE, width=ow)
+    d.rounded_rectangle(R(cx-20, cy+6, cx+56, cy+48), radius=6*S, fill=theme,
+                        outline=OUTLINE, width=ow)
+    d.rounded_rectangle(R(cx-10, cy+16, cx+8, cy+34), radius=3*S, fill='white',
+                        outline=OUTLINE, width=3*S)
+    d.rounded_rectangle(R(cx+24, cy+22, cx+46, cy+48), radius=3*S, fill='white',
+                        outline=OUTLINE, width=3*S)
+
+def illu_mergebenefits(d, R, S, cx, cy, theme):
+    """三張表單匯流成一張（社會給付整併）"""
+    ow = 5*S
+    _dots(d, R, cx, cy, ((-74, -50, 3, GOLD), (-2, -56, 3, tint(theme, 0.5)),
+                         (74, -38, 3, theme)))
+    d.ellipse(R(cx-56, cy+48, cx+56, cy+58), fill=tint(theme, 0.18))
+    # 左側三張分立的小表單（現制三項給付）
+    for k in range(3):
+        y1 = cy - 44 + k*32
+        d.rounded_rectangle(R(cx-72, y1, cx-32, y1+24), radius=4*S, fill='white',
+                            outline=OUTLINE, width=3*S)
+        d.line(R(cx-65, y1+9, cx-45, y1+9), fill=tint(theme, 0.55), width=3*S)
+        d.line(R(cx-65, y1+17, cx-52, y1+17), fill=tint(theme, 0.55), width=3*S)
+    # 焦點細節：金色匯流箭頭
+    d.line(R(cx-26, cy+4, cx-8, cy+4), fill=GOLD, width=ow+2*S)
+    d.polygon(R(cx+8, cy+4, cx-8, cy-5, cx-8, cy+13), fill=GOLD, outline=OUTLINE, width=2*S)
+    # 右側整併後的單一給付卡
+    d.rounded_rectangle(R(cx+16, cy-38, cx+70, cy+40), radius=7*S, fill=theme,
+                        outline=OUTLINE, width=ow)
+    d.rounded_rectangle(R(cx+26, cy-28, cx+54, cy-20), radius=3*S, fill=tint(theme, 0.45))
+    for yy in (cy-8, cy+2):
+        d.line(R(cx+26, yy, cx+60, yy), fill=tint(theme, 0.45), width=3*S)
+    d.ellipse(R(cx+32, cy+12, cx+60, cy+40), fill=GOLD, outline=OUTLINE, width=ow)
+    draw_mixed_vcentered(d, R(cx+46, cy+26), '€', 22*S, OUTLINE, bold=True, anchor='center')
+
+def illu_heatlaw(d, R, S, cx, cy, theme):
+    """法典＋烈日（高溫防護入憲／氣候調適立法）"""
+    ow = 5*S
+    _dots(d, R, cx, cy, ((-72, -32, 3, GOLD), (-26, -54, 3, tint(theme, 0.5)),
+                         (74, 26, 3, theme)))
+    d.ellipse(R(cx-54, cy+48, cx+54, cy+58), fill=tint(theme, 0.18))
+    # 烈日（後層，自法典右上探出）
+    sx, sy = cx+44, cy-30
+    for k in range(8):
+        a = math.radians(k*45)
+        d.line(R(sx+16*math.cos(a), sy+16*math.sin(a),
+                 sx+23*math.cos(a), sy+23*math.sin(a)), fill=GOLD_D, width=4*S)
+    d.ellipse(R(sx-15, sy-15, sx+15, sy+15), fill=GOLD, outline=OUTLINE, width=ow)
+    d.arc(R(sx-10, sy-10, sx+10, sy+10), start=195, end=250, fill=GOLD_HI, width=3*S)
+    # 法典：書口（後層）＋封面（前層）
+    d.rounded_rectangle(R(cx-50, cy-6, cx+44, cy+46), radius=6*S, fill='white',
+                        outline=OUTLINE, width=ow)
+    d.rounded_rectangle(R(cx-58, cy-14, cx+36, cy+40), radius=6*S, fill=theme,
+                        outline=OUTLINE, width=ow)
+    d.line(R(cx-46, cy-14, cx-46, cy+40), fill=OUTLINE, width=3*S)
+    # 焦點細節：封面上的金色 § 徽章
+    d.rounded_rectangle(R(cx-28, cy, cx+6, cy+32), radius=6*S, fill=GOLD,
+                        outline=OUTLINE, width=3*S)
+    draw_mixed_vcentered(d, R(cx-11, cy+16), '§', 26*S, OUTLINE, bold=True, anchor='center')
+
+def illu_gavel(d, R, S, cx, cy, theme):
+    """法槌＋音板＋可疑包裹（司法判決／破壞行動偵辦）"""
+    ow = 5*S
+    _dots(d, R, cx, cy, ((-72, -40, 3, GOLD), (6, -56, 3, tint(theme, 0.5)),
+                         (74, -30, 3, theme)))
+    d.ellipse(R(cx-58, cy+48, cx+58, cy+58), fill=tint(theme, 0.18))
+    # 槌柄（後層，斜向右上）
+    d.polygon(R(cx-17, cy-3, cx+39, cy-39, cx+33, cy-49, cx-23, cy-13),
+              fill=tint(theme, 0.45), outline=OUTLINE, width=ow)
+    # 槌頭
+    d.rounded_rectangle(R(cx-64, cy-32, cx-16, cy+4), radius=8*S, fill=theme,
+                        outline=OUTLINE, width=ow)
+    d.rounded_rectangle(R(cx-57, cy-25, cx-45, cy-17), radius=3*S, fill=tint(theme, 0.45))
+    d.line(R(cx-40, cy-32, cx-40, cy+4), fill=OUTLINE, width=3*S)
+    # 音板
+    d.rounded_rectangle(R(cx-64, cy+18, cx-8, cy+34), radius=5*S, fill=GOLD,
+                        outline=OUTLINE, width=ow)
+    # 焦點細節：可疑包裹（膠帶＋金色定位訊號點）
+    d.rounded_rectangle(R(cx+16, cy+8, cx+66, cy+50), radius=6*S, fill='white',
+                        outline=OUTLINE, width=ow)
+    d.line(R(cx+38, cy+8, cx+38, cy+50), fill=tint(theme, 0.55), width=4*S)
+    d.line(R(cx+16, cy+24, cx+66, cy+24), fill=tint(theme, 0.55), width=4*S)
+    d.ellipse(R(cx+48, cy+30, cx+62, cy+44), fill=GOLD, outline=OUTLINE, width=3*S)
+
 ILLUS = dict(podium=illu_podium, flags=illu_flags, coins=illu_coins,
              idcard=illu_idcard, camera=illu_camera, trophy=illu_trophy,
              bankcard=illu_bankcard, checklist=illu_checklist,
@@ -859,7 +962,9 @@ ILLUS = dict(podium=illu_podium, flags=illu_flags, coins=illu_coins,
              heatwave=illu_heatwave, ailabel=illu_ailabel,
              piggybank=illu_piggybank, shieldeye=illu_shieldeye,
              agelimit=illu_agelimit, heathealth=illu_heathealth,
-             harvest=illu_harvest, fuelpump=illu_fuelpump)
+             harvest=illu_harvest, fuelpump=illu_fuelpump,
+             crane=illu_crane, mergebenefits=illu_mergebenefits,
+             heatlaw=illu_heatlaw, gavel=illu_gavel)
 
 # ── 版型 ────────────────────────────────────────────────────
 
@@ -957,88 +1062,75 @@ def make_card(spec, path, week_label='W?', date_label=''):
 # ════════════════════════════════════════════════════════════
 # 每週卡片內容（範本：W29）——之後每週改這一段即可
 # ════════════════════════════════════════════════════════════
-WEEK = 'W33'
-DATE_RANGE = '2026/08/10–08/16'
+WEEK = 'W34'
+DATE_RANGE = '2026/08/17-08/20'
 
 CARDS = [
  dict(
-  theme='#C0392B', badges=[('油價', True), ('生活成本', False)], illu='fuelpump',
-  title='柴油重回 2.20 €：三股推力',
-  subtitle='能源稅減免 6/30 退場、原油逼近 90 美元、萊茵河低水位推升運費',
-  stats=[('2.20 €', '柴油全國均價（8/11）'),
-         ('約 17 歐分', '稅減免退場／每公升')],
+  theme='#D4740E', badges=[('住房', True), ('生活成本', False)], illu='crane',
+  title='建照回升 15.1%，租金照漲 3.2%',
+  subtitle='聯邦統計局 8/18 公布：上半年核准 12.63 萬戶，但完工與租金是兩回事',
+  stats=[('12.63 萬戶', '上半年核准建照'),
+         ('+3.2%', 'Q2 新租約租金年增')],
   bullets=[
-   ('稅費：減免已經退場', '5/1–6/30 的能源稅減免每公升 14.04 歐分未獲延長；聯邦卡特爾局統計 7/1 當天汽油即漲 9.6 歐分、柴油漲 10.4 歐分。'),
-   ('原油：煉油廠接連遇襲', 'Brent 一週自約 79 美元漲到 89.5 美元；俄羅斯與沙烏地阿拉伯煉油廠遇襲讓柴油吃緊，漲勢比汽油更猛。'),
-   ('物流：萊茵河水位偏低', '油輪部分只能載約四分之一，運費轉嫁牌價；北威邦（Nordrhein-Westfalen）與黑森邦（Hessen）最貴。'),
+   ('核准量連月回升', '聯邦統計局（Destatis）8/18：6 月核准 21,600 戶、年增 13.8%；上半年 126,300 戶、年增 15.1%。'),
+   ('回升的還只是紙上數字', '核准不等於動工。德國經濟研究所（IW Köln）估 2026 年完工僅約 21.5 萬戶，遠低於年 40 萬戶目標。'),
+   ('租金壓力沒鬆手', '德國抵押債券銀行協會（vdp）：Q2 新租約租金全國年增 3.2%，杜塞道夫 3.6% 最高、柏林僅 0.6%。'),
   ],
-  takeaway=('省錢提醒', '4/1 起加油站每天只能在中午 12 點漲一次：11:30 前最便宜，12 點後 E10 平均跳漲 14.6 歐分、柴油 18.4 歐分。'),
-  file='W33_圖卡1_油價上漲原因.png'),
+  takeaway=('租屋族提醒', '全國缺口估約 100 萬戶，Pestel 研究所更估 140 萬戶。核准領先完工約兩年，短期供給不會鬆。'),
+  file='W34_圖卡1_建照回升與租金.png'),
  dict(
-  theme='#2E8B57', badges=[('家庭', True), ('退休金', False)], illu='piggybank',
-  title='早鳥退休金：國家替孩子每月存 10 €',
-  subtitle='內閣 8/12 通過草案；6 歲存到 18 歲、預計 2027 年上路',
-  stats=[('每月 10 €', '國家存入孩子帳戶'),
-         ('6–18 歲', '補助年齡區間')],
+  theme='#2E8B57', badges=[('社會福利', True), ('家庭', False)], illu='mergebenefits',
+  title='三種給付併成一種：ifo 端出改革方案',
+  subtitle='勞工福利聯合會（AWO）委託研究 8/19 發表；屬智庫建議，尚未立法',
+  stats=[('3 合 1', '基本保障＋住房補貼＋兒童加給'),
+         ('32.2 萬人', '估可因此重返就業')],
   bullets=[
-   ('制度設計', '財政部長 Klingbeil（SPD）提案：孩子滿 6 歲到 18 歲，聯邦每月存 10 € 進其名下的資本市場退休帳戶。'),
-   ('何時能領', '收益在給付前免稅，本金原則上要到 65 歲才能動用；未自選帳戶者由德國聯邦銀行（Bundesbank）代管。'),
-   ('預算規模', '2027 年補助支出估 1.98 億歐元，2030 年隨受益孩子增加升至 4.11 億歐元。'),
+   ('要併哪三項', 'ifo 經濟研究所受德國勞工福利聯合會（AWO）委託提案：基本保障、住房補貼與兒童加給併為單一給付。'),
+   ('誰受益最多', '單親與多子女家庭。低所得級距家庭可支配所得平均年增 149 €，貧窮風險率自約 16% 再降 0.9 個百分點。'),
+   ('為何能拉高就業', '研究主持人 Blömer 指現制多項給付同時遞減、形同高邊際稅率；整併後估多出 18.8 萬個全職工時。'),
   ],
-  takeaway=('家長須知', '消費者保護團體警告恐成「兩級制退休金」，要求帳戶費用上限從 1% 降到 0.5%。'),
-  file='W33_圖卡2_早鳥退休金.png'),
+  takeaway=('方案解讀', '代價是國家每年多支出約 54 億歐元。這是智庫方案而非政府草案，仍未進入立法程序。'),
+  file='W34_圖卡2_社會給付三合一.png'),
  dict(
-  theme='#C0392B', badges=[('健康', True), ('氣候', False)], illu='heathealth',
-  title='今夏高溫致死 12,500 人',
-  subtitle='羅伯特科赫研究所（RKI）估 4/6–8/2；1992 年統計以來最致命',
-  stats=[('12,500 人', '今夏高溫相關死亡'),
-         ('75 歲以上', '受衝擊最重族群')],
+  theme='#0D9488', badges=[('勞動市場', True), ('經濟', False)], illu='briefcase',
+  title='服務業就業自疫情以來首次明顯下滑',
+  subtitle='聯邦統計局 8/18：第二季就業 4,570 萬人，較去年同季少 21.2 萬',
+  stats=[('4,570 萬人', '第二季就業人數'),
+         ('-21.2 萬', '較去年同季')],
   bullets=[
-   ('數字有多重', '今年到 8/2 約 1.25 萬人死於高溫，超過近十年任一整年（2018 年 9,400 人、2019 年 7,700 人）。'),
-   ('集中在六月', '逾 5,000 人死於六月下旬逼近 40 度的熱浪；聯邦統計局估同期超額死亡約 6,800 人。'),
-   ('醫界喊話', '逾 80 個衛生團體與聯邦醫師公會要求歐盟層級高溫防護計畫與緊急基金。'),
+   ('整體走弱', '聯邦統計局（Destatis）初步統計：Q2 就業季調較前一季減 5.3 萬人，年減 21.2 萬人（-0.5%）。'),
+   ('服務業是新訊號', '服務業年減 2.7 萬人，為新冠疫情以來首次明顯下降——過去幾年它一直是撐住德國就業的支柱。'),
+   ('內部分化明顯', '公共服務、教育與醫療續增 18.7 萬人（+1.5%）；貿易、運輸與餐旅再減 11.5 萬人（-1.1%）。'),
   ],
-  takeaway=('健康提醒', '綠黨衛生政策發言人 Dahmen 8/11 要求訂定全國性、帶強制警戒分級的高溫防護計畫。'),
-  file='W33_圖卡3_高溫致死人數.png'),
+  takeaway=('求職觀察', '公部門、教育與醫療仍在擴編，餐旅與零售持續縮編；持工作居留者換工作前先看清行業。'),
+  file='W34_圖卡3_第二季就業下滑.png'),
  dict(
-  theme='#D4740E', badges=[('社會', True), ('青少年保護', False)], illu='agelimit',
-  title='「陪同飲酒」走入歷史：一律 16 歲起',
-  subtitle='內閣 8/12 通過修法；14、15 歲不得再由家長陪同飲酒',
-  stats=[('16 歲', '啤酒與葡萄酒新下限'),
-         ('14–15 歲', '被取消的例外年齡')],
+  theme='#C0392B', badges=[('氣候調適', True), ('修憲', False)], illu='heatlaw',
+  title='高溫防護入基本法？民調 65% 贊成',
+  subtitle='YouGov 8/19 公布；聯盟黨（CDU/CSU）踩煞車，修憲需三分之二多數',
+  stats=[('65%', '贊成修憲的比例'),
+         ('近 5 億歐元', '每個高溫日的經濟損失')],
   bullets=[
-   ('修了什麼', '原本 14、15 歲可在監護人陪同下喝啤酒、葡萄酒與氣泡酒，《青少年保護法》這項例外將刪除。'),
-   ('適用範圍', '該法只規範餐廳、酒吧、商店等公共場域的提供與飲用，家中私領域不在管轄範圍內。'),
-   ('理由與後盾', '家庭部長 Prien（CDU）指陪同飲酒無教育效果；各邦衛生部長會議 2025 年 6 月已全票要求禁止。'),
+   ('民調怎麼問', '德通社（dpa）委託 YouGov 於 8/14–8/17 訪問 2,091 人：33% 贊成、32% 偏贊成，反對與偏反對各 11%。'),
+   ('要改什麼', '環境部長 Carsten Schneider（SPD）主張把高溫防護寫進基本法、列為聯邦與各邦「共同任務」。'),
+   ('卡在哪裡', '聯盟黨團副主席 Günter Krings 稱此舉「對氣候沒有幫助」；德國城市暨鄉鎮聯合會則表態支持。'),
   ],
-  takeaway=('家長提醒', '草案仍待聯邦議院表決；通過後帶青少年上餐廳，14、15 歲即使家長同桌也不能點啤酒。'),
-  file='W33_圖卡4_青少年飲酒新規.png'),
+  takeaway=('政策觀察', '修憲須聯邦議院與聯邦參議院各三分之二多數；走不成，高溫防護的錢仍由各邦與地方自扛。'),
+  file='W34_圖卡4_高溫防護入基本法.png'),
  dict(
-  theme='#0D9488', badges=[('經濟', True), ('農業', False)], illu='harvest',
-  title='乾旱燒掉收成：穀物年減 5.6%',
-  subtitle='德國農業合作社協會八月最新預估：全年 4,270 萬噸',
-  stats=[('4,270 萬噸', '2026 年穀物預估產量'),
-         ('-11.7%', '冬小麥產量年變動')],
+  theme='#2563EB', badges=[('司法', True), ('國安', False)], illu='gavel',
+  title='俄羅斯破壞案宣判：1 年 3 個月',
+  subtitle='斯圖加特高等邦法院 8/18：一人有罪、另兩名被告無罪',
+  stats=[('1 年 3 個月', '唯一有罪者刑期'),
+         ('2 人', '獲判無罪')],
   bullets=[
-   ('下修幅度', '德國農業合作社協會（Deutscher Raiffeisenverband）把全年穀物產量下修至 4,270 萬噸、年減 5.6%。'),
-   ('損失集中', '六月中以來穀物與油菜少了約 300 萬噸，南部受害最深；每公頃單產從 75.5 降至 70.3 公擔。'),
-   ('連鎖效應', '農民協會主席 Rukwied 指久旱與反覆熱浪同時傷到牧草與青貯玉米，飼料供應吃緊。'),
+   ('判了什麼', '斯圖加特高等邦法院（Oberlandesgericht Stuttgart）8/18 認定 30 歲烏克蘭籍男子為破壞目的從事間諜活動。'),
+   ('手法是什麼', '被告自德國寄出兩個內含 GPS 追蹤器的包裹測試貨運路線；下一步是運送途中會自燃的縱火裝置。'),
+   ('為何刑度不高', '行動仍停留在準備階段，刑期已由審前羈押折抵、判決後不必再入監；另兩名被告無罪。'),
   ],
-  takeaway=('數據解讀', '德國穀物多作飼料與工業用途，壓力點在飼料成本，秋冬肉品與乳品報價值得觀察。'),
-  file='W33_圖卡5_乾旱歉收.png'),
- dict(
-  theme='#2563EB', badges=[('政治', True), ('國安', False)], illu='shieldeye',
-  title='情報機關擴權法案闖關內閣',
-  subtitle='Dobrindt 提案逾 700 頁；聯邦情報局與憲法保衛局權限鬆綁',
-  stats=[('700 頁', '草案篇幅'),
-         ('8/12', '內閣通過日')],
-  bullets=[
-   ('從蒐集到行動', '草案首度允許情報機關主動出手——聯邦情報局（BND）可在對方進行中的網攻或假訊息行動中反制。'),
-   ('新增手段', '擴大線上搜索、生物特徵比對與 AI 分析；憲法保衛局例外時可進入住宅排除危險物品。'),
-   ('朝野交鋒', 'FDP 主席 Kubicki 稱「歷史性的破戒」；綠黨 von Notz 認為改革必要，但擴權「必須合乎基本法」。'),
-  ],
-  takeaway=('立法觀察', '草案仍須送聯邦議院（Bundestag）審議，進入住宅與線上搜索是否需法官保留是最大爭點。'),
-  file='W33_圖卡6_情報機關擴權.png'),
+  takeaway=('安全觀察', '俄羅斯情報機關近年多以社群媒體招募一次性的「拋棄式特工」，成本低又可切割。'),
+  file='W34_圖卡5_俄羅斯破壞案宣判.png'),
 ]
 
 if __name__ == '__main__':
