@@ -952,6 +952,97 @@ def illu_gavel(d, R, S, cx, cy, theme):
     d.line(R(cx+16, cy+24, cx+66, cy+24), fill=tint(theme, 0.55), width=4*S)
     d.ellipse(R(cx+48, cy+30, cx+62, cy+44), fill=GOLD, outline=OUTLINE, width=3*S)
 
+def illu_tornado(d, R, S, cx, cy, theme):
+    """雲底垂下的彎曲漏斗＋捲飛的碎片（龍捲風／強風暴）"""
+    ow = 5*S
+    _dots(d, R, cx, cy, ((-70, 6, 3, GOLD), (-56, 32, 3, tint(theme, 0.5)),
+                         (72, -44, 3, theme)))
+    d.ellipse(R(cx-42, cy+48, cx+54, cy+58), fill=tint(theme, 0.18))
+    # 雲層：寬扁且統一淡色，才不會與漏斗讀成同一塊
+    cloud = tint(theme, 0.42)
+    for box in ((cx-58, cy-48, cx-20, cy-26), (cx-30, cy-56, cx+16, cy-24),
+                (cx+8, cy-46, cx+50, cy-26)):
+        d.ellipse(R(*box), fill=cloud, outline=OUTLINE, width=ow)
+    d.rounded_rectangle(R(cx-56, cy-36, cx+48, cy-27), radius=5*S, fill=cloud)
+    d.line(R(cx-52, cy-26, cx+44, cy-26), fill=OUTLINE, width=ow)
+
+    # 漏斗：沿曲線收窄（直錐會讀成甜筒，必須帶彎）
+    def axis(t):
+        return 18*t*t, 28 - 23*t, -24 + 74*t   # 中心偏移、半寬、y
+    left, right = [], []
+    for k in range(7):
+        ox, hw, yy = axis(k/6)
+        left.append((ox-hw, yy))
+        right.append((ox+hw, yy))
+    funnel = left + right[::-1]
+    d.polygon(R(*[v for (dx, dy) in funnel for v in (cx+dx, cy+dy)]),
+              fill=theme, outline=OUTLINE, width=ow)
+    # 旋轉紋（同色系亮線，跟著漏斗一起偏）
+    swirl = tint(theme, 0.55)
+    for t, h in ((0.25, 7), (0.5, 6), (0.75, 5)):
+        ox, hw, yy = axis(t)
+        d.arc(R(cx+ox-hw+4, cy+yy-h, cx+ox+hw-4, cy+yy+h),
+              start=200, end=340, fill=swirl, width=3*S)
+    # 焦點細節：被捲飛的屋頂碎片
+    d.polygon(R(cx+28, cy+10, cx+60, cy+0, cx+64, cy+12, cx+32, cy+22),
+              fill=GOLD, outline=OUTLINE, width=3*S)
+    d.polygon(R(cx-58, cy+18, cx-32, cy+28, cx-36, cy+38, cx-62, cy+28),
+              fill=GOLD_D, outline=OUTLINE, width=3*S)
+
+def illu_wildfire(d, R, S, cx, cy, theme):
+    """針葉林＋火焰＋焦土（森林大火）"""
+    ow = 5*S
+    _dots(d, R, cx, cy, ((-70, -44, 3, GOLD), (-2, -56, 3, tint(theme, 0.5)),
+                         (72, -30, 3, theme)))
+    d.ellipse(R(cx-58, cy+48, cx+58, cy+58), fill=tint(theme, 0.18))
+    # 後層針葉樹（剪影，襯在火焰之後）
+    for tx, top in ((cx-48, cy-38), (cx+46, cy-28)):
+        d.rectangle(R(tx-5, cy+16, tx+5, cy+38), fill=shade(theme, 0.55), outline=OUTLINE, width=3*S)
+        for hw, ty in ((22, top+28), (17, top+13), (12, top)):
+            d.polygon(R(tx-hw, ty+24, tx+hw, ty+24, tx, ty),
+                      fill=tint(theme, 0.35), outline=OUTLINE, width=3*S)
+    # 焦土
+    d.rounded_rectangle(R(cx-58, cy+36, cx+58, cy+48), radius=6*S,
+                        fill=shade(theme, 0.5), outline=OUTLINE, width=ow)
+    # 焦點細節：前景火焰（尖頂、波浪腰、收窄的底）
+    outer = [(0, -46), (10, -26), (20, -32), (24, -12), (30, 6), (26, 24),
+             (12, 38), (-12, 38), (-26, 24), (-30, 6), (-24, -12), (-20, -32), (-10, -26)]
+    d.polygon(R(*[v for (dx, dy) in outer for v in (cx+dx, cy+dy)]),
+              fill=theme, outline=OUTLINE, width=ow)
+    inner = [(0, -14), (9, 4), (13, 16), (8, 32), (-8, 32), (-13, 16), (-9, 4)]
+    d.polygon(R(*[v for (dx, dy) in inner for v in (cx+dx, cy+dy)]),
+              fill=GOLD, outline=OUTLINE, width=3*S)
+
+def illu_solarpanel(d, R, S, cx, cy, theme):
+    """太陽能板＋烈日（光電擴建）"""
+    ow = 5*S
+    _dots(d, R, cx, cy, ((-72, -38, 3, GOLD), (-46, -52, 3, tint(theme, 0.5)),
+                         (70, 34, 3, theme)))
+    d.ellipse(R(cx-58, cy+46, cx+52, cy+56), fill=tint(theme, 0.18))
+    # 烈日（先畫，讓面板疊在前方分層）
+    sx, sy = cx+44, cy-30
+    for k in range(8):
+        a = math.radians(k*45)
+        d.line(R(sx+20*math.cos(a), sy+20*math.sin(a),
+                 sx+28*math.cos(a), sy+28*math.sin(a)), fill=GOLD_D, width=4*S)
+    d.ellipse(R(sx-18, sy-18, sx+18, sy+18), fill=GOLD, outline=OUTLINE, width=ow)
+    d.arc(R(sx-12, sy-12, sx+12, sy+12), start=195, end=250, fill=GOLD_HI, width=4*S)
+    # 支架與底座
+    d.line(R(cx-4, cy+18, cx-4, cy+44), fill=OUTLINE, width=ow+S)
+    d.line(R(cx-26, cy+44, cx+18, cy+44), fill=OUTLINE, width=ow)
+    # 面板本體
+    d.polygon(R(cx-56, cy+22, cx-24, cy-20, cx+52, cy-20, cx+20, cy+22),
+              fill=theme, outline=OUTLINE, width=ow)
+    # 電池格線
+    for k in (1, 2, 3):
+        t = k/4
+        d.line(R(cx-56+76*t, cy+22, cx-24+76*t, cy-20), fill=tint(theme, 0.5), width=3*S)
+    for k in (1, 2):
+        t = k/3
+        d.line(R(cx-56+32*t, cy+22-42*t, cx+20+32*t, cy+22-42*t), fill=tint(theme, 0.5), width=3*S)
+    d.polygon(R(cx-56, cy+22, cx-24, cy-20, cx+52, cy-20, cx+20, cy+22),
+              outline=OUTLINE, width=ow)
+
 ILLUS = dict(podium=illu_podium, flags=illu_flags, coins=illu_coins,
              idcard=illu_idcard, camera=illu_camera, trophy=illu_trophy,
              bankcard=illu_bankcard, checklist=illu_checklist,
@@ -964,7 +1055,9 @@ ILLUS = dict(podium=illu_podium, flags=illu_flags, coins=illu_coins,
              agelimit=illu_agelimit, heathealth=illu_heathealth,
              harvest=illu_harvest, fuelpump=illu_fuelpump,
              crane=illu_crane, mergebenefits=illu_mergebenefits,
-             heatlaw=illu_heatlaw, gavel=illu_gavel)
+             heatlaw=illu_heatlaw, gavel=illu_gavel,
+             tornado=illu_tornado, wildfire=illu_wildfire,
+             solarpanel=illu_solarpanel)
 
 # ── 版型 ────────────────────────────────────────────────────
 
@@ -1080,18 +1173,31 @@ CARDS = [
   takeaway=('租屋族提醒', '全國缺口估約 100 萬戶，Pestel 研究所更估 140 萬戶。核准領先完工約兩年，短期供給不會鬆。'),
   file='W34_圖卡1_建照回升與租金.png'),
  dict(
-  theme='#2E8B57', badges=[('社會福利', True), ('家庭', False)], illu='mergebenefits',
-  title='三種給付併成一種：ifo 端出改革方案',
-  subtitle='勞工福利聯合會（AWO）委託研究 8/19 發表；屬智庫建議，尚未立法',
-  stats=[('3 合 1', '基本保障＋住房補貼＋兒童加給'),
-         ('32.2 萬人', '估可因此重返就業')],
+  theme='#7C3AED', badges=[('極端天氣', True), ('公共安全', False)], illu='tornado',
+  title='龍捲風掃過三邦，1 死多人受傷',
+  subtitle='8/19 強雷暴；德國氣象局（DWD）事後確認 Fürstenwalde 為龍捲風',
+  stats=[('1 死', '萊茵蘭-普法茲邦'),
+         ('約 60 棟', 'Wetzlar 受損房屋')],
   bullets=[
-   ('要併哪三項', 'ifo 經濟研究所受德國勞工福利聯合會（AWO）委託提案：基本保障、住房補貼與兒童加給併為單一給付。'),
-   ('誰受益最多', '單親與多子女家庭。低所得級距家庭可支配所得平均年增 149 €，貧窮風險率自約 16% 再降 0.9 個百分點。'),
-   ('為何能拉高就業', '研究主持人 Blömer 指現制多項給付同時遞減、形同高邊際稅率；整併後估多出 18.8 萬個全職工時。'),
+   ('1 死 1 重傷', '萊茵蘭-普法茲邦（Rheinland-Pfalz）Waldorf：兩名女子避雨時被倒下的樹壓中，58 歲身亡、47 歲重傷。'),
+   ('兩處確認龍捲風', '布蘭登堡邦（Brandenburg）Fürstenwalde 幼兒園屋頂被掀；黑森邦（Hessen）Wetzlar 約 60 棟房屋受損。'),
+   ('為何沒有預警', '德國氣象局（DWD）事前未發警報——龍捲風生成於一朵「不起眼的弱陣雨」，而非典型強雷暴。'),
   ],
-  takeaway=('方案解讀', '代價是國家每年多支出約 54 億歐元。這是智庫方案而非政府草案，仍未進入立法程序。'),
-  file='W34_圖卡2_社會給付三合一.png'),
+  takeaway=('防災提醒', '暴風雨中最危險的往往是樹而不是雨。有頂座椅區、車棚與行道樹下都不算避難處，應進入堅固建築物。'),
+  file='W34_圖卡2_龍捲風致死.png'),
+ dict(
+  theme='#C0392B', badges=[('森林大火', True), ('氣候', False)], illu='wildfire',
+  title='許特根森林大火撲滅，燒掉 300 公頃',
+  subtitle='北萊茵-西發利亞邦（Nordrhein-Westfalen）有紀錄以來最大森林火災',
+  stats=[('約 300 公頃', '過火面積'),
+         ('1,800 人', '一度疏散的居民')],
+  bullets=[
+   ('規模有多大', '8/13 於艾菲爾（Eifel）山區許特根森林（Hürtgenwald）起火，過火約 300 公頃，為該邦 1991 年有統計以來最大。'),
+   ('動員與傷情', '8/14 凌晨疏散 Gey 地區約 1,800 名居民、8/15 傍晚才獲准返家；最多動員約 1,800 名救援人員，5 人受傷。'),
+   ('為何特別難撲滅', '林地埋有二戰許特根森林戰役遺留彈藥，8/14 夜間曾發生爆炸；地下悶燒火點也讓復燃風險居高不下。'),
+  ],
+  takeaway=('後續影響', '鎮長 Stephan Cranen 8/20 宣布火勢撲滅。林區樹木受火削弱而不穩，無限期封閉；起火原因仍在調查。'),
+  file='W34_圖卡3_許特根森林大火.png'),
  dict(
   theme='#0D9488', badges=[('勞動市場', True), ('經濟', False)], illu='briefcase',
   title='服務業就業自疫情以來首次明顯下滑',
@@ -1104,9 +1210,9 @@ CARDS = [
    ('內部分化明顯', '公共服務、教育與醫療續增 18.7 萬人（+1.5%）；貿易、運輸與餐旅再減 11.5 萬人（-1.1%）。'),
   ],
   takeaway=('求職觀察', '公部門、教育與醫療仍在擴編，餐旅與零售持續縮編；持工作居留者換工作前先看清行業。'),
-  file='W34_圖卡3_第二季就業下滑.png'),
+  file='W34_圖卡4_第二季就業下滑.png'),
  dict(
-  theme='#C0392B', badges=[('氣候調適', True), ('修憲', False)], illu='heatlaw',
+  theme='#D4740E', badges=[('氣候調適', True), ('修憲', False)], illu='heatlaw',
   title='高溫防護入基本法？民調 65% 贊成',
   subtitle='YouGov 8/19 公布；聯盟黨（CDU/CSU）踩煞車，修憲需三分之二多數',
   stats=[('65%', '贊成修憲的比例'),
@@ -1117,9 +1223,35 @@ CARDS = [
    ('卡在哪裡', '聯盟黨團副主席 Günter Krings 稱此舉「對氣候沒有幫助」；德國城市暨鄉鎮聯合會則表態支持。'),
   ],
   takeaway=('政策觀察', '修憲須聯邦議院與聯邦參議院各三分之二多數；走不成，高溫防護的錢仍由各邦與地方自扛。'),
-  file='W34_圖卡4_高溫防護入基本法.png'),
+  file='W34_圖卡5_高溫防護入基本法.png'),
  dict(
-  theme='#2563EB', badges=[('司法', True), ('國安', False)], illu='gavel',
+  theme='#2E8B57', badges=[('能源', True), ('再生能源', False)], illu='solarpanel',
+  title='太陽能提前兩年達標：128 GWp',
+  subtitle='德國太陽能產業協會（BSW-Solar）8/20 公布；業界同時警告擴建轉折',
+  stats=[('128 GWp', '全德光電裝置容量'),
+         ('逾 600 萬套', '全德太陽能系統')],
+  bullets=[
+   ('達成了什麼', '德國太陽能產業協會（BSW-Solar）依聯邦網路局登記資料估算：全德光電容量突破 128 GWp，較法定目標提前兩年。'),
+   ('已經佔多少', '2025 年太陽能約佔德國淨發電量五分之一；2024 與 2025 年每年各新增約 17.5 GWp。'),
+   ('業界為何仍憂心', '協會警告政策框架調整恐造成「擴建轉折」；2030 年要達 215 GWp，往後每年需新增約 20 GWp。'),
+  ],
+  takeaway=('數據解讀', '達標提前兩年，但下一階段的年增量要求更高。對自用發電家戶而言，重點將轉向躉購費率與併網規則。'),
+  file='W34_圖卡6_太陽能提前達標.png'),
+ dict(
+  theme='#2563EB', badges=[('社會福利', True), ('家庭', False)], illu='mergebenefits',
+  title='三種給付併成一種：ifo 端出改革方案',
+  subtitle='勞工福利聯合會（AWO）委託研究 8/19 發表；屬智庫建議，尚未立法',
+  stats=[('3 合 1', '基本保障＋住房補貼＋兒童加給'),
+         ('32.2 萬人', '估可因此重返就業')],
+  bullets=[
+   ('要併哪三項', 'ifo 經濟研究所受德國勞工福利聯合會（AWO）委託提案：基本保障、住房補貼與兒童加給併為單一給付。'),
+   ('誰受益最多', '單親與多子女家庭。低所得級距家庭可支配所得平均年增 149 €，貧窮風險率自約 16% 再降 0.9 個百分點。'),
+   ('為何能拉高就業', '研究主持人 Blömer 指現制多項給付同時遞減、形同高邊際稅率；整併後估多出 18.8 萬個全職工時。'),
+  ],
+  takeaway=('方案解讀', '代價是國家每年多支出約 54 億歐元。這是智庫方案而非政府草案，仍未進入立法程序。'),
+  file='W34_圖卡7_社會給付三合一.png'),
+ dict(
+  theme='#C0392B', badges=[('司法', True), ('國安', False)], illu='gavel',
   title='俄羅斯破壞案宣判：1 年 3 個月',
   subtitle='斯圖加特高等邦法院 8/18：一人有罪、另兩名被告無罪',
   stats=[('1 年 3 個月', '唯一有罪者刑期'),
@@ -1129,8 +1261,8 @@ CARDS = [
    ('手法是什麼', '被告自德國寄出兩個內含 GPS 追蹤器的包裹測試貨運路線；下一步是運送途中會自燃的縱火裝置。'),
    ('為何刑度不高', '行動仍停留在準備階段，刑期已由審前羈押折抵、判決後不必再入監；另兩名被告無罪。'),
   ],
-  takeaway=('安全觀察', '俄羅斯情報機關近年多以社群媒體招募一次性的「拋棄式特工」，成本低又可切割。'),
-  file='W34_圖卡5_俄羅斯破壞案宣判.png'),
+  takeaway=('安全觀察', '俄羅斯情報機關近年多以社群媒體招募「拋棄式特務」，用完即切割、成本極低。'),
+  file='W34_圖卡8_俄羅斯破壞案宣判.png'),
 ]
 
 if __name__ == '__main__':
