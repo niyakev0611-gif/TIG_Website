@@ -1043,6 +1043,40 @@ def illu_solarpanel(d, R, S, cx, cy, theme):
     d.polygon(R(cx-56, cy+22, cx-24, cy-20, cx+52, cy-20, cx+20, cy+22),
               outline=OUTLINE, width=ow)
 
+def illu_evcharge(d, R, S, cx, cy, theme):
+    """電動車＋充電樁＋€ 金幣（電動車碳權／THG 配額變現）"""
+    ow = 5*S
+    _dots(d, R, cx, cy, ((-68, -44, 3, GOLD), (-30, -54, 3, tint(theme, 0.5)),
+                         (64, -46, 3, GOLD_D)))
+    d.ellipse(R(cx-70, cy+46, cx+40, cy+58), fill=tint(theme, 0.18))
+    # 充電樁（先畫，讓車身疊在前方分層）
+    d.rounded_rectangle(R(cx+38, cy-26, cx+66, cy+40), radius=8*S,
+                        fill=GOLD, outline=OUTLINE, width=ow)
+    d.rounded_rectangle(R(cx+45, cy-18, cx+59, cy-4), radius=3*S,
+                        fill='white', outline=OUTLINE, width=3*S)
+    # 充電線（樁 → 車身充電孔）
+    d.arc(R(cx+2, cy-4, cx+52, cy+34), start=270, end=30, fill=OUTLINE, width=4*S)
+    # 車身
+    d.polygon(R(cx-50, cy-6, cx-36, cy-34, cx+2, cy-34, cx+16, cy-6),
+              fill='white', outline=OUTLINE, width=ow)
+    d.polygon(R(cx-38, cy-10, cx-30, cy-27, cx-4, cy-27, cx-4, cy-10),
+              fill=tint(theme, 0.3))
+    d.rounded_rectangle(R(cx-72, cy-8, cx+24, cy+26), radius=13*S,
+                        fill=theme, outline=OUTLINE, width=ow)
+    # 焦點細節：車門上的閃電
+    d.polygon(R(cx-30, cy-2, cx-16, cy-2, cx-22, cy+8, cx-10, cy+8,
+                cx-28, cy+22, cx-24, cy+10, cx-34, cy+10),
+              fill=GOLD, outline=OUTLINE, width=2*S)
+    # 車輪
+    for wx in (cx-48, cx+2):
+        d.ellipse(R(wx-13, cy+18, wx+13, cy+44), fill=OUTLINE)
+        d.ellipse(R(wx-5, cy+26, wx+5, cy+36), fill='white')
+    # € 金幣（賣配額換到的錢）
+    ex, ey, er = cx-64, cy-30, 18
+    d.ellipse(R(ex-er, ey-er, ex+er, ey+er), fill=GOLD, outline=OUTLINE, width=ow)
+    d.ellipse(R(ex-er+6, ey-er+6, ex+er-6, ey+er-6), outline=GOLD_D, width=3*S)
+    draw_mixed(d, R(ex, ey-13), '\u20ac', 22*S, OUTLINE, bold=True, anchor='center')
+
 ILLUS = dict(podium=illu_podium, flags=illu_flags, coins=illu_coins,
              idcard=illu_idcard, camera=illu_camera, trophy=illu_trophy,
              bankcard=illu_bankcard, checklist=illu_checklist,
@@ -1057,7 +1091,7 @@ ILLUS = dict(podium=illu_podium, flags=illu_flags, coins=illu_coins,
              crane=illu_crane, mergebenefits=illu_mergebenefits,
              heatlaw=illu_heatlaw, gavel=illu_gavel,
              tornado=illu_tornado, wildfire=illu_wildfire,
-             solarpanel=illu_solarpanel)
+             solarpanel=illu_solarpanel, evcharge=illu_evcharge)
 
 # ── 版型 ────────────────────────────────────────────────────
 
