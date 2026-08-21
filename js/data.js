@@ -1624,9 +1624,9 @@ const POSTS = [
     slug: 'referral-codes-2026',
     title: '2026 歐洲德國 分享碼 回饋金 推薦碼 優惠碼 大匯集 Referral Link Promo Code',
     date: '2026-03-29',
-    updated: '2026-08-14',
+    updated: '2026-08-21',
     categories: ["來德生活必辦事項", "德國生活"],
-    tags: ["promo code", "referral link", "免費", "分享碼", "回饋金", "德國", "德國交通", "折扣碼", "推薦", "推薦碼", "旅遊", "自助", "銀行"],
+    tags: ["promo code", "referral link", "免費", "分享碼", "回饋金", "德國", "德國交通", "折扣碼", "推薦", "推薦碼", "旅遊", "自助", "銀行", "電動車", "THG-Quote", "碳權"],
     excerpt: '在這邊分享一下，我在德國經常使用的一些軟體跟服務，很多都可以有朋友介紹的回饋金，讓你在第一次使用註冊時也可以有些優惠哦！ 交通類 兩輪類(電動滑板車/電動腳踏車) Tier (e-scooter) 新註冊的可以有5次5折的優惠 LIME (…',
     emoji: '🎁',
     content: `<!-- wp:paragraph -->
@@ -1635,6 +1635,10 @@ const POSTS = [
 
 <!-- wp:paragraph -->
 <p class=""><strong>📌 2026/08/14 全面查核更新。</strong>推薦活動的金額與條件業者隨時在改，<strong>本頁只寫「有／沒有」與最近一次查到的條件，實際回饋一律以你點進去看到的當期活動頁為準</strong>——寫死的數字反而會害你白高興一場。這次查核已處理的異動：Tier 併入 Dott（附上新的 Dott 推薦碼）、Payback 的超市夥伴從 REWE 換成 Edeka、fraenk 資費升級、Tesla 推薦條件改制、McFIT 與 PayPal 推薦連結換新、Lime 漲到 5 €、Airbnb 房東獎金漲到 61 €、FreeNow 與 Peaks 換上新的推薦連結（首趟 5 折最高 10 €／10 € 起始投資金）、Taxfix 推薦連結移除（報稅軟體只留 SteuerBot）。<strong>本頁所有連結均於 2026/08/14 逐一實際開啟測試過。</strong></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p class=""><strong>📌 2026/08/21 新增一則：</strong>交通類多了「<strong>電動車碳權 THG-Quote</strong>」一節——這是德國法定的減碳配額交易制度，<strong>名下有純電動車就能每年領一筆（2026 年行情約 300–430 €）</strong>，只要上傳行照即可申請，和一般消費折扣碼性質不同，請往下看該節的完整說明。</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:heading -->
@@ -1697,6 +1701,60 @@ const POSTS = [
 
 <!-- wp:paragraph -->
 <p class=""><em>金額與方案 Tesla 隨時在調整，下訂前請以官網 <a href="https://www.tesla.com/support/refer-and-earn" target="_blank" rel="noreferrer noopener">Empfehlen und Verdienen</a> 頁面的當期條款為準。（查核日：2026/08/14）</em></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">電動車碳權 THG-Quote（Quotlix）——每年領一筆</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class=""><strong>🔋 我的 Quotlix 推薦連結：<a href="https://quotlix.de/r/125dcc3d" target="_blank" rel="noreferrer noopener">quotlix.de/r/125dcc3d</a></strong></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p class="">這個跟其他分享碼不太一樣：<strong>它不是消費折扣，而是「你的電動車每年可以幫你賺一筆錢」的德國法定制度</strong>。名字叫 <strong>THG-Quote</strong>（Treibhausgasminderungsquote，溫室氣體減量配額），法源是《聯邦污染防制法》<a href="https://www.gesetze-im-internet.de/bimschg/__37a.html" target="_blank" rel="noreferrer noopener">§ 37a BImSchG</a> 與<a href="https://www.gesetze-im-internet.de/bimschv_38_2017/" target="_blank" rel="noreferrer noopener">第 38 號行政命令（38. BImSchV）</a>。</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p class=""><strong>制度怎麼運作</strong>：德國法律規定，賣汽柴油的石油業者每年必須把自家燃料的溫室氣體排放降到一定比例（2026 年的義務比例約 <strong>12%</strong>，並將逐年調高）。他們自己減不動，就得向「有減碳成績的人」買配額。而純電動車車主每年的用電量，可以向<strong>聯邦環境署（Umweltbundesamt，UBA）</strong>申請認證成一份減碳量，再賣給石油業者——這就是為什麼你什麼都不用做，光是「名下有一輛電動車」，每年就能換到一筆現金。Quotlix 這類業者做的是中間人：幫你送 UBA 申請、把認證後的配額拿去市場上賣，抽一手價差。</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul class="wp-block-list"><!-- wp:list-item -->
+<li class=""><strong>誰可以領</strong>：<strong>Zulassungsbescheinigung Teil I（行照）上登記的車主（Halter）</strong>本人。租賃車（Leasing）只要行照上寫的是你，你就能領；公司車則歸公司。</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li class=""><strong>哪些車可以</strong>：<strong>純電動車（BEV）</strong>，含電動機車／速可達（L 類，時速須逾 45 km/h）、電動商用車、電動巴士，以及<strong>公共充電樁營運者</strong>。<strong>插電式混合動力（PHEV）不能領</strong>，免掛牌的電動滑板車、電動自行車也不行。</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li class=""><strong>要交什麼</strong>：<strong>只要行照（Teil I）拍一張照</strong>上傳，沒了。不用電費單、不用回報里程。</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li class=""><strong>頻率與期限</strong>：<strong>每輛車每年一次，且必須重新申請</strong>（不會自動續約）。UBA 受理期限是每年 <strong>11 月 15 日</strong>，但業者要留作業時間，<strong>實務上請在 10 月底前送出</strong>。</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li class=""><strong>錢多久到</strong>：選「立即撥款」方案通常幾個工作天入帳；走市場價的方案要等 UBA 認證，實務上約半年。</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li class=""><strong>要不要繳稅</strong>：<strong>私人車主收到的 THG 獎金免稅</strong>（屬於非課稅的私人財產處分）。但如果車登記在公司或自營業者名下，就要計入營業收入。</li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list -->
+
+<!-- wp:paragraph -->
+<p class=""><strong>2026 年行情</strong>：一般電動小客車大約在 <strong>300–430 €</strong> 之間，差別在於你選哪一種方案——<strong>保證金額（Garantieprämie）</strong>先講好多少就是多少；<strong>浮動方案（Flexprämie）</strong>賭市場價格，可能更高也可能更低。配額價格是會波動的：2022 年一度上看 400 €、2024 年秋天曾跌破 100 €，2026 年因為法定義務比例調高而回到 300 € 上下。<strong>Quotlix 2026/08 的公告方案</strong>：電動小客車保證 <strong>300 €</strong>、立即撥款 <strong>250 €</strong>、浮動方案約 340 €；電動商用車（N1）450 € 起。</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p class=""><strong>誠實揭露推薦獎勵</strong>：Quotlix 的推薦方案是<strong>推薦人（我）每成功推薦一位車主拿 15 €</strong>；被推薦人拿的是自己那台車的 THG 獎金，推薦頁上<strong>沒有寫給新用戶額外的加碼</strong>——所以請用「反正都要領、順手幫我一把」的心態使用，不必為了推薦碼放棄更好的方案。<strong>每年重新申請時記得比價</strong>（ADAC、Verivox、Finanztip 都有年度業者比較），哪家高就領哪家，配額本來就是一年一約。</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p class=""><em>選業者的兩個地雷：（1）看清楚<strong>讓與期間（Abtretungszeitraum）</strong>——有些合約一次綁 2 年，等於你明年不能改投別家；（2）保證金額聽起來安全，但遇到市場行情走高時會少賺，兩種都合理，看你想不想賭。（查核日：2026/08/21）</em></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:heading {"level":3} -->
