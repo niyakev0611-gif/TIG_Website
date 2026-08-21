@@ -18,7 +18,7 @@ DATE_RANGE = '2026'
 CARDS = [
  dict(
   theme='#2E8B57', badges=[('省錢攻略', True), ('每年可領', False)], illu='evcharge',
-  title='電動車每年白領 300–430 €',
+  title='電動車每年免費領 300–430 €',
   subtitle='THG-Quote 溫室氣體減量配額｜上傳行照就能申請的法定制度',
   stats=[('300–430 €', '2026 年純電小客車行情'),
          ('11/15', '每年申請截止日')],
