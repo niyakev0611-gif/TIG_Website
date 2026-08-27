@@ -8,13 +8,15 @@ const POSTS = [
     date: '2026-07-19',
     categories: ['德國生活'],
     tags: ['Visa', 'Cashback', '現金回饋', '省錢', '信用卡', '金融卡', '德國生活'],
-    excerpt: 'Visa Bonus 夏季活動 7/7–9/1：用德國發行的 Visa 卡在德國以外消費（含國外網購），單筆 75 € 以內回饋 2%、每人上限 15 €。誰能參加、哪些卡被排除（Prepaid／V PAY／Klarna）、N26 與 BBVA 為何不行、怎麼兩分鐘完成註冊——版主實測＋官方截圖一次整理。',
+    excerpt: 'Visa Bonus 夏季活動 7/7–9/1（9/1 截止，秋季網購檔 9/15–11/15 接力）：用德國發行的 Visa 卡在德國以外消費（含國外網購），單筆 75 € 以內回饋 2%、每人上限 15 €。誰能參加、哪些卡被排除（Prepaid／V PAY／Klarna）、N26 與 BBVA 為何不行、怎麼兩分鐘完成註冊——版主實測＋官方截圖一次整理。',
 
     emoji: '💳',
     content: `
 <p class="post-meta-line"><em>德國知識小種子｜2026.07.19 發表 · 省錢情報</em></p>
 
 <p>暑假出國旺季，Visa 在德國推出官方回饋計畫「<strong>Visa Bonus</strong>」的夏季檔活動：<strong>7/7–9/1 期間，在德國以外用 Visa 卡消費（含國外網購）回饋 2% 現金</strong>，每人最多拿 15 €。不用抽獎、不用消費門檻，註冊一次之後的檔期都能一鍵參加——但有幾個容易踩雷的細節（單筆上限、排除卡種），這篇一次整理清楚，附版主實測註冊截圖。</p>
+
+<p class="post-callout"><strong>📌 2026/08/23 時效提醒：</strong>夏季海外檔（International｜Sommer 2026）<strong>9 月 1 日 23:59 就結束</strong>，只剩不到兩週；而且 50 萬歐元總預算是全體參加者共用，<strong>用完會提前結束</strong>，想拿的別再拖。還沒出國、或想留到網購再用的人，<strong>現在照樣先把註冊做完</strong>——接下來的秋季線上購物檔（Online bezahlen｜Herbst 2026，<strong>9/15–11/15</strong>）只要在後台一鍵啟用就能參加，不必重填一次資料。</p>
 
 <nav class="post-toc" aria-label="本篇目錄">
   <p class="post-toc__title">快速跳轉</p>
@@ -53,10 +55,10 @@ const POSTS = [
 <h3 id="cards-reco">手上沒有合適的 Visa？兩張免年費的卡可以考慮</h3>
 <ul>
   <li><strong>Revolut</strong>（卡片以 Visa 為主，依卡面標誌為準）：免年費、換匯超強，版主的<a href="/posts/german-bank-recommendation.html">旅遊換匯首選</a>。用<a href="https://revolut.com/referral/?referral-code=kevinaxzg!JUL2-26-AR-TR5DDH2-H2&amp;geo-redirect" target="_blank" rel="noopener noreferrer">版主邀請連結</a>註冊並完成指定任務，還能領邀請活動獎勵（Kunden werben Kunden，金額與條件依當期活動為準）。提醒：Visa Bonus 條款要求「德國市場發行」的卡，Revolut 綁定時以官方後台是否接受為準。</li>
-  <li><strong>Amazon Visa</strong>（Zinia／Santander 集團發行，德國市場 Visa 信用卡）：永久免年費，Amazon.de 購物 1% 點數回饋；開卡禮（Startgutschrift）不定期最高 50 €——Prime 會員拿高檔、非 Prime 約 10 €，以申辦頁當期金額為準。版主查證註：Amazon Visa 目前<strong>沒有</strong>「介紹新客戶」（KWK）活動，只有自己的開卡禮。</li>
+  <li><strong>Amazon Visa</strong>（Openbank Pay 發行，即原本的 Zinia——Santander 集團自 2026 年 2 月 19 日起改用此品牌；德國市場 Visa 信用卡）：永久免年費，Amazon.de 購物 1% 點數回饋；開卡禮（Startgutschrift）不定期最高 50 €——Prime 會員拿高檔、非 Prime 約 10 €，以申辦頁當期金額為準。版主查證註：Amazon Visa 目前<strong>沒有</strong>「介紹新客戶」（KWK）活動，只有自己的開卡禮。</li>
 </ul>
 <p>更多開戶與服務的迎新回饋，整理在<a href="/posts/referral-codes-2026.html">2026 分享碼／回饋金大匯集</a>（Revolut 邀請連結已同步更新為當期活動版本）。</p>
-<p class="post-sources">📚 來源：<a href="https://www.visa.de/bonus/terms-and-conditions/crossborder/july.html" target="_blank" rel="noopener noreferrer">官方活動條款</a> · <a href="https://www.bbva.de/privat/produkte/karten/debitkarte.html" target="_blank" rel="noopener noreferrer">BBVA 德國官網（Debitkarte 為 Mastercard）</a> · <a href="https://www.zinia.de/amazon" target="_blank" rel="noopener noreferrer">Zinia｜Amazon Visa 官方頁</a> · <a href="https://www.finanztip.de/kreditkarten/amazon-visa-karte/" target="_blank" rel="noopener noreferrer">Finanztip｜Amazon Visa 評測</a></p>
+<p class="post-sources">📚 來源：<a href="https://www.visa.de/bonus/terms-and-conditions/crossborder/july.html" target="_blank" rel="noopener noreferrer">官方活動條款</a> · <a href="https://www.bbva.de/privat/produkte/karten/debitkarte.html" target="_blank" rel="noopener noreferrer">BBVA 德國官網（Debitkarte 為 Mastercard）</a> · <a href="https://www.openbankpay.com/de/amazon/" target="_blank" rel="noopener noreferrer">Openbank Pay｜Amazon Visa 官方頁</a> · <a href="https://www.finanztip.de/kreditkarten/amazon-visa-karte/" target="_blank" rel="noopener noreferrer">Finanztip｜Amazon Visa 評測</a></p>
 
 <img src="assets/images/2026/visa/VisaBonus2026_官網2_活動方案.png" alt="Visa Bonus 官方活動總覽截圖：夏季 International 檔與秋季 Online bezahlen 檔">
 <h2 id="campaigns">官方檔期：夏季海外＋秋季網購</h2>
@@ -408,7 +410,6 @@ const POSTS = [
 <h3>2026/04/16 記者會當日 / 隔日報導</h3>
 <ul>
 <li>Tagesspiegel：<a href="https://www.tagesspiegel.de/wirtschaft/2025-war-ein-schmerzhaftes-jahr-operativer-gewinn-bei-bosch-bricht-um-fast-die-halfte-ein-15200867.html" target="_blank" rel="noopener">„2025 war ein schmerzhaftes Jahr"（Hartung 原話頭條）</a></li>
-<li>Handelsblatt：<a href="https://www.handelsblatt.com/politik/deutschland/in-millionenhoehe-bosch-meldet-erstmals-seit-finanzkrise-verlust/100217530.html" target="_blank" rel="noopener">In Millionenhöhe: Bosch meldet erstmals seit Finanzkrise Verlust</a></li>
 <li>Schwäbische Zeitung：<a href="https://www.schwaebische.de/regional/baden-wuerttemberg/bosch-meldet-erstmals-seit-finanzkrise-verlust-4508910" target="_blank" rel="noopener">Bosch meldet nach längerer Zeit wieder Verlust</a></li>
 <li>STIMME.de：<a href="https://www.stimme.de/wirtschaft/baden-wuerttemberg/bosch-renningen-bilanzvorlage-2025-verlustzone-forschner-hartung-restrukturierung-mobility-art-5162897" target="_blank" rel="noopener">Bosch rutscht in Verlustzone</a></li>
 <li>Werkzeugforum：<a href="https://www.werkzeugforum.de/quo-vadis-bosch-pressekonferenz-2026-informiert/" target="_blank" rel="noopener">Quo vadis, Bosch?</a></li>
@@ -431,7 +432,7 @@ const POSTS = [
 
 <h3>Bosch 歷史虧損史料</h3>
 <ul>
-<li>Bosch 官方：<a href="https://www.bosch.com/stories/crises-in-the-companys-history/" target="_blank" rel="noopener">Crises in the company's history</a></li>
+<li>Bosch 官方：<a href="https://www.bosch.com/stories/bosch-during-crises/" target="_blank" rel="noopener">Crises in the company's history</a></li>
 <li><a href="https://www.encyclopedia.com/social-sciences-and-law/economics-business-and-labor/businesses-and-occupations/robert-bosch-gmbh" target="_blank" rel="noopener">Robert Bosch GmbH History（1989-1993 年度淨利數字）</a></li>
 </ul>
 
@@ -644,7 +645,7 @@ const POSTS = [
 <p><strong>同樣在 8 月 18 日，聯邦統計局公布第二季就業統計，數字本身不算劇烈，但裡頭藏著一個轉折訊號。</strong>2026 年第二季，德國境內就業人數約 <strong>4,570 萬人</strong>。經季節調整後，<strong>較前一季減少 5.3 萬人（-0.1%）</strong>；與去年同季相比，<strong>減少 21.2 萬人（-0.5%）</strong>，降幅明顯。</p>
 <p><strong>真正的新訊號在服務業。</strong>服務業就業較去年同季<strong>減少 2.7 萬人（-0.1%）</strong>。絕對值不大，但意義不小：這是<strong>新冠疫情以來服務業首次出現明顯下降</strong>。過去幾年德國製造業持續縮編、就業總量之所以還撐得住，靠的正是服務業吸收人力。這根支柱如果開始鬆動，勞動市場的緩衝就少了一層。</p>
 <p><strong>服務業內部的分化比總數更值得看。</strong>統計局把服務業拆開來看，兩個方向完全相反：<strong>公共服務、教育與醫療照護延續長期成長趨勢，年增 18.7 萬人（+1.5%）</strong>；<strong>貿易、運輸與餐旅住宿則再減 11.5 萬人（-1.1%）</strong>。也就是說，德國就業的成長幾乎全靠公共部門與照護體系撐著，而直接面對消費者的零售、物流與餐飲業持續失血——這與消費信心疲弱是同一件事的兩面：GfK 消費氣候指數八月仍在 <strong>-29.6 點</strong>的低檔，德國零售協會（HDE）消費氣壓計八月也下滑 0.59 點至 <strong>94.18 點</strong>。</p>
-<p><strong>對持工作居留的外籍工作者，這份統計有實務價值。</strong>德國的居留身分多半綁定僱傭關係，換工作、失業或轉業都會牽動居留條件，因此「哪一邊在擴編、哪一邊在縮編」不是抽象的經濟話題。目前的分界相當清楚：<strong>公部門、教育與醫療照護仍在擴編</strong>；<strong>餐旅、零售與運輸持續縮編</strong>。若正在考慮換工作，值得先確認新職缺落在哪一側，並預留失業時的居留緩衝期。📖 延伸閱讀：<a href="post.html?slug=permanent-residence-2026">2026 德國永居 vs 歐盟永居 懶人包</a>——永居的年資與社會保險條件，正是就業中斷時最先受影響的部分。</p>
+<p><strong>對持工作居留的外籍工作者，這份統計有實務價值。</strong>德國的居留身分多半綁定僱傭關係，換工作、失業或轉業都會牽動居留條件，因此「哪一邊在擴編、哪一邊在縮編」不是抽象的經濟話題。目前的分界相當清楚：<strong>公部門、教育與醫療照護仍在擴編</strong>；<strong>餐旅、零售與運輸持續縮編</strong>。若正在考慮換工作，值得先確認新職缺落在哪一側，並預留失業時的居留緩衝期。📖 延伸閱讀：<a href="/posts/permanent-residence-2026.html">2026 德國永居 vs 歐盟永居 懶人包</a>——永居的年資與社會保險條件，正是就業中斷時最先受影響的部分。</p>
 <p class="post-sources">📚 來源：<a href="https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/08/PD26_292_13321.html" target="_blank" rel="noopener noreferrer">Destatis：第二季就業統計（2026/08/18）</a> · <a href="https://www.presseportal.de/pm/32102/6335222" target="_blank" rel="noopener noreferrer">Presseportal：服務業就業自新冠以來首次明顯下降</a></p>
 
 <img src="assets/images/2026/weekly/W34_圖卡5_高溫防護入基本法.png" alt="德國高溫防護入基本法 YouGov民調65%贊成 環境部長Schneider 共同任務 聯盟黨反對 修憲三分之二多數">
@@ -696,7 +697,7 @@ const POSTS = [
 
 <img src="assets/images/2026/weekly/W33_圖卡2_早鳥退休金.png" alt="早鳥退休金 Frühstartrente 內閣 2026年8月12日通過草案 國家每月替6至18歲孩子存10歐元 資本市場退休帳戶">
 <h3>早鳥退休金：國家從孩子 6 歲起每月存 10 €，2027 年上路</h3>
-<p>聯邦內閣 8 月 12 日通過財政部長 <strong>Lars Klingbeil（SPD）</strong>提出的<strong>「早鳥退休金」（Frühstartrente）</strong>草案，這是本屆政府退休金改革的第二根支柱，目標是<strong>讓資本累積從童年就開始</strong>。<strong>制度怎麼運作</strong>：孩子<strong>滿 6 歲的當月起到 18 歲</strong>，聯邦每月撥 <strong>10 €</strong> 進一個<strong>孩子個人名下的資本市場退休帳戶（Altersvorsorgedepot）</strong>——一年 <strong>120 €</strong>、十二年合計 <strong>1,440 €</strong> 的公費本金，加上這段期間的市場報酬。<strong>領取資格只有一個硬條件</strong>：孩子的<strong>主要居所（Hauptwohnsitz）必須在德國</strong>——這代表<strong>持居留許可、報戶口在德國的外籍家庭子女同樣納入</strong>，不以國籍為門檻。<strong>什麼時候能動用</strong>：帳戶內的<strong>收益在給付前免稅</strong>，但這是不折不扣的「退休」商品——<strong>受補助的本金原則上要到 65 歲才能提領</strong>，不是教育基金，也不能拿來付大學學費或買房頭期款。<strong>父母不動作會怎樣</strong>：若家長沒有主動替孩子選定一個經認證的帳戶，錢會進入<strong>由德國聯邦銀行（Deutsche Bundesbank）集中代管的公辦投資</strong>作為預設方案。<strong>財政規模</strong>：聯邦財政部估算 <strong>2027 年補助支出約 1.98 億歐元</strong>，隨著逐年有更多孩子滿 6 歲而遞增，<strong>2030 年將達約 4.11 億歐元</strong>。<strong>上路時程</strong>：規劃 <strong>2027 年 1 月 1 日</strong>生效，並<strong>追溯適用至 2026 年 1 月 1 日</strong>，讓 2020 年出生、2026 年滿 6 歲的孩子不致落空。<strong>批評聲量不小，而且集中在同一件事——公平性</strong>：<strong>聯邦消費者保護協會（vzbv）</strong>警告這套設計可能<strong>製造新的社會不平等</strong>，因為<strong>父母沒有主動開戶的孩子一開始就處於劣勢</strong>；消保團體直言，<strong>「若只有錢夠多、又懂金融的家庭才能用滿制度潛力，早鳥退休金就會變成孩子的『兩級制退休金』」</strong>。<strong>教育效果也被打問號</strong>：制度原本主打「讓孩子從小認識資本市場」，但如果孩子根本不知道國家每月替他投了 10 €、也看不到自己帳戶的成長，這個立意就落空了。<strong>費用上限是技術戰場</strong>：草案對認證帳戶訂的年度費用天花板是<strong>低於 1%</strong>，消保團體要求收緊到 <strong>0.5%</strong>，理由是德國過去的國家補助型退休商品（如 Riester-Rente）正是被高費用吃掉報酬而失敗。<strong>巴登-符騰堡邦（Baden-Württemberg）消費者中心</strong>更進一步主張：<strong>聯邦銀行的集中式投資應該從一開始就是「標準方案」，而不是父母不作為時的備案</strong>。<strong>時程也有人不看好</strong>：由於子法規與招標採購都還沒到位，多位專家認為 <strong>2027 年 1 月 1 日準時上路並不現實</strong>；Klingbeil 對外宣傳時所用、關於孩子將累積出「六位數財富」的試算，也被財經媒體批評<strong>把長期報酬假設得過於樂觀、不夠嚴謹</strong>。<strong>對在德家庭的實質意義</strong>：這筆錢<strong>不需要自己出資也會有</strong>，但要拿到完整效益，家長得做一件事——<strong>在孩子滿 6 歲前後主動比較並選定一個低費用的認證帳戶</strong>，而不是放著讓它進預設方案（雖然預設方案未必較差，聯邦銀行版本費用反而可能最低）。制度細節在國會審議階段仍可能變動，建議等法案三讀後再做決定。📖 <strong>延伸閱讀</strong>：想先搞懂自己的德國退休金帳戶累積了多少，看<a href="post.html?slug=pension-certificate">德國養老退休金證明 Rentenversicherungsbeiträge 如何申請</a>；要開戶或比較銀行，可參考<a href="post.html?slug=german-bank-recommendation">2026 推薦的免付費德國銀行</a>。</p>
+<p>聯邦內閣 8 月 12 日通過財政部長 <strong>Lars Klingbeil（SPD）</strong>提出的<strong>「早鳥退休金」（Frühstartrente）</strong>草案，這是本屆政府退休金改革的第二根支柱，目標是<strong>讓資本累積從童年就開始</strong>。<strong>制度怎麼運作</strong>：孩子<strong>滿 6 歲的當月起到 18 歲</strong>，聯邦每月撥 <strong>10 €</strong> 進一個<strong>孩子個人名下的資本市場退休帳戶（Altersvorsorgedepot）</strong>——一年 <strong>120 €</strong>、十二年合計 <strong>1,440 €</strong> 的公費本金，加上這段期間的市場報酬。<strong>領取資格只有一個硬條件</strong>：孩子的<strong>主要居所（Hauptwohnsitz）必須在德國</strong>——這代表<strong>持居留許可、報戶口在德國的外籍家庭子女同樣納入</strong>，不以國籍為門檻。<strong>什麼時候能動用</strong>：帳戶內的<strong>收益在給付前免稅</strong>，但這是不折不扣的「退休」商品——<strong>受補助的本金原則上要到 65 歲才能提領</strong>，不是教育基金，也不能拿來付大學學費或買房頭期款。<strong>父母不動作會怎樣</strong>：若家長沒有主動替孩子選定一個經認證的帳戶，錢會進入<strong>由德國聯邦銀行（Deutsche Bundesbank）集中代管的公辦投資</strong>作為預設方案。<strong>財政規模</strong>：聯邦財政部估算 <strong>2027 年補助支出約 1.98 億歐元</strong>，隨著逐年有更多孩子滿 6 歲而遞增，<strong>2030 年將達約 4.11 億歐元</strong>。<strong>上路時程</strong>：規劃 <strong>2027 年 1 月 1 日</strong>生效，並<strong>追溯適用至 2026 年 1 月 1 日</strong>，讓 2020 年出生、2026 年滿 6 歲的孩子不致落空。<strong>批評聲量不小，而且集中在同一件事——公平性</strong>：<strong>聯邦消費者保護協會（vzbv）</strong>警告這套設計可能<strong>製造新的社會不平等</strong>，因為<strong>父母沒有主動開戶的孩子一開始就處於劣勢</strong>；消保團體直言，<strong>「若只有錢夠多、又懂金融的家庭才能用滿制度潛力，早鳥退休金就會變成孩子的『兩級制退休金』」</strong>。<strong>教育效果也被打問號</strong>：制度原本主打「讓孩子從小認識資本市場」，但如果孩子根本不知道國家每月替他投了 10 €、也看不到自己帳戶的成長，這個立意就落空了。<strong>費用上限是技術戰場</strong>：草案對認證帳戶訂的年度費用天花板是<strong>低於 1%</strong>，消保團體要求收緊到 <strong>0.5%</strong>，理由是德國過去的國家補助型退休商品（如 Riester-Rente）正是被高費用吃掉報酬而失敗。<strong>巴登-符騰堡邦（Baden-Württemberg）消費者中心</strong>更進一步主張：<strong>聯邦銀行的集中式投資應該從一開始就是「標準方案」，而不是父母不作為時的備案</strong>。<strong>時程也有人不看好</strong>：由於子法規與招標採購都還沒到位，多位專家認為 <strong>2027 年 1 月 1 日準時上路並不現實</strong>；Klingbeil 對外宣傳時所用、關於孩子將累積出「六位數財富」的試算，也被財經媒體批評<strong>把長期報酬假設得過於樂觀、不夠嚴謹</strong>。<strong>對在德家庭的實質意義</strong>：這筆錢<strong>不需要自己出資也會有</strong>，但要拿到完整效益，家長得做一件事——<strong>在孩子滿 6 歲前後主動比較並選定一個低費用的認證帳戶</strong>，而不是放著讓它進預設方案（雖然預設方案未必較差，聯邦銀行版本費用反而可能最低）。制度細節在國會審議階段仍可能變動，建議等法案三讀後再做決定。📖 <strong>延伸閱讀</strong>：想先搞懂自己的德國退休金帳戶累積了多少，看<a href="/posts/pension-certificate.html">德國養老退休金證明 Rentenversicherungsbeiträge 如何申請</a>；要開戶或比較銀行，可參考<a href="/posts/german-bank-recommendation.html">2026 推薦的免付費德國銀行</a>。</p>
 <p class="post-sources">📚 來源：<a href="https://www.bundesfinanzministerium.de/Content/DE/Pressemitteilungen/Finanzpolitik/2026/08/2026-08-12-regierungsentwurf-fruehstartrente.html" target="_blank" rel="noopener noreferrer">聯邦財政部新聞稿：內閣通過早鳥退休金政府草案（2026/08/12）</a>｜<a href="https://www.deutsche-rentenversicherung.de/DRV/DE/Ueber-uns-und-Presse/Presse/Meldungen/2026/260813_fruehstartrente" target="_blank" rel="noopener noreferrer">德國法定退休保險（DRV）：內閣通過早鳥退休金法草案</a>｜<a href="https://www.zdfheute.de/politik/deutschland/fruehstart-rente-erklaerung-vorteile-eltern-kind-100.html" target="_blank" rel="noopener noreferrer">ZDFheute：早鳥退休金誰能受益</a>｜<a href="https://www.t-online.de/finanzen/ratgeber/altersvorsorge/altersvorsorgedepot/id_101378638/fruehstart-rente-verbraucherschuetzer-fordern-zentrale-aenderung.html" target="_blank" rel="noopener noreferrer">t-online：消費者保護團體要求關鍵修改</a></p>
 
 <img src="assets/images/2026/weekly/W33_圖卡3_高溫致死人數.png" alt="羅伯特科赫研究所RKI 2026年夏季高溫致死12500人 1992年統計以來最致命 75歲以上長者 高溫防護計畫">
@@ -746,7 +747,7 @@ const POSTS = [
 
 <img src="assets/images/2026/weekly/W32_圖卡5_假Merz辭職影片.png" alt="假 Merz 8/10 辭職影片 深偽 假訊息 商報 Handelsblatt 出面澄清 偽造網頁 EU AI 標示義務">
 <h3>假「Merz 8/10 辭職」影片流竄：《商報》出面打假</h3>
-<p>本週在德語網路圈流傳一支影片，標題是<strong>「內部 CDU 文件：Merz 8 月 10 日辭職」</strong>，內容宣稱根據《商報》（Handelsblatt）掌握的 CDU 黨內通信，總理 Friedrich Merz 計劃於 <strong>8 月 10 日</strong>宣布辭職。<strong>這支影片是偽造的。</strong>《商報》罕見地以「In eigener Sache（本報聲明）」形式公開澄清：<strong>該報手上並沒有這樣一份通信，也從未做過任何相關報導，影片中嵌入的所謂「商報網頁」是假的</strong>。<strong>為什麼要特別提醒</strong>：這則假訊息的傳播路徑很典型——原始影片被包裝成「權威財經媒體獨家」，再由一批俄語系內容農場網站以德語與英語同步轉載放大，形成「多家媒體都在報」的錯覺，最終流入社群與通訊軟體的轉傳鏈。實際上，只要到《商報》官網搜尋，就會發現根本沒有這篇報導。<strong>不是單一事件</strong>：《商報》本身也曾為文分析，指出網路上<strong>幾乎每天都會冒出總理的「假政策倡議」</strong>，目的在於削弱他與所屬政黨在新執政地位上的公信力；德新社事實查核（dpa-factchecking）過去也處理過以 Merz 為主角、被竄改成推銷「可持續收入來源」投資騙局的深偽（Deepfake）影片——換言之，同一套技術既被用來搞政治鬥爭，也被用來詐財。<strong>把兩件事放在一起看</strong>：本週稍早萊比錫機場的無人機事件，內政部長 Dobrindt 用的詞是「混合攻擊情境」，而假訊息正是混合戰的標準工具之一；兩則新聞看似無關，實則指向同一種壓力形式。<strong>查證提醒</strong>：看到「某某媒體獨家」的影片或截圖，最快的驗證方法是<strong>直接到該媒體官網搜尋原文標題</strong>——找不到就別轉傳。這也正是 <strong>8 月 2 日剛生效的 EU AI 法透明義務</strong>（AI 生成或大幅修改的影音圖文須明確標示，違者最高罰 1,500 萬歐元或全球年營收 3%，見上週 W31 的八月新制整理）想要處理的問題，只是法規上路到實際嚇阻仍有落差，讀者自身的查證習慣短期內仍是最可靠的防線。📖 延伸閱讀：<a href="post.html?slug=ebay-phishing">Ebay Kleinanzeigen 網路釣魚詐騙拆解</a>——同一套「偽造官方頁面博取信任」的手法，在購物詐騙裡早就用到爛熟，看過一次就不容易再上當。</p>
+<p>本週在德語網路圈流傳一支影片，標題是<strong>「內部 CDU 文件：Merz 8 月 10 日辭職」</strong>，內容宣稱根據《商報》（Handelsblatt）掌握的 CDU 黨內通信，總理 Friedrich Merz 計劃於 <strong>8 月 10 日</strong>宣布辭職。<strong>這支影片是偽造的。</strong>《商報》罕見地以「In eigener Sache（本報聲明）」形式公開澄清：<strong>該報手上並沒有這樣一份通信，也從未做過任何相關報導，影片中嵌入的所謂「商報網頁」是假的</strong>。<strong>為什麼要特別提醒</strong>：這則假訊息的傳播路徑很典型——原始影片被包裝成「權威財經媒體獨家」，再由一批俄語系內容農場網站以德語與英語同步轉載放大，形成「多家媒體都在報」的錯覺，最終流入社群與通訊軟體的轉傳鏈。實際上，只要到《商報》官網搜尋，就會發現根本沒有這篇報導。<strong>不是單一事件</strong>：《商報》本身也曾為文分析，指出網路上<strong>幾乎每天都會冒出總理的「假政策倡議」</strong>，目的在於削弱他與所屬政黨在新執政地位上的公信力；德新社事實查核（dpa-factchecking）過去也處理過以 Merz 為主角、被竄改成推銷「可持續收入來源」投資騙局的深偽（Deepfake）影片——換言之，同一套技術既被用來搞政治鬥爭，也被用來詐財。<strong>把兩件事放在一起看</strong>：本週稍早萊比錫機場的無人機事件，內政部長 Dobrindt 用的詞是「混合攻擊情境」，而假訊息正是混合戰的標準工具之一；兩則新聞看似無關，實則指向同一種壓力形式。<strong>查證提醒</strong>：看到「某某媒體獨家」的影片或截圖，最快的驗證方法是<strong>直接到該媒體官網搜尋原文標題</strong>——找不到就別轉傳。這也正是 <strong>8 月 2 日剛生效的 EU AI 法透明義務</strong>（AI 生成或大幅修改的影音圖文須明確標示，違者最高罰 1,500 萬歐元或全球年營收 3%，見上週 W31 的八月新制整理）想要處理的問題，只是法規上路到實際嚇阻仍有落差，讀者自身的查證習慣短期內仍是最可靠的防線。📖 延伸閱讀：<a href="/posts/ebay-phishing.html">Ebay Kleinanzeigen 網路釣魚詐騙拆解</a>——同一套「偽造官方頁面博取信任」的手法，在購物詐騙裡早就用到爛熟，看過一次就不容易再上當。</p>
 <p class="post-sources">📚 來源：<a href="https://www.handelsblatt.com/politik/deutschland/handelsblatt-in-eigener-sache-gefaelschtes-merz-video-im-umlauf/100245619.html" target="_blank" rel="noopener noreferrer">Handelsblatt｜本報聲明：偽造的 Merz 影片流傳中</a> · <a href="https://www.handelsblatt.com/politik/deutschland/desinformation-warum-es-ploetzlich-so-viele-fake-news-zu-kanzler-merz-gibt/100138265.html" target="_blank" rel="noopener noreferrer">Handelsblatt｜為何突然出現這麼多 Merz 假新聞</a> · <a href="https://dpa-factchecking.com/germany/250627-99-289731/" target="_blank" rel="noopener noreferrer">dpa 事實查核｜Merz 深偽影片遭用於投資詐騙</a></p>
 
 <img src="assets/images/2026/weekly/W32_圖卡6_AI內容標示義務.png" alt="EU AI 法第 50 條 AI 內容標示義務 8/2 生效 聊天機器人 深偽 機器可讀標記 聯邦網路局 BNetzA KI-MIG 罰則 1500 萬歐元">
@@ -756,7 +757,7 @@ const POSTS = [
 
 <img src="assets/images/2026/weekly/W32_圖卡7_六月工業訂單.png" alt="Destatis 六月工業訂單月增 3.1% 扣除大額訂單月減 0.5% 機械製造 12.7% 歐元區訂單減 14%">
 <h3>六月工業訂單月增 3.1%：表面亮眼，拆開看仍脆弱</h3>
-<p>聯邦統計局（Destatis）8 月 6 日公布六月製造業訂單數據，<strong>經季節與工作日調整後，實質訂單較五月成長 3.1%</strong>——這是個大幅超乎預期的數字，彭博（Bloomberg）調查的經濟學家原本只預期 <strong>0.5%</strong>、道瓊通訊社（Dow Jones Newswires）調查的預期為 <strong>0.7%</strong>，而且是<strong>連續第二個月優於預期</strong>。<strong>但關鍵的但書寫在同一份新聞稿裡</strong>：<strong>若不計大額訂單，六月訂單反而比前月減少 0.5%</strong>——換句話說，這次的成長幾乎完全由少數幾筆大單撐起，而大單具有一次性、波動大的性質，不能當成景氣趨勢的證據。<strong>分業看</strong>：成長主要來自<strong>機械製造（Maschinenbau）+12.7%</strong> 與<strong>資通訊、電子及光學產品 +22.7%</strong>，<strong>汽車業 +3.8%</strong> 亦有正面貢獻。<strong>依產品類別</strong>：資本財訂單月增 <strong>6.4%</strong>、消費財 <strong>+4.2%</strong>，但作為景氣領先訊號的<strong>中間財訂單則減少 2.5%</strong>。<strong>內外需的落差最值得警惕</strong>：<strong>國內訂單月增 7.8%，國外訂單卻僅增 0.2%</strong>；再拆開來看，<strong>來自歐元區的訂單大減 14.0%</strong>，全靠<strong>歐元區以外 +10.2%</strong> 才把海外整體拉回持平。歐元區是德國製造業最穩定的腹地市場，這個數字意味著鄰國需求正在明顯轉弱。<strong>怎麼讀這份數據</strong>：把三個訊號疊起來——拿掉大單即轉為負成長、中間財訂單下滑、歐元區需求塌陷——<strong>「德國工業已重回擴張」的結論言之過早</strong>。對照本週萊茵河低水位對化工與物流的實質衝擊，以及上週剛公布、優於預期的 Q2 GDP，德國經濟目前比較像是「數據面回穩、體感面仍緊」的階段。<strong>對讀者的實質意義</strong>：工業訂單是就業的領先指標，但傳導通常落後兩到三季；本週數據還不足以支撐「秋季就業市場明顯回暖」的期待，在製造業相關產業工作或求職的讀者，仍宜以保守情境規劃。📖 延伸閱讀：<a href="post.html?slug=bosch-2025-financial-report">140 歲德國工業巨擘全面失速中？Bosch 2025 財報深度解析</a>——想理解德國製造業這一輪的結構性壓力從哪來，這篇把一家指標企業拆給你看。</p>
+<p>聯邦統計局（Destatis）8 月 6 日公布六月製造業訂單數據，<strong>經季節與工作日調整後，實質訂單較五月成長 3.1%</strong>——這是個大幅超乎預期的數字，彭博（Bloomberg）調查的經濟學家原本只預期 <strong>0.5%</strong>、道瓊通訊社（Dow Jones Newswires）調查的預期為 <strong>0.7%</strong>，而且是<strong>連續第二個月優於預期</strong>。<strong>但關鍵的但書寫在同一份新聞稿裡</strong>：<strong>若不計大額訂單，六月訂單反而比前月減少 0.5%</strong>——換句話說，這次的成長幾乎完全由少數幾筆大單撐起，而大單具有一次性、波動大的性質，不能當成景氣趨勢的證據。<strong>分業看</strong>：成長主要來自<strong>機械製造（Maschinenbau）+12.7%</strong> 與<strong>資通訊、電子及光學產品 +22.7%</strong>，<strong>汽車業 +3.8%</strong> 亦有正面貢獻。<strong>依產品類別</strong>：資本財訂單月增 <strong>6.4%</strong>、消費財 <strong>+4.2%</strong>，但作為景氣領先訊號的<strong>中間財訂單則減少 2.5%</strong>。<strong>內外需的落差最值得警惕</strong>：<strong>國內訂單月增 7.8%，國外訂單卻僅增 0.2%</strong>；再拆開來看，<strong>來自歐元區的訂單大減 14.0%</strong>，全靠<strong>歐元區以外 +10.2%</strong> 才把海外整體拉回持平。歐元區是德國製造業最穩定的腹地市場，這個數字意味著鄰國需求正在明顯轉弱。<strong>怎麼讀這份數據</strong>：把三個訊號疊起來——拿掉大單即轉為負成長、中間財訂單下滑、歐元區需求塌陷——<strong>「德國工業已重回擴張」的結論言之過早</strong>。對照本週萊茵河低水位對化工與物流的實質衝擊，以及上週剛公布、優於預期的 Q2 GDP，德國經濟目前比較像是「數據面回穩、體感面仍緊」的階段。<strong>對讀者的實質意義</strong>：工業訂單是就業的領先指標，但傳導通常落後兩到三季；本週數據還不足以支撐「秋季就業市場明顯回暖」的期待，在製造業相關產業工作或求職的讀者，仍宜以保守情境規劃。📖 延伸閱讀：<a href="/posts/bosch-2025-financial-report.html">140 歲德國工業巨擘全面失速中？Bosch 2025 財報深度解析</a>——想理解德國製造業這一輪的結構性壓力從哪來，這篇把一家指標企業拆給你看。</p>
 <p class="post-sources">📚 來源：<a href="https://www.presseportal.de/pm/32102/6328142" target="_blank" rel="noopener noreferrer">Destatis 新聞稿｜六月製造業訂單 +3.1%、扣除大單 -0.5%</a> · <a href="https://www.destatis.de/DE/Themen/Wirtschaft/Konjunkturindikatoren/Auftragseingang/pgw310.html" target="_blank" rel="noopener noreferrer">Destatis｜工業訂單指標頁</a> · <a href="https://www.finanzen.ch/nachrichten/aktien/deutscher-auftragseingang-steigt-im-juni-um-3-1-prozent-1036418077" target="_blank" rel="noopener noreferrer">finanzen.ch｜六月訂單增 3.1%、遠優於預期</a></p>
 
 <hr>
@@ -776,17 +777,17 @@ const POSTS = [
 
 <img src="assets/images/2026/weekly/W31_圖卡3_Q2經濟與通膨.png" alt="Q2 GDP 季增 0.2% 優於預期 七月通膨 2.8% 能源 8.3% Destatis 7/30 Commerzbank 上調預測 1.0%">
 <h3>Q2 GDP 微增 0.2%、七月通膨回升 2.8%</h3>
-<p>7/30 是數據大日，聯邦統計局（Destatis）同日端出兩個方向相反的訊號。<strong>好消息先講：Q2 GDP 季增 0.2%、優於市場預期的 0.1%</strong>，經價格與日曆調整後年增 0.9%；<strong>Q1 成長並自 0.3% 上修至 0.4%</strong>——連兩季正成長，德國經濟的復甦腳步比多數機構預想的穩。Commerzbank 隨即把 2026 全年成長預測<strong>自 0.6% 上調至 1.0%</strong>，首席經濟學家直言「德國經濟的復甦比先前以為的更明顯」；不過多數經濟學家仍提醒，實質的成長加速要等到 2027 年。<strong>壞消息在物價</strong>：<strong>七月通膨初值 2.8%、高於預期的 2.7%，也是四月以來最高</strong>（六月為 2.3%）。最大推手是能源——中東緊張推升油價（W28 報導美伊停火破局、Brent 重回 78 美元上方），<strong>能源年漲幅自 3.4% 跳升至 8.3%</strong>。對照 W24 報導的 ECB 三年來首度升息，「通膨頑固、成長微溫」的組合等於坐實了法蘭克福的判斷。<strong>對讀者的意義</strong>：加油、暖氣與電費秋冬恐持續反映油價，家庭預算宜預留緩衝；另一方面景氣回穩對就業與加薪談判是遠水，短期別期待太多——詳見下一張卡的就業數據。📖 延伸閱讀：<a href="post.html?slug=german-tax-guide-2026">2026 德國報稅攻略</a>——物價升溫的年代，把該退的稅拿回來更重要。</p>
+<p>7/30 是數據大日，聯邦統計局（Destatis）同日端出兩個方向相反的訊號。<strong>好消息先講：Q2 GDP 季增 0.2%、優於市場預期的 0.1%</strong>，經價格與日曆調整後年增 0.9%；<strong>Q1 成長並自 0.3% 上修至 0.4%</strong>——連兩季正成長，德國經濟的復甦腳步比多數機構預想的穩。Commerzbank 隨即把 2026 全年成長預測<strong>自 0.6% 上調至 1.0%</strong>，首席經濟學家直言「德國經濟的復甦比先前以為的更明顯」；不過多數經濟學家仍提醒，實質的成長加速要等到 2027 年。<strong>壞消息在物價</strong>：<strong>七月通膨初值 2.8%、高於預期的 2.7%，也是四月以來最高</strong>（六月為 2.3%）。最大推手是能源——中東緊張推升油價（W28 報導美伊停火破局、Brent 重回 78 美元上方），<strong>能源年漲幅自 3.4% 跳升至 8.3%</strong>。對照 W24 報導的 ECB 三年來首度升息，「通膨頑固、成長微溫」的組合等於坐實了法蘭克福的判斷。<strong>對讀者的意義</strong>：加油、暖氣與電費秋冬恐持續反映油價，家庭預算宜預留緩衝；另一方面景氣回穩對就業與加薪談判是遠水，短期別期待太多——詳見下一張卡的就業數據。📖 延伸閱讀：<a href="/posts/german-tax-guide-2026.html">2026 德國報稅攻略</a>——物價升溫的年代，把該退的稅拿回來更重要。</p>
 <p class="post-sources">📚 來源：<a href="https://www.destatis.de/EN/Press/2026/07/PE26_269_811.html" target="_blank" rel="noopener noreferrer">Destatis｜Q2 GDP +0.2%</a> · <a href="https://www.destatis.de/EN/Press/2026/07/PE26_270_611.html" target="_blank" rel="noopener noreferrer">Destatis｜七月通膨初值 2.8%</a> · <a href="https://uk.finance.yahoo.com/news/german-economy-grows-0-2-080547545.html" target="_blank" rel="noopener noreferrer">Reuters/Yahoo｜Commerzbank 上調預測</a> · <a href="https://www.fxstreet.com/news/german-flash-q2-gdp-rises-02-beats-01-estimates-202607300802" target="_blank" rel="noopener noreferrer">FXStreet｜優於預期</a> · <a href="https://tradingeconomics.com/germany/inflation-cpi/news/571245" target="_blank" rel="noopener noreferrer">Trading Economics｜能源推升通膨</a></p>
 
 <img src="assets/images/2026/weekly/W31_圖卡4_失業重返300萬.png" alt="七月失業 300.7 萬人 失業率 6.4% 聯邦勞工局 BA 新聞稿第 30 號 季節性 就業市場疲弱">
 <h3>失業人數重返 300 萬：季節性攀升、基調仍疲弱</h3>
-<p>就業市場的數字沒有跟上 GDP 的驚喜。<strong>聯邦勞工局（Bundesagentur für Arbeit）7/31 公布（BA 新聞稿第 30 號）：七月失業人數較六月增加 7.1 萬、達 300.7 萬人，失業率上升 0.2 個百分點至 6.4%</strong>。<strong>先別慌——七月向來如此</strong>：暑休與畢業季讓企業暫緩招聘、應屆畢業生湧入登記，失業人數每年七月例行走高；<strong>經季節調整後僅增 6 千人</strong>，四月失業人數也曾短暫站上 300 萬（約 300.8 萬）。<strong>但基調確實偏弱</strong>：失業人數較去年同期多 2.8 萬、失業率年增 0.1 個百分點，勞工局理事 Terzenbach 在紐倫堡（Nürnberg）記者會直言，就業市場「延續近幾個月的疲弱走勢」。<strong>為何與 GDP 背離</strong>：就業是落後指標——企業要先確認訂單回穩，才會重啟招聘，復甦傳導到就業市場通常再晚兩、三季；本週 Q2 GDP 的正向訊號，最快也要到冬季才可能反映在職缺上。<strong>對在德求職者的建議</strong>：整體職缺偏緊，但 IT、護理與技術職種的缺工結構未變，鎖定缺工職業勝率更高；在職者轉職前留意新職試用期（Probezeit）內的解僱風險與失業保險（ALG I）請領條件。📖 延伸閱讀：<a href="post.html?slug=permanent-residence-2026">2026 德國永居 vs 歐盟永居 懶人包</a>——職涯有風浪，永居身分是最重要的壓艙石，條件符合就別拖。</p>
+<p>就業市場的數字沒有跟上 GDP 的驚喜。<strong>聯邦勞工局（Bundesagentur für Arbeit）7/31 公布（BA 新聞稿第 30 號）：七月失業人數較六月增加 7.1 萬、達 300.7 萬人，失業率上升 0.2 個百分點至 6.4%</strong>。<strong>先別慌——七月向來如此</strong>：暑休與畢業季讓企業暫緩招聘、應屆畢業生湧入登記，失業人數每年七月例行走高；<strong>經季節調整後僅增 6 千人</strong>，四月失業人數也曾短暫站上 300 萬（約 300.8 萬）。<strong>但基調確實偏弱</strong>：失業人數較去年同期多 2.8 萬、失業率年增 0.1 個百分點，勞工局理事 Terzenbach 在紐倫堡（Nürnberg）記者會直言，就業市場「延續近幾個月的疲弱走勢」。<strong>為何與 GDP 背離</strong>：就業是落後指標——企業要先確認訂單回穩，才會重啟招聘，復甦傳導到就業市場通常再晚兩、三季；本週 Q2 GDP 的正向訊號，最快也要到冬季才可能反映在職缺上。<strong>對在德求職者的建議</strong>：整體職缺偏緊，但 IT、護理與技術職種的缺工結構未變，鎖定缺工職業勝率更高；在職者轉職前留意新職試用期（Probezeit）內的解僱風險與失業保險（ALG I）請領條件。📖 延伸閱讀：<a href="/posts/permanent-residence-2026.html">2026 德國永居 vs 歐盟永居 懶人包</a>——職涯有風浪，永居身分是最重要的壓艙石，條件符合就別拖。</p>
 <p class="post-sources">📚 來源：<a href="https://www.presseportal.de/pm/6776/6324915" target="_blank" rel="noopener noreferrer">BA 新聞稿第 30 號｜七月就業市場</a> · <a href="https://handelsblatt.com/politik/konjunktur/arbeitsmarkt-zahl-der-arbeitslosen-steigt-im-juli-auf-ueber-drei-millionen/100243363.html" target="_blank" rel="noopener noreferrer">Handelsblatt｜失業破 300 萬</a> · <a href="https://www.zdfheute.de/wirtschaft/arbeitslose-bundesagentur-fuer-arbeit-juli-100.html" target="_blank" rel="noopener noreferrer">ZDF｜數據解析</a></p>
 
 <img src="assets/images/2026/weekly/W31_圖卡5_八月新制.png" alt="八月新制 2026 小一課後照顧法定權利 Ganztagsbetreuung AI 內容標示義務 8/2 BahnBonus 動態點數 太陽能躉購調降">
 <h3>八月新制：課後照顧入法、AI 內容強制標示</h3>
-<p>月初照例整理新制，八月這批對家庭與數位產業影響最大。<strong>（1）小一課後照顧成法定權利</strong>：<strong>8/1 起，小學一年級新生依法享有每週 5 天、每日 8 小時的課後照顧（Ganztagsbetreuung）</strong>，法源為《社會法典》第八編（SGB VIII）第 24 條第 4 項，且不以父母就業狀況為前提；此後逐年往上擴一個年級、<strong>2029/30 學年起涵蓋全體小學生</strong>。聯邦為此投入最高 35 億歐元基礎建設經費、2030 年起每年再補助 13 億歐元營運費。教育界提醒各邦人力與場地缺口仍大，家長宜及早向學校或青少年局（Jugendamt）確認名額。<strong>（2）AI 內容標示義務</strong>：<strong>EU AI 法（AI Act）的透明義務 8/2 起適用</strong>——與 AI 系統互動（如聊天機器人）須讓使用者知情，AI 生成或大幅修改的影音、圖片與文字須明確標示；<strong>違者最高可罰 1,500 萬歐元或全球年營收 3%</strong>，德國由聯邦網路局（Bundesnetzagentur）主管，8/2 前已流通的既有內容有過渡期至 12/2。經營部落格、電商或社群內容的讀者，八月起請把「AI 產出物是否標示」納入合規清單。<strong>（3）德鐵 BahnBonus 改版</strong>：8/1 起點數兌換改「動態制」——早鳥、短程與離峰的 Sparpreis 免費票<strong>最低 750 點／1,250 點起兌換</strong>（原一律 1,000／1,500 點），但<strong>彈性（Flex）免費票自 2,000 點漲至 2,500 點（+25%）</strong>、來回票漲約 33%；座位預訂與艙等升級所需點數不變。<strong>（4）能源</strong>：新啟用屋頂太陽能的躉購費率（Einspeisevergütung）8/1 例行調降 1%——10 kWp 以下部分饋網自 7.78 降至 7.70 歐分/kWh、全額饋網自 12.34 降至 12.22 歐分/kWh，適用至 2027/1/31。另：8/12 起 EU 包裝新規（PPWR）部分條文生效，減塑與可回收要求逐步上路。📖 延伸閱讀：<a href="post.html?slug=deutschland-ticket">2026 德國交通月票 Deutschland-Ticket 訂閱與解約教學</a>——常搭區間車的你，63 歐元月票搭配 BahnBonus 集點更划算。</p>
+<p>月初照例整理新制，八月這批對家庭與數位產業影響最大。<strong>（1）小一課後照顧成法定權利</strong>：<strong>8/1 起，小學一年級新生依法享有每週 5 天、每日 8 小時的課後照顧（Ganztagsbetreuung）</strong>，法源為《社會法典》第八編（SGB VIII）第 24 條第 4 項，且不以父母就業狀況為前提；此後逐年往上擴一個年級、<strong>2029/30 學年起涵蓋全體小學生</strong>。聯邦為此投入最高 35 億歐元基礎建設經費、2030 年起每年再補助 13 億歐元營運費。教育界提醒各邦人力與場地缺口仍大，家長宜及早向學校或青少年局（Jugendamt）確認名額。<strong>（2）AI 內容標示義務</strong>：<strong>EU AI 法（AI Act）的透明義務 8/2 起適用</strong>——與 AI 系統互動（如聊天機器人）須讓使用者知情，AI 生成或大幅修改的影音、圖片與文字須明確標示；<strong>違者最高可罰 1,500 萬歐元或全球年營收 3%</strong>，德國由聯邦網路局（Bundesnetzagentur）主管，8/2 前已流通的既有內容有過渡期至 12/2。經營部落格、電商或社群內容的讀者，八月起請把「AI 產出物是否標示」納入合規清單。<strong>（3）德鐵 BahnBonus 改版</strong>：8/1 起點數兌換改「動態制」——早鳥、短程與離峰的 Sparpreis 免費票<strong>最低 750 點／1,250 點起兌換</strong>（原一律 1,000／1,500 點），但<strong>彈性（Flex）免費票自 2,000 點漲至 2,500 點（+25%）</strong>、來回票漲約 33%；座位預訂與艙等升級所需點數不變。<strong>（4）能源</strong>：新啟用屋頂太陽能的躉購費率（Einspeisevergütung）8/1 例行調降 1%——10 kWp 以下部分饋網自 7.78 降至 7.70 歐分/kWh、全額饋網自 12.34 降至 12.22 歐分/kWh，適用至 2027/1/31。另：8/12 起 EU 包裝新規（PPWR）部分條文生效，減塑與可回收要求逐步上路。📖 延伸閱讀：<a href="/posts/deutschland-ticket.html">2026 德國交通月票 Deutschland-Ticket 訂閱與解約教學</a>——常搭區間車的你，63 歐元月票搭配 BahnBonus 集點更划算。</p>
 <p class="post-sources">📚 來源：<a href="https://www.bundesregierung.de/breg-de/aktuelles/gesetzliche-neuregelungen-2448548" target="_blank" rel="noopener noreferrer">Bundesregierung｜八月新制總覽</a> · <a href="https://www.lehrer-online.de/aktuelles/aktuelle-nachrichten/news/na/rechtsanspruch-auf-ganztagsbetreuung-ab-august-2026-fuer-die-grundschule/" target="_blank" rel="noopener noreferrer">Lehrer-Online｜課後照顧法定權利</a> · <a href="https://www.ihk-nuernberg.de/meldungen/details/eu-ai-act-transparenz-und-kennzeichnungspflichten-ab-2-august" target="_blank" rel="noopener noreferrer">IHK Nürnberg｜AI 法透明義務</a> · <a href="https://www.haufe.de/recht/kanzleimanagement/kennzeichnungspflicht-fuer-ki-inhalte-gilt-ab-august-2026_222_681220.html" target="_blank" rel="noopener noreferrer">Haufe｜AI 標示義務與罰則</a> · <a href="https://www.t-online.de/leben/reisen/id_101332580/bahnbonus-neue-regeln-ab-august-2026-freifahrten-ab-750-punkten.html" target="_blank" rel="noopener noreferrer">t-online｜BahnBonus 新規</a> · <a href="https://www.t-online.de/heim-garten/aktuelles/id_101353222/einspeiseverguetung-sinkt-ab-1-august-das-aendert-sich-fuer-solar-besitzer.html" target="_blank" rel="noopener noreferrer">t-online｜太陽能躉購調降</a> · <a href="https://www.news.de/politik/859822761/neue-gesetze-im-august-2026-als-gesetzesaenderungen-aktuell-zum-1-8-26-was-aendert-sich-bei-der-deutschen-bahn-ganztagsbetreuung-solarstrom/1/" target="_blank" rel="noopener noreferrer">news.de｜八月新規總整理</a></p>
 
 <hr>
@@ -801,12 +802,12 @@ const POSTS = [
 
 <img src="assets/images/2026/weekly/W30_圖卡2_全職薪資中位數.png" alt="2025 德國全職月薪中位數 4217 歐元 聯邦勞工局 Entgeltatlas 性別差距 學歷 漢堡 梅克倫堡西波美拉尼亞">
 <h3>2025 全職月薪中位數 4,217 €：學歷落差近一倍</h3>
-<p>你的薪水在德國落在哪個位置？<strong>聯邦勞工局（Bundesagentur für Arbeit）7/20 發布 2025 年度薪資地圖（Entgeltatlas，BA 新聞稿第 27 號）</strong>，給出最新座標：<strong>全職、社會保險義務投保者的月薪中位數（稅前）升至 4,217 €</strong>，較 2024 年增加 <strong>203 €、成長 5.1%</strong>。<strong>三組落差值得細看</strong>：（1）<strong>性別</strong>——男性中位數 4,328 €、女性 4,019 €，差距 309 €、較前一年再縮小 37 €；值得注意的是，未經校正的性別薪資差距在東部（6%）明顯小於西部（11%），與東部女性全職比例高、就業連續性強有關；（2）<strong>學歷</strong>——無專業資格者中位數 3,133 €、有職業資格者 4,069 €、大學學歷者則達 6,146 €，一紙文憑帶來的差距接近一倍；（3）<strong>地域</strong>——收入最高在漢堡（Hamburg），最低在梅克倫堡-西波美拉尼亞（Mecklenburg-Vorpommern／MV）。<strong>怎麼讀這個數字</strong>：中位數代表「一半人高於、一半人低於」，比容易被少數高薪拉高的「平均薪資」更貼近多數人的真實處境；它算的是全職投保者，未涵蓋兼職與自僱。對跨海來德工作的讀者，這是評估一份 offer 是否合理的實用標尺——可再對照自己的職業別與所在邦別，看看落在哪一段。📖 延伸閱讀：<a href="post.html?slug=german-tax-guide-2026">2026 德國報稅攻略</a>——薪資到手後，別忘了年度報稅有機會退回一筆。</p>
+<p>你的薪水在德國落在哪個位置？<strong>聯邦勞工局（Bundesagentur für Arbeit）7/20 發布 2025 年度薪資地圖（Entgeltatlas，BA 新聞稿第 27 號）</strong>，給出最新座標：<strong>全職、社會保險義務投保者的月薪中位數（稅前）升至 4,217 €</strong>，較 2024 年增加 <strong>203 €、成長 5.1%</strong>。<strong>三組落差值得細看</strong>：（1）<strong>性別</strong>——男性中位數 4,328 €、女性 4,019 €，差距 309 €、較前一年再縮小 37 €；值得注意的是，未經校正的性別薪資差距在東部（6%）明顯小於西部（11%），與東部女性全職比例高、就業連續性強有關；（2）<strong>學歷</strong>——無專業資格者中位數 3,133 €、有職業資格者 4,069 €、大學學歷者則達 6,146 €，一紙文憑帶來的差距接近一倍；（3）<strong>地域</strong>——收入最高在漢堡（Hamburg），最低在梅克倫堡-西波美拉尼亞（Mecklenburg-Vorpommern／MV）。<strong>怎麼讀這個數字</strong>：中位數代表「一半人高於、一半人低於」，比容易被少數高薪拉高的「平均薪資」更貼近多數人的真實處境；它算的是全職投保者，未涵蓋兼職與自僱。對跨海來德工作的讀者，這是評估一份 offer 是否合理的實用標尺——可再對照自己的職業別與所在邦別，看看落在哪一段。📖 延伸閱讀：<a href="/posts/german-tax-guide-2026.html">2026 德國報稅攻略</a>——薪資到手後，別忘了年度報稅有機會退回一筆。</p>
 <p class="post-sources">📚 來源：<a href="https://www.presseportal.de/pm/6776/6317387" target="_blank" rel="noopener noreferrer">BA 新聞稿第 27 號｜2025 全職薪資明顯上升</a> · <a href="https://www.finanznachrichten.de/nachrichten-2026-07/69065650-entgelte-der-vollzeitbeschaeftigten-sind-im-jahr-2025-deutlich-gestiegen-ba-presseinfo-nr-27-007.htm" target="_blank" rel="noopener noreferrer">finanznachrichten｜性別、學歷、地域細項</a> · <a href="https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/04/PD26_113_621.html" target="_blank" rel="noopener noreferrer">Destatis｜2025 年中位年薪 54,066 €</a></p>
 
 <img src="assets/images/2026/weekly/W30_圖卡3_德鐵全站禁酒.png" alt="德國鐵路 Deutsche Bahn 5400 座車站全面禁酒 7/21 宣布 10 月中旬 柏林中央車站 基爾 布倫瑞克 例外罰則">
 <h3>德鐵 5,400 站全面禁酒：10 月中旬前分階段上路</h3>
-<p>經常搭火車的讀者請留意站內規則的改變。<strong>德國鐵路（Deutsche Bahn）7/21 在柏林宣布，將於全德 5,400 座車站全面禁止飲酒</strong>，分階段實施、<strong>至 10 月中旬前全國生效</strong>。<strong>直接導火線是 7/18（週五）傍晚一起幾乎奪命的意外</strong>：在一列由奧芬堡（Offenburg）開往卡爾斯魯厄（Karlsruhe）、行經巴登-符騰堡（Baden-Württemberg／BW）埃特林根-布魯赫豪森（Ettlingen-Bruchhausen）一帶的區間車上，一名 <strong>26 歲的德鐵保全</strong>因查票（Fahrscheinkontrolle）與一名 <strong>36 歲、疑似酒醉、有暴力前科且正在假釋中的男子</strong>爆發衝突；男子先辱罵、繼而出拳踹踢，保全在扭打中撞上車門，<strong>車門竟從門框被扯脫，保全在列車以約 120 公里時速行駛時墜出車外、一度命危</strong>（其後脫離生命危險）。<strong>案情仍在偵辦</strong>：加害者一度遭逮捕，但<strong>卡爾斯魯厄地方法院駁回檢方的羈押聲請（Haftbefehl）並將其釋放</strong>——法院認為監視器畫面對確切經過仍有疑點、當下既無重大犯罪嫌疑亦無逃亡之虞。這起「疑似酒醉乘客施暴、險釀命案」的事件，把德鐵近年反覆示警的「站區與車上與酒精相關的攻擊增加」推到臨界點，成為政策拍板的最後一根稻草。<strong>怎麼分階段</strong>：繼首波試辦站之後，<strong>9/1 起柏林中央車站（Berlin Hbf）、柏林 Gesundbrunnen、基爾（Kiel）與布倫瑞克（Braunschweig）率先無酒精化</strong>，10 月中旬前其餘車站全面跟進。<strong>例外與罰則</strong>：站內餐廳、酒吧等餐飲業者不在禁令範圍；旅客於密封行李中攜帶酒類仍然允許，被禁止的是「在站區內飲用」。違規者將先被驅離（Platzverweis），累犯則祭出禁足令（Hausverbot）。<strong>對讀者的實質影響</strong>：轉乘空檔想在月台或大廳小酌一杯的習慣得改一改，想喝可移步站內餐飲區；帶未開封的酒回家或送禮則完全不受影響。📖 延伸閱讀：<a href="post.html?slug=deutschland-ticket">Deutschland-Ticket 訂閱與解約教學</a>——常搭區間車與地方交通的你，一張月票通勤更省。</p>
+<p>經常搭火車的讀者請留意站內規則的改變。<strong>德國鐵路（Deutsche Bahn）7/21 在柏林宣布，將於全德 5,400 座車站全面禁止飲酒</strong>，分階段實施、<strong>至 10 月中旬前全國生效</strong>。<strong>直接導火線是 7/18（週五）傍晚一起幾乎奪命的意外</strong>：在一列由奧芬堡（Offenburg）開往卡爾斯魯厄（Karlsruhe）、行經巴登-符騰堡（Baden-Württemberg／BW）埃特林根-布魯赫豪森（Ettlingen-Bruchhausen）一帶的區間車上，一名 <strong>26 歲的德鐵保全</strong>因查票（Fahrscheinkontrolle）與一名 <strong>36 歲、疑似酒醉、有暴力前科且正在假釋中的男子</strong>爆發衝突；男子先辱罵、繼而出拳踹踢，保全在扭打中撞上車門，<strong>車門竟從門框被扯脫，保全在列車以約 120 公里時速行駛時墜出車外、一度命危</strong>（其後脫離生命危險）。<strong>案情仍在偵辦</strong>：加害者一度遭逮捕，但<strong>卡爾斯魯厄地方法院駁回檢方的羈押聲請（Haftbefehl）並將其釋放</strong>——法院認為監視器畫面對確切經過仍有疑點、當下既無重大犯罪嫌疑亦無逃亡之虞。這起「疑似酒醉乘客施暴、險釀命案」的事件，把德鐵近年反覆示警的「站區與車上與酒精相關的攻擊增加」推到臨界點，成為政策拍板的最後一根稻草。<strong>怎麼分階段</strong>：繼首波試辦站之後，<strong>9/1 起柏林中央車站（Berlin Hbf）、柏林 Gesundbrunnen、基爾（Kiel）與布倫瑞克（Braunschweig）率先無酒精化</strong>，10 月中旬前其餘車站全面跟進。<strong>例外與罰則</strong>：站內餐廳、酒吧等餐飲業者不在禁令範圍；旅客於密封行李中攜帶酒類仍然允許，被禁止的是「在站區內飲用」。違規者將先被驅離（Platzverweis），累犯則祭出禁足令（Hausverbot）。<strong>對讀者的實質影響</strong>：轉乘空檔想在月台或大廳小酌一杯的習慣得改一改，想喝可移步站內餐飲區；帶未開封的酒回家或送禮則完全不受影響。📖 延伸閱讀：<a href="/posts/deutschland-ticket.html">Deutschland-Ticket 訂閱與解約教學</a>——常搭區間車與地方交通的你，一張月票通勤更省。</p>
 <p class="post-sources">📚 來源：<a href="https://www.deutschebahn.com/de/presse/pressestart_zentrales_uebersicht/Deutsche-Bahn-Alkoholkonsumverbot-an-allen-Bahnhoefen-13980686" target="_blank" rel="noopener noreferrer">Deutsche Bahn 官方新聞稿</a> · <a href="https://www.lok-report.de/news/deutschland/verkehr/deutsche-bahn-alkoholkonsumverbot-an-allen-bahnhoefen.html" target="_blank" rel="noopener noreferrer">LOK Report｜實施範圍與時程</a> · <a href="https://borncity.com/news/alkoholverbot-deutsche-bahn-sperrt-getraenke-an-5-400-bahnhoefen/" target="_blank" rel="noopener noreferrer">borncity｜例外與罰則</a> · <a href="https://www.zdfheute.de/panorama/deutsche-bahn-zug-sicherheitsmann-streit-100.html" target="_blank" rel="noopener noreferrer">ZDF｜查票衝突、保全墜車</a> · <a href="https://www.nzz.ch/panorama/heftiger-angriff-auf-bahnmitarbeiter-verdaechtiger-auf-freiem-fuss-ld.10016172" target="_blank" rel="noopener noreferrer">NZZ｜嫌疑人獲釋、偵查續行</a></p>
 
 <img src="assets/images/2026/weekly/W30_圖卡4_護理保險改革.png" alt="德國護理保險改革 護理重整法 PNOG 225 億歐元缺口 保費 無子女加收 迷你工作納保 減負預算 照護津貼 Warken 7/29">
@@ -837,11 +838,11 @@ const POSTS = [
 <img src="assets/images/2026/weekly/W29_圖卡3_2027預算案.png" alt="2027 預算案 5554 億歐元支出 淨舉債 1187 億 國防 1097 億暴增 32.7% 勞動社會部 2015 億 利息 436 億">
 <h3>2027 預算案內閣拍板：5,554 億歐元史上新高，「安全優先」全靠舉債買單</h3>
 <p>國會夏休前，財政部長 Klingbeil（SPD）把明年的帳本端上了桌：<strong>內閣 7/6 通過 2027 年聯邦預算草案與至 2030 年的財政規劃</strong>，7/7 隨即送預算委員會說明，秋季進入國會審議、目標明年 1/1 如期生效。<strong>先看大數</strong>：核心預算支出 <strong>5,554 億歐元、較今年多 309 億（+5.9%）</strong>，是聯邦史上最大的一本預算；<strong>核心預算淨舉債 1,187 億歐元</strong>、比今年再多 207 億——若把國防與基礎建設的特別基金（Sondervermögen）算進來，<strong>2027 整體新債約 2,000 億歐元，且依規劃 2030 年將攀至 2,195 億歐元</strong>。<strong>錢往哪去</strong>：勞動與社會部以 2,015 億歐元續居各部會之冠；<strong>國防預算 1,097 億歐元、單年暴增 270 億（+32.7%）</strong>，正是 NATO「2035 前國防與安全支出達 GDP 5%」路線圖（W28 峰會報導）的直接兌現；第三大支出已是<strong>聯邦債務利息 436 億歐元</strong>——利息吃掉的錢比多數部會整年預算還多。<strong>批評來自四面八方</strong>：BDI 執行長 Gönner 批「支出與舉債的增幅令人警覺」、「坐擁破紀錄稅收與大規模舉債，仍端不出穩健的財政規劃」；Greenpeace 財政專家 Vargas 痛批把氣候與轉型基金（KTF）當提款機是「無恥的挪作他用」；德國聯邦軍人協會（DBWV）則從反方向背書——「國防不能靠黑零（schwarze Null）」。<strong>對讀者的意義</strong>：這本預算決定明年的稅、補貼與公共投資節奏；而利息與國防雙雙擠壓下，社福與投資科目的秋季攻防，將是下半年柏林最重要的政治戰場。</p>
-<p class="post-sources">📚 來源：<a href="https://www.bundesregierung.de/breg-en/news/2027-federal-budget-approved-2446070" target="_blank" rel="noopener noreferrer">Bundesregierung｜內閣通過 2027 預算</a> · <a href="https://esut.de/2026/07/meldungen/72572/entwurf-haushalt-2027-5554-milliarden-euro-ausgaben/" target="_blank" rel="noopener noreferrer">ESUT｜5,554 億歐元數字總覽</a> · <a href="https://www.zdfheute.de/politik/deutschland/klingbeil-haushalt-2027-schulden-100.html" target="_blank" rel="noopener noreferrer">ZDF｜Klingbeil 的舉債規劃</a> · <a href="https://www.handelsblatt.com/politik/deutschland/finanzen-kabinett-bringt-haushalt-auf-weg-warum-es-viel-kritik-gibt/100238067.html" target="_blank" rel="noopener noreferrer">Handelsblatt｜為何批評聲浪大</a> · <a href="https://www.bundestag.de/presse/hib/kurzmeldungen-1193844" target="_blank" rel="noopener noreferrer">Bundestag hib｜預算委員會說明</a> · <a href="https://www.dbwv.de/aktuelle-themen/blickpunkt/beitrag/kabinett-beschliesst-haushaltsentwurf-keine-verteidigung-mit-der-schwarzen-null" target="_blank" rel="noopener noreferrer">DBWV｜「國防不能靠黑零」</a></p>
+<p class="post-sources">📚 來源：<a href="https://www.bundesregierung.de/breg-en/news/2027-federal-budget-approved-2446070" target="_blank" rel="noopener noreferrer">Bundesregierung｜內閣通過 2027 預算</a> · <a href="https://esut.de/2026/07/meldungen/72572/entwurf-haushalt-2027-5554-milliarden-euro-ausgaben/" target="_blank" rel="noopener noreferrer">ESUT｜5,554 億歐元數字總覽</a> · <a href="https://www.zdfheute.de/politik/deutschland/klingbeil-haushalt-2027-schulden-100.html" target="_blank" rel="noopener noreferrer">ZDF｜Klingbeil 的舉債規劃</a> · <a href="https://www.zdfheute.de/politik/deutschland/haushalt-finanzplan-regierungsentwurf-kabinett-100.html" target="_blank" rel="noopener noreferrer">ZDF｜更多債務、更高支出與各界批評</a> · <a href="https://www.bundestag.de/presse/hib/kurzmeldungen-1193844" target="_blank" rel="noopener noreferrer">Bundestag hib｜預算委員會說明</a> · <a href="https://www.dbwv.de/aktuelle-themen/blickpunkt/beitrag/kabinett-beschliesst-haushaltsentwurf-keine-verteidigung-mit-der-schwarzen-null" target="_blank" rel="noopener noreferrer">DBWV｜「國防不能靠黑零」</a></p>
 
 <img src="assets/images/2026/weekly/W29_圖卡4_移民數位化法.png" alt="移民管理數位化法 MDWG 7/9 通過 eAT 指紋重複使用 7 年 續居留免再跑外事局 AZR 自動介接 2026/11 簽證改革">
 <h3>移民數位化法通過：續居留免再按指紋，「約不到 Termin」有解？</h3>
-<p>這條新聞對每一位持居留卡生活的讀者都是切身大事。<strong>聯邦議院 7/9 通過「移民管理數位化進階發展法」（Migrationsverwaltungsdigitalisierungsweiterentwicklungsgesetz，簡稱 MDWG）</strong>——名字拗口，內容卻非常實在：讓移民行政的資料流全面電子化、機關之間自動介接，替僱主、外事局（Ausländerbehörde）與當事人省下大量紙本與臨櫃流程。<strong>與你最相關的三件事</strong>：（1）<strong>生物特徵重複使用</strong>——申辦電子居留卡（eAT）時採集的指紋、照片與簽名將可儲存並重複使用，<strong>成人最長 7 年</strong>；也就是說，延長或換發居留時，原則上不必再為了按一次指紋專程約一次外事局的 Termin——對長期「一位難求」的大城市外事局，這是實打實的減負；（2）<strong>資料一次到位</strong>——身分文件、簽證申請紀錄等集中存入外國人中央登記冊（Ausländerzentralregister／AZR），機關間自動調閱、免重複繳件，生物特徵新規於公告翌日即生效；（3）<strong>時程</strong>——2026/11/1 起簽證申請流程與保證書（Verpflichtungserklärung）儲存改革上路，2028/5/1 起德語測驗、「Leben in Deutschland」與入籍測驗結果也將存入 AZR，入籍審查免再逐項送件。<strong>正反聲音</strong>：德國郡議會聯合會（Landkreistag）稱這是「近年最重要的法案之一」，移民行政早已不堪負荷；資料保護界與 Pro Asyl 則警告，AZR 正從外事登記冊質變為涵蓋幾乎所有非德國籍者的龐大資訊基礎設施，缺乏對應的保護閘門。<strong>對在德台灣人的意義</strong>：續簽省一趟外事局、文件免重複繳，是多年痛點的實質緩解；但個資集中也代表資料足跡變長——申辦時務必確認自己在 AZR 的資料正確，發現錯誤及早更正。📖 延伸閱讀：<a href="post.html?slug=permanent-residence-2026">2026 德國永居 vs 歐盟永居 懶人包</a>——打算長居的讀者，把永居條件一次看懂。</p>
+<p>這條新聞對每一位持居留卡生活的讀者都是切身大事。<strong>聯邦議院 7/9 通過「移民管理數位化進階發展法」（Migrationsverwaltungsdigitalisierungsweiterentwicklungsgesetz，簡稱 MDWG）</strong>——名字拗口，內容卻非常實在：讓移民行政的資料流全面電子化、機關之間自動介接，替僱主、外事局（Ausländerbehörde）與當事人省下大量紙本與臨櫃流程。<strong>與你最相關的三件事</strong>：（1）<strong>生物特徵重複使用</strong>——申辦電子居留卡（eAT）時採集的指紋、照片與簽名將可儲存並重複使用，<strong>成人最長 7 年</strong>；也就是說，延長或換發居留時，原則上不必再為了按一次指紋專程約一次外事局的 Termin——對長期「一位難求」的大城市外事局，這是實打實的減負；（2）<strong>資料一次到位</strong>——身分文件、簽證申請紀錄等集中存入外國人中央登記冊（Ausländerzentralregister／AZR），機關間自動調閱、免重複繳件，生物特徵新規於公告翌日即生效；（3）<strong>時程</strong>——2026/11/1 起簽證申請流程與保證書（Verpflichtungserklärung）儲存改革上路，2028/5/1 起德語測驗、「Leben in Deutschland」與入籍測驗結果也將存入 AZR，入籍審查免再逐項送件。<strong>正反聲音</strong>：德國郡議會聯合會（Landkreistag）稱這是「近年最重要的法案之一」，移民行政早已不堪負荷；資料保護界與 Pro Asyl 則警告，AZR 正從外事登記冊質變為涵蓋幾乎所有非德國籍者的龐大資訊基礎設施，缺乏對應的保護閘門。<strong>對在德台灣人的意義</strong>：續簽省一趟外事局、文件免重複繳，是多年痛點的實質緩解；但個資集中也代表資料足跡變長——申辦時務必確認自己在 AZR 的資料正確，發現錯誤及早更正。📖 延伸閱讀：<a href="/posts/permanent-residence-2026.html">2026 德國永居 vs 歐盟永居 懶人包</a>——打算長居的讀者，把永居條件一次看懂。</p>
 <p class="post-sources">📚 來源：<a href="https://www.bundestag.de/dokumente/textarchiv/2026/kw28-de-migrationsverwaltung-1194048" target="_blank" rel="noopener noreferrer">Bundestag｜7/9 表決紀錄</a> · <a href="https://www.bundesregierung.de/breg-de/aktuelles/digitalisierung-migrationsverwaltung-2399874" target="_blank" rel="noopener noreferrer">Bundesregierung｜法案說明</a> · <a href="https://www.bmi.bund.de/SharedDocs/gesetzgebungsverfahren/DE/MI6/mdwg.html" target="_blank" rel="noopener noreferrer">BMI｜立法程序文件</a> · <a href="https://migrando.de/en/news/politik/bundestag-beschliesst-neue-regeln-fuer-aufenthaltstitel-visa-und-einbuergerung/" target="_blank" rel="noopener noreferrer">migrando｜居留、簽證與入籍新規</a> · <a href="https://migrando.de/en/news/residence-permit/aufenthaltstitel-verlaengern-kuenftig-weniger-termine-bei-der-auslaenderbehoerde-notwendig/" target="_blank" rel="noopener noreferrer">migrando｜續簽免再跑外事局？</a> · <a href="https://www.migazin.de/2026/07/12/neues-gesetz-behoerden-azr-daten-kuenftig-automatisch/" target="_blank" rel="noopener noreferrer">MiGAZIN｜AZR 自動資料交換與疑慮</a></p>
 
 <img src="assets/images/2026/weekly/W29_圖卡5_聯邦警察法人臉辨識.png" alt="聯邦警察法改革 7/10 通過 車站機場即時人臉辨識 AI 行為分析 電信監控 GFF 違憲審查 聯邦參議院秋季表決">
@@ -851,7 +852,7 @@ const POSTS = [
 
 <img src="assets/images/2026/weekly/W29_圖卡6_世足決賽週.png" alt="世足決賽 西班牙對阿根廷 7/19 德國時間 21:00 MetLife ZDF 免費直播 準決賽西班牙 2:0 法國 阿根廷 2:1 英格蘭 季軍戰 7/18">
 <h3>世足壓軸週：西班牙 vs 阿根廷爭冠，週日 21 點 ZDF 開播</h3>
-<p>德國隊出局（W27 報導）擋不住世界盃走向高潮——<strong>決賽戲碼確定：歐國盃冠軍西班牙對決衛冕軍阿根廷</strong>。準決賽兩場各有看頭：<strong>西班牙 7/14 以 2:0 制伏法國</strong>，全場掌控節奏、被 sportschau 形容為「馴服」了法國的速度反擊；<strong>阿根廷 7/15 則在上半場 0:0 的僵局後連下兩城、2:1 逆轉英格蘭</strong>，英格蘭的世界盃冠軍夢再度停在最後一步前。<strong>接下來怎麼看球</strong>：（1）<strong>季軍戰</strong>——法國 vs 英格蘭，7/18（六）<strong>德國時間 23:00</strong> 在邁阿密硬石球場（Hard Rock Stadium）開踢，德國<strong>僅 MagentaTV（付費）轉播</strong>、ARD／ZDF 不播；（2）<strong>決賽</strong>——7/19（日）<strong>德國時間 21:00</strong> 在紐約都會區的東魯瑟福（East Rutherford）MetLife 球場登場，<strong>ZDF 自 19:30 起免費直播</strong>（電視、ZDF-Mediathek 與 sportstudio.de 同步），MagentaTV 提供 4K 版本、由 Wolff Fuss 主播；本屆並首度引入超級盃式的<strong>中場秀</strong>。<strong>看球提醒</strong>：週日 21 點開踢對在德觀眾相當友善，正好揪團；但若戰至延長與 PK，終場恐拖過午夜——週一要上班的讀者自行斟酌。無論結果，這都是「美加墨 48 隊新格局」的第一座冠軍——下屆 2030 就輪到歐洲（西葡摩洛哥）主辦了。📖 延伸閱讀：<a href="post.html?slug=world-cup-2026-special">2026 世界盃特別報導：德國爆冷、日本不敗、黑馬攪局</a>——回顧本屆小組賽的完整戰況解析。</p>
+<p>德國隊出局（W27 報導）擋不住世界盃走向高潮——<strong>決賽戲碼確定：歐國盃冠軍西班牙對決衛冕軍阿根廷</strong>。準決賽兩場各有看頭：<strong>西班牙 7/14 以 2:0 制伏法國</strong>，全場掌控節奏、被 sportschau 形容為「馴服」了法國的速度反擊；<strong>阿根廷 7/15 則在上半場 0:0 的僵局後連下兩城、2:1 逆轉英格蘭</strong>，英格蘭的世界盃冠軍夢再度停在最後一步前。<strong>接下來怎麼看球</strong>：（1）<strong>季軍戰</strong>——法國 vs 英格蘭，7/18（六）<strong>德國時間 23:00</strong> 在邁阿密硬石球場（Hard Rock Stadium）開踢，德國<strong>僅 MagentaTV（付費）轉播</strong>、ARD／ZDF 不播；（2）<strong>決賽</strong>——7/19（日）<strong>德國時間 21:00</strong> 在紐約都會區的東魯瑟福（East Rutherford）MetLife 球場登場，<strong>ZDF 自 19:30 起免費直播</strong>（電視、ZDF-Mediathek 與 sportstudio.de 同步），MagentaTV 提供 4K 版本、由 Wolff Fuss 主播；本屆並首度引入超級盃式的<strong>中場秀</strong>。<strong>看球提醒</strong>：週日 21 點開踢對在德觀眾相當友善，正好揪團；但若戰至延長與 PK，終場恐拖過午夜——週一要上班的讀者自行斟酌。無論結果，這都是「美加墨 48 隊新格局」的第一座冠軍——下屆 2030 就輪到歐洲（西葡摩洛哥）主辦了。📖 延伸閱讀：<a href="/posts/world-cup-2026-special.html">2026 世界盃特別報導：德國爆冷、日本不敗、黑馬攪局</a>——回顧本屆小組賽的完整戰況解析。</p>
 <p class="post-sources">📚 來源：<a href="https://www.sportschau.de/fussball/fifa-wm-2026/spanien-baendigt-frankreich-und-steht-im-wm-finale,wm-spielbericht-frankreich-spanien-100.html" target="_blank" rel="noopener noreferrer">sportschau｜西班牙 2:0 法國戰報</a> · <a href="https://www.news.de/sport/859751556/fussball-wm-2026-k-o-phase-ergebnisse-halbfinale-spiele-termine-aktuell-mit-england-argentinien-frankreich-spanien/1/" target="_blank" rel="noopener noreferrer">news.de｜準決賽結果總覽</a> · <a href="https://www.kicker.de/wm-finale-2026-datum-ort-tv-uebertragung-und-halbzeit-show-1236500/artikel" target="_blank" rel="noopener noreferrer">kicker｜決賽日期、場地與中場秀</a> · <a href="https://www.zdfheute.de/sport/fussball-wm/fussball-wm-2026-wer-uebertraegt-halbfinale-ard-zdf-100.html" target="_blank" rel="noopener noreferrer">ZDF｜決賽免費直播資訊</a> · <a href="https://www.sportschau.de/fussball/fifa-wm-2026/alle-infos-zum-spiel-um-platz-drei-der-fussball-wm-2026,wm2026-faq-spiel-um-platz-drei-100.html" target="_blank" rel="noopener noreferrer">sportschau｜季軍戰 FAQ</a> · <a href="https://ran.joyn.de/sports/fussball/wm/wm2026-frankreich-vs-england-alle-infos-zum-spiel-um-platz3-154466" target="_blank" rel="noopener noreferrer">ran｜季軍戰轉播資訊</a></p>
 
 <hr>
@@ -998,7 +999,7 @@ const POSTS = [
 <img src="assets/images/2026/weekly/W24_圖卡2_改革高峰會.png" alt="總理府改革高峰會空手而回 6/10 梅爾茨邀勞資高層夜談三小時無共識">
 <h3>總理府改革高峰會空手而回：年金、稅制、工時全卡關</h3>
 <p>6/10 晚間 7 點起，總理 Merz（CDU）與 CSU 黨魁 Söder、SPD 雙主席 Bas 與 Klingbeil，在總理府接待德國勞資兩邊的最高層：工會方有 DGB（德國工會聯合會）主席 Yasmin Fahimi、IG Metall 主席 Benner、Verdi 主席 Werneke；資方有雇主協會（BDA）主席 Dulger、工業聯合會（BDI）主席 Leibinger、工商總會（DIHK）主席 Adrian。議程直指德國最敏感的四塊：<strong>年金、所得稅與社會保險改革、勞動市場（含鬆綁八小時工時制）、官僚減量</strong>——聯盟自訂目標是 7 月中夏休前端出「根本性改革」方案。會談超過三小時，<strong>沒有任何具體決議</strong>，只同意「繼續再談」。立場落差大到難以掩飾：Fahimi 會前直言「目前討論的所謂改革議程，焦點全在省錢與刪減」、「經濟上與社會上完全錯誤」，對鬆綁每日八小時工時制更撂話「沒什麼好談的」、是「純意識形態的迷途」；CDU 秘書長 Linnemann 反擊，工會不能只談現況、「必須談競爭力如何回升」；資方則要求降低非工資勞動成本（Lohnnebenkosten）、規則彈性化。在野黨看戲：綠黨黨團主席 Dröge 會前就警告，若無具體結果這場會只是「咖啡聚會」（Kaffeekränzchen）。NZZ 會後標題一針見血：「高峰會以清醒收場」。<strong>後續發展</strong>：高峰會無果的隔天上午（6/11），Merz 隨即在聯邦議院發表政府聲明——名義上的主題是下週布魯塞爾 EU 高峰會（烏克蘭、對中關係、EU 中期財政規劃），實際上大半篇幅都在談內政，呼籲所有人檢視「自己能為整體的運作貢獻什麼」，被輿論解讀為高峰會破局後的信心喊話。<strong>深度觀察</strong>：Merz 政府把年金、稅制、社保三大改革全押在 7 月中前——但社保費率已逼近 42% 大關，任何「根本性改革」不是加費就是砍給付，勞資必有一方買單。這場高峰會證明：共識還很遠，時鐘卻在走。</p>
-<p class="post-sources">📚 來源：<a href="https://www.handelsblatt.com/politik/deutschland/koalition-koalition-sucht-bei-reformen-konsens-mit-sozialpartnern/100231511.html" target="_blank" rel="noopener noreferrer">Handelsblatt</a> · <a href="https://www.zdfheute.de/politik/deutschland/friedrich-merz-gewerkschaft-arbeitgeber-kanzleramt-treffen-100.html" target="_blank" rel="noopener noreferrer">ZDFheute</a> · <a href="https://www.nzz.ch/deutschland/politik/gipfel-endet-ernuechternd-die-koalitionsspitze-spricht-mit-vertretern-von-wirtschaft-und-gewerkschaften-praesentiert-aber-keine-ergebnisse-ld.10010707" target="_blank" rel="noopener noreferrer">NZZ｜會後評析</a> · <a href="https://www.t-online.de/nachrichten/deutschland/id_101288928/koalition-sucht-bei-reformen-konsens-mit-sozialpartnern.html" target="_blank" rel="noopener noreferrer">t-online</a> · <a href="https://www.zdfheute.de/politik/deutschland/merz-regierungserklaerung-bundestag-reformen-100.html" target="_blank" rel="noopener noreferrer">ZDFheute｜6/11 政府聲明</a></p>
+<p class="post-sources">📚 來源：<a href="https://www.zdfheute.de/politik/deutschland/friedrich-merz-gewerkschaft-arbeitgeber-kanzleramt-treffen-100.html" target="_blank" rel="noopener noreferrer">ZDFheute</a> · <a href="https://www.nzz.ch/deutschland/politik/gipfel-endet-ernuechternd-die-koalitionsspitze-spricht-mit-vertretern-von-wirtschaft-und-gewerkschaften-praesentiert-aber-keine-ergebnisse-ld.10010707" target="_blank" rel="noopener noreferrer">NZZ｜會後評析</a> · <a href="https://www.t-online.de/nachrichten/deutschland/id_101288928/koalition-sucht-bei-reformen-konsens-mit-sozialpartnern.html" target="_blank" rel="noopener noreferrer">t-online</a> · <a href="https://www.zdfheute.de/politik/deutschland/merz-regierungserklaerung-bundestag-reformen-100.html" target="_blank" rel="noopener noreferrer">ZDFheute｜6/11 政府聲明</a></p>
 
 <img src="assets/images/2026/weekly/W24_圖卡3_對美出口重挫.png" alt="德國 4 月對美出口年減 12.9% Q1 對美順差縮水 30.5% 川普關稅效應">
 <h3>對美出口年減 12.9%：川普關稅的帳單到了</h3>
@@ -1284,7 +1285,7 @@ const POSTS = [
     updated: '2026-07-17',
     categories: ["來德生活必辦事項"],
     tags: [],
-    excerpt: '為何報稅 在德國雖然不是所有人都有報稅義務，但只要月收入超過410歐元就會被自動扣稅。而我們每個人都有可能被預扣比較多稅，加上我們又有一些因為家庭、工作或學校的開銷，申報這些開銷每年可以讓你有機會拿回被多扣的稅款，多退少補，大部分的人都是可…',
+    excerpt: '2025 課稅年度的一般申報期限已於 2026 年 7 月 31 日屆滿——有義務者要盡快補交（逾期金每月至少 25 €），委託稅務師者則延到 2027 年 3 月 1 日；沒有申報義務、純想退稅的人不受限制，可回溯 4 年。誰有義務申報、能扣什麼、2025 年度有哪些新規定，一次看懂。',
     emoji: '🧾',
     content: `<!-- wp:heading -->
 <h2 class="wp-block-heading">為何報稅</h2>
@@ -1369,18 +1370,18 @@ const POSTS = [
 <!-- /wp:list -->
 
 <!-- wp:paragraph -->
-<p class="">（2026/07 更新）幾個今年申報一定要知道的期限重點：</p>
+<p class=""><strong>（2026/08 更新）2025 課稅年度的一般申報期限，已於 2026 年 7 月 31 日屆滿。</strong>有申報義務卻還沒交的人，現在要做的是<strong>盡快補交</strong>——逾期金按月累計，拖越久越貴；沒有申報義務、單純想把被多扣的稅拿回來的人則完全不受這個日子限制（見下方第三點）。以下是今年申報的期限重點：</p>
 <!-- /wp:paragraph -->
 
 <img src="assets/images/2026/tax/Steuerfrist2026_圖卡_報稅期限提醒.png" alt="2025 課稅年度報稅期限 2026年7月31日 委託稅務師延至 2027年3月1日 逾期每月至少 25 歐元罰款">
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li class=""><strong>2025 課稅年度（今年申報）截止日：2026 年 7 月 31 日（週五）</strong>；委託稅務師者自動延長至 <strong>2027 年 3 月 1 日</strong>（原 2027/2/28 適逢週日順延）。</li>
+<li class=""><strong>2025 課稅年度（今年申報）截止日：2026 年 7 月 31 日（週五）——已屆滿</strong>；但委託稅務師（Steuerberater）或薪資稅協助協會（Lohnsteuerhilfeverein）者自動延長至 <strong>2027 年 3 月 1 日</strong>（原 2027/2/28 適逢週日順延），這條路現在都還來得及。</li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li class=""><strong>逾期罰則（Verspätungszuschlag）</strong>：有申報義務者逾期，每逾一個月加收<strong>應納稅額的 0.25%、且每月至少 25 €</strong>；依《租稅通則》§152 AO，課稅年度結束後 <strong>14 個月</strong>仍未申報原則上自動開罰，稅務局並可處以怠金（Zwangsgeld）或逕行估稅。</li>
+<li class=""><strong>逾期罰則（Verspätungszuschlag）——已逾期者請看這條</strong>：有申報義務者逾期，每逾一個月加收<strong>應納稅額的 0.25%、且每月至少 25 €</strong>；依《租稅通則》§152 AO，課稅年度結束後 <strong>14 個月</strong>仍未申報原則上自動開罰，稅務局並可處以怠金（Zwangsgeld）或逕行估稅。</li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
@@ -1444,7 +1445,7 @@ const POSTS = [
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li class="">自行使用ELSTER等線上報稅軟體（大部分請參照<a href="post.html?slug=tax-software-2024">這篇德國報稅軟體推薦</a>）</li>
+<li class="">自行使用ELSTER等線上報稅軟體（大部分請參照<a href="/posts/tax-software-2024.html">這篇德國報稅軟體推薦</a>）</li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
@@ -1496,7 +1497,7 @@ const POSTS = [
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li class="">資本利得免稅額（Sparerpauschbetrag）：維持 <strong>1,000 €</strong>（銀行利息也算——延伸閱讀：<a href="post.html?slug=german-bank-recommendation">德國高利息活存銀行推薦</a>，別忘了勾 Freistellungsauftrag）</li>
+<li class="">資本利得免稅額（Sparerpauschbetrag）：維持 <strong>1,000 €</strong>（銀行利息也算——延伸閱讀：<a href="/posts/german-bank-recommendation.html">德國高利息活存銀行推薦</a>，別忘了勾 Freistellungsauftrag）</li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
@@ -1514,15 +1515,15 @@ const POSTS = [
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li class="">🧾 <a href="post.html?slug=tax-software-2024">德國報稅軟體推薦</a>——ELSTER 太硬？這幾套工具能讓你一小時搞定</li>
+<li class="">🧾 <a href="/posts/tax-software-2024.html">德國報稅軟體推薦</a>——ELSTER 太硬？這幾套工具能讓你一小時搞定</li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li class="">🛍️ <a href="post.html?slug=dm-tax-refund">德國藥妝店 DM 退稅攻略</a>——回台前別忘了把消費稅拿回來</li>
+<li class="">🛍️ <a href="/posts/dm-tax-refund.html">德國藥妝店 DM 退稅攻略</a>——回台前別忘了把消費稅拿回來</li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li class="">🏦 <a href="post.html?slug=german-bank-recommendation">德國高利息活存銀行推薦</a>——利息收入與 Freistellungsauftrag 一次搞懂</li>
+<li class="">🏦 <a href="/posts/german-bank-recommendation.html">德國高利息活存銀行推薦</a>——利息收入與 Freistellungsauftrag 一次搞懂</li>
 <!-- /wp:list-item --></ul>
 <!-- /wp:list -->
 
@@ -1685,7 +1686,7 @@ const POSTS = [
     updated: '2026-08-21',
     categories: ["來德生活必辦事項", "德國生活"],
     tags: ["promo code", "referral link", "免費", "分享碼", "回饋金", "德國", "德國交通", "折扣碼", "推薦", "推薦碼", "旅遊", "自助", "銀行", "電動車", "THG-Quote", "碳權"],
-    excerpt: '在這邊分享一下，我在德國經常使用的一些軟體跟服務，很多都可以有朋友介紹的回饋金，讓你在第一次使用註冊時也可以有些優惠哦！ 交通類 兩輪類(電動滑板車/電動腳踏車) Tier (e-scooter) 新註冊的可以有5次5折的優惠 LIME (…',
+    excerpt: '版主在德國實際在用的服務與推薦碼一次整理：交通（Dott、Lime、FreeNow、Tesla、電動車碳權 THG-Quote）、銀行與支付（Commerzbank、N26、Revolut、Wise、PayPal、Amex）、保險理財（Peaks、GetSafe、DA Direkt）、生活（McFIT、Airbnb、fraenk、eazy）。所有連結於 2026/08/21 逐一實測，條件以當期活動頁為準。',
     emoji: '🎁',
     content: `<!-- wp:paragraph -->
 <p class="">在這邊分享一下，我在德國經常使用的一些軟體跟服務，很多都可以有朋友介紹的回饋金，讓你在第一次使用註冊時也可以有些優惠哦！</p>
@@ -1865,7 +1866,7 @@ const POSTS = [
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p class="">詳情優缺點比較請見<a href="post.html?slug=german-bank-recommendation">此篇介紹</a>。<strong>⚠️ 2026/08 提醒：Commerzbank 已經沒有免費帳戶了</strong>——自 2025 年 5 月起一般帳戶一律收<strong>每月 4.90 €</strong> 管理費（除非在行資產達 50,000 €）。新戶 <strong>50 € 開戶獎金</strong>仍在跑（官方活動至 2026/9/30，需連續 3 個月每月至少 5 筆、每筆 ≥ 25 € 的交易），但獎金是一次性、月費是每個月的，開戶前請自己算一下划不划算。</p>
+<p class="">詳情優缺點比較請見<a href="/posts/german-bank-recommendation.html">此篇介紹</a>。<strong>⚠️ 2026/08 提醒：Commerzbank 已經沒有免費帳戶了</strong>——自 2025 年 5 月起一般帳戶一律收<strong>每月 4.90 €</strong> 管理費（除非在行資產達 50,000 €）。新戶 <strong>50 € 開戶獎金</strong>仍在跑（官方活動至 2026/9/30，需連續 3 個月每月至少 5 筆、每筆 ≥ 25 € 的交易），但獎金是一次性、月費是每個月的，開戶前請自己算一下划不划算。</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:buttons -->
@@ -1887,7 +1888,7 @@ const POSTS = [
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p class="">詳情優缺點比較請見<a href="post.html?slug=german-bank-recommendation" target="_blank" rel="noreferrer noopener">此篇介紹</a>。Revolut 有「邀請好友」（Kunden werben Kunden）活動：用下方邀請連結註冊並完成指定任務即可獲得獎勵，<strong>金額與條件依當期檔期浮動</strong>（Revolut 的邀請連結本身也會隨檔期更換，若點進去顯示過期，請留言告訴我，我換上新的）。卡片以 Visa 為主——<a href="post.html?slug=visa-bonus-cashback-2026" target="_blank" rel="noreferrer noopener">Visa 官方海外刷卡 2% 回饋活動</a>的夏季檔到 <strong>9/1</strong> 為止、秋季線上購物檔 <strong>9/15–11/15</strong> 接力，開卡順便把回饋一起領。</p>
+<p class="">詳情優缺點比較請見<a href="/posts/german-bank-recommendation.html" target="_blank" rel="noreferrer noopener">此篇介紹</a>。Revolut 有「邀請好友」（Kunden werben Kunden）活動：用下方邀請連結註冊並完成指定任務即可獲得獎勵，<strong>金額與條件依當期檔期浮動</strong>（Revolut 的邀請連結本身也會隨檔期更換，若點進去顯示過期，請留言告訴我，我換上新的）。卡片以 Visa 為主——<a href="/posts/visa-bonus-cashback-2026.html" target="_blank" rel="noreferrer noopener">Visa 官方海外刷卡 2% 回饋活動</a>的夏季檔到 <strong>9/1</strong> 為止、秋季線上購物檔 <strong>9/15–11/15</strong> 接力，開卡順便把回饋一起領。</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:buttons -->
@@ -1905,7 +1906,7 @@ const POSTS = [
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p class="">詳情優缺點比較請見<a href="post.html?slug=german-bank-recommendation">此篇介紹</a>。<strong>N26 的推薦獎金是浮動的</strong>——金額由 N26 依當期活動調整（過去給過現金，2026 年初也辦過股票獎金檔期），實際能拿多少請以你點進去看到的頁面、或 App「Explore／邀請好友」區塊顯示為準。<strong>2026/08 實測：邀請連結有效</strong>，流程是「註冊免費帳戶 →首次使用實體或虛擬卡消費 → N26 發放獎金」，入帳最長可能要 60 天。</p>
+<p class="">詳情優缺點比較請見<a href="/posts/german-bank-recommendation.html">此篇介紹</a>。<strong>N26 的推薦獎金是浮動的</strong>——金額由 N26 依當期活動調整（過去給過現金，2026 年初也辦過股票獎金檔期），實際能拿多少請以你點進去看到的頁面、或 App「Explore／邀請好友」區塊顯示為準。<strong>2026/08 實測：邀請連結有效</strong>，流程是「註冊免費帳戶 →首次使用實體或虛擬卡消費 → N26 發放獎金」，入帳最長可能要 60 天。</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:buttons -->
@@ -1923,7 +1924,7 @@ const POSTS = [
 <!-- /wp:heading -->
 
 <!-- wp:heading {"level":4} -->
-<h4 class="wp-block-heading"><a href="https://www.paypal.com/de/webapps/mpp/account-selection" target="_blank" rel="noreferrer noopener">Paypal</a></h4>
+<h4 class="wp-block-heading" id="Paypal"><a href="https://www.paypal.com/de/webapps/mpp/account-selection" target="_blank" rel="noreferrer noopener">Paypal</a></h4>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
@@ -1997,7 +1998,7 @@ const POSTS = [
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p class="">報稅 App 這一項我只推 SteuerBot：<strong>退稅金額低於 50 € 免費、超過才收 39.99 €</strong>，可以先把資料填完看試算金額再決定要不要送出。<strong>🎁 用我的<a href="https://app.steuerbot.com/i/kevinl-25" target="_blank" rel="noreferrer noopener">邀請連結</a>註冊可以折 10 €</strong>（註冊或登入後邀請自動啟用）。詳情比較請見<a href="post.html?slug=tax-software-2024" target="_blank" rel="noreferrer noopener">此篇文章</a>。</p>
+<p class="">報稅 App 這一項我只推 SteuerBot：<strong>退稅金額低於 50 € 免費、超過才收 39.99 €</strong>，可以先把資料填完看試算金額再決定要不要送出。<strong>🎁 用我的<a href="https://app.steuerbot.com/i/kevinl-25" target="_blank" rel="noreferrer noopener">邀請連結</a>註冊可以折 10 €</strong>（註冊或登入後邀請自動啟用）。詳情比較請見<a href="/posts/tax-software-2024.html" target="_blank" rel="noreferrer noopener">此篇文章</a>。</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:heading {"level":3} -->
@@ -2098,6 +2099,10 @@ const POSTS = [
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
+<p class=""><strong>📌 2026/08 補充——2027 年起改成「指數化」調價：</strong>各邦交通部長會議（Verkehrsministerkonferenz, VMK）已決定，2027 年起票價不再每年政治協商，而是依<strong>成本指數</strong>自動調整（權重：人事成本 55%、能源 20%、其他 25%）。依此指數推估，2027 年約落在 <strong>66 歐元上下</strong>，但<strong>確切金額尚未定案</strong>——官方預計<strong>最遲 2026 年 9 月 30 日前公布</strong>。看到「2027 年確定漲到 XX 歐元」的說法，在官方公布前都只是推算，不必急著解約。</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
 <p class="">Deutschland Ticket（官方名稱，簡稱：「D-Ticket」）是一種適用於德國全境的公共交通月票。於2023年5月1日推出，取代了廣受歡迎的9歐元車票。採<strong>月訂閱模式 (Abo)</strong>，價格歷年調整如下：<strong>49歐元（2023–2024）→ 58歐元（2025）→ 63歐元（2026起）</strong>。</p>
 <!-- /wp:paragraph -->
 
@@ -2122,7 +2127,7 @@ const POSTS = [
 <!-- /wp:image -->
 
 <!-- wp:paragraph -->
-<p class="">對於巴登-符騰堡州&nbsp;Baden-Württemberg的特定鐵路連結，如從斯圖加特到康斯坦茨的城際列車（Gäubahn），以及前往瑞士的鐵路、纜車和博登湖Bodensee上的渡輪，參照以下條件。（<a href="https://vm.baden-wuerttemberg.de/de/mobilitaet-verkehr/bus-und-bahn/verkehrsverbuende-tarife/deutschlandticket-in-baden-wuerttemberg">請以官網為主</a>）</p>
+<p class="">對於巴登-符騰堡州&nbsp;Baden-Württemberg的特定鐵路連結，如從斯圖加特到康斯坦茨的城際列車（Gäubahn），以及前往瑞士的鐵路、纜車和博登湖Bodensee上的渡輪，參照以下條件。（<a href="https://vm.baden-wuerttemberg.de/de/mobilitaet-verkehr/bahn-und-bus/oepnv-angebot-fuer-reisende/unsere-tickets-und-tarife/deutschlandticket-in-baden-wuerttemberg">請以官網為主</a>）</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:list -->
@@ -2172,11 +2177,11 @@ const POSTS = [
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p class="">你可以使用智慧型手機上的應用程式，例如<a href="https://www.bahn.de/service/mobile/db-navigator" target="_blank" rel="noreferrer noopener">DB Navigator App</a>、你所在地區交通聯盟的應用程式（斯圖加特為例：<a href="https://www.ssb-ag.de/tickets/ticketkauf-und-beratung/ssb-move-app-mit-bestpreis/" target="_blank" rel="noreferrer noopener">SSB Move App</a> 請看下方例子）或是第三方的軟體App（Freenow, DeutschlandCard），購買 Deutschland Ticket。你也可以在網站<a href="https://bahn.de" target="_blank" rel="noreferrer noopener">bahn.de</a>上使用電腦、平板或手機進行線上購買 Deutschland Ticket。以下用<a href="https://www.bahn.de/service/mobile/db-navigator" target="_blank" rel="noreferrer noopener">DB Navigator App</a>為範例。<strong>個人是認為第三方的程式退訂閱的方式比DB來得更方便一點，可以算是一鍵解除，而且付款方式也不會指定超難用的Lastschrift</strong>，<strong>所以其實比較推薦用<a href="https://m.free-now.com/JGMc/e3bifq36" target="_blank" rel="noreferrer noopener">Freenow</a></strong>或<strong><a href="https://www.ssb-ag.de/tickets/ticketkauf-und-beratung/ssb-move-app-mit-bestpreis/" target="_blank" rel="noreferrer noopener">SSB Move App</a>來買票，不住在德國的遊客也無法使用Lastschrift！</strong><br><a href="post.html?slug=deutschland-ticket#用SSB_Move_App來訂票">點這裡直接看如何用SSB訂票跟解約</a> </p>
+<p class="">你可以使用智慧型手機上的應用程式，例如<a href="https://www.bahn.de/service/mobile/db-navigator" target="_blank" rel="noreferrer noopener">DB Navigator App</a>、你所在地區交通聯盟的應用程式（斯圖加特為例：<a href="https://www.ssb-ag.de/tickets/deutschlandticket-und-weitere-abos/deutschlandticket/" target="_blank" rel="noreferrer noopener">SSB Move App</a> 請看下方例子）或是第三方的軟體App（Freenow, DeutschlandCard），購買 Deutschland Ticket。你也可以在網站<a href="https://bahn.de" target="_blank" rel="noreferrer noopener">bahn.de</a>上使用電腦、平板或手機進行線上購買 Deutschland Ticket。以下用<a href="https://www.bahn.de/service/mobile/db-navigator" target="_blank" rel="noreferrer noopener">DB Navigator App</a>為範例。<strong>個人是認為第三方的程式退訂閱的方式比DB來得更方便一點，可以算是一鍵解除，而且付款方式也不會指定超難用的Lastschrift</strong>，<strong>所以其實比較推薦用<a href="https://m.free-now.com/JGMc/e3bifq36" target="_blank" rel="noreferrer noopener">Freenow</a></strong>或<strong><a href="https://www.ssb-ag.de/tickets/deutschlandticket-und-weitere-abos/deutschlandticket/" target="_blank" rel="noreferrer noopener">SSB Move App</a>來買票，不住在德國的遊客也無法使用Lastschrift！</strong><br><a href="/posts/deutschland-ticket.html#用SSB_Move_App來訂票">點這裡直接看如何用SSB訂票跟解約</a> </p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p class=""><a href="post.html?slug=deutschland-ticket#用Freenow來訂票">點這裡直接看如何用Freenow訂票跟解約</a> </p>
+<p class=""><a href="/posts/deutschland-ticket.html#用Freenow來訂票">點這裡直接看如何用Freenow訂票跟解約</a> </p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
@@ -2192,7 +2197,7 @@ const POSTS = [
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p class="">因為是是<strong>月訂閱模式 (Abo)</strong>的關係，App裡面只能使用銀行自動扣款（Lastschrift）方式支付，款項將於月初扣款，網路訂票的話可能只有居住在德國的會比較方便。（延伸閱讀：<a href="post.html?slug=german-bank-recommendation">免費的德國銀行</a>）畢竟如果你是觀光客沒有德國的銀行帳戶，就沒辦法透過網路買票，只能親自前往DB旅遊中心或所在地區交通聯盟的櫃台購買地方交通票，但並非所有交通聯盟都提供此服務。</p>
+<p class="">因為是是<strong>月訂閱模式 (Abo)</strong>的關係，App裡面只能使用銀行自動扣款（Lastschrift）方式支付，款項將於月初扣款，網路訂票的話可能只有居住在德國的會比較方便。（延伸閱讀：<a href="/posts/german-bank-recommendation.html">免費的德國銀行</a>）畢竟如果你是觀光客沒有德國的銀行帳戶，就沒辦法透過網路買票，只能親自前往DB旅遊中心或所在地區交通聯盟的櫃台購買地方交通票，但並非所有交通聯盟都提供此服務。</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:image {"align":"center","id":755,"width":"250px","height":"512px","sizeSlug":"large","linkDestination":"none"} -->
@@ -2295,7 +2300,7 @@ const POSTS = [
 <!-- /wp:image -->
 
 <!-- wp:image {"align":"center","id":749,"width":"250px","height":"512px","sizeSlug":"large","linkDestination":"none"} -->
-<figure class="wp-block-image aligncenter size-large is-resized"><img src="assets/images/2023/06/img_7419-500x1024.jpg" alt="" class="wp-image-749" style="width:250px;height:512px"/><figcaption class="wp-element-caption">扣款銀行(<a href="post.html?slug=german-bank-recommendation">還沒有N26嗎？</a>)</figcaption></figure>
+<figure class="wp-block-image aligncenter size-large is-resized"><img src="assets/images/2023/06/img_7419-500x1024.jpg" alt="" class="wp-image-749" style="width:250px;height:512px"/><figcaption class="wp-element-caption">扣款銀行(<a href="/posts/german-bank-recommendation.html">還沒有N26嗎？</a>)</figcaption></figure>
 <!-- /wp:image --></div>
 <!-- /wp:group -->
 
@@ -2352,7 +2357,7 @@ const POSTS = [
 <!-- /wp:image -->
 
 <!-- wp:heading -->
-<h2 class="wp-block-heading">用<a href="https://www.ssb-ag.de/tickets/ticketkauf-und-beratung/ssb-move-app-mit-bestpreis/" target="_blank" rel="noreferrer noopener">SSB Move App</a>來訂票</h2>
+<h2 class="wp-block-heading" id="用SSB_Move_App來訂票">用<a href="https://www.ssb-ag.de/tickets/deutschlandticket-und-weitere-abos/deutschlandticket/" target="_blank" rel="noreferrer noopener">SSB Move App</a>來訂票</h2>
 <!-- /wp:heading -->
 
 <!-- wp:heading {"level":3} -->
@@ -2360,7 +2365,7 @@ const POSTS = [
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p class="">先下載<a href="https://www.ssb-ag.de/tickets/ticketkauf-und-beratung/ssb-move-app-mit-bestpreis/" target="_blank" rel="noreferrer noopener">SSB Move App</a>，開啟後選擇Ticket 裡面的 Deutschland Ticket</p>
+<p class="">先下載<a href="https://www.ssb-ag.de/tickets/deutschlandticket-und-weitere-abos/deutschlandticket/" target="_blank" rel="noreferrer noopener">SSB Move App</a>，開啟後選擇Ticket 裡面的 Deutschland Ticket</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:image {"align":"center","id":900,"width":"386px","height":"835px","sizeSlug":"large","linkDestination":"none"} -->
@@ -2384,7 +2389,7 @@ const POSTS = [
 <!-- /wp:image -->
 
 <!-- wp:paragraph -->
-<p class="">也可以Paypal，<a href="post.html?slug=referral-codes-2026#Paypal" target="_blank" rel="noreferrer noopener">還沒有Paypal嗎？點這邊的連結註冊有開戶獎金哦</a></p>
+<p class="">也可以Paypal，<a href="/posts/referral-codes-2026.html#Paypal" target="_blank" rel="noreferrer noopener">還沒有Paypal嗎？點這邊的連結註冊有開戶獎金哦</a></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:image {"align":"center","id":903,"width":"334px","height":"724px","sizeSlug":"large","linkDestination":"none"} -->
@@ -2428,7 +2433,7 @@ const POSTS = [
 <!-- /wp:image -->
 
 <!-- wp:heading -->
-<h2 class="wp-block-heading">用<a href="https://m.free-now.com/JGMc/e3bifq36" target="_blank" rel="noreferrer noopener">Freenow</a>來訂票</h2>
+<h2 class="wp-block-heading" id="用Freenow來訂票">用<a href="https://m.free-now.com/JGMc/e3bifq36" target="_blank" rel="noreferrer noopener">Freenow</a>來訂票</h2>
 <!-- /wp:heading -->
 
 <!-- wp:heading {"level":3} -->
@@ -2456,7 +2461,7 @@ const POSTS = [
 <!-- /wp:image -->
 
 <!-- wp:paragraph -->
-<p class="">支付方式可以選擇信用卡或是<a href="post.html?slug=referral-codes-2026#Paypal">Paypal</a>！比德鐵的Lastschrift方便多了</p>
+<p class="">支付方式可以選擇信用卡或是<a href="/posts/referral-codes-2026.html#Paypal">Paypal</a>！比德鐵的Lastschrift方便多了</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:image {"id":980,"sizeSlug":"large","linkDestination":"none"} -->
@@ -2665,7 +2670,7 @@ const POSTS = [
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>若是前往瑞典旅遊，若有必要可以在當地的銀行、ATM機、旅遊中心等地方兌換當地的貨幣。<strong>但強烈不建議兌換！</strong>本次瑞典行完全沒見過任何人在使用紙鈔或硬幣，<strong>瑞典在這方面相當進步，幾乎所到之處無處不配有刷卡機，連路邊的小攤販都可以刷信用卡。</strong>整趟行程完全沒看過瑞典克朗長什麼樣子，不得不佩服瑞典人在這方面真的很進步，所有交易都是無鈔票化了。所以強烈建議你不要換匯，直接刷卡最方便，省得手續費以及沒花完現鈔的問題。我基本上整趟都用Revolut走遍天下，如果你也是長居在歐洲還沒申辦的話，<a href="post.html?slug=german-bank-recommendation" target="_blank" rel="noreferrer noopener">可以參考我這篇</a>，Revolut基本上是我在旅遊行走天下時的最可靠的電子錢包。</p>
+<p>若是前往瑞典旅遊，若有必要可以在當地的銀行、ATM機、旅遊中心等地方兌換當地的貨幣。<strong>但強烈不建議兌換！</strong>本次瑞典行完全沒見過任何人在使用紙鈔或硬幣，<strong>瑞典在這方面相當進步，幾乎所到之處無處不配有刷卡機，連路邊的小攤販都可以刷信用卡。</strong>整趟行程完全沒看過瑞典克朗長什麼樣子，不得不佩服瑞典人在這方面真的很進步，所有交易都是無鈔票化了。所以強烈建議你不要換匯，直接刷卡最方便，省得手續費以及沒花完現鈔的問題。我基本上整趟都用Revolut走遍天下，如果你也是長居在歐洲還沒申辦的話，<a href="/posts/german-bank-recommendation.html" target="_blank" rel="noreferrer noopener">可以參考我這篇</a>，Revolut基本上是我在旅遊行走天下時的最可靠的電子錢包。</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
@@ -3012,7 +3017,7 @@ const POSTS = [
 <!-- /wp:buttons -->
 
 <!-- wp:paragraph -->
-<p class="">（2026/07 更新）用上方邀請連結註冊並完成指定任務即可獲得邀請獎勵（依當期活動條款為準）。另外 Revolut 的卡以 Visa 為主——正逢 <a href="post.html?slug=visa-bonus-cashback-2026" target="_blank" rel="noreferrer noopener">Visa 官方海外刷卡 2% 回饋活動</a>（至 9/1、每人上限 15 €），出國前順便註冊一起領。</p>
+<p class="">（2026/07 更新）用上方邀請連結註冊並完成指定任務即可獲得邀請獎勵（依當期活動條款為準）。另外 Revolut 的卡以 Visa 為主——正逢 <a href="/posts/visa-bonus-cashback-2026.html" target="_blank" rel="noreferrer noopener">Visa 官方海外刷卡 2% 回饋活動</a>（至 9/1、每人上限 15 €），出國前順便註冊一起領。</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:heading {"level":1,"backgroundColor":"cyan-bluish-gray"} -->
@@ -3411,7 +3416,7 @@ const POSTS = [
 <!-- /wp:list -->
 
 <!-- wp:paragraph {"textColor":"vivid-red"} -->
-<p class="has-vivid-red-color has-text-color"><strong>⏰ 2026/08 提醒：2025 課稅年度的自行申報期限（2026 年 7 月 31 日）已經過了。</strong>接下來分兩種情況：<strong>①有申報義務的人</strong>——已算逾期，逾期金（Verspätungszuschlag）每逾一個月加收應納稅額的 0.25%、每月至少 <strong>25 €</strong>，越拖越貴，請盡快補報；若確有正當理由，可向稅務局申請事後延期（Fristverlängerung），但要主動聯繫。<strong>②沒有申報義務、純粹想退稅的人</strong>——完全不受 7/31 限制，可回溯 <strong>4 年</strong>，2025 年度最晚在 <strong>2029 年 12 月 31 日</strong>前提交都還能領退稅，現在報一點都不遲。分不清自己屬於哪一種，看<a href="post.html?slug=german-tax-guide-2026">2026 德國報稅攻略</a>的「誰有報稅義務」一節。</p>
+<p class="has-vivid-red-color has-text-color"><strong>⏰ 2026/08 提醒：2025 課稅年度的自行申報期限（2026 年 7 月 31 日）已經過了。</strong>接下來分兩種情況：<strong>①有申報義務的人</strong>——已算逾期，逾期金（Verspätungszuschlag）每逾一個月加收應納稅額的 0.25%、每月至少 <strong>25 €</strong>，越拖越貴，請盡快補報；若確有正當理由，可向稅務局申請事後延期（Fristverlängerung），但要主動聯繫。<strong>②沒有申報義務、純粹想退稅的人</strong>——完全不受 7/31 限制，可回溯 <strong>4 年</strong>，2025 年度最晚在 <strong>2029 年 12 月 31 日</strong>前提交都還能領退稅，現在報一點都不遲。分不清自己屬於哪一種，看<a href="/posts/german-tax-guide-2026.html">2026 德國報稅攻略</a>的「誰有報稅義務」一節。</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:heading {"level":3} -->
@@ -3818,7 +3823,7 @@ const POSTS = [
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li class="">證明已繳納退休保險費-->上Rentenversichung網站申請紙本證明（如何申請？<a href="post.html?slug=pension-certificate">詳見此文章</a>）</li>
+<li class="">證明已繳納退休保險費-->上Rentenversichung網站申請紙本證明（如何申請？<a href="/posts/pension-certificate.html">詳見此文章</a>）</li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
