@@ -1077,6 +1077,60 @@ def illu_evcharge(d, R, S, cx, cy, theme):
     d.ellipse(R(ex-er+6, ey-er+6, ex+er-6, ey+er-6), outline=GOLD_D, width=3*S)
     draw_mixed(d, R(ex, ey-13), '\u20ac', 22*S, OUTLINE, bold=True, anchor='center')
 
+def illu_carplant(d, R, S, cx, cy, theme):
+    """汽車廠＋下降箭頭（車廠減產／關廠與人力縮編）"""
+    ow = 5*S
+    _dots(d, R, cx, cy, ((-72, -36, 3, GOLD), (-6, -52, 3, tint(theme, 0.5)),
+                         (70, -44, 3, theme)))
+    d.ellipse(R(cx-58, cy+46, cx+56, cy+58), fill=tint(theme, 0.18))
+    # 後層：鋸齒屋頂廠房
+    d.rounded_rectangle(R(cx-66, cy-26, cx+18, cy+18), radius=6*S,
+                        fill=tint(theme, 0.22), outline=OUTLINE, width=ow)
+    for i in range(3):
+        x0 = cx-62 + i*26
+        d.polygon(R(x0, cy-26, x0+12, cy-40, x0+24, cy-26),
+                  fill=tint(theme, 0.38), outline=OUTLINE, width=3*S)
+    for i in range(3):
+        wx = cx-58 + i*26
+        d.rounded_rectangle(R(wx, cy-18, wx+16, cy-4), radius=2*S,
+                            fill='white', outline=OUTLINE, width=2*S)
+    # 前景：車體側影（單一焦點）
+    d.polygon(R(cx-38, cy+20, cx-24, cy+2, cx+2, cy+2, cx+12, cy+20),
+              fill=tint(theme, 0.45), outline=OUTLINE, width=ow)
+    d.rounded_rectangle(R(cx-56, cy+18, cx+22, cy+42), radius=10*S,
+                        fill=theme, outline=OUTLINE, width=ow)
+    for wxc in (cx-38, cx+6):
+        d.ellipse(R(wxc-11, cy+32, wxc+11, cy+54), fill='white', outline=OUTLINE, width=ow)
+        d.ellipse(R(wxc-4, cy+39, wxc+4, cy+47), fill=OUTLINE)
+    # 焦點細節：金色下降箭頭（產量與人力雙雙下修）
+    d.line(R(cx+42, cy-28, cx+62, cy+12), fill=GOLD, width=ow+2*S)
+    d.polygon(R(cx+64, cy+26, cx+48, cy+8, cx+74, cy+2), fill=GOLD, outline=OUTLINE, width=3*S)
+
+def illu_databreach(d, R, S, cx, cy, theme):
+    """伺服器機櫃＋斷開的掛鎖（系統遭入侵／資料外流）"""
+    ow = 5*S
+    _dots(d, R, cx, cy, ((-70, -40, 3, theme), (44, -52, 3, GOLD),
+                         (74, 14, 3, tint(theme, 0.5))))
+    d.ellipse(R(cx-52, cy+46, cx+40, cy+58), fill=tint(theme, 0.18))
+    # 伺服器機櫃：外框＋三層機架
+    d.rounded_rectangle(R(cx-58, cy-42, cx+18, cy+48), radius=9*S,
+                        fill='white', outline=OUTLINE, width=ow)
+    for i in range(3):
+        y0 = cy-32 + i*26
+        d.rounded_rectangle(R(cx-48, y0, cx+8, y0+18), radius=4*S,
+                            fill=tint(theme, 0.30), outline=OUTLINE, width=3*S)
+        d.line(R(cx-40, y0+9, cx-20, y0+9), fill=OUTLINE, width=3*S)
+        d.ellipse(R(cx-2, y0+6, cx+4, y0+12), fill=GOLD if i == 1 else theme)
+    # 焦點細節：斷開的掛鎖（前景右側）
+    lx, ly = cx+48, cy-12
+    d.arc(R(lx-16, ly-30, lx+10, ly-4), start=185, end=350, fill=OUTLINE, width=ow)
+    d.rounded_rectangle(R(lx-22, ly-8, lx+22, ly+22), radius=7*S,
+                        fill=GOLD, outline=OUTLINE, width=ow)
+    d.line(R(lx, ly+1, lx, ly+13), fill=OUTLINE, width=4*S)
+    # 外流的資料點（由機櫃流向右下）
+    for (dx, dy, r) in ((30, 30, 5), (48, 40, 4), (64, 48, 3)):
+        d.ellipse(R(cx+dx-r, cy+dy-r, cx+dx+r, cy+dy+r), fill=theme)
+
 ILLUS = dict(podium=illu_podium, flags=illu_flags, coins=illu_coins,
              idcard=illu_idcard, camera=illu_camera, trophy=illu_trophy,
              bankcard=illu_bankcard, checklist=illu_checklist,
@@ -1091,7 +1145,8 @@ ILLUS = dict(podium=illu_podium, flags=illu_flags, coins=illu_coins,
              crane=illu_crane, mergebenefits=illu_mergebenefits,
              heatlaw=illu_heatlaw, gavel=illu_gavel,
              tornado=illu_tornado, wildfire=illu_wildfire,
-             solarpanel=illu_solarpanel, evcharge=illu_evcharge)
+             solarpanel=illu_solarpanel, evcharge=illu_evcharge,
+             carplant=illu_carplant, databreach=illu_databreach)
 
 # ── 版型 ────────────────────────────────────────────────────
 
@@ -1189,114 +1244,75 @@ def make_card(spec, path, week_label='W?', date_label=''):
 # ════════════════════════════════════════════════════════════
 # 每週卡片內容（範本：W29）——之後每週改這一段即可
 # ════════════════════════════════════════════════════════════
-WEEK = 'W34'
-DATE_RANGE = '2026/08/17-08/20'
+WEEK = 'W35'
+DATE_RANGE = '2026/08/24-08/27'
 
 CARDS = [
  dict(
-  theme='#D4740E', badges=[('住房', True), ('生活成本', False)], illu='crane',
-  title='建照回升 15.1%，租金照漲 3.2%',
-  subtitle='聯邦統計局 8/18 公布：上半年核准 12.63 萬戶，但完工與租金是兩回事',
-  stats=[('12.63 萬戶', '上半年核准建照'),
-         ('+3.2%', 'Q2 新租約租金年增')],
+  theme='#C0392B', badges=[('汽車業', True), ('就業', False)], illu='carplant',
+  title='VW 撙節案：四座工廠人力被點名',
+  subtitle='8/25 Wolfsburg 特別廠務會議，逾 1 萬名員工以噓聲回應',
+  stats=[('逾 1 萬人', 'Wolfsburg 到場員工'),
+         ('4 座工廠', '被指人力不具競爭力')],
   bullets=[
-   ('核准量連月回升', '聯邦統計局（Destatis）8/18：6 月核准 21,600 戶、年增 13.8%；上半年 126,300 戶、年增 15.1%。'),
-   ('回升的還只是紙上數字', '核准不等於動工。德國經濟研究所（IW Köln）估 2026 年完工僅約 21.5 萬戶，遠低於年 40 萬戶目標。'),
-   ('租金壓力沒鬆手', '德國抵押債券銀行協會（vdp）：Q2 新租約租金全國年增 3.2%，杜塞道夫 3.6% 最高、柏林僅 0.6%。'),
+   ('會上說了什麼', '執行長 Oliver Blume 8/25 在 Wolfsburg 特別廠務會議稱，美國關稅、地緣風險與新競爭者迫使集團降低成本。'),
+   ('哪些廠被點名', 'VW 的 Emden、Zwickau、Hannover 與 Audi 的 Neckarsulm 廠，被指 2030 年代人力「不具競爭力」。'),
+   ('工會怎麼回應', '職工代表會主席 Daniela Cavallo 稱對董事會信任「已受損」；IG Metall 的 Thorsten Gröger 表明將全力反對。'),
   ],
-  takeaway=('租屋族提醒', '全國缺口估約 100 萬戶，Pestel 研究所更估 140 萬戶。核准領先完工約兩年，短期供給不會鬆。'),
-  file='W34_圖卡1_建照回升與租金.png'),
+  takeaway=('求職觀察', '2024 年已議定 2030 年前減少約 5 萬個職位。下薩克森邦（Niedersachsen）持 20% 表決權，反對關廠。'),
+  file='W35_圖卡1_VW撙節案四廠被點名.png'),
  dict(
-  theme='#7C3AED', badges=[('極端天氣', True), ('公共安全', False)], illu='tornado',
-  title='龍捲風掃過三邦，1 死多人受傷',
-  subtitle='8/19 強雷暴；德國氣象局（DWD）事後確認 Fürstenwalde 為龍捲風',
-  stats=[('1 死', '萊茵蘭-普法茲邦'),
-         ('約 60 棟', 'Wetzlar 受損房屋')],
+  theme='#7C3AED', badges=[('資安', True), ('柏林邦', False)], illu='databreach',
+  title='柏林市府遭駭：5 萬戶住房補貼卡關',
+  subtitle='兩個邦級部門 8/14 斷網；參議院改口不排除個資外流',
+  stats=[('逾 5 萬戶', '住房補貼撥款受影響'),
+         ('2 個', '被隔離的邦級部門')],
   bullets=[
-   ('1 死 1 重傷', '萊茵蘭-普法茲邦（Rheinland-Pfalz）Waldorf：兩名女子避雨時被倒下的樹壓中，58 歲身亡、47 歲重傷。'),
-   ('兩處確認龍捲風', '布蘭登堡邦（Brandenburg）Fürstenwalde 幼兒園屋頂被掀；黑森邦（Hessen）Wetzlar 約 60 棟房屋受損。'),
-   ('為何沒有預警', '德國氣象局（DWD）事前未發警報——龍捲風生成於一朵「不起眼的弱陣雨」，而非典型強雷暴。'),
+   ('怎麼發生的', '攻擊者利用建設部門 IT 漏洞入侵柏林邦網路，8/14 起兩部門遭隔離；邦刑事警察局與聯邦資安署介入。'),
+   ('哪些業務受影響', '「城市發展、建設與住房」與「交通、環境與氣候保護」兩部門；逾 5 萬戶住房補貼撥款受波及。'),
+   ('個資外洩了沒', '參議院起初稱僅公開地理資料外流，後改口不排除個資受影響；外流時點早於 8/14 斷網。'),
   ],
-  takeaway=('防災提醒', '暴風雨中最危險的往往是樹而不是雨。有頂座椅區、車棚與行道樹下都不算避難處，應進入堅固建築物。'),
-  file='W34_圖卡2_龍捲風致死.png'),
+  takeaway=('因應建議', '參議院稱 9/20 柏林邦議會選舉系統未受影響。等待住房補貼者請留存申請文件、必要時改打電話。'),
+  file='W35_圖卡2_柏林市府遭駭.png'),
  dict(
-  theme='#C0392B', badges=[('森林大火', True), ('氣候', False)], illu='wildfire',
-  title='許特根森林大火撲滅，燒掉 300 公頃',
-  subtitle='北萊茵-西發利亞邦（Nordrhein-Westfalen）有紀錄以來最大森林火災',
-  stats=[('約 300 公頃', '過火面積'),
-         ('1,800 人', '一度疏散的居民')],
+  theme='#2E8B57', badges=[('九月新制', True), ('生活', False)], illu='checklist',
+  title='九月新制：報稅諮詢門檻取消',
+  subtitle='薪資稅務協會鬆綁、環保廣告要有憑據、車站禁酒分批上路',
+  stats=[('9/1', '薪資稅務協會門檻取消'),
+         ('9/27', '環保廣告新規上路')],
   bullets=[
-   ('規模有多大', '8/13 於艾菲爾（Eifel）山區許特根森林（Hürtgenwald）起火，過火約 300 公頃，為該邦 1991 年有統計以來最大。'),
-   ('動員與傷情', '8/14 凌晨疏散 Gey 地區約 1,800 名居民、8/15 傍晚才獲准返家；最多動員約 1,800 名救援人員，5 人受傷。'),
-   ('為何特別難撲滅', '林地埋有二戰許特根森林戰役遺留彈藥，8/14 夜間曾發生爆炸；地下悶燒火點也讓復燃風險居高不下。'),
+   ('報稅諮詢鬆綁', '9/1 起薪資稅務協會（Lohnsteuerhilfeverein）可為有租賃收入者報稅，不再受年收入 18,000 € 上限限制。'),
+   ('環保廣告要有憑據', '9/27 起適用歐盟 EmpCo 指令：「氣候中和」「環保」等說法須可查證，僅靠碳權達成的中和不得再宣稱。'),
+   ('車站禁酒分批啟動', '9/1 先於柏林中央車站、Gesundbrunnen 與 Kiel、Braunschweig 生效，最晚 10/15 擴及全德 5,400 站。'),
   ],
-  takeaway=('後續影響', '鎮長 Stephan Cranen 8/20 宣布火勢撲滅。林區樹木受火削弱而不穩，無限期封閉；起火原因仍在調查。'),
-  file='W34_圖卡3_許特根森林大火.png'),
+  takeaway=('生活提醒', '同月歐盟統一的瑕疵擔保標示上路，商家須以標準標籤說明法定兩年擔保權與製造商保固的差別。'),
+  file='W35_圖卡3_九月新制.png'),
  dict(
-  theme='#0D9488', badges=[('勞動市場', True), ('經濟', False)], illu='briefcase',
-  title='服務業就業自疫情以來首次明顯下滑',
-  subtitle='聯邦統計局 8/18：第二季就業 4,570 萬人，較去年同季少 21.2 萬',
-  stats=[('4,570 萬人', '第二季就業人數'),
-         ('-21.2 萬', '較去年同季')],
+  theme='#2563EB', badges=[('經濟政策', True), ('景氣', False)], illu='podium',
+  title='內閣閉門會議談成長，ifo 指數四連升',
+  subtitle='8/25–26 布蘭登堡邦（Brandenburg）Neuhardenberg 宮；ifo 升至 88.8 點',
+  stats=[('88.8 點', '8 月 ifo 景氣指數'),
+         ('+2.1 點', '較 7 月的 86.7 點')],
   bullets=[
-   ('整體走弱', '聯邦統計局（Destatis）初步統計：Q2 就業季調較前一季減 5.3 萬人，年減 21.2 萬人（-0.5%）。'),
-   ('服務業是新訊號', '服務業年減 2.7 萬人，為新冠疫情以來首次明顯下降——過去幾年它一直是撐住德國就業的支柱。'),
-   ('內部分化明顯', '公共服務、教育與醫療續增 18.7 萬人（+1.5%）；貿易、運輸與餐旅再減 11.5 萬人（-1.1%）。'),
+   ('會議談了什麼', 'Merz 8/25–26 於布蘭登堡邦 Neuhardenberg 宮開內閣閉門會議，主軸為競爭力、工業 AI 與技術主權。'),
+   ('景氣同步轉好', 'ifo 經濟研究所 8/25 公布：8 月景氣指數自 86.7 升至 88.8 點、連四個月上升，優於預估的 87.1 點。'),
+   ('在野黨怎麼看', '綠黨（Bündnis 90/Die Grünen）黨主席 Felix Banaszak 批評「氣候沒有決議，也沒有刺激經濟的新想法」。'),
   ],
-  takeaway=('求職觀察', '公部門、教育與醫療仍在擴編，餐旅與零售持續縮編；持工作居留者換工作前先看清行業。'),
-  file='W34_圖卡4_第二季就業下滑.png'),
+  takeaway=('政策觀察', '會中另就今夏高溫與乾旱先做情勢分析，決議留待後續內閣會議；能源價格再度上升仍是變數。'),
+  file='W35_圖卡4_內閣閉門會議與ifo.png'),
  dict(
-  theme='#D4740E', badges=[('氣候調適', True), ('修憲', False)], illu='heatlaw',
-  title='高溫防護入基本法？民調 65% 贊成',
-  subtitle='YouGov 8/19 公布；聯盟黨（CDU/CSU）踩煞車，修憲需三分之二多數',
-  stats=[('65%', '贊成修憲的比例'),
-         ('近 5 億歐元', '每個高溫日的經濟損失')],
+  theme='#D4740E', badges=[('資安', True), ('經濟', False)], illu='coins',
+  title='87% 企業遇襲，損失逾 2,110 億歐元',
+  subtitle='Bitkom 與聯邦憲法保護局 8/26 共同發表《經濟保護報告 2026》',
+  stats=[('87%', '過去 12 個月受害企業'),
+         ('2,110 億歐元起', '可量化的年度損失')],
   bullets=[
-   ('民調怎麼問', '德通社（dpa）委託 YouGov 於 8/14–8/17 訪問 2,091 人：33% 贊成、32% 偏贊成，反對與偏反對各 11%。'),
-   ('要改什麼', '環境部長 Carsten Schneider（SPD）主張把高溫防護寫進基本法、列為聯邦與各邦「共同任務」。'),
-   ('卡在哪裡', '聯盟黨團副主席 Günter Krings 稱此舉「對氣候沒有幫助」；德國城市暨鄉鎮聯合會則表態支持。'),
+   ('受害比例創高', '87% 受訪企業表示過去 12 個月遭資料或設備竊取、工業間諜或破壞，一年前這個比例是 81%。'),
+   ('損失規模', 'Bitkom 理事長 Ralf Wintergerst：可量化損失介於 2,110 億至 2,708 億歐元，前一年度為 2,892 億歐元。'),
+   ('誰在動手', '遭破壞、間諜或竊取的企業中，37% 認為有外國情報機關涉入（一年前 28%）；指向俄羅斯與中國者各 46%。'),
   ],
-  takeaway=('政策觀察', '修憲須聯邦議院與聯邦參議院各三分之二多數；走不成，高溫防護的錢仍由各邦與地方自扛。'),
-  file='W34_圖卡5_高溫防護入基本法.png'),
- dict(
-  theme='#2E8B57', badges=[('能源', True), ('再生能源', False)], illu='solarpanel',
-  title='太陽能提前兩年達標：128 GWp',
-  subtitle='德國太陽能產業協會（BSW-Solar）8/20 公布；業界同時警告擴建轉折',
-  stats=[('128 GWp', '全德光電裝置容量'),
-         ('逾 600 萬套', '全德太陽能系統')],
-  bullets=[
-   ('達成了什麼', '德國太陽能產業協會（BSW-Solar）依聯邦網路局登記資料估算：全德光電容量突破 128 GWp，較法定目標提前兩年。'),
-   ('已經佔多少', '2025 年太陽能約佔德國淨發電量五分之一；2024 與 2025 年每年各新增約 17.5 GWp。'),
-   ('業界為何仍憂心', '協會警告政策框架調整恐造成「擴建轉折」；2030 年要達 215 GWp，往後每年需新增約 20 GWp。'),
-  ],
-  takeaway=('數據解讀', '達標提前兩年，但下一階段的年增量要求更高。對自用發電家戶而言，重點將轉向躉購費率與併網規則。'),
-  file='W34_圖卡6_太陽能提前達標.png'),
- dict(
-  theme='#2563EB', badges=[('社會福利', True), ('家庭', False)], illu='mergebenefits',
-  title='三種給付併成一種：ifo 端出改革方案',
-  subtitle='勞工福利聯合會（AWO）委託研究 8/19 發表；屬智庫建議，尚未立法',
-  stats=[('3 合 1', '基本保障＋住房補貼＋兒童加給'),
-         ('32.2 萬人', '估可因此重返就業')],
-  bullets=[
-   ('要併哪三項', 'ifo 經濟研究所受德國勞工福利聯合會（AWO）委託提案：基本保障、住房補貼與兒童加給併為單一給付。'),
-   ('誰受益最多', '單親與多子女家庭。低所得級距家庭可支配所得平均年增 149 €，貧窮風險率自約 16% 再降 0.9 個百分點。'),
-   ('為何能拉高就業', '研究主持人 Blömer 指現制多項給付同時遞減、形同高邊際稅率；整併後估多出 18.8 萬個全職工時。'),
-  ],
-  takeaway=('方案解讀', '代價是國家每年多支出約 54 億歐元。這是智庫方案而非政府草案，仍未進入立法程序。'),
-  file='W34_圖卡7_社會給付三合一.png'),
- dict(
-  theme='#C0392B', badges=[('司法', True), ('國安', False)], illu='gavel',
-  title='俄羅斯破壞案宣判：1 年 3 個月',
-  subtitle='斯圖加特高等邦法院 8/18：一人有罪、另兩名被告無罪',
-  stats=[('1 年 3 個月', '唯一有罪者刑期'),
-         ('2 人', '獲判無罪')],
-  bullets=[
-   ('判了什麼', '斯圖加特高等邦法院（Oberlandesgericht Stuttgart）8/18 認定 30 歲烏克蘭籍男子為破壞目的從事間諜活動。'),
-   ('手法是什麼', '被告自德國寄出兩個內含 GPS 追蹤器的包裹測試貨運路線；下一步是運送途中會自燃的縱火裝置。'),
-   ('為何刑度不高', '行動仍停留在準備階段，刑期已由審前羈押折抵、判決後不必再入監；另兩名被告無罪。'),
-  ],
-  takeaway=('安全觀察', '俄羅斯情報機關近年多以社群媒體招募「拋棄式特務」，用完即切割、成本極低。'),
-  file='W34_圖卡8_俄羅斯破壞案宣判.png'),
+  takeaway=('數據解讀', '勒索軟體（Ransomware）是今年最危險的攻擊型態，在 34% 的受訪企業造成實際損失。'),
+  file='W35_圖卡5_企業資安損失.png'),
 ]
 
 if __name__ == '__main__':
