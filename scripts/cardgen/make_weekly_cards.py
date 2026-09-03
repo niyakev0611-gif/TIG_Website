@@ -1423,7 +1423,7 @@ CARDS = [
  dict(
   theme='#2563EB', badges=[('邦選舉', True), ('薩克森-安哈特邦', False)], illu='ballotbox',
   title='薩克森-安哈特邦週日投票，AfD 大幅領先',
-  subtitle='9/6 邦議會改選，AfD 民調領先 CDU 達 20 個百分點',
+  subtitle='薩克森-安哈特邦（Sachsen-Anhalt）9/6 改選邦議會',
   stats=[('42%', 'AfD 民調支持度'),
          ('22%', 'CDU 民調支持度')],
   bullets=[
@@ -1431,13 +1431,53 @@ CARDS = [
    ('兩位主角是誰', 'CDU 推現任邦總理 Sven Schulze（今年 1 月自 Haseloff 提前接棒）；AfD 推邦議員 Ulrich Siegmund。'),
    ('席次算術很緊', 'AfD 單獨過半仍有距離；但 CDU 2018 年起的不相容決議同時排除 AfD 與左翼黨，兩道牆勢必倒一道。'),
   ],
-  takeaway=('政策觀察', 'AfD 若能組閣，將是該黨首度取得邦總理職位。本月另有 9/20 柏林邦議會選舉。'),
+  takeaway=('政策觀察', 'AfD 若組閣將是該黨首度取得邦總理職位。本月另有 9/20 柏林邦（Berlin）議會選舉。'),
   file='W36_圖卡6_薩克森安哈特邦選舉.png'),
 ]
+
+# ── 邦名德文全名檢查 ────────────────────────────────────────
+# CLAUDE.md 鐵則：提到聯邦邦一律寫「◯◯邦」並附德文全名，不可只給簡寫或只有中文。
+# 目測會漏（W36 第 6 張就漏了），故在產圖時自動掃描每張卡的全部文字。
+STATES = {
+    '梅克倫堡-佛波門': 'Mecklenburg-Vorpommern',
+    '北萊茵-西發利亞': 'Nordrhein-Westfalen',
+    '什勒斯維希-霍爾斯坦': 'Schleswig-Holstein',
+    '下薩克森': 'Niedersachsen',
+    '巴登-符騰堡': 'Baden-Württemberg',
+    '萊茵蘭-普法茲': 'Rheinland-Pfalz',
+    '薩克森-安哈特': 'Sachsen-Anhalt',
+    '圖林根': 'Thüringen',
+    '巴伐利亞': 'Bayern',
+    '黑森': 'Hessen',
+    '薩爾蘭': 'Saarland',
+    '布蘭登堡': 'Brandenburg',
+    '不來梅': 'Bremen',
+    '漢堡': 'Hamburg',
+    '柏林': 'Berlin',
+    '薩克森': 'Sachsen',          # 需排在「下薩克森」「薩克森-安哈特」之後比對
+}
+
+def check_states(spec):
+    """卡片提到某邦卻沒附德文全名時出聲警告"""
+    blob = ' '.join([spec['title'], spec['subtitle'],
+                     ' '.join(l for b in spec['badges'] for l in (b[0],)),
+                     ' '.join(h + b for h, b in spec['bullets']),
+                     ' '.join(spec['takeaway'])])
+    seen = ''
+    for zh, de in STATES.items():
+        # 先扣掉已比對過的長邦名，避免「薩克森」誤命中「下薩克森」「薩克森-安哈特」
+        probe = blob
+        for longer in seen.split('|'):
+            if longer:
+                probe = probe.replace(longer, '')
+        if (zh + '邦') in probe and de not in blob:
+            print(f"  ⚠️ 邦名缺德文: 提到「{zh}邦」但全卡未出現 {de}  ({spec['file']})")
+        seen += '|' + zh
 
 if __name__ == '__main__':
     import os, sys
     OUT = sys.argv[1] if len(sys.argv) > 1 else '.'
     os.makedirs(OUT, exist_ok=True)
     for c in CARDS:
+        check_states(c)
         make_card(c, os.path.join(OUT, c['file']), WEEK, DATE_RANGE)
