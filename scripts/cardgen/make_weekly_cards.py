@@ -1131,6 +1131,106 @@ def illu_databreach(d, R, S, cx, cy, theme):
     for (dx, dy, r) in ((30, 30, 5), (48, 40, 4), (64, 48, 3)):
         d.ellipse(R(cx+dx-r, cy+dy-r, cx+dx+r, cy+dy+r), fill=theme)
 
+def illu_taxrelief(d, R, S, cx, cy, theme):
+    """報稅單＋向下的金色箭頭（所得稅減稅／稅負調降）"""
+    ow = 5*S
+    _dots(d, R, cx, cy, ((-72, -44, 3, GOLD), (-16, -56, 3, tint(theme, 0.5)),
+                         (72, -44, 3, theme)))
+    d.ellipse(R(cx-52, cy+46, cx+52, cy+58), fill=tint(theme, 0.18))
+    # 後層：另一份表單（分層表達厚度）
+    d.rounded_rectangle(R(cx-38, cy-40, cx+42, cy+40), radius=7*S,
+                        fill=tint(theme, 0.30), outline=OUTLINE, width=ow)
+    # 前層：報稅單本體
+    d.rounded_rectangle(R(cx-52, cy-32, cx+28, cy+48), radius=7*S,
+                        fill='white', outline=OUTLINE, width=ow)
+    d.rounded_rectangle(R(cx-42, cy-22, cx-4, cy-14), radius=3*S, fill=tint(theme, 0.45))
+    for yy in (cy-2, cy+8, cy+18):
+        d.line(R(cx-42, yy, cx+16, yy), fill=tint(theme, 0.45), width=3*S)
+    d.line(R(cx-42, cy+30, cx-8, cy+30), fill=tint(theme, 0.45), width=3*S)
+    # 焦點細節：金色 € 圓章＋向下箭頭（稅負下降）
+    ax, ay = cx+44, cy+4
+    d.line(R(ax, ay-34, ax, ay+8), fill=GOLD_D, width=ow+S)
+    d.polygon(R(ax, ay+24, ax-14, ay+4, ax+14, ay+4), fill=GOLD, outline=OUTLINE, width=3*S)
+    d.ellipse(R(ax-18, ay-56, ax+18, ay-20), fill=GOLD, outline=OUTLINE, width=ow)
+    draw_mixed_vcentered(d, R(ax, ay-38), '€', 24*S, OUTLINE, bold=True, anchor='center')
+
+def illu_rentburden(d, R, S, cx, cy, theme):
+    """小房子被高過屋頂的金幣柱壓住（房租吃掉收入／租金負擔）"""
+    ow = 5*S
+    _dots(d, R, cx, cy, ((-70, -46, 3, theme), (10, -56, 3, GOLD),
+                         (74, -50, 3, tint(theme, 0.5))))
+    d.ellipse(R(cx-56, cy+46, cx+56, cy+58), fill=tint(theme, 0.18))
+    # 左側：住宅（屋頂＋屋身＋門窗）
+    d.polygon(R(cx-62, cy+2, cx-24, cy-22, cx+14, cy+2), fill=tint(theme, 0.45),
+              outline=OUTLINE, width=ow)
+    d.rounded_rectangle(R(cx-56, cy+2, cx+8, cy+48), radius=6*S, fill=theme,
+                        outline=OUTLINE, width=ow)
+    d.rounded_rectangle(R(cx-46, cy+12, cx-28, cy+30), radius=3*S, fill='white',
+                        outline=OUTLINE, width=3*S)
+    d.rounded_rectangle(R(cx-14, cy+20, cx+2, cy+48), radius=3*S, fill='white',
+                        outline=OUTLINE, width=3*S)
+    # 右側：高過屋脊的金幣柱（負擔壓過居住）
+    for k in range(5):
+        y0 = cy + 40 - k*15
+        d.rounded_rectangle(R(cx+24, y0-13, cx+72, y0), radius=6*S,
+                            fill=GOLD if k % 2 == 0 else GOLD_D, outline=OUTLINE, width=3*S)
+    # 焦點細節：柱頂的 € 硬幣
+    d.ellipse(R(cx+30, cy-56, cx+66, cy-20), fill=GOLD, outline=OUTLINE, width=ow)
+    draw_mixed_vcentered(d, R(cx+48, cy-38), '€', 24*S, OUTLINE, bold=True, anchor='center')
+
+def illu_pylon(d, R, S, cx, cy, theme):
+    """高壓電塔＋警示三角（電網破壞／供電中斷風險）"""
+    ow = 5*S
+    _dots(d, R, cx, cy, ((-72, -46, 3, GOLD), (-30, -56, 3, tint(theme, 0.5)),
+                         (76, 34, 3, theme)))
+    d.ellipse(R(cx-54, cy+48, cx+54, cy+58), fill=tint(theme, 0.18))
+    # 電塔：兩支外張塔腳（底寬頂窄）＋三層橫桁架
+    d.line(R(cx-46, cy+48, cx-12, cy-44), fill=OUTLINE, width=ow)
+    d.line(R(cx+22, cy+48, cx-12, cy-44), fill=OUTLINE, width=ow)
+    d.line(R(cx-12, cy-44, cx-12, cy+48), fill=tint(theme, 0.30), width=3*S)
+    for yy, l, r in ((cy+36, -42, 18), (cy+10, -33, 9), (cy-16, -24, 0)):
+        d.line(R(cx+l, yy, cx+r, yy), fill=OUTLINE, width=4*S)
+    # 塔身斜撐（同色系淺階，分層表達深度）
+    for (y0, y1, l0, r0, l1, r1) in ((cy+10, cy+36, -33, 9, -42, 18),
+                                     (cy-16, cy+10, -24, 0, -33, 9)):
+        d.line(R(cx+l0, y0, cx+r1, y1), fill=tint(theme, 0.55), width=3*S)
+        d.line(R(cx+r0, y0, cx+l1, y1), fill=tint(theme, 0.55), width=3*S)
+    # 塔頂橫擔＋兩側絕緣礙子（焦點之外的對稱細節）
+    d.line(R(cx-40, cy-44, cx+16, cy-44), fill=OUTLINE, width=ow)
+    for dx in (-36, 12):
+        d.ellipse(R(cx+dx-5, cy-40, cx+dx+5, cy-30), fill=theme, outline=OUTLINE, width=2*S)
+    # 焦點細節：金色警示三角（掛在塔身右側）
+    tx, ty = cx+50, cy-2
+    d.polygon(R(tx, ty-26, tx-24, ty+16, tx+24, ty+16), fill=GOLD,
+              outline=OUTLINE, width=ow)
+    d.line(R(tx, ty-10, tx, ty+3), fill=OUTLINE, width=4*S)
+    d.ellipse(R(tx-3, ty+8, tx+3, ty+14), fill=OUTLINE)
+
+def illu_diploma(d, R, S, cx, cy, theme):
+    """證書＋金色印章與勾號（外國專業資格承認）"""
+    ow = 5*S
+    _dots(d, R, cx, cy, ((-70, -48, 3, theme), (-8, -56, 3, GOLD),
+                         (74, -40, 3, tint(theme, 0.5))))
+    d.ellipse(R(cx-54, cy+46, cx+54, cy+58), fill=tint(theme, 0.18))
+    # 後層：待審的第二份證書
+    d.rounded_rectangle(R(cx-30, cy-42, cx+52, cy+30), radius=7*S,
+                        fill=tint(theme, 0.30), outline=OUTLINE, width=ow)
+    # 前層：證書本體
+    d.rounded_rectangle(R(cx-56, cy-32, cx+30, cy+42), radius=7*S,
+                        fill='white', outline=OUTLINE, width=ow)
+    d.line(R(cx-44, cy-16, cx+18, cy-16), fill=tint(theme, 0.55), width=4*S)
+    d.line(R(cx-44, cy-4, cx+4, cy-4), fill=tint(theme, 0.45), width=3*S)
+    d.line(R(cx-44, cy+6, cx+12, cy+6), fill=tint(theme, 0.45), width=3*S)
+    # 證書上的核可勾號
+    d.line(R(cx-40, cy+24, cx-30, cy+34), fill=theme, width=5*S)
+    d.line(R(cx-30, cy+34, cx-10, cy+12), fill=theme, width=5*S)
+    # 焦點細節：金色鋼印＋緞帶（右下角壓在證書上）
+    sx, sy = cx+40, cy+16
+    d.polygon(R(sx-16, sy+10, sx-16, sy+42, sx-4, sy+32, sx+8, sy+42, sx+8, sy+10),
+              fill=theme, outline=OUTLINE, width=3*S)
+    d.ellipse(R(sx-22, sy-18, sx+18, sy+22), fill=GOLD, outline=OUTLINE, width=ow)
+    d.ellipse(R(sx-13, sy-9, sx+9, sy+13), fill=GOLD_D)
+
 ILLUS = dict(podium=illu_podium, flags=illu_flags, coins=illu_coins,
              idcard=illu_idcard, camera=illu_camera, trophy=illu_trophy,
              bankcard=illu_bankcard, checklist=illu_checklist,
@@ -1146,7 +1246,9 @@ ILLUS = dict(podium=illu_podium, flags=illu_flags, coins=illu_coins,
              heatlaw=illu_heatlaw, gavel=illu_gavel,
              tornado=illu_tornado, wildfire=illu_wildfire,
              solarpanel=illu_solarpanel, evcharge=illu_evcharge,
-             carplant=illu_carplant, databreach=illu_databreach)
+             carplant=illu_carplant, databreach=illu_databreach,
+             taxrelief=illu_taxrelief, rentburden=illu_rentburden,
+             pylon=illu_pylon, diploma=illu_diploma)
 
 # ── 版型 ────────────────────────────────────────────────────
 
@@ -1185,11 +1287,16 @@ def make_card(spec, path, week_label='W?', date_label=''):
     while mixed_width(spec['title'], tsize*S, bold=True) > 884*S and tsize > 46:
         tsize -= 2
     draw_mixed(d, R(100, 186 + (62-tsize)//2), spec['title'], tsize*S, TITLE_C, bold=True)
+    # 自動縮放有下限，縮到底仍過寬就會被卡片右緣裁掉——必須出聲警告
+    if mixed_width(spec['title'], tsize*S, bold=True) > 884*S:
+        print(f'  ⚠️ title clipped: 縮到 {tsize}px 仍超出 884px，請改短標題  ({path})')
     # 副標同樣做自動縮放，避免長邦名（含德文全名）撐出卡片右緣
     ssize = 36
     while mixed_width(spec['subtitle'], ssize*S) > 884*S and ssize > 27:
         ssize -= 1
     draw_mixed(d, R(100, 266 + (36-ssize)//2), spec['subtitle'], ssize*S, SUB_C)
+    if mixed_width(spec['subtitle'], ssize*S) > 884*S:
+        print(f'  ⚠️ subtitle clipped: 縮到 {ssize}px 仍超出 884px，請改短副標  ({path})')
 
     # stats 兩格（第三格空間留給插畫）
     for (x1, x2), (num, label) in zip([(100, 380), (400, 680)], spec['stats'][:2]):
@@ -1244,88 +1351,88 @@ def make_card(spec, path, week_label='W?', date_label=''):
 # ════════════════════════════════════════════════════════════
 # 每週卡片內容（範本：W29）——之後每週改這一段即可
 # ════════════════════════════════════════════════════════════
-WEEK = 'W35'
-DATE_RANGE = '2026/08/24-08/30'
+WEEK = 'W36'
+DATE_RANGE = '2026/08/31-09/06'
 
 CARDS = [
  dict(
-  theme='#C0392B', badges=[('汽車業', True), ('就業', False)], illu='carplant',
-  title='VW 撙節案：四座工廠人力被點名',
-  subtitle='8/25 Wolfsburg 特別廠務會議，逾 1 萬名員工以噓聲回應',
-  stats=[('逾 1 萬人', 'Wolfsburg 到場員工'),
-         ('4 座工廠', '被指人力不具競爭力')],
+  theme='#2E8B57', badges=[('稅制', True), ('家庭', False)], illu='taxrelief',
+  title='內閣通過所得稅改革：一年減稅百億歐元',
+  subtitle='9/2 通過《2027 所得稅改革法》草案，2027、2028 分兩階段生效',
+  stats=[('100 億歐元', '2028 年起全年減稅規模'),
+         ('逾 600 €', '雙薪雙孩 6 萬歐元家庭年省')],
   bullets=[
-   ('會上說了什麼', '執行長 Oliver Blume 8/25 在 Wolfsburg 特別廠務會議稱，美國關稅、地緣風險與新競爭者迫使集團降低成本。'),
-   ('哪些廠被點名', 'VW 的 Emden、Zwickau、Hannover 與 Audi 的 Neckarsulm 廠，被指 2030 年代人力「不具競爭力」。'),
-   ('工會怎麼回應', '職工代表會主席 Daniela Cavallo 稱對董事會信任「已受損」；IG Metall 的 Thorsten Gröger 表明將全力反對。'),
+   ('基本免稅額往上調', '基本免稅額（Grundfreibetrag）2027 年升至 12,564 €、2028 年再升至 12,900 €，等於兩年各多出 216 € 與 336 € 免稅。'),
+   ('孩子的部分加最多', '兒童津貼（Kindergeld）2027 年起每月 267 €、2028 年再加 5 € 至 272 €；兒童免稅額每名子女自 9,756 € 調高至 10,056 €。'),
+   ('高所得端反向加稅', '45% 稅率的起徵點自 277,826 € 下修至 250,000 €；28 萬歐元以上另立 47% 新稅級，SPD 稱之為「超級富人稅」。'),
   ],
-  takeaway=('求職觀察', '2024 年已議定 2030 年前減少約 5 萬個職位。下薩克森邦（Niedersachsen）持 20% 表決權，反對關廠。'),
-  file='W35_圖卡1_VW撙節案四廠被點名.png'),
+  takeaway=('稅務提醒', '42% 稅率起點自 69,879 € 微調至 70,600 €，1.78 萬至 7.06 萬歐元區間的稅率曲線變平緩。法案仍待國會審議。'),
+  file='W36_圖卡1_所得稅改革內閣通過.png'),
  dict(
-  theme='#7C3AED', badges=[('資安', True), ('柏林邦', False)], illu='databreach',
-  title='柏林市府遭駭：5 萬戶住房補貼卡關',
-  subtitle='兩個邦級部門 8/14 斷網；參議院改口不排除個資外流',
-  stats=[('逾 5 萬戶', '住房補貼撥款受影響'),
-         ('2 個', '被隔離的邦級部門')],
+  theme='#C0392B', badges=[('居住', True), ('租金', False)], illu='rentburden',
+  title='租金報告：每兩名租客就有一人怕找不到房',
+  subtitle='德國租客協會 9/1 發表《2026 租金報告》，全德缺 140 萬戶住宅',
+  stats=[('50%', '怕找不到負擔得起的房'),
+         ('140 萬戶', '全德住宅短缺數')],
   bullets=[
-   ('怎麼發生的', '攻擊者利用建設部門 IT 漏洞入侵柏林邦網路，8/14 起兩部門遭隔離；邦刑事警察局與聯邦資安署介入。'),
-   ('哪些業務受影響', '「城市發展、建設與住房」與「交通、環境與氣候保護」兩部門；逾 5 萬戶住房補貼撥款受波及。'),
-   ('個資外洩了沒', '參議院起初稱僅公開地理資料外流，後改口不排除個資受影響；外流時點早於 8/14 斷網。'),
+   ('租客在怕什麼', '50% 受訪租客擔心一旦得搬家就找不到負擔得起的房；29% 擔心未來付不出房租，四分之一為了付房租而省吃。'),
+   ('住房成本還在漲', '58% 表示過去 12 個月房租或雜費（Nebenkosten）變貴；2025 年有 11.2% 的人把逾四成可支配所得花在居住上。'),
+   ('雙方開的藥方相反', '租客協會主席 Melanie Weber-Moritz 要求管制租金、擴建社會住宅；房東協會 Haus & Grund 反批「藥方一直開錯」。'),
   ],
-  takeaway=('因應建議', '參議院稱 9/20 柏林邦議會選舉系統未受影響。等待住房補貼者請留存申請文件、必要時改打電話。'),
-  file='W35_圖卡2_柏林市府遭駭.png'),
+  takeaway=('租屋提醒', '貧窮人口中有 35% 的居住支出超過所得四成，報告示警住房危機正轉為社會國危機。'),
+  file='W36_圖卡2_租金報告缺140萬戶.png'),
  dict(
-  theme='#D4740E', badges=[('烏俄戰爭', True), ('能源', False)], illu='fuelpump',
-  title='俄國七成加油站沒油，CIA 密訪莫斯科',
-  subtitle='烏克蘭無人機重擊煉油廠，德國柴油同步跟漲',
-  stats=[('28.1%', '俄國買得到油的加油站'),
-         ('約 94 美元', '布蘭特原油每桶')],
+  theme='#D4740E', badges=[('通膨', True), ('能源', False)], illu='coins',
+  title='八月通膨升到 2.9%，能源獨漲一成',
+  subtitle='聯邦統計局 8/29 速報：能源年增 10.5%，為本輪物價的主要推手',
+  stats=[('2.9%', '8 月消費者物價年增率'),
+         ('+10.5%', '能源價格年增幅')],
   bullets=[
-   ('CIA 局長飛了一趟莫斯科', '美國中央情報局局長 John Ratcliffe 8/25 未預告抵莫斯科與俄方情報首長會談，克里姆林宮證實普丁未出席。'),
-   ('俄國燃料危機有多深', '8 月中僅 28.1% 加油站買得到汽柴油、逾半數地區短缺；Tatneft 約 800 座站限購汽油 30 公升。'),
-   ('德國也跟著漲', '布蘭特原油升抵每桶約 94 美元；8/19 德國柴油每公升較 Super E10 貴 9.1 分，企業成本明顯墊高。'),
+   ('哪些漲、哪些沒漲', '能源年增 10.5%（7 月 8.3%、6 月 3.4%，逐月加速）；服務年增 2.8%；食品幾乎持平，只年增 0.1%。'),
+   ('為什麼是能源', '6/30 燃料稅減免退場的效果整月反映在油價上，加上俄國煉油產能受創推高精煉產品價格，能源成了唯一的加速項。'),
+   ('核心通膨仍偏高', '扣除食品與能源的核心通膨為 2.4%，高於歐洲央行 2% 的目標，代表漲價壓力並非只來自能源這一項。'),
   ],
-  takeaway=('影響評估', '俄國煉油產能降至 2002 年 5 月以來最低，8 月起重新開放 Euro-2 至 Euro-4 低標號汽油一年。'),
-  file='W35_圖卡3_俄羅斯燃料危機與CIA密訪.png'),
+  takeaway=('數據解讀', '這是速報值，終值 9/10 公布。物價月增 0.2%，短期回落空間有限，暖氣季前宜先比價電力與天然氣合約。'),
+  file='W36_圖卡3_八月通膨與能源.png'),
  dict(
-  theme='#2E8B57', badges=[('九月新制', True), ('生活', False)], illu='checklist',
-  title='九月新制：報稅諮詢門檻取消',
-  subtitle='薪資稅務協會鬆綁、環保廣告要有憑據、車站禁酒分批上路',
-  stats=[('9/1', '薪資稅務協會門檻取消'),
-         ('9/27', '環保廣告新規上路')],
+  theme='#7C3AED', badges=[('關鍵基礎設施', True), ('布蘭登堡邦', False)], illu='pylon',
+  title='變電站遭裝雙位數爆裂物，恐怖攻擊偵辦',
+  subtitle='布蘭登堡邦（Brandenburg）Turnow-Preilack 變電站 9/1 遭破壞',
+  stats=[('雙位數', '尋獲的燃燒爆裂裝置'),
+         ('2 處', '已被塞入導電材料的高壓線')],
   bullets=[
-   ('報稅諮詢鬆綁', '9/1 起薪資稅務協會（Lohnsteuerhilfeverein）可為有租賃收入者報稅，不再受年收入 18,000 € 上限限制。'),
-   ('環保廣告要有憑據', '9/27 起適用歐盟 EmpCo 指令：「氣候中和」「環保」等說法須可查證，僅靠碳權達成的中和不得再宣稱。'),
-   ('車站禁酒分批啟動', '9/1 先於柏林中央車站、Gesundbrunnen 與 Kiel、Braunschweig 生效，最晚 10/15 擴及全德 5,400 站。'),
+   ('發生了什麼', '9/1 上午在布蘭登堡邦 Jänschwalde 附近的 Turnow-Preilack 變電站尋獲雙位數的非常規燃燒與爆裂裝置，無人受傷。'),
+   ('手法與過去不同', '邦內政部長 Jan Redmann（CDU）稱「這不是小孩的惡作劇」，指裝置疑數日前就已布設、需技術知識。'),
+   ('以恐怖組織罪偵辦', '檢方以組成恐怖組織、妨害公用事業與毀損重要生產設備等罪嫌偵辦，邦刑事警察局主導；迄今無人認犯。'),
   ],
-  takeaway=('生活提醒', '同月歐盟統一的瑕疵擔保標示上路，商家須以標準標籤說明法定兩年擔保權與製造商保固的差別。'),
-  file='W35_圖卡4_九月新制.png'),
+  takeaway=('觀察重點', 'Redmann 稱不排除外國勢力涉入的混合威脅。同一地區今年 1 月的破壞曾讓 4.5 萬戶一度停電。'),
+  file='W36_圖卡4_變電站遭破壞.png'),
  dict(
-  theme='#2563EB', badges=[('經濟政策', True), ('景氣', False)], illu='podium',
-  title='內閣閉門會議談成長，ifo 指數四連升',
-  subtitle='8/25–26 布蘭登堡邦（Brandenburg）Neuhardenberg 宮；ifo 升至 88.8 點',
-  stats=[('88.8 點', '8 月 ifo 景氣指數'),
-         ('+2.1 點', '較 7 月的 86.7 點')],
+  theme='#0D9488', badges=[('工作', True), ('外國專業人員', False)], illu='diploma',
+  title='外國專業資格承認創新高，等待仍以年計',
+  subtitle='聯邦統計局：2025 年 86,600 件獲承認，年增 10%，但成長已明顯放緩',
+  stats=[('86,600 件', '2025 年獲承認的資格'),
+         ('32,000 件', '護理師，居所有職類之冠')],
   bullets=[
-   ('會議談了什麼', 'Merz 8/25–26 於布蘭登堡邦 Neuhardenberg 宮開內閣閉門會議，主軸為競爭力、工業 AI 與技術主權。'),
-   ('景氣同步轉好', 'ifo 經濟研究所 8/25 公布：8 月景氣指數自 86.7 升至 88.8 點、連四個月上升，優於預估的 87.1 點。'),
-   ('在野黨怎麼看', '綠黨（Bündnis 90/Die Grünen）黨主席 Felix Banaszak 批評「氣候沒有決議，也沒有刺激經濟的新想法」。'),
+   ('數字創下新高', '2025 年共 86,600 件外國專業資格獲正面承認，較 2024 年的 79,100 件成長近 10%，為統計以來最多。'),
+   ('成長明顯踩了煞車', '前兩年成長率分別是 2024 年的 21% 與 2023 年的 25%；2025 年共處理 102,900 件程序，其中 76,200 件為當年新申請。'),
+   ('哪些職類最多', '護理師（Pflegefachfrau/-mann）以 32,000 件遙遙領先，其次為醫師 13,900 件與工程師 4,600 件。'),
   ],
-  takeaway=('政策觀察', '會中另就今夏高溫與乾旱先做情勢分析，決議留待後續內閣會議；能源價格再度上升仍是變數。'),
-  file='W35_圖卡5_內閣閉門會議與ifo.png'),
+  takeaway=('求職提醒', '受訪當事人指程序動輒等上兩年。申請前先確認職類屬管制或非管制，並備妥翻譯與公證文件以免補件重來。'),
+  file='W36_圖卡5_外國資格承認創新高.png'),
  dict(
-  theme='#0D9488', badges=[('資安', True), ('經濟', False)], illu='coins',
-  title='87% 企業遇襲，損失逾 2,110 億歐元',
-  subtitle='Bitkom 與聯邦憲法保護局 8/26 共同發表《經濟保護報告 2026》',
-  stats=[('87%', '過去 12 個月受害企業'),
-         ('2,110 億歐元起', '可量化的年度損失')],
+  theme='#2563EB', badges=[('邦選舉', True), ('薩克森-安哈特邦', False)], illu='ballotbox',
+  title='薩克森-安哈特邦週日投票，AfD 大幅領先',
+  subtitle='9/6 邦議會改選，AfD 民調領先 CDU 達 20 個百分點',
+  stats=[('42%', 'AfD 民調支持度'),
+         ('22%', 'CDU 民調支持度')],
   bullets=[
-   ('受害比例創高', '87% 受訪企業表示過去 12 個月遭資料或設備竊取、工業間諜或破壞，一年前這個比例是 81%。'),
-   ('損失規模', 'Bitkom 理事長 Ralf Wintergerst：可量化損失介於 2,110 億至 2,708 億歐元，前一年度為 2,892 億歐元。'),
-   ('誰在動手', '遭破壞、間諜或竊取的企業中，37% 認為有外國情報機關涉入（一年前 28%）；指向俄羅斯與中國者各 46%。'),
+   ('民調怎麼說', 'Infratest dimap 為 ARD 所做調查（8/24–25 訪問 1,511 人）：AfD 42%、CDU 22%、左翼黨 11%、SPD 8%、綠黨 6%。'),
+   ('兩位主角是誰', 'CDU 推現任邦總理 Sven Schulze（今年 1 月自 Haseloff 提前接棒）；AfD 推邦議員 Ulrich Siegmund。'),
+   ('席次算術很緊', 'AfD 單獨過半仍有距離；但 CDU 2018 年起的不相容決議同時排除 AfD 與左翼黨，兩道牆勢必倒一道。'),
   ],
-  takeaway=('數據解讀', '勒索軟體（Ransomware）是今年最危險的攻擊型態，在 34% 的受訪企業造成實際損失。'),
-  file='W35_圖卡6_企業資安損失.png'),
+  takeaway=('政策觀察', 'AfD 若能組閣，將是該黨首度取得邦總理職位。本月另有 9/20 柏林邦議會選舉。'),
+  file='W36_圖卡6_薩克森安哈特邦選舉.png'),
 ]
 
 if __name__ == '__main__':
