@@ -1382,56 +1382,64 @@ def make_chart_card(spec, path, week_label='W?', date_label=''):
 
     paste_wordmark(img)
 
-    tsize = 56
-    while mixed_width(spec['title'], tsize*S, bold=True) > 884*S and tsize > 42:
+    tsize = 62
+    while mixed_width(spec['title'], tsize*S, bold=True) > 884*S and tsize > 46:
         tsize -= 2
-    draw_mixed(d, R(100, 186 + (56-tsize)//2), spec['title'], tsize*S, TITLE_C, bold=True)
+    draw_mixed(d, R(100, 186 + (62-tsize)//2), spec['title'], tsize*S, TITLE_C, bold=True)
     if mixed_width(spec['title'], tsize*S, bold=True) > 884*S:
         print(f'  ⚠️ title clipped: 縮到 {tsize}px 仍超出 884px，請改短標題  ({path})')
-    ssize = 32
-    while mixed_width(spec['subtitle'], ssize*S) > 884*S and ssize > 25:
+    ssize = 36
+    while mixed_width(spec['subtitle'], ssize*S) > 884*S and ssize > 27:
         ssize -= 1
-    draw_mixed(d, R(100, 258 + (32-ssize)//2), spec['subtitle'], ssize*S, SUB_C)
+    draw_mixed(d, R(100, 266 + (36-ssize)//2), spec['subtitle'], ssize*S, SUB_C)
     if mixed_width(spec['subtitle'], ssize*S) > 884*S:
         print(f'  ⚠️ subtitle clipped: 縮到 {ssize}px 仍超出 884px，請改短副標  ({path})')
 
     # 圖例（兩組數列一律附圖例，識別不靠顏色單一管道）
-    lx, ly = 100, 312
+    lx, ly_mid = 100, 348
     for col, name in ((SERIES_OLD, spec['label_old']), (SERIES_NEW, spec['label_new'])):
-        d.rounded_rectangle(R(lx, ly+4, lx+26, ly+22), radius=4*S, fill=col)
-        draw_mixed(d, R(lx+36, ly), name, 27*S, BODY_C, bold=True)
+        d.rounded_rectangle(R(lx, ly_mid-9, lx+26, ly_mid+9), radius=4*S, fill=col)
+        draw_mixed_vcentered(d, R(lx+36, ly_mid), name, 27*S, BODY_C, bold=True)
         lx += 36 + mixed_width(name, 27*S, bold=True)/S + 34
 
-    # 繪圖區
+    # 繪圖區幾何：全部由這幾個常數推導，勿在下方手動加 offset
     X0, X1 = 258, 780          # 長條起點與滿刻度（右側留給變化欄）
     VMAX = spec.get('vmax', 46)
     rows = spec['rows']
-    top, row_h = 356, 74
+    TOP, ROW_H = 376, 68       # 第一列上緣、列高
+    BAR_H, BAR_GAP = 22, 6     # 長條厚度、同列兩條之間的底色間隙
+    PAIR_H = BAR_H*2 + BAR_GAP
     def vx(v):
         return X0 + (X1 - X0) * v / VMAX
+    def pair_top(i):           # 一列內的兩條長條，在列高中垂直置中
+        return TOP + i*ROW_H + (ROW_H - PAIR_H) / 2
 
-    # recessive 格線（畫在長條之下）
+    plot_bot = pair_top(len(rows)-1) + PAIR_H
+
+    # recessive 格線（畫在長條之下）＋底部刻度
     for g in range(0, int(VMAX)+1, 10):
         gx = vx(g)
-        d.line(R(gx, top-10, gx, top + len(rows)*row_h - 12), fill=GRID_C, width=2*S)
-        draw_mixed(d, R(gx, top + len(rows)*row_h - 6), f'{g}%', 22*S, FOOT_C, anchor='center')
+        d.line(R(gx, TOP + 2, gx, plot_bot + 10), fill=GRID_C, width=2*S)
+        draw_mixed_vcentered(d, R(gx, plot_bot + 38), f'{g}%', 22*S, FOOT_C, anchor='center')
 
     for i, (name, v_old, v_new, delta) in enumerate(rows):
-        cy = top + i*row_h
-        draw_mixed(d, R(100, cy + 18), name, 30*S, TITLE_C, bold=True)
-        # 上：舊屆；下：新屆。兩條之間留 4px 底色間隙
+        pt = pair_top(i)
+        mid = pt + PAIR_H / 2
+        # 類別名與變化量都對齊「兩條長條的共同中線」
+        draw_mixed_vcentered(d, R(100, mid), name, 30*S, TITLE_C, bold=True)
         for k, (v, col) in enumerate(((v_old, SERIES_OLD), (v_new, SERIES_NEW))):
-            by = cy + 8 + k*26
+            by = pt + k*(BAR_H + BAR_GAP)
             if v is None:                       # 該屆尚未成立 → 不畫長條，只標記
-                draw_mixed(d, R(X0 + 6, by - 3), '—', 26*S, FOOT_C)
+                draw_mixed_vcentered(d, R(X0 + 6, by + BAR_H/2), '—', 26*S, FOOT_C)
                 continue
-            d.rounded_rectangle(R(X0, by, max(vx(v), X0 + 8), by + 22), radius=4*S, fill=col)
-            draw_mixed(d, R(max(vx(v), X0 + 8) + 12, by - 3), f'{v:.1f}%', 26*S, BODY_C, bold=True)
-        # 變化量（文字一律用墨色，不套數列色）
-        draw_mixed(d, R(990, cy + 18), delta, 29*S, BODY_C, bold=True, anchor='right')
+            bx1 = max(vx(v), X0 + 8)
+            d.rounded_rectangle(R(X0, by, bx1, by + BAR_H), radius=4*S, fill=col)
+            # 數值標籤對齊「該條長條自己的中線」
+            draw_mixed_vcentered(d, R(bx1 + 14, by + BAR_H/2), f'{v:.1f}%', 26*S, BODY_C, bold=True)
+        draw_mixed_vcentered(d, R(990, mid), delta, 29*S, BODY_C, bold=True, anchor='right')
 
     # 圖表註腳
-    ny = top + len(rows)*row_h + 30
+    ny = plot_bot + 70
     for line in spec.get('notes', ()):
         draw_mixed(d, R(100, ny), line, 24*S, SUB_C)
         ny += 32
@@ -1470,7 +1478,7 @@ CARDS = [
  dict(
   kind='chart', theme='#2563EB', badges=[('選舉數據', True), ('薩克森-安哈特邦', False)],
   title='兩屆對照：AfD 翻倍，CDU 掉了一半以上',
-  subtitle='薩克森-安哈特邦（Sachsen-Anhalt）邦議會選舉第二票得票率，2021 vs 2026',
+  subtitle='薩克森-安哈特邦（Sachsen-Anhalt）邦議會選舉第二票得票率',
   label_old='2021 年', label_new='2026 年', vmax=46,
   rows=[
    ('AfD',   20.8, 44.0, '+23.2'),
