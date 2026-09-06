@@ -1348,6 +1348,105 @@ def make_card(spec, path, week_label='W?', date_label=''):
     img.save(path, 'PNG')
     print('✅', path)
 
+# ── 純圖表版型（成對長條圖，兩屆選舉比較）──────────────────
+# 配色以 dataviz 六項檢查驗過：橙 #D4740E（舊）× 藍 #2563EB（新）
+# 於淺色底通過亮度帶、彩度、色盲分離（protan ΔE 32.0）、一般視覺與對比度。
+SERIES_OLD, SERIES_NEW = '#D4740E', '#2563EB'
+GRID_C = '#E3DFD8'
+
+def make_chart_card(spec, path, week_label='W?', date_label=''):
+    """成對水平長條圖：同一組類別的兩期數值比較（無 bullets／stats／觀察框）"""
+    theme = spec['theme']
+    img = Image.new('RGB', (W*S, H*S), BG)
+    d = ImageDraw.Draw(img)
+    def R(*v):
+        return [x*S for x in v]
+
+    d.rectangle(R(0, 0, W, 40), fill=theme)
+    d.rectangle(R(0, H-12, W, H), fill=theme)
+    d.rounded_rectangle(R(36, 60, W-36, 1002), radius=28*S, fill=CARD,
+                        outline=BORDER, width=2*S)
+
+    bx = 100
+    for label, filled in spec['badges']:
+        tw = mixed_width(label, 30*S, bold=True)
+        bw = tw/S + 52
+        y1, y2 = 100, 146
+        if filled:
+            d.rounded_rectangle(R(bx, y1, bx+bw, y2), radius=23*S, fill=theme)
+            draw_mixed_vcentered(d, R(bx+26, (y1+y2)/2), label, 30*S, 'white', bold=True)
+        else:
+            d.rounded_rectangle(R(bx, y1, bx+bw, y2), radius=23*S, outline=theme, width=3*S)
+            draw_mixed_vcentered(d, R(bx+26, (y1+y2)/2), label, 30*S, theme, bold=True)
+        bx += bw + 18
+
+    paste_wordmark(img)
+
+    tsize = 56
+    while mixed_width(spec['title'], tsize*S, bold=True) > 884*S and tsize > 42:
+        tsize -= 2
+    draw_mixed(d, R(100, 186 + (56-tsize)//2), spec['title'], tsize*S, TITLE_C, bold=True)
+    if mixed_width(spec['title'], tsize*S, bold=True) > 884*S:
+        print(f'  ⚠️ title clipped: 縮到 {tsize}px 仍超出 884px，請改短標題  ({path})')
+    ssize = 32
+    while mixed_width(spec['subtitle'], ssize*S) > 884*S and ssize > 25:
+        ssize -= 1
+    draw_mixed(d, R(100, 258 + (32-ssize)//2), spec['subtitle'], ssize*S, SUB_C)
+    if mixed_width(spec['subtitle'], ssize*S) > 884*S:
+        print(f'  ⚠️ subtitle clipped: 縮到 {ssize}px 仍超出 884px，請改短副標  ({path})')
+
+    # 圖例（兩組數列一律附圖例，識別不靠顏色單一管道）
+    lx, ly = 100, 312
+    for col, name in ((SERIES_OLD, spec['label_old']), (SERIES_NEW, spec['label_new'])):
+        d.rounded_rectangle(R(lx, ly+4, lx+26, ly+22), radius=4*S, fill=col)
+        draw_mixed(d, R(lx+36, ly), name, 27*S, BODY_C, bold=True)
+        lx += 36 + mixed_width(name, 27*S, bold=True)/S + 34
+
+    # 繪圖區
+    X0, X1 = 258, 780          # 長條起點與滿刻度（右側留給變化欄）
+    VMAX = spec.get('vmax', 46)
+    rows = spec['rows']
+    top, row_h = 356, 74
+    def vx(v):
+        return X0 + (X1 - X0) * v / VMAX
+
+    # recessive 格線（畫在長條之下）
+    for g in range(0, int(VMAX)+1, 10):
+        gx = vx(g)
+        d.line(R(gx, top-10, gx, top + len(rows)*row_h - 12), fill=GRID_C, width=2*S)
+        draw_mixed(d, R(gx, top + len(rows)*row_h - 6), f'{g}%', 22*S, FOOT_C, anchor='center')
+
+    for i, (name, v_old, v_new, delta) in enumerate(rows):
+        cy = top + i*row_h
+        draw_mixed(d, R(100, cy + 18), name, 30*S, TITLE_C, bold=True)
+        # 上：舊屆；下：新屆。兩條之間留 4px 底色間隙
+        for k, (v, col) in enumerate(((v_old, SERIES_OLD), (v_new, SERIES_NEW))):
+            by = cy + 8 + k*26
+            if v is None:                       # 該屆尚未成立 → 不畫長條，只標記
+                draw_mixed(d, R(X0 + 6, by - 3), '—', 26*S, FOOT_C)
+                continue
+            d.rounded_rectangle(R(X0, by, max(vx(v), X0 + 8), by + 22), radius=4*S, fill=col)
+            draw_mixed(d, R(max(vx(v), X0 + 8) + 12, by - 3), f'{v:.1f}%', 26*S, BODY_C, bold=True)
+        # 變化量（文字一律用墨色，不套數列色）
+        draw_mixed(d, R(990, cy + 18), delta, 29*S, BODY_C, bold=True, anchor='right')
+
+    # 圖表註腳
+    ny = top + len(rows)*row_h + 30
+    for line in spec.get('notes', ()):
+        draw_mixed(d, R(100, ny), line, 24*S, SUB_C)
+        ny += 32
+
+    draw_mixed(d, R(64, 1018), '德國知識小種子', 30*S, SUB_C)
+    draw_mixed(d, R(316, 1018), f'{week_label} · {date_label}', 30*S, FOOT_C)
+    draw_mixed(d, R(1016, 1018), 'Das deutsche Wissen', 30*S, SUB_C, anchor='right')
+
+    if ny > 996:
+        print(f'  ⚠️ overflow: 註腳結束 {ny} 已超出卡片下緣  ({path})')
+
+    img = img.resize((W, H), Image.LANCZOS)
+    img.save(path, 'PNG')
+    print('✅', path)
+
 # ════════════════════════════════════════════════════════════
 # 每週卡片內容（範本：W29）——之後每週改這一段即可
 # ════════════════════════════════════════════════════════════
@@ -1369,6 +1468,25 @@ CARDS = [
   takeaway=('選後觀察', 'CDU 的不相容決議同時排除 AfD 與左翼黨，組閣難度極高。本月另有 9/20 柏林邦（Berlin）議會選舉。'),
   file='W36_圖卡1_薩克森安哈特邦選舉結果.png'),
  dict(
+  kind='chart', theme='#2563EB', badges=[('選舉數據', True), ('薩克森-安哈特邦', False)],
+  title='兩屆對照：AfD 翻倍，CDU 掉了一半以上',
+  subtitle='薩克森-安哈特邦（Sachsen-Anhalt）邦議會選舉第二票得票率，2021 vs 2026',
+  label_old='2021 年', label_new='2026 年', vmax=46,
+  rows=[
+   ('AfD',   20.8, 44.0, '+23.2'),
+   ('CDU',   37.1, 17.5, '-19.6'),
+   ('綠黨',   5.9,  9.0, '+3.1'),
+   ('SPD',    8.4,  9.0, '+0.6'),
+   ('左翼黨', 11.0,  8.9, '-2.1'),
+   ('BSW',   None,  5.0, '首次參選'),
+   ('FDP',    6.4,  2.4, '-4.0'),
+  ],
+  notes=[
+   '2026 年為 9/6 開票夜 21 時 12 分推估值，非最終官方結果；2021 年為官方最終結果。',
+   'BSW（Bündnis Sahra Wagenknecht）於 2021 年尚未成立。投票率自 60.3% 升至約 77%。',
+  ],
+  file='W36_圖卡2_兩屆選舉得票對照.png'),
+ dict(
   theme='#2E8B57', badges=[('稅制', True), ('家庭', False)], illu='taxrelief',
   title='內閣通過所得稅改革：一年減稅百億歐元',
   subtitle='9/2 通過《2027 所得稅改革法》草案，2027、2028 分兩階段生效',
@@ -1380,7 +1498,7 @@ CARDS = [
    ('高所得端反向加稅', '45% 稅率的起徵點自 277,826 € 下修至 250,000 €；28 萬歐元以上另立 47% 新稅級，SPD 稱之為「超級富人稅」。'),
   ],
   takeaway=('稅務提醒', '42% 稅率起點自 69,879 € 微調至 70,600 €，1.78 萬至 7.06 萬歐元區間的稅率曲線變平緩。法案仍待國會審議。'),
-  file='W36_圖卡2_所得稅改革內閣通過.png'),
+  file='W36_圖卡3_所得稅改革內閣通過.png'),
  dict(
   theme='#C0392B', badges=[('居住', True), ('租金', False)], illu='rentburden',
   title='租金報告：每兩名租客就有一人怕找不到房',
@@ -1393,7 +1511,7 @@ CARDS = [
    ('雙方開的藥方相反', '租客協會主席 Melanie Weber-Moritz 要求管制租金、擴建社會住宅；房東協會 Haus & Grund 反批「藥方一直開錯」。'),
   ],
   takeaway=('租屋提醒', '貧窮人口中有 35% 的居住支出超過所得四成，報告示警住房危機正轉為社會國危機。'),
-  file='W36_圖卡3_租金報告缺140萬戶.png'),
+  file='W36_圖卡4_租金報告缺140萬戶.png'),
  dict(
   theme='#D4740E', badges=[('通膨', True), ('能源', False)], illu='coins',
   title='八月通膨升到 2.9%，能源獨漲一成',
@@ -1406,7 +1524,7 @@ CARDS = [
    ('核心通膨仍偏高', '扣除食品與能源的核心通膨為 2.4%，高於歐洲央行 2% 的目標，代表漲價壓力並非只來自能源這一項。'),
   ],
   takeaway=('數據解讀', '這是速報值，終值 9/10 公布。物價月增 0.2%，短期回落空間有限，暖氣季前宜先比價電力與天然氣合約。'),
-  file='W36_圖卡4_八月通膨與能源.png'),
+  file='W36_圖卡5_八月通膨與能源.png'),
  dict(
   theme='#7C3AED', badges=[('關鍵基礎設施', True), ('三邦連環破壞', False)], illu='pylon',
   title='電網連環破壞：五個發電機組一度離線',
@@ -1419,7 +1537,7 @@ CARDS = [
    ('查到誰了', '兩封認犯信寄抵多家媒體且被認定為真；嫌疑人是 Gevelsberg 一名 48 歲男子，目前仍在逃。'),
   ],
   takeaway=('觀察重點', '認犯信稱化石燃料發電是犯罪；聯邦內政部長 Dobrindt 將本案定性為單一行為人的「氣候恐怖主義」。'),
-  file='W36_圖卡5_電網連環破壞.png'),
+  file='W36_圖卡6_電網連環破壞.png'),
  dict(
   theme='#0D9488', badges=[('工作', True), ('外國專業人員', False)], illu='diploma',
   title='外國專業資格承認創新高，等待仍以年計',
@@ -1432,7 +1550,7 @@ CARDS = [
    ('哪些職類最多', '護理師（Pflegefachfrau/-mann）以 32,000 件遙遙領先，其次為醫師 13,900 件與工程師 4,600 件。'),
   ],
   takeaway=('求職提醒', '受訪當事人指程序動輒等上兩年。申請前先確認職類屬管制或非管制，並備妥翻譯與公證文件以免補件重來。'),
-  file='W36_圖卡6_外國資格承認創新高.png'),
+  file='W36_圖卡7_外國資格承認創新高.png'),
 ]
 
 # ── 邦名德文全名檢查 ────────────────────────────────────────
@@ -1461,8 +1579,10 @@ def check_states(spec):
     """卡片提到某邦卻沒附德文全名時出聲警告"""
     blob = ' '.join([spec['title'], spec['subtitle'],
                      ' '.join(l for b in spec['badges'] for l in (b[0],)),
-                     ' '.join(h + b for h, b in spec['bullets']),
-                     ' '.join(spec['takeaway'])])
+                     ' '.join(h + b for h, b in spec.get('bullets', ())),
+                     ' '.join(spec.get('takeaway', ())),
+                     ' '.join(str(v) for r in spec.get('rows', ()) for v in r[:1]),
+                     ' '.join(spec.get('notes', ()))])
     seen = ''
     for zh, de in STATES.items():
         # 先扣掉已比對過的長邦名，避免「薩克森」誤命中「下薩克森」「薩克森-安哈特」
@@ -1474,10 +1594,49 @@ def check_states(spec):
             print(f"  ⚠️ 邦名缺德文: 提到「{zh}邦」但全卡未出現 {de}  ({spec['file']})")
         seen += '|' + zh
 
+
+_notdef_cache = {}
+def _notdef(font):
+    """該字型的 .notdef（豆腐框）像素樣本"""
+    key = id(font)
+    if key not in _notdef_cache:
+        _notdef_cache[key] = bytes(font.getmask('\uffff'))
+    return _notdef_cache[key]
+
+def check_glyphs(spec):
+    """掃描卡片所有文字，揪出會渲染成 .notdef 豆腐框的缺字
+
+    踩過的雷：U+2212 MINUS SIGN「−」在本機 Noto Sans 沒有字符，
+    但 getmask() 仍回傳豆腐框的尺寸，光看寬度看不出問題，圖上才會露餡。
+    這裡以「已知一定缺字」的字元取得豆腐框尺寸當基準來比對。
+    """
+    texts = [spec['title'], spec['subtitle']]
+    texts += [b[0] for b in spec['badges']]
+    texts += [h for h, _ in spec.get('bullets', ())] + [b for _, b in spec.get('bullets', ())]
+    texts += list(spec.get('takeaway', ())) + list(spec.get('notes', ()))
+    texts += [str(v) for r in spec.get('rows', ()) for v in r]
+    texts += [spec.get('label_old', ''), spec.get('label_new', '')]
+    texts += [n for n, _ in spec.get('stats', ())] + [l for _, l in spec.get('stats', ())]
+
+    bad = set()
+    for t in texts:
+        for ch in set(t):
+            if ch.isspace():
+                continue
+            f = cjk(40, True) if is_cjk_char(ch) else lat(40, True)
+            # 只比尺寸會誤判：CJK 字符本身就是全形方塊，與豆腐框同尺寸。
+            # 必須比對實際像素。
+            if bytes(f.getmask(ch)) == _notdef(f):
+                bad.add(ch)
+    for ch in sorted(bad):
+        print(f"  ⚠️ 缺字: 「{ch}」(U+{ord(ch):04X}) 在字型中不存在，會印成豆腐框  ({spec['file']})")
+
 if __name__ == '__main__':
     import os, sys
     OUT = sys.argv[1] if len(sys.argv) > 1 else '.'
     os.makedirs(OUT, exist_ok=True)
     for c in CARDS:
         check_states(c)
-        make_card(c, os.path.join(OUT, c['file']), WEEK, DATE_RANGE)
+        check_glyphs(c)
+        render = make_chart_card if c.get('kind') == 'chart' else make_card
+        render(c, os.path.join(OUT, c['file']), WEEK, DATE_RANGE)
