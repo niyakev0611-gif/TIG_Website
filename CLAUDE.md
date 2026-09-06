@@ -488,3 +488,29 @@ IG 曾因貼文超過字數上限被拒登（"Text des Beitrags ist zu lang"）�
 - 每張卡內文的「📚 來源」段落用 `<p class="post-sources">`（已在 `css/style.css` 定義）
 - 來源連結一律 `target="_blank" rel="noopener noreferrer"`
 - 區段內可重複使用 `<strong>` 強調關鍵數字與專有名詞，跟既有 W21-22 / W20 段落風格一致
+
+---
+
+## 🔍 來源查證鐵則（2026/09 W36 踩雷後新增）
+
+**雲端 session 的 egress proxy 會擋掉絕大多數新聞網域**，WebFetch 多半回 `EGRESS_BLOCKED`，
+curl 一律 `000`。這代表：**寫稿時通常沒辦法真的打開來源頁，只能靠 WebSearch 回傳的摘要。**
+
+因此下列三條必須遵守：
+
+1. **網址只能從搜尋結果原樣複製，絕對不可自行拼湊。**
+   W36 踩過的雷：憑印象拼出 `bmbfsfj.bund.de/.../alle-meldungen/...-292828`（真實為
+   `/pressemitteilungen/...-292826`）、`anerkennung-in-deutschland.de/html/zh/index.php`
+   （中文頁未經證實）、`mieterbund.de/app/uploads/.../Mietenreport-2026.pdf`（臆測路徑）。
+   看起來合理的網址結構 ≠ 該頁存在。
+2. **交稿前把所有引用網址列出來，逐條回頭比對搜尋結果有沒有出現過。**
+   憑記憶判斷「這條我應該有看過」並不可靠——W36 有三條被誤判為捏造、實際存在，
+   也有一條（`marktundmittelstand.de/zukunftsmaerkte/inflation-august-2026`）確實存在
+   但**講的是七月數據**，拿來佐證八月數字就是錯引。**網址存在 ≠ 內容支持該主張。**
+3. **出處品質要看**：`mmnews.de`、`epochtimes.de`、`reitschuster.de`、`jungefreiheit.de`
+   等非主流／立場性強的網站不可作為事實的唯一出處；維基百科可作為查證起點，
+   但不宜列為成品的引用來源。優先用：官方機構、通訊社、ZDF/ARD、
+   Tagesspiegel/Handelsblatt/SZ/FAZ/taz、bpb、Correctiv。
+
+**交付時如實說明查證程度**：哪些數字有兩個以上獨立來源、哪些只有單一來源、
+哪些只讀到摘要而未讀原文。不要讓「附了連結」看起來像「已核實」。
