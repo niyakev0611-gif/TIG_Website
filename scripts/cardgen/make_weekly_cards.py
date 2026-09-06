@@ -1131,6 +1131,130 @@ def illu_databreach(d, R, S, cx, cy, theme):
     for (dx, dy, r) in ((30, 30, 5), (48, 40, 4), (64, 48, 3)):
         d.ellipse(R(cx+dx-r, cy+dy-r, cx+dx+r, cy+dy+r), fill=theme)
 
+def illu_taxrelief(d, R, S, cx, cy, theme):
+    """報稅單＋向下的金色箭頭（所得稅減稅／稅負調降）"""
+    ow = 5*S
+    _dots(d, R, cx, cy, ((-72, -44, 3, GOLD), (-16, -56, 3, tint(theme, 0.5)),
+                         (72, -44, 3, theme)))
+    d.ellipse(R(cx-52, cy+46, cx+52, cy+58), fill=tint(theme, 0.18))
+    # 後層：另一份表單（分層表達厚度）
+    d.rounded_rectangle(R(cx-38, cy-40, cx+42, cy+40), radius=7*S,
+                        fill=tint(theme, 0.30), outline=OUTLINE, width=ow)
+    # 前層：報稅單本體
+    d.rounded_rectangle(R(cx-52, cy-32, cx+28, cy+48), radius=7*S,
+                        fill='white', outline=OUTLINE, width=ow)
+    d.rounded_rectangle(R(cx-42, cy-22, cx-4, cy-14), radius=3*S, fill=tint(theme, 0.45))
+    for yy in (cy-2, cy+8, cy+18):
+        d.line(R(cx-42, yy, cx+16, yy), fill=tint(theme, 0.45), width=3*S)
+    d.line(R(cx-42, cy+30, cx-8, cy+30), fill=tint(theme, 0.45), width=3*S)
+    # 焦點細節：金色 € 圓章＋向下箭頭（稅負下降）
+    ax, ay = cx+44, cy+4
+    d.line(R(ax, ay-34, ax, ay+8), fill=GOLD_D, width=ow+S)
+    d.polygon(R(ax, ay+24, ax-14, ay+4, ax+14, ay+4), fill=GOLD, outline=OUTLINE, width=3*S)
+    d.ellipse(R(ax-18, ay-56, ax+18, ay-20), fill=GOLD, outline=OUTLINE, width=ow)
+    draw_mixed_vcentered(d, R(ax, ay-38), '€', 24*S, OUTLINE, bold=True, anchor='center')
+
+def illu_rentburden(d, R, S, cx, cy, theme):
+    """小房子被高過屋頂的金幣柱壓住（房租吃掉收入／租金負擔）"""
+    ow = 5*S
+    _dots(d, R, cx, cy, ((-70, -46, 3, theme), (10, -56, 3, GOLD),
+                         (74, -50, 3, tint(theme, 0.5))))
+    d.ellipse(R(cx-56, cy+46, cx+56, cy+58), fill=tint(theme, 0.18))
+    # 左側：住宅（屋頂＋屋身＋門窗）
+    d.polygon(R(cx-62, cy+2, cx-24, cy-22, cx+14, cy+2), fill=tint(theme, 0.45),
+              outline=OUTLINE, width=ow)
+    d.rounded_rectangle(R(cx-56, cy+2, cx+8, cy+48), radius=6*S, fill=theme,
+                        outline=OUTLINE, width=ow)
+    d.rounded_rectangle(R(cx-46, cy+12, cx-28, cy+30), radius=3*S, fill='white',
+                        outline=OUTLINE, width=3*S)
+    d.rounded_rectangle(R(cx-14, cy+20, cx+2, cy+48), radius=3*S, fill='white',
+                        outline=OUTLINE, width=3*S)
+    # 右側：高過屋脊的金幣柱（負擔壓過居住）
+    for k in range(5):
+        y0 = cy + 40 - k*15
+        d.rounded_rectangle(R(cx+24, y0-13, cx+72, y0), radius=6*S,
+                            fill=GOLD if k % 2 == 0 else GOLD_D, outline=OUTLINE, width=3*S)
+    # 焦點細節：柱頂的 € 硬幣
+    d.ellipse(R(cx+30, cy-56, cx+66, cy-20), fill=GOLD, outline=OUTLINE, width=ow)
+    draw_mixed_vcentered(d, R(cx+48, cy-38), '€', 24*S, OUTLINE, bold=True, anchor='center')
+
+def illu_pylon(d, R, S, cx, cy, theme):
+    """高壓電塔＋警示三角（電網破壞／供電中斷風險）"""
+    ow = 5*S
+    _dots(d, R, cx, cy, ((-72, -46, 3, GOLD), (-30, -56, 3, tint(theme, 0.5)),
+                         (76, 34, 3, theme)))
+    d.ellipse(R(cx-54, cy+48, cx+54, cy+58), fill=tint(theme, 0.18))
+    # 電塔：兩支外張塔腳（底寬頂窄）＋三層橫桁架
+    d.line(R(cx-46, cy+48, cx-12, cy-44), fill=OUTLINE, width=ow)
+    d.line(R(cx+22, cy+48, cx-12, cy-44), fill=OUTLINE, width=ow)
+    d.line(R(cx-12, cy-44, cx-12, cy+48), fill=tint(theme, 0.30), width=3*S)
+    for yy, l, r in ((cy+36, -42, 18), (cy+10, -33, 9), (cy-16, -24, 0)):
+        d.line(R(cx+l, yy, cx+r, yy), fill=OUTLINE, width=4*S)
+    # 塔身斜撐（同色系淺階，分層表達深度）
+    for (y0, y1, l0, r0, l1, r1) in ((cy+10, cy+36, -33, 9, -42, 18),
+                                     (cy-16, cy+10, -24, 0, -33, 9)):
+        d.line(R(cx+l0, y0, cx+r1, y1), fill=tint(theme, 0.55), width=3*S)
+        d.line(R(cx+r0, y0, cx+l1, y1), fill=tint(theme, 0.55), width=3*S)
+    # 塔頂橫擔＋兩側絕緣礙子（焦點之外的對稱細節）
+    d.line(R(cx-40, cy-44, cx+16, cy-44), fill=OUTLINE, width=ow)
+    for dx in (-36, 12):
+        d.ellipse(R(cx+dx-5, cy-40, cx+dx+5, cy-30), fill=theme, outline=OUTLINE, width=2*S)
+    # 焦點細節：金色警示三角（掛在塔身右側）
+    tx, ty = cx+50, cy-2
+    d.polygon(R(tx, ty-26, tx-24, ty+16, tx+24, ty+16), fill=GOLD,
+              outline=OUTLINE, width=ow)
+    d.line(R(tx, ty-10, tx, ty+3), fill=OUTLINE, width=4*S)
+    d.ellipse(R(tx-3, ty+8, tx+3, ty+14), fill=OUTLINE)
+
+def illu_diploma(d, R, S, cx, cy, theme):
+    """證書＋金色印章與勾號（外國專業資格承認）"""
+    ow = 5*S
+    _dots(d, R, cx, cy, ((-70, -48, 3, theme), (-8, -56, 3, GOLD),
+                         (74, -40, 3, tint(theme, 0.5))))
+    d.ellipse(R(cx-54, cy+46, cx+54, cy+58), fill=tint(theme, 0.18))
+    # 後層：待審的第二份證書
+    d.rounded_rectangle(R(cx-30, cy-42, cx+52, cy+30), radius=7*S,
+                        fill=tint(theme, 0.30), outline=OUTLINE, width=ow)
+    # 前層：證書本體
+    d.rounded_rectangle(R(cx-56, cy-32, cx+30, cy+42), radius=7*S,
+                        fill='white', outline=OUTLINE, width=ow)
+    d.line(R(cx-44, cy-16, cx+18, cy-16), fill=tint(theme, 0.55), width=4*S)
+    d.line(R(cx-44, cy-4, cx+4, cy-4), fill=tint(theme, 0.45), width=3*S)
+    d.line(R(cx-44, cy+6, cx+12, cy+6), fill=tint(theme, 0.45), width=3*S)
+    # 證書上的核可勾號
+    d.line(R(cx-40, cy+24, cx-30, cy+34), fill=theme, width=5*S)
+    d.line(R(cx-30, cy+34, cx-10, cy+12), fill=theme, width=5*S)
+    # 焦點細節：金色鋼印＋緞帶（右下角壓在證書上）
+    sx, sy = cx+40, cy+16
+    d.polygon(R(sx-16, sy+10, sx-16, sy+42, sx-4, sy+32, sx+8, sy+42, sx+8, sy+10),
+              fill=theme, outline=OUTLINE, width=3*S)
+    d.ellipse(R(sx-22, sy-18, sx+18, sy+22), fill=GOLD, outline=OUTLINE, width=ow)
+    d.ellipse(R(sx-13, sy-9, sx+9, sy+13), fill=GOLD_D)
+
+def illu_timeline(d, R, S, cx, cy, theme):
+    """時間軸＋兩個里程碑（今昔對照／歷史回望）"""
+    ow = 5*S
+    _dots(d, R, cx, cy, ((-72, -44, 3, GOLD), (0, -56, 3, tint(theme, 0.5)),
+                         (74, -40, 3, theme)))
+    d.ellipse(R(cx-56, cy+48, cx+56, cy+58), fill=tint(theme, 0.18))
+    # 時間軸與兩端刻度
+    d.line(R(cx-64, cy+34, cx+64, cy+34), fill=OUTLINE, width=ow)
+    for dx in (-64, 64):
+        d.line(R(cx+dx, cy+26, cx+dx, cy+42), fill=OUTLINE, width=4*S)
+    # 左：較矮的舊里程碑（金）
+    d.rounded_rectangle(R(cx-52, cy-6, cx-16, cy+34), radius=6*S, fill=GOLD,
+                        outline=OUTLINE, width=ow)
+    d.line(R(cx-44, cy+8, cx-24, cy+8), fill=GOLD_D, width=3*S)
+    d.line(R(cx-44, cy+18, cx-30, cy+18), fill=GOLD_D, width=3*S)
+    # 右：較高的今里程碑（主題色）
+    d.rounded_rectangle(R(cx+16, cy-30, cx+52, cy+34), radius=6*S, fill=theme,
+                        outline=OUTLINE, width=ow)
+    d.line(R(cx+24, cy-16, cx+44, cy-16), fill=tint(theme, 0.45), width=3*S)
+    d.line(R(cx+24, cy-6, cx+38, cy-6), fill=tint(theme, 0.45), width=3*S)
+    # 焦點細節：柱頂的標記圓
+    d.ellipse(R(cx+22, cy-52, cx+46, cy-28), fill='white', outline=OUTLINE, width=ow)
+    d.ellipse(R(cx+29, cy-45, cx+39, cy-35), fill=theme)
+
 ILLUS = dict(podium=illu_podium, flags=illu_flags, coins=illu_coins,
              idcard=illu_idcard, camera=illu_camera, trophy=illu_trophy,
              bankcard=illu_bankcard, checklist=illu_checklist,
@@ -1146,7 +1270,10 @@ ILLUS = dict(podium=illu_podium, flags=illu_flags, coins=illu_coins,
              heatlaw=illu_heatlaw, gavel=illu_gavel,
              tornado=illu_tornado, wildfire=illu_wildfire,
              solarpanel=illu_solarpanel, evcharge=illu_evcharge,
-             carplant=illu_carplant, databreach=illu_databreach)
+             carplant=illu_carplant, databreach=illu_databreach,
+             taxrelief=illu_taxrelief, rentburden=illu_rentburden,
+             pylon=illu_pylon, diploma=illu_diploma,
+             timeline=illu_timeline)
 
 # ── 版型 ────────────────────────────────────────────────────
 
@@ -1185,11 +1312,16 @@ def make_card(spec, path, week_label='W?', date_label=''):
     while mixed_width(spec['title'], tsize*S, bold=True) > 884*S and tsize > 46:
         tsize -= 2
     draw_mixed(d, R(100, 186 + (62-tsize)//2), spec['title'], tsize*S, TITLE_C, bold=True)
+    # 自動縮放有下限，縮到底仍過寬就會被卡片右緣裁掉——必須出聲警告
+    if mixed_width(spec['title'], tsize*S, bold=True) > 884*S:
+        print(f'  ⚠️ title clipped: 縮到 {tsize}px 仍超出 884px，請改短標題  ({path})')
     # 副標同樣做自動縮放，避免長邦名（含德文全名）撐出卡片右緣
     ssize = 36
     while mixed_width(spec['subtitle'], ssize*S) > 884*S and ssize > 27:
         ssize -= 1
     draw_mixed(d, R(100, 266 + (36-ssize)//2), spec['subtitle'], ssize*S, SUB_C)
+    if mixed_width(spec['subtitle'], ssize*S) > 884*S:
+        print(f'  ⚠️ subtitle clipped: 縮到 {ssize}px 仍超出 884px，請改短副標  ({path})')
 
     # stats 兩格（第三格空間留給插畫）
     for (x1, x2), (num, label) in zip([(100, 380), (400, 680)], spec['stats'][:2]):
@@ -1241,96 +1373,316 @@ def make_card(spec, path, week_label='W?', date_label=''):
     img.save(path, 'PNG')
     print('✅', path)
 
+# ── 純圖表版型（成對長條圖，兩屆選舉比較）──────────────────
+# 配色以 dataviz 六項檢查驗過：橙 #D4740E（舊）× 藍 #2563EB（新）
+# 於淺色底通過亮度帶、彩度、色盲分離（protan ΔE 32.0）、一般視覺與對比度。
+SERIES_OLD, SERIES_NEW = '#D4740E', '#2563EB'
+GRID_C = '#E3DFD8'
+
+def make_chart_card(spec, path, week_label='W?', date_label=''):
+    """成對水平長條圖：同一組類別的兩期數值比較（無 bullets／stats／觀察框）"""
+    theme = spec['theme']
+    img = Image.new('RGB', (W*S, H*S), BG)
+    d = ImageDraw.Draw(img)
+    def R(*v):
+        return [x*S for x in v]
+
+    d.rectangle(R(0, 0, W, 40), fill=theme)
+    d.rectangle(R(0, H-12, W, H), fill=theme)
+    d.rounded_rectangle(R(36, 60, W-36, 1002), radius=28*S, fill=CARD,
+                        outline=BORDER, width=2*S)
+
+    bx = 100
+    for label, filled in spec['badges']:
+        tw = mixed_width(label, 30*S, bold=True)
+        bw = tw/S + 52
+        y1, y2 = 100, 146
+        if filled:
+            d.rounded_rectangle(R(bx, y1, bx+bw, y2), radius=23*S, fill=theme)
+            draw_mixed_vcentered(d, R(bx+26, (y1+y2)/2), label, 30*S, 'white', bold=True)
+        else:
+            d.rounded_rectangle(R(bx, y1, bx+bw, y2), radius=23*S, outline=theme, width=3*S)
+            draw_mixed_vcentered(d, R(bx+26, (y1+y2)/2), label, 30*S, theme, bold=True)
+        bx += bw + 18
+
+    paste_wordmark(img)
+
+    tsize = 62
+    while mixed_width(spec['title'], tsize*S, bold=True) > 884*S and tsize > 46:
+        tsize -= 2
+    draw_mixed(d, R(100, 186 + (62-tsize)//2), spec['title'], tsize*S, TITLE_C, bold=True)
+    if mixed_width(spec['title'], tsize*S, bold=True) > 884*S:
+        print(f'  ⚠️ title clipped: 縮到 {tsize}px 仍超出 884px，請改短標題  ({path})')
+    ssize = 36
+    while mixed_width(spec['subtitle'], ssize*S) > 884*S and ssize > 27:
+        ssize -= 1
+    draw_mixed(d, R(100, 266 + (36-ssize)//2), spec['subtitle'], ssize*S, SUB_C)
+    if mixed_width(spec['subtitle'], ssize*S) > 884*S:
+        print(f'  ⚠️ subtitle clipped: 縮到 {ssize}px 仍超出 884px，請改短副標  ({path})')
+
+    # 圖例（兩組數列一律附圖例，識別不靠顏色單一管道）
+    lx, ly_mid = 100, 348
+    for col, name in ((SERIES_OLD, spec['label_old']), (SERIES_NEW, spec['label_new'])):
+        d.rounded_rectangle(R(lx, ly_mid-9, lx+26, ly_mid+9), radius=4*S, fill=col)
+        draw_mixed_vcentered(d, R(lx+36, ly_mid), name, 27*S, BODY_C, bold=True)
+        lx += 36 + mixed_width(name, 27*S, bold=True)/S + 34
+
+    # 繪圖區幾何：全部由這幾個常數推導，勿在下方手動加 offset
+    X0, X1 = 258, 780          # 長條起點與滿刻度（右側留給變化欄）
+    VMAX = spec.get('vmax', 46)
+    rows = spec['rows']
+    TOP, ROW_H = 376, 68       # 第一列上緣、列高
+    BAR_H, BAR_GAP = 22, 6     # 長條厚度、同列兩條之間的底色間隙
+    PAIR_H = BAR_H*2 + BAR_GAP
+    def vx(v):
+        return X0 + (X1 - X0) * v / VMAX
+    def pair_top(i):           # 一列內的兩條長條，在列高中垂直置中
+        return TOP + i*ROW_H + (ROW_H - PAIR_H) / 2
+
+    plot_bot = pair_top(len(rows)-1) + PAIR_H
+
+    # recessive 格線（畫在長條之下）＋底部刻度
+    for g in range(0, int(VMAX)+1, 10):
+        gx = vx(g)
+        d.line(R(gx, TOP + 2, gx, plot_bot + 10), fill=GRID_C, width=2*S)
+        draw_mixed_vcentered(d, R(gx, plot_bot + 38), f'{g}%', 22*S, FOOT_C, anchor='center')
+
+    for i, (name, v_old, v_new, delta) in enumerate(rows):
+        pt = pair_top(i)
+        mid = pt + PAIR_H / 2
+        # 類別名與變化量都對齊「兩條長條的共同中線」
+        draw_mixed_vcentered(d, R(100, mid), name, 30*S, TITLE_C, bold=True)
+        for k, (v, col) in enumerate(((v_old, SERIES_OLD), (v_new, SERIES_NEW))):
+            by = pt + k*(BAR_H + BAR_GAP)
+            if v is None:                       # 該屆尚未成立 → 不畫長條，只標記
+                draw_mixed_vcentered(d, R(X0 + 6, by + BAR_H/2), '—', 26*S, FOOT_C)
+                continue
+            bx1 = max(vx(v), X0 + 8)
+            d.rounded_rectangle(R(X0, by, bx1, by + BAR_H), radius=4*S, fill=col)
+            # 數值標籤對齊「該條長條自己的中線」
+            draw_mixed_vcentered(d, R(bx1 + 14, by + BAR_H/2), f'{v:.1f}%', 26*S, BODY_C, bold=True)
+        draw_mixed_vcentered(d, R(990, mid), delta, 29*S, BODY_C, bold=True, anchor='right')
+
+    # 圖表註腳
+    ny = plot_bot + 70
+    for line in spec.get('notes', ()):
+        draw_mixed(d, R(100, ny), line, 24*S, SUB_C)
+        ny += 32
+
+    draw_mixed(d, R(64, 1018), '德國知識小種子', 30*S, SUB_C)
+    draw_mixed(d, R(316, 1018), f'{week_label} · {date_label}', 30*S, FOOT_C)
+    draw_mixed(d, R(1016, 1018), 'Das deutsche Wissen', 30*S, SUB_C, anchor='right')
+
+    if ny > 996:
+        print(f'  ⚠️ overflow: 註腳結束 {ny} 已超出卡片下緣  ({path})')
+
+    img = img.resize((W, H), Image.LANCZOS)
+    img.save(path, 'PNG')
+    print('✅', path)
+
 # ════════════════════════════════════════════════════════════
 # 每週卡片內容（範本：W29）——之後每週改這一段即可
 # ════════════════════════════════════════════════════════════
-WEEK = 'W35'
-DATE_RANGE = '2026/08/24-08/30'
+WEEK = 'W36'
+DATE_RANGE = '2026/08/31-09/06'
 
 CARDS = [
  dict(
-  theme='#C0392B', badges=[('汽車業', True), ('就業', False)], illu='carplant',
-  title='VW 撙節案：四座工廠人力被點名',
-  subtitle='8/25 Wolfsburg 特別廠務會議，逾 1 萬名員工以噓聲回應',
-  stats=[('逾 1 萬人', 'Wolfsburg 到場員工'),
-         ('4 座工廠', '被指人力不具競爭力')],
+  theme='#2563EB', badges=[('邦選舉', True), ('薩克森-安哈特邦', False)], illu='ballotbox',
+  title='薩克森-安哈特邦：AfD 44%，CDU 腰斬',
+  subtitle='薩克森-安哈特邦（Sachsen-Anhalt）9/6 開票夜 21 時 12 分推估值',
+  stats=[('44%', 'AfD 得票（2021 年 20.8%）'),
+         ('17.5%', 'CDU 得票（2021 年 37.1%）')],
   bullets=[
-   ('會上說了什麼', '執行長 Oliver Blume 8/25 在 Wolfsburg 特別廠務會議稱，美國關稅、地緣風險與新競爭者迫使集團降低成本。'),
-   ('哪些廠被點名', 'VW 的 Emden、Zwickau、Hannover 與 Audi 的 Neckarsulm 廠，被指 2030 年代人力「不具競爭力」。'),
-   ('工會怎麼回應', '職工代表會主席 Daniela Cavallo 稱對董事會信任「已受損」；IG Metall 的 Thorsten Gröger 表明將全力反對。'),
+   ('開出什麼結果', '推估值：AfD 44%、CDU 17.5%、綠黨（Grüne）與 SPD 各 9.0%、左翼黨（Linke）8.9%、BSW 5.0%、FDP 2.4%。'),
+   ('投票率暴增', '約 77%，遠高於 2021 年的 60.3%。AfD 較上屆增逾 23 個百分點，CDU 失血近 20 個，FDP 跌出議會。'),
+   ('各方怎麼說', 'AfD 的 Chrupalla：「Merz 想把我們減半，我們現在把 CDU 減半了」；Weidel 稱「歷史性結果」並主張執政委託。'),
   ],
-  takeaway=('求職觀察', '2024 年已議定 2030 年前減少約 5 萬個職位。下薩克森邦（Niedersachsen）持 20% 表決權，反對關廠。'),
-  file='W35_圖卡1_VW撙節案四廠被點名.png'),
+  takeaway=('選後觀察', 'CDU 的不相容決議同時排除 AfD 與左翼黨，組閣難度極高。本月另有 9/20 柏林邦（Berlin）議會選舉。'),
+  file='W36_圖卡1_薩克森安哈特邦選舉結果.png'),
  dict(
-  theme='#7C3AED', badges=[('資安', True), ('柏林邦', False)], illu='databreach',
-  title='柏林市府遭駭：5 萬戶住房補貼卡關',
-  subtitle='兩個邦級部門 8/14 斷網；參議院改口不排除個資外流',
-  stats=[('逾 5 萬戶', '住房補貼撥款受影響'),
-         ('2 個', '被隔離的邦級部門')],
-  bullets=[
-   ('怎麼發生的', '攻擊者利用建設部門 IT 漏洞入侵柏林邦網路，8/14 起兩部門遭隔離；邦刑事警察局與聯邦資安署介入。'),
-   ('哪些業務受影響', '「城市發展、建設與住房」與「交通、環境與氣候保護」兩部門；逾 5 萬戶住房補貼撥款受波及。'),
-   ('個資外洩了沒', '參議院起初稱僅公開地理資料外流，後改口不排除個資受影響；外流時點早於 8/14 斷網。'),
+  kind='chart', theme='#2563EB', badges=[('選舉數據', True), ('薩克森-安哈特邦', False)],
+  title='兩屆對照：AfD 翻倍，CDU 掉了一半以上',
+  subtitle='薩克森-安哈特邦（Sachsen-Anhalt）邦議會選舉第二票得票率',
+  label_old='2021 年', label_new='2026 年', vmax=46,
+  rows=[
+   ('AfD',   20.8, 44.0, '+23.2'),
+   ('CDU',   37.1, 17.5, '-19.6'),
+   ('Grüne',  5.9,  9.0, '+3.1'),
+   ('SPD',    8.4,  9.0, '+0.6'),
+   ('Linke',  11.0,  8.9, '-2.1'),
+   ('BSW',   None,  5.0, '首次參選'),
+   ('FDP',    6.4,  2.4, '-4.0'),
   ],
-  takeaway=('因應建議', '參議院稱 9/20 柏林邦議會選舉系統未受影響。等待住房補貼者請留存申請文件、必要時改打電話。'),
-  file='W35_圖卡2_柏林市府遭駭.png'),
+  notes=[
+   '2026 年為 9/6 開票夜 21 時 12 分推估值，非最終官方結果；2021 年為官方最終結果。',
+   'BSW（Bündnis Sahra Wagenknecht）於 2021 年尚未成立。投票率自 60.3% 升至約 77%。',
+  ],
+  file='W36_圖卡2_兩屆選舉得票對照.png'),
  dict(
-  theme='#D4740E', badges=[('烏俄戰爭', True), ('能源', False)], illu='fuelpump',
-  title='俄國七成加油站沒油，CIA 密訪莫斯科',
-  subtitle='烏克蘭無人機重擊煉油廠，德國柴油同步跟漲',
-  stats=[('28.1%', '俄國買得到油的加油站'),
-         ('約 94 美元', '布蘭特原油每桶')],
+  theme='#7C3AED', badges=[('歷史對照', True), ('查證', False)], illu='timeline',
+  title='同一塊土地：94 年前的第一個納粹邦政府',
+  subtitle='1932 年安哈特（Anhalt）——今薩克森-安哈特邦（Sachsen-Anhalt）',
+  stats=[('41.6%', '1932 年納粹黨在安哈特得票'),
+         ('44%', '2026 年 AfD 得票（推估）')],
   bullets=[
-   ('CIA 局長飛了一趟莫斯科', '美國中央情報局局長 John Ratcliffe 8/25 未預告抵莫斯科與俄方情報首長會談，克里姆林宮證實普丁未出席。'),
-   ('俄國燃料危機有多深', '8 月中僅 28.1% 加油站買得到汽柴油、逾半數地區短缺；Tatneft 約 800 座站限購汽油 30 公升。'),
-   ('德國也跟著漲', '布蘭特原油升抵每桶約 94 美元；8/19 德國柴油每公升較 Super E10 貴 9.1 分，企業成本明顯墊高。'),
+   ('1932 年那裡發生什麼', '4/24 安哈特邦議會改選，納粹黨（NSDAP）以 41.6% 成為第一大黨；5/21 Alfred Freyberg 出任邦總理。'),
+   ('關鍵在誰扶他上去', 'Freyberg 是全德第一位納粹黨邦總理，靠納粹黨與保守民族主義政黨 DNVP 聯合組閣才過關。'),
+   ('史家的但書', '柏林史家 Heinrich August Winkler 認為威瑪類比並不恰當：當年有大規模失業與武裝黨軍，今日沒有。'),
   ],
-  takeaway=('影響評估', '俄國煉油產能降至 2002 年 5 月以來最低，8 月起重新開放 Euro-2 至 Euro-4 低標號汽油一年。'),
-  file='W35_圖卡3_俄羅斯燃料危機與CIA密訪.png'),
+  takeaway=('今年的百年巧合', 'AfD 把聯邦黨代會訂在 7/4 的 Erfurt，與 1926 年同日納粹黨在 Weimar 的重建後首次黨代會撞期。'),
+  file='W36_圖卡3_九十四年前的第一個納粹邦政府.png'),
  dict(
-  theme='#2E8B57', badges=[('九月新制', True), ('生活', False)], illu='checklist',
-  title='九月新制：報稅諮詢門檻取消',
-  subtitle='薪資稅務協會鬆綁、環保廣告要有憑據、車站禁酒分批上路',
-  stats=[('9/1', '薪資稅務協會門檻取消'),
-         ('9/27', '環保廣告新規上路')],
+  theme='#2E8B57', badges=[('稅制', True), ('家庭', False)], illu='taxrelief',
+  title='內閣通過所得稅改革：一年減稅百億歐元',
+  subtitle='9/2 通過《2027 所得稅改革法》草案，2027、2028 分兩階段生效',
+  stats=[('100 億歐元', '2028 年起全年減稅規模'),
+         ('逾 600 €', '雙薪雙孩 6 萬歐元家庭年省')],
   bullets=[
-   ('報稅諮詢鬆綁', '9/1 起薪資稅務協會（Lohnsteuerhilfeverein）可為有租賃收入者報稅，不再受年收入 18,000 € 上限限制。'),
-   ('環保廣告要有憑據', '9/27 起適用歐盟 EmpCo 指令：「氣候中和」「環保」等說法須可查證，僅靠碳權達成的中和不得再宣稱。'),
-   ('車站禁酒分批啟動', '9/1 先於柏林中央車站、Gesundbrunnen 與 Kiel、Braunschweig 生效，最晚 10/15 擴及全德 5,400 站。'),
+   ('基本免稅額往上調', '基本免稅額（Grundfreibetrag）2027 年升至 12,564 €、2028 年再升至 12,900 €，等於兩年各多出 216 € 與 336 € 免稅。'),
+   ('孩子的部分加最多', '兒童津貼（Kindergeld）2027 年起每月 267 €、2028 年再加 5 € 至 272 €；兒童免稅額每名子女自 9,756 € 調高至 10,056 €。'),
+   ('高所得端反向加稅', '45% 稅率的起徵點自 277,826 € 下修至 250,000 €；28 萬歐元以上另立 47% 新稅級，SPD 稱之為「超級富人稅」。'),
   ],
-  takeaway=('生活提醒', '同月歐盟統一的瑕疵擔保標示上路，商家須以標準標籤說明法定兩年擔保權與製造商保固的差別。'),
-  file='W35_圖卡4_九月新制.png'),
+  takeaway=('稅務提醒', '42% 稅率起點自 69,879 € 微調至 70,600 €，1.78 萬至 7.06 萬歐元區間的稅率曲線變平緩。法案仍待國會審議。'),
+  file='W36_圖卡4_所得稅改革內閣通過.png'),
  dict(
-  theme='#2563EB', badges=[('經濟政策', True), ('景氣', False)], illu='podium',
-  title='內閣閉門會議談成長，ifo 指數四連升',
-  subtitle='8/25–26 布蘭登堡邦（Brandenburg）Neuhardenberg 宮；ifo 升至 88.8 點',
-  stats=[('88.8 點', '8 月 ifo 景氣指數'),
-         ('+2.1 點', '較 7 月的 86.7 點')],
+  theme='#C0392B', badges=[('居住', True), ('租金', False)], illu='rentburden',
+  title='租金報告：每兩名租客就有一人怕找不到房',
+  subtitle='德國租客協會 9/1 發表《2026 租金報告》，全德缺 140 萬戶住宅',
+  stats=[('50%', '怕找不到負擔得起的房'),
+         ('140 萬戶', '全德住宅短缺數')],
   bullets=[
-   ('會議談了什麼', 'Merz 8/25–26 於布蘭登堡邦 Neuhardenberg 宮開內閣閉門會議，主軸為競爭力、工業 AI 與技術主權。'),
-   ('景氣同步轉好', 'ifo 經濟研究所 8/25 公布：8 月景氣指數自 86.7 升至 88.8 點、連四個月上升，優於預估的 87.1 點。'),
-   ('在野黨怎麼看', '綠黨（Bündnis 90/Die Grünen）黨主席 Felix Banaszak 批評「氣候沒有決議，也沒有刺激經濟的新想法」。'),
+   ('租客在怕什麼', '50% 受訪租客擔心一旦得搬家就找不到負擔得起的房；29% 擔心未來付不出房租，四分之一為了付房租而省吃。'),
+   ('住房成本還在漲', '58% 表示過去 12 個月房租或雜費（Nebenkosten）變貴；2025 年有 11.2% 的人把逾四成可支配所得花在居住上。'),
+   ('雙方開的藥方相反', '租客協會主席 Melanie Weber-Moritz 要求管制租金、擴建社會住宅；房東協會 Haus & Grund 反批「藥方一直開錯」。'),
   ],
-  takeaway=('政策觀察', '會中另就今夏高溫與乾旱先做情勢分析，決議留待後續內閣會議；能源價格再度上升仍是變數。'),
-  file='W35_圖卡5_內閣閉門會議與ifo.png'),
+  takeaway=('租屋提醒', '貧窮人口中有 35% 的居住支出超過所得四成，報告示警住房危機正轉為社會國危機。'),
+  file='W36_圖卡5_租金報告缺140萬戶.png'),
  dict(
-  theme='#0D9488', badges=[('資安', True), ('經濟', False)], illu='coins',
-  title='87% 企業遇襲，損失逾 2,110 億歐元',
-  subtitle='Bitkom 與聯邦憲法保護局 8/26 共同發表《經濟保護報告 2026》',
-  stats=[('87%', '過去 12 個月受害企業'),
-         ('2,110 億歐元起', '可量化的年度損失')],
+  theme='#D4740E', badges=[('通膨', True), ('能源', False)], illu='coins',
+  title='八月通膨升到 2.9%，能源獨漲一成',
+  subtitle='聯邦統計局 8/29 速報：能源年增 10.5%，為本輪物價的主要推手',
+  stats=[('2.9%', '8 月消費者物價年增率'),
+         ('+10.5%', '能源價格年增幅')],
   bullets=[
-   ('受害比例創高', '87% 受訪企業表示過去 12 個月遭資料或設備竊取、工業間諜或破壞，一年前這個比例是 81%。'),
-   ('損失規模', 'Bitkom 理事長 Ralf Wintergerst：可量化損失介於 2,110 億至 2,708 億歐元，前一年度為 2,892 億歐元。'),
-   ('誰在動手', '遭破壞、間諜或竊取的企業中，37% 認為有外國情報機關涉入（一年前 28%）；指向俄羅斯與中國者各 46%。'),
+   ('哪些漲、哪些沒漲', '能源年增 10.5%（7 月 8.3%、6 月 3.4%，逐月加速）；服務年增 2.8%；食品幾乎持平，只年增 0.1%。'),
+   ('為什麼是能源', '6/30 燃料稅減免退場的效果整月反映在油價上，加上俄國煉油產能受創推高精煉產品價格，能源成了唯一的加速項。'),
+   ('核心通膨仍偏高', '扣除食品與能源的核心通膨為 2.4%，高於歐洲央行 2% 的目標，代表漲價壓力並非只來自能源這一項。'),
   ],
-  takeaway=('數據解讀', '勒索軟體（Ransomware）是今年最危險的攻擊型態，在 34% 的受訪企業造成實際損失。'),
-  file='W35_圖卡6_企業資安損失.png'),
+  takeaway=('數據解讀', '這是速報值，終值 9/10 公布。物價月增 0.2%，短期回落空間有限，暖氣季前宜先比價電力與天然氣合約。'),
+  file='W36_圖卡6_八月通膨與能源.png'),
+ dict(
+  theme='#7C3AED', badges=[('關鍵基礎設施', True), ('三邦連環破壞', False)], illu='pylon',
+  title='電網連環破壞：五個發電機組一度離線',
+  subtitle='9/1 起布蘭登堡邦（Brandenburg）等三邦遇襲，嫌犯全歐通緝中',
+  stats=[('逾 20 具', '射向高壓線的自製飛行物'),
+         ('5 個', '一度離線的褐煤機組')],
+  bullets=[
+   ('哪裡被攻擊', '9/1 晚間布蘭登堡邦 Turnow-Preilack 與北萊茵-西發利亞邦（Nordrhein-Westfalen）Bergheim 兩處同步遇襲。'),
+   ('手法是什麼', '以自製火箭把銅線等導電材料射上高壓線製造短路；Bergheim 一案使 Niederaußem 與 Neurath 五個褐煤機組一度離線。'),
+   ('查到誰了', '兩封認犯信寄抵多家媒體且被認定為真；嫌疑人是 Gevelsberg 一名 48 歲男子，目前仍在逃。'),
+  ],
+  takeaway=('觀察重點', '認犯信稱化石燃料發電是犯罪；聯邦內政部長 Dobrindt 將本案定性為單一行為人的「氣候恐怖主義」。'),
+  file='W36_圖卡7_電網連環破壞.png'),
+ dict(
+  theme='#0D9488', badges=[('工作', True), ('外國專業人員', False)], illu='diploma',
+  title='外國專業資格承認創新高，等待仍以年計',
+  subtitle='聯邦統計局：2025 年 86,600 件獲承認，年增 10%，但成長已明顯放緩',
+  stats=[('86,600 件', '2025 年獲承認的資格'),
+         ('32,000 件', '護理師，居所有職類之冠')],
+  bullets=[
+   ('數字創下新高', '2025 年共 86,600 件外國專業資格獲正面承認，較 2024 年的 79,100 件成長近 10%，為統計以來最多。'),
+   ('成長明顯踩了煞車', '前兩年成長率分別是 2024 年的 21% 與 2023 年的 25%；2025 年共處理 102,900 件程序，其中 76,200 件為當年新申請。'),
+   ('哪些職類最多', '護理師（Pflegefachfrau/-mann）以 32,000 件遙遙領先，其次為醫師 13,900 件與工程師 4,600 件。'),
+  ],
+  takeaway=('求職提醒', '受訪當事人指程序動輒等上兩年。申請前先確認職類屬管制或非管制，並備妥翻譯與公證文件以免補件重來。'),
+  file='W36_圖卡8_外國資格承認創新高.png'),
 ]
+
+# ── 邦名德文全名檢查 ────────────────────────────────────────
+# CLAUDE.md 鐵則：提到聯邦邦一律寫「◯◯邦」並附德文全名，不可只給簡寫或只有中文。
+# 目測會漏（W36 第 6 張就漏了），故在產圖時自動掃描每張卡的全部文字。
+STATES = {
+    '梅克倫堡-佛波門': 'Mecklenburg-Vorpommern',
+    '北萊茵-西發利亞': 'Nordrhein-Westfalen',
+    '什勒斯維希-霍爾斯坦': 'Schleswig-Holstein',
+    '下薩克森': 'Niedersachsen',
+    '巴登-符騰堡': 'Baden-Württemberg',
+    '萊茵蘭-普法茲': 'Rheinland-Pfalz',
+    '薩克森-安哈特': 'Sachsen-Anhalt',
+    '圖林根': 'Thüringen',
+    '巴伐利亞': 'Bayern',
+    '黑森': 'Hessen',
+    '薩爾蘭': 'Saarland',
+    '布蘭登堡': 'Brandenburg',
+    '不來梅': 'Bremen',
+    '漢堡': 'Hamburg',
+    '柏林': 'Berlin',
+    '薩克森': 'Sachsen',          # 需排在「下薩克森」「薩克森-安哈特」之後比對
+}
+
+def check_states(spec):
+    """卡片提到某邦卻沒附德文全名時出聲警告"""
+    blob = ' '.join([spec['title'], spec['subtitle'],
+                     ' '.join(l for b in spec['badges'] for l in (b[0],)),
+                     ' '.join(h + b for h, b in spec.get('bullets', ())),
+                     ' '.join(spec.get('takeaway', ())),
+                     ' '.join(str(v) for r in spec.get('rows', ()) for v in r[:1]),
+                     ' '.join(spec.get('notes', ()))])
+    seen = ''
+    for zh, de in STATES.items():
+        # 先扣掉已比對過的長邦名，避免「薩克森」誤命中「下薩克森」「薩克森-安哈特」
+        probe = blob
+        for longer in seen.split('|'):
+            if longer:
+                probe = probe.replace(longer, '')
+        if (zh + '邦') in probe and de not in blob:
+            print(f"  ⚠️ 邦名缺德文: 提到「{zh}邦」但全卡未出現 {de}  ({spec['file']})")
+        seen += '|' + zh
+
+
+_notdef_cache = {}
+def _notdef(font):
+    """該字型的 .notdef（豆腐框）像素樣本"""
+    key = id(font)
+    if key not in _notdef_cache:
+        _notdef_cache[key] = bytes(font.getmask('\uffff'))
+    return _notdef_cache[key]
+
+def check_glyphs(spec):
+    """掃描卡片所有文字，揪出會渲染成 .notdef 豆腐框的缺字
+
+    踩過的雷：U+2212 MINUS SIGN「−」在本機 Noto Sans 沒有字符，
+    但 getmask() 仍回傳豆腐框的尺寸，光看寬度看不出問題，圖上才會露餡。
+    這裡以「已知一定缺字」的字元取得豆腐框尺寸當基準來比對。
+    """
+    texts = [spec['title'], spec['subtitle']]
+    texts += [b[0] for b in spec['badges']]
+    texts += [h for h, _ in spec.get('bullets', ())] + [b for _, b in spec.get('bullets', ())]
+    texts += list(spec.get('takeaway', ())) + list(spec.get('notes', ()))
+    texts += [str(v) for r in spec.get('rows', ()) for v in r]
+    texts += [spec.get('label_old', ''), spec.get('label_new', '')]
+    texts += [n for n, _ in spec.get('stats', ())] + [l for _, l in spec.get('stats', ())]
+
+    bad = set()
+    for t in texts:
+        for ch in set(t):
+            if ch.isspace():
+                continue
+            f = cjk(40, True) if is_cjk_char(ch) else lat(40, True)
+            # 只比尺寸會誤判：CJK 字符本身就是全形方塊，與豆腐框同尺寸。
+            # 必須比對實際像素。
+            if bytes(f.getmask(ch)) == _notdef(f):
+                bad.add(ch)
+    for ch in sorted(bad):
+        print(f"  ⚠️ 缺字: 「{ch}」(U+{ord(ch):04X}) 在字型中不存在，會印成豆腐框  ({spec['file']})")
 
 if __name__ == '__main__':
     import os, sys
     OUT = sys.argv[1] if len(sys.argv) > 1 else '.'
     os.makedirs(OUT, exist_ok=True)
     for c in CARDS:
-        make_card(c, os.path.join(OUT, c['file']), WEEK, DATE_RANGE)
+        check_states(c)
+        check_glyphs(c)
+        render = make_chart_card if c.get('kind') == 'chart' else make_card
+        render(c, os.path.join(OUT, c['file']), WEEK, DATE_RANGE)

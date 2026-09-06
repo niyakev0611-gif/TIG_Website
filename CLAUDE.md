@@ -307,6 +307,23 @@
 **德國現任政治人物一律保留德文原名**（Merz、Dobrindt、Klingbeil、Weidel…），
 既精確又免去譯名爭議；首次出現可加職稱，如「內政部長 Dobrindt」。
 
+### 政黨名稱：一律帶德文，方便對照德媒（用戶 2026/09 要求）
+
+德國政黨多數本來就以德文縮寫流通（AfD、CDU、CSU、SPD、FDP、BSW），
+**有中譯的兩個也必須把德文帶上**，讀者才對得起德國媒體的報導：
+
+| ✅ 寫法 | ❌ 只寫中文 |
+|---|---|
+| 綠黨（Grüne；全稱 Bündnis 90/Die Grünen） | 綠黨 |
+| 左翼黨（Die Linke） | 左翼黨 |
+
+- **文字載體**（`js/data.js`、FB／IG 貼文、圖卡 bullets）：首次提及用「中文（德文）」，
+  同一段落內後續提及可只寫中文。
+- **圖表座標軸／表格欄位**：空間有限且同軸已有 AfD、CDU、SPD 等德文縮寫，
+  **一律只用德文**（`Grüne`、`Linke`），維持整條軸的一致性；
+  中德並列會撐爆標籤欄（實測 30px 字級下「左翼黨 Linke」需 180px，欄寬僅 144px）。
+- 圖卡的 `alt` 文字要跟著座標軸一起帶德文，否則搜尋與無障礙讀不到對應關係。
+
 ### 一般用語（台灣 vs 中國）
 
 ✅ 資訊（❌信息）、✅ 網路（❌網絡）、✅ 網際網路（❌互聯網）、✅ 軟體／硬體（❌軟件／硬件）、
@@ -471,3 +488,29 @@ IG 曾因貼文超過字數上限被拒登（"Text des Beitrags ist zu lang"）�
 - 每張卡內文的「📚 來源」段落用 `<p class="post-sources">`（已在 `css/style.css` 定義）
 - 來源連結一律 `target="_blank" rel="noopener noreferrer"`
 - 區段內可重複使用 `<strong>` 強調關鍵數字與專有名詞，跟既有 W21-22 / W20 段落風格一致
+
+---
+
+## 🔍 來源查證鐵則（2026/09 W36 踩雷後新增）
+
+**雲端 session 的 egress proxy 會擋掉絕大多數新聞網域**，WebFetch 多半回 `EGRESS_BLOCKED`，
+curl 一律 `000`。這代表：**寫稿時通常沒辦法真的打開來源頁，只能靠 WebSearch 回傳的摘要。**
+
+因此下列三條必須遵守：
+
+1. **網址只能從搜尋結果原樣複製，絕對不可自行拼湊。**
+   W36 踩過的雷：憑印象拼出 `bmbfsfj.bund.de/.../alle-meldungen/...-292828`（真實為
+   `/pressemitteilungen/...-292826`）、`anerkennung-in-deutschland.de/html/zh/index.php`
+   （中文頁未經證實）、`mieterbund.de/app/uploads/.../Mietenreport-2026.pdf`（臆測路徑）。
+   看起來合理的網址結構 ≠ 該頁存在。
+2. **交稿前把所有引用網址列出來，逐條回頭比對搜尋結果有沒有出現過。**
+   憑記憶判斷「這條我應該有看過」並不可靠——W36 有三條被誤判為捏造、實際存在，
+   也有一條（`marktundmittelstand.de/zukunftsmaerkte/inflation-august-2026`）確實存在
+   但**講的是七月數據**，拿來佐證八月數字就是錯引。**網址存在 ≠ 內容支持該主張。**
+3. **出處品質要看**：`mmnews.de`、`epochtimes.de`、`reitschuster.de`、`jungefreiheit.de`
+   等非主流／立場性強的網站不可作為事實的唯一出處；維基百科可作為查證起點，
+   但不宜列為成品的引用來源。優先用：官方機構、通訊社、ZDF/ARD、
+   Tagesspiegel/Handelsblatt/SZ/FAZ/taz、bpb、Correctiv。
+
+**交付時如實說明查證程度**：哪些數字有兩個以上獨立來源、哪些只有單一來源、
+哪些只讀到摘要而未讀原文。不要讓「附了連結」看起來像「已核實」。
