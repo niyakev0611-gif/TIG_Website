@@ -1231,6 +1231,30 @@ def illu_diploma(d, R, S, cx, cy, theme):
     d.ellipse(R(sx-22, sy-18, sx+18, sy+22), fill=GOLD, outline=OUTLINE, width=ow)
     d.ellipse(R(sx-13, sy-9, sx+9, sy+13), fill=GOLD_D)
 
+def illu_timeline(d, R, S, cx, cy, theme):
+    """時間軸＋兩個里程碑（今昔對照／歷史回望）"""
+    ow = 5*S
+    _dots(d, R, cx, cy, ((-72, -44, 3, GOLD), (0, -56, 3, tint(theme, 0.5)),
+                         (74, -40, 3, theme)))
+    d.ellipse(R(cx-56, cy+48, cx+56, cy+58), fill=tint(theme, 0.18))
+    # 時間軸與兩端刻度
+    d.line(R(cx-64, cy+34, cx+64, cy+34), fill=OUTLINE, width=ow)
+    for dx in (-64, 64):
+        d.line(R(cx+dx, cy+26, cx+dx, cy+42), fill=OUTLINE, width=4*S)
+    # 左：較矮的舊里程碑（金）
+    d.rounded_rectangle(R(cx-52, cy-6, cx-16, cy+34), radius=6*S, fill=GOLD,
+                        outline=OUTLINE, width=ow)
+    d.line(R(cx-44, cy+8, cx-24, cy+8), fill=GOLD_D, width=3*S)
+    d.line(R(cx-44, cy+18, cx-30, cy+18), fill=GOLD_D, width=3*S)
+    # 右：較高的今里程碑（主題色）
+    d.rounded_rectangle(R(cx+16, cy-30, cx+52, cy+34), radius=6*S, fill=theme,
+                        outline=OUTLINE, width=ow)
+    d.line(R(cx+24, cy-16, cx+44, cy-16), fill=tint(theme, 0.45), width=3*S)
+    d.line(R(cx+24, cy-6, cx+38, cy-6), fill=tint(theme, 0.45), width=3*S)
+    # 焦點細節：柱頂的標記圓
+    d.ellipse(R(cx+22, cy-52, cx+46, cy-28), fill='white', outline=OUTLINE, width=ow)
+    d.ellipse(R(cx+29, cy-45, cx+39, cy-35), fill=theme)
+
 ILLUS = dict(podium=illu_podium, flags=illu_flags, coins=illu_coins,
              idcard=illu_idcard, camera=illu_camera, trophy=illu_trophy,
              bankcard=illu_bankcard, checklist=illu_checklist,
@@ -1248,7 +1272,8 @@ ILLUS = dict(podium=illu_podium, flags=illu_flags, coins=illu_coins,
              solarpanel=illu_solarpanel, evcharge=illu_evcharge,
              carplant=illu_carplant, databreach=illu_databreach,
              taxrelief=illu_taxrelief, rentburden=illu_rentburden,
-             pylon=illu_pylon, diploma=illu_diploma)
+             pylon=illu_pylon, diploma=illu_diploma,
+             timeline=illu_timeline)
 
 # ── 版型 ────────────────────────────────────────────────────
 
@@ -1495,6 +1520,19 @@ CARDS = [
   ],
   file='W36_圖卡2_兩屆選舉得票對照.png'),
  dict(
+  theme='#7C3AED', badges=[('歷史對照', True), ('查證', False)], illu='timeline',
+  title='同一塊土地：94 年前的第一個納粹邦政府',
+  subtitle='1932 年安哈特（Anhalt）——今薩克森-安哈特邦（Sachsen-Anhalt）',
+  stats=[('41.6%', '1932 年納粹黨在安哈特得票'),
+         ('44%', '2026 年 AfD 得票（推估）')],
+  bullets=[
+   ('1932 年那裡發生什麼', '4/24 安哈特邦議會改選，納粹黨（NSDAP）以 41.6% 成為第一大黨；5/21 Alfred Freyberg 出任邦總理。'),
+   ('關鍵在誰扶他上去', 'Freyberg 是全德第一位納粹黨邦總理，靠納粹黨與保守民族主義政黨 DNVP 聯合組閣才過關。'),
+   ('史家的但書', '柏林史家 Heinrich August Winkler 認為威瑪類比並不恰當：當年有大規模失業與武裝黨軍，今日沒有。'),
+  ],
+  takeaway=('年份要算清楚', '1932 距今 94 年、1933 年希特勒上台距今 93 年，都不是一百年。'),
+  file='W36_圖卡3_九十四年前的第一個納粹邦政府.png'),
+ dict(
   theme='#2E8B57', badges=[('稅制', True), ('家庭', False)], illu='taxrelief',
   title='內閣通過所得稅改革：一年減稅百億歐元',
   subtitle='9/2 通過《2027 所得稅改革法》草案，2027、2028 分兩階段生效',
@@ -1506,7 +1544,7 @@ CARDS = [
    ('高所得端反向加稅', '45% 稅率的起徵點自 277,826 € 下修至 250,000 €；28 萬歐元以上另立 47% 新稅級，SPD 稱之為「超級富人稅」。'),
   ],
   takeaway=('稅務提醒', '42% 稅率起點自 69,879 € 微調至 70,600 €，1.78 萬至 7.06 萬歐元區間的稅率曲線變平緩。法案仍待國會審議。'),
-  file='W36_圖卡3_所得稅改革內閣通過.png'),
+  file='W36_圖卡4_所得稅改革內閣通過.png'),
  dict(
   theme='#C0392B', badges=[('居住', True), ('租金', False)], illu='rentburden',
   title='租金報告：每兩名租客就有一人怕找不到房',
@@ -1519,7 +1557,7 @@ CARDS = [
    ('雙方開的藥方相反', '租客協會主席 Melanie Weber-Moritz 要求管制租金、擴建社會住宅；房東協會 Haus & Grund 反批「藥方一直開錯」。'),
   ],
   takeaway=('租屋提醒', '貧窮人口中有 35% 的居住支出超過所得四成，報告示警住房危機正轉為社會國危機。'),
-  file='W36_圖卡4_租金報告缺140萬戶.png'),
+  file='W36_圖卡5_租金報告缺140萬戶.png'),
  dict(
   theme='#D4740E', badges=[('通膨', True), ('能源', False)], illu='coins',
   title='八月通膨升到 2.9%，能源獨漲一成',
@@ -1532,7 +1570,7 @@ CARDS = [
    ('核心通膨仍偏高', '扣除食品與能源的核心通膨為 2.4%，高於歐洲央行 2% 的目標，代表漲價壓力並非只來自能源這一項。'),
   ],
   takeaway=('數據解讀', '這是速報值，終值 9/10 公布。物價月增 0.2%，短期回落空間有限，暖氣季前宜先比價電力與天然氣合約。'),
-  file='W36_圖卡5_八月通膨與能源.png'),
+  file='W36_圖卡6_八月通膨與能源.png'),
  dict(
   theme='#7C3AED', badges=[('關鍵基礎設施', True), ('三邦連環破壞', False)], illu='pylon',
   title='電網連環破壞：五個發電機組一度離線',
@@ -1545,7 +1583,7 @@ CARDS = [
    ('查到誰了', '兩封認犯信寄抵多家媒體且被認定為真；嫌疑人是 Gevelsberg 一名 48 歲男子，目前仍在逃。'),
   ],
   takeaway=('觀察重點', '認犯信稱化石燃料發電是犯罪；聯邦內政部長 Dobrindt 將本案定性為單一行為人的「氣候恐怖主義」。'),
-  file='W36_圖卡6_電網連環破壞.png'),
+  file='W36_圖卡7_電網連環破壞.png'),
  dict(
   theme='#0D9488', badges=[('工作', True), ('外國專業人員', False)], illu='diploma',
   title='外國專業資格承認創新高，等待仍以年計',
@@ -1558,7 +1596,7 @@ CARDS = [
    ('哪些職類最多', '護理師（Pflegefachfrau/-mann）以 32,000 件遙遙領先，其次為醫師 13,900 件與工程師 4,600 件。'),
   ],
   takeaway=('求職提醒', '受訪當事人指程序動輒等上兩年。申請前先確認職類屬管制或非管制，並備妥翻譯與公證文件以免補件重來。'),
-  file='W36_圖卡7_外國資格承認創新高.png'),
+  file='W36_圖卡8_外國資格承認創新高.png'),
 ]
 
 # ── 邦名德文全名檢查 ────────────────────────────────────────
