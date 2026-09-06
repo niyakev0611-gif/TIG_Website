@@ -33,6 +33,15 @@ jobs:
       - name: Build static pages, sitemap, RSS
         run: node scripts/build.js
 
+      - name: Strip internal files from the published site
+        # GitHub Pages 會把整個工作目錄公開；這些是內部作業檔，
+        # 不應該出現在 https://taiwanese-in-germany.com/ 上。
+        run: |
+          rm -rf scripts social drafts .claude
+          rm -f CLAUDE.md env.example init_waline_db.py *.csv
+          rm -f .DS_Store assets/.DS_Store assets/images/.DS_Store
+          find . -name '.DS_Store' -delete
+
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
