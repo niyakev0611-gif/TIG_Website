@@ -241,7 +241,7 @@ def illu_flags(d, R, S, cx, cy, theme):
     _dots(d, R, cx, cy, ((-70, -6, 3, theme), (0, -56, 3, GOLD), (70, -6, 3, theme)))
     d.ellipse(R(cx-48, cy+48, cx+48, cy+60), fill=tint(theme, 0.18))
     for px, flag_x1, flag_x2, cols, vert in (
-            (-14, -66, -14, ('#1F2937', '#C0392B', '#E8B70A'), False),
+            (-14, -66, -14, ('#374151', '#C0392B', '#E8B70A'), False),
             (14, 14, 66, ('#2563EB', '#FFFFFF', '#C0392B'), True)):
         x1, x2, y1, y2 = cx+flag_x1, cx+flag_x2, cy-50, cy-14
         if vert:
@@ -1323,6 +1323,51 @@ def illu_transitticket(d, R, S, cx, cy, theme):
     d.arc(R(ex-er+4, ey-er+4, ex+er-4, ey+er-4), start=195, end=250, fill=GOLD_HI, width=4*S)
     draw_mixed(d, R(ex, ey-17), '€', 28*S, OUTLINE, bold=True, anchor='center')
 
+def illu_interestrate(d, R, S, cx, cy, theme):
+    """遞升階梯＋金色百分比徽章（升息／利率調高）"""
+    ow = 5*S
+    _dots(d, R, cx, cy, ((-74, -30, 3, tint(theme, 0.5)), (-30, -50, 3, GOLD),
+                         (76, 30, 3, theme)))
+    d.ellipse(R(cx-62, cy+48, cx+62, cy+58), fill=tint(theme, 0.18))
+    # 三階遞升（奇數韻律，愈右愈高）
+    for i, (dx, h) in enumerate(((-66, 22), (-22, 40), (22, 58))):
+        d.rounded_rectangle(R(cx+dx, cy+44-h, cx+dx+40, cy+44), radius=6*S,
+                            fill=tint(theme, 0.30 + i*0.28), outline=OUTLINE, width=ow)
+    # 階梯基線
+    d.line(R(cx-70, cy+46, cx+66, cy+46), fill=OUTLINE, width=4*S)
+    # 焦點細節：最高階上方的金色 % 徽章
+    ex, ey, er = cx+42, cy-30, 24
+    d.ellipse(R(ex-er, ey-er, ex+er, ey+er), fill=GOLD, outline=OUTLINE, width=ow)
+    d.ellipse(R(ex-er+7, ey-er+7, ex+er-7, ey+er-7), outline=GOLD_D, width=3*S)
+    d.arc(R(ex-er+4, ey-er+4, ex+er-4, ey+er-4), start=195, end=250, fill=GOLD_HI, width=4*S)
+    draw_mixed(d, R(ex, ey-16), '%', 26*S, OUTLINE, bold=True, anchor='center')
+
+def illu_flagsuae(d, R, S, cx, cy, theme):
+    """德國與阿聯雙旗（雙邊國事訪問／投資協議）"""
+    ow = 5*S
+    _dots(d, R, cx, cy, ((-70, -6, 3, theme), (0, -56, 3, GOLD), (70, -6, 3, theme)))
+    d.ellipse(R(cx-48, cy+48, cx+48, cy+60), fill=tint(theme, 0.18))
+    for px, fx1, fx2, uae in ((-14, -66, -14, False), (14, 14, 66, True)):
+        x1, x2, y1, y2 = cx+fx1, cx+fx2, cy-50, cy-14
+        if uae:
+            # 阿聯：左側紅色直條，右側綠／白／黑三橫條
+            bar = (x2-x1)/4
+            d.rectangle(R(x1, y1, x1+bar, y2), fill='#C0392B')
+            h3 = (y2-y1)/3
+            for i, c in enumerate(('#2E8B57', '#FFFFFF', '#374151')):
+                d.rectangle(R(x1+bar, y1+i*h3, x2, y1+(i+1)*h3), fill=c)
+        else:
+            # 德國：黑／紅／金三橫條
+            h3 = (y2-y1)/3
+            for i, c in enumerate(('#374151', '#C0392B', '#E8B70A')):
+                d.rectangle(R(x1, y1+i*h3, x2, y1+(i+1)*h3), fill=c)
+        d.rectangle(R(x1, y1, x2, y2), outline=OUTLINE, width=ow)
+        d.line(R(cx+px, y1, cx+px, cy+50), fill=OUTLINE, width=ow)
+        d.ellipse(R(cx+px-5, cy-58, cx+px+5, cy-48), fill=GOLD, outline=OUTLINE, width=3*S)
+        d.ellipse(R(cx+px-8, cy+46, cx+px+8, cy+56), fill=OUTLINE)
+    # 焦點細節：兩旗之間的金星
+    d.polygon(R(*star_pts(cx, cy+14, 10, 4)), fill=GOLD, outline=OUTLINE)
+
 ILLUS = dict(podium=illu_podium, flags=illu_flags, coins=illu_coins,
              idcard=illu_idcard, camera=illu_camera, trophy=illu_trophy,
              bankcard=illu_bankcard, checklist=illu_checklist,
@@ -1342,7 +1387,8 @@ ILLUS = dict(podium=illu_podium, flags=illu_flags, coins=illu_coins,
              taxrelief=illu_taxrelief, rentburden=illu_rentburden,
              pylon=illu_pylon, diploma=illu_diploma,
              timeline=illu_timeline, schoolbook=illu_schoolbook,
-             transitticket=illu_transitticket)
+             transitticket=illu_transitticket, interestrate=illu_interestrate,
+             flagsuae=illu_flagsuae)
 
 # ── 版型 ────────────────────────────────────────────────────
 
@@ -1557,19 +1603,6 @@ DATE_RANGE = '2026/09/07-09/13'
 
 CARDS = [
  dict(
-  theme='#7C3AED', badges=[('教育', True), ('家庭', False)], illu='schoolbook',
-  title='PISA：德國史上最差，台灣三科前四',
-  subtitle='OECD 9/8 公布 PISA 2025：德國三科同創開辦以來最低',
-  stats=[('465 分', '德國閱讀（2022 年 480 分）'),
-         ('508 分', '台灣閱讀，全球第 3 名')],
-  bullets=[
-   ('三科一起破底', '德國閱讀 465 分、數學 464 分、科學 486 分，全低於 2022 年的 480／475／492。'),
-   ('三分之一沒到基本線', '閱讀與數學各約三分之一的 15 歲學生未達基礎水準，科學約四分之一；社經落差為 2000 年開辦以來最大。'),
-   ('台灣同期創新高', '台灣數學 546 分、科學 540 分並列全球第 4，閱讀 508 分居第 3，皆為歷屆最佳。'),
-  ],
-  takeaway=('教養提醒', '聯邦教育部長 Prien（CDU）稱結果「dramatisch（嚴峻）」，並說低分段與高分段都沒讓學生潛力發揮。'),
-  file='W37_圖卡1_PISA德國史上最差.png'),
- dict(
   theme='#0D9488', badges=[('交通', True), ('荷包', False)], illu='transitticket',
   title='德國月票明年再漲，9 月底就要揭曉',
   subtitle='Deutschlandticket 2027 年起改由成本指數計價，最遲 9/30 公布',
@@ -1581,7 +1614,7 @@ CARDS = [
    ('外界算出多少', '德國環境救助協會（DUH）8 月初算 66.40 €，WDR 資料團隊算 66.80 €（年漲 6.1%）；兩者都還不是官方數字。'),
   ],
   takeaway=('通勤提醒', '交通俱樂部 VCD 與社福團體 VdK 要求增設全國統一的 29 € 社會票，並要聯邦與各邦再補 4 億歐元緩和漲幅。'),
-  file='W37_圖卡2_德國月票2027漲價.png'),
+  file='W37_圖卡1_德國月票2027漲價.png'),
  dict(
   theme='#2563EB', badges=[('邦選舉', True), ('9/20 投票', False)], illu='ballotbox',
   title='兩場邦選舉 9/20 同日開票',
@@ -1594,9 +1627,35 @@ CARDS = [
    ('東北部差距在縮小', 'infratest dimap 9 月民調：AfD 35%、SPD 32%、左翼黨 11%、CDU 8%、綠黨 5%；AfD 領先自 7 月以來收窄。'),
   ],
   takeaway=('選前觀察', '柏林邦 CDU 改由財政參議員 Stefan Evers 掛帥，市長 Kai Wegner 因一月大停電的處理爭議退出。'),
-  file='W37_圖卡3_九二零雙邦選舉.png'),
+  file='W37_圖卡2_九二零雙邦選舉.png'),
  dict(
-  theme='#D4740E', badges=[('財政', True), ('聯邦議院', False)], illu='reichstag',
+  theme='#D4740E', badges=[('利率', True), ('房貸與存款', False)], illu='interestrate',
+  title='歐洲央行今年二度升息，9/16 生效',
+  subtitle='9/10 歐洲央行（EZB）三項政策利率各調高 1 碼，存款利率升到 2.50%',
+  stats=[('2.50%', '存款利率（原 2.25%）'),
+         ('3.3%', '歐元區通膨，目標是 2%')],
+  bullets=[
+   ('調了哪三個利率', '存款機制利率 2.25% 升到 2.50%、主要再融資利率 2.65%、隔夜貸款利率 2.90%，9/16 生效。'),
+   ('為什麼還要升', '歐元區通膨率 3.3%，遠高於 2% 目標。總裁 Lagarde：通膨「會先變糟才會變好」。'),
+   ('對你的錢包', '十年期德國公債殖利率升到 3.5%、為 2011 年以來最高，房貸利率承壓；銀行預期存款利率年底止漲。'),
+  ],
+  takeaway=('理財提醒', '有房貸利率鎖定期（Zinsbindung）將到期者，可提早試算再融資（Umschuldung）；活存利率調升通常慢於升息。'),
+  file='W37_圖卡3_歐洲央行二度升息.png'),
+ dict(
+  theme='#7C3AED', badges=[('教育', True), ('家庭', False)], illu='schoolbook',
+  title='國際學力調查：德國史上最差，台灣前四',
+  subtitle='OECD 每三年一次的 PISA 調查 9/8 公布，德國三科同創開辦以來最低',
+  stats=[('465 分', '德國閱讀（2022 年 480 分）'),
+         ('508 分', '台灣閱讀，全球第 3 名')],
+  bullets=[
+   ('PISA 是什麼', 'OECD 主辦、每三年一次的國際學生能力評量，測 15 歲學生的閱讀、數學、科學素養。'),
+   ('德國三科一起破底', '閱讀 465 分、數學 464 分、科學 486 分，全低於 2022 年的 480／475／492；閱讀與數學各約三分之一的學生未達基礎線。'),
+   ('台灣同期創新高', '台灣數學 546 分、科學 540 分並列全球第 4，閱讀 508 分居第 3，皆為歷屆最佳。'),
+  ],
+  takeaway=('教養提醒', '社經落差是 2000 年開辦以來最大；聯邦教育部長 Prien（CDU）稱結果「dramatisch（嚴峻）」。'),
+  file='W37_圖卡4_PISA德國史上最差.png'),
+ dict(
+  theme='#2E8B57', badges=[('財政', True), ('聯邦議院', False)], illu='reichstag',
   title='預算週：2027 年支出 5,554 億歐元',
   subtitle='9/8 Klingbeil 向聯邦議院提出 2027 年預算案，9/9 總辯論成朝野對決',
   stats=[('5,554 億歐元', '2027 年支出（今年 5,245 億）'),
@@ -1607,7 +1666,20 @@ CARDS = [
    ('反對聲音', '綠黨（Grüne）預算專家 Paula Piechotta 批「扛了創紀錄的債務，錢卻沒到橋梁與鐵軌上」。'),
   ],
   takeaway=('政策觀察', '9/9 總辯論 AfD 的 Weidel 稱「黑紅完了」，Merz 反擊指 AfD 想依出身與膚色進行「種族清洗」。'),
-  file='W37_圖卡4_預算週與總辯論.png'),
+  file='W37_圖卡5_預算週與總辯論.png'),
+ dict(
+  theme='#0D9488', badges=[('外交', True), ('投資', False)], illu='flagsuae',
+  title='阿聯首度國事訪問，加碼投資 400 億歐元',
+  subtitle='9/10 阿聯總統 Mohammed bin Zayed 訪柏林，簽逾 40 項雙邊協議',
+  stats=[('400 億歐元', '阿聯加碼投資金額'),
+         ('1 GW', '規劃中的 AI 資料中心容量')],
+  bullets=[
+   ('這是第一次', '阿拉伯聯合大公國總統首度對德國國事訪問，由總統 Steinmeier 以軍禮迎接，隨後會晤 Merz。'),
+   ('錢投在哪', '400 億歐元是在既有 340 億歐元之上加碼，投向 AI 資料中心與尖端科技，並設德國－阿聯投資理事會。'),
+   ('不只有生意', '協議還涵蓋外交、安全與軍備政策；人權觀察（HRW）要求德國一併處理阿聯的人權狀況與其在蘇丹戰爭中的角色。'),
+  ],
+  takeaway=('觀察重點', '德國正把「投資引進來」當成景氣對策，但把 AI 基礎設施與外資深度綁定，也是一道戰略依賴的新考題。'),
+  file='W37_圖卡6_阿聯國事訪問投資.png'),
  dict(
   theme='#C0392B', badges=[('經濟', True), ('數據', False)], illu='carplant',
   title='七月生產再降，汽車業月減 9.2%',
@@ -1620,7 +1692,7 @@ CARDS = [
    ('也有一線生機', '波動較小的三個月移動平均（5–7 月）較前三個月高 0.4%，趨勢仍是低檔盤整而非再度下墜。'),
   ],
   takeaway=('數據解讀', '單月重挫有停產的一次性因素，但年比與能源密集產業持續走弱，顯示需求端還沒回穩。'),
-  file='W37_圖卡5_七月工業生產.png'),
+  file='W37_圖卡7_七月工業生產.png'),
 ]
 
 # ── 邦名德文全名檢查 ────────────────────────────────────────
