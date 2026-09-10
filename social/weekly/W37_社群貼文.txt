@@ -1,0 +1,146 @@
+═══════════════════════════════════════
+FB 版（重點條列版）
+═══════════════════════════════════════
+
+🇩🇪【德國週報 W37｜9/7–9/13】德國月票 2027 年票價 9 月底揭曉，試算落在 66.40 至 66.80 €；9/20 柏林邦與梅克倫堡-佛波門邦同日改選，柏林邦 SPD 首席候選人選前遭搜索；歐洲央行今年二度升息，存款利率升到 2.50%、9/16 生效；PISA 學力調查德國三科同創新低，而台灣三科都在全球前四；預算週：2027 年支出 5,554 億歐元；阿聯首度國事訪問加碼投資 400 億歐元，核心是約 1 GW 的 AI 資料中心
+
+這一週最貼身的兩件事，一件在通勤卡上，一件在房貸和存摺上。六張圖卡一次看懂。
+
+🚆 一、Deutschlandticket 2027 年票價 9 月底揭曉：試算 66.40 至 66.80 €
+明年會漲多少，這個月底就有答案。現行價格是每月 63 €（2023–2024 年 49 €、2025 年 58 €）。
+▪️ 【2027 年起票價不再由政治協商拍板】，改依成本指數自動計算——這是各邦交通部長會議（VMK）今年 3/25–26 在林道（Lindau）的決議
+▪️ 指數與由此得出的票價，【最遲每年 9 月 30 日】通知所有運輸業者與聯邦、各邦
+▪️ 指數組成：【人事成本 55%、能源成本（柴油與電力）20%、一般營運成本 25%】
+▪️ 制度設有「緩衝因子」（需求上升時的額外收入可抵銷漲幅），但【2027 年的計算還不適用】
+▪️ 兩個試算：德國環境救助協會（DUH）8 月初算【66.40 €】（其中約 2.50 € 來自純成本上升，主因人事調薪與柴油約一成漲幅）；WDR 資料團隊算【66.80 €】，相當於【年漲 6.1%】
+▪️ ⚠️ 兩者都【還不是官方數字】，官方公布前都只是推算
+▪️ 爭點不在該不該反映成本，而在誰負擔得起：VCD 主張增設【全國統一、每月 29 € 的社會票】，並要求聯邦與各邦【再挹注 4 億歐元】；社福團體 VdK 立場相同
+▪️ 財政面：聯邦與各邦已議定【每年 30 億歐元、補貼至 2030 年】，超出部分由使用者負擔——這正是指數化的制度邏輯
+▪️ 通勤族現在該做什麼：月票可逐月解約，【官方數字出爐前不必急著退訂】；公司有 Jobticket 補助的話通常仍划算，建議先向人資確認明年補助額度
+
+📖 延伸閱讀：訂閱、付款與逐月解約的完整時程，見本站〈2026 德國交通月票 Deutschland Ticket 訂閱 取消訂閱 解約教學〉。
+
+🗳️ 二、9/20 兩場邦選舉：柏林邦四黨並駕齊驅，東北部差距在收窄
+薩克森-安哈特邦變天後兩週，德國馬上迎來第二與第三場檢驗。
+▪️ 柏林邦（Berlin）依 PolitPro 選情趨勢：【左翼黨（Die Linke）19.8%、CDU 19.6%、AfD 17.9%、綠黨（Grüne）16.1%、SPD 12.9%】，BSW 3.6%、FDP 3.4% 在門檻下
+▪️ 個別機構數字略有出入但格局一致：infratest dimap（8/27–31）【CDU 21%、左翼黨 19%、綠黨與 AfD 各 18%】；Forsa（8/4–18）【左翼黨 22%、CDU 與 AfD 各 18%、綠黨 16%、SPD 12%】
+▪️ 變數一：CDU 陣前換將。原首席候選人是市長 Kai Wegner，他在【今年一月柏林多日大停電的危機處理引發爭議後公開退選】，改由【財政參議員 Stefan Evers】出馬，並暫代邦黨主席
+▪️ 變數二：【9/9（週三）調查人員搜索柏林邦 SPD 首席候選人 Steffen Krach 位於 Schöneberg 的住處、SPD 柏林邦黨部與漢諾威邦黨部】。偵辦單位是【漢諾威檢察署，案由受賄（Bestechlichkeit）】，指其收受某醫療服務業者捐款以在一樁不動產標售程序中提供協助
+▪️ 【Krach 的發言人否認指控】，稱柏林邦 SPD「堅決駁斥」並強調正「全面配合」偵查機關。SPD 近期民調本就在 11–15% 之間
+▪️ 梅克倫堡-佛波門邦（Mecklenburg-Vorpommern）：infratest dimap 九月邦情調查【AfD 35%、SPD 32%、左翼黨 11%、CDU 8%、綠黨 5%】；Forsa 9/2 公布的調查把 AfD 放在【37%】
+▪️ 與 7 月相比，【AfD 少約 1 個百分點、SPD 增約 3 個百分點】，差距收斂到 3 個百分點左右；綠黨在重返邦議會的門檻邊緣
+▪️ 為什麼該關心：邦議會組成會改變【聯邦參議院（Bundesrat）票數分配】，秋季排隊的聯邦法案都要過這關；更貼身的是【教育、警政與外國人事務主管機關（Ausländerbehörde）的人力與預算屬邦權限】——居留與入籍要等多久，就取決於邦政府怎麼編這筆錢
+
+💹 三、歐洲央行今年二度升息：存款利率升到 2.50%，9/16 生效
+9/10 歐洲央行（EZB）宣布升息，這是 2026 年的第二次。
+▪️ 三項政策利率【各調高 25 個基點（1 碼）】：【存款機制利率 2.25% → 2.50%】、【主要再融資利率 → 2.65%】、【隔夜貸款利率 2.65% → 2.90%】
+▪️ 【新利率自 9/16 起生效】
+▪️ 理由：【歐元區通膨率 3.3%】，明顯高於 2% 的目標。總裁 Lagarde 說通膨到年底前還會再往上，「【會先變糟才會變好，但它會變好】」
+▪️ 她並指出【中東衝突持續製造通膨壓力】，通膨可能在一段較長時間裡都明顯高於目標
+▪️ 房貸這一邊：【十年期德國公債殖利率已來到 3.5%，是 2011 年以來最高】，會直接壓在房貸利率（Bauzinsen）上。德國房貸利率主要跟著長天期公債殖利率走，【所以「政策利率只升 1 碼」不等於房貸只貴一點點】
+▪️ 存款這一邊：定存（Festgeld）通常反應較快，活存（Tagesgeld）常慢半拍。分析認為【拉長定存年限、把目前利率鎖起來較有利】，因為【銀行普遍預期存款利率的上升到年底就會告一段落】
+▪️ 可以做的事：房貸【利率鎖定期（Zinsbindung）在一兩年內到期】者，現在就值得試算再融資（Umschuldung）與遠期貸款（Forward-Darlehen）；存款則先確認自己的活存利率是不是還停在舊水準——【不主動比價就等於少領】
+
+📚 四、PISA 2025：德國三科同創新低，台灣閱讀升上全球第 3
+先說 PISA 是什麼：【OECD（經濟合作暨發展組織）主辦、每三年一次的國際學生能力評量】，抽測各國【15 歲學生】的【閱讀、數學、科學】素養，重點不是背了多少課本，而是能不能把學到的用在真實情境裡。9/8 公布結果，距離 2000 年第一次 PISA 剛好 25 年。
+▪️ 德國這次【閱讀 465 分、數學 464 分、科學 486 分】，三科同創 PISA 開辦以來最低（約 6,700 名 15 歲學生受測）
+▪️ 對照 2022 年的【480／475／492 分】；閱讀甚至【低於 2000 年首測的 483 分】——當年那場「PISA 震撼」的成績，如今看起來反而比現在好
+▪️ 排名：德國【科學第 23、閱讀第 24、數學與瑞典並列第 25】，已落到 OECD 平均水準。本輪主測領域是科學，居首的是【新加坡 535 分】
+▪️ 底部更值得看：【閱讀與數學各約三分之一】的 15 歲學生未達基礎能力水準（閱讀有 32% 未達能力等級 2），【科學約四分之一】
+▪️ 【社經弱勢與優勢學生的落差，是 2000 年 PISA 開辦以來最大的一次】
+▪️ 聯邦教育部長 Karin Prien（CDU）稱結果【「dramatisch（嚴峻）」】：「我們無論在低分段還是高分段，都沒有讓學生的潛力得到發揮。」
+▪️ 不只德國：OECD 國家過去十年【閱讀平均掉了 28 分】，是三個領域中退步最多的一項；德語區三國中，德國落後奧地利與瑞士
+▪️ 🇹🇼 同一份調查裡的台灣：【數學 546 分（全球第 4）、科學 540 分（第 4）、閱讀 508 分（第 3）】，科學與閱讀的分數與排名都創歷屆新高；台灣教育團體同時提醒「【雙峰化】」的隱憂
+▪️ 對在德台灣家庭的意義：德國學制小四後就分流，而這次最刺眼的發現是【社經背景對成績的解釋力創新高】。對非德語母語家庭而言，【校內語言支持（Sprachförderung）與課後照顧資源的有無，會比過去更直接反映在孩子的成績上】——值得主動向學校確認是否有 DaZ（德語為第二語言）課程與各邦的補救教學（Förderunterricht）申請方式。教育屬各邦權限，做法邦邦不同
+
+💶 五、預算週：2027 年支出 5,554 億歐元，國防增至 1,097 億歐元
+9/8 財政部長 Lars Klingbeil（SPD）把 2027 年預算草案送進聯邦議院，時間點就在薩克森-安哈特邦選舉之後兩天。
+▪️ 草案規劃支出【5,554 億歐元】，高於今年的【5,245 億歐元】
+▪️ 錢往哪去很集中：核心預算中的【國防支出約 1,097 億歐元，比 2026 年多三分之一】；另編【約 116 億歐元援助烏克蘭】
+▪️ 債務端創新高：債務煞車（Schuldenbremse）架構內的【淨借款規劃 1,187 億歐元】，今年原規劃 980 億歐元
+▪️ 加計基礎設施與氣候中和特別基金、聯邦國防軍特別基金的舉債，【2027 年新增舉債總額約 2,000 億歐元，2030 年升至 2,195 億歐元】
+▪️ 綠黨（Grüne）預算專家 Paula Piechotta 批評：【「我們扛了創紀錄的債務，錢卻沒有到達這個國家的橋梁與鐵軌上」】，指預算技巧（Haushaltstricks）達到前所未見的程度
+▪️ 9/9 總辯論成正面對決：AfD 共同主席 Alice Weidel 宣稱【「黑紅完了」】，要求刪減補貼與發展援助、限制「大規模移民進入社會體系」、終結能源轉型與碳稅、重返核電與「更便宜的俄羅斯天然氣」
+▪️ 總理 Merz 一半切割、一半辯護：承認能源政策上的錯誤，主張把錢投在企業、安全與數位化，並【指控 AfD 想依出身與膚色進行「種族清洗」】
+▪️ 時程：本週是一讀與各部會審查，【實質協商與表決預計要到 11 月】
+
+🤝 六、阿聯首度國事訪問：加碼投資 400 億歐元，AI 資料中心是重頭戲
+9/10 阿拉伯聯合大公國總統 Scheich Mohammed bin Zayed Al Nahyan 抵達柏林，展開為期兩天的訪問。
+▪️ 這是【阿聯總統首度對德國進行國事訪問】，由聯邦總統 Steinmeier 以軍禮迎接，隨後會晤總理 Merz
+▪️ 【阿聯宣布追加投資約 400 億歐元】，是在【既有的 340 億歐元之上加碼】
+▪️ 訪問期間簽署【逾 40 項個別協議】，涵蓋投資、人工智慧與能源，也包括外交、安全與軍備政策；雙方另將設立【德國－阿聯投資理事會】
+▪️ 錢主要投在【人工智慧基礎設施】：規劃在德國興建【總容量約 1 GW 的最先進資料中心】，另含尖端科技投資
+▪️ 不是只有生意：【人權觀察（HRW）呼籲德國政府在談判中不能只談經濟利益】，也必須處理阿聯的人權狀況與該國在蘇丹戰爭中扮演的角色
+▪️ 值得留意的一層：把國家級 AI 基礎設施與單一外資深度綁定，除人權爭議外也牽涉【戰略依賴】——這是德國近年才剛在能源與供應鏈上學到的一課
+
+📚 資料來源
+• ADAC：Deutschlandticket 2027 年會是多少錢 https://www.adac.de/news/deutschlandticket-2027/
+• ADAC：交通部長會議決議票價指數 https://www.adac.de/news/deutschlandticket/
+• Werra-Rundschau：WDR 試算 66.80 € https://www.werra-rundschau.de/verbraucher/deutschlandticket-soll-2027-auf-6680-euro-steigen-zr-94469664.html
+• Ruhr Nachrichten：VCD 的批評與社會票主張 https://www.ruhrnachrichten.de/service/deutsche-bahn-deutschlandticket-berechnungen-preiserhoehung-2027-kritik-vcd-w1229479-2002173215/
+• VdK：月票再漲對低所得者的衝擊 https://www.vdk.de/aktuelles/aktuelle-meldungen/artikel/deutschlandticket-wird-erneut-teurer/
+• taz：柏林邦 SPD 首席候選人受賄偵辦與住處搜索 https://taz.de/Ermittlungen-wegen-Bestechlichkeit/!6212050/
+• ZDFheute：Wegner 退選後 Evers 接掌首席候選人 https://www.zdfheute.de/politik/deutschland/stefan-evers-cdu-berlin-spitzenkandidat-100.html
+• infratest dimap：梅克倫堡-佛波門邦九月邦情調查 https://www.infratest-dimap.de/umfragen-analysen/bundeslaender/mecklenburg-vorpommern/laendertrend/2026/september/
+• PolitPro：柏林邦選情趨勢 https://politpro.eu/en/berlin/election/parliament/2026
+• 歐洲央行：2026/9/10 貨幣政策聲明 https://www.ecb.europa.eu/press/press_conference/monetary-policy-statement/2026/html/ecb.is260910~6a45359cfc.de.html
+• ZDFheute：Lagarde 稱通膨「會先變糟才會變好」 https://www.zdfheute.de/wirtschaft/ezb-leitzins-anhebung-lagarde-interview-100.html
+• biallo：升息後存款利率會怎麼走 https://www.biallo.de/geldanlage/news/ezb-leitzinserhoehung-september-2026/
+• ZDFheute：PISA 德國成績史上最差與各方反應 https://www.zdfheute.de/politik/deutschland/pisa-studie-streeck-prien-historisch-schlecht-reaktionen-100.html
+• WirtschaftsWoche：德國 PISA 排名歷史新低 https://www.wiwo.de/politik/deutschland/pisa-studie-2026-deutschland-schneidet-im-ranking-historisch-schlecht-ab/100252852.html
+• OECD：PISA 2025 德國國別報告（PDF） https://www.oecd.org/content/dam/oecd/de/publications/reports/2026/09/pisa-2025-results-volume-i-country-notes_88d1164e/germany_20677961/8a1ce578-de.pdf
+• 聯合新聞網：台灣科學全球第 4、閱讀第 3 雙創新高 https://udn.com/news/story/6885/9741995
+• 公視新聞網：台灣閱讀表現拿第 3 創最佳排名 https://news.pts.org.tw/article/826113
+• Handelsblatt：預算週與 2027 年預算內容 https://www.handelsblatt.com/politik/deutschland/bundestag-haushaltswoche-in-unruhigen-zeiten-das-steckt-im-etat-2027/100252742.html
+• t-online：Klingbeil 提出預算案的關鍵數字 https://www.t-online.de/nachrichten/deutschland/innenpolitik/id_101425040/haushalt-2027-klingbeil-bringt-etat-ein-das-sind-die-wichtigsten-zahlen.html
+• Euronews：Weidel 與 Merz 的交鋒 https://de.euronews.com/my-europe/2026/09/09/schlagabtausch-weidel-merz-spd-gruene-linke
+• 聯邦總統府：阿聯總統國事訪問 https://www.bundespraesident.de/SharedDocs/Berichte/DE/Frank-Walter-Steinmeier/2026/09/260910-Staatsbesuch-VAE.html
+• Euronews：柏林簽下數十億規模協議 https://de.euronews.com/my-europe/2026/09/10/milliardenschwere-abkommen-beim-besuch-des-vae-scheichs-in-berlin
+• MarketScreener：阿聯宣布追加 400 億歐元投資 https://de.marketscreener.com/boerse-nachrichten/vae-wollen-40-milliarden-euro-zusaetzlich-in-deutschland-investieren-ce785bded189ff2d
+
+#德國知識小種子 #DasdeutscheWissen #在德台灣人 #德國生活 #德國新聞 #Deutschlandticket #邦選舉 #歐洲央行 #升息 #PISA #德國教育
+
+
+═══════════════════════════════════════
+IG 版（精簡版，1433 字元）
+═══════════════════════════════════════
+
+🇩🇪 德國週報 W37｜9/7–9/13
+
+這一週最貼身的兩件事，一件在通勤卡上，一件在房貸和存摺上。
+
+🚆 德國月票明年再漲｜Deutschlandticket 2027 年票價最遲 9/30 公布。現行 63 €，2027 年起不再政治協商，改依成本指數自動計算
+
+🧮 指數怎麼算｜人事 55%、能源 20%、一般營運 25%。DUH 試算 66.40 €、WDR 試算 66.80 €（年漲 6.1%）——都還不是官方數字
+
+💬 爭點在誰負擔得起｜VCD 與 VdK 要求增設全國統一的 29 € 社會票，並請聯邦與各邦再補 4 億歐元。月票可逐月解約，不必急著退訂
+
+🗳️ 9/20 兩場邦選舉｜柏林邦（Berlin）與梅克倫堡-佛波門邦（Mecklenburg-Vorpommern）同日改選議會
+
+🤝 柏林邦四黨咬很緊｜左翼黨（Die Linke）19.8%、CDU 19.6%、AfD 17.9%、綠黨（Grüne）16.1%、SPD 12.9%。CDU 因 Wegner 一月大停電爭議退選，改由 Stefan Evers 掛帥
+
+🚨 選前十一天的搜索｜9/9 漢諾威檢方以受賄罪搜索柏林邦 SPD 首席候選人 Steffen Krach 的住處與黨部，Krach 方面否認
+
+📊 東北部差距在收窄｜梅克倫堡-佛波門邦民調 AfD 35%、SPD 32%、左翼黨 11%、CDU 8%、綠黨 5%；與 7 月相比 AfD 少 1 點、SPD 多 3 點
+
+💹 歐洲央行今年二度升息｜9/10 三項政策利率各調 1 碼：存款機制利率 2.25%→2.50%、主要再融資 2.65%、隔夜貸款 2.90%，9/16 生效
+
+📈 為什麼升｜歐元區通膨 3.3%，遠高於 2% 目標。Lagarde：通膨「會先變糟才會變好」
+
+🏠 對你的錢包｜十年期德國公債殖利率 3.5%、2011 年以來最高，房貸利率承壓。定存拉長年限較有利，活存調升通常慢半拍
+
+📚 PISA 是什麼｜OECD 主辦、每三年一次的國際學生能力評量，測 15 歲學生的閱讀、數學、科學素養。9/8 公布 2025 年結果
+
+📉 德國三科同創新低｜閱讀 465、數學 464、科學 486 分，全低於 2022 年的 480／475／492，閱讀甚至低於 2000 年首測的 483 分
+
+⚠️ 底部與落差｜閱讀與數學各約三分之一未達基礎線，科學約四分之一；社經落差是 PISA 開辦以來最大。部長 Prien 稱結果「dramatisch（嚴峻）」
+
+🇹🇼 同一份調查的台灣｜數學 546 分（全球第 4）、科學 540 分（第 4）、閱讀 508 分（第 3），科學與閱讀皆創歷屆最佳
+
+💶 預算週｜9/8 Klingbeil 提出 2027 年預算案：支出 5,554 億歐元，國防 1,097 億歐元、多三分之一，另編 116 億歐元援烏；新增舉債約 2,000 億歐元
+
+🤝 阿聯首度國事訪問｜9/10 總統 Mohammed bin Zayed 訪柏林，在既有 340 億歐元上加碼投資 400 億歐元，核心是約 1 GW 的 AI 資料中心
+
+📚 完整解析與資料來源 → FB 粉專或網站（連結在 bio）
+
+#德國知識小種子 #DasdeutscheWissen #在德台灣人 #德國生活 #德國新聞 #Deutschlandticket #歐洲央行 #PISA #邦選舉
