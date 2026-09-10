@@ -1255,6 +1255,74 @@ def illu_timeline(d, R, S, cx, cy, theme):
     d.ellipse(R(cx+22, cy-52, cx+46, cy-28), fill='white', outline=OUTLINE, width=ow)
     d.ellipse(R(cx+29, cy-45, cx+39, cy-35), fill=theme)
 
+def illu_schoolbook(d, R, S, cx, cy, theme):
+    """攤開的書＋下滑箭頭（學力調查／教育成績下降）"""
+    ow = 5*S
+    _dots(d, R, cx, cy, ((-72, -22, 3, tint(theme, 0.5)), (66, -54, 3, GOLD),
+                         (76, -14, 3, theme)))
+    d.ellipse(R(cx-60, cy+48, cx+60, cy+58), fill=tint(theme, 0.18))
+    # 後層：書封（主題色，兩側各露出一線）
+    d.rounded_rectangle(R(cx-70, cy+4, cx+70, cy+46), radius=8*S,
+                        fill=theme, outline=OUTLINE, width=ow)
+    # 前層：左右兩頁（中央微微隆起）
+    d.polygon(R(cx-64, cy+6, cx-3, cy-10, cx-3, cy+30, cx-64, cy+38),
+              fill='white', outline=OUTLINE, width=ow)
+    d.polygon(R(cx+64, cy+6, cx+3, cy-10, cx+3, cy+30, cx+64, cy+38),
+              fill='white', outline=OUTLINE, width=ow)
+    # 左頁：文字線
+    d.line(R(cx-54, cy+12, cx-14, cy+3), fill=tint(theme, 0.5), width=4*S)
+    d.line(R(cx-54, cy+22, cx-24, cy+16), fill=tint(theme, 0.42), width=3*S)
+    # 右頁：三段遞減的長條，坐在同一條基線上（成績逐次走低）
+    d.line(R(cx+12, cy+25, cx+63, cy+25), fill=tint(theme, 0.45), width=3*S)
+    for i, (dx, h) in enumerate(((14, 20), (32, 14), (50, 8))):
+        d.rounded_rectangle(R(cx+dx, cy+24-h, cx+dx+11, cy+24), radius=2*S,
+                            fill=GOLD if i == 0 else tint(theme, 0.55))
+    # 書脊
+    d.line(R(cx, cy-10, cx, cy+30), fill=OUTLINE, width=4*S)
+    # 焦點細節：書頁上方的下滑箭頭（頭部與桿身同軸，避免脫節）
+    ax0, ay0, ax1, ay1 = cx-44, cy-52, cx+24, cy-22
+    ux, uy = ax1-ax0, ay1-ay0
+    n = math.hypot(ux, uy)
+    ux, uy = ux/n, uy/n
+    px, py = -uy, ux
+    hl, hw = 20, 10          # 箭頭長、半寬
+    bx, by = ax1-ux*hl, ay1-uy*hl
+    d.line(R(ax0, ay0, bx+ux*3, by+uy*3), fill=theme, width=ow+2*S)
+    d.polygon(R(ax1, ay1, bx+px*hw, by+py*hw, bx-px*hw, by-py*hw), fill=theme)
+
+def illu_transitticket(d, R, S, cx, cy, theme):
+    """手機車票＋QR＋€ 金幣與上升箭頭（月票漲價／大眾運輸票價）"""
+    ow = 5*S
+    _dots(d, R, cx, cy, ((-70, -46, 3, GOLD), (-14, -56, 3, tint(theme, 0.5)),
+                         (74, 34, 3, theme)))
+    d.ellipse(R(cx-52, cy+48, cx+30, cy+58), fill=tint(theme, 0.18))
+    # 手機機身
+    d.rounded_rectangle(R(cx-56, cy-50, cx+14, cy+46), radius=11*S,
+                        fill='white', outline=OUTLINE, width=ow)
+    # 螢幕：上方主題色票頭＋票面
+    d.rounded_rectangle(R(cx-47, cy-40, cx+5, cy+30), radius=5*S, fill=tint(theme, 0.20))
+    d.rounded_rectangle(R(cx-47, cy-40, cx+5, cy-20), radius=5*S, fill=theme)
+    d.rectangle(R(cx-47, cy-26, cx+5, cy-20), fill=theme)
+    d.line(R(cx-39, cy-31, cx-11, cy-31), fill='white', width=4*S)
+    # QR 碼（3×3 韻律方塊）
+    for i in range(3):
+        for j in range(3):
+            if (i + j) % 3 == 1:
+                continue
+            qx, qy = cx-38 + j*15, cy-12 + i*15
+            d.rounded_rectangle(R(qx, qy, qx+10, qy+10), radius=2*S, fill=theme)
+    # 底部 Home 指示條
+    d.rounded_rectangle(R(cx-32, cy+36, cx-10, cy+40), radius=2*S, fill=tint(theme, 0.45))
+    # 上升箭頭（票價往上）
+    d.line(R(cx+26, cy+22, cx+58, cy-24), fill=theme, width=ow)
+    d.polygon(R(cx+64, cy-34, cx+42, cy-24, cx+60, cy-8), fill=theme)
+    # 焦點細節：€ 金幣壓在機身右下
+    ex, ey, er = cx+34, cy+26, 23
+    d.ellipse(R(ex-er, ey-er, ex+er, ey+er), fill=GOLD, outline=OUTLINE, width=ow)
+    d.ellipse(R(ex-er+7, ey-er+7, ex+er-7, ey+er-7), outline=GOLD_D, width=3*S)
+    d.arc(R(ex-er+4, ey-er+4, ex+er-4, ey+er-4), start=195, end=250, fill=GOLD_HI, width=4*S)
+    draw_mixed(d, R(ex, ey-17), '€', 28*S, OUTLINE, bold=True, anchor='center')
+
 ILLUS = dict(podium=illu_podium, flags=illu_flags, coins=illu_coins,
              idcard=illu_idcard, camera=illu_camera, trophy=illu_trophy,
              bankcard=illu_bankcard, checklist=illu_checklist,
@@ -1273,7 +1341,8 @@ ILLUS = dict(podium=illu_podium, flags=illu_flags, coins=illu_coins,
              carplant=illu_carplant, databreach=illu_databreach,
              taxrelief=illu_taxrelief, rentburden=illu_rentburden,
              pylon=illu_pylon, diploma=illu_diploma,
-             timeline=illu_timeline)
+             timeline=illu_timeline, schoolbook=illu_schoolbook,
+             transitticket=illu_transitticket)
 
 # ── 版型 ────────────────────────────────────────────────────
 
@@ -1483,120 +1552,75 @@ def make_chart_card(spec, path, week_label='W?', date_label=''):
 # ════════════════════════════════════════════════════════════
 # 每週卡片內容（範本：W29）——之後每週改這一段即可
 # ════════════════════════════════════════════════════════════
-WEEK = 'W36'
-DATE_RANGE = '2026/08/31-09/06'
+WEEK = 'W37'
+DATE_RANGE = '2026/09/07-09/13'
 
 CARDS = [
  dict(
-  theme='#2563EB', badges=[('邦選舉', True), ('薩克森-安哈特邦', False)], illu='ballotbox',
-  title='薩克森-安哈特邦：AfD 44%，CDU 腰斬',
-  subtitle='薩克森-安哈特邦（Sachsen-Anhalt）9/6 開票夜 21 時 12 分推估值',
-  stats=[('44%', 'AfD 得票（2021 年 20.8%）'),
-         ('17.5%', 'CDU 得票（2021 年 37.1%）')],
+  theme='#7C3AED', badges=[('教育', True), ('家庭', False)], illu='schoolbook',
+  title='PISA：德國史上最差，台灣三科前四',
+  subtitle='OECD 9/8 公布 PISA 2025：德國三科同創開辦以來最低',
+  stats=[('465 分', '德國閱讀（2022 年 480 分）'),
+         ('508 分', '台灣閱讀，全球第 3 名')],
   bullets=[
-   ('開出什麼結果', '推估值：AfD 44%、CDU 17.5%、綠黨（Grüne）與 SPD 各 9.0%、左翼黨（Linke）8.9%、BSW 5.0%、FDP 2.4%。'),
-   ('投票率暴增', '約 77%，遠高於 2021 年的 60.3%。AfD 較上屆增逾 23 個百分點，CDU 失血近 20 個，FDP 跌出議會。'),
-   ('各方怎麼說', 'AfD 的 Chrupalla：「Merz 想把我們減半，我們現在把 CDU 減半了」；Weidel 稱「歷史性結果」並主張執政委託。'),
+   ('三科一起破底', '德國閱讀 465 分、數學 464 分、科學 486 分，全低於 2022 年的 480／475／492。'),
+   ('三分之一沒到基本線', '閱讀與數學各約三分之一的 15 歲學生未達基礎水準，科學約四分之一；社經落差為 2000 年開辦以來最大。'),
+   ('台灣同期創新高', '台灣數學 546 分、科學 540 分並列全球第 4，閱讀 508 分居第 3，皆為歷屆最佳。'),
   ],
-  takeaway=('選後觀察', 'CDU 的不相容決議同時排除 AfD 與左翼黨，組閣難度極高。本月另有 9/20 柏林邦（Berlin）議會選舉。'),
-  file='W36_圖卡1_薩克森安哈特邦選舉結果.png'),
+  takeaway=('教養提醒', '聯邦教育部長 Prien（CDU）稱結果「dramatisch（嚴峻）」，並說低分段與高分段都沒讓學生潛力發揮。'),
+  file='W37_圖卡1_PISA德國史上最差.png'),
  dict(
-  kind='chart', theme='#2563EB', badges=[('選舉數據', True), ('薩克森-安哈特邦', False)],
-  title='兩屆對照：AfD 翻倍，CDU 掉了一半以上',
-  subtitle='薩克森-安哈特邦（Sachsen-Anhalt）邦議會選舉第二票得票率',
-  label_old='2021 年', label_new='2026 年', vmax=46,
-  rows=[
-   ('AfD',   20.8, 44.0, '+23.2'),
-   ('CDU',   37.1, 17.5, '-19.6'),
-   ('Grüne',  5.9,  9.0, '+3.1'),
-   ('SPD',    8.4,  9.0, '+0.6'),
-   ('Linke',  11.0,  8.9, '-2.1'),
-   ('BSW',   None,  5.0, '首次參選'),
-   ('FDP',    6.4,  2.4, '-4.0'),
-  ],
-  notes=[
-   '2026 年為 9/6 開票夜 21 時 12 分推估值，非最終官方結果；2021 年為官方最終結果。',
-   'BSW（Bündnis Sahra Wagenknecht）於 2021 年尚未成立。投票率自 60.3% 升至約 77%。',
-  ],
-  file='W36_圖卡2_兩屆選舉得票對照.png'),
- dict(
-  theme='#7C3AED', badges=[('歷史對照', True), ('查證', False)], illu='timeline',
-  title='同一塊土地：94 年前的第一個納粹邦政府',
-  subtitle='1932 年安哈特（Anhalt）——今薩克森-安哈特邦（Sachsen-Anhalt）',
-  stats=[('41.6%', '1932 年納粹黨在安哈特得票'),
-         ('44%', '2026 年 AfD 得票（推估）')],
+  theme='#0D9488', badges=[('交通', True), ('荷包', False)], illu='transitticket',
+  title='德國月票明年再漲，9 月底就要揭曉',
+  subtitle='Deutschlandticket 2027 年起改由成本指數計價，最遲 9/30 公布',
+  stats=[('63 €', '2026 年現行月票價'),
+         ('66–67 €', '2027 年外界試算區間')],
   bullets=[
-   ('1932 年那裡發生什麼', '4/24 安哈特邦議會改選，納粹黨（NSDAP）以 41.6% 成為第一大黨；5/21 Alfred Freyberg 出任邦總理。'),
-   ('關鍵在誰扶他上去', 'Freyberg 是全德第一位納粹黨邦總理，靠納粹黨與保守民族主義政黨 DNVP 聯合組閣才過關。'),
-   ('史家的但書', '柏林史家 Heinrich August Winkler 認為威瑪類比並不恰當：當年有大規模失業與武裝黨軍，今日沒有。'),
+   ('計價方式變了', '交通部長會議（VMK）3 月在 Lindau 決議：2027 年起票價不再由政治協商拍板，改依成本指數自動計算。'),
+   ('指數怎麼組成', '人事成本 55%、能源成本（柴油與電力）20%、一般營運成本 25%；今年主要被調薪與柴油約一成的漲幅推上去。'),
+   ('外界算出多少', '德國環境救助協會（DUH）8 月初算 66.40 €，WDR 資料團隊算 66.80 €（年漲 6.1%）；兩者都還不是官方數字。'),
   ],
-  takeaway=('今年的百年巧合', 'AfD 把聯邦黨代會訂在 7/4 的 Erfurt，與 1926 年同日納粹黨在 Weimar 的重建後首次黨代會撞期。'),
-  file='W36_圖卡3_九十四年前的第一個納粹邦政府.png'),
+  takeaway=('通勤提醒', '交通俱樂部 VCD 與社福團體 VdK 要求增設全國統一的 29 € 社會票，並要聯邦與各邦再補 4 億歐元緩和漲幅。'),
+  file='W37_圖卡2_德國月票2027漲價.png'),
  dict(
-  theme='#2E8B57', badges=[('稅制', True), ('家庭', False)], illu='taxrelief',
-  title='內閣通過所得稅改革：一年減稅百億歐元',
-  subtitle='9/2 通過《2027 所得稅改革法》草案，2027、2028 分兩階段生效',
-  stats=[('100 億歐元', '2028 年起全年減稅規模'),
-         ('逾 600 €', '雙薪雙孩 6 萬歐元家庭年省')],
+  theme='#2563EB', badges=[('邦選舉', True), ('9/20 投票', False)], illu='ballotbox',
+  title='兩場邦選舉 9/20 同日開票',
+  subtitle='柏林邦（Berlin）與梅克倫堡-佛波門邦（Mecklenburg-Vorpommern）',
+  stats=[('19.8%', '柏林邦 Linke 民調居首'),
+         ('35%', '梅克倫堡-佛波門邦 AfD')],
   bullets=[
-   ('基本免稅額往上調', '基本免稅額（Grundfreibetrag）2027 年升至 12,564 €、2028 年再升至 12,900 €，等於兩年各多出 216 € 與 336 € 免稅。'),
-   ('孩子的部分加最多', '兒童津貼（Kindergeld）2027 年起每月 267 €、2028 年再加 5 € 至 272 €；兒童免稅額每名子女自 9,756 € 調高至 10,056 €。'),
-   ('高所得端反向加稅', '45% 稅率的起徵點自 277,826 € 下修至 250,000 €；28 萬歐元以上另立 47% 新稅級，SPD 稱之為「超級富人稅」。'),
+   ('柏林邦四黨咬很緊', 'PolitPro 選情趨勢：左翼黨（Die Linke）19.8%、CDU 19.6%、AfD 17.9%、綠黨（Grüne）16.1%、SPD 12.9%。'),
+   ('選前十天的搜索', '9/9 檢調搜索柏林邦 SPD 首席候選人 Steffen Krach 住處與黨部；漢諾威檢方以受賄罪偵辦，Krach 方面否認。'),
+   ('東北部差距在縮小', 'infratest dimap 9 月民調：AfD 35%、SPD 32%、左翼黨 11%、CDU 8%、綠黨 5%；AfD 領先自 7 月以來收窄。'),
   ],
-  takeaway=('稅務提醒', '42% 稅率起點自 69,879 € 微調至 70,600 €，1.78 萬至 7.06 萬歐元區間的稅率曲線變平緩。法案仍待國會審議。'),
-  file='W36_圖卡4_所得稅改革內閣通過.png'),
+  takeaway=('選前觀察', '柏林邦 CDU 改由財政參議員 Stefan Evers 掛帥，市長 Kai Wegner 因一月大停電的處理爭議退出。'),
+  file='W37_圖卡3_九二零雙邦選舉.png'),
  dict(
-  theme='#C0392B', badges=[('居住', True), ('租金', False)], illu='rentburden',
-  title='租金報告：每兩名租客就有一人怕找不到房',
-  subtitle='德國租客協會 9/1 發表《2026 租金報告》，全德缺 140 萬戶住宅',
-  stats=[('50%', '怕找不到負擔得起的房'),
-         ('140 萬戶', '全德住宅短缺數')],
+  theme='#D4740E', badges=[('財政', True), ('聯邦議院', False)], illu='reichstag',
+  title='預算週：2027 年支出 5,554 億歐元',
+  subtitle='9/8 Klingbeil 向聯邦議院提出 2027 年預算案，9/9 總辯論成朝野對決',
+  stats=[('5,554 億歐元', '2027 年支出（今年 5,245 億）'),
+         ('1,097 億歐元', '國防核心預算，年增三成')],
   bullets=[
-   ('租客在怕什麼', '50% 受訪租客擔心一旦得搬家就找不到負擔得起的房；29% 擔心未來付不出房租，四分之一為了付房租而省吃。'),
-   ('住房成本還在漲', '58% 表示過去 12 個月房租或雜費（Nebenkosten）變貴；2025 年有 11.2% 的人把逾四成可支配所得花在居住上。'),
-   ('雙方開的藥方相反', '租客協會主席 Melanie Weber-Moritz 要求管制租金、擴建社會住宅；房東協會 Haus & Grund 反批「藥方一直開錯」。'),
+   ('錢往哪裡去', '國防核心預算約 1,097 億歐元，比 2026 年多三分之一；另編 116 億歐元援助烏克蘭。'),
+   ('債務再創高', '債務煞車內的淨借款 1,187 億歐元（今年 980 億）；加計三大特別基金，新增舉債約 2,000 億歐元。'),
+   ('反對聲音', '綠黨（Grüne）預算專家 Paula Piechotta 批「扛了創紀錄的債務，錢卻沒到橋梁與鐵軌上」。'),
   ],
-  takeaway=('租屋提醒', '貧窮人口中有 35% 的居住支出超過所得四成，報告示警住房危機正轉為社會國危機。'),
-  file='W36_圖卡5_租金報告缺140萬戶.png'),
+  takeaway=('政策觀察', '9/9 總辯論 AfD 的 Weidel 稱「黑紅完了」，Merz 反擊指 AfD 想依出身與膚色進行「種族清洗」。'),
+  file='W37_圖卡4_預算週與總辯論.png'),
  dict(
-  theme='#D4740E', badges=[('通膨', True), ('能源', False)], illu='coins',
-  title='八月通膨升到 2.9%，能源獨漲一成',
-  subtitle='聯邦統計局 8/29 速報：能源年增 10.5%，為本輪物價的主要推手',
-  stats=[('2.9%', '8 月消費者物價年增率'),
-         ('+10.5%', '能源價格年增幅')],
+  theme='#C0392B', badges=[('經濟', True), ('數據', False)], illu='carplant',
+  title='七月生產再降，汽車業月減 9.2%',
+  subtitle='聯邦統計局 9/7 公布：製造業生產月減 1.1%，工業部門月減 2.2%',
+  stats=[('-1.1%', '七月生產，較六月（季調）'),
+         ('-9.2%', '汽車業產出，單月減幅')],
   bullets=[
-   ('哪些漲、哪些沒漲', '能源年增 10.5%（7 月 8.3%、6 月 3.4%，逐月加速）；服務年增 2.8%；食品幾乎持平，只年增 0.1%。'),
-   ('為什麼是能源', '6/30 燃料稅減免退場的效果整月反映在油價上，加上俄國煉油產能受創推高精煉產品價格，能源成了唯一的加速項。'),
-   ('核心通膨仍偏高', '扣除食品與能源的核心通膨為 2.4%，高於歐洲央行 2% 的目標，代表漲價壓力並非只來自能源這一項。'),
+   ('哪裡拖後腿', '汽車業月減 9.2%，主因是數週的停產；資本財 -3.4%、消費財 -2.2%、中間財 -0.2%。'),
+   ('年比更難看', '工業生產較 2025 年 7 月少 3.3%；能源密集產業月減 1.7%，直接反映電價與天然氣成本的壓力。'),
+   ('也有一線生機', '波動較小的三個月移動平均（5–7 月）較前三個月高 0.4%，趨勢仍是低檔盤整而非再度下墜。'),
   ],
-  takeaway=('數據解讀', '這是速報值，終值 9/10 公布。物價月增 0.2%，短期回落空間有限，暖氣季前宜先比價電力與天然氣合約。'),
-  file='W36_圖卡6_八月通膨與能源.png'),
- dict(
-  theme='#7C3AED', badges=[('關鍵基礎設施', True), ('三邦連環破壞', False)], illu='pylon',
-  title='電網連環破壞：五個發電機組一度離線',
-  subtitle='9/1 起布蘭登堡邦（Brandenburg）等三邦遇襲，嫌犯全歐通緝中',
-  stats=[('逾 20 具', '射向高壓線的自製飛行物'),
-         ('5 個', '一度離線的褐煤機組')],
-  bullets=[
-   ('哪裡被攻擊', '9/1 晚間布蘭登堡邦 Turnow-Preilack 與北萊茵-西發利亞邦（Nordrhein-Westfalen）Bergheim 兩處同步遇襲。'),
-   ('手法是什麼', '以自製火箭把銅線等導電材料射上高壓線製造短路；Bergheim 一案使 Niederaußem 與 Neurath 五個褐煤機組一度離線。'),
-   ('查到誰了', '兩封認犯信寄抵多家媒體且被認定為真；嫌疑人是 Gevelsberg 一名 48 歲男子，目前仍在逃。'),
-  ],
-  takeaway=('觀察重點', '認犯信稱化石燃料發電是犯罪；聯邦內政部長 Dobrindt 將本案定性為單一行為人的「氣候恐怖主義」。'),
-  file='W36_圖卡7_電網連環破壞.png'),
- dict(
-  theme='#0D9488', badges=[('工作', True), ('外國專業人員', False)], illu='diploma',
-  title='外國專業資格承認創新高，等待仍以年計',
-  subtitle='聯邦統計局：2025 年 86,600 件獲承認，年增 10%，但成長已明顯放緩',
-  stats=[('86,600 件', '2025 年獲承認的資格'),
-         ('32,000 件', '護理師，居所有職類之冠')],
-  bullets=[
-   ('數字創下新高', '2025 年共 86,600 件外國專業資格獲正面承認，較 2024 年的 79,100 件成長近 10%，為統計以來最多。'),
-   ('成長明顯踩了煞車', '前兩年成長率分別是 2024 年的 21% 與 2023 年的 25%；2025 年共處理 102,900 件程序，其中 76,200 件為當年新申請。'),
-   ('哪些職類最多', '護理師（Pflegefachfrau/-mann）以 32,000 件遙遙領先，其次為醫師 13,900 件與工程師 4,600 件。'),
-  ],
-  takeaway=('求職提醒', '受訪當事人指程序動輒等上兩年。申請前先確認職類屬管制或非管制，並備妥翻譯與公證文件以免補件重來。'),
-  file='W36_圖卡8_外國資格承認創新高.png'),
+  takeaway=('數據解讀', '單月重挫有停產的一次性因素，但年比與能源密集產業持續走弱，顯示需求端還沒回穩。'),
+  file='W37_圖卡5_七月工業生產.png'),
 ]
 
 # ── 邦名德文全名檢查 ────────────────────────────────────────
