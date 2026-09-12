@@ -1549,6 +1549,117 @@ def make_card(spec, path, week_label='W?', date_label=''):
 SERIES_OLD, SERIES_NEW = '#D4740E', '#2563EB'
 GRID_C = '#E3DFD8'
 
+# ── 對照表版型（多方案／多情境逐項比較）──────────────────
+# 一到兩張表格＋底部結論列。儲存格可寫 (文字, True) 讓它以主題色粗體強調。
+# 欄寬用比例（widths，總和 1.0）；儲存格過長會自動縮字級，縮到底仍超出就出聲警告。
+
+def make_table_card(spec, path, week_label='W?', date_label=''):
+    """對照表：表頭列＋資料列，適合「A 方案 vs B 方案」的逐項比較"""
+    theme = spec['theme']
+    img = Image.new('RGB', (W*S, H*S), BG)
+    d = ImageDraw.Draw(img)
+    def R(*v):
+        return [x*S for x in v]
+
+    d.rectangle(R(0, 0, W, 40), fill=theme)
+    d.rectangle(R(0, H-12, W, H), fill=theme)
+    d.rounded_rectangle(R(36, 60, W-36, 1002), radius=28*S, fill=CARD,
+                        outline=BORDER, width=2*S)
+
+    bx = 100
+    for label, filled in spec['badges']:
+        tw = mixed_width(label, 30*S, bold=True)
+        bw = tw/S + 52
+        if filled:
+            d.rounded_rectangle(R(bx, 100, bx+bw, 146), radius=23*S, fill=theme)
+            draw_mixed_vcentered(d, R(bx+26, 123), label, 30*S, 'white', bold=True)
+        else:
+            d.rounded_rectangle(R(bx, 100, bx+bw, 146), radius=23*S, outline=theme, width=3*S)
+            draw_mixed_vcentered(d, R(bx+26, 123), label, 30*S, theme, bold=True)
+        bx += bw + 18
+    paste_wordmark(img)
+
+    tsize = 58
+    while mixed_width(spec['title'], tsize*S, bold=True) > 884*S and tsize > 42:
+        tsize -= 2
+    draw_mixed(d, R(100, 178 + (58-tsize)//2), spec['title'], tsize*S, TITLE_C, bold=True)
+    ssize = 32
+    while mixed_width(spec['subtitle'], ssize*S) > 884*S and ssize > 24:
+        ssize -= 1
+    draw_mixed(d, R(100, 266), spec['subtitle'], ssize*S, SUB_C)  # 與標題留 ≥1.3 倍字級的行距
+
+    X1, X2 = 100, 980
+    y = 324
+    for t in spec['tables']:
+        draw_mixed(d, R(X1, y), t['caption'], 31*S, theme, bold=True)
+        y += 38
+        widths = [w*(X2-X1) for w in t['widths']]
+        head_h, row_h = 40, 38
+        n_rows = len(t['rows'])
+        # 外框（僅四角圓，避免與內部分隔線打架）
+        d.rounded_rectangle(R(X1, y, X2, y+head_h+n_rows*row_h), radius=10*S,
+                            fill='white', outline=BORDER, width=2*S)
+        # 表頭底色
+        d.rounded_rectangle(R(X1, y, X2, y+head_h), radius=10*S, fill=tint(theme, 0.16),
+                            corners=(True, True, False, False))
+        cx = X1
+        for w, label in zip(widths, t['cols']):
+            fs = 25
+            while mixed_width(label, fs*S, bold=True) > (w-18)*S and fs > 19:
+                fs -= 1
+            draw_mixed_vcentered(d, R(cx+w/2, y+head_h/2), label, fs*S, theme,
+                                 bold=True, anchor='center')
+            cx += w
+        # 資料列
+        ry = y + head_h
+        for i, row in enumerate(t['rows']):
+            if i % 2 == 1:
+                d.rectangle(R(X1+2, ry, X2-2, ry+row_h), fill='#FAF9F6')
+            cx = X1
+            for j, (w, cell) in enumerate(zip(widths, row)):
+                text, emph = cell if isinstance(cell, tuple) else (cell, False)
+                fs = 25
+                while mixed_width(text, fs*S, bold=emph) > (w-18)*S and fs > 18:
+                    fs -= 1
+                if mixed_width(text, fs*S, bold=emph) > (w-18)*S:
+                    print(f'  ⚠️ 儲存格過寬: 「{text}」縮到 {fs}px 仍超出欄寬  ({path})')
+                col = theme if emph else (TITLE_C if j == 0 else BODY_C)
+                draw_mixed_vcentered(d, R(cx+w/2, ry+row_h/2), text, fs*S, col,
+                                     bold=(emph or j == 0), anchor='center')
+                cx += w
+            if i < n_rows - 1:
+                d.line(R(X1+8, ry+row_h, X2-8, ry+row_h), fill=BORDER, width=2*S)
+            ry += row_h
+        # 直向欄線
+        cx = X1
+        for w in widths[:-1]:
+            cx += w
+            d.line(R(cx, y+4, cx, ry-4), fill=BORDER, width=2*S)
+        y = ry + 20
+
+    # 底部結論列
+    label, text = spec['note']
+    lines = wrap_mixed(text, 29*S, 806*S)
+    box_h = 16 + 38 + len(lines)*36 + 14
+    y1 = 988 - box_h
+    if y > y1 - 6:
+        print(f'  ⚠️ overflow: 表格底 {y} > 結論列頂 {y1}  ({path})')
+    d.rounded_rectangle(R(90, y1, 990, 988), radius=12*S, fill=tint(theme, 0.10))
+    d.rounded_rectangle(R(90, y1, 98+8, 988), radius=4*S, fill=theme)
+    draw_mixed(d, R(128, y1+14), label, 30*S, theme, bold=True)
+    ty = y1 + 54
+    for line in lines:
+        draw_mixed(d, R(128, ty), line, 29*S, BODY_C)
+        ty += 36
+
+    draw_mixed(d, R(64, 1018), '德國知識小種子', 30*S, SUB_C)
+    draw_mixed(d, R(316, 1018), f'{week_label} · {date_label}', 30*S, FOOT_C)
+    draw_mixed(d, R(1016, 1018), 'Das deutsche Wissen', 30*S, SUB_C, anchor='right')
+
+    img = img.resize((W, H), Image.LANCZOS)
+    img.save(path, 'PNG')
+    print('✅', path)
+
 def make_chart_card(spec, path, week_label='W?', date_label=''):
     """成對水平長條圖：同一組類別的兩期數值比較（無 bullets／stats／觀察框）"""
     theme = spec['theme']
