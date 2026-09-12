@@ -1368,6 +1368,60 @@ def illu_flagsuae(d, R, S, cx, cy, theme):
     # 焦點細節：兩旗之間的金星
     d.polygon(R(*star_pts(cx, cy+14, 10, 4)), fill=GOLD, outline=OUTLINE)
 
+def illu_train(d, R, S, cx, cy, theme):
+    """城際列車正面車頭＋鐵軌（長途鐵路／車票折扣）"""
+    ow = 5*S
+    _dots(d, R, cx, cy, ((-74, -34, 4, GOLD), (-4, -58, 3, tint(theme, 0.5)),
+                         (74, -30, 3, theme)))
+    # 鐵軌：枕木（奇數三根）＋軌條
+    for tx in (-46, 0, 46):
+        d.line(R(cx+tx, cy+44, cx+tx, cy+54), fill=tint(theme, 0.45), width=5*S)
+    d.line(R(cx-70, cy+44, cx+70, cy+44), fill=OUTLINE, width=4*S)
+    # 排障器（襯在車身之下）
+    d.rounded_rectangle(R(cx-42, cy+30, cx+42, cy+42), radius=5*S,
+                        fill=shade(theme, 0.55), outline=OUTLINE, width=3*S)
+    # 車頭本體（上窄下寬的圓角梯形）
+    body = [(-38, -48), (38, -48), (48, 30), (-48, 30)]
+    d.polygon(R(*[v for (dx, dy) in body for v in (cx+dx, cy+dy)]),
+              fill='white', outline=OUTLINE, width=ow)
+    # 車頂路線顯示帶
+    d.rounded_rectangle(R(cx-24, cy-42, cx+24, cy-32), radius=4*S, fill=theme)
+    # 擋風玻璃
+    glass = [(-30, -26), (30, -26), (34, -2), (-34, -2)]
+    d.polygon(R(*[v for (dx, dy) in glass for v in (cx+dx, cy+dy)]),
+              fill=theme, outline=OUTLINE, width=3*S)
+    # 焦點細節：玻璃左上的白色高光
+    d.line(R(cx-24, cy-8, cx-14, cy-22), fill='white', width=4*S)
+    # 主題色腰線
+    d.rounded_rectangle(R(cx-42, cy+2, cx+42, cy+12), radius=4*S, fill=theme)
+    # 車頭燈一對（金圓）
+    for lx in (-28, 28):
+        d.ellipse(R(cx+lx-9, cy+15, cx+lx+9, cy+33), fill=GOLD, outline=OUTLINE, width=3*S)
+
+def illu_dealtag(d, R, S, cx, cy, theme):
+    """折扣吊牌＋熱度火焰徽章（優惠情報／省錢社群）"""
+    ow = 5*S
+    _dots(d, R, cx, cy, ((-70, -40, 3, theme), (-40, -52, 3, GOLD),
+                         (72, 26, 3, tint(theme, 0.5))))
+    d.ellipse(R(cx-48, cy+46, cx+32, cy+56), fill=tint(theme, 0.18))
+    # 吊牌本體（左上斜切角）
+    tag = [(-50, -6), (-20, -36), (34, -36), (34, 44), (-50, 44)]
+    d.polygon(R(*[v for (dx, dy) in tag for v in (cx+dx, cy+dy)]),
+              fill=theme, outline=OUTLINE, width=ow)
+    # 掛孔（白）
+    d.ellipse(R(cx-38, cy-28, cx-22, cy-12), fill='white', outline=OUTLINE, width=3*S)
+    # 折扣百分比
+    draw_mixed_vcentered(d, R(cx-8, cy+10), '%', 48*S, 'white', bold=True, anchor='center')
+    # 焦點細節：熱度火焰（金色，壓在吊牌右上角）
+    bx, by = cx+48, cy-24
+    flame = [(0, -26), (7, -12), (14, -18), (16, 0), (12, 14), (0, 22),
+             (-12, 14), (-16, 0), (-14, -18), (-7, -12)]
+    d.polygon(R(*[v for (dx, dy) in flame for v in (bx+dx, by+dy)]),
+              fill=GOLD, outline=OUTLINE, width=ow)
+    inner = [(0, -6), (7, 8), (0, 16), (-7, 8)]
+    d.polygon(R(*[v for (dx, dy) in inner for v in (bx+dx, by+dy)]),
+              fill=theme, outline=OUTLINE, width=3*S)
+
 ILLUS = dict(podium=illu_podium, flags=illu_flags, coins=illu_coins,
              idcard=illu_idcard, camera=illu_camera, trophy=illu_trophy,
              bankcard=illu_bankcard, checklist=illu_checklist,
@@ -1388,7 +1442,8 @@ ILLUS = dict(podium=illu_podium, flags=illu_flags, coins=illu_coins,
              pylon=illu_pylon, diploma=illu_diploma,
              timeline=illu_timeline, schoolbook=illu_schoolbook,
              transitticket=illu_transitticket, interestrate=illu_interestrate,
-             flagsuae=illu_flagsuae)
+             flagsuae=illu_flagsuae, train=illu_train,
+             dealtag=illu_dealtag)
 
 # ── 版型 ────────────────────────────────────────────────────
 
