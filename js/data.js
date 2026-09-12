@@ -3,6 +3,255 @@
 
 const POSTS = [
   {
+    slug: 'bahncard-25-aktion-2026',
+    title: 'BahnCard 25 九月半價 29.99 €：搭幾趟、花多少錢才回本？順便帶你認識 mydealz',
+    date: '2026-09-12',
+    categories: ['德國生活', '旅行'],
+    tags: ['BahnCard', 'Deutsche Bahn', '德國鐵路', '火車', '省錢', 'mydealz', '德國生活', '交通'],
+    excerpt: '德國鐵路（DB）一年一度的九月促銷：BahnCard 25 二等艙 29.99 €（原 62.90 €）、一等艙 59.99 €（原 125 €），9/1–9/30 買得到，最晚啟用日也是 9/30。回本公式只有一條——卡費 × 4：花 29.99 € 買的卡，一年內買到原價合計約 120 € 的長途車票就打平（換算成實付約 90 €），一趟跨半個德國的來回大概就跨過門檻。本文算給你看要搭幾趟、多久回本，比較各版本價格（促銷價比青年版 39.90 €、敬老版 40.90 € 都便宜，6 到 18 歲目前免費），拆解自動續約、14 天撤回權、City-Ticket 不打折等五個小字陷阱，並介紹消息來源 mydealz——德國最大的省錢社群怎麼運作、怎麼用得聰明。',
+    emoji: '🚄',
+    content: `
+<p class="post-meta-line"><em>德國知識小種子｜2026.09.12 發表 · 省錢情報</em></p>
+
+<p>九月是德國鐵路（Deutsche Bahn，DB）一年一度的 BahnCard 促銷月：<strong>BahnCard 25 二等艙從 62.90 € 砍到 29.99 €、一等艙從 125 € 砍到 59.99 €</strong>，只在 9 月 1 日到 30 日之間買得到。這則消息在德國最大的省錢社群 <strong>mydealz</strong> 上被推上熱門榜，中文圈也開始轉傳。這篇一次講完三件事：這張卡到底折什麼、<strong>要花多少錢、搭幾趟才回本</strong>、以及簽下去之前該看清楚的那幾行小字；最後順帶介紹 mydealz 這個平台，讓你以後也能自己第一時間看到這種消息。</p>
+
+<p class="post-callout"><strong>📌 時效提醒：</strong>促銷 <strong>9 月 30 日結束，而這天同時也是「最晚啟用日」</strong>——不是買了之後可以慢慢挑生效日期，卡片的第一個有效日必須落在 9 月 30 日（含）以前。另外，<strong>6 到 18 歲的 Jugend BahnCard 25 目前是 0 €</strong>（原本一年 7.90 €），同樣到 9/30 截止，但它的最晚啟用日寬限到 10 月 31 日。</p>
+
+<nav class="post-toc" aria-label="本篇目錄">
+  <p class="post-toc__title">快速跳轉</p>
+  <ul>
+    <li><a href="#aktion">這波促銷到底是什麼</a></li>
+    <li><a href="#breakeven">回本門檻：卡費 × 4</a></li>
+    <li><a href="#trips">搭幾趟、多久才回本</a></li>
+    <li><a href="#whoshould">誰該買、誰不用買</a></li>
+    <li><a href="#smallprint">買之前先看這幾行小字</a></li>
+    <li><a href="#mydealz">mydealz：德國最大的省錢社群</a></li>
+    <li><a href="#sources">資料來源</a></li>
+  </ul>
+</nav>
+
+<img src="assets/images/2026/bahncard/BahnCard25_圖卡1_九月半價29歐.png" alt="BahnCard 25 九月半價：二等艙 29.99 歐元（原 62.90 歐元）、一等艙 59.99 歐元（原 125 歐元），2026 年 9 月 1 日至 30 日購買，最晚啟用日 9 月 30 日">
+<h2 id="aktion">這波促銷到底是什麼</h2>
+
+<p>德國鐵路每年九月都會把 BahnCard 25 打對折，今年也不例外。<strong>2026 年 9 月 1 日至 30 日</strong>，官方促銷價如下：</p>
+
+<table>
+  <thead>
+    <tr><th>版本</th><th>促銷價</th><th>原價</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>BahnCard 25，二等艙</td><td><strong>29.99 €</strong></td><td>62.90 €</td></tr>
+    <tr><td>BahnCard 25，一等艙</td><td><strong>59.99 €</strong></td><td>125 €</td></tr>
+    <tr><td>BahnCard Business 25，二等艙</td><td>35.99 €</td><td>—</td></tr>
+    <tr><td>BahnCard Business 25，一等艙</td><td>69.99 €</td><td>—</td></tr>
+  </tbody>
+</table>
+
+<p><strong>折扣範圍：</strong>德國境內長途列車（ICE、IC／EC）的 <strong>Flexpreis（全票，不綁車次）、Sparpreis（特價票）與 Super Sparpreis（超級特價票）一律再打 25%</strong>——注意這一點很多人會誤會：<strong>連最便宜的 Super Sparpreis 也吃得到折扣</strong>，不是只有全票才折。部分邦的區域交通聯盟也承認 BahnCard 折扣，但不保證，訂票時系統會自動判斷。唯一明確排除的是 <strong>City-Ticket</strong>（Flexpreis 票內含的市內轉乘）不參與打折。</p>
+
+<p><strong>有效期：</strong>整整 12 個月，起算日就是你設定的第一個有效日。</p>
+
+<p><strong>幾個容易忽略的條件：</strong>已經持有 BahnCard 的人<strong>不能升級、不能換購，也不能把剩餘價值折抵</strong>到這張促銷卡；換句話說，這波是給「目前手上沒有 BahnCard」的人。買的通路則不限——官網、DB Navigator App、車站的 DB Reisezentrum 都可以。</p>
+
+<h3>家裡有 6 到 18 歲小孩的話，還有一張是免費的</h3>
+
+<p>和九月促銷並行的另一檔活動更狠：<strong>Jugend BahnCard 25（6 到 18 歲）從 2026 年 6 月 14 日到 9 月 30 日是 0 €</strong>，原價一年 7.90 €。它同樣給 25% 折扣，效期一年，而且<strong>到期會自動失效、不需要退訂</strong>——沒有一般 BahnCard 那種自動續約的地雷。唯一的手續是：<strong>要用小孩自己的 DB 帳號與 Email 申請</strong>，卡片發到 DB Navigator App 裡。它的最晚啟用日是 10 月 31 日，比大人那張多一個月的緩衝。</p>
+
+<p>順帶一提一個常被問到、但與 BahnCard 無關的規則：<strong>14 歲以下的兒童，只要有 15 歲以上的同行者，在長途列車上本來就免費</strong>（訂票時要把小孩一起填進乘客名單）。所以真正需要 Jugend BahnCard 的，其實是 15 到 18 歲、以及會自己單獨搭車的孩子。</p>
+
+<p class="post-sources">📚 來源：<a href="https://www.deutschebahn.com/de/presse/pressestart_zentrales_uebersicht/Nur-im-September-BahnCard-25-zum-halben-Preis-14017770" target="_blank" rel="noopener noreferrer">DB 官方新聞稿：只在九月，BahnCard 25 半價</a> · <a href="https://www.bahn.de/angebot/bahncard/bahncard25/bahncard25aktion" target="_blank" rel="noopener noreferrer">bahn.de：九月促銷頁</a> · <a href="https://www.bahn.de/angebot/bahncard/aktion-bahncard25-2-klasse" target="_blank" rel="noopener noreferrer">bahn.de：BahnCard 25 二等艙促銷條件</a> · <a href="https://www.bahn.de/angebot/bahncard/bahncard25/jugendbahncard" target="_blank" rel="noopener noreferrer">bahn.de：Jugend BahnCard 25</a></p>
+
+<hr>
+
+<img src="assets/images/2026/bahncard/BahnCard25_圖卡2_回本門檻120歐.png" alt="BahnCard 25 回本公式：卡費乘以 4 等於回本門檻，二等艙 120 歐元、一等艙 240 歐元的原價票款">
+<h2 id="breakeven">回本門檻：卡費 × 4</h2>
+
+<p>這張卡的回本計算其實只有一條公式，而且不需要任何試算工具：</p>
+
+<p class="post-callout"><strong>回本門檻 ＝ 卡費 ÷ 25% ＝ 卡費 × 4</strong><br>因為每買 4 € 的原價車票，25% 折扣才幫你省下 1 €。</p>
+
+<p>套進今年的價格：</p>
+
+<table>
+  <thead>
+    <tr><th>卡種</th><th>卡費</th><th>回本門檻<br>（原價票款）</th><th>換算成你實際付的錢</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>BahnCard 25 二等艙（九月促銷）</strong></td><td>29.99 €</td><td><strong>119.96 €</strong></td><td>89.97 €</td></tr>
+    <tr><td>BahnCard 25 一等艙（九月促銷）</td><td>59.99 €</td><td>239.96 €</td><td>179.97 €</td></tr>
+    <tr><td>BahnCard 25 二等艙（正價）</td><td>62.90 €</td><td>251.60 €</td><td>188.70 €</td></tr>
+    <tr><td>Probe BahnCard 25 二等艙（3 個月）</td><td>19.90 €</td><td>79.60 €</td><td>59.70 €</td></tr>
+  </tbody>
+</table>
+
+<p>所以最好記的版本是：<strong>買了這張 29.99 € 的卡，只要一年之內買到原價合計約 120 € 的長途車票，卡費就回來了。</strong>如果你習慣看「實際刷出去多少錢」，那條線是 <strong>90 €</strong>——打完折實付超過 90 €，之後每一張票省下的都是淨賺。</p>
+
+<p><strong>這裡有一個最常見的誤會要先講清楚：</strong>門檻算的是<strong>「沒有 BahnCard 時的原價票款」</strong>，不是你刷卡的金額。訂票頁上會同時顯示原價與 BahnCard 價，請以<strong>打折前</strong>那個數字累計。用實付金額去算會低估自己離回本線還有多遠。</p>
+
+<p>另外值得一提的對照：<strong>正價卡的回本門檻是 251.60 €，九月促銷等於把回本線砍掉超過一半</strong>。這也是為什麼對「一年只出遠門一兩次」的人來說，正價的 BahnCard 25 常常不划算、但促銷價很值得——同一張卡、同樣的折扣，回本難度差了一倍以上。</p>
+
+<hr>
+
+<img src="assets/images/2026/bahncard/BahnCard25_圖卡3_幾趟回本.png" alt="BahnCard 25 要搭幾趟才回本：長途全票一趟、中長途特價票來回一次、單程 20 歐元的票需六趟">
+<h2 id="trips">搭幾趟、多久才回本</h2>
+
+<p>把 120 € 的門檻換算成「趟數」，就很有畫面了。下表的「單程原價」指的是同一段路在<strong>沒有 BahnCard</strong> 時的票價：</p>
+
+<table>
+  <thead>
+    <tr><th>單程原價</th><th>需要幾趟</th><th>白話說明</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>約 150 €（跨半個德國的 Flexpreis 全票）</td><td><strong>1 趟</strong></td><td>出發當天就回本，還倒賺</td></tr>
+    <tr><td>60 €（中長途 Sparpreis）</td><td>2 趟</td><td>一次來回就打平</td></tr>
+    <tr><td>40 €</td><td>3 趟</td><td>一次來回加一趟單程</td></tr>
+    <tr><td>30 €</td><td>4 趟</td><td>大約每季一趟</td></tr>
+    <tr><td>20 €（早鳥 Super Sparpreis）</td><td>6 趟</td><td>每兩個月搭一次</td></tr>
+  </tbody>
+</table>
+
+<p><strong>換算成時間</strong>：如果你一年會回台灣一次、需要搭長途車到法蘭克福或慕尼黑機場，那趟來回通常就吃掉大半門檻；如果你每兩個月出遠門一次、每次買到 20 € 上下的早鳥票，一年剛好六趟、剛好回本。<strong>換句話說，這張卡的門檻低到「一年出一次遠門」就可以考慮</strong>——這也是它和 BahnCard 50（二等艙一年 244 €）最大的差別：後者是給每個月都出差的人。</p>
+
+<p><strong>兩個必須誠實說明的變數：</strong></p>
+<ul>
+  <li><strong>Flexpreis 沒有固定價目表。</strong>DB 官方明講價格「依路線、訂票日與旅行日而異」，上面那個 150 € 是柏林—慕尼黑這類跨半個德國路線的常見區間，不是保證值。真正要抓自己的數字，請把常搭的那條路線查一次原價，再除以 4。</li>
+  <li><strong>Sparpreis 是有配額的。</strong>越接近出發日、越熱門的班次，特價票越可能賣完而只剩 Flexpreis——這對回本反而是好消息（原價越高、折的絕對金額越多），但它會讓「幾趟回本」的答案每次都不一樣。</li>
+</ul>
+
+<p class="post-sources">📚 來源：<a href="https://www.bahn.de/angebot/sparpreis-flexpreis/flexpreis" target="_blank" rel="noopener noreferrer">bahn.de：Flexpreis 規則與 BahnCard 折扣</a> · <a href="https://www.bahn.de/angebot/sparpreis-flexpreis" target="_blank" rel="noopener noreferrer">bahn.de：Sparpreis 與 Super Sparpreis 起價</a> · <a href="https://www.bahn.de/angebot/bahncard" target="_blank" rel="noopener noreferrer">bahn.de：2026 年 BahnCard 價格總表</a></p>
+
+<hr>
+
+<img src="assets/images/2026/bahncard/BahnCard25_圖卡4_誰該買.png" alt="BahnCard 25 誰該買：促銷價 29.99 歐元比青年版 39.90 歐元與敬老版 40.90 歐元都便宜，通勤族則該比較 Deutschlandticket">
+<h2 id="whoshould">誰該買、誰不用買</h2>
+
+<h3>促銷價便宜到「通殺」其他版本</h3>
+
+<p>把 2026 年各版本的價格擺在一起看，這波促銷的殺傷力就很明顯了：</p>
+
+<table>
+  <thead>
+    <tr><th>版本</th><th>資格</th><th>一年價格（二等艙）</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>BahnCard 25（九月促銷）</strong></td><td>不限年齡</td><td><strong>29.99 €</strong></td></tr>
+    <tr><td>My BahnCard 25</td><td>未滿 27 歲</td><td>39.90 €</td></tr>
+    <tr><td>Senioren BahnCard 25</td><td>65 歲以上</td><td>40.90 €</td></tr>
+    <tr><td>BahnCard 25（正價）</td><td>不限年齡</td><td>62.90 €</td></tr>
+    <tr><td>Probe BahnCard 25</td><td>不限年齡，效期僅 3 個月</td><td>19.90 €</td></tr>
+    <tr><td>Jugend BahnCard 25</td><td>6 至 18 歲</td><td>7.90 €（促銷期間 0 €）</td></tr>
+  </tbody>
+</table>
+
+<p>結論很直接：<strong>這個月不管你幾歲，一般版 29.99 € 都是最便宜的選擇</strong>。27 歲以下的學生不必去買 39.90 € 的 My BahnCard 25，65 歲以上也不必買 40.90 € 的敬老版。至於三個月試用的 Probe BahnCard 25，19.90 € 看起來更低，但<strong>多花 10 € 就能從 3 個月變成 12 個月</strong>，九月期間完全沒有理由選它。</p>
+
+<h3>這些人買了會賺</h3>
+<ul>
+  <li><strong>一年至少出一次遠門的人</strong>——回台灣前要搭車到法蘭克福或慕尼黑機場、耶誕假期跨城探親、偶爾去柏林或漢堡玩，一趟來回就回本。</li>
+  <li><strong>學生與跨城通勤以外的移動族</strong>——平常在城裡用月票，但週末會搭 ICE 去別的城市。</li>
+  <li><strong>家裡有 6 到 18 歲小孩的家庭</strong>——那張是免費的，沒有不領的理由。</li>
+  <li><strong>臨時買票的人</strong>——越接近出發日票價越高，25% 折在高價票上省得越多。</li>
+</ul>
+
+<h3>這些人可以跳過</h3>
+<ul>
+  <li><strong>只搭市內與區域交通的人</strong>——BahnCard 折的是長途（ICE、IC／EC）。每天通勤該比較的是 <strong>Deutschlandticket（2026 年每月 63 €）</strong>，那是另一套邏輯，兩者不衝突也不互相取代。</li>
+  <li><strong>幾乎不搭火車的人</strong>——一年跑不到 120 € 原價票款就會虧，雖然只虧幾十歐元。</li>
+  <li><strong>年底前會離開德國的人</strong>——12 個月的效期用不完，還得記得處理退訂（見下一段）。</li>
+</ul>
+
+<hr>
+
+<img src="assets/images/2026/bahncard/BahnCard25_圖卡5_注意事項.png" alt="BahnCard 25 注意事項：到期前 4 週要退訂否則自動續約成正價 62.90 歐元、線上購買有 14 天撤回權、City-Ticket 不打折、跨國票只折德國段、卡片只有數位版">
+<h2 id="smallprint">買之前先看這幾行小字</h2>
+
+<p>這張卡真正會讓人吃虧的不是價格，是條款。以下五件事按重要性排序：</p>
+
+<h3>1. 它會自動續約——這是最貴的一條</h3>
+<p><strong>12 個月到期前 4 週</strong>（DB 自 2024 年 7 月 9 日起，已把原本的 6 週縮短為 4 週）<strong>必須以文字形式（Textform）退訂，否則自動轉成正價 BahnCard 再走一年</strong>。續約後的版本與價格會依你的年齡與資格而定——一般成人是 62.90 €，未滿 27 歲會轉成 My BahnCard 25（39.90 €），65 歲以上轉成敬老版（40.90 €）。</p>
+<p><strong>實務建議：付完款當下就在手機行事曆上設一個「到期前五週」的提醒</strong>，多留一週給自己反應。退訂可以在 DB 客戶帳號線上辦，不必寄信。</p>
+
+<h3>2. 後悔的話，還有 14 天</h3>
+<p>線上或電話購買的 BahnCard 25，依德國遠距契約的撤回權規定，<strong>可以在 14 天內無理由撤回並拿回卡費</strong>。但有個但書：<strong>如果你已經用這張卡買過折扣票，DB 可以把你已經享到的折扣當作價值補償扣掉</strong>。所以「先買卡、訂完票再撤回」這條路是走不通的。</p>
+
+<h3>3. 折扣有邊界</h3>
+<ul>
+  <li><strong>City-Ticket 不打折</strong>：Flexpreis 內含的市內轉乘不參與 25% 折扣。</li>
+  <li><strong>跨國票只折德國段</strong>：買 Sparpreis Europa 或 Super Sparpreis Europa 去鄰國時，BahnCard 25 只對<strong>德國境內那一段</strong>打折，出了國界就沒有了。（過去可享國外 15% 折扣的 RailPlus 已於 2023 年底停辦。）</li>
+  <li><strong>區域交通看各邦</strong>：部分交通聯盟（Verkehrsverbund）承認 BahnCard 折扣，但不保證，以訂票時系統顯示為準。</li>
+</ul>
+
+<h3>4. 卡片只有數位版，要有 DB 帳號</h3>
+<p>自 2024 年底起，<strong>BahnCard 25 與 50 已經不再寄實體塑膠卡</strong>，只透過 DB Navigator App 提供。所以你需要一個 DB 客戶帳號（用 Email 註冊）與一支手機。沒有智慧手機也不是不能用：可以在 DB 帳號裡下載一份帶 QR code 的 PDF 替代文件列印出來，查票時<strong>連同附照片的身分證件一起出示</strong>。</p>
+
+<h3>5. 不能升級、不能折抵</h3>
+<p>已經持有 BahnCard 的人不能用這波促銷升級或換購，手上那張的剩餘價值也不能折抵。這條寫在官方促銷頁的條件裡，別白跑一趟。</p>
+
+<p class="post-sources">📚 來源：<a href="https://www.bahn.de/kontakt/serviceanliegen/bahncard-widerrufen" target="_blank" rel="noopener noreferrer">bahn.de：BahnCard 撤回說明</a> · <a href="https://www.adac.de/news/widerrufsrecht-bahncard/" target="_blank" rel="noopener noreferrer">ADAC：線上購買 BahnCard 的撤回權</a> · <a href="https://www.verbraucherzentrale.nrw/wissen/reise-mobilitaet/unterwegs-sein/bahncard-gibt-es-kuenftig-nicht-mehr-als-plastikkarte-90538" target="_blank" rel="noopener noreferrer">北萊茵-西發利亞邦消費者中心：BahnCard 不再發實體卡</a> · <a href="https://www.bahn.de/faq/bahncard-sparpreis-europa" target="_blank" rel="noopener noreferrer">bahn.de FAQ：BahnCard 對 Sparpreis Europa 的折扣</a></p>
+
+<hr>
+
+<img src="assets/images/2026/bahncard/BahnCard25_圖卡6_mydealz平台.png" alt="mydealz 平台介紹：2007 年創立的德國最大省錢社群，社群投票形成溫度，滿 100 度進入熱門榜，平台靠聯盟行銷抽佣">
+<h2 id="mydealz">mydealz：德國最大的省錢社群</h2>
+
+<p>這波半價消息之所以在德國中文圈快速傳開，多半是先在 <a href="https://www.mydealz.de/deals/bahncard-25-im-september-zum-aktionspreis-2kl-eur-2999-1kl-eur-5999-2832832" target="_blank" rel="noopener noreferrer">mydealz 上被貼出來</a>。如果你在德國生活卻還沒用過這個網站，它值得花五分鐘認識——它是德國人「買東西前先看一眼」的地方。</p>
+
+<h3>它是什麼</h3>
+<p><strong>mydealz 成立於 2007 年</strong>，創辦人 Fabian Spielberger 最初只是在符茲堡（Würzburg）附近經營一個部落格，後來長成德國最大的優惠情報社群，目前約有 <strong>300 萬名註冊用戶</strong>。2015 年起，它成為跨國優惠平台集團 pepper.com 的一員（該集團旗下還有英國 hotukdeals、法國 Dealabs 等姊妹站）。</p>
+
+<h3>它怎麼運作：看「溫度」，也看留言</h3>
+<ul>
+  <li><strong>人人都能貼</strong>：限時特價、實體店促銷、折價碼、免費贈品，任何註冊用戶都可以張貼。</li>
+  <li><strong>社群投票變成「溫度」</strong>：每個人可以按讚（+）或倒讚（−），淨分數以「度」顯示在優惠上方。<strong>滿 100 度就會被歸入「Heiß」（熱門）</strong>。溫度越高，代表越多人認為這是真的划算。</li>
+  <li><strong>分區怎麼看</strong>：「Heiß」是社群認證的熱門優惠、「Alle／Neu」是剛貼出還沒被評分的新品、「Diskutiert」則是討論最熱烈的。</li>
+  <li><strong>留言區才是精華</strong>：運費多少、能不能疊其他折扣、這家店出貨快不快、退訂會不會被卡——這些通常在留言前十則裡就被問出來了。<strong>看完留言再下手，是使用這個站最重要的習慣。</strong></li>
+</ul>
+
+<h3>它靠什麼賺錢（以及這對你的意義）</h3>
+<p>mydealz 的收入來自<strong>聯盟行銷（Affiliate）佣金</strong>——你點站上的連結去商家消費，平台會抽一小筆佣金——以及付費曝光。官方在說明頁裡明確表示：<strong>佣金不影響優惠的描述方式與社群投票</strong>，付費推廣的內容一律標示「Gesponsert」（贊助），而且<strong>商家不能自己張貼優惠</strong>，得經過編輯審核。</p>
+<p>知道這件事的意義是：站上的排序主要由社群決定，但「有沒有被貼出來」多少仍與商家合作有關。<strong>把它當成情報來源，而不是購物建議。</strong></p>
+
+<h3>三個實用技巧</h3>
+<ol>
+  <li><strong>設 Deal-Alarm（優惠警示）</strong>：在導覽列的「Alarme」建立關鍵字警示（例如 BahnCard、Saugroboter、某個品牌），可以加上價格上限，用 Email 或瀏覽器推播通知。注意關鍵字是<strong>完全比對</strong>，拼法要準。</li>
+  <li><strong>用比價站交叉確認</strong>：idealo、Geizhals 這類比價網站可以看到該商品的歷史價格，避免買到「先漲後折」。</li>
+  <li><strong>先問自己需不需要</strong>：這是老生常談，但它才是省錢社群最大的風險——<strong>因為便宜而買下不需要的東西，折扣再高也是多花錢。</strong></li>
+</ol>
+
+<h3>也要知道它的限制</h3>
+<p>不是每則優惠都真的划算：站上有不少<strong>只折 1% 到 4% 的「優惠」</strong>，也有偶爾出現的 <strong>Preisfehler（商家標錯價）</strong>——那種下單後被取消也是常態，別預先把它算進預算。另外，熱門優惠常常在幾小時內就結束或被搶光，看到「已過期」的標記是家常便飯。</p>
+
+<p class="post-sources">📚 來源：<a href="https://help.mydealz.de/help/was-ist-mydealz" target="_blank" rel="noopener noreferrer">mydealz 官方說明：mydealz 是什麼</a> · <a href="https://help.mydealz.de/help/wie-verdienen-mydealz-sein-geld" target="_blank" rel="noopener noreferrer">mydealz 官方說明：我們怎麼賺錢</a> · <a href="https://help.mydealz.de/help/benachrichtigungen-und-alarme" target="_blank" rel="noopener noreferrer">mydealz 官方說明：通知與 Deal-Alarm</a> · <a href="https://omr.com/de/daily/mydealz-fabian-spielberger-omr-podcast" target="_blank" rel="noopener noreferrer">OMR：創辦人 Fabian Spielberger 專訪</a></p>
+
+<hr>
+
+<h2 id="verdict">一句話結論</h2>
+<p><strong>一年之內會出一次遠門，就買。</strong>29.99 € 的回本線是原價票款 120 €（實付 90 €），一趟長途來回大概就跨過去了；家裡有 6 到 18 歲的孩子，那張免費的更是沒理由不領。真正要記在心上的只有一件事：<strong>買完立刻設好「到期前五週」的行事曆提醒</strong>，別讓明年的 62.90 € 自動從帳戶跑掉。</p>
+
+<p class="post-callout"><strong>📖 延伸閱讀：這篇你可能會喜歡</strong><br>BahnCard 折的是長途，每天通勤要看的是另一張票——<a href="/posts/deutschland-ticket.html">2026 德國交通月票 Deutschland Ticket 訂閱與解約教學（現為 63 歐元）</a>：訂閱、付款與最容易被忽略的取消期限，一次講清楚。</p>
+
+<h2 id="sources">資料來源</h2>
+<ul>
+  <li><a href="https://www.deutschebahn.com/de/presse/pressestart_zentrales_uebersicht/Nur-im-September-BahnCard-25-zum-halben-Preis-14017770" target="_blank" rel="noopener noreferrer">Deutsche Bahn 官方新聞稿：Nur im September: BahnCard 25 zum halben Preis</a></li>
+  <li><a href="https://www.bahn.de/angebot/bahncard/bahncard25/bahncard25aktion" target="_blank" rel="noopener noreferrer">bahn.de：九月促銷活動頁（價格、期間、最晚啟用日、續約條款）</a></li>
+  <li><a href="https://www.bahn.de/angebot/bahncard/aktion-bahncard25-2-klasse" target="_blank" rel="noopener noreferrer">bahn.de：BahnCard 25 二等艙促銷條件（含 Super Sparpreis 適用、City-Ticket 排除）</a></li>
+  <li><a href="https://www.bahn.de/angebot/bahncard" target="_blank" rel="noopener noreferrer">bahn.de：2026 年 BahnCard 價格總表</a></li>
+  <li><a href="https://www.bahn.de/angebot/bahncard/bahncard25" target="_blank" rel="noopener noreferrer">bahn.de：BahnCard 25 各版本價格（My／Senioren／Probe）</a></li>
+  <li><a href="https://www.bahn.de/angebot/bahncard/bahncard25/jugendbahncard" target="_blank" rel="noopener noreferrer">bahn.de：Jugend BahnCard 25（6 至 18 歲免費活動）</a></li>
+  <li><a href="https://www.bahn.de/angebot/sparpreis-flexpreis/flexpreis" target="_blank" rel="noopener noreferrer">bahn.de：Flexpreis 規則與 BahnCard 折扣</a></li>
+  <li><a href="https://www.bahn.de/faq/bahncard-sparpreis-europa" target="_blank" rel="noopener noreferrer">bahn.de FAQ：BahnCard 對（Super）Sparpreis Europa 的折扣範圍</a></li>
+  <li><a href="https://www.bahn.de/kontakt/serviceanliegen/bahncard-widerrufen" target="_blank" rel="noopener noreferrer">bahn.de：BahnCard 25／50 撤回（Widerruf）說明</a></li>
+  <li><a href="https://www.adac.de/news/widerrufsrecht-bahncard/" target="_blank" rel="noopener noreferrer">ADAC：線上購買 BahnCard 的 14 天撤回權</a></li>
+  <li><a href="https://www.verbraucherzentrale.nrw/wissen/reise-mobilitaet/unterwegs-sein/bahncard-gibt-es-kuenftig-nicht-mehr-als-plastikkarte-90538" target="_blank" rel="noopener noreferrer">北萊茵-西發利亞邦消費者中心（Verbraucherzentrale NRW）：BahnCard 不再發實體卡</a></li>
+  <li><a href="https://help.mydealz.de/help/was-ist-mydealz" target="_blank" rel="noopener noreferrer">mydealz 說明中心：mydealz 是什麼、溫度與熱門機制</a></li>
+  <li><a href="https://help.mydealz.de/help/wie-verdienen-mydealz-sein-geld" target="_blank" rel="noopener noreferrer">mydealz 說明中心：平台如何賺錢（聯盟行銷與贊助標示）</a></li>
+  <li><a href="https://help.mydealz.de/help/benachrichtigungen-und-alarme" target="_blank" rel="noopener noreferrer">mydealz 說明中心：通知與 Deal-Alarm 設定</a></li>
+  <li><a href="https://omr.com/de/daily/mydealz-fabian-spielberger-omr-podcast" target="_blank" rel="noopener noreferrer">OMR：mydealz 創辦人 Fabian Spielberger 專訪</a></li>
+  <li><a href="https://www.mydealz.de/deals/bahncard-25-im-september-zum-aktionspreis-2kl-eur-2999-1kl-eur-5999-2832832" target="_blank" rel="noopener noreferrer">mydealz：本次 BahnCard 25 九月促銷的討論串</a></li>
+</ul>
+`
+  },
+  {
     slug: 'visa-bonus-cashback-2026',
     title: 'Visa 官方活動：海外刷卡 2% 現金回饋、上限 15 €——資格總整理＋兩分鐘註冊教學',
     date: '2026-07-19',
