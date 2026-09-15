@@ -479,45 +479,62 @@ const POSTS = [
   },
   {
     slug: 'visa-bonus-cashback-2026',
-    title: 'Visa 官方活動：海外刷卡 2% 現金回饋、上限 15 €——資格總整理＋兩分鐘註冊教學',
+    title: 'Visa 官方活動：網購 2% 現金回饋——只認線上付款、不限商家國別，9/15–11/15 上限 15 €',
     date: '2026-07-19',
+    updated: '2026-09-16',
     categories: ['德國生活'],
-    tags: ['Visa', 'Cashback', '現金回饋', '省錢', '信用卡', '金融卡', '德國生活'],
-    excerpt: 'Visa Bonus 夏季活動 7/7–9/1（9/1 截止，秋季網購檔 9/15–11/15 接力）：用德國發行的 Visa 卡在德國以外消費（含國外網購），單筆 75 € 以內回饋 2%、每人上限 15 €。誰能參加、哪些卡被排除（Prepaid／V PAY／Klarna）、N26 與 BBVA 為何不行、怎麼兩分鐘完成註冊——版主實測＋官方截圖一次整理。',
+    tags: ['Visa', 'Cashback', '現金回饋', '省錢', '信用卡', '金融卡', '網購', '德國生活'],
+    excerpt: 'Visa Bonus 秋季線上購物檔「KLICK. BEZAHLT. CASHBACK.」9/15–11/15 開跑：用德國發行的 Visa 卡線上付款，單筆 75 € 以內回饋 2%、每人上限 15 €。與夏季檔的差別在判定基準——這次只認線上付款、實體店刷卡不計，但不限商家國別，Amazon.de、Zalando 等德國網店同樣回饋，不必出國。誰能參加、哪些卡被排除（Prepaid／V PAY／Klarna）、N26 與 BBVA 為何不行、怎麼兩分鐘完成註冊——版主實測＋官方截圖一次整理。',
 
     emoji: '💳',
     content: `
-<p class="post-meta-line"><em>德國知識小種子｜2026.07.19 發表 · 省錢情報</em></p>
+<p class="post-meta-line"><em>德國知識小種子｜2026.07.19 發表 · 2026.09.16 更新 · 省錢情報</em></p>
 
-<p>暑假出國旺季，Visa 在德國推出官方回饋計畫「<strong>Visa Bonus</strong>」的夏季檔活動：<strong>7/7–9/1 期間，在德國以外用 Visa 卡消費（含國外網購）回饋 2% 現金</strong>，每人最多拿 15 €。不用抽獎、不用消費門檻，註冊一次之後的檔期都能一鍵參加——但有幾個容易踩雷的細節（單筆上限、排除卡種），這篇一次整理清楚，附版主實測註冊截圖。</p>
+<p>Visa 在德國的官方回饋計畫「<strong>Visa Bonus</strong>」推出秋季線上購物檔<strong>「KLICK. BEZAHLT. CASHBACK.」</strong>：<strong>9/15–11/15 期間，用德國發行的 Visa 卡線上付款回饋 2% 現金</strong>，每人最多拿 15 €。跟夏季檔的差別在<strong>判定基準換了</strong>——夏季檔看消費地點（德國以外才算、實體店可以），<strong>秋季檔看付款方式：只有線上付款才算，實體店刷卡一律不計</strong>；好處是<strong>不限商家國別</strong>，Amazon.de、Zalando 這類德國網店同樣回饋，不必出國。不用抽獎、沒有最低消費門檻，但有幾個容易踩雷的細節（單筆上限、排除卡種），這篇一次整理清楚，附版主實測註冊截圖。</p>
 
-<p class="post-callout"><strong>📌 2026/08/23 時效提醒：</strong>夏季海外檔（International｜Sommer 2026）<strong>9 月 1 日 23:59 就結束</strong>，只剩不到兩週；而且 50 萬歐元總預算是全體參加者共用，<strong>用完會提前結束</strong>，想拿的別再拖。還沒出國、或想留到網購再用的人，<strong>現在照樣先把註冊做完</strong>——接下來的秋季線上購物檔（Online bezahlen｜Herbst 2026，<strong>9/15–11/15</strong>）只要在後台一鍵啟用就能參加，不必重填一次資料。</p>
+<p class="post-callout"><strong>📌 2026/09/16 時效提醒：</strong>夏季海外檔（International｜Sommer 2026）已於 <strong>9/1 結束</strong>，接力的秋季線上購物檔（<strong>KLICK. BEZAHLT. CASHBACK.</strong>）已於 <strong>9/15 10:00 開跑、11/15 23:59 截止</strong>。夏季檔註冊過的人<strong>不必重填資料</strong>，到後台一鍵啟用新活動即可；<strong>65 萬歐元</strong>總預算全體參加者共用，<strong>用完會提前結束</strong>，想拿的別拖。</p>
 
 <nav class="post-toc" aria-label="本篇目錄">
   <p class="post-toc__title">快速跳轉</p>
   <ul>
-    <li><a href="#overview">活動總覽：2%、單筆 75 €、上限 15 €</a></li>
+    <li><a href="#herbst">秋季網購檔 9/15–11/15：只認線上付款</a></li>
+    <li><a href="#howto-max">怎麼把 15 € 領好領滿？</a></li>
     <li><a href="#eligibility">誰能參加？哪些卡直接出局？</a></li>
     <li><a href="#campaigns">官方檔期：夏季海外＋秋季網購</a></li>
     <li><a href="#howto">兩分鐘註冊教學（版主實測）</a></li>
     <li><a href="#tips">省錢技巧與注意事項</a></li>
+    <li><a href="#overview">附錄：夏季海外檔條款（已結束）</a></li>
     <li><a href="#sources">資料來源</a></li>
   </ul>
 </nav>
 
-<img src="assets/images/2026/visa/VisaBonus2026_圖卡1_海外刷卡回饋.png" alt="Visa 海外刷卡 2% 現金回饋：單筆 75 € 以內、每人上限 15 €">
-<h2 id="overview">活動總覽：2%、單筆 75 €、上限 15 €</h2>
-<p>活動名稱「Alltag aus, Cashback an.」，官方條款重點如下：</p>
+<img src="assets/images/2026/visa/VisaBonusHerbst2026_圖卡1_線上刷卡回饋.png" alt="Visa Bonus 秋季檔：網購 2% 現金回饋，只認線上付款、不限商家國別，單筆 75 € 以內、每人上限 15 €">
+<h2 id="herbst">秋季網購檔 9/15–11/15：只認線上付款，但不限國別</h2>
+<p>秋季檔的正式名稱是「<strong>KLICK. BEZAHLT. CASHBACK.</strong>」（官網分類為 Online bezahlen｜Herbst 2026），官方條款重點如下：</p>
 <ul>
-  <li><strong>期間</strong>：2026/7/7 10:00 起至 <strong>9/1 23:59</strong>（德國時間）；以銀行入帳日（Valuta）計算，最晚認列到 9/15。</li>
-  <li><strong>回饋</strong>：德國以外的實體店消費與國外網購，<strong>單筆 75 € 以內回饋 2%</strong>。注意：<strong>單筆超過 75 € 整筆不計</strong>，連部分回饋都沒有——官方 FAQ 白紙黑字舉例，75.01 € 的交易一毛都拿不到。</li>
-  <li><strong>上限</strong>：每人（不是每張卡）最多 <strong>15 €</strong>，相當於累積 750 € 的合格消費就封頂。</li>
-  <li><strong>總預算</strong>：全部參加者共用 <strong>50 萬歐元</strong>，用完活動提前結束——先刷先贏。</li>
-  <li><strong>入帳</strong>：回饋通常在交易後<strong>約兩週內</strong>直接退回卡片帳戶，最晚 2026/10/6。</li>
+  <li><strong>期間</strong>：2026/9/15 10:00 起至 <strong>11/15 23:59</strong>（德國時間）。</li>
+  <li><strong>回饋</strong>：<strong>單筆 75 € 以內的線上付款回饋 2%</strong>。條款原文界定合格交易為「<em>Transaktionen mit einer für die Aktion erfolgreich registrierten Visa Karte, die ausschließlich Online vorgenommen werden</em>」——<strong>只有線上付款才算</strong>（實體店刷卡一律不計），但<strong>沒有「商家必須在德國以外」的限制</strong>——這一收一放，正是與夏季檔最大的差別。</li>
+  <li><strong>沒有最低消費</strong>：條款明講「<em>Es ist kein Mindestumsatz erforderlich</em>」，1 € 的線上小額付款照樣算。</li>
+  <li><strong>單筆超過 75 € 整筆不計</strong>：不是「超過的部分不算」，而是整筆出局——大額消費務必拆單。</li>
+  <li><strong>上限</strong>：每人（不是每張卡）最多 <strong>15 €</strong>，相當於累積 750 € 的合格線上消費就封頂；交易筆數不限。</li>
+  <li><strong>總預算</strong>：全部參加者共用 <strong>65 萬歐元</strong>（夏季檔為 50 萬歐元），用完活動提前結束。</li>
+  <li><strong>入帳</strong>：回饋通常<strong>約兩週內</strong>直接退回卡片帳戶，最晚 <strong>2026/11/30</strong>；不接受現金給付（「<em>Eine Barauszahlung des Rückerstattungsbetrags ist nicht möglich</em>」）。</li>
 </ul>
-<p class="post-sources">📚 來源：<a href="https://www.visa.de/bonus.html" target="_blank" rel="noopener noreferrer">Visa Bonus 官方活動頁</a> · <a href="https://www.visa.de/bonus/terms-and-conditions/crossborder/july.html" target="_blank" rel="noopener noreferrer">官方活動條款（Teilnahmebedingungen）</a></p>
+<p><strong>認列時點要注意</strong>：條款寫明以<strong>入帳日（Wertstellungsdatum）</strong>而非刷卡當日為準，且必須落在 <strong>11/15 之前</strong>（「<em>das Wertstellungsdatum … fällt in den Zeitraum bis spätestens zum 15.11.2026</em>」）。線上商家常常出貨才請款，<strong>最後幾天下的單很可能因入帳延遲而落空</strong>——想領滿的別拖到最後一週。</p>
+<p class="post-sources">📚 來源：<a href="https://www.visa.de/bonus.html" target="_blank" rel="noopener noreferrer">Visa Bonus 官方活動頁</a> · <a href="https://www.visa.de/bonus/terms-and-conditions/ecommerce/september.html" target="_blank" rel="noopener noreferrer">秋季檔官方活動條款（Teilnahmebedingungen E-Commerce）</a></p>
 
-<img src="assets/images/2026/visa/VisaBonus2026_圖卡2_誰能參加.png" alt="Visa Bonus 參加資格：年滿 18、住在德國、德國發行 Visa 卡；排除 Prepaid、V PAY、Klarna">
+<img src="assets/images/2026/visa/VisaBonusHerbst2026_圖卡3_領好領滿.png" alt="Visa Bonus 秋季檔實戰技巧：拆單策略，單筆 75 € 上限、累積 750 € 領滿 15 €">
+<h2 id="howto-max">怎麼把 15 € 領好領滿？</h2>
+<ul>
+  <li><strong>先拆單再結帳</strong>：購物車 120 € 分成兩筆 60 €，各回 1.2 €、合計 2.4 €；硬湊成一筆則一毛都沒有。官方 FAQ 白紙黑字舉例，75.01 € 的交易一毛都拿不到。</li>
+  <li><strong>日常線上消費就能刷滿</strong>：超市線上採買、藥妝、外送訂餐、訂票與月費訂閱都算線上付款。兩個月累積 750 €（平均每月 375 €）對多數家庭並不難。</li>
+  <li><strong>刷「綁定過的那張卡」</strong>：一個帳號最多綁 5 張，結帳時務必選到已註冊的那張，否則不追蹤。</li>
+  <li><strong>錢包與行動支付保守處理</strong>：條款只寫「線上付款」，沒有針對 PayPal、Apple Pay／Google Pay 的代碼化卡號（Token）另做規範。要確保追蹤正確，最穩的做法是<strong>結帳時直接輸入卡號</strong>，而不是透過第三方錢包間接扣款。</li>
+  <li><strong>先搶先贏</strong>：65 萬歐元總預算全體共用，預算用完活動提前結束。</li>
+</ul>
+<p class="post-sources">📚 來源：<a href="https://www.visa.de/bonus/terms-and-conditions/ecommerce/september.html" target="_blank" rel="noopener noreferrer">秋季檔官方活動條款</a></p>
+
+<img src="assets/images/2026/visa/VisaBonusHerbst2026_圖卡2_誰能參加.png" alt="Visa Bonus 參加資格：年滿 18、住在德國、德國發行 Visa 卡；排除 Prepaid、V PAY、Klarna">
 <h2 id="eligibility">誰能參加？哪些卡直接出局？</h2>
 <p><strong>符合資格（缺一不可）</strong>：</p>
 <ul>
@@ -526,7 +543,7 @@ const POSTS = [
   <li>在 visa.de 完成註冊——<strong>先註冊、後消費</strong>，註冊前的交易不回溯</li>
 </ul>
 <p><strong>明文排除的卡</strong>：預付卡（Prepaid）、V PAY 卡、Klarna 發行的 Visa 卡。另外要特別提醒：<strong>N26 與 BBVA 的卡是 Mastercard 體系</strong>，跟這檔活動無緣——如果你是看了<a href="/posts/german-bank-recommendation.html">版主的德國銀行推薦文</a>辦的 BBVA，這檔請改用手上其他 Visa 卡（DKB、ING、comdirect、Barclays、Consorsbank、Trade Republic 等家發的都是 Visa）。</p>
-<p><strong>不算數的消費</strong>：德國境內消費、ATM 提款、換匯、儲值（含儲值卡帳戶加值）、保險與金融服務、博弈——回饋只認「在德國以外的購物」。</p>
+<p><strong>秋季檔不算數的消費</strong>：<strong>實體店刷卡（POS）</strong>、ATM 提款、換匯、儲值（含儲值卡帳戶加值）、保險與金融服務、博弈投注——回饋只認「線上付款」。請注意這與夏季檔正好相反：夏季檔看的是<strong>消費地點</strong>（德國以外才算、實體店可以），秋季檔看的是<strong>付款方式</strong>（線上才算、不管商家在哪一國）。</p>
 <h3 id="cards-reco">手上沒有合適的 Visa？兩張免年費的卡可以考慮</h3>
 <ul>
   <li><strong>Revolut</strong>（卡片以 Visa 為主，依卡面標誌為準）：免年費、換匯超強，版主的<a href="/posts/german-bank-recommendation.html">旅遊換匯首選</a>。用<a href="https://revolut.com/referral/?referral-code=kevinaxzg!JUL2-26-AR-TR5DDH2-H2&amp;geo-redirect" target="_blank" rel="noopener noreferrer">版主邀請連結</a>註冊並完成指定任務，還能領邀請活動獎勵（Kunden werben Kunden，金額與條件依當期活動為準）。提醒：Visa Bonus 條款要求「德國市場發行」的卡，Revolut 綁定時以官方後台是否接受為準。</li>
@@ -537,12 +554,12 @@ const POSTS = [
 
 <img src="assets/images/2026/visa/VisaBonus2026_官網2_活動方案.png" alt="Visa Bonus 官方活動總覽截圖：夏季 International 檔與秋季 Online bezahlen 檔">
 <h2 id="campaigns">官方檔期：夏季海外＋秋季網購</h2>
-<p>Visa Bonus 是 2026 年新上線的常設回饋平台，官方已公告兩個檔期：</p>
+<p>Visa Bonus 是 2026 年新上線的常設回饋平台，至今已辦過兩個檔期：</p>
 <ul>
-  <li><strong>International｜Sommer 2026</strong>（7/7–9/1）：本篇主角，德國以外消費 2%。</li>
-  <li><strong>Online bezahlen｜Herbst 2026</strong>（9/15–11/15）：<strong>線上購物 2%</strong>，同樣單筆 75 € 以內、上限 15 €。</li>
+  <li><strong>International｜Sommer 2026</strong>（7/7–9/1，<strong>已結束</strong>）：德國以外消費 2%，實體店與國外網購都算；總預算 50 萬歐元。</li>
+  <li><strong>KLICK. BEZAHLT. CASHBACK.｜Herbst 2026</strong>（<strong>9/15–11/15，進行中</strong>）：<strong>線上付款 2%</strong>，不限商家國別；同樣單筆 75 € 以內、上限 15 €；總預算加碼到 65 萬歐元。</li>
 </ul>
-<p>好處是<strong>只要註冊一次</strong>，之後的新檔期在後台一鍵啟用即可，不用每次重新填資料。就算暑假沒有出國計畫，現在先註冊，秋季的網購檔也能無痛接上。</p>
+<p>好處是<strong>只要註冊一次</strong>，之後的新檔期在後台一鍵啟用即可，不用每次重新填資料。夏季檔參加過的人，這次只要到 <a href="https://visabonus.de" target="_blank" rel="noopener noreferrer">visabonus.de</a> 後台啟用新活動、收一封確認信就完成——版主 9/15 實測，不到一分鐘。兩檔的設計顯示 Visa 打算把這個平台常態化經營，之後應該還會有新檔期接力，註冊起來放著不虧。</p>
 <p class="post-sources">📚 來源：<a href="https://www.visa.de/bonus.html" target="_blank" rel="noopener noreferrer">Visa Bonus 官方活動頁</a></p>
 
 <img src="assets/images/2026/visa/VisaBonus2026_官網1_活動頁.png" alt="visa.de/bonus 官方註冊入口頁面截圖">
@@ -552,28 +569,40 @@ const POSTS = [
 <ol>
   <li>輸入 Email，收<strong>一次性密碼（OTP）</strong>驗證——不用設帳號密碼。</li>
   <li>綁定 Visa 卡（姓名＋16 碼卡號），一個帳號<strong>最多 5 張</strong>。</li>
-  <li>在後台啟用「Alltag aus, Cashback an.」活動，勾選同意條款。</li>
+  <li>在後台啟用活動、勾選同意條款——現在要啟用的是<strong>「KLICK. BEZAHLT. CASHBACK.」</strong>（秋季線上購物檔）。</li>
   <li>Visa 會寄一封<strong>確認信</strong>，記得點信裡的連結完成啟用（沒收到就翻垃圾郵件匣）。</li>
 </ol>
-<img src="assets/images/2026/visa/VisaBonus2026_版主實測_綁卡完成.png" alt="版主實測：Visa Bonus 後台已綁定兩張卡（只顯示末四碼）並啟用夏季活動">
+<img src="assets/images/2026/visa/VisaBonus2026_版主實測_綁卡完成.png" alt="版主實測：Visa Bonus 後台已綁定兩張卡（只顯示末四碼）並啟用活動">
 <p>版主已實測註冊完成、綁了兩張卡——後台介面如上圖，卡片只顯示<strong>末四碼</strong>，隨時可以移除。整個流程不到兩分鐘，全程只需要 Email 和卡號，不用地址、不用生日、不用下載 App。技術上這個平台由 Visa 與合作夥伴 Loyal Solutions 營運，回饋直接退到你的卡片帳戶，不經過第三方錢包。</p>
 
 <h2 id="tips">省錢技巧與注意事項</h2>
 <ul>
-  <li><strong>大額消費拆單</strong>：76 € 的帳單一毛都沒有，拆成兩筆 38 € 就有回饋。餐廳、超市這類可以分開結的消費，別讓單筆衝破 75 €。</li>
-  <li><strong>歐元區消費最划算</strong>：法國、西班牙、義大利等歐元區國家消費沒有匯率轉換的問題，2% 是實拿。<strong>非歐元國家</strong>（瑞士、英國、波蘭…）要注意你的卡是否收<strong>外幣手續費（Fremdwährungsentgelt，常見 1.75%–2.2%）</strong>——手續費比回饋高的話等於白忙。</li>
-  <li><strong>國外網購也算</strong>：商家結算地在德國以外即可，人在德國下單一樣回饋。</li>
-  <li><strong>行動支付保險起見用實體卡</strong>：條款沒有明文處理 Apple Pay／Google Pay 的代碼化卡號（Token）問題，要確保回饋被正確追蹤，最穩的做法是直接刷綁定的那張卡。</li>
-  <li><strong>先搶先贏</strong>：50 萬歐元總預算全體共用，官方 FAQ 明講預算用完活動提前結束——想拿的別拖到 8 月底。</li>
+  <li><strong>大額消費拆單</strong>：76 € 的訂單一毛都沒有，拆成兩筆 38 € 就有回饋。網購商家多半允許分批下單，別讓單筆衝破 75 €。</li>
+  <li><strong>外幣網購注意匯率成本</strong>：秋季檔不限商家國別，向境外網站下單同樣回饋；但若以非歐元計價（英鎊、美元、瑞士法郎…），要注意你的卡是否收<strong>外幣手續費（Fremdwährungsentgelt，常見 1.75%–2.2%）</strong>——手續費比 2% 回饋高的話等於白忙。</li>
+  <li><strong>先確認卡別再期待回饋</strong>：許多人手上的「Debitkarte」其實是 Girocard 或 Mastercard，看卡面標誌最準；只有 Visa 才算。</li>
+  <li><strong>被取消的交易不算</strong>：條款寫明交易若因掛失、盜刷處理等原因遭作廢或取消，就不算合格交易；不過<strong>已經入帳的回饋不必退還</strong>（「<em>Für bereits erfolgte Rückerstattungen ist dies unerheblich, diese müssen nicht zurückgegeben werden</em>」）。反過來說，違反條款或查證有詐欺行為的人，Visa 有權取消資格並追回已發放的回饋。</li>
+  <li><strong>先搶先贏</strong>：65 萬歐元總預算全體共用，預算用完活動提前結束。</li>
 </ul>
 
 <p>📖 <strong>延伸閱讀</strong>：還沒有德國帳戶或想多辦一張卡？看<a href="/posts/german-bank-recommendation.html">2026 推薦的免付費德國銀行</a>；更多開戶與服務的迎新回饋整理在<a href="/posts/referral-codes-2026.html">2026 分享碼／回饋金大匯集</a>。</p>
 
+<img src="assets/images/2026/visa/VisaBonus2026_圖卡1_海外刷卡回饋.png" alt="Visa Bonus 夏季海外檔（已結束）：德國以外消費 2%、單筆 75 € 以內、每人上限 15 €">
+<h2 id="overview">附錄：夏季海外檔條款（已於 9/1 結束）</h2>
+<p>保留供對照。活動名稱「Alltag aus, Cashback an.」，條款重點如下：</p>
+<ul>
+  <li><strong>期間</strong>：2026/7/7 10:00 起至 <strong>9/1 23:59</strong>（德國時間）；以銀行入帳日（Valuta）計算，最晚認列到 9/15。</li>
+  <li><strong>回饋</strong>：德國以外的實體店消費與國外網購，<strong>單筆 75 € 以內回饋 2%</strong>；單筆超過 75 € 整筆不計。</li>
+  <li><strong>上限</strong>：每人最多 <strong>15 €</strong>；總預算 <strong>50 萬歐元</strong>。</li>
+  <li><strong>入帳</strong>：約兩週內退回卡片帳戶，最晚 2026/10/6。</li>
+</ul>
+<p class="post-sources">📚 來源：<a href="https://www.visa.de/bonus/terms-and-conditions/crossborder/july.html" target="_blank" rel="noopener noreferrer">夏季檔官方活動條款（Teilnahmebedingungen July）</a></p>
+
 <h2 id="sources">資料來源</h2>
 <ul>
   <li><a href="https://www.visa.de/bonus.html" target="_blank" rel="noopener noreferrer">Visa Bonus 官方活動頁（visa.de/bonus）</a></li>
+  <li><a href="https://www.visa.de/bonus/terms-and-conditions/ecommerce/september.html" target="_blank" rel="noopener noreferrer">Visa｜秋季線上購物檔活動條款（Teilnahmebedingungen E-Commerce September）</a></li>
   <li><a href="https://www.visa.de/bonus/terms-and-conditions/crossborder/july.html" target="_blank" rel="noopener noreferrer">Visa｜夏季檔活動條款（Teilnahmebedingungen July）</a></li>
-  <li><a href="https://www.mydealz.de/deals/2-cashback-fur-visa-zahlungen-im-ausland-online-offline-2807402" target="_blank" rel="noopener noreferrer">mydealz｜2% Cashback für Visa-Zahlungen im Ausland</a></li>
+  <li><a href="https://www.mydealz.de/deals/2-cashback-fur-visa-zahlungen-im-ausland-online-offline-2807402" target="_blank" rel="noopener noreferrer">mydealz｜2% Cashback für Visa-Zahlungen im Ausland（夏季檔討論串）</a></li>
   <li><a href="https://www.bbva.de/privat/produkte/karten/debitkarte.html" target="_blank" rel="noopener noreferrer">BBVA 德國官網｜Debitkarte（Mastercard）</a></li>
 </ul>
 `
@@ -2518,7 +2547,7 @@ const POSTS = [
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p class="">詳情優缺點比較請見<a href="/posts/german-bank-recommendation.html" target="_blank" rel="noreferrer noopener">此篇介紹</a>。Revolut 有「邀請好友」（Kunden werben Kunden）活動：用下方邀請連結註冊並完成指定任務即可獲得獎勵，<strong>金額與條件依當期檔期浮動</strong>（Revolut 的邀請連結本身也會隨檔期更換，若點進去顯示過期，請留言告訴我，我換上新的）。卡片以 Visa 為主——<a href="/posts/visa-bonus-cashback-2026.html" target="_blank" rel="noreferrer noopener">Visa 官方海外刷卡 2% 回饋活動</a>的夏季檔到 <strong>9/1</strong> 為止、秋季線上購物檔 <strong>9/15–11/15</strong> 接力，開卡順便把回饋一起領。</p>
+<p class="">詳情優缺點比較請見<a href="/posts/german-bank-recommendation.html" target="_blank" rel="noreferrer noopener">此篇介紹</a>。Revolut 有「邀請好友」（Kunden werben Kunden）活動：用下方邀請連結註冊並完成指定任務即可獲得獎勵，<strong>金額與條件依當期檔期浮動</strong>（Revolut 的邀請連結本身也會隨檔期更換，若點進去顯示過期，請留言告訴我，我換上新的）。卡片以 Visa 為主——<a href="/posts/visa-bonus-cashback-2026.html" target="_blank" rel="noreferrer noopener">Visa 官方網購 2% 回饋活動</a>的秋季檔 <strong>9/15–11/15</strong> 進行中（只認線上付款、不限商家國別，每人上限 15 €），開卡順便把回饋一起領。</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:buttons -->
@@ -3651,7 +3680,7 @@ const POSTS = [
 <!-- /wp:buttons -->
 
 <!-- wp:paragraph -->
-<p class="">（2026/07 更新）用上方邀請連結註冊並完成指定任務即可獲得邀請獎勵（依當期活動條款為準）。另外 Revolut 的卡以 Visa 為主——正逢 <a href="/posts/visa-bonus-cashback-2026.html" target="_blank" rel="noreferrer noopener">Visa 官方海外刷卡 2% 回饋活動</a>（至 9/1、每人上限 15 €），出國前順便註冊一起領。</p>
+<p class="">（2026/07 更新）用上方邀請連結註冊並完成指定任務即可獲得邀請獎勵（依當期活動條款為準）。另外 Revolut 的卡以 Visa 為主——正逢 <a href="/posts/visa-bonus-cashback-2026.html" target="_blank" rel="noreferrer noopener">Visa 官方線上刷卡 2% 回饋活動</a>（秋季網購檔 9/15–11/15、每人上限 15 €），網購前順便註冊一起領。</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:heading {"level":1,"backgroundColor":"cyan-bluish-gray"} -->
