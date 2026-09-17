@@ -21,8 +21,8 @@ DATE_RANGE = '9/15–11/15'  # footer 空間有限，勿放長日期（會撞到
 CARDS = [
  dict(
   theme='#2563EB', badges=[('省錢攻略', True), ('限時活動', False)], illu='bankcard',
-  title='網購 2% 現金回饋　不限商家國別',
-  subtitle='Visa Bonus 秋季檔｜9/15–11/15　只認線上付款',
+  title='單筆 75 € 以內　網購 2% 現金回饋',
+  subtitle='Visa Bonus 秋季檔｜9/15–11/15　只認線上、不限商家國別',
   stats=[('2%', '單筆 75 € 以內都回饋'),
          ('15 €', '每人回饋上限')],
   bullets=[
