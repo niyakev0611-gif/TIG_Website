@@ -1,0 +1,154 @@
+德國週報 W38｜2026/09/14–09/20
+社群貼文（FB 條列版 ＋ IG 精簡版）
+FB 排程：2026-09-20 19:00（Europe/Berlin）　IG 排程：2026-09-20 19:05
+圖卡順序（五處一致）：1 汽油新高／2 儲氣量／3 繳不出帳單／4 組織犯罪／5 反恐十點計畫
+========================================================================
+
+【FB 版（重點條列版）】
+------------------------------------------------------------------------
+
+🇩🇪【德國週報 W38｜9/14–9/20】汽油創史上新高每公升 2.273 €、柴油 2.404 € 逼近紀錄，沙烏地阿拉伯輸油管遇襲是源頭；儲氣量只有 55.93%，11/1 達 80% 的法定目標已不可能；聯邦統計局：380 萬人繳不出水電瓦斯帳單；組織犯罪集團上遊戲平台吸收未成年人；內閣通過反恐十點計畫
+
+這一週的德國，大事幾乎都連到同一條線上：能源價格。五張圖卡一次看懂。
+
+⛽ 一、汽油創史上新高，柴油逼近紀錄
+9/14 ADAC 公布的全國日均價寫下新紀錄。
+▪️ 週日全天平均：Super E10 每公升【2.273 €】，是有統計以來最高，比前一個週五貴【1.7 分】
+▪️ 柴油每公升【2.404 €】，一天漲【3.5 分】，距離今年四月的柴油紀錄只剩【4.3 分】
+▪️ 源頭在波斯灣：9/11 沙烏地阿拉伯橫貫東西、【日運能約 700 萬桶】的原油管線遭自伊拉克方向飛來的無人機攻擊、泵站起火後關閉
+▪️ 這條管線的戰略意義正在於【它能繞開荷姆茲海峽】——管線一停，等於少了一條規避海峽風險的後路
+▪️ 油價反應：布蘭特原油一度逼近每桶 110 美元、當日收【105.68 美元】；9/15 再漲 2.9%、收【108.75 美元】，並傳出沙烏地方面【通知歐洲客戶取消部分九月交貨】
+▪️ 分析機構 Kpler 估算：管線若關閉一個月並動用紅海延布港（Yanbu）庫存，市場可能短少【約 1.2 億桶】
+▪️ 「每公升 3 €」業界自己就兩種說法：加油站利益協會（TIV）的 Herbert Rabl 說這個價格「不久就會成為現實」，【高速公路休息站已經出現】；他並批評石油公司，稱情況「正被利用」
+▪️ 【ADAC 明確反駁】：就全國日均價而言目前沒有跡象顯示柴油會到 3 €，除非地緣情勢再惡化——但不排除再創新高
+▪️ 政界兩條路：綠黨（Grüne）主張對石油與天然氣公司課【超額利潤稅（Übergewinnsteuer）】，社會分級發給【每人最高 250 € 能源補貼】，並把電力稅降到歐盟最低標準；黨團副主席 Andreas Audretsch：「一分錢都不要進到石油公司口袋」
+▪️ 聯盟黨團主席 Thorsten Frei（CDU）則主張走更快落地的路：【調降汽柴油的加值稅（Mehrwertsteuer）】
+▪️ 別忘了今年已上路的兩項：3/26 通過的燃料措施包裹訂出【加油站每天只能調漲一次價格】（4/1 起）；4 月通過能源稅調降【每公升減 14.04 分】，並允許雇主 2026 年發最高 1,000 € 免稅紓困獎金——現在看到的 2.273 € 已是減稅後的價格
+▪️ 實務：德國油價一天內本就有規律波動，【傍晚到晚間通常低於清晨】；另外 2026/1/1 起通勤補貼（Pendlerpauschale）【自第一公里就適用】，報稅別漏
+
+🔥 二、儲氣量只有五成五，供暖季就要到了
+9/14 德國儲氣設施填充率【55.93%】，去年同一天是【75.40%】。
+▪️ 兩者相差【19.47 個百分點】；槽內約【136 太瓦時（TWh）】天然氣，約當總容量五成五
+▪️ 法定目標確定跳票：規定是【11/1 達 80%】、2/1 維持 30%（部分設施 45%，整體約 70%）
+▪️ 聯邦網路管理局（Bundesnetzagentur）局長 Klaus Müller：80% 在技術上【幾乎已不可能達成】
+▪️ 但他也給了安撫的一面：「【我們現在儲槽裡的天然氣，已經多於整個上一個冬半年從儲槽取用的量】」；德國另有挪威管線氣、沿海 LNG 接收設施與歐洲天然氣網可調度
+▪️ 業界的提醒不能略過：儲能倡議組織 INES 警告，若填充速度持續落後，【異常寒冷的冬天 1 月可能一度出現超過 25% 的供應缺口】
+▪️ ⚠️ 這不是「會斷氣」的預測，而是「氣要從別處高價買進來」的壓力指標——那筆錢最後多半會出現在家庭的年度結算單上
+▪️ 價格已先動：歐洲天然氣批發價【每千度（MWh）83.75 €】，是【2022 年底以來最高】，今年以來漲近三倍；業界對本季預估區間【每千度 80 至 100 €】
+▪️ 一個往下的變數：【儲氣附加費（Gasspeicherumlage）每度 0.289 分——家庭一年約 58 €——已於 2026/1/1 取消】
+▪️ 現在可以做的事：確認目前是基本供應（Grundversorgung）還是特別合約、【價格保證（Preisgarantie）涵蓋到什麼時候】；已收到調價通知的人有【特別終止權（Sonderkündigungsrecht）】
+▪️ 租屋族的暖氣費多走年度結算（Nebenkostenabrechnung）：去年若已補繳，【主動與房東或管理公司討論調高每月預繳額】，比明年一次補一大筆好處理
+
+🧾 三、380 萬人繳不出水電瓦斯帳單
+9/14 聯邦統計局（Destatis）把能源價格翻譯成了日常處境。
+▪️ 2025 年有【380 萬人】住在未能如期繳清水電瓦斯等供應商帳單的家庭，佔總人口【4.6%】（資料來自歐盟所得與生活狀況調查 EU-SILC）
+▪️ 好消息：比例其實在下降，2024 年是【5.0%】——能源價格在 2022–2023 年高峰後回落是主因
+▪️ 壞消息：壓力分布極不平均。【自有住宅家庭 3.3% 積欠、租屋家庭 5.8%】，接近兩倍
+▪️ 租屋族同時承受房租與附加費用（Nebenkosten）兩頭調漲，資產緩衝也少；【今年 8 月住房附加費用又比去年同月漲 3.1%】
+▪️ 最該警覺的數字：【2025 年全德斷電通報近 25.4 萬件，比前一年約 24.5 萬件增加約 3.5%】；斷氣約 3.4 萬件、微減約 1%
+▪️ 往前看，2023 年是超過 20.4 萬件——【三年之間增加約四分之一】；消費者中心 2025 年收到逾 1,700 件斷電斷氣申訴，【比 2024 年增加 36%】
+▪️ 「積欠比例下降」與「斷電件數上升」不矛盾：前者衡量【有多少家庭欠費】，後者衡量【欠費之後被執行到底的有多少】
+▪️ 成本傳導還沒結束：9/15 公布【8 月批發價年增 6.8%】，是【2023 年 2 月（+9.5%）以來最大漲幅】（7 月 +5.3%、6 月 +4.9%，呈加速）
+▪️ 拆開看：【礦油產品比去年同月貴 36.1%】是主要來源；有色金屬與半成品【+27.4%】。批發價是消費者物價的上游——這一波成本還在往下游傳
+▪️ 被催繳時的權利：供應商須先催告、再於斷供前四週與八日各發通知；【在基本供應之下，只要與供應商談成可負擔的分期付款計畫（Ratenplan），通常就能擋下斷電】
+▪️ 就業中心（Jobcenter）或社會局在特定情況下可提供借款支應欠款；各地債務諮詢（Schuldnerberatung）與消費者中心提供免費諮商——【愈早聯絡愈有談判空間】
+
+🎮 四、組織犯罪集團上遊戲平台吸收未成年人
+9/15 內政部長 Alexander Dobrindt（CSU）與聯邦刑事警察局（BKA）局長 Holger Münch 公布 2025 年組織犯罪與毒品犯罪聯邦態勢報告。
+▪️ 2025 年共【683 件】組織犯罪偵辦案件，年增【5.6%】；嫌疑人【7,988 名】，是【2017 年以來最高】
+▪️ 查明損失自前一年約 16 億歐元升到【27.8 億歐元】
+▪️ ⚠️ 但這個翻倍要看清楚：報告指出暴增【主要來自單一案件】——一個涉嫌以龐氏騙局在全球詐騙投資人並建立洗錢網路的集團，【光這一案損失就估計超過 10 億歐元】
+▪️ 真正的結構性變化在「怎麼做」：【「犯罪即服務」（Crime-as-a-Service）】正在成形，資訊技術、物流、洗錢甚至【暴力本身】都能當專業服務向外採購
+▪️ 【683 件中有 140 件、約五分之一】出現這種分工型態；Münch 形容出現了【一個新的行為人世代——公開展示權力與暴力行為】
+▪️ 以領域分，【毒品交易仍是最大宗，約占 37% 的案件】；報告另記錄【20 起殺人與 100 起傷害】
+▪️ 👨‍👩‍👧 對有孩子的家庭最該記住這段：集團吸收的對象【多半是年輕成人、甚至未成年人】，管道包括【網路服務、遊戲平台與通訊軟體】，而【幕後主使多半人在境外遙控】
+▪️ 這種模式近年被稱為【「零工化」的犯罪委託】：一次任務、一筆報酬、加密通訊下單，執行者往往不知道在替誰做事，卻要承擔全部刑責
+▪️ 怎麼看出苗頭：典型第一步不是談犯罪，而是【一句「輕鬆賺錢」的私訊】——請對方代收包裹、出借帳戶、幫忙「跑一趟腿」、或把手機借出去用
+▪️ 值得和孩子講清楚：【代收包裹與出借銀行帳戶在德國都可能構成刑責】（洗錢、協助竊盜或詐欺），而且【刑事責任年齡自 14 歲起算】
+▪️ 若發現孩子有來路不明的現金或包裹，可聯絡當地警局的青少年預防單位（Jugendprävention）或學校社工
+
+🛡️ 五、內閣通過反恐十點計畫
+9/16 內政部長 Dobrindt（CSU）與司法部長 Stefanie Hubig（SPD）在柏林提出，內閣同日通過。背景是【今年 7 月底柏林同志遊行（CSD）遭到的伊斯蘭主義攻擊】（1 死 31 傷）。
+▪️ 刑法加重：對以刀具等危險工具、使他人陷於生命或重傷危險的攻擊，訂【1 年最低刑期】
+▪️ 【擴大散布恐怖主義宣傳品的構成要件】，並【加重為恐怖目的募集捐款的刑責】
+▪️ 法院若對年輕成人（Heranwachsende，18 至 20 歲）適用少年刑法（Jugendstrafrecht）而非成人刑法，【今後必須明確交代理由】——實質上把舉證方向反轉
+▪️ 監控工具：對【列管的危險分子（Gefährder）更常使用電子腳鐐】，並更常動用保安性拘禁
+▪️ 資料面：【IP 位址儲存與連線資料的調取權限，要從聯邦機關擴及各邦機關】，用於危險防禦（Gefahrenabwehr）而不限於刑事追訴
+▪️ 預防與去激進化也寫進計畫（數位服務、社區夥伴關係、橫向串連），但【措辭相對概括，沒有具體預算與時程】
+▪️ 批評正好落在這裡：柏林女權運動者 Seyran Ateş 批評計畫幾乎把全部重量押在刑法與監控上，【「如何在更早階段阻斷意識形態上的激進化」著墨太少】
+▪️ ⚠️ 目前只是【內閣決議，尚未完成立法】，後續要送聯邦議院（Bundestag），涉及各邦機關權限的部分還可能要過聯邦參議院（Bundesrat）
+▪️ 連線資料儲存這一項影響的不只嫌疑人，而是所有網路使用者的資料保存範圍——【德國聯邦憲法法院與歐盟法院過去多次對這類制度設下界線】，能走多遠仍要看立法過程與合憲性檢驗
+
+📖 延伸閱讀：欠繳帳單若進入催收程序會留下 Schufa 註記，影響往後租屋、辦門號與申請貸款。每年一次的免費資料副本（Datenkopie）可以先確認自己的紀錄乾不乾淨——見本站〈如何免費申請德國 Schufa 證明〉（2026/09 已更新查核）。
+
+📚 資料來源
+• WirtschaftsWoche：汽油創新高、柴油逼近紀錄 https://www.wiwo.de/politik/deutschland/mobilitaetskosten-benzinpreis-auf-rekordhoch-diesel-kurz-davor/100254273.html
+• Handelsblatt：加油站協會認為每公升 3 € 有可能 https://www.handelsblatt.com/finanzen/maerkte/devisen-rohstoffe/spritpreise-tankstellenverband-haelt-drei-euro-pro-liter-fuer-moeglich/100254333.html
+• ZDFheute：E10 創新高、柴油續漲 https://www.zdfheute.de/wirtschaft/benzinpreis-diesel-rekordhoch-100.html
+• Al Jazeera：沙烏地阿拉伯關閉遭襲輸油管的意義 https://www.aljazeera.com/news/2026/9/12/saudi-arabia-shuts-critical-oil-pipeline-after-drone-attack-what-happened
+• CNBC：東西向原油管線關閉 https://www.cnbc.com/2026/09/11/saudi-arabia-shut-down-east-west-crude-oil-pipeline.html
+• CNBC：9/15 油價續漲、沙烏地取消部分出貨 https://www.cnbc.com/2026/09/15/oil-extends-gains-following-houthi-strikes-on-saudi-arabia.html
+• ZDFheute：綠黨主張每人最高 250 € 能源補貼、Frei 主張降加值稅 https://www.zdfheute.de/politik/deutschland/energie-entlastung-gruene-pauschale-tanken-sprit-audretsch-frei-cdu-100.html
+• 聯邦議院：燃料措施包裹（每日限漲一次） https://www.bundestag.de/dokumente/textarchiv/2026/kw13-de-kraftstoffmassnahmenpaket-1156704
+• 聯邦議院：能源稅調降與紓困獎金 https://www.bundestag.de/dokumente/textarchiv/2026/kw17-de-energiesteuersenkung-1165890
+• ZDFheute：聯邦網路管理局認為儲氣足以撐過冬天 https://www.zdfheute.de/wirtschaft/energie-gasspeicher-winter-bundesnetzagentur-100.html
+• 聯邦網路管理局：天然氣供應現況 https://www.bundesnetzagentur.de/DE/Gasversorgung/aktuelle_gasversorgung/start.html
+• t-online：填充率過低，冬天會不會出現缺口 https://www.t-online.de/heim-garten/aktuelles/id_101434090/gasspeicher-fuellstand-zu-niedrig-droht-ein-engpass-im-winter-.html
+• t-online：專家警告 2026/27 冬季的供應缺口 https://www.t-online.de/heim-garten/aktuelles/id_101426884/gasspeicher-experten-warnen-vor-engpass-im-winter-2026-27.html
+• Finanztip：天然氣價格走勢與合約檢視 https://www.finanztip.de/gaspreisvergleich/gaspreis-gaskosten/
+• 聯邦統計局：380 萬人住在積欠供應商帳單的家庭 https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/09/PD26_N063_63.html
+• 聯邦網路管理局：帳單與斷供規定 https://www.bundesnetzagentur.de/DE/Vportal/Energie/RechnungenSperrungen/Sperrungen-table.html
+• SMARD：2025 年斷電與斷氣的變化 https://www.smard.de/home/entwicklung-der-strom-und-gassperren-in-2025-220844
+• t-online：斷電數持續上升 https://www.t-online.de/heim-garten/aktuelles/id_101373714/haushalte-sitzen-im-dunkeln-strom-abstellungen-steigen-2025-weiter.html
+• etailment：8 月批發價年增 6.8% https://www.etailment.de/magazin/2026-09-16-grosshandelspreise-legen-um-68-prozent-zu
+• retail news：批發價漲幅為 2023 年初以來最大 https://retail-news.de/destatis-grosshandelspreise-august-2026/
+• 聯邦刑事警察局：2025 年組織犯罪聯邦態勢報告 https://www.bka.de/SharedDocs/Downloads/DE/Publikationen/JahresberichteUndLagebilder/OrganisierteKriminalitaet/organisierteKriminalitaetBundeslagebild2025.html
+• ZDFheute：組織犯罪損失增加、毒品案件減少 https://www.zdfheute.de/politik/deutschland/lagebild-organisierte-kriminalitaet-dobrindt-100.html
+• ZDFheute：CSD 攻擊後的反恐十點計畫 https://www.zdfheute.de/politik/deutschland/anschlag-csd-berlin-zehn-punkte-plan-100.html
+• beck-aktuell：內閣通過十點計畫的法制內容 https://www.beck-aktuell.de/heute-im-recht/rechtspolitik-gesetzgebung/kabinett-csd-anschlag-islamismus-terror-messerangriffe-zehn-punkte-plan-2026-09-16
+• ad-hoc-news：Dobrindt 與 Hubig 加重持刀攻擊刑度 https://www.ad-hoc-news.de/politik/anti-terror-plan-dobrindt-und-hubig-verschaerfen-messerstrafen/70109661
+• ad-hoc-news：Seyran Ateş 對十點計畫的批評 https://www.ad-hoc-news.de/politik/die-berliner-frauenrechtlerin-seyran-ates-haelt-den-von-der/70113667
+
+#德國知識小種子 #DasdeutscheWissen #在德台灣人 #德國生活 #德國新聞 #油價 #天然氣 #暖氣費 #組織犯罪 #反恐
+
+
+========================================================================
+
+【IG 版（精簡版，共 1164 字元，上限 2,200）】
+------------------------------------------------------------------------
+
+🇩🇪 德國週報 W38｜9/14–9/20
+
+這一週的德國，大事幾乎都連到同一條線上：能源價格。
+
+⛽ 汽油創史上新高｜9/14 ADAC 全國日均價：Super E10 每公升 2.273 €，有統計以來最高；柴油 2.404 €，距四月紀錄只剩 4.3 分
+
+🛢️ 源頭在波斯灣｜9/11 沙烏地阿拉伯日運能 700 萬桶、繞開荷姆茲海峽的東西向輸油管遭無人機攻擊後關閉。布蘭特原油 9/15 收 108.75 美元
+
+💬 3 € 會來嗎｜加油站協會（TIV）說高速公路休息站已出現這個價位、不久會普及；ADAC 反駁全國均價目前沒有這個跡象
+
+🏛️ 政界兩條路｜綠黨（Grüne）要課石油業超額利潤稅、發每人最高 250 € 補貼；Thorsten Frei（CDU）主張降汽柴油加值稅
+
+🔥 儲氣量只有五成五｜9/14 填充率 55.93%，去年同日 75.40%，少了 19.47 個百分點。11/1 達 80% 的法定目標已不可能
+
+📈 氣價回到 2022 年水準｜歐洲批發價每千度 83.75 €，今年以來漲近三倍。INES 警告：嚴寒的 1 月可能出現超過 25% 的供應缺口
+
+🧾 380 萬人繳不出水電瓦斯帳單｜佔人口 4.6%（2024 年 5.0%）。租屋家庭 5.8%，接近自有住宅 3.3% 的兩倍
+
+⚡ 斷電還在增加｜2025 年斷電通報近 25.4 萬件、年增 3.5%。8 月批發價年增 6.8%，礦油產品更漲 36.1%——成本還在往下游傳
+
+💡 被催繳先別慌｜在基本供應（Grundversorgung）下談成分期付款計畫（Ratenplan），通常就能擋下斷電。愈早聯絡愈有談判空間
+
+🎮 犯罪集團上遊戲平台吸收未成年人｜9/15 組織犯罪態勢報告：683 件案件（年增 5.6%）、7,988 名嫌疑人為 2017 年以來最多
+
+🕵️ 犯罪即服務｜683 件中 140 件出現 Crime-as-a-Service，資訊、物流、洗錢甚至暴力都能外包。毒品交易仍占約 37%
+
+👨‍👩‍👧 家長提醒｜孩子被陌生人以「輕鬆賺錢」邀約代收包裹或出借帳戶，那通常就是招募第一步——在德國都可能構成刑責，刑責年齡自 14 歲起
+
+🛡️ 內閣通過反恐十點計畫｜9/16 回應柏林 CSD 恐攻：持刀重傷害訂 1 年最低刑期、危險分子更常用電子腳鐐、IP 位址調取權擴及各邦
+
+⚖️ 還沒立法｜目前只是內閣決議。Seyran Ateş 批評：幾乎全押刑法與監控，對如何及早阻斷激進化著墨太少
+
+📚 完整解析與資料來源 → FB 粉專或網站（連結在 bio）
+
+#德國知識小種子 #DasdeutscheWissen #在德台灣人 #德國生活 #德國新聞 #油價 #天然氣 #暖氣費 #組織犯罪 #反恐

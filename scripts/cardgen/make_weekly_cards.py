@@ -1422,6 +1422,114 @@ def illu_dealtag(d, R, S, cx, cy, theme):
     d.polygon(R(*[v for (dx, dy) in inner for v in (bx+dx, by+dy)]),
               fill=theme, outline=OUTLINE, width=3*S)
 
+def illu_gastank(d, R, S, cx, cy, theme):
+    """儲氣槽＋液位與壓力錶（天然氣庫存／供暖季準備）"""
+    ow = 5*S
+    _dots(d, R, cx, cy, ((-72, -46, 3, GOLD), (-34, -56, 3, tint(theme, 0.5)),
+                         (74, 30, 3, theme)))
+    d.ellipse(R(cx-58, cy+48, cx+18, cy+58), fill=tint(theme, 0.18))
+    # 支腳（後層）
+    for dx in (-44, 6):
+        d.line(R(cx+dx, cy+38, cx+dx, cy+50), fill=OUTLINE, width=ow)
+    # 槽體：白底＋上蓋
+    d.rounded_rectangle(R(cx-52, cy-42, cx+14, cy+44), radius=12*S,
+                        fill='white', outline=OUTLINE, width=ow)
+    d.rounded_rectangle(R(cx-44, cy-52, cx+6, cy-38), radius=7*S,
+                        fill=tint(theme, 0.45), outline=OUTLINE, width=3*S)
+    # 液面：只裝到約五成五
+    lvl = cy + 4
+    d.rounded_rectangle(R(cx-46, lvl, cx+8, cy+38), radius=8*S, fill=theme)
+    d.line(R(cx-46, lvl, cx+8, lvl), fill=shade(theme, 0.72), width=4*S)
+    # 法定目標線（金色虛線，明顯高於液面）
+    for k in range(4):
+        x0 = cx - 46 + k*15
+        d.line(R(x0, cy-22, x0+9, cy-22), fill=GOLD_D, width=4*S)
+    # 焦點細節：壓力錶（指針偏低）
+    gx, gy, gr = cx+46, cy-16, 24
+    d.ellipse(R(gx-gr, gy-gr, gx+gr, gy+gr), fill=GOLD, outline=OUTLINE, width=ow)
+    d.ellipse(R(gx-14, gy-14, gx+14, gy+14), fill='white', outline=OUTLINE, width=2*S)
+    d.line(R(gx, gy, gx-11, gy+7), fill=OUTLINE, width=4*S)
+    d.ellipse(R(gx-4, gy-4, gx+4, gy+4), fill=OUTLINE)
+
+
+def illu_overduebill(d, R, S, cx, cy, theme):
+    """逾期帳單＋拔掉的插頭（水電瓦斯欠費／斷電）"""
+    ow = 5*S
+    _dots(d, R, cx, cy, ((-72, -40, 3, theme), (-22, -56, 3, GOLD),
+                         (26, -52, 3, tint(theme, 0.5))))
+    d.ellipse(R(cx-56, cy+48, cx+24, cy+58), fill=tint(theme, 0.18))
+    # 後層：另一張帳單（分層表達厚度）
+    d.rounded_rectangle(R(cx-38, cy-44, cx+26, cy+30), radius=7*S,
+                        fill=tint(theme, 0.30), outline=OUTLINE, width=ow)
+    # 前層：帳單本體
+    d.rounded_rectangle(R(cx-56, cy-34, cx+8, cy+46), radius=7*S,
+                        fill='white', outline=OUTLINE, width=ow)
+    d.rounded_rectangle(R(cx-46, cy-24, cx-12, cy-16), radius=3*S, fill=tint(theme, 0.45))
+    for yy in (cy-4, cy+6, cy+16):
+        d.line(R(cx-46, yy, cx-2, yy), fill=tint(theme, 0.45), width=3*S)
+    # 焦點細節：金色逾期圓章
+    sx, sy, sr = cx+22, cy+28, 22
+    d.ellipse(R(sx-sr, sy-sr, sx+sr, sy+sr), fill=GOLD, outline=OUTLINE, width=ow)
+    d.line(R(sx, sy-11, sx, sy+3), fill=OUTLINE, width=5*S)
+    d.ellipse(R(sx-3, sy+8, sx+3, sy+14), fill=OUTLINE)
+    # 拔掉的插頭（右上獨立一角，插銷朝左＝剛被拔下來）
+    for dy in (-40, -30):
+        d.line(R(cx+30, cy+dy, cx+44, cy+dy), fill=OUTLINE, width=4*S)
+    d.rounded_rectangle(R(cx+44, cy-48, cx+70, cy-22), radius=6*S,
+                        fill=theme, outline=OUTLINE, width=ow)
+    d.arc(R(cx+46, cy-24, cx+78, cy+8), start=180, end=270, fill=OUTLINE, width=ow)
+
+
+def illu_gamepadhook(d, R, S, cx, cy, theme):
+    """遊戲手把＋垂下的魚鉤（線上誘騙／招募未成年人）"""
+    ow = 5*S
+    _dots(d, R, cx, cy, ((-70, -32, 3, theme), (62, -46, 3, tint(theme, 0.5)),
+                         (74, 16, 3, GOLD)))
+    d.ellipse(R(cx-58, cy+48, cx+58, cy+58), fill=tint(theme, 0.18))
+    # 手把：兩側握把＋中央機身
+    for dx in (-44, 44):
+        d.ellipse(R(cx+dx-24, cy+2, cx+dx+24, cy+46), fill=theme, outline=OUTLINE, width=ow)
+    d.rounded_rectangle(R(cx-46, cy+4, cx+46, cy+36), radius=10*S,
+                        fill=theme, outline=OUTLINE, width=ow)
+    # 十字鍵
+    d.rounded_rectangle(R(cx-50, cy+16, cx-22, cy+26), radius=3*S, fill='white')
+    d.rounded_rectangle(R(cx-41, cy+7, cx-31, cy+35), radius=3*S, fill='white')
+    # 按鍵
+    d.ellipse(R(cx+24, cy+10, cx+38, cy+24), fill='white')
+    d.ellipse(R(cx+38, cy+22, cx+52, cy+36), fill='white')
+    # 焦點細節：從上方垂下的金色魚鉤（懸在手把上方，不相接）
+    d.line(R(cx+26, cy-58, cx+26, cy-18), fill=OUTLINE, width=3*S)
+    d.arc(R(cx-14, cy-38, cx+26, cy+2), start=0, end=195, fill=GOLD_D, width=ow+S)
+    d.line(R(cx-13, cy-23, cx-2, cy-35), fill=GOLD_D, width=ow)
+
+
+def illu_anklemonitor(d, R, S, cx, cy, theme):
+    """電子腳鐐：腳踝環＋發訊盒＋訊號波（危險分子監控／保安處分）"""
+    ow = 5*S
+    _dots(d, R, cx, cy, ((-72, -32, 3, GOLD), (-8, -52, 3, tint(theme, 0.5)),
+                         (46, -46, 3, theme)))
+    d.ellipse(R(cx-54, cy+48, cx-4, cy+58), fill=tint(theme, 0.18))
+    # 腳踝（簡化為一根直立的肢體，環從中穿過）
+    d.rounded_rectangle(R(cx-46, cy-52, cx-12, cy+46), radius=16*S,
+                        fill=tint(theme, 0.30), outline=OUTLINE, width=ow)
+    d.rounded_rectangle(R(cx-38, cy-42, cx-28, cy-6), radius=5*S, fill=tint(theme, 0.5))
+    # 腳鐐環（前層，橫跨肢體；環扣在右側）
+    d.rounded_rectangle(R(cx-56, cy-12, cx-2, cy+16), radius=11*S,
+                        fill=theme, outline=OUTLINE, width=ow)
+    for dx in (-40, -30, -20):
+        d.line(R(cx+dx, cy-12, cx+dx, cy+16), fill=shade(theme, 0.72), width=3*S)
+    # 焦點細節：環上的金色發訊盒＋號誌燈
+    d.rounded_rectangle(R(cx-8, cy-20, cx+24, cy+24), radius=9*S,
+                        fill=GOLD, outline=OUTLINE, width=ow)
+    d.ellipse(R(cx+1, cy-5, cx+15, cy+9), fill='white', outline=OUTLINE, width=3*S)
+    d.line(R(cx-1, cy+15, cx+17, cy+15), fill=GOLD_D, width=4*S)
+    # 訊號波（奇數三道）
+    for k, r in enumerate((15, 26, 37)):
+        d.arc(R(cx+24-r, cy+2-r, cx+24+r, cy+2+r), start=-56, end=56,
+              fill=theme if k % 2 == 0 else GOLD_D, width=4*S)
+
+
+
 ILLUS = dict(podium=illu_podium, flags=illu_flags, coins=illu_coins,
              idcard=illu_idcard, camera=illu_camera, trophy=illu_trophy,
              bankcard=illu_bankcard, checklist=illu_checklist,
@@ -1443,7 +1551,9 @@ ILLUS = dict(podium=illu_podium, flags=illu_flags, coins=illu_coins,
              timeline=illu_timeline, schoolbook=illu_schoolbook,
              transitticket=illu_transitticket, interestrate=illu_interestrate,
              flagsuae=illu_flagsuae, train=illu_train,
-             dealtag=illu_dealtag)
+             dealtag=illu_dealtag,
+             gastank=illu_gastank, overduebill=illu_overduebill,
+             gamepadhook=illu_gamepadhook, anklemonitor=illu_anklemonitor)
 
 # ── 版型 ────────────────────────────────────────────────────
 
@@ -1764,88 +1874,75 @@ def make_chart_card(spec, path, week_label='W?', date_label=''):
 # ════════════════════════════════════════════════════════════
 # 每週卡片內容（範本：W29）——之後每週改這一段即可
 # ════════════════════════════════════════════════════════════
-WEEK = 'W37'
-DATE_RANGE = '2026/09/07-09/13'
+WEEK = 'W38'
+DATE_RANGE = '2026/09/14-09/20'
 
 CARDS = [
  dict(
-  theme='#0D9488', badges=[('交通', True), ('荷包', False)], illu='transitticket',
-  title='德國月票明年再漲，9 月底就要揭曉',
-  subtitle='Deutschlandticket 2027 年起改由成本指數計價，最遲 9/30 公布',
-  stats=[('63 €', '2026 年現行月票價'),
-         ('66–67 €', '2027 年外界試算區間')],
+  theme='#C0392B', badges=[('油價', True), ('荷包', False)], illu='fuelpump',
+  title='汽油創史上新高，柴油逼近紀錄',
+  subtitle='ADAC 9/14 公布全國日均價，沙烏地阿拉伯輸油管遇襲推高油價',
+  stats=[('2.273 €', 'Super E10 每公升，新高'),
+         ('2.404 €', '柴油每公升，距紀錄 4.3 分')],
   bullets=[
-   ('計價方式變了', '交通部長會議（VMK）3 月在 Lindau 決議：2027 年起票價不再由政治協商拍板，改依成本指數自動計算。'),
-   ('指數怎麼組成', '人事成本 55%、能源成本（柴油與電力）20%、一般營運成本 25%；今年主要被調薪與柴油約一成的漲幅推上去。'),
-   ('外界算出多少', '德國環境救助協會（DUH）8 月初算 66.40 €，WDR 資料團隊算 66.80 €（年漲 6.1%）；兩者都還不是官方數字。'),
+   ('價格怎麼跳的', 'ADAC 統計的週日全國日均價：Super E10 每公升 2.273 €、柴油 2.404 €，柴油一天就漲了 3.5 分。'),
+   ('源頭在沙烏地', '繞開荷姆茲海峽、日運能 700 萬桶的東西向輸油管 9/11 遭無人機攻擊後關閉，布蘭特原油 9/15 收 108.75 美元。'),
+   ('每公升 3 € 有多近', '加油站利益協會（TIV）說高速公路休息站已出現這個價位；ADAC 反駁全國均價目前沒有這個跡象。'),
   ],
-  takeaway=('通勤提醒', '交通俱樂部 VCD 與社福團體 VdK 要求增設全國統一的 29 € 社會票，並要聯邦與各邦再補 4 億歐元緩和漲幅。'),
-  file='W37_圖卡1_德國月票2027漲價.png'),
+  takeaway=('政策動向', '綠黨（Grüne）要求課石油業超額利潤稅、發每人最高 250 € 補貼；Thorsten Frei（CDU）主張降汽柴油加值稅。'),
+  file='W38_圖卡1_汽油創史上新高.png'),
  dict(
-  theme='#2563EB', badges=[('邦選舉', True), ('9/20 投票', False)], illu='ballotbox',
-  title='兩場邦選舉 9/20 同日開票',
-  subtitle='柏林邦（Berlin）與梅克倫堡-佛波門邦（Mecklenburg-Vorpommern）',
-  stats=[('19.8%', '柏林邦 Linke 民調居首'),
-         ('35%', '梅克倫堡-佛波門邦 AfD')],
+  theme='#D4740E', badges=[('能源', True), ('暖氣費', False)], illu='gastank',
+  title='儲氣量只有五成五，供暖季要到了',
+  subtitle='9/14 德國儲氣設施填充率 55.93%，去年同日是 75.40%',
+  stats=[('55.93%', '儲氣填充率（去年 75.40%）'),
+         ('83.75 €', '歐洲批發氣價，每千度')],
   bullets=[
-   ('柏林邦四黨咬很緊', 'PolitPro 選情趨勢：左翼黨（Die Linke）19.8%、CDU 19.6%、AfD 17.9%、綠黨（Grüne）16.1%、SPD 12.9%。'),
-   ('選前十天的搜索', '9/9 檢調搜索柏林邦 SPD 首席候選人 Steffen Krach 住處與黨部；漢諾威檢方以受賄罪偵辦，Krach 方面否認。'),
-   ('東北部差距在縮小', 'infratest dimap 9 月民調：AfD 35%、SPD 32%、左翼黨 11%、CDU 8%、綠黨 5%；AfD 領先自 7 月以來收窄。'),
+   ('差了快 20 個百分點', '9/14 填充率 55.93%，去年同日 75.40%，少了 19.47 個百分點；存量約 136 太瓦時（TWh）。'),
+   ('法定目標達不到了', '11 月 1 日應達 80%。聯邦網路管理局局長 Klaus Müller 說已不可能，但強調供應安全無虞。'),
+   ('批發價回到 2022 年水準', '歐洲天然氣批發價每千度 83.75 €，今年以來漲近三倍；業界預估冬季落在 80 至 100 € 之間。'),
   ],
-  takeaway=('選前觀察', '柏林邦 CDU 改由財政參議員 Stefan Evers 掛帥，市長 Kai Wegner 因一月大停電的處理爭議退出。'),
-  file='W37_圖卡2_九二零雙邦選舉.png'),
+  takeaway=('因應建議', '倡議組織 INES 警告：填充落後若持續，嚴寒的 1 月可能出現超過 25% 的供應缺口。'),
+  file='W38_圖卡2_儲氣量與供暖季.png'),
  dict(
-  theme='#D4740E', badges=[('利率', True), ('房貸與存款', False)], illu='interestrate',
-  title='歐洲央行今年二度升息，9/16 生效',
-  subtitle='9/10 歐洲央行（EZB）三項政策利率各調高 1 碼，存款利率升到 2.50%',
-  stats=[('2.50%', '存款利率（原 2.25%）'),
-         ('3.3%', '歐元區通膨，目標是 2%')],
+  theme='#7C3AED', badges=[('家計', True), ('統計', False)], illu='overduebill',
+  title='380 萬人繳不出水電瓦斯帳單',
+  subtitle='聯邦統計局 9/14 公布：佔人口 4.6%，租屋家庭比例接近自有住宅兩倍',
+  stats=[('380 萬人', '積欠帳單家庭中的人口'),
+         ('25.4 萬件', '2025 年斷電，年增 3.5%')],
   bullets=[
-   ('調了哪三個利率', '存款機制利率 2.25% 升到 2.50%、主要再融資利率 2.65%、隔夜貸款利率 2.90%，9/16 生效。'),
-   ('為什麼還要升', '歐元區通膨率 3.3%，遠高於 2% 目標。總裁 Lagarde：通膨「會先變糟才會變好」。'),
-   ('對你的錢包', '十年期德國公債殖利率升到 3.5%、為 2011 年以來最高，房貸利率承壓；銀行預期存款利率年底止漲。'),
+   ('數字本身其實在改善', '聯邦統計局（Destatis）依歐盟所得與生活狀況調查（EU-SILC）：2025 年佔人口 4.6%，低於 2024 年的 5.0%。'),
+   ('租屋族壓力明顯較大', '自有住宅家庭 3.3% 積欠、租屋家庭 5.8%；今年 8 月住房附加費用又比去年同月漲 3.1%。'),
+   ('斷電件數仍在往上', '聯邦網路管理局：2025 年斷電近 25.4 萬件、年增約 3.5%；斷氣約 3.4 萬件、微減約 1%。'),
   ],
-  takeaway=('理財提醒', '有房貸利率鎖定期（Zinsbindung）將到期者，可提早試算再融資（Umschuldung）；活存利率調升通常慢於升息。'),
-  file='W37_圖卡3_歐洲央行二度升息.png'),
+  takeaway=('數據解讀', '8 月批發價年增 6.8%，是 2023 年 2 月以來最大漲幅，礦油產品更貴了 36.1%。'),
+  file='W38_圖卡3_繳不出水電瓦斯帳單.png'),
  dict(
-  theme='#7C3AED', badges=[('教育', True), ('家庭', False)], illu='schoolbook',
-  title='國際學力調查：德國史上最差，台灣前四',
-  subtitle='OECD 每三年一次的 PISA 調查 9/8 公布，德國三科同創開辦以來最低',
-  stats=[('465 分', '德國閱讀（2022 年 480 分）'),
-         ('508 分', '台灣閱讀，全球第 3 名')],
+  theme='#2563EB', badges=[('治安', True), ('家長注意', False)], illu='gamepadhook',
+  title='犯罪集團上遊戲平台吸收未成年人',
+  subtitle='Dobrindt 與聯邦刑事警察局 9/15 公布 2025 年組織犯罪態勢報告',
+  stats=[('683 件', '偵辦案件，年增 5.6%'),
+         ('7,988 人', '嫌疑人，2017 年來最多')],
   bullets=[
-   ('PISA 是什麼', 'OECD 主辦、每三年一次的國際學生能力評量，測 15 歲學生的閱讀、數學、科學素養。'),
-   ('德國三科一起破底', '閱讀 465 分、數學 464 分、科學 486 分，全低於 2022 年的 480／475／492；閱讀與數學各約三分之一的學生未達基礎線。'),
-   ('台灣同期創新高', '台灣數學 546 分、科學 540 分並列全球第 4，閱讀 508 分居第 3，皆為歷屆最佳。'),
+   ('怎麼找上孩子的', '聯邦刑事警察局（BKA）局長 Holger Münch：集團透過網路服務、遊戲平台與通訊軟體吸收未成年人，主使多在境外。'),
+   ('「犯罪即服務」成形', '683 件中有 140 件、約五分之一出現 Crime-as-a-Service：資訊、物流、洗錢甚至暴力都能外包。'),
+   ('損失數字要看清楚', '查明損失自 16 億歐元升到 27.8 億歐元，但逾 10 億歐元來自單一龐氏騙局案。'),
   ],
-  takeaway=('教養提醒', '社經落差是 2000 年開辦以來最大；聯邦教育部長 Prien（CDU）稱結果「dramatisch（嚴峻）」。'),
-  file='W37_圖卡4_PISA德國史上最差.png'),
+  takeaway=('家長提醒', '孩子在遊戲或通訊軟體上被陌生人以「輕鬆賺錢」邀約，那通常就是招募的第一步。'),
+  file='W38_圖卡4_組織犯罪吸收未成年人.png'),
  dict(
-  theme='#2E8B57', badges=[('財政', True), ('聯邦議院', False)], illu='reichstag',
-  title='預算週：2027 年支出 5,554 億歐元',
-  subtitle='9/8 Klingbeil 向聯邦議院提出 2027 年預算案，9/9 總辯論成朝野對決',
-  stats=[('5,554 億歐元', '2027 年支出（今年 5,245 億）'),
-         ('1,097 億歐元', '國防核心預算，年增三成')],
+  theme='#0D9488', badges=[('反恐', True), ('法制', False)], illu='anklemonitor',
+  title='內閣通過反恐十點計畫',
+  subtitle='9/16 內政部長 Dobrindt 與司法部長 Hubig 提出，回應柏林 CSD 恐攻',
+  stats=[('10 項', '措施橫跨刑法與監控'),
+         ('1 年', '持刀重傷害最低刑期')],
   bullets=[
-   ('錢往哪裡去', '國防核心預算約 1,097 億歐元，比 2026 年多三分之一；另編 116 億歐元援助烏克蘭。'),
-   ('債務再創高', '債務煞車內的淨借款 1,187 億歐元（今年 980 億）；加計三大特別基金，新增舉債約 2,000 億歐元。'),
-   ('反對聲音', '綠黨（Grüne）預算專家 Paula Piechotta 批「扛了創紀錄的債務，錢卻沒到橋梁與鐵軌上」。'),
+   ('刑法這一塊', '以刀具等危險工具造成生命或重傷危險的攻擊，訂 1 年最低刑期；加重恐怖宣傳與募款刑責。'),
+   ('監控這一塊', '對列管的危險分子（Gefährder）更常用電子腳鐐；IP 位址與連線資料調取權擴及各邦機關。'),
+   ('少年刑法要說明理由', '法院對年輕成人適用少年刑法（Jugendstrafrecht）今後須明確交代理由；另強化去激進化工作。'),
   ],
-  takeaway=('政策觀察', '9/9 總辯論 AfD 的 Weidel 稱「黑紅完了」，Merz 反擊指 AfD 想依出身與膚色進行「種族清洗」。'),
-  file='W37_圖卡5_預算週與總辯論.png'),
- dict(
-  theme='#0D9488', badges=[('外交', True), ('投資', False)], illu='flagsuae',
-  title='阿聯首度國事訪問，加碼投資 400 億歐元',
-  subtitle='9/10 阿聯總統 Mohammed bin Zayed 訪柏林，簽逾 40 項雙邊協議',
-  stats=[('400 億歐元', '阿聯加碼投資金額'),
-         ('1 GW', '規劃中的 AI 資料中心容量')],
-  bullets=[
-   ('這是第一次', '阿拉伯聯合大公國總統首度對德國國事訪問，由總統 Steinmeier 以軍禮迎接，隨後會晤 Merz。'),
-   ('錢投在哪', '400 億歐元是在既有 340 億歐元之上加碼，投向 AI 資料中心與尖端科技，並設德國－阿聯投資理事會。'),
-   ('不只有生意', '協議還涵蓋外交、安全與軍備政策；人權觀察（HRW）要求德國一併處理阿聯的人權狀況與其在蘇丹戰爭中的角色。'),
-  ],
-  takeaway=('觀察重點', '德國正把「投資引進來」當成景氣對策，但把 AI 基礎設施與外資深度綁定，也是一道戰略依賴的新考題。'),
-  file='W37_圖卡6_阿聯國事訪問投資.png'),
+  takeaway=('政策觀察', '柏林女權運動者 Seyran Ateş 批評：計畫幾乎全押刑法與監控，對如何及早阻斷激進化著墨太少。'),
+  file='W38_圖卡5_反恐十點計畫.png'),
 ]
 
 # ── 邦名德文全名檢查 ────────────────────────────────────────
