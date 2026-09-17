@@ -1435,10 +1435,12 @@
   <li><strong>先拆單再結帳</strong>：購物車 120 € 分成兩筆 60 €，各回 1.2 €、合計 2.4 €；硬湊成一筆則一毛都沒有。官方 FAQ 白紙黑字舉例，75.01 € 的交易一毛都拿不到。</li>
   <li><strong>日常線上消費就能刷滿</strong>：超市線上採買、藥妝、外送訂餐、訂票與月費訂閱都算線上付款。兩個月累積 750 €（平均每月 375 €）對多數家庭並不難。</li>
   <li><strong>刷「綁定過的那張卡」</strong>：一個帳號最多綁 5 張，結帳時務必選到已註冊的那張，否則不追蹤。</li>
-  <li><strong>錢包與行動支付保守處理</strong>：條款只寫「線上付款」，沒有針對 PayPal、Apple Pay／Google Pay 的代碼化卡號（Token）另做規範。要確保追蹤正確，最穩的做法是<strong>結帳時直接輸入卡號</strong>，而不是透過第三方錢包間接扣款。</li>
+  <li><strong>PayPal 與行動支付算不算？分兩種情況</strong>：Visa 在<a href="https://www.visa.de/promotions/clp-autumn-25/faq.html" target="_blank" rel="noopener noreferrer">上一檔同類線上回饋活動的官方 FAQ</a> 裡寫得很清楚——「<em>Wenn Ihre Visa Karte in einer Bezahl-App oder bei einem Onlinebezahlsystem hinterlegt ist, gelten auch diese als qualifizierte Transaktionen</em>」：<strong>只要 Visa 卡是該支付工具裡設定的付款來源，透過 PayPal、Apple Pay、Google Pay、Klarna 結帳同樣算</strong>。但同一則 FAQ 也明講，用 PayPal 的「<strong>發送款項（Geld senden）</strong>」功能付錢<strong>不算</strong>，「<em>weder an eine natürliche Person noch an einen Händler als Zahlung für ein Produkt oder eine Dienstleistung</em>」——轉帳給個人或給商家買東西都一樣不給。
+  <br>實務上要注意兩件事：<strong>①</strong> 先到 PayPal 設定裡把偏好付款來源改成你註冊過的那張 Visa 卡，否則 PayPal 會優先扣餘額或銀行帳戶（Lastschrift），那筆根本沒有 Visa 交易、自然沒有回饋；<strong>②</strong> 買東西就用商家結帳頁的正常 PayPal 付款流程，不要用「發送款項」轉給賣家。
+  <br><em>查證說明：這條 FAQ 出自 Visa 德國 2025 年秋季線上回饋檔（9/16–10/14，3%／上限 50 €）的活動頁；本次秋季檔的條款與 visa.de/bonus 的 FAQ 都沒有重述這一條，後者只寫「哪些付款算，依各活動條款而定」。同一組織、同類型活動的官方解釋參考價值高，但不是本檔的白紙黑字。</em></li>
   <li><strong>先搶先贏</strong>：65 萬歐元總預算全體共用，預算用完活動提前結束。</li>
 </ul>
-<p class="post-sources">📚 來源：<a href="https://www.visa.de/bonus/terms-and-conditions/ecommerce/september.html" target="_blank" rel="noopener noreferrer">秋季檔官方活動條款</a></p>
+<p class="post-sources">📚 來源：<a href="https://www.visa.de/bonus/terms-and-conditions/ecommerce/september.html" target="_blank" rel="noopener noreferrer">秋季檔官方活動條款</a> · <a href="https://www.visa.de/promotions/clp-autumn-25/faq.html" target="_blank" rel="noopener noreferrer">Visa｜2025 秋季線上回饋檔官方 FAQ（PayPal／Apple Pay 認列說明）</a></p>
 
 <img src="assets/images/2026/visa/VisaBonusHerbst2026_圖卡2_誰能參加.png" alt="Visa Bonus 參加資格：年滿 18、住在德國、德國發行 Visa 卡；排除 Prepaid、V PAY、Klarna">
 <h2 id="eligibility">誰能參加？哪些卡直接出局？</h2>
@@ -1508,6 +1510,7 @@
   <li><a href="https://www.visa.de/bonus.html" target="_blank" rel="noopener noreferrer">Visa Bonus 官方活動頁（visa.de/bonus）</a></li>
   <li><a href="https://www.visa.de/bonus/terms-and-conditions/ecommerce/september.html" target="_blank" rel="noopener noreferrer">Visa｜秋季線上購物檔活動條款（Teilnahmebedingungen E-Commerce September）</a></li>
   <li><a href="https://www.visa.de/bonus/terms-and-conditions/crossborder/july.html" target="_blank" rel="noopener noreferrer">Visa｜夏季檔活動條款（Teilnahmebedingungen July）</a></li>
+  <li><a href="https://www.visa.de/promotions/clp-autumn-25/faq.html" target="_blank" rel="noopener noreferrer">Visa｜2025 秋季線上回饋檔官方 FAQ（PayPal、Apple Pay、Klarna 認列說明）</a></li>
   <li><a href="https://www.mydealz.de/deals/2-cashback-fur-visa-zahlungen-im-ausland-online-offline-2807402" target="_blank" rel="noopener noreferrer">mydealz｜2% Cashback für Visa-Zahlungen im Ausland（夏季檔討論串）</a></li>
   <li><a href="https://www.bbva.de/privat/produkte/karten/debitkarte.html" target="_blank" rel="noopener noreferrer">BBVA 德國官網｜Debitkarte（Mastercard）</a></li>
 </ul>]]></content:encoded>

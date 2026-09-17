@@ -48,7 +48,9 @@ Visa Bonus 秋季線上購物檔「KLICK. BEZAHLT. CASHBACK.」2% 回饋
 ▪️ 拆單：購物車 120 € 分成兩筆 60 €，各回 1.2 €；硬湊成一筆則一毛都沒有
 ▪️ 超市線上採買、藥妝、外送訂餐、訂票與月費訂閱都算，兩個月刷 750 € 並不難
 ▪️ 認列看【入帳日（Wertstellungsdatum）】而不是下單日，且必須落在 11/15 前——網購常常出貨才請款，最後一週下的單很可能落空
-▪️ 結帳要刷「綁定過的那張卡」；透過 PayPal 等錢包間接扣款條款沒有明文規範，保險起見直接輸卡號
+▪️ 【PayPal 也算，但有條件】官方 FAQ 明講：Visa 卡只要是支付工具裡設定的付款來源，透過 PayPal、Apple Pay、Google Pay、Klarna 結帳同樣算
+▪️ 但 PayPal 的【「發送款項（Geld senden）」不算】——轉給個人或轉給賣家買東西都一樣沒有；買東西請走商家結帳頁的正常 PayPal 流程
+▪️ 先去 PayPal 設定把偏好付款來源改成註冊過的那張 Visa 卡，否則會優先扣餘額或銀行帳戶，那筆沒有 Visa 交易、自然沒回饋
 
 📖 延伸閱讀（這幾篇你可能會喜歡）
 ▪️ 完整教學＋官方條款逐條整理：https://taiwanese-in-germany.com/posts/visa-bonus-cashback-2026.html
@@ -57,6 +59,7 @@ Visa Bonus 秋季線上購物檔「KLICK. BEZAHLT. CASHBACK.」2% 回饋
 📚 資料來源：
 ▪️ Visa Bonus 官方活動頁 https://www.visa.de/bonus.html
 ▪️ 秋季檔官方活動條款 https://www.visa.de/bonus/terms-and-conditions/ecommerce/september.html
+▪️ Visa 官方 FAQ（PayPal／Apple Pay 認列說明，出自 2025 秋季同類檔期）https://www.visa.de/promotions/clp-autumn-25/faq.html
 
 #德國 #德國生活 #在德台灣人 #德國知識小種子 #省錢 #Cashback #Visa #現金回饋 #德國網購 #網購省錢
 
@@ -84,6 +87,8 @@ Visa Bonus 秋季線上購物檔「KLICK. BEZAHLT. CASHBACK.」2% 回饋
 ❌ N26、BBVA 是 Mastercard，用不了
 
 💡 領滿的技巧：購物車 120 € 拆成兩筆 60 €，各回 1.2 €；硬湊一筆則一毛都沒有。認列看入帳日而非下單日、且要在 11/15 前——網購常常出貨才請款，最後一週下單很可能落空。
+
+💳 PayPal 算嗎？官方 FAQ 說：Visa 卡只要是 PayPal／Apple Pay 裡設定的付款來源就算。但「發送款項（Geld senden）」轉給賣家不算，買東西要走商家結帳頁的正常流程；也記得把 PayPal 偏好付款來源設成註冊過的那張卡，別讓它扣餘額或銀行帳戶。
 
 📖 完整教學、官方條款與註冊截圖 → FB 粉專或網站（連結在 bio）
 
