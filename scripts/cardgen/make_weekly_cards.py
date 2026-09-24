@@ -1530,6 +1530,61 @@ def illu_anklemonitor(d, R, S, cx, cy, theme):
 
 
 
+def illu_fueldiscount(d, R, S, cx, cy, theme):
+    """價格牌向下箭頭＋金色加油槍（燃油稅調降／油價回落）"""
+    ow = 5*S
+    _dots(d, R, cx, cy, ((-70, -44, 3, GOLD), (-38, -54, 3, tint(theme, 0.5)),
+                         (70, 28, 3, theme)))
+    d.ellipse(R(cx-56, cy+46, cx+30, cy+58), fill=tint(theme, 0.18))
+    # 價格牌：主題色牌身＋白色內板
+    d.rounded_rectangle(R(cx-58, cy-42, cx+26, cy+44), radius=10*S,
+                        fill=theme, outline=OUTLINE, width=ow)
+    d.rounded_rectangle(R(cx-47, cy-31, cx+15, cy+33), radius=6*S,
+                        fill='white', outline=OUTLINE, width=3*S)
+    # 焦點細節：白板內的向下箭頭（降價）
+    ax = cx - 16
+    d.line(R(ax, cy-22, ax, cy+8), fill=theme, width=ow+2*S)
+    d.polygon(R(ax-15, cy+4, ax+15, cy+4, ax, cy+26), fill=theme,
+              outline=OUTLINE, width=2*S)
+    # 金色 € 幣（壓在牌右上角）
+    ex, ey, er = cx+30, cy-34, 18
+    d.ellipse(R(ex-er, ey-er, ex+er, ey+er), fill=GOLD, outline=OUTLINE, width=ow)
+    draw_mixed(d, R(ex, ey-13), '€', 22*S, OUTLINE, bold=True, anchor='center')
+    # 加油槍（金色）：軟管＋槍身＋粗噴嘴＋扳機
+    d.arc(R(cx+4, cy+18, cx+40, cy+54), start=270, end=360, fill=OUTLINE, width=ow)
+    d.rounded_rectangle(R(cx+20, cy+4, cx+62, cy+24), radius=8*S,
+                        fill=GOLD, outline=OUTLINE, width=ow)
+    d.polygon(R(cx+56, cy+6, cx+78, cy-4, cx+78, cy+8, cx+58, cy+18),
+              fill=GOLD_D, outline=OUTLINE, width=3*S)
+    d.rounded_rectangle(R(cx+26, cy+22, cx+42, cy+32), radius=4*S,
+                        fill=GOLD_D, outline=OUTLINE, width=3*S)
+
+def illu_protestsign(d, R, S, cx, cy, theme):
+    """舉起的抗議標語牌＋金色擴音器（勞工行動日／罷工）"""
+    ow = 5*S
+    _dots(d, R, cx, cy, ((-70, -40, 3, theme), (-6, -54, 3, GOLD),
+                         (72, -20, 3, tint(theme, 0.5))))
+    d.ellipse(R(cx-58, cy+46, cx+34, cy+58), fill=tint(theme, 0.18))
+    # 舉牌的桿（後層）
+    d.line(R(cx-22, cy+48, cx-10, cy-14), fill=OUTLINE, width=6*S)
+    # 標語牌：略微傾斜
+    sign = [(-60, -44), (30, -36), (26, 16), (-64, 8)]
+    d.polygon(R(*[v for (dx, dy) in sign for v in (cx+dx, cy+dy)]),
+              fill=theme, outline=OUTLINE, width=ow)
+    # 牌面白色字行（三行，奇數韻律）
+    for k, (x1, x2) in enumerate(((-48, 14), (-48, 2), (-48, 18))):
+        yy = cy - 26 + k*14
+        d.line(R(cx+x1, yy, cx+x2, yy+1), fill='white', width=5*S)
+    # 焦點細節：金色擴音器＋兩道音波
+    mx, my = cx+48, cy+26
+    d.polygon(R(mx-16, my-6, mx+4, my-22, mx+4, my+14, mx-16, my+6),
+              fill=GOLD, outline=OUTLINE, width=ow)
+    d.rounded_rectangle(R(mx-28, my-4, mx-14, my+8), radius=3*S,
+                        fill=GOLD_D, outline=OUTLINE, width=3*S)
+    for r in (12, 20):
+        d.arc(R(mx+10-r, my-4-r, mx+10+r, my-4+r), start=300, end=60,
+              fill=theme, width=4*S)
+
 ILLUS = dict(podium=illu_podium, flags=illu_flags, coins=illu_coins,
              idcard=illu_idcard, camera=illu_camera, trophy=illu_trophy,
              bankcard=illu_bankcard, checklist=illu_checklist,
@@ -1543,6 +1598,7 @@ ILLUS = dict(podium=illu_podium, flags=illu_flags, coins=illu_coins,
              harvest=illu_harvest, fuelpump=illu_fuelpump,
              crane=illu_crane, mergebenefits=illu_mergebenefits,
              heatlaw=illu_heatlaw, gavel=illu_gavel,
+             fueldiscount=illu_fueldiscount, protestsign=illu_protestsign,
              tornado=illu_tornado, wildfire=illu_wildfire,
              solarpanel=illu_solarpanel, evcharge=illu_evcharge,
              carplant=illu_carplant, databreach=illu_databreach,
@@ -1874,101 +1930,93 @@ def make_chart_card(spec, path, week_label='W?', date_label=''):
 # ════════════════════════════════════════════════════════════
 # 每週卡片內容（範本：W29）——之後每週改這一段即可
 # ════════════════════════════════════════════════════════════
-WEEK = 'W38'
-DATE_RANGE = '2026/09/14-09/20'
+WEEK = 'W39'
+DATE_RANGE = '2026/09/21-09/27'
 
 CARDS = [
  dict(
-  theme='#C0392B', badges=[('油價', True), ('荷包', False)], illu='fuelpump',
-  title='汽油創史上新高，柴油逼近紀錄',
-  subtitle='ADAC 9/14 公布全國日均價，沙烏地阿拉伯輸油管遇襲推高油價',
-  stats=[('2.273 €', 'Super E10 每公升，新高'),
-         ('2.404 €', '柴油每公升，距紀錄 4.3 分')],
+  theme='#2E8B57', badges=[('油稅調降', True), ('10/1 上路', False)], illu='fueldiscount',
+  title='燃油稅每公升調降 14 分',
+  subtitle='內閣 9/22 通過草案，含加值稅約降 17 分，只適用 10 月到 12 月',
+  stats=[('17 分', '每公升，含加值稅'),
+         ('8.50 €', '加滿 50 公升最多省')],
   bullets=[
-   ('價格怎麼跳的', 'ADAC 統計的週日全國日均價：Super E10 每公升 2.273 €、柴油 2.404 €，柴油一天就漲了 3.5 分。'),
-   ('源頭在沙烏地', '繞開荷姆茲海峽、日運能 700 萬桶的東西向輸油管 9/11 遭無人機攻擊後關閉，布蘭特原油 9/15 收 108.75 美元。'),
-   ('每公升 3 € 有多近', '加油站利益協會（TIV）說高速公路休息站已出現這個價位；ADAC 反駁全國均價目前沒有這個跡象。'),
+   ('降的是能源稅', '聯邦與各邦 9/18 談定、內閣 9/22 通過：汽柴油能源稅（Energiesteuer）每公升降 14 分，加上加值稅約 17 分。'),
+   ('只有三個月', '適用 10 月 1 日至 12 月 31 日；減稅規模約 25 億歐元，聯邦與各邦各半。聯邦參議院（Bundesrat）預定 9/25 表決。'),
+   ('不一定全降到油價', '聯邦卡特爾署統計今年 5 至 6 月同樣的減稅：柴油 16.7 分裡只有 13.8 分（82.6%）到消費者身上，Super E5 更只有 77.8%。'),
   ],
-  takeaway=('政策動向', '綠黨（Grüne）要求課石油業超額利潤稅、發每人最高 250 € 補貼；Thorsten Frei（CDU）主張降汽柴油加值稅。'),
-  file='W38_圖卡1_汽油創史上新高.png'),
+  takeaway=('加油提醒', '上路初期價格最亂——上次減稅期間加油站毛利反而擴大，柴油約多 3.3 分，多比幾家再加。'),
+  file='W39_圖卡1_燃油稅調降十七分.png'),
  dict(
-  theme='#D4740E', badges=[('能源', True), ('暖氣費', False)], illu='gastank',
-  title='儲氣量只有五成五，供暖季要到了',
-  subtitle='9/14 德國儲氣設施填充率 55.93%，去年同日是 75.40%',
-  stats=[('55.93%', '儲氣填充率（去年 75.40%）'),
-         ('83.75 €', '歐洲批發氣價，每千度')],
+  theme='#2563EB', badges=[('邦選舉', True), ('9/20 結果', False)], illu='reichstag',
+  title='左翼黨拿下柏林，CDU 掉出邦議會',
+  subtitle='9/20 兩邦同日改選，CDU 三週內第三次重挫',
+  stats=[('25.7%', '柏林邦左翼黨，第一大黨'),
+         ('4.9%', '梅克倫堡-佛波門邦 CDU')],
   bullets=[
-   ('差了快 20 個百分點', '9/14 填充率 55.93%，去年同日 75.40%，少了 19.47 個百分點；存量約 136 太瓦時（TWh）。'),
-   ('法定目標達不到了', '11 月 1 日應達 80%。聯邦網路管理局局長 Klaus Müller 說已不可能，但強調供應安全無虞。'),
-   ('批發價回到 2022 年水準', '歐洲天然氣批發價每千度 83.75 €，今年以來漲近三倍；業界預估冬季落在 80 至 100 € 之間。'),
+   ('柏林邦（Berlin）', '左翼黨（Die Linke）25.7% 首度居首，CDU 18.8%、AfD 16.3%、綠黨（Grüne）14.3%、SPD 12.1%，BSW 未過門檻。'),
+   ('東北部的歷史性結果', '梅克倫堡-佛波門邦（Mecklenburg-Vorpommern）AfD 38.2% 居首、SPD 35.5% 緊追；CDU 只剩 4.9%，史上首次落選。'),
+   ('誰來組閣', '柏林由左翼黨的 Elif Eralp 爭市長位；東北部由邦總理 Schwesig（SPD）邀綠黨與左翼黨談紅紅綠。各黨均排除 AfD。'),
   ],
-  takeaway=('因應建議', '倡議組織 INES 警告：填充落後若持續，嚴寒的 1 月可能出現超過 25% 的供應缺口。'),
-  file='W38_圖卡2_儲氣量與供暖季.png'),
+  takeaway=('政治觀察', 'Merz 稱結果是「災難」；圖林根邦（Thüringen）CDU 主席 Mario Voigt 要求對聯邦政策「總體盤點」。'),
+  file='W39_圖卡2_柏林左翼黨第一CDU出局.png'),
  dict(
-  theme='#2563EB', badges=[('邦選舉', True), ('9/20 投票', False)], illu='ballotbox',
-  title='9/20 雙邦改選：柏林四黨難分高下',
-  subtitle='柏林邦與梅克倫堡-佛波門邦（Mecklenburg-Vorpommern）同日改選',
-  stats=[('19.7%', '柏林邦 CDU 與左翼黨並列'),
-         ('37%', '梅克倫堡-佛波門邦 AfD')],
-  bullets=[
-   ('柏林邦（Berlin）咬得很緊', '九月綜合民調：CDU 與左翼黨（Die Linke）各約 19.7%、AfD 18%、綠黨（Grüne）16%、SPD 12.9%。'),
-   ('組閣算術：147 席、過半 74 席', '紅綠紅（SPD＋綠黨＋左翼黨）約 81 席可過半；CDU 領銜的組合在數學上同樣有機會。'),
-   ('東北部的領先在收窄', 'ZDF 民調 AfD 37%、只領先 SPD 3 點；PolitPro 趨勢 AfD 35.9%、SPD 30%、左翼黨 11%、CDU 9%。'),
+  kind='chart', theme='#2563EB', badges=[('選舉數據', True), ('2021 對照 2026', False)],
+  title='梅克倫堡-佛波門邦的五年',
+  subtitle='兩屆邦議會選舉得票率對照（Mecklenburg-Vorpommern）',
+  label_old='2021 年', label_new='2026 年', vmax=46,
+  rows=[
+   ('AfD',   16.7, 38.2, '+21.5'),
+   ('SPD',   39.6, 35.5, '-4.1'),
+   ('Linke',  9.9,  6.5, '-3.4'),
+   ('Grüne',  6.3,  5.7, '-0.6'),
+   ('CDU',   13.3,  4.9, '-8.4'),
+   ('FDP',    5.8,  1.0, '-4.8'),
   ],
-  takeaway=('結果推估', '本站推估：AfD 可能成梅克倫堡-佛波門邦第一大黨，但各黨排除合作，Schwesig 續任機率仍高；柏林邦在誤差內難定。'),
-  file='W38_圖卡3_九二零雙邦改選民調.png'),
+  notes=[
+   '2026 年為初步官方結果；2021 年為官方最終結果。投票率自 70.8% 升到 78.1%。',
+   '新議會 71 席：AfD 32、SPD 29、Grüne 5、Linke 5；過半需 36 席。',
+  ],
+  file='W39_圖卡3_兩屆選舉得票對照.png'),
  dict(
-  theme='#7C3AED', badges=[('汽車產業', True), ('裁員', False)], illu='carplant',
-  title='VW 十萬個職位：這數字怎麼來的',
-  subtitle='9/3 監事會全票通過「未來計畫」，2030 年底前全集團減 10 萬個職位',
-  stats=[('10 萬個', '職位，約全球員工 15%'),
-         ('1,350 億歐元', '2027 至 2031 年投資研發')],
+  theme='#0D9488', badges=[('社會保險', True), ('2027 年', False)], illu='coins',
+  title='健保投保上限每月調高 562.50 €',
+  subtitle='聯邦勞動部 9/21 提出 2027 年社會保險計算基準草案',
+  stats=[('6,375 €', '健保投保上限，每月'),
+         ('9.7%', '調幅，近年最大')],
   bullets=[
-   ('數字是疊出來的', '不是一次砍 10 萬人：在 2024 年底已議定的 5 萬個之上，9/3 監事會再通過 5 萬個，合計約全球員工 15%。'),
-   ('四座廠列入檢討', '漢諾威（Hannover）、Emden、Zwickau 與 Audi 的 Neckarsulm，長期前景「無法保證」，約 4 萬名員工。'),
-   ('內部人士：實際會少很多', 'WirtschaftsWoche 引述 VW 內部人士稱實際裁減「明顯低於 10 萬」；公司強調優先用退休與自然離職。'),
+   ('上限是什麼', '投保上限（Beitragsbemessungsgrenze）以上的薪資不計收保費。健保與長照上限明年從每月 5,812.50 € 升到 6,375 €。'),
+   ('為什麼跳這麼多', '兩件事疊加：依 2025 年人均薪資成長 4.38% 的常規調整，加上七月健保費率穩定法額外拉高每月 300 €。'),
+   ('誰會多付', '只影響月薪超過舊上限的人，低於 5,812.50 € 者保費不變；聯邦勞動部估約 630 萬名勞工受影響。'),
   ],
-  takeaway=('產業觀察', '聯邦統計局：2026 上半年底德國汽車業 69.15 萬人，年減 4.23 萬（-5.8%），為 2005 年以來新低。'),
-  file='W38_圖卡4_VW十萬個職位.png'),
+  takeaway=('試算提醒', '本站試算：以健保 14.6% 加平均附加費 2.9% 計，跨過上限者全年約多 1,180 €、勞資各半。草案待通過。'),
+  file='W39_圖卡4_健保投保上限調高.png'),
  dict(
-  theme='#0D9488', badges=[('家計', True), ('統計', False)], illu='overduebill',
-  title='380 萬人繳不出水電瓦斯帳單',
-  subtitle='聯邦統計局 9/14 公布：佔人口 4.6%，租屋家庭比例接近自有住宅兩倍',
-  stats=[('380 萬人', '積欠帳單家庭中的人口'),
-         ('25.4 萬件', '2025 年斷電，年增 3.5%')],
+  theme='#D4740E', badges=[('汽車產業', True), ('勞資', False)], illu='protestsign',
+  title='17.5 萬人上街反對裁員',
+  subtitle='IG Metall 9/21 全國行動日，約 280 個地點同步行動',
+  stats=[('17.5 萬人', '參與全國行動日'),
+         ('380 萬人', '十月薪資談判適用')],
   bullets=[
-   ('數字本身其實在改善', '聯邦統計局（Destatis）依歐盟所得與生活狀況調查（EU-SILC）：2025 年佔人口 4.6%，低於 2024 年的 5.0%。'),
-   ('租屋族壓力明顯較大', '自有住宅家庭 3.3% 積欠、租屋家庭 5.8%；今年 8 月住房附加費用又比去年同月漲 3.1%。'),
-   ('斷電件數仍在往上', '聯邦網路管理局：2025 年斷電近 25.4 萬件、年增約 3.5%；斷氣約 3.4 萬件、微減約 1%。'),
+   ('誰在行動', 'IG Metall 9/21 發動全國行動日：除 Wolfsburg、斯圖加特、Ingolstadt、慕尼黑等重鎮，全德約 280 個地點同步。'),
+   ('訴求是什麼', '口號「Zukunft statt Kahlschlag」（要未來，不要砍到見骨）：反對裁員、關廠與資方延長工時的要求。'),
+   ('戰場在十月', '金屬電子業各區談判 10/7 起開桌，IG Metall 要求加薪 5%、適用約 380 萬人；和平義務 10/31 到期。'),
   ],
-  takeaway=('數據解讀', '8 月批發價年增 6.8%，是 2023 年 2 月以來最大漲幅，礦油產品更貴了 36.1%。'),
-  file='W38_圖卡5_繳不出水電瓦斯帳單.png'),
+  takeaway=('產業背景', '德國汽車業從業人數 69.15 萬人，為 2005 年統計以來最低；福斯（Volkswagen）十萬個職位計畫是導火線之一。'),
+  file='W39_圖卡5_IG Metall全國行動日.png'),
  dict(
-  theme='#C0392B', badges=[('治安', True), ('家長注意', False)], illu='gamepadhook',
-  title='犯罪集團上遊戲平台吸收未成年人',
-  subtitle='Dobrindt 與聯邦刑事警察局 9/15 公布 2025 年組織犯罪態勢報告',
-  stats=[('683 件', '偵辦案件，年增 5.6%'),
-         ('7,988 人', '嫌疑人，2017 年來最多')],
+  theme='#7C3AED', badges=[('社會給付', True), ('十點計畫', False)], illu='checklist',
+  title='內閣通過社會給付濫用十點計畫',
+  subtitle='9/23 勞動部長 Bas 與內政部長 Dobrindt 共同提出，年底前立法',
+  stats=[('5 年', '歐盟公民領基礎保障門檻'),
+         ('2 週', '過渡給付，原為 1 個月')],
   bullets=[
-   ('怎麼找上孩子的', '聯邦刑事警察局（BKA）局長 Holger Münch：集團透過網路服務、遊戲平台與通訊軟體吸收未成年人，主使多在境外。'),
-   ('「犯罪即服務」成形', '683 件中有 140 件、約五分之一出現 Crime-as-a-Service：資訊、物流、洗錢甚至暴力都能外包。'),
-   ('損失數字要看清楚', '查明損失自 16 億歐元升到 27.8 億歐元，但逾 10 億歐元來自單一龐氏騙局案。'),
+   ('針對跨境濫用', '強化機關間資料交換、加嚴查核，並規定歐盟公民須合法居留滿 5 年才能領基礎保障（Grundsicherung）。'),
+   ('通緝中不給付', '有逮捕令在身、規避服刑者不得領 SGB II／XII 給付；無合法居留的歐盟公民過渡給付從 1 個月砍到 2 週。'),
+   ('也管房東與雇主', '要更一貫查辦「破敗出租屋」（Schrottimmobilien）：把勞工塞進惡劣住房、再抽成。年底前實施。'),
   ],
-  takeaway=('家長提醒', '孩子在遊戲或通訊軟體上被陌生人以「輕鬆賺錢」邀約，那通常就是招募的第一步。'),
-  file='W38_圖卡6_組織犯罪吸收未成年人.png'),
- dict(
-  theme='#2E8B57', badges=[('反恐', True), ('法制', False)], illu='anklemonitor',
-  title='內閣通過反恐十點計畫',
-  subtitle='9/16 內政部長 Dobrindt 與司法部長 Hubig 提出，回應柏林 CSD 恐攻',
-  stats=[('10 項', '措施橫跨刑法與監控'),
-         ('1 年', '持刀重傷害最低刑期')],
-  bullets=[
-   ('刑法這一塊', '以刀具等危險工具造成生命或重傷危險的攻擊，訂 1 年最低刑期；加重恐怖宣傳與募款刑責。'),
-   ('監控這一塊', '對列管的危險分子（Gefährder）更常用電子腳鐐；IP 位址與連線資料調取權擴及各邦機關。'),
-   ('少年刑法要說明理由', '法院對年輕成人適用少年刑法（Jugendstrafrecht）今後須明確交代理由；另強化去激進化工作。'),
-  ],
-  takeaway=('政策觀察', '柏林女權運動者 Seyran Ateş 批評：計畫幾乎全押刑法與監控，對如何及早阻斷激進化著墨太少。'),
-  file='W38_圖卡7_反恐十點計畫.png'),
+  takeaway=('制度觀察', 'Der Paritätische 提醒勿對歐盟公民一概預設懷疑：居留逾 3 個月、月收入超過 250 € 者本有請求權。'),
+  file='W39_圖卡6_社會給付濫用十點計畫.png'),
 ]
 
 # ── 邦名德文全名檢查 ────────────────────────────────────────
