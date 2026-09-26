@@ -1585,6 +1585,37 @@ def illu_protestsign(d, R, S, cx, cy, theme):
         d.arc(R(mx+10-r, my-4-r, mx+10+r, my-4+r), start=300, end=60,
               fill=theme, width=4*S)
 
+def illu_benefitcut(d, R, S, cx, cy, theme):
+    """住宅＋被砍半的金幣柱，虛線標出原本高度（補助縮水／給付調降）"""
+    ow = 5*S
+    _dots(d, R, cx, cy, ((-72, -44, 3, GOLD), (-30, -54, 3, tint(theme, 0.5)),
+                         (74, 26, 3, theme)))
+    d.ellipse(R(cx-58, cy+48, cx+50, cy+58), fill=tint(theme, 0.18))
+    # 左側住宅：屋頂＋屋身＋門窗
+    d.polygon(R(cx-66, cy-2, cx-32, cy-26, cx+2, cy-2), fill=tint(theme, 0.45),
+              outline=OUTLINE, width=ow)
+    d.rounded_rectangle(R(cx-60, cy-2, cx-4, cy+46), radius=6*S, fill=theme,
+                        outline=OUTLINE, width=ow)
+    d.rounded_rectangle(R(cx-50, cy+8, cx-34, cy+24), radius=3*S, fill='white',
+                        outline=OUTLINE, width=3*S)
+    d.rounded_rectangle(R(cx-24, cy+18, cx-10, cy+46), radius=3*S, fill='white',
+                        outline=OUTLINE, width=3*S)
+    # 原本高度：金色虛線（對比基準）
+    for k in range(4):
+        x0 = cx + 18 + k*13
+        d.line(R(x0, cy-34, x0+8, cy-34), fill=GOLD_D, width=4*S)
+    # 焦點細節：向下箭頭（砍半）
+    ax = cx + 40
+    d.line(R(ax, cy-24, ax, cy-8), fill=theme, width=ow+2*S)
+    d.polygon(R(ax-13, cy-10, ax+13, cy-10, ax, cy+6), fill=theme,
+              outline=OUTLINE, width=2*S)
+    # 右側：只剩兩枚的金幣柱
+    for k in range(2):
+        y0 = cy + 46 - k*15
+        d.rounded_rectangle(R(cx+16, y0-13, cx+64, y0), radius=6*S,
+                            fill=GOLD if k % 2 == 0 else GOLD_D,
+                            outline=OUTLINE, width=3*S)
+
 ILLUS = dict(podium=illu_podium, flags=illu_flags, coins=illu_coins,
              idcard=illu_idcard, camera=illu_camera, trophy=illu_trophy,
              bankcard=illu_bankcard, checklist=illu_checklist,
@@ -1599,6 +1630,7 @@ ILLUS = dict(podium=illu_podium, flags=illu_flags, coins=illu_coins,
              crane=illu_crane, mergebenefits=illu_mergebenefits,
              heatlaw=illu_heatlaw, gavel=illu_gavel,
              fueldiscount=illu_fueldiscount, protestsign=illu_protestsign,
+             benefitcut=illu_benefitcut,
              tornado=illu_tornado, wildfire=illu_wildfire,
              solarpanel=illu_solarpanel, evcharge=illu_evcharge,
              carplant=illu_carplant, databreach=illu_databreach,
@@ -1992,6 +2024,19 @@ CARDS = [
   takeaway=('試算提醒', '本站試算：以健保 14.6% 加附加費 2.9% 計，跨過上限者全年約多 1,180 €、勞資各半。命令 11 月才定案。'),
   file='W39_圖卡4_健保投保上限調高.png'),
  dict(
+  theme='#C0392B', badges=[('住房補貼', True), ('2027 年', False)], illu='benefitcut',
+  title='住房補貼的暖氣費補助砍半',
+  subtitle='聯邦參議院 9/25 提出意見但未擋下政府草案',
+  stats=[('48 €', '單人戶暖氣費補助，原 96 €'),
+         ('14.76 億歐元', '2027 年可省下')],
+  bullets=[
+   ('砍在哪裡', '2027 年 1 月起，暖氣費補助（Heizkostenkomponente）單人戶每月自 96 € 砍到 48 €；二氧化碳補貼 14.40 € 不變。'),
+   ('還有兩刀', '2027 年的定期調整（Fortschreibung）暫停；計算公式的所得權重調高 58%，每月不足 15 € 者不再給付。'),
+   ('BAföG 同場也審', '不與父母同住學生的居住費定額 2027 年 4 月自 380 € 升到 440 €；但各邦批評與父母同住者的定額被調降、日後取消。'),
+  ],
+  takeaway=('申請提醒', '在 2026 年內提出申請、且給付期間也自 2026 年起算的人，可鎖定現行較高的給付標準。'),
+  file='W39_圖卡5_住房補貼砍半.png'),
+ dict(
   theme='#D4740E', badges=[('汽車產業', True), ('勞資', False)], illu='protestsign',
   title='17.5 萬人上街反對裁員',
   subtitle='IG Metall 9/21 全國行動日，約 280 個地點同步行動',
@@ -2003,7 +2048,7 @@ CARDS = [
    ('戰場在十月', '金屬電子業各區談判 10/7 起開桌，IG Metall 要求加薪 5%、適用約 380 萬人；和平義務 10/31 到期。'),
   ],
   takeaway=('產業背景', '德國汽車業從業人數 69.15 萬人，為 2005 年統計以來最低；福斯（Volkswagen）十萬個職位計畫是導火線之一。'),
-  file='W39_圖卡5_IG Metall全國行動日.png'),
+  file='W39_圖卡6_IG Metall全國行動日.png'),
  dict(
   theme='#7C3AED', badges=[('社會給付', True), ('十點計畫', False)], illu='checklist',
   title='內閣通過社會給付濫用十點計畫',
@@ -2016,7 +2061,7 @@ CARDS = [
    ('也管房東與雇主', '要更一貫查辦「破敗出租屋」（Schrottimmobilien）：把勞工塞進惡劣住房、再抽成。年底前實施。'),
   ],
   takeaway=('制度觀察', 'Der Paritätische 提醒勿對歐盟公民一概預設懷疑：居留逾 3 個月、月收入超過 250 € 者本有請求權。'),
-  file='W39_圖卡6_社會給付濫用十點計畫.png'),
+  file='W39_圖卡7_社會給付濫用十點計畫.png'),
 ]
 
 # ── 邦名德文全名檢查 ────────────────────────────────────────
