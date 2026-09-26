@@ -7,17 +7,18 @@ FB 排程：2026-09-27 19:00（Europe/Berlin）　IG 排程：2026-09-27 19:05
 【FB 版（重點條列版）】
 ------------------------------------------------------------------------
 
-🇩🇪【德國週報 W39｜9/21–9/27】燃油稅 10/1 起每公升調降 14 分、含加值稅約 17 分，但上一輪只有八成真的降到油價上；9/20 雙邦開票：左翼黨首度拿下柏林、CDU 在梅克倫堡-佛波門邦掉出邦議會，聯邦德國史上第一次；2027 年健保投保上限每月調高 562.50 €；17.5 萬人上街反對汽車業裁員；內閣通過社會給付濫用十點計畫
+🇩🇪【德國週報 W39｜9/21–9/27】燃油稅 9/25 完成立法、10/1 起每公升調降 14.04 分、含加值稅約 17 分，但上一輪只有八成真的降到油價上；9/20 雙邦開票：左翼黨首度拿下柏林、CDU 在梅克倫堡-佛波門邦掉出邦議會，聯邦德國史上第一次；2027 年健保投保上限每月調高 562.50 €；17.5 萬人上街反對汽車業裁員；內閣通過社會給付濫用十點計畫
 
 這一週有兩條主線：一條在加油站，一條在開票所。另外三題分別關係到你的薪資單、汽車業的十月攤牌，以及居留與社會給付的制度走向。六張圖卡一次看懂。
 
-⛽ 一、燃油稅每公升調降 14 分，10/1 上路
-聯邦與各邦 9/18 談定、內閣 9/22 通過草案。
-▪️ 汽油與柴油的能源稅（Energiesteuer）每公升降【14 分】；加值稅連動後，理論降幅約【每公升 17 分】
+⛽ 一、燃油稅每公升調降 14.04 分，10/1 上路
+聯邦與各邦 9/18 談定、內閣 9/22 通過，9/25 完成立法。
+▪️ 汽油與柴油的能源稅（Energiesteuer）每公升降【14.04 分】；加值稅連動後，理論降幅約【每公升 17 分】
 ▪️ 加滿 50 公升，單次最多省【8.50 €】
 ▪️ 期限很短：【2026/10/1 至 12/31】，共三個月；減稅規模約【25 億歐元】，聯邦與各邦【各負擔一半】
-▪️ 程序：走加速立法，仍需聯邦議院與聯邦參議院同意，【聯邦參議院預定 9/25 表決】
-▪️ 今年第二次了：5/1–6/30 才剛做過一輪（每公升減 14.04 分能源稅、含加值稅 16.7 分），期滿退場
+▪️ 【9/25 已完成立法】：聯邦議院記名表決【434 票贊成、128 票反對】通過，聯邦參議院當天第 1068 次會議隨即表決通過
+▪️ 接下來只剩聯邦總統簽署與《聯邦法律公報》公布的程序性步驟，【10/1 上路已成定局】
+▪️ 今年第二次了：5/1–6/30 才剛做過一輪，【稅率完全相同】（每公升減 14.04 分能源稅、含加值稅 16.7 分），期滿退場——當初退場的理由（臨時措施、財政成本）並沒有消失
 ▪️ 【17 分不等於油價真降 17 分】——聯邦卡特爾署（Bundeskartellamt）統計上一輪：柴油 16.7 分裡平均只有【13.8 分（82.6%）】傳導到消費者，缺口 2.9 分
 ▪️ Super E5 更少，只傳導【13 分（77.8%）】，缺口 3.7 分
 ▪️ 缺口出在哪一層？卡特爾署指出主要是【加油站的訂價】而非批發環節：減稅期間加油站平均毛利比第一季【柴油擴大約 3.3 分、E5 約 1.9 分】
@@ -46,7 +47,11 @@ FB 排程：2026-09-27 19:00（Europe/Berlin）　IG 排程：2026-09-27 19:05
 ▪️ 數學上紅綠紅（左翼黨＋綠黨＋SPD）與 CDU＋綠黨＋SPD 都成立，原本的 CDU＋SPD 已無過半
 ▪️ 障礙不在算術而在政策：Eralp 明言【不會在「徵收大型房地產公司」上妥協】——「左翼黨執政就會社會化」
 ▪️ 柏林審計院 2024 年報告點出兩難：【補償金額要壓得很低才可能真的壓下租金，但補償離市價越遠、法律風險就越大】
-▪️ 梅克倫堡-佛波門邦：邦總理 Manuela Schwesig（SPD）已邀綠黨與左翼黨協商，【紅紅綠是唯一實際可行的組合】，三黨都排除與 AfD 合作
+▪️ 梅克倫堡-佛波門邦：邦總理 Manuela Schwesig（SPD）9/21 已邀綠黨與左翼黨探詢，【紅紅綠是唯一實際可行的組合】（71 席中佔 39 席），三黨都排除與 AfD 合作；新邦總理選出前由原紅紅政府看守
+▪️ 【9/25 最新進展】柏林左翼黨特別黨代表大會以明確多數通過【邀請綠黨與 SPD 進行探詢性會談（Sondierungen）】
+▪️ SPD 黨部理事會【一致決議接受】，敲定最多五人的探詢小組：黨共同主席 Bettina König、Steffen Krach，以及代表黨團的 Derya Caglar
+▪️ 但綠黨與 SPD 都設了前提：要左翼黨【毫不含糊表明反對反猶太主義、支持保護猶太人生活】，會談才會真正開始
+▪️ 形式是左翼黨先分別與兩黨談、再三黨同桌，最快下週展開——【目前仍在「談不談得起來」的門口，還沒進入正式聯合政府協商】
 
 💶 三、2027 年健保投保上限每月調高 562.50 €
 聯邦勞動部 9/21 提出 2027 年社會保險計算基準草案。
@@ -59,8 +64,10 @@ FB 排程：2026-09-27 19:00（Europe/Berlin）　IG 排程：2026-09-27 19:05
 ▪️ 加上七月中通過的健保費率穩定法，為因應法定健保【近 190 億歐元】的預估缺口，額外把上限再拉高【每月 300 €】
 ▪️ 本站試算：上限之上多計【6,750 €】年薪，以健保一般費率 14.6% 加 2026 年平均附加費 2.9%（合計 17.5%）計，全年保費約多【1,180 €】，勞資各半、受僱者自己約多付【590 €】（每月約 49 €）
 ▪️ 這只是健保一項，長照、退休與失業另計；2027 年平均附加費要到【十月中】由估算委員會（Schätzerkreis）拍板，目前專業預測落在 3.1%–3.7%
-▪️ 還只是草案：計算基準命令須經內閣通過並取得聯邦參議院同意，通常年底前完成
-▪️ 高薪者常忽略的連帶效果：投保上限同時牽動【強制投保門檻】，是否還能轉私人健保（PKV）、雇主補助上限，都會跟著變動
+▪️ 還只是【部會草案】：標準流程是九月出草案、【十月內閣議決、十一月聯邦參議院表決】，2027/1/1 生效——在那之前數字都還可能微調
+▪️ 高薪者常忽略的連帶效果，這次幅度更大：決定「能不能轉私人健保（PKV）」的是另一條線——強制投保門檻（JAEG）
+▪️ 依同一份草案，一般 JAEG 自 2026 年的【77,400 €】升到 2027 年的【84,150 €】（每月 7,012.50 €），一年拉高 6,750 €
+▪️ 白話說：【原本明年剛好要跨過門檻、打算轉 PKV 的人，可能發現門檻跑得比自己的加薪還快】；雇主補助上限也同步變動
 
 🔧 四、17.5 萬人上街反對汽車業裁員
 IG Metall 9/21 發動全國行動日。
@@ -105,6 +112,8 @@ https://www.bundeskartellamt.de/SharedDocs/Meldung/DE/Pressemitteilungen/2026/07
 https://www.bundesfinanzministerium.de/Content/DE/FAQ/energiesteuersenkung.html
 https://taz.de/Geplanter-Tankrabatt-Industrievertreter-und-Umweltverbaende-enttaeuscht/!6170183/
 https://www.finanznachrichten.de/nachrichten-2026-09/69623695-oekonomen-und-verbaende-uneins-ueber-tankrabatt-003.htm
+https://www.bundestag.de/dokumente/textarchiv/2026/kw39-de-versicherung-aufsicht-1216898
+https://www.bundesrat.de/DE/plenum/bundesrat-kompakt/26/1068/1068-node.html
 邦選舉：
 https://wahlen-berlin.de/wahlen/BE2026/Afspraes/agh/ergebnisse.html
 https://www.zdfheute.de/politik/deutschland/landtagswahl-mecklenburg-vorpommern-wahlergebnisse-afd-spd-holm-schwesig-100.html
@@ -117,11 +126,16 @@ https://www.rnz.de/politik/nachrichten_artikel,-CDU-Krise-Generalinventur-und-Ne
 https://www.zdfheute.de/politik/deutschland/merz-wahlniederlage-cdu-reformen-druck-100.html
 https://www.laiv-mv.de/Wahlen/Landtagswahlen/2021/Ergebnisse/
 https://www.wahlrecht.de/news/2026/landtagswahl-mecklenburg-vorpommern-2026.html
+https://www.zdfheute.de/politik/deutschland/berlin-sondierungsgesprache-spd-linke-100.html
+https://www.berliner-zeitung.de/article/linke-strebt-koalition-mit-spd-und-gruene-an-10432127
+https://www.t-online.de/nachrichten/deutschland/id_101445148/mecklenburg-vorpommern-schwesig-strebt-rot-rot-gruen-an.html
 社會保險投保上限：
 https://www.haufe.de/steuern/gesetzgebung-politik/beitragsbemessungsgrenze_168_698776.html
 https://www.pkv.de/verband/presse/meldungen/beitragsbemessungsgrenze-so-teuer-wird-es-fuer-gesetzlich-versicherte/
 https://www.versicherungsbote.de/id/4952008/Beitragsbemessungsgrenze-2027-Hoehere-Werte-fuer-Kranken--und-Rentenversicherung/index.amp
 https://www.bundesgesundheitsministerium.de/service/gesetze-und-verordnungen/guv-21-lp/gkv-beitragssatzstabilisierungsgesetz-faq
+https://www.bmas.de/DE/Service/Gesetze-und-Gesetzesvorhaben/sozialversicherungs-rechengroessenverordnung-2027.html
+https://www.deutsche-rentenversicherung.de/DRV/DE/Ueber-uns-und-Presse/Presse/Meldungen/2026/260922-sv-rechengroessen-vo-2027
 IG Metall 行動日：
 https://www.igmetall.de/politik-und-gesellschaft/aktionstag-automobil
 https://www.t-online.de/finanzen/aktuelles/id_101444468/ig-metall-mobilisiert-rund-175000-auto-beschaeftigte.html
@@ -138,37 +152,41 @@ https://taz.de/Grundsicherung-und-Missbrauchsdebatte/!6215708/
 
 ========================================================================
 
-【IG 版（精簡版，共 1413 字元，上限 2,200）】
+【IG 版（精簡版，共 1498 字元，上限 2,200）】
 ------------------------------------------------------------------------
 
 🇩🇪 德國週報 W39｜9/21–9/27
 這一週兩條主線：加油站與開票所。六張圖卡滑到底 👉
 
-⛽ 燃油稅 10/1 起每公升降 14 分｜加值稅連動後理論降幅約 17 分，加滿 50 公升最多省 8.50 €。內閣 9/22 通過草案
+⛽ 燃油稅 10/1 起每公升降 14.04 分｜加值稅連動後理論降幅約 17 分，加滿 50 公升最多省 8.50 €
 
-📅 只到年底｜適用 2026/10/1–12/31，減稅約 25 億歐元、聯邦與各邦各半。聯邦參議院預定 9/25 表決
+✅ 9/25 完成立法｜聯邦議院 434 比 128 通過、聯邦參議院當天隨即通過。適用 10/1–12/31，減稅約 25 億歐元由聯邦與各邦各半
 
-⚠️ 別預期真降 17 分｜聯邦卡特爾署統計上一輪（5–6 月）：柴油 16.7 分裡只有 13.8 分（82.6%）傳導到消費者，Super E5 更只有 77.8%，缺口主要出在加油站訂價
+⚠️ 別預期真降 17 分｜聯邦卡特爾署統計上一輪：柴油 16.7 分裡只有 13.8 分（82.6%）到消費者身上，E5 更只有 77.8%，缺口主要出在加油站訂價
 
-💬 專家怎麼看｜DIW 所長 Fratzscher 批「昂貴、不公平、經濟上適得其反」；環保團體說補貼化石燃料、對大排量車最有利
+💬 專家怎麼看｜DIW 所長 Fratzscher 批「昂貴、不公平、經濟上適得其反」；環保團體批補貼化石燃料、對大排量車最有利
 
-🗳️ 左翼黨拿下柏林｜9/20 柏林邦左翼黨（Die Linke）25.7% 首度第一大黨，CDU 18.8%、AfD 16.3%、綠黨（Grüne）14.3%、SPD 12.1%，BSW 4.7% 差一點進不了
+🗳️ 左翼黨拿下柏林｜9/20 柏林邦左翼黨（Die Linke）25.7% 首度第一大黨，CDU 18.8%、AfD 16.3%、綠黨（Grüne）14.3%、SPD 12.1%，BSW 4.7% 未過門檻
 
-🏛️ 史上第一次｜梅克倫堡-佛波門邦（Mecklenburg-Vorpommern）CDU 只拿 4.9%，成為聯邦德國史上第一次有 CDU 掉出邦議會。AfD 38.2% 居首、SPD 35.5% 緊追
+🏛️ 史上第一次｜梅克倫堡-佛波門邦（Mecklenburg-Vorpommern）CDU 只拿 4.9%，聯邦德國史上第一次有 CDU 掉出邦議會。AfD 38.2% 居首、SPD 35.5% 緊追
 
-📊 五年之間｜AfD 從 16.7% 升到 38.2%（+21.5），CDU 從 13.3% 掉到 4.9%（-8.4），FDP 5.8% 剩 1.0%。投票率從 70.8% 升到 78.1%
+📊 五年之間｜AfD 16.7%→38.2%（+21.5），CDU 13.3%→4.9%（-8.4），FDP 5.8%→1.0%。投票率 70.8%→78.1%
 
-🤝 誰來組閣｜柏林：Elif Eralp 要當市長，但明言不會在「徵收大型房地產公司」上妥協。東北部：Schwesig（SPD）邀綠黨與左翼黨談紅紅綠，三黨都排除 AfD
+🤝 誰來組閣｜柏林：Elif Eralp 要當市長，但明言不會在「徵收大型房地產公司」上妥協。東北部：Schwesig（SPD）邀綠黨與左翼黨談紅紅綠（71 席佔 39 席），三黨都排除 AfD
 
-😬 CDU 三週三敗｜薩克森-安哈特邦（Sachsen-Anhalt）腰斬、柏林讓出第一、梅克倫堡-佛波門邦出局。Merz 稱結果是「災難」
+🆕 9/25 進展｜柏林左翼黨通過邀綠黨與 SPD 探詢、SPD 一致決議接受。但兩黨都要左翼黨先明確表態反對反猶太主義，最快下週才開談
 
-💶 健保投保上限每月多 562.50 €｜2027 年從 5,812.50 € 升到 6,375 €（全年 76,500 €），漲幅 9.7%，約 630 萬名勞工受影響
+😬 CDU 三週三敗｜薩克森-安哈特邦（Sachsen-Anhalt）腰斬、柏林讓出第一、東北部出局。Merz 稱結果是「災難」
 
-🧮 多繳多少｜本站試算：以健保 14.6% 加平均附加費 2.9% 計，跨過上限者全年約多 1,180 €、勞資各半，自己約 590 €。仍是草案，待內閣與聯邦參議院通過
+💶 健保投保上限每月多 562.50 €｜2027 年升到 6,375 €（全年 76,500 €），漲幅 9.7%，約 630 萬名勞工受影響
 
-🔧 17.5 萬人上街｜IG Metall 9/21 全國行動日，全德約 280 個地點反對裁員與關廠。汽車業從業人數 69.15 萬，是 2005 年以來最低
+🧮 多繳多少｜本站試算：以健保 14.6% 加附加費 2.9% 計，跨過上限者全年約多 1,180 €、勞資各半，自己約 590 €
 
-⏰ 十一月才是重點｜金屬電子業薪資談判 10/7 開桌、適用約 380 萬人，IG Metall 要求加薪 5%；和平義務 10/31 到期
+🏥 想轉私人健保要注意｜強制投保門檻（JAEG）同步自 77,400 € 升到 84,150 €，可能跑得比你的加薪還快。仍是草案，十一月聯邦參議院定案
+
+🔧 17.5 萬人上街｜IG Metall 9/21 全國行動日，全德約 280 個地點反對裁員與關廠。汽車業從業人數 69.15 萬，2005 年來最低
+
+⏰ 十一月才是重點｜薪資談判 10/7 開桌、適用約 380 萬人，IG Metall 要求加薪 5%；和平義務 10/31 到期
 
 📋 社會給付濫用十點計畫｜內閣 9/23 通過：歐盟公民須合法居留滿 5 年才能領基礎保障，過渡給付從 1 個月縮為 2 週，並查辦剝削勞工的破敗出租屋
 
