@@ -3589,7 +3589,7 @@ const POSTS = [
     slug: 'german-bank-recommendation',
     title: '2026 推薦的免付費德國銀行',
     date: '2026-07-10',
-    updated: '2026-08-14',
+    updated: '2026-09-20',
     categories: ["來德生活必辦事項", "德國生活"],
     tags: ["免費", "德國", "折扣碼", "推薦", "銀行"],
     excerpt: '在德國生活的這些年來，用過不少間銀行，Deutsche Bank德意志銀行、Sparkasse、Comdirekt、Revolut、N26還有Commerzbank德國商業銀行。這篇會來介紹四間我推薦的銀行（含最新加入的 BBVA 高 Cashback 首選），以及分析其優缺點。至於為什麼不介…',
@@ -3660,7 +3660,7 @@ const POSTS = [
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li class=""><strong>3.5% 年利率，前 6 個月高利活存！</strong>開戶後前六個月享有 <strong>3.5% p.a.</strong> 活期帳戶利率（餘額 ≤ €200,000 部分；€200,000–€500,000 部分為 2.25%，逾 €500,000 不計息），利息每月直接入帳，完全不需要任何條件。六個月後轉為長期變動利率 2.25%（若有薪資／退休金入帳，或每月刷卡滿 €1,500，則為 2.75%），資金隨時可以動用，不是定存！</li>
+<li class=""><strong>3.75% 年利率，前 6 個月高利活存！</strong>（2026/09/15 起首次開戶適用）開戶後前六個月享有 <strong>3.75% p.a.</strong> 活期帳戶利率（餘額 ≤ €200,000 部分；€200,000–€500,000 部分為 <strong>2.5%</strong>，逾 €500,000 不計息），利息依每日結餘計算、每月直接入帳，完全不需要任何條件。六個月後轉為長期變動利率 2.25%（若有<strong>薪資或退休金入帳</strong>，或每月以 BBVA 金融卡與信用卡<strong>合計支付超過 €1,500</strong>，則為 2.75%）；變動利率每季檢視、可能調整，但保證不低於歐洲央行存款機制利率的 25%。資金隨時可以動用，不是定存！</li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
@@ -3698,7 +3698,7 @@ const POSTS = [
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li class="">3.5% 高利率僅前 6 個月：之後轉為長期變動利率（基本 2.25%，符合薪轉或月刷 €1,500 條件則 2.75%），雖然仍有保證，但不如前 6 個月高。適合開戶後積極利用前半年的高利優惠。</li>
+<li class="">3.75% 高利率僅前 6 個月：之後轉為長期變動利率（基本 2.25%；有薪資或退休金入帳，或兩張卡每月合計支付超過 €1,500 則為 2.75%），雖然仍有保證，但不如前 6 個月高。適合開戶後積極利用前半年的高利優惠。</li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
@@ -3715,7 +3715,7 @@ const POSTS = [
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p class="">BBVA 是目前回饋最多、最高的免費德國銀行，集合了<strong>永久免費帳戶、活期高利率（前 6 個月 3.5%）、3.5% Cashback 消費回饋</strong>三大優點於一身，在德國的銀行裡真的很少見。開戶零成本，用推薦碼完成首刷還可以額外拿 40 歐元獎勵金。如果你還沒有德國銀行帳戶，或是想換一間真的對你有實際利益的銀行，BBVA 會是很值得考慮的選擇！</p>
+<p class="">BBVA 是目前回饋最多、最高的免費德國銀行，集合了<strong>永久免費帳戶、活期高利率（前 6 個月 3.75%）、Debit 卡消費現金回饋</strong>三大優點於一身，在德國的銀行裡真的很少見。開戶零成本，用推薦碼完成首刷還可以額外拿 40 歐元獎勵金。如果你還沒有德國銀行帳戶，或是想換一間真的對你有實際利益的銀行，BBVA 會是很值得考慮的選擇！</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
@@ -3754,15 +3754,23 @@ const POSTS = [
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li class=""><strong>回饋：</strong>旅遊相關與所有線上刷卡享 <strong>5% Cashback</strong>，以每月前 <strong>€500</strong> 消費計算（每月最高 €25），<strong>6 個月合計上限 €150</strong>。須在 <strong>2026/9/30 前</strong>申辦、簽約後 <strong>90 天內</strong>完成首刷。</li>
+<li class=""><strong>回饋：</strong>旅遊相關（航空、鐵路、旅館、租車、旅行社、計程車、觀光景點）與所有線上刷卡享 <strong>5% Cashback</strong>，以<strong>每個日曆月前 €500</strong> 的消費計算（每月最高 €25），<strong>6 個月合計上限 €150</strong>。⚠️ <strong>沒有單筆金額上限</strong>：官方條款寫的是「für die ersten 500 € je Kalendermonat」，也就是以<strong>整月累計</strong>為準——刷一筆 €800 的機票不會整筆失格，只是當月額度一次用完（回饋 €25）。想領滿 €150，最好是<strong>每月均勻刷到 €500、連續 6 個月</strong>，而不是單月刷爆。須在 <strong>2026/9/30 前</strong>完成簽約、簽約後 <strong>90 天內</strong>完成首刷，<strong>6 個月回饋期自首刷當天起算</strong>。</li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li class=""><strong>月費：</strong>前 6 個月免費；<strong>第 7 個月起 €2/月</strong>，但只要當月刷卡消費 <strong>超過 €500</strong> 且無逾期即可免月費。</li>
+<li class=""><strong>月費：</strong>前 6 個月免費；<strong>第 7 個月起 €2/月</strong>，但只要當月刷卡消費 <strong>超過 €500</strong> 且無逾期即可免月費；當月若有分期款（Ratenzahlung）從 BBVA 帳戶扣繳，該月也不收月費。</li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
 <li class=""><strong>申辦資格：</strong>信用卡不是獨立產品，目前<strong>只開放已持有 BBVA Girokonto 滿 6 個月的既有客戶</strong>申辦（官方表示未來會開放新戶）。</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li class=""><strong>哪些消費不算回饋：</strong>金融機構與銀行的手續費、加密貨幣、博弈與投注、付給催收公司的款項，以及預借現金或從信用卡轉帳到 BBVA 帳戶——這幾類明文排除在 Cashback 之外。</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li class=""><strong>其他費用（旅遊族要看）：</strong><strong>換匯不收手續費</strong>，直接採用 Mastercard 公布的匯率、不加價——這是這張卡對常出國的人最實在的地方。但 <strong>ATM 提領現金收 4%（最低 €3）</strong>，歐元區內外都一樣，提款機業者可能另外收費。分期付款（Teilzahlung）屬於動用信貸，年利率目前 <strong>13.99% p.a.</strong>，最低 €50、期數 3–36 個月；從信用卡轉帳到 BBVA 帳戶收 4%（最低 €3），若該筆改以分期償還則免轉帳費、只計利息，轉回既有餘額則免費。</li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
@@ -3771,7 +3779,7 @@ const POSTS = [
 <!-- /wp:list -->
 
 <!-- wp:paragraph -->
-<p class=""><em>小結：把它當成「6 個月最多領 €150 回饋」的短期工具是可行的——月費第 7 個月才開始、且刷滿 €500 就免費，收費前也能電話取消。要留意的只有申辦資格（Girokonto 滿 6 個月）、9/30 前申辦、90 天內首刷這三個條件。以上為事實條款整理、非投資建議，最終以官網合約公告為準。</em></p>
+<p class=""><em>小結：把它當成「6 個月最多領 €150 回饋」的短期工具是可行的——月費第 7 個月才開始、且刷滿 €500 就免費，收費前也能電話取消。要留意的只有申辦資格（Girokonto 滿 6 個月）、9/30 前簽約、90 天內首刷這三個條件。⚠️ 一個容易踩到的細節：官方 FAQ 寫「6 個月自首刷起算」，但合約條款（AGB）的措辭是「自合約成立起 6 個月」——兩者若拖到第 90 天才首刷，差距接近 3 個月。保險做法是<strong>簽約後盡快完成第一筆消費</strong>，兩種算法就一致了。以上為事實條款整理、非投資建議，最終以官網合約公告為準。</em></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
