@@ -1,0 +1,131 @@
+德國週報 W40｜2026/09/28–10/04
+社群貼文（FB 條列版 ＋ IG 精簡版）
+FB 排程：2026-10-04 21:00（Europe/Berlin）　IG 排程：2026-10-04 21:05
+圖卡順序（五處一致）：1 九月通膨／2 護理保險改革／3 Bosch 紐倫堡廠／4 九月勞動市場／5 加重攻擊刑罰
+========================================================================
+
+【FB 版（重點條列版）】
+------------------------------------------------------------------------
+
+🇩🇪【德國週報 W40｜9/28–10/4】九月通膨 3.3%，2023 年底以來最高；護理保險改革過內閣，無子女者與依附配偶要多繳；Bosch 紐倫堡廠砍掉一半職位；失業跌破 300 萬，但只是季節效果；攻擊列車長與醫護，刑罰加重
+
+這一週的主軸是「錢從哪裡來、又流到哪裡去」：物價、保費、工作，最後是公共服務人員的安全。五張圖卡一次看懂。
+
+📈 一、九月通膨 3.3%，漲的幾乎全是能源
+聯邦統計局（Destatis）9/30 公布初估。
+▪️ 九月消費者物價年增【3.3%】，八月為 2.9%；是【2023 年 12 月以來最高】
+▪️ 比八月再漲 0.6%；市場原本預期約 3.1%，實際明顯偏高
+▪️ 推手是能源：能源年增率七月 8.3% → 八月 10.5% → 九月【14.9%】，油價創新高是主因
+▪️ 其他項目平穩：食品只漲【0.4%】；扣除食品與能源的核心通膨【2.4%】，與七、八月持平
+▪️ Commerzbank 首席經濟學家 Jörg Krämer：「通膨正在固著」；ING 的 Carsten Brzeski 則提醒人口老化、去風險化與脫碳中長期都推升物價
+▪️ 燃油稅 10/1 起每公升調降約 17 分，經濟學家預估【十月通膨可能回到 3% 以下】；但減稅只到年底，上一輪也只傳導約八成
+▪️ 九月為初估值，正式數字下個月中旬公布
+
+🏥 二、護理保險改革過內閣：無子女者多繳【內閣通過、待國會審議】
+7 月本站報過的護理保險改革（PNOG），9/30 由內閣通過，衛生部長 Carsten Linnemann（CDU）的版本大致定案。
+▪️ 一般費率維持【3.6%】
+▪️ 無子女附加費 2027 年起加 0.3 個百分點、到【0.9%】——比夏天部會草案的 +0.1 更重，由受僱者自行負擔
+▪️ 2028 年起，原本免保費依附投保的配偶與伴侶，須按投保人收入加收【0.52%】；育有幼兒、在家照護親屬、退休者等可豁免
+▪️ 照護等級 1（Pflegegrad 1）每月【131 € 的減負補助取消】，2027 年省約 8 億歐元
+▪️ 原訂 2028 年的給付調升取消，2029 年起才改為每年隨核心通膨調整
+▪️ 政府說法：擋下 2027 年約【80 億歐元】缺口；但 taz 引述預估，2028 年起每年仍可能短缺約 100 億歐元
+▪️ 病患權益基金會的 Eugen Brysch 質疑能否填平赤字；綠黨（Grüne）批評是「讓第三方買單的政治交易」；SPD 要的機構自付額上限沒寫進去
+▪️ 本站試算：月薪 4,000 € 的無子女受僱者，2027 年起每月多繳約【12 €、全年 144 €】
+
+🚗 三、Bosch 紐倫堡廠砍掉一半職位
+▪️ Bosch 9/28 宣布：紐倫堡（Nürnberg）廠【2029 年底前裁減約 900 個職位】，全廠約 1,800 人，等於【一半】
+▪️ 該廠生產內燃機與燃料電池零件；Bosch 稱內燃機比重下滑、生產成本明顯高於市價，歐洲氫能市場也不如預期
+▪️ IG Metall 與員工代表會（Betriebsrat）痛批「砍到見骨」（Kahlschlag），警告【2029 年後關廠無法排除】，勞方將自提轉型方案
+▪️ 數字拆解：900 人是單一據點計畫，是否已含在 Bosch 先前公布的集團裁員總數內，各報導說法不一，本站不加總
+▪️ 產業全景：聯邦統計局統計上半年汽車業就業約【69.15 萬人】，一年少【4.23 萬人】；供應商減 7.6%，比車廠的 6.1% 更重
+▪️ 同週 thyssenkrupp 汽車技術部門也宣布 Essen 與 Ennepetal 裁減 160–180 個職位
+▪️ 實務提醒：德國大規模人力調整多走自願離職與提前退休；被提議合意解約（Aufhebungsvertrag）前，先確認對失業給付等待期（Sperrzeit）的影響
+
+📖 延伸閱讀：紐倫堡這一刀，是 Bosch 這兩年轉型陣痛的延續 →「140 歲德國工業巨擘全面失速中？Bosch 2025 財報深度解析」
+https://taiwanese-in-germany.com/posts/bosch-2025-financial-report.html
+
+💼 四、失業 299.4 萬人：跌破 300 萬，但只是季節效果
+聯邦就業署 9/30 公布九月數據。
+▪️ 失業人數【299.4 萬】，比八月少 6.7 萬；失業率【6.4%】
+▪️ 但扣除季節因素，反而【增加 1.2 萬人】；比去年同期【多 4 萬人】
+▪️ 署長 Andrea Nahles：「秋季回溫已經開始，但起步乏力」，經濟好轉「還沒有傳到勞動市場」
+▪️ 廣義失業（Unterbeschäftigung）361.5 萬人，比去年多 2.5 萬
+▪️ 亮點：登記職缺【66 萬個】，比去年多 3 萬；9/1–9/24 雇主為 1.8 萬人申報縮短工時（Kurzarbeit）
+▪️ 提醒：預期合約即將結束，最遲在結束前三個月向就業署辦理求職登記（arbeitsuchend melden），以免影響失業給付
+
+⚖️ 五、攻擊列車長與醫護，刑罰加重【內閣通過、待國會審議】
+▪️ 9/30 內閣通過司法部長 Stefanie Hubig（SPD）的草案：「讓我們國家運轉的人，值得我們保護」
+▪️ 攻擊警察、法院執行官、消防、救護與災防人員，最低刑【由 3 個月提高到 6 個月】；情節特別嚴重至少 1 年
+▪️ 醫師、護理人員、藥師及其員工【不分場所】受保護：執業時遭暴力或威脅妨礙最高 5 年；肢體攻擊至少 6 個月
+▪️ 列車長、公車司機遭攻擊時，量刑要更重視對公共服務的妨害；煽動仇恨罪（Volksverhetzung）也一併加重
+▪️ Hubig：鐵路上如今【每天約 5 起】攻擊事件
+▪️ 導火線：今年 2 月，列車長 Serkan Çalar 在萊茵蘭-普法茲邦（Rheinland-Pfalz）的區域快車上遭無票乘客毆打，兩天後不治
+▪️ 德國法官協會（Deutscher Richterbund）：目標正確，但司法系統負荷過重，【加重刑度效果有限】，應補強警力、檢察與法院
+▪️ 搭車提醒：德鐵車站禁酒令預計【10/15 前擴及全德約 5,400 個車站】，月台與大廳不得飲酒（餐飲區除外），攜帶未開封酒類仍可
+
+📚 資料來源
+通膨：
+https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/09/PD26_348_611.html
+https://www.handelsblatt.com/finanzen/geldpolitik/inflation-teuerung-in-deutschland-steigt-auf-33-prozent/100254616.html
+https://www.zdfheute.de/politik/deutschland/inflation-steigt-erstmals-seit-2023-ueber-drei-prozent-100.html
+https://www.cash.ch/news/top-news/okonomen-stimmen-zum-deutlichen-anstieg-der-inflation-in-deutschland-973089
+https://www.t-online.de/finanzen/aktuelles/wirtschaft/id_101459876/inflation-in-deutschland-preise-steigen-erstmals-seit-2023-ueber-3-prozent.html
+護理保險改革：
+https://www.beck-aktuell.de/heute-im-recht/rechtspolitik-gesetzgebung/kabinett-pflegereform-umbau-2026-09-30
+https://www.tagesspiegel.de/politik/dpa-streit-zwischen-union-und-spd-beigelegt-koalition-bringt-pflegereform-heute-ins-kabinett-16109780.html
+https://taz.de/Regierung-bringt-Pflegereform-auf-den-Weg/!6217641/
+https://www.deutsche-handwerks-zeitung.de/pflegeneuordnungsgesetz-das-steckt-im-regierungsentwurf-384356/
+https://www.t-online.de/finanzen/ratgeber/versicherungen/id_101459518/pflegereform-fuer-diesen-pflegegrad-gibt-es-kein-geld-mehr.html
+https://www.verdi.de/politik-gesellschaft/pflegereform-beschlossen-verdi-verlangt-nachbesserungen-im-bundestag
+Bosch 紐倫堡：
+https://www.stuttgarter-nachrichten.de/wirtschaft/jobabbau-bei-zulieferer-bosch-will-die-haelfte-der-stellen-im-werk-nuernberg-streichen-79510666.html
+https://www.electrive.net/2026/09/29/bosch-nuernberg-kahlschlag/
+https://nuernberg.igmetall.de/aktuelle-nachrichten/2026/kahlschlag-bei-robert-bosch-in-nuernberg-geplant
+https://www.automobil-produktion.de/news/jobabbau-in-der-autoindustrie-verschaerft-sich/2718830
+https://finanzen.net/nachricht/aktien/neuausrichtung-thyssenkrupp-aktie-leichter-stellenabbau-im-auto-zuliefergeschaeft-15960333
+勞動市場：
+https://www.finanznachrichten.de/nachrichten-2026-09/69714587-arbeitsmarkt-im-september-2026-herbstbelebung-beginnt-ohne-schwung-ba-presseinfo-nr-37-007.htm
+https://www.zdfheute.de/wirtschaft/arbeitslosenzahlen-september-2026-100.html
+https://www.handelsblatt.com/politik/deutschland/arbeitsmarkt-flaue-herbstbelebung-knapp-unter-drei-millionen-arbeitslose/100258574.html
+加重刑罰：
+https://www.lto.de/recht/nachrichten/n/bundeskabinett-strafrecht-verschaerfung-gesetz-aenderung-angriffe-polizei-aerzte-zugbegleiter-volksverhetzung
+https://www.handelsblatt.com/politik/deutschland/kabinett-haertere-strafen-fuer-angriffe-auf-zugbegleiter-und-aerzte/100258479.html
+https://www.aerzteblatt.de/news/kabinettsbeschluss-neues-gesetz-soll-angriffe-auf-einsatzkrafte-strenger-ahnden-0721cf33-88b6-469a-829e-1d5dddcfa448
+https://www.drb.de/positionen/stellungnahmen/stellungnahme/news/3-2026
+https://echo24.de/leben/verbraucher/alkoholverbot-am-bahnhof-diese-regeln-gelten-ab-oktober-94511791.html
+
+#德國知識小種子 #DasdeutscheWissen #在德台灣人 #德國生活 #德國新聞 #通膨 #護理保險 #Pflegereform #Bosch #汽車產業 #勞動市場 #刑法
+
+========================================================================
+
+【IG 版（精簡版，共 831 字元，上限 2,200）】
+------------------------------------------------------------------------
+
+🇩🇪 德國週報 W40｜9/28–10/4
+物價、保費、工作與安全。五張圖卡滑到底 👉
+
+📈 九月通膨 3.3%｜2023 年底以來最高，八月 2.9%。能源年增 14.9% 是主因，食品只漲 0.4%、核心通膨 2.4% 持平
+
+⛽ 十月可能回落｜燃油稅 10/1 起每公升降約 17 分，經濟學家預估十月回到 3% 以下；但減稅只到年底
+
+🏥 護理保險改革過內閣｜一般費率維持 3.6%，無子女附加費 2027 年起升到 0.9%，由受僱者自行負擔
+
+👫 配偶也要繳｜2028 年起依附投保的配偶與伴侶，按投保人收入加收 0.52%；育有幼兒等可豁免
+
+✂️ 給付端刪減｜照護等級 1 每月 131 € 補助取消，原訂 2028 年的給付調升也取消。本站試算：月薪 4,000 € 的無子女者全年約多繳 144 €
+
+🚗 Bosch 紐倫堡廠砍一半｜2029 年底前裁減約 900 個職位、全廠約 1,800 人。內燃機萎縮、氫能不如預期，IG Metall 警告關廠無法排除
+
+📉 產業全景｜上半年汽車業就業 69.15 萬人，一年少 4.23 萬；供應商減幅比車廠更重
+
+💼 失業 299.4 萬人｜失業率 6.4%，跌破 300 萬，但扣除季節因素反而增加 1.2 萬、比去年多 4 萬。Nahles：「起步乏力」
+
+📝 求職提醒｜合約將結束者，最遲三個月前向就業署辦求職登記，以免影響失業給付
+
+⚖️ 攻擊列車長與醫護，刑罰加重｜攻擊警消救護最低刑由 3 個月升到 6 個月，醫護不分場所受保護。導火線是 2 月一名列車長遭無票乘客攻擊身亡
+
+🚉 搭車提醒｜德鐵車站禁酒令 10/15 前擴及全德約 5,400 站，月台與大廳不得飲酒
+
+📚 完整解析與來源 → FB 粉專或網站（連結在 bio）
+
+#德國知識小種子 #DasdeutscheWissen #在德台灣人 #德國生活 #德國新聞 #通膨 #護理保險 #Bosch #汽車產業 #勞動市場
