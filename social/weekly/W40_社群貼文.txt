@@ -1,15 +1,15 @@
 德國週報 W40｜2026/09/28–10/04
 社群貼文（FB 條列版 ＋ IG 精簡版）
 FB 排程：2026-10-04 21:00（Europe/Berlin）　IG 排程：2026-10-04 21:05
-圖卡順序（五處一致）：1 九月通膨／2 護理保險改革／3 Bosch 紐倫堡廠／4 九月勞動市場／5 加重攻擊刑罰
+圖卡順序（五處一致）：1 九月通膨／2 護理保險改革／3 柏林–漢諾威高鐵整修／4 Bosch 紐倫堡廠／5 九月勞動市場／6 加重攻擊刑罰
 ========================================================================
 
 【FB 版（重點條列版）】
 ------------------------------------------------------------------------
 
-🇩🇪【德國週報 W40｜9/28–10/4】九月通膨 3.3%，2023 年底以來最高；護理保險改革過內閣，無子女者與依附配偶要多繳；Bosch 紐倫堡廠砍掉一半職位；失業跌破 300 萬，但只是季節效果；攻擊列車長與醫護，刑罰加重
+🇩🇪【德國週報 W40｜9/28–10/4】九月通膨 3.3%，2023 年底以來最高；護理保險改革過內閣，無子女者與依附配偶要多繳；柏林–漢諾威高鐵整修，ICE 多繞 60–80 分鐘；Bosch 紐倫堡廠砍掉一半職位；失業跌破 300 萬，但只是季節效果；攻擊列車長與醫護，刑罰加重
 
-這一週的主軸是「錢從哪裡來、又流到哪裡去」：物價、保費、工作，最後是公共服務人員的安全。五張圖卡一次看懂。
+這一週的主軸是「錢從哪裡來、又流到哪裡去」：物價、保費、交通、工作，最後是公共服務人員的安全。六張圖卡一次看懂。
 
 📈 一、九月通膨 3.3%，漲的幾乎全是能源
 聯邦統計局（Destatis）9/30 公布初估。
@@ -30,21 +30,32 @@ FB 排程：2026-10-04 21:00（Europe/Berlin）　IG 排程：2026-10-04 21:05
 ▪️ 原訂 2028 年的給付調升取消，2029 年起才改為每年隨核心通膨調整
 ▪️ 政府說法：擋下 2027 年約【80 億歐元】缺口；但 taz 引述預估，2028 年起每年仍可能短缺約 100 億歐元
 ▪️ 病患權益基金會的 Eugen Brysch 質疑能否填平赤字；綠黨（Grüne）批評是「讓第三方買單的政治交易」；SPD 要的機構自付額上限沒寫進去
+▪️ 德國工會聯合會（DGB）批評無子女附加費全由受僱者負擔、等於差別待遇——無子女受僱者未來自付合計【2.7%】；左翼黨（Die Linke）指責 SPD 向 CDU 讓步
 ▪️ 本站試算：月薪 4,000 € 的無子女受僱者，2027 年起每月多繳約【12 €、全年 144 €】
 
-🚗 三、Bosch 紐倫堡廠砍掉一半職位
+🚆 三、柏林–漢諾威高鐵整修 14 個月：ICE 繞道多 60–80 分鐘
+▪️ 10/2 起，德鐵對柏林–漢諾威路段展開大整修（Generalsanierung），一路做到【2027 年 12 月】
+▪️ 今年 10–12 月，Berlin-Spandau 到 Fallersleben（Wolfsburg 附近）【全線封閉】；2027 年同期還會再封一次
+▪️ ICE 改經 Braunschweig 與 Magdeburg 繞道，每趟多約【60–80 分鐘】
+▪️ 北萊茵-西發利亞邦（Nordrhein-Westfalen）經漢諾威往柏林的 ICE 維持每小時一班
+▪️ 阿姆斯特丹–柏林 ICE 改為【每 4 小時一班】、多約 70 分鐘；法蘭克福–柏林改經 Erfurt，經 Kassel 的直達車取消；漢諾威–Leipzig 的 IC 減為每兩小時一班
+▪️ 為什麼這麼久：Stendal 一帶超過 50 公里的混凝土軌道要整段拆除重鋪；原本可分流的平行路線，電氣化延到 2027 年底
+▪️ 訂票提醒：年底前往返柏林、漢諾威、北萊茵-西發利亞邦或荷蘭，出發前用 DB Navigator 確認班表，轉乘多留時間
+
+🚗 四、Bosch 紐倫堡廠砍掉一半職位
 ▪️ Bosch 9/28 宣布：紐倫堡（Nürnberg）廠【2029 年底前裁減約 900 個職位】，全廠約 1,800 人，等於【一半】
 ▪️ 該廠生產內燃機與燃料電池零件；Bosch 稱內燃機比重下滑、生產成本明顯高於市價，歐洲氫能市場也不如預期
 ▪️ IG Metall 與員工代表會（Betriebsrat）痛批「砍到見骨」（Kahlschlag），警告【2029 年後關廠無法排除】，勞方將自提轉型方案
 ▪️ 數字拆解：900 人是單一據點計畫，是否已含在 Bosch 先前公布的集團裁員總數內，各報導說法不一，本站不加總
 ▪️ 產業全景：聯邦統計局統計上半年汽車業就業約【69.15 萬人】，一年少【4.23 萬人】；供應商減 7.6%，比車廠的 6.1% 更重
 ▪️ 同週 thyssenkrupp 汽車技術部門也宣布 Essen 與 Ennepetal 裁減 160–180 個職位
+▪️ 車廠也在縮編：據 Handelsblatt 報導，賓士（Mercedes-Benz）【12 月起重啟自願離職方案】，對象是行政、研發等非生產部門，首度納入高階主管；上一輪約 5,500 人接受
 ▪️ 實務提醒：德國大規模人力調整多走自願離職與提前退休；被提議合意解約（Aufhebungsvertrag）前，先確認對失業給付等待期（Sperrzeit）的影響
 
 📖 延伸閱讀：紐倫堡這一刀，是 Bosch 這兩年轉型陣痛的延續 →「140 歲德國工業巨擘全面失速中？Bosch 2025 財報深度解析」
 https://taiwanese-in-germany.com/posts/bosch-2025-financial-report.html
 
-💼 四、失業 299.4 萬人：跌破 300 萬，但只是季節效果
+💼 五、失業 299.4 萬人：跌破 300 萬，但只是季節效果
 聯邦就業署 9/30 公布九月數據。
 ▪️ 失業人數【299.4 萬】，比八月少 6.7 萬；失業率【6.4%】
 ▪️ 但扣除季節因素，反而【增加 1.2 萬人】；比去年同期【多 4 萬人】
@@ -53,7 +64,7 @@ https://taiwanese-in-germany.com/posts/bosch-2025-financial-report.html
 ▪️ 亮點：登記職缺【66 萬個】，比去年多 3 萬；9/1–9/24 雇主為 1.8 萬人申報縮短工時（Kurzarbeit）
 ▪️ 提醒：預期合約即將結束，最遲在結束前三個月向就業署辦理求職登記（arbeitsuchend melden），以免影響失業給付
 
-⚖️ 五、攻擊列車長與醫護，刑罰加重【內閣通過、待國會審議】
+⚖️ 六、攻擊列車長與醫護，刑罰加重【內閣通過、待國會審議】
 ▪️ 9/30 內閣通過司法部長 Stefanie Hubig（SPD）的草案：「讓我們國家運轉的人，值得我們保護」
 ▪️ 攻擊警察、法院執行官、消防、救護與災防人員，最低刑【由 3 個月提高到 6 個月】；情節特別嚴重至少 1 年
 ▪️ 醫師、護理人員、藥師及其員工【不分場所】受保護：執業時遭暴力或威脅妨礙最高 5 年；肢體攻擊至少 6 個月
@@ -83,6 +94,11 @@ https://www.electrive.net/2026/09/29/bosch-nuernberg-kahlschlag/
 https://nuernberg.igmetall.de/aktuelle-nachrichten/2026/kahlschlag-bei-robert-bosch-in-nuernberg-geplant
 https://www.automobil-produktion.de/news/jobabbau-in-der-autoindustrie-verschaerft-sich/2718830
 https://finanzen.net/nachricht/aktien/neuausrichtung-thyssenkrupp-aktie-leichter-stellenabbau-im-auto-zuliefergeschaeft-15960333
+https://www.mercedes-fans.de/magazin/news/mercedes-sparkurs-geht-in-die-naechste-runde-medienbericht-mercedes-reaktiviert-ab-dezember-abfindungsprogramm.23470
+柏林–漢諾威鐵路：
+https://www.tagesspiegel.de/berlin/bahnstrecke-berlinhannover-wird-saniert-fahrten-dauern-ab-oktober-teils-deutlich-langer-15725877.html
+https://hannover.t-online.de/region/hannover/id_101459288/fernzuege-fahren-umweg-bahn-sperrt-strecke-berlin-hannover-fuer-14-monate.html
+https://www.antenne.com/niedersachsen/nachrichten/regional/Bahn-Sperrung-zwischen-Hannover-und-Berlin-ab-2.-Oktober-2026-Das-gilt-f%C3%BCr-Fernverkehr-und-Nahverkehr-id1730776.html
 勞動市場：
 https://www.finanznachrichten.de/nachrichten-2026-09/69714587-arbeitsmarkt-im-september-2026-herbstbelebung-beginnt-ohne-schwung-ba-presseinfo-nr-37-007.htm
 https://www.zdfheute.de/wirtschaft/arbeitslosenzahlen-september-2026-100.html
@@ -94,15 +110,15 @@ https://www.aerzteblatt.de/news/kabinettsbeschluss-neues-gesetz-soll-angriffe-au
 https://www.drb.de/positionen/stellungnahmen/stellungnahme/news/3-2026
 https://echo24.de/leben/verbraucher/alkoholverbot-am-bahnhof-diese-regeln-gelten-ab-oktober-94511791.html
 
-#德國知識小種子 #DasdeutscheWissen #在德台灣人 #德國生活 #德國新聞 #通膨 #護理保險 #Pflegereform #Bosch #汽車產業 #勞動市場 #刑法
+#德國知識小種子 #DasdeutscheWissen #在德台灣人 #德國生活 #德國新聞 #通膨 #護理保險 #Pflegereform #Bosch #汽車產業 #德鐵 #勞動市場 #刑法
 
 ========================================================================
 
-【IG 版（精簡版，共 831 字元，上限 2,200）】
+【IG 版（精簡版，共 951 字元，上限 2,200）】
 ------------------------------------------------------------------------
 
 🇩🇪 德國週報 W40｜9/28–10/4
-物價、保費、工作與安全。五張圖卡滑到底 👉
+物價、保費、交通、工作與安全。六張圖卡滑到底 👉
 
 📈 九月通膨 3.3%｜2023 年底以來最高，八月 2.9%。能源年增 14.9% 是主因，食品只漲 0.4%、核心通膨 2.4% 持平
 
@@ -114,9 +130,11 @@ https://echo24.de/leben/verbraucher/alkoholverbot-am-bahnhof-diese-regeln-gelten
 
 ✂️ 給付端刪減｜照護等級 1 每月 131 € 補助取消，原訂 2028 年的給付調升也取消。本站試算：月薪 4,000 € 的無子女者全年約多繳 144 €
 
+🚆 柏林–漢諾威高鐵整修｜10/2 起到 2027 年 12 月，年底前部分路段全線封閉。ICE 經 Braunschweig／Magdeburg 繞道，每趟多 60–80 分鐘；阿姆斯特丹–柏林改每 4 小時一班
+
 🚗 Bosch 紐倫堡廠砍一半｜2029 年底前裁減約 900 個職位、全廠約 1,800 人。內燃機萎縮、氫能不如預期，IG Metall 警告關廠無法排除
 
-📉 產業全景｜上半年汽車業就業 69.15 萬人，一年少 4.23 萬；供應商減幅比車廠更重
+📉 產業全景｜上半年汽車業就業 69.15 萬人，一年少 4.23 萬；賓士也將 12 月起重啟自願離職方案
 
 💼 失業 299.4 萬人｜失業率 6.4%，跌破 300 萬，但扣除季節因素反而增加 1.2 萬、比去年多 4 萬。Nahles：「起步乏力」
 
