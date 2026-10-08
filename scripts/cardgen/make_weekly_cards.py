@@ -1637,6 +1637,77 @@ def illu_pricebars(d, R, S, cx, cy, theme):
     d.polygon(R(*[v for (dx, dy) in bolt for v in (bx+dx, by+dy)]),
               fill=theme, outline=OUTLINE, width=3*S)
 
+def illu_powerbill(d, R, S, cx, cy, theme):
+    """電費帳單＋插頭＋上升箭頭（電網費／能源帳單調漲）"""
+    ow = 5*S
+    _dots(d, R, cx, cy, ((-72, -40, 3, GOLD), (-40, -56, 3, tint(theme, 0.5)),
+                         (72, 40, 3, theme)))
+    d.ellipse(R(cx-56, cy+46, cx+50, cy+58), fill=tint(theme, 0.18))
+    # 後層：帳單紙（右上折角）
+    d.polygon(R(cx-54, cy-46, cx+6, cy-46, cx+22, cy-30, cx+22, cy+46, cx-54, cy+46),
+              fill='white', outline=OUTLINE, width=ow)
+    d.polygon(R(cx+6, cy-46, cx+6, cy-30, cx+22, cy-30), fill=tint(theme, 0.30),
+              outline=OUTLINE, width=3*S)
+    # 帳單內容：三條明細線（同色系分層）＋金額列
+    for i, w in enumerate((44, 34, 40)):
+        yy = cy-28 + i*14
+        d.line(R(cx-44, yy, cx-44+w, yy), fill=tint(theme, 0.45), width=4*S)
+    d.rounded_rectangle(R(cx-44, cy+16, cx+12, cy+34), radius=4*S,
+                        fill=theme, outline=OUTLINE, width=3*S)
+    # 前景：插頭（帳單左下方伸出）
+    d.line(R(cx-54, cy+30, cx-70, cy+30), fill=OUTLINE, width=4*S)
+    # 焦點細節：金色圓徽章＋上升箭頭（費率上調）
+    bx, by, br = cx+46, cy-14, 24
+    d.ellipse(R(bx-br, by-br, bx+br, by+br), fill=GOLD, outline=OUTLINE, width=ow)
+    d.line(R(bx, by+12, bx, by-8), fill=OUTLINE, width=5*S)
+    d.polygon(R(bx-10, by-4, bx, by-16, bx+10, by-4), fill=OUTLINE)
+
+def illu_secretfile(d, R, S, cx, cy, theme):
+    """機密卷宗＋封條＋放大鏡（間諜案／情報外洩調查）"""
+    ow = 5*S
+    _dots(d, R, cx, cy, ((-72, -44, 3, GOLD), (60, -52, 3, tint(theme, 0.5)),
+                         (-70, 36, 3, theme)))
+    d.ellipse(R(cx-58, cy+46, cx+54, cy+58), fill=tint(theme, 0.18))
+    # 後層：卷宗夾（含頁籤）
+    d.rounded_rectangle(R(cx-58, cy-38, cx-24, cy-24), radius=4*S,
+                        fill=tint(theme, 0.45), outline=OUTLINE, width=3*S)
+    d.rounded_rectangle(R(cx-60, cy-30, cx+28, cy+46), radius=6*S,
+                        fill=tint(theme, 0.28), outline=OUTLINE, width=ow)
+    # 卷宗前片＋斜向封條
+    d.rounded_rectangle(R(cx-60, cy-18, cx+28, cy+46), radius=6*S,
+                        fill=theme, outline=OUTLINE, width=ow)
+    d.polygon(R(cx-52, cy+30, cx+10, cy-10, cx+18, cy+2, cx-44, cy+42),
+              fill='white', outline=OUTLINE, width=3*S)
+    # 焦點細節：金框放大鏡
+    mx, my, mr = cx+40, cy-14, 20
+    d.line(R(mx+14, my+14, mx+30, my+32), fill=OUTLINE, width=ow+3*S)
+    d.ellipse(R(mx-mr, my-mr, mx+mr, my+mr), fill='white', outline=GOLD, width=7*S)
+    d.ellipse(R(mx-mr-3, my-mr-3, mx+mr+3, my+mr+3), outline=OUTLINE, width=3*S)
+    d.arc(R(mx-11, my-11, mx+5, my+5), 180, 270, fill=tint(theme, 0.55), width=3*S)
+
+def illu_presidentbell(d, R, S, cx, cy, theme):
+    """議長搖鈴＋議事槌座（議會議長／議事主持）"""
+    ow = 5*S
+    _dots(d, R, cx, cy, ((-70, -42, 3, GOLD), (66, -48, 3, tint(theme, 0.5)),
+                         (72, 30, 3, theme)))
+    d.ellipse(R(cx-60, cy+46, cx+60, cy+58), fill=tint(theme, 0.18))
+    # 後層：講台桌面（兩層分層）
+    d.rounded_rectangle(R(cx-64, cy+28, cx+64, cy+48), radius=6*S,
+                        fill=tint(theme, 0.30), outline=OUTLINE, width=ow)
+    d.rounded_rectangle(R(cx-50, cy+18, cx+50, cy+30), radius=4*S,
+                        fill=theme, outline=OUTLINE, width=4*S)
+    # 鈴身（金色焦點）
+    d.chord(R(cx-34, cy-40, cx+34, cy+34), 180, 360, fill=GOLD, outline=OUTLINE, width=ow)
+    d.polygon(R(cx-34, cy-3, cx+34, cy-3, cx+40, cy+18, cx-40, cy+18),
+              fill=GOLD, outline=OUTLINE, width=ow)
+    # 鈴口飾帶＋高光
+    d.rounded_rectangle(R(cx-42, cy+10, cx+42, cy+20), radius=4*S,
+                        fill='white', outline=OUTLINE, width=3*S)
+    d.arc(R(cx-22, cy-30, cx+6, cy-2), 200, 260, fill='white', width=4*S)
+    # 握柄（木柄，主題色）
+    d.rounded_rectangle(R(cx-7, cy-56, cx+7, cy-38), radius=5*S,
+                        fill=theme, outline=OUTLINE, width=4*S)
+
 ILLUS = dict(podium=illu_podium, flags=illu_flags, coins=illu_coins,
              idcard=illu_idcard, camera=illu_camera, trophy=illu_trophy,
              bankcard=illu_bankcard, checklist=illu_checklist,
@@ -1663,7 +1734,9 @@ ILLUS = dict(podium=illu_podium, flags=illu_flags, coins=illu_coins,
              dealtag=illu_dealtag,
              gastank=illu_gastank, overduebill=illu_overduebill,
              gamepadhook=illu_gamepadhook, anklemonitor=illu_anklemonitor,
-             pricebars=illu_pricebars)
+             pricebars=illu_pricebars,
+             powerbill=illu_powerbill, secretfile=illu_secretfile,
+             presidentbell=illu_presidentbell)
 
 # ── 版型 ────────────────────────────────────────────────────
 
@@ -1984,88 +2057,75 @@ def make_chart_card(spec, path, week_label='W?', date_label=''):
 # ════════════════════════════════════════════════════════════
 # 每週卡片內容（範本：W29）——之後每週改這一段即可
 # ════════════════════════════════════════════════════════════
-WEEK = 'W40'
-DATE_RANGE = '2026/09/28-10/04'
+WEEK = 'W41'
+DATE_RANGE = '2026/10/05-10/11'
 
 CARDS = [
  dict(
-  theme='#D4740E', badges=[('物價', True), ('九月初估', False)], illu='pricebars',
-  title='九月通膨 3.3%，2023 年底以來最高',
-  subtitle='聯邦統計局 9/30 初估：能源年增 14.9%，食品只漲 0.4%',
-  stats=[('3.3%', '九月通膨率，八月 2.9%'),
-         ('14.9%', '能源價格年增率')],
+  theme='#2563EB', badges=[('汽車產業', True), ('車廠＋供應商', False)], illu='carplant',
+  title='Porsche 中期人力再縮四分之一',
+  subtitle='10/7 公布轉型計畫；福斯軟體子公司 Cariad 也傳裁減約 1,000 個職位',
+  stats=[('25%', 'Porsche 中期人力縮減目標'),
+         ('約 1,000 個', 'Cariad 傳出的裁減職位')],
   bullets=[
-   ('能源是主要推手', '能源年增率從七月 8.3%、八月 10.5% 一路升到 14.9%，油價創新高是主因；物價比八月再漲 0.6%。'),
-   ('其他項目相對平穩', '食品只漲 0.4%；扣除食品與能源的核心通膨為 2.4%，與七、八月持平——漲價集中在能源。'),
-   ('十月可能回落', '燃油稅 10/1 起每公升調降約 17 分，經濟學家預估十月通膨可能回到 3% 以下；但減稅只到年底。'),
+   ('Porsche：少做車、多賺錢', '車型版本砍約兩成、損益平衡壓到年銷 20 萬輛以下；2025 年營業利潤率僅 1.1%，目標 10–15%。'),
+   ('Cariad 近四分之一人力', 'dpa 引述內部人士：約 4,300 名員工中約 1,000 個職位將裁減；公司未證實。'),
+   ('供應商關廠', 'Breyden 年底關閉梅克倫堡-佛波門邦（Mecklenburg-Vorpommern）的鑄鐵廠，約 320 人受影響。'),
   ],
-  takeaway=('數據解讀', 'Commerzbank 首席經濟學家 Krämer 警告「通膨正在固著」；九月為初估值，正式數字十月中旬公布。'),
-  file='W40_圖卡1_九月通膨三點三.png'),
+  takeaway=('數字拆解', 'Porsche 的 25% 是中期目標、非單次裁員；與 7 月已議定的方案如何重疊，報導未說明。'),
+  file='W41_圖卡1_Porsche人力縮四分之一.png'),
  dict(
-  theme='#0D9488', badges=[('護理保險', True), ('內閣通過', False)], illu='carehand',
-  title='護理保險改革過內閣：無子女者多繳',
-  subtitle='9/30 內閣通過 PNOG 草案，一般費率維持 3.6%，接著送聯邦議院',
-  stats=[('0.9%', '無子女附加費，原 0.6%'),
-         ('80 億歐元', '2027 年原本的財務缺口')],
+  theme='#D4740E', badges=[('能源帳單', True), ('2027 預告', False)], illu='powerbill',
+  title='電網費 2027 回升：輸電網費漲 24%',
+  subtitle='四家輸電網營運商 10/1 公布暫定值，地區配電網費 10/15 前陸續出爐',
+  stats=[('+24%', '2027 年輸電網費平均漲幅'),
+         ('約 7 €', '雙人家庭每年多付（Verivox）')],
   bullets=[
-   ('誰要多付', '一般費率維持 3.6%；無子女附加費 2027 年起加 0.3 個百分點到 0.9%，由受僱者自行負擔。'),
-   ('配偶不再免費依附', '2028 年起，原本免保費依附的配偶與伴侶，須按投保人收入加收 0.52%；育有幼兒等情形可豁免。'),
-   ('給付端的刪減', '照護等級 1（Pflegegrad 1）不再有每月 131 € 的補助，2027 年省 8 億歐元；原訂 2028 年的給付調升取消。'),
+   ('為什麼漲', '聯邦補貼從 65 億歐元降到 55.25 億歐元；每度輸電網費從 2.86 歐分升到 3.54 歐分，沒有補貼會到 6.52 歐分。'),
+   ('家庭帳單影響有限', 'Verivox 試算：電價整體約漲 1%——單人戶每年多約 4 €、雙人戶 7 €、三人戶 10 €；補貼仍待國會立法。'),
+   ('暖氣：燒油的最痛', '《暖氣費指標》（Heizspiegel）預估今年 70 m² 公寓燒油暖氣 1,275 €、年增 24%；天然氣 1,120 €、降 4%。'),
   ],
-  takeaway=('試算提醒', '本站試算：月薪 4,000 € 的無子女受僱者，2027 年起每月多繳 12 €、全年 144 €。仍待國會審議。'),
-  file='W40_圖卡2_護理保險改革過內閣.png'),
+  takeaway=('因應建議', '地區配電網費各地差異大，年底若收到電力公司調價通知，可行使特別終止權（Sonderkündigungsrecht）換約。'),
+  file='W41_圖卡2_電網費2027回升.png'),
  dict(
-  theme='#2E8B57', badges=[('交通', True), ('10/2 起', False)], illu='train',
-  title='柏林–漢諾威 ICE 繞道 80 分鐘',
-  subtitle='10/2 起整修到 2027 年 12 月，年底前 Spandau–Fallersleben 全線封閉',
-  stats=[('60–80 分', 'ICE 柏林–漢諾威多花時間'),
-         ('14 個月', '整修期，至 2027 年 12 月')],
+  theme='#7C3AED', badges=[('國安', True), ('羈押中', False)], illu='secretfile',
+  title='前 BND 局長 Hanning 涉諜被捕',
+  subtitle='聯邦檢察總長：前辦公室主任 2010–2022 年間有償替他取得情報',
+  stats=[('80 歲', 'Hanning，1998–2005 任局長'),
+         ('12 年', '涉嫌有償取得情報的期間')],
   bullets=[
-   ('繞道 Braunschweig、Magdeburg', '北萊茵-西發利亞邦（Nordrhein-Westfalen）經漢諾威往柏林的 ICE 仍每小時一班。'),
-   ('其他路線也受牽連', '阿姆斯特丹–柏林 ICE 每 4 小時一班、多約 70 分鐘；法蘭克福–柏林改經 Erfurt。'),
-   ('為什麼要這麼久', 'Stendal 一帶逾 50 公里混凝土軌道要整段換新；平行路線電氣化延到 2027 年底。'),
+   ('涉嫌罪名', '從事情報機關間諜活動、叛國性刺探、刺探國家機密與叛國未遂；聯邦最高法院偵查法官已裁定羈押。'),
+   ('怎麼查到的', '2025 年 9 月因 Block 擄童案搜索 Hanning 住處與辦公室時發現線索，聯邦檢察總長 2026 年 5 月接手。'),
+   ('本人否認', '律師承認他持有機密文件，但否認轉交外國或收受報酬；替哪國情報機關工作，檢方未透露。'),
   ],
-  takeaway=('訂票提醒', '漢諾威–Leipzig 的 IC 改為每兩小時一班。出發前用 DB Navigator 確認班次，轉乘多留時間。'),
-  file='W40_圖卡3_柏林漢諾威高鐵封閉.png'),
+  takeaway=('政策觀察', '國會情報監督委員會主席 Henrichmann（CDU）要求收緊機密人員規範；指控尚未經法院證實。'),
+  file='W41_圖卡3_前BND局長涉諜被捕.png'),
  dict(
-  theme='#2563EB', badges=[('汽車產業', True), ('供應商', False)], illu='carplant',
-  title='Bosch 紐倫堡廠砍掉一半職位',
-  subtitle='9/28 宣布 2029 年底前裁減約 900 個職位，全廠約 1,800 人',
-  stats=[('900 個', '2029 年底前裁減職位'),
-         ('一半', '紐倫堡廠現有人力')],
+  theme='#C0392B', badges=[('邦議會', True), ('史上首見', False)], illu='presidentbell',
+  title='AfD 首度拿下邦議會議長',
+  subtitle='薩克森-安哈特邦（Sachsen-Anhalt）10/6 選出 AfD 的 Tobias Rausch',
+  stats=[('48 票', 'Rausch 得票，投票者 82 人'),
+         ('44 席', 'AfD 與 BSW 合計席次')],
   bullets=[
-   ('為什麼是紐倫堡', '該廠主要生產內燃機與燃料電池零件；Bosch 稱內燃機比重下滑、成本明顯高於市價，歐洲氫能市場也不如預期。'),
-   ('工會：工廠恐慢性死亡', 'IG Metall 與員工代表會（Betriebsrat）痛批「砍到見骨」，警告 2029 年後關廠無法排除，將自提轉型方案。'),
-   ('賓士也重啟自願離職', '賓士（Mercedes-Benz）12 月起再推自願離職方案，對象為行政、研發等非生產部門，首度納入高階主管。'),
+   ('票從哪裡來', 'AfD 與 BSW 合計只有 44 席，Rausch 卻拿到 48 票——至少 4 票來自其他黨團；秘密投票，無從查證。'),
+   ('CDU 被指跑票', 'CDU 黨團 15 人原被建議投棄權，結果全場只有 5 張棄權票；CDU 秘書長 Hoppermann 稱是「沉重打擊」。'),
+   ('議長團三分之二是 AfD', '副議長由 AfD 的 Tillschneider 與 CDU 的 Borchert 當選；SPD 提名人只拿 33 票落選，席位懸缺。'),
   ],
-  takeaway=('產業全景', '聯邦統計局：上半年汽車業就業 69.15 萬人、一年少 4.23 萬人；供應商減 7.6%，比車廠的 6.1% 更重。'),
-  file='W40_圖卡4_Bosch紐倫堡廠砍半.png'),
+  takeaway=('觀察重點', '9/6 選後新政府仍未組成；這次議長選舉被視為 CDU 能否守住「不與 AfD 合作」的試金石。'),
+  file='W41_圖卡4_AfD首位邦議會議長.png'),
  dict(
-  theme='#7C3AED', badges=[('勞動市場', True), ('九月數據', False)], illu='briefcase',
-  title='失業 299.4 萬人，秋季回溫乏力',
-  subtitle='聯邦就業署 9/30 公布：失業率 6.4%，比去年同期多 4 萬人',
-  stats=[('299.4 萬', '九月失業人數'),
-         ('6.4%', '失業率，比八月低 0.1')],
+  theme='#2E8B57', badges=[('景氣', True), ('秋季預測', False)], illu='factory',
+  title='政府上修成長預測：今年 1.3%',
+  subtitle='據 Reuters 取得的秋季預測草案：明年 1.1%，2028 年放緩到 0.6%',
+  stats=[('1.3%', '2026 年成長預測，春季 0.5%'),
+         ('-10.6%', '八月工業訂單月減')],
   bullets=[
-   ('只是季節性下降', '比八月少 6.7 萬人，但扣除季節因素反而增加 1.2 萬人；比去年同期多 4 萬人，失業率也高 0.1 個百分點。'),
-   ('署長 Nahles 的判斷', '「秋季回溫已經開始，但起步乏力」；經濟好轉的跡象「還沒有傳到勞動市場」。'),
-   ('職缺與縮短工時', '登記職缺 66 萬個，比去年多 3 萬；9/1–9/24 雇主為 1.8 萬人申報縮短工時（Kurzarbeit）。'),
+   ('上修原因', '出口回溫，基礎建設與國防兩筆特別基金開始撥款；中東戰事對經濟的衝擊不如春季預期嚴重。'),
+   ('訂單暴跌是大單效應', '八月工業訂單比七月少 10.6%，但扣除大型訂單只減 0.1%；跌幅集中在飛機、船舶等其他運輸工具。'),
+   ('生產反而回升', '八月生產月增 2.0%，主要靠營建 +9.3%、機械 +5.3%；汽車生產減 5.4%，VDA 稱與廠休時點有關。'),
   ],
-  takeaway=('觀察重點', '廣義失業（Unterbeschäftigung）361.5 萬人，比去年多 2.5 萬人；剛跌破 300 萬的數字主要是季節效果。'),
-  file='W40_圖卡5_失業人數秋季回溫乏力.png'),
- dict(
-  theme='#C0392B', badges=[('刑法', True), ('內閣通過', False)], illu='gavel',
-  title='攻擊列車長與醫護，刑罰加重',
-  subtitle='9/30 內閣通過司法部長 Hubig 草案，保護「讓國家運轉的人」',
-  stats=[('6 個月', '攻擊警消最低刑，原 3 個月'),
-         ('每天 5 起', '鐵路上的攻擊事件')],
-  bullets=[
-   ('最低刑加倍', '攻擊警察、法院執行官、消防與救護人員，最低刑由 3 個月提高到 6 個月；情節特別嚴重者至少 1 年。'),
-   ('醫護不分場所受保護', '醫師、護理人員、藥師及其員工執業時遭暴力或威脅妨礙，最高可處 5 年；肢體攻擊至少 6 個月。'),
-   ('導火線', '今年 2 月，列車長 Serkan Çalar 在萊茵蘭-普法茲邦（Rheinland-Pfalz）遭無票乘客攻擊身亡，震驚全德。'),
-  ],
-  takeaway=('法界觀點', '德國法官協會（Deutscher Richterbund）認為加重刑度效果有限，司法系統負荷過重才是關鍵。'),
-  file='W40_圖卡6_攻擊列車長醫護加重刑罰.png'),
+  takeaway=('數據解讀', '經濟部長 Reiche 形容復甦「仍然脆弱」、呼籲推動結構改革；最終數字以經濟部正式公布版本為準。'),
+  file='W41_圖卡5_政府上修成長預測.png'),
 ]
 
 # ── 邦名德文全名檢查 ────────────────────────────────────────
