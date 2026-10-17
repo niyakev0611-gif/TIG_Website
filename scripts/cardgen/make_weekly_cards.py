@@ -1708,6 +1708,113 @@ def illu_presidentbell(d, R, S, cx, cy, theme):
     d.rounded_rectangle(R(cx-7, cy-56, cx+7, cy-38), radius=5*S,
                         fill=theme, outline=OUTLINE, width=4*S)
 
+
+def illu_healthcard(d, R, S, cx, cy, theme):
+    """健保卡＋持平天平（法定健保附加保費／保費預估）"""
+    ow = 5*S
+    _dots(d, R, cx, cy, ((-72, -44, 3, GOLD), (-30, -56, 3, tint(theme, 0.5)),
+                         (74, 30, 3, theme)))
+    d.ellipse(R(cx-62, cy+48, cx+30, cy+58), fill=tint(theme, 0.18))
+    # 後層：第二張卡（分層表達厚度）
+    d.rounded_rectangle(R(cx-50, cy-30, cx+22, cy+24), radius=8*S,
+                        fill=tint(theme, 0.30), outline=OUTLINE, width=ow)
+    # 前層：健保卡本體
+    d.rounded_rectangle(R(cx-62, cy-14, cx+18, cy+44), radius=8*S,
+                        fill=theme, outline=OUTLINE, width=ow)
+    d.rounded_rectangle(R(cx-52, cy-2, cx-30, cy+14), radius=3*S,
+                        fill=GOLD, outline=OUTLINE, width=3*S)
+    for yy in (cy+24, cy+33):
+        d.line(R(cx-52, yy, cx+4, yy), fill='white', width=3*S)
+    # 白色十字（醫療）
+    d.rectangle(R(cx-6, cy-6, cx+2, cy+14), fill='white')
+    d.rectangle(R(cx-12, cy, cx+8, cy+8), fill='white')
+    # 焦點細節：金色持平天平（保費預估不變）
+    px, py = cx+46, cy-34
+    d.line(R(px, py-14, px, py+40), fill=OUTLINE, width=ow)
+    d.line(R(px-20, py, px+20, py), fill=OUTLINE, width=ow)
+    for dx in (-20, 20):
+        d.line(R(px+dx, py, px+dx, py+14), fill=OUTLINE, width=3*S)
+        d.chord(R(px+dx-12, py+4, px+dx+12, py+24), 0, 180, fill=GOLD, outline=OUTLINE, width=4*S)
+    d.ellipse(R(px-6, py-20, px+6, py-8), fill=GOLD, outline=OUTLINE, width=3*S)
+    d.rounded_rectangle(R(px-18, py+38, px+18, py+48), radius=4*S,
+                        fill=tint(theme, 0.45), outline=OUTLINE, width=4*S)
+
+
+def illu_sodacan(d, R, S, cx, cy, theme):
+    """汽水罐＋方糖＋稅額標籤（含糖飲料稅）"""
+    ow = 5*S
+    _dots(d, R, cx, cy, ((-72, -40, 3, theme), (-36, -56, 3, GOLD),
+                         (74, 40, 3, tint(theme, 0.5))))
+    d.ellipse(R(cx-58, cy+48, cx+50, cy+58), fill=tint(theme, 0.18))
+    # 罐身
+    d.rounded_rectangle(R(cx-46, cy-38, cx+4, cy+50), radius=12*S,
+                        fill=theme, outline=OUTLINE, width=ow)
+    d.rounded_rectangle(R(cx-40, cy-48, cx-2, cy-34), radius=6*S,
+                        fill='white', outline=OUTLINE, width=4*S)
+    d.line(R(cx-26, cy-44, cx-14, cy-44), fill=OUTLINE, width=3*S)
+    # 罐身白色腰帶＋高光
+    d.rectangle(R(cx-43, cy-2, cx+1, cy+14), fill='white')
+    d.rounded_rectangle(R(cx-38, cy-30, cx-32, cy-10), radius=3*S, fill=tint(theme, 0.5))
+    # 方糖兩顆（白色，前景）
+    for (x0, y0) in ((cx+10, cy+24), (cx+38, cy+30)):
+        d.rounded_rectangle(R(x0, y0, x0+22, y0+20), radius=4*S,
+                            fill='white', outline=OUTLINE, width=4*S)
+        d.line(R(x0+5, y0+6, x0+9, y0+6), fill=tint(theme, 0.45), width=3*S)
+    # 焦點細節：金色稅額吊牌
+    tx, ty = cx+34, cy-30
+    d.line(R(cx+4, cy-26, tx-14, ty-2), fill=OUTLINE, width=3*S)
+    d.polygon(R(tx-16, ty-14, tx+30, ty-14, tx+30, ty+14, tx-16, ty+14, tx-26, ty),
+              fill=GOLD, outline=OUTLINE, width=ow)
+    d.ellipse(R(tx-18, ty-4, tx-10, ty+4), fill='white', outline=OUTLINE, width=2*S)
+    d.line(R(tx-2, ty-5, tx+22, ty-5), fill=OUTLINE, width=3*S)
+    d.line(R(tx-2, ty+5, tx+16, ty+5), fill=OUTLINE, width=3*S)
+
+
+def illu_pipeline(d, R, S, cx, cy, theme):
+    """海底管線斷裂＋氣泡（管線破壞／北溪案）"""
+    ow = 5*S
+    _dots(d, R, cx, cy, ((-72, -46, 3, GOLD), (60, -54, 3, tint(theme, 0.5)),
+                         (74, 40, 3, theme)))
+    # 海床
+    d.rounded_rectangle(R(cx-78, cy+38, cx+78, cy+58), radius=9*S,
+                        fill=tint(theme, 0.30), outline=OUTLINE, width=ow)
+    # 左右兩段管線（中間斷開）
+    d.rounded_rectangle(R(cx-78, cy+6, cx-12, cy+34), radius=10*S,
+                        fill=theme, outline=OUTLINE, width=ow)
+    d.rounded_rectangle(R(cx+14, cy+6, cx+78, cy+34), radius=10*S,
+                        fill=theme, outline=OUTLINE, width=ow)
+    for x0 in (cx-50, cx+42):
+        d.line(R(x0, cy+6, x0, cy+34), fill=shade(theme, 0.72), width=4*S)
+    for x0 in (cx-70, cx+24):
+        d.rounded_rectangle(R(x0, cy+12, x0+18, cy+17), radius=2*S, fill=tint(theme, 0.5))
+    # 焦點細節：斷口的金色爆裂星
+    d.polygon(R(*star_pts(cx+1, cy+20, 24, 11, n=7)), fill=GOLD, outline=OUTLINE, width=4*S)
+    # 焦點細節：從斷口冒出的氣泡（奇數三顆，金白交錯）
+    for (dx, dy, r, col) in ((-6, -14, 8, 'white'), (6, -34, 7, 'white'), (-4, -51, 6, 'white')):
+        d.ellipse(R(cx+dx-r, cy+dy-r, cx+dx+r, cy+dy+r), fill=col, outline=OUTLINE, width=3*S)
+
+
+def illu_medhelmet(d, R, S, cx, cy, theme):
+    """鋼盔＋醫療十字＋放大鏡（軍中調查／衛勤部隊）"""
+    ow = 5*S
+    _dots(d, R, cx, cy, ((-72, -38, 3, GOLD), (-40, -56, 3, tint(theme, 0.5)),
+                         (74, -20, 3, theme)))
+    d.ellipse(R(cx-66, cy+48, cx+30, cy+58), fill=tint(theme, 0.18))
+    # 鋼盔：圓頂＋帽緣
+    d.chord(R(cx-62, cy-46, cx+26, cy+42), 180, 360, fill=theme, outline=OUTLINE, width=ow)
+    d.rounded_rectangle(R(cx-70, cy-4, cx+34, cy+10), radius=7*S,
+                        fill=shade(theme, 0.85), outline=OUTLINE, width=ow)
+    # 白底紅十字標章
+    d.ellipse(R(cx-34, cy-38, cx-2, cy-6), fill='white', outline=OUTLINE, width=3*S)
+    d.rectangle(R(cx-21, cy-32, cx-15, cy-12), fill='#C0392B')
+    d.rectangle(R(cx-28, cy-25, cx-8, cy-19), fill='#C0392B')
+    # 焦點細節：金框放大鏡（調查中）
+    mx, my, mr = cx+46, cy+12, 20
+    d.line(R(mx+12, my+14, mx+28, my+32), fill=OUTLINE, width=8*S)
+    d.ellipse(R(mx-mr, my-mr, mx+mr, my+mr), fill=GOLD, outline=OUTLINE, width=ow)
+    d.ellipse(R(mx-12, my-12, mx+12, my+12), fill='white', outline=OUTLINE, width=3*S)
+    d.arc(R(mx-8, my-8, mx+6, my+6), 190, 260, fill=tint(theme, 0.5), width=3*S)
+
 ILLUS = dict(podium=illu_podium, flags=illu_flags, coins=illu_coins,
              idcard=illu_idcard, camera=illu_camera, trophy=illu_trophy,
              bankcard=illu_bankcard, checklist=illu_checklist,
@@ -1736,7 +1843,9 @@ ILLUS = dict(podium=illu_podium, flags=illu_flags, coins=illu_coins,
              gamepadhook=illu_gamepadhook, anklemonitor=illu_anklemonitor,
              pricebars=illu_pricebars,
              powerbill=illu_powerbill, secretfile=illu_secretfile,
-             presidentbell=illu_presidentbell)
+             presidentbell=illu_presidentbell,
+             healthcard=illu_healthcard, sodacan=illu_sodacan,
+             pipeline=illu_pipeline, medhelmet=illu_medhelmet)
 
 # ── 版型 ────────────────────────────────────────────────────
 
@@ -2057,88 +2166,88 @@ def make_chart_card(spec, path, week_label='W?', date_label=''):
 # ════════════════════════════════════════════════════════════
 # 每週卡片內容（範本：W29）——之後每週改這一段即可
 # ════════════════════════════════════════════════════════════
-WEEK = 'W41'
-DATE_RANGE = '2026/10/05-10/11'
+WEEK = 'W42'
+DATE_RANGE = '2026/10/12-10/18'
 
 CARDS = [
  dict(
-  theme='#0D9488', badges=[('交通月票', True), ('2027 漲價', False)], illu='transitticket',
-  title='D-Ticket 2027 年起每月 66.80 €',
-  subtitle='各邦交通部長會議 9/30 拍板，比現行 63 € 每月多 3.80 €',
-  stats=[('66.80 €', '2027 年 1 月起每月票價'),
-         ('+3.80 €', '比現行每月多付')],
+  theme='#2E8B57', badges=[('健保', True), ('2027 預估', False)], illu='healthcard',
+  title='健保附加保費 2027 預估維持 2.9%',
+  subtitle='健保估算小組（Schätzerkreis）10/14 公布；衛生部 11/1 前正式公告',
+  stats=[('2.9%', '2027 年平均附加保費預估'),
+         ('3.13%', '目前各健保公司實際平均')],
   bullets=[
-   ('怎麼算出來的', '首次改用成本指數：人事成本 55%、能源 20%、其他 25%，不再每年由政治協商定價。'),
-   ('其他票種同步調整', 'Jobticket 63.46 €；學生票（Deutschland-Semesterticket）40.08 €，現行 37.80 €。'),
-   ('既有訂閱可能要「同意」', '部分業者（如柏林 S-Bahn）10 月底寄通知，需主動按同意，不回覆訂閱會自動終止。'),
+   ('為什麼能持平', '健康基金收入預估增 2.7%、支出增 2.2%；衛生部長 Linnemann 歸功於保費穩定法，明年最多省下 150 億歐元。'),
+   ('2.9% 只是計算值', '各健保公司自訂費率、年中也能調漲；目前實際平均已達 3.13%，預估持平不等於你的保費不漲。'),
+   ('業界：穩定仍不牢靠', '替代健保公司聯合會（vdek）會長 Elsner：法案見效，但結構問題未解。'),
   ],
-  takeaway=('訂閱提醒', '想續訂就留意信箱的同意信；不續訂的人在每月 10 日前取消，當月底即終止。'),
-  file='W41_圖卡1_D-Ticket2027漲價.png'),
+  takeaway=('因應建議', '收到調漲通知時，可行使特別終止權（Sonderkündigungsrecht）在生效當月底前換健保公司。'),
+  file='W42_圖卡1_健保附加保費持平.png'),
  dict(
-  theme='#2563EB', badges=[('汽車產業', True), ('車廠＋供應商', False)], illu='carplant',
-  title='Porsche 中期人力再縮四分之一',
-  subtitle='10/7 公布轉型計畫；福斯軟體子公司 Cariad 也傳裁減約 1,000 個職位',
-  stats=[('25%', 'Porsche 中期人力縮減目標'),
-         ('約 1,000 個', 'Cariad 傳出的裁減職位')],
+  theme='#0D9488', badges=[('早鳥退休金', True), ('三讀通過', False)], illu='piggybank',
+  title='早鳥退休金三讀通過：每月替孩子存 10 €',
+  subtitle='聯邦議院 10/16 通過，仍待聯邦參議院；預計 2027 年 1 月上路',
+  stats=[('1,440 €', '6 到 18 歲國家共存入'),
+         ('2020 年', '首批納入的出生年次')],
   bullets=[
-   ('Porsche：少做車、多賺錢', '車型版本砍約兩成、損益平衡壓到年銷 20 萬輛以下；2025 年營業利潤率僅 1.1%，目標 10–15%。'),
-   ('Cariad 近四分之一人力', 'dpa 引述內部人士：約 4,300 名員工中約 1,000 個職位將裁減；公司未證實。'),
-   ('供應商關廠', 'Breyden 年底關閉梅克倫堡-佛波門邦（Mecklenburg-Vorpommern）的鑄鐵廠，約 320 人受影響。'),
+   ('誰能領', '6 到 18 歲、主要居所在德國的孩子都適用；2020 年出生者最先納入，2026 年的份追溯補發。'),
+   ('錢怎麼投', '只補助費用上限 1% 的認證帳戶，資金投入全球分散的股票或股票基金；家長沒選就進聯邦銀行代管方案。'),
+   ('能不能加碼', '父母或祖父母每年最多可另存 6,840 €，但加碼部分沒有補助；原則上 65 歲前不能提領。'),
   ],
-  takeaway=('數字拆解', 'Porsche 的 25% 是中期目標、非單次裁員；與 7 月已議定的方案如何重疊，報導未說明。'),
-  file='W41_圖卡2_Porsche人力縮四分之一.png'),
+  takeaway=('因應建議', '家有 2020、2021 年出生孩子的家長，可先比較各家認證帳戶的費用；不選也會自動進聯邦銀行方案。'),
+  file='W42_圖卡2_早鳥退休金三讀.png'),
  dict(
-  theme='#D4740E', badges=[('能源帳單', True), ('2027 預告', False)], illu='powerbill',
-  title='電網費 2027 回升：輸電網費漲 24%',
-  subtitle='四家輸電網營運商 10/1 公布暫定值，地區配電網費 10/15 前陸續出爐',
-  stats=[('+24%', '2027 年輸電網費平均漲幅'),
-         ('約 7 €', '雙人家庭每年多付（Verivox）')],
+  theme='#D4740E', badges=[('含糖飲料稅', True), ('2027/7 上路', False)], illu='sodacan',
+  title='含糖飲料稅定案：每公升最高 32 歐分',
+  subtitle='內閣 10/14 通過草案，預計 2027 年 7 月 1 日上路，仍待聯邦議院審議',
+  stats=[('26／32 歐分', '兩級稅率（每公升）'),
+         ('6.9 億歐元', '2027 年預估稅收')],
   bullets=[
-   ('為什麼漲', '聯邦補貼從 65 億歐元降到 55.25 億歐元；每度輸電網費從 2.86 歐分升到 3.54 歐分，沒有補貼會到 6.52 歐分。'),
-   ('家庭帳單影響有限', 'Verivox 試算：電價整體約漲 1%——單人戶每年多約 4 €、雙人戶 7 €、三人戶 10 €；補貼仍待國會立法。'),
-   ('暖氣：燒油的最痛', '《暖氣費指標》（Heizspiegel）預估今年 70 m² 公寓燒油暖氣 1,275 €、年增 24%；天然氣 1,120 €、降 4%。'),
+   ('兩級怎麼分', '每 100 ml 含糖 5 至未滿 8 公克，每公升課 26 歐分；8 公克以上課 32 歐分。原規劃的第三級（38 歐分）取消。'),
+   ('哪些不課', '無糖（Zero）飲料、未加糖的純果汁與蔬菜汁、乳飲品與酒精飲料都不在範圍內；小型業者另有豁免。'),
+   ('各方角力', 'Foodwatch 認為能促使業者改配方減糖；飲料業六大公會警告漲價與行政成本，CSU 主張延到 2028 年。'),
   ],
-  takeaway=('因應建議', '地區配電網費各地差異大，年底若收到電力公司調價通知，可行使特別終止權（Sonderkündigungsrecht）換約。'),
-  file='W41_圖卡3_電網費2027回升.png'),
+  takeaway=('影響評估', '稅收將用於穩定法定健保保費；業者會不會把稅額全數轉嫁到售價，要看上路後的市場反應。'),
+  file='W42_圖卡3_含糖飲料稅定案.png'),
  dict(
-  theme='#7C3AED', badges=[('國安', True), ('羈押中', False)], illu='secretfile',
-  title='前 BND 局長 Hanning 涉諜被捕',
-  subtitle='聯邦檢察總長：前辦公室主任 2010–2022 年間有償替他取得情報',
-  stats=[('80 歲', 'Hanning，1998–2005 任局長'),
-         ('12 年', '涉嫌有償取得情報的期間')],
+  theme='#2563EB', badges=[('汽車產業', True), ('自願離職', False)], illu='contract',
+  title='BMW 自願離職方案開跑',
+  subtitle='據報約 4 萬名德國員工 10/8 起可上網查看方案，人事系統一度塞爆',
+  stats=[('約 8,000 個', '2027 年底前全球縮減職位'),
+         ('約 4 萬人', '德國可收到方案的員工')],
   bullets=[
-   ('涉嫌罪名', '從事情報機關間諜活動、叛國性刺探、刺探國家機密與叛國未遂；聯邦最高法院偵查法官已裁定羈押。'),
-   ('怎麼查到的', '2025 年 9 月因 Block 擄童案搜索 Hanning 住處與辦公室時發現線索，聯邦檢察總長 2026 年 5 月接手。'),
-   ('本人否認', '律師承認他持有機密文件，但否認轉交外國或收受報酬；替哪國情報機關工作，檢方未透露。'),
+   ('不是直接解僱', '7 月底與總員工代表會議定：靠自然離職、部分工時退休（Altersteilzeit）與離職金方案，原則上不資遣。'),
+   ('名單上是哪些人', '據內部消息以研發、行政等間接部門為主，生產線職位排除；離職金依年資與薪資計算，公式未公開。'),
+   ('同業同步瘦身', '賓士傳 12 月重啟第二輪離職方案；福斯 10 月初終止十份團體協約，勞資雙方本月下旬續談。'),
   ],
-  takeaway=('政策觀察', '國會情報監督委員會主席 Henrichmann（CDU）要求收緊機密人員規範；指控尚未經法院證實。'),
-  file='W41_圖卡4_前BND局長涉諜被捕.png'),
+  takeaway=('因應建議', '簽合意解約（Aufhebungsvertrag）前，先確認會不會觸發失業給付等待期（Sperrzeit），必要時諮詢工會或律師。'),
+  file='W42_圖卡4_BMW自願離職方案.png'),
  dict(
-  theme='#C0392B', badges=[('邦議會', True), ('史上首見', False)], illu='presidentbell',
-  title='AfD 首度拿下邦議會議長',
-  subtitle='薩克森-安哈特邦（Sachsen-Anhalt）10/6 選出 AfD 的 Tobias Rausch',
-  stats=[('48 票', 'Rausch 得票，投票者 82 人'),
-         ('44 席', 'AfD 與 BSW 合計席次')],
+  theme='#7C3AED', badges=[('司法', True), ('全球首例', False)], illu='pipeline',
+  title='北溪管線爆炸案 漢堡開審',
+  subtitle='烏克蘭籍被告 Serhij K. 10/14 出庭，檢方指他是破壞行動的現場指揮',
+  stats=[('16 個', '排定庭期，至 12/17'),
+         ('7 人', '檢方認定的行動小組')],
   bullets=[
-   ('票從哪裡來', 'AfD 與 BSW 合計只有 44 席，Rausch 卻拿到 48 票——至少 4 票來自其他黨團；秘密投票，無從查證。'),
-   ('CDU 被指跑票', 'CDU 黨團 15 人原被建議投棄權，結果全場只有 5 張棄權票；CDU 秘書長 Hoppermann 稱是「沉重打擊」。'),
-   ('議長團三分之二是 AfD', '副議長由 AfD 的 Tillschneider 與 CDU 的 Borchert 當選；SPD 提名人只拿 33 票落選，席位懸缺。'),
+   ('起訴內容', '罪名包括引發爆炸、毀損建物、妨害公用事業運作並涉戰爭罪；2025 年 8 月在義大利度假時被捕，11 月引渡德國。'),
+   ('檢方還原經過', '2022 年 9 月他與六名同夥在呂根島（Rügen）登上租來的帆船 Andromeda，在波羅的海海底管線裝設炸藥。'),
+   ('辯方主張', '律師主張即使他參與也享有「職務豁免」、管線屬合法軍事目標，檢方否認；首日辯方猛烈抨擊引渡程序。'),
   ],
-  takeaway=('觀察重點', '9/6 選後新政府仍未組成；這次議長選舉被視為 CDU 能否守住「不與 AfD 合作」的試金石。'),
-  file='W41_圖卡5_AfD首位邦議會議長.png'),
+  takeaway=('觀察重點', '全球第一宗北溪破壞案審判，牽動德烏關係；法院已駁回北溪公司以附帶訴訟人身分參加審判的申請。'),
+  file='W42_圖卡5_北溪爆炸案開審.png'),
  dict(
-  theme='#2E8B57', badges=[('景氣', True), ('秋季預測', False)], illu='factory',
-  title='政府上修成長預測：今年 1.3%',
-  subtitle='經濟部 10/8 正式公布秋季預測：明年 1.1%，2028 年放緩到 0.6%',
-  stats=[('1.3%', '2026 年成長預測，春季 0.5%'),
-         ('-10.6%', '八月工業訂單月減')],
+  theme='#C0392B', badges=[('國防', True), ('調查中', False)], illu='medhelmet',
+  title='聯邦國防軍衛勤團 10 人遭調查',
+  subtitle='駐地 Weißenfels 位於薩克森-安哈特邦（Sachsen-Anhalt）',
+  stats=[('10 人', '被列為涉案人'),
+         ('7 人', '已暫停執行職務')],
   bullets=[
-   ('上修原因', '出口回溫，基礎建設與國防兩筆特別基金開始撥款；中東戰事對經濟的衝擊不如春季預期嚴重。'),
-   ('訂單暴跌是大單效應', '八月工業訂單比七月少 10.6%，但扣除大型訂單只減 0.1%；跌幅集中在飛機、船舶等其他運輸工具。'),
-   ('生產反而回升', '八月生產月增 2.0%，主要靠營建 +9.3%、機械 +5.3%；汽車生產減 5.4%，VDA 稱與廠休時點有關。'),
+   ('涉嫌內容', '販售安非他命與睪固酮、恐嚇，以及性不當行為；據報有上級利用職權與新兵發生親密關係。'),
+   ('調查進度', '衛勤總監 Hoffmann 10/14 向聯邦議院國防委員會報告；檢方偵辦其中 5 人，憲兵已執行搜索與訊問。'),
+   ('部長表態', '國防部長 Pistorius：「目前仍是指控，若屬實令人作嘔」，承諾全面釐清並加強保護受害者。'),
   ],
-  takeaway=('數據解讀', '經濟部長 Reiche 形容復甦「仍然脆弱」、呼籲結構改革；月度訂單受大單影響大，看趨勢要看扣除大單的數字。'),
-  file='W41_圖卡6_政府上修成長預測.png'),
+  takeaway=('政策觀察', '2025 年底 Zweibrücken 傘兵團才爆出類似指控；國防軍擴充兵員之際，申訴與保護機制成為檢驗重點。'),
+  file='W42_圖卡6_國防軍衛勤團調查.png'),
 ]
 
 # ── 邦名德文全名檢查 ────────────────────────────────────────
