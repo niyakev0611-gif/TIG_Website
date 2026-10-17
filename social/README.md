@@ -2,7 +2,7 @@
 
 **一個主題一個資料夾，不分年份。** 每篇貼文固定兩個檔：
 
-- `{名稱}_社群貼文.txt` — 人看的：FB 條列版＋IG 精簡版，開頭註明用哪些圖卡、建議排程時間
+- `{名稱}_社群貼文.txt` — 人看的：FB 條列版＋IG 精簡版＋Threads 版，開頭註明用哪些圖卡、建議排程時間
 - `{名稱}_posts.json` — 機器用的：`node scripts/social-post.mjs` 自動排程發文吃這個檔
 
 ## 資料夾分類
@@ -37,5 +37,6 @@ node scripts/social-post.mjs --file social/tax/Steuerpflicht_posts.json --dry-ru
 node scripts/social-post.mjs --list                       # 看目前排程
 ```
 
-IG launchd 的執行紀錄在 `social/ig-post.log`（gitignored）。
+IG／Threads launchd 的執行紀錄在 `social/ig-post.log`、`social/threads-post.log`；
+Threads token 自動續期紀錄在 `social/threads-refresh.log`（皆 gitignored）。
 其餘檔案（txt、json、本 README）**都要 commit 進 repo**，pull 之後才能直接開檔複製。

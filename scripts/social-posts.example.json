@@ -1,18 +1,25 @@
 {
-  "_說明": "每週貼文 JSON 範本。正式檔放 social/weekly/W{N}_posts.json（單篇主題貼文放 social/{主題}/、用 --file 指定）。fb_message 放 FB 條列版全文、ig_message 放 IG 精簡版（≤1500 字元、不放網址）。schedule 是 FB 原生排程時間、ig_schedule 是 IG 本機 launchd 排程時間，都是 Europe/Berlin 當地時間。images 用 repo 相對路徑，IG 會自動轉成網站公開 URL（PNG 需先合進 main 並部署上線）。",
+  "_說明": "每週貼文 JSON 範本。正式檔放 social/weekly/W{N}_posts.json（單篇主題貼文放 social/{主題}/、用 --file 指定）。fb_message 放 FB 條列版全文、ig_message 放 IG 精簡版（≤1500 字元、不放網址）、threads_message 放 Threads 版（≤500 字元、emoji 以位元組計，要放網站週報連結）、threads_reply 是發完後自動回覆的第一則留言（放精選資料來源，選填）。沒寫 threads_message 就不發 Threads。schedule 是 FB 原生排程時間、ig_schedule 是 IG 本機 launchd 排程時間、threads_schedule 是 Threads 本機 launchd 排程時間（沒寫就沿用 ig_schedule），都是 Europe/Berlin 當地時間。images 用 repo 相對路徑，IG／Threads 會自動轉成網站公開 URL（PNG 需先合進 main 並部署上線）。",
   "posts": [
     {
       "id": "w28-weekly",
       "type": "multi_photo",
-      "platforms": ["fb", "ig"],
+      "platforms": [
+        "fb",
+        "ig",
+        "threads"
+      ],
       "schedule": "2026-07-12 19:00",
       "ig_schedule": "2026-07-12 19:05",
+      "threads_schedule": "2026-07-12 19:05",
       "images": [
         "assets/images/2026/weekly/W28_圖卡1_主題A.png",
         "assets/images/2026/weekly/W28_圖卡2_主題B.png"
       ],
       "fb_message": "🇩🇪【德國週報 W28】…（FB 條列版全文，含 📚 資料來源連結與 hashtag）",
-      "ig_message": "🇩🇪 德國週報 W28\n…（IG 精簡版，每題一行，≤1500 字元，不放網址）\n\n📚 完整解析與資料來源 → FB 粉專或網站（連結在 bio）\n\n#德國 #在德台灣人"
+      "ig_message": "🇩🇪 德國週報 W28\n…（IG 精簡版，每題一行，≤1500 字元，不放網址）\n\n📚 完整解析與資料來源 → FB 粉專或網站（連結在 bio）\n\n#德國 #在德台灣人",
+      "threads_message": "🇩🇪 德國週報 W28｜7/6–7/12\n\n▪️ 主題 A 一句話重點（含關鍵數字）\n▪️ 主題 B 一句話重點\n\n（可加一個問句邀請留言）\n\n完整解析與圖卡 → https://taiwanese-in-germany.com/posts/weekly-digest.html#jul6-12",
+      "threads_reply": "📚 官方資料來源\n機關名稱（主題）：https://…\n\n每一題的完整來源清單都列在網站文末。"
     }
   ]
 }
