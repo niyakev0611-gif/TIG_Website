@@ -340,10 +340,23 @@ async function threadsCall(method, pathStr, params = {}, base = THREADS_GRAPH) {
   if (!res.ok || json.error) throw new Error(`Threads API: ${JSON.stringify(json.error || json)}`);
   return json;
 }
+const THREADS_TOKEN_HINT = "到 Meta App → 使用案例 Threads → 設定 → 「Nutzertoken-Generator」產生 token，貼進 .env.local 的 THREADS_TOKEN=（或跑 --threads-auth）。教學見 scripts/README_social.md。";
 function requireThreadsToken() {
-  if (!THREADS_TOKEN || !THREADS_USER_ID) {
-    throw new Error("缺 THREADS_TOKEN / THREADS_USER_ID——先跑 node scripts/social-post.mjs --threads-auth（教學見 scripts/README_social.md）。");
+  if (!THREADS_TOKEN) throw new Error(`缺 THREADS_TOKEN——${THREADS_TOKEN_HINT}`);
+}
+// 只貼了 token（後台 token 產生器）→ 自動查帳號 ID 寫回 .env.local，並裝好自動續期排程
+async function ensureThreadsUser() {
+  requireThreadsToken();
+  if (THREADS_USER_ID) return THREADS_USER_ID;
+  const me = await threadsCall("GET", "/me", { fields: "id,username" });
+  THREADS_USER_ID = String(me.id);
+  updateEnvLocal({ THREADS_USER_ID });
+  console.log(`✓ 已自動寫入 THREADS_USER_ID（@${me.username} → ${THREADS_USER_ID}）`);
+  if (process.platform === "darwin" && !fs.existsSync(plistPath(THREADS_REFRESH_LABEL))) {
+    installThreadsRefreshJob();
+    console.log(`✓ 已安裝 Threads token 自動續期排程（每月 1、15 日 10:00）：${THREADS_REFRESH_LABEL}`);
   }
+  return THREADS_USER_ID;
 }
 async function threadsRefreshToken() {
   requireThreadsToken();
@@ -385,7 +398,7 @@ async function threadsPublishContainer(containerId) {
   return (await threadsCall("POST", `/${THREADS_USER_ID}/threads_publish`, { creation_id: containerId })).id;
 }
 async function threadsPublish(post, text, replyText) {
-  requireThreadsToken();
+  await ensureThreadsUser();
   await threadsMaybeRefresh();
   const media = collectMedia(post, post.threads_images || post.images || [post.image]);
   if (media.length > THREADS_MAX_ITEMS) throw new Error(`Threads 輪播最多 ${THREADS_MAX_ITEMS} 張（目前 ${media.length} 張）。`);
@@ -663,8 +676,9 @@ async function processPost(post) {
 
 // ── 診斷 ──────────────────────────────────────────────────────
 async function checkThreads() {
-  if (!THREADS_TOKEN) { console.log("Threads：尚未授權（跑 --threads-auth）。"); return; }
+  if (!THREADS_TOKEN) { console.log(`Threads：缺 THREADS_TOKEN——${THREADS_TOKEN_HINT}`); return; }
   try {
+    await ensureThreadsUser();
     const me = await threadsCall("GET", "/me", { fields: "id,username" });
     console.log(`✓ Threads 帳號: @${me.username} → ${me.id}${String(me.id) !== String(THREADS_USER_ID) ? `（⚠️ 與 .env 的 THREADS_USER_ID=${THREADS_USER_ID} 不符）` : ""}`);
     const age = threadsTokenAgeDays();
@@ -774,10 +788,13 @@ async function checkThreads() {
     console.error("   先跑 --dry-run 預覽不需要 token。");
     process.exit(1);
   }
-  if (!DRY_RUN && needThreads && (!THREADS_TOKEN || !THREADS_USER_ID)) {
-    console.error("✋ 缺少 THREADS_TOKEN / THREADS_USER_ID——先跑 node scripts/social-post.mjs --threads-auth（教學見 scripts/README_social.md）。");
-    console.error("   只想發 FB／IG 可加 --fb --ig。");
-    process.exit(1);
+  if (!DRY_RUN && needThreads) {
+    try { await ensureThreadsUser(); }
+    catch (e) {
+      console.error(`✋ Threads：${e.message}`);
+      console.error("   只想發 FB／IG 可加 --fb --ig。");
+      process.exit(1);
+    }
   }
 
   console.log(`德國知識小種子 社群發文 — ${DRY_RUN ? "DRY-RUN 預覽" : NOW ? "立即發布" : "排程模式"}`);

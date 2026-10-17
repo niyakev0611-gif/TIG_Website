@@ -510,7 +510,7 @@ IG 曾因貼文超過字數上限被拒登（"Text des Beitrags ist zu lang"）�
   launchd 到點發輪播＋自我回覆。圖片同樣吃網站公開 URL（先合併 PR、部署完成）。
 - **憑證**：repo 根目錄 `.env.local`（gitignored）：`FB_PAGE_ID` + `FB_PAGE_TOKEN`
   （Meta System User 永久 token）；Threads 另有 `THREADS_APP_ID`／`THREADS_APP_SECRET`，
-  token 由 `--threads-auth` 寫入、60 天效期由 launchd 自動續期。一次性設定教學：`scripts/README_social.md`。
+  token 用 App 後台「Nutzertoken-Generator」產生後貼進 `THREADS_TOKEN`（或 `--threads-auth`），60 天效期由 launchd 自動續期。一次性設定教學：`scripts/README_social.md`。
 - **指令**：`--week N --dry-run` 預覽 → `--week N` 排程；`--check` 診斷、`--list` 看排程、
   `--ig-cancel <id>`／`--threads-cancel <id>` 取消排程。平台旗標 `--fb`／`--ig`／`--threads` 可併用；
   ⚠️ **FB 已排過的週次補排其他平台時一定要加旗標**，不帶旗標重跑會讓 FB 重複排一則。

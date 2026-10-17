@@ -54,28 +54,36 @@ Threads 用的是**品牌 Threads 帳號本身的 OAuth token**（不是粉專 t
 
 1. **先確認品牌 Threads 帳號存在，而且是「公開」帳號**：用品牌 IG 帳號登入 Threads App 建立個人檔案即可。
    ⚠️ 官方規定：私人帳號的授權 90 天後無法續期、必須重新授權——公開帳號才能靠自動續期一直用下去。
-2. **建立 Meta App**：`developers.facebook.com` → 我的應用程式 → 建立應用程式 →
-   使用案例選 **「Access the Threads API」**（Threads API）。
-   建議另開一個（如 `TIG Threads`），不要動 oasis 的 App。
+2. **Meta App 加上 Threads 使用案例**：`developers.facebook.com` → 既有的 TIG 社群自動化 App →
+   使用案例新增 **「Access the Threads API」**（德文介面：Auf Threads API zugreifen）。
+   後台的「Testing（測試）」步驟可以跳過——只有送 App 審查才需要。
 3. **加權限**：左側 **使用案例（Use cases）** → Threads API → 自訂 →
    在 `threads_content_publish`、`threads_manage_replies` 旁按 **新增**（`threads_basic` 預設就有）。
 4. **填網址**：左側選單 **Settings（設定）**，填完按 **Save**：
-   - **Client OAuth Settings** 的有效 OAuth 回跳網址：`https://taiwanese-in-germany.com/`
-     （⚠️ 結尾斜線要一致——後台有時會自動補斜線；如要用別的網址，在 `.env.local` 設 `THREADS_REDIRECT_URI`）
-   - **Deauthorize callback URL** 與 **Data Deletion Requests URL**：都填 `https://taiwanese-in-germany.com/privacy.html`
+   - **回跳網址**（德文介面：Callback-URLs umleiten）：`https://taiwanese-in-germany.com/`
+     ⚠️ 貼上後要**按 Enter** 讓網址變成小方塊，否則儲存會報「Bitte gib eine Redirect URI für OAuth an」。
+     （結尾斜線要一致；如要用別的網址，在 `.env.local` 設 `THREADS_REDIRECT_URI`）
+   - **Deauthorize callback URL** 與 **Data Deletion Requests URL**（德文：Callback-URL deinstallieren／löschen）：
+     都填 `https://taiwanese-in-germany.com/privacy.html`
    - 這頁也有 **Threads app ID** 與 **Threads app secret**（⚠️ 用這一組，不是 App 基本設定裡的另一組），等一下要用。
 5. **加測試者**：設定頁按 **Add or Remove Threads Test Users** → 應用程式角色 → 新增人員 →
    角色選 **Threads Tester** → 輸入品牌 Threads 帳號名稱。
    然後在 Threads（網頁版或 App）→ 設定 → 帳號 → **網站權限（Website permissions）→ 邀請** 接受邀請。
    （官方：有測試者角色的帳號隨時可授權，**不需要送 App 審查、也不需要發布 App**——只給自己用就維持開發模式。）
-6. **填 `.env.local`**（別貼進聊天、別 commit）：
+6. **產生 token（最簡單的方式）**：同一頁 Settings 下方的 **Nutzertoken-Generator**
+   （使用者 token 產生器）→ 在品牌 Threads 帳號那一列按 **產生 token** → 複製。
+   這就是 60 天效期的長效 token（⚠️ 只能替**公開**的 Threads 帳號產生）。
+   貼進 repo 根目錄 `.env.local`（別貼進聊天、別 commit）：
 
 ```
-THREADS_APP_ID=<Threads app ID>
-THREADS_APP_SECRET=<Threads app secret>
+THREADS_TOKEN=<剛剛複製的 token>
 ```
 
-7. **授權**：
+   第一次跑 `--check` 或發文時，腳本會自動查出帳號 ID 寫回 `.env.local`（`THREADS_USER_ID`），
+   並安裝自動續期排程 `com.tig.threads-refresh`——之後不用再碰。
+
+7. **（替代方式）OAuth 授權流程**：不想用後台產生器時才需要。先在 `.env.local` 填
+   `THREADS_APP_ID`、`THREADS_APP_SECRET`（Settings 頁上方那一組），再跑：
 
 ```bash
 node scripts/social-post.mjs --threads-auth
@@ -89,11 +97,9 @@ node scripts/social-post.mjs --threads-auth
 node scripts/social-post.mjs --threads-auth "https://taiwanese-in-germany.com/?code=…"
 ```
 
-   成功會顯示 `✅ Threads 授權完成：@帳號`，`THREADS_TOKEN`／`THREADS_USER_ID` 自動寫進
-   `.env.local`，並自動安裝續期排程 `com.tig.threads-refresh`。
 8. **驗證**：`node scripts/social-post.mjs --check` → 應看到 `✓ Threads 帳號: @…` 與 24 小時發文額度。
 
-> token 萬一過期（例如 Mac 關機超過 60 天沒續到）：重跑步驟 7 即可。
+> token 萬一過期（例如 Mac 關機超過 60 天沒續到）：重做步驟 6，產新 token 換進 `.env.local` 即可。
 
 ---
 
