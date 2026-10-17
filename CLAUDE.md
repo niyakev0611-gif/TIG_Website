@@ -8,10 +8,11 @@
 
 **本專案的主旨：一切以自動化為目標，讓每週產出到發布完全不需要用戶手動操作。**
 
-- 內容產出自動化：圖卡（Pillow）、`js/data.js`、靜態頁 build、FB/IG 雙版貼文——一次全部備齊。
+- 內容產出自動化：圖卡（Pillow）、`js/data.js`、靜態頁 build、FB/IG/Threads 三版貼文——一次全部備齊。
 - **社群發布自動化（2026/07 起）**：FB 與 IG 貼文一律走 Meta Graph API 排程
   （`scripts/social-post.mjs`，比照 oasis 的 `fb-post.mjs` 架構），**不再手動貼文**。
   FB 用原生排程、IG 用本機 launchd 到點自動發。詳見 `scripts/README_social.md`。
+  **2026/10 起加發 Threads**（獨立 Threads API，同一支腳本、同樣 launchd 到點發）。
 - 遇到還在手動做的重複步驟，主動提出並實作自動化方案。
 - **內容飛輪（用戶 2026/07 定調，2026/08 加上節制原則）**：做圖卡與 FB/IG 貼文時帶入網站既有文章——
   加「📖 延伸閱讀：這篇你可能會喜歡」導流舊文，放大既有內容的效果；
@@ -439,8 +440,8 @@
      用戶在本機 `git pull` 即可同步到 `/Users/Lin/TIG/TIG_Website/assets/images/2026/weekly/`，
      方便一鍵複製貼文用）
    - 再用 `SendUserFile` 送到聊天視窗，讓用戶可立即下載
-5. 撰寫社群貼文（**FB 與 IG 必須是兩個不同版本**，見下方「社群貼文雙版本規範」）
-   - **貼文 txt 也要 commit 進 repo**：`social/weekly/W{週數}_社群貼文.txt`（FB＋IG 兩版合在一檔）
+5. 撰寫社群貼文（**FB、IG、Threads 三個不同版本**，見下方「社群貼文雙版本規範」與「Threads 版」）
+   - **貼文 txt 也要 commit 進 repo**：`social/weekly/W{週數}_社群貼文.txt`（FB＋IG＋Threads 三版合在一檔）
      （用戶 2026/07 要求：pull 之後要能在本機直接開檔複製，不能只放聊天附件）
    - 並同步產出 `social/weekly/W{N}_posts.json`（自動發文用，見「社群自動發文」）
    - **單篇主題貼文**（非週報）放 `social/{主題}/`（如 `social/tax/`、`social/bbva/`），
@@ -477,6 +478,18 @@ IG 曾因貼文超過字數上限被拒登（"Text des Beitrags ist zu lang"）�
 - hashtag 放文末，10 個左右即可
 - 圖卡兩平台共用同一套，IG 以輪播（carousel）上傳、最多 10 張
 
+### Threads 版（2026/10 起，第三個版本；用戶要求伸向 Threads 增加點擊）
+- **硬上限 500 字元**，而且 **emoji 以 UTF-8 位元組計**（一個 emoji 約佔 4 字元、🇩🇪 佔 8）
+  → emoji 少放，目標 ≤450；`--dry-run` 會用同樣算法顯示字數，超過會擋下
+- 結構：標頭「🇩🇪 德國週報 W{N}｜M/D–M/D」＋每題一行 ▪️ 重點（含關鍵數字、可用【】）＋
+  **一個與本週主題相關的問句**（Threads 演算法看重留言對話）＋**網站週報連結**
+- **一定要放網站連結**（`https://taiwanese-in-germany.com/posts/weekly-digest.html#{錨點}`）——
+  Threads 連結可點，這是比 IG 強的導流點；每則最多 5 個連結
+- 資料來源放 `threads_reply`（發完自動回覆的第一則留言）：精選 1–3 條**官方**來源＋
+  「每一題的完整來源清單都列在網站文末」；長網址很吃字數，不要硬塞全部
+- 不放 hashtag 串；圖卡與 IG 同一套輪播（Threads 上限 20 張）
+- 語氣、譯名紅線、禁用詞等規範與 FB/IG 完全相同
+
 ---
 
 ## 社群自動發文（FB + IG Graph API，2026/07 W28 起）
@@ -486,15 +499,21 @@ IG 曾因貼文超過字數上限被拒登（"Text des Beitrags ist zu lang"）�
 
 - **貼文 JSON**：`social/weekly/W{N}_posts.json`（單篇主題貼文放 `social/{主題}/`、
   排程時用 `--file` 指定；格式見 `scripts/social-posts.example.json`）；
-  欄位：`fb_message`（FB 條列版全文）、`ig_message`（IG 精簡版）、`images`（repo 相對路徑）、
-  `schedule`（FB 排程）、`ig_schedule`（IG 排程），時間一律 Europe/Berlin。
+  欄位：`fb_message`（FB 條列版全文）、`ig_message`（IG 精簡版）、`threads_message`（Threads 版）、
+  `threads_reply`（Threads 自我回覆、放來源）、`images`（repo 相對路徑）、
+  `schedule`（FB 排程）、`ig_schedule`（IG 排程）、`threads_schedule`（Threads 排程，沒寫沿用 IG），
+  `platforms` 寫 `["fb","ig","threads"]`；時間一律 Europe/Berlin。
 - **FB**：multi-photo + FB 原生排程（`published=false` + `scheduled_publish_time`），到點 FB 自動公開。
 - **IG**：Graph API 不支援未來排程 → 腳本建 macOS launchd 一次性任務，到點本機自動發輪播。
   IG 圖片吃網站公開 URL，**所以必須先合併 PR、GitHub Pages 部署完成後才能排 IG**。
+- **Threads**：獨立 Threads API，**不在 Business Suite／粉專 token 底下**；同樣不支援未來排程 →
+  launchd 到點發輪播＋自我回覆。圖片同樣吃網站公開 URL（先合併 PR、部署完成）。
 - **憑證**：repo 根目錄 `.env.local`（gitignored）：`FB_PAGE_ID` + `FB_PAGE_TOKEN`
-  （Meta System User 永久 token）。一次性設定教學：`scripts/README_social.md`。
+  （Meta System User 永久 token）；Threads 另有 `THREADS_APP_ID`／`THREADS_APP_SECRET`，
+  token 用 App 後台「Nutzertoken-Generator」產生後貼進 `THREADS_TOKEN`（或 `--threads-auth`），60 天效期由 launchd 自動續期。一次性設定教學：`scripts/README_social.md`。
 - **指令**：`--week N --dry-run` 預覽 → `--week N` 排程；`--check` 診斷、`--list` 看排程、
-  `--ig-cancel <id>` 取消 IG 排程。
+  `--ig-cancel <id>`／`--threads-cancel <id>` 取消排程。平台旗標 `--fb`／`--ig`／`--threads` 可併用；
+  ⚠️ **FB 已排過的週次補排其他平台時一定要加旗標**，不帶旗標重跑會讓 FB 重複排一則。
 - 排程發文視同「發布動作」：**先給用戶看 dry-run 預覽、得到 OK 才正式排程**。
 
 ---
@@ -514,7 +533,7 @@ IG 曾因貼文超過字數上限被拒登（"Text des Beitrags ist zu lang"）�
 | ② | **更新 `js/data.js`** | 在 `slug: 'weekly-digest'` 物件內：<br>　• `date:` 改成該週週日（如 `'2026-06-07'`）<br>　• `excerpt:` 改寫，把本週最大事件擺前面<br>　• `content:` 中 TOC 新增 `<li><a href="#jun{月}-{日}">...</a></li>`（最上方）<br>　• `content:` 中新增 `<h2 id="jun{月}-{日}">` 區段（最上方），包含：<br>　　　1 段 lead `<p>` 講本週重點<br>　　　每張卡：`<img>` → `<h3>` → `<p>` 深度內文 → `<p class="post-sources">📚 來源：...</p>`<br>　　結束接 `<hr>` 分隔 |
 | ③ | **跑 build** | `node scripts/build.js` 重生 `posts/weekly-digest.html`、`sitemap.xml`、`feed.xml` |
 | ④ | **commit、push、開 PR** | commit 訊息要明列「新增 W{N} 圖卡 + 更新 data.js + 重建靜態頁」三件事 |
-| ⑤ | **排程社群發文** | PR 合併、網站部署完成後：產 `social/weekly/W{N}_posts.json` → `node scripts/social-post.mjs --week {N} --dry-run` 給用戶過目 → OK 後正式排程（FB 原生排程 + IG launchd） |
+| ⑤ | **排程社群發文** | PR 合併、網站部署完成後：產 `social/weekly/W{N}_posts.json`（含 Threads 版）→ `node scripts/social-post.mjs --week {N} --dry-run` 給用戶過目 → OK 後正式排程（FB 原生排程 + IG／Threads launchd） |
 
 **驗證網站上線**：合進 main 後 GitHub Pages 約 30–60 秒重新部署。
 打開 https://taiwanese-in-germany.com/posts/weekly-digest.html，

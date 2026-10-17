@@ -34,6 +34,8 @@ drafts/
 
 # 社群發文執行紀錄（social/ 文字稿與 JSON 要進 repo，log 不用）
 social/ig-post.log
+social/threads-post.log
+social/threads-refresh.log
 
 # Node (if ever added)
 node_modules/
