@@ -597,6 +597,12 @@ async function processPost(post) {
     console.log(NOW || !threadsScheduleStr ? `  Threads: 立刻發布（${kind}）` : `  Threads: launchd 本機排程 ${threadsScheduleStr}（${kind}）`);
     if (!threadsMessage) threadsProblems.push("缺 threads_message");
     if (threadsMedia.length > THREADS_MAX_ITEMS) threadsProblems.push(`輪播超過 ${THREADS_MAX_ITEMS} 張`);
+    // 官方圖片規格：JPEG／PNG、單張 ≤ 8 MB（寬 320–1440 px 以外會被縮放，不擋）
+    for (const m of threadsMedia) {
+      if (!m.exists) continue;
+      if (!/\.(png|jpe?g)$/i.test(m.rel)) threadsProblems.push(`${path.basename(m.rel)} 不是 JPEG／PNG`);
+      if (fs.statSync(m.abs).size > 8 * 1024 * 1024) threadsProblems.push(`${path.basename(m.rel)} 超過 8 MB`);
+    }
     for (const [label, text] of [["主文", threadsMessage], ["自我回覆", threadsReply]]) {
       if (!text) continue;
       const len = threadsTextLength(text);

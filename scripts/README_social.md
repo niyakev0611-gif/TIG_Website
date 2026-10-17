@@ -52,21 +52,22 @@ FB_PAGE_TOKEN=<System User Token>
 Threads 用的是**品牌 Threads 帳號本身的 OAuth token**（不是粉專 token），效期 60 天，
 腳本會自動續期（每月 1、15 日的 launchd 排程＋每次發文前順手續），設定一次就好。
 
-1. **先確認品牌 Threads 帳號存在**：用品牌 IG 帳號登入 Threads App 建立個人檔案即可。
+1. **先確認品牌 Threads 帳號存在，而且是「公開」帳號**：用品牌 IG 帳號登入 Threads App 建立個人檔案即可。
+   ⚠️ 官方規定：私人帳號的授權 90 天後無法續期、必須重新授權——公開帳號才能靠自動續期一直用下去。
 2. **建立 Meta App**：`developers.facebook.com` → 我的應用程式 → 建立應用程式 →
    使用案例選 **「Access the Threads API」**（Threads API）。
    建議另開一個（如 `TIG Threads`），不要動 oasis 的 App。
 3. **加權限**：左側 **使用案例（Use cases）** → Threads API → 自訂 →
    在 `threads_content_publish`、`threads_manage_replies` 旁按 **新增**（`threads_basic` 預設就有）。
-4. **填網址**：同一頁的 **設定（Settings）**：
-   - **Redirect Callback URLs**（OAuth 回跳網址）：`https://taiwanese-in-germany.com/`
-     （⚠️ 結尾斜線要一致；如要用別的網址，在 `.env.local` 設 `THREADS_REDIRECT_URI`）
-   - **Uninstall／Delete Callback URL**：可填 `https://taiwanese-in-germany.com/privacy.html`
-   - 這頁也有 **Threads app ID** 與 **Threads app secret**，等一下要用。
+4. **填網址**：左側選單 **Settings（設定）**，填完按 **Save**：
+   - **Client OAuth Settings** 的有效 OAuth 回跳網址：`https://taiwanese-in-germany.com/`
+     （⚠️ 結尾斜線要一致——後台有時會自動補斜線；如要用別的網址，在 `.env.local` 設 `THREADS_REDIRECT_URI`）
+   - **Deauthorize callback URL** 與 **Data Deletion Requests URL**：都填 `https://taiwanese-in-germany.com/privacy.html`
+   - 這頁也有 **Threads app ID** 與 **Threads app secret**（⚠️ 用這一組，不是 App 基本設定裡的另一組），等一下要用。
 5. **加測試者**：設定頁按 **Add or Remove Threads Test Users** → 應用程式角色 → 新增人員 →
    角色選 **Threads Tester** → 輸入品牌 Threads 帳號名稱。
-   然後在 Threads（網頁版或 App）→ 設定 → 帳號 → **網站權限 → 邀請** 接受邀請。
-   （App 只給自己用、維持開發模式即可，不需要送 App 審查。介面名稱以 Meta 當下畫面為準。）
+   然後在 Threads（網頁版或 App）→ 設定 → 帳號 → **網站權限（Website permissions）→ 邀請** 接受邀請。
+   （官方：有測試者角色的帳號隨時可授權，**不需要送 App 審查、也不需要發布 App**——只給自己用就維持開發模式。）
 6. **填 `.env.local`**（別貼進聊天、別 commit）：
 
 ```
@@ -140,7 +141,8 @@ node scripts/social-post.mjs --threads-refresh                # 手動續期 Thr
 - **排程貼文在哪看**：FB → 粉專 Professional-Dashboard → Inhalte → Planer
   （⚠️ Meta Business Suite 的 Planner 常不顯示 API 排的貼文，別慌）。
 - **Threads 上限**（Meta 官方文件）：每則 **500 字元**（emoji 以 UTF-8 位元組計，一個約佔 4 字元，
-  腳本已用這個保守算法擋）；輪播 2–20 張；每則最多 5 個不同連結；每帳號 24 小時 250 則。
+  腳本已用這個保守算法擋）；輪播 2–20 張；每則最多 5 個不同連結；每帳號 24 小時 250 則、回覆 1,000 則。
+  圖片：JPEG／PNG、單張 ≤ 8 MB、寬 320–1440 px（1080×1080 圖卡約 0.4 MB，沒問題；腳本會擋超過 8 MB 的檔）。
   Threads 的連結**可以點**——主文一定要放網站週報連結，這是導流主力。
 - **Threads 回覆**：`threads_reply` 在主文發出後自動回覆；回覆失敗只會警告，主文不會重發。
   記錄檔：`social/threads-post.log`、續期紀錄：`social/threads-refresh.log`。
