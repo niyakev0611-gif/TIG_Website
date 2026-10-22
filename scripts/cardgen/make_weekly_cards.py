@@ -1815,6 +1815,238 @@ def illu_medhelmet(d, R, S, cx, cy, theme):
     d.ellipse(R(mx-12, my-12, mx+12, my+12), fill='white', outline=OUTLINE, width=3*S)
     d.arc(R(mx-8, my-8, mx+6, my+6), 190, 260, fill=tint(theme, 0.5), width=3*S)
 
+def illu_heatingbill(d, R, S, cx, cy, theme):
+    """暖氣片＋瓦斯火焰＋上升箭頭（瓦斯費／暖氣成本調漲）"""
+    ow = 5*S
+    _dots(d, R, cx, cy, ((-72, -42, 3, GOLD), (-34, -56, 3, tint(theme, 0.5)),
+                         (74, 40, 3, theme)))
+    d.ellipse(R(cx-62, cy+48, cx+30, cy+58), fill=tint(theme, 0.18))
+    # 支腳（後層）
+    for dx in (-50, 2):
+        d.line(R(cx+dx, cy+40, cx+dx, cy+52), fill=OUTLINE, width=ow)
+    # 暖氣片：白色外框＋四片主題色鰭片
+    d.rounded_rectangle(R(cx-62, cy-34, cx+14, cy+44), radius=10*S,
+                        fill='white', outline=OUTLINE, width=ow)
+    for k in range(4):
+        x0 = cx - 54 + k*17
+        d.rounded_rectangle(R(x0, cy-24, x0+11, cy+34), radius=5*S,
+                            fill=theme if k % 2 == 0 else tint(theme, 0.45))
+    # 調節閥
+    d.rounded_rectangle(R(cx+14, cy+20, cx+26, cy+30), radius=3*S,
+                        fill=tint(theme, 0.30), outline=OUTLINE, width=3*S)
+    # 前景：瓦斯火焰（主題色外焰＋金色內焰）
+    fx, fy = cx+48, cy+28
+    d.polygon(R(fx, fy-30, fx+16, fy-6, fx+14, fy+10, fx, fy+18, fx-14, fy+10, fx-16, fy-6),
+              fill=theme, outline=OUTLINE, width=4*S)
+    d.polygon(R(fx, fy-12, fx+8, fy+2, fx+6, fy+10, fx, fy+13, fx-6, fy+10, fx-8, fy+2),
+              fill=GOLD)
+    # 焦點細節：金色圓徽章＋上升箭頭（明年費率調漲）
+    bx, by, br = cx+48, cy-30, 22
+    d.ellipse(R(bx-br, by-br, bx+br, by+br), fill=GOLD, outline=OUTLINE, width=ow)
+    d.line(R(bx, by+11, bx, by-7), fill=OUTLINE, width=5*S)
+    d.polygon(R(bx-9, by-3, bx, by-14, bx+9, by-3), fill=OUTLINE)
+
+
+def illu_apartmentkeys(d, R, S, cx, cy, theme):
+    """公寓大樓＋金鑰匙（住宅收歸公有／租屋政策）"""
+    ow = 5*S
+    _dots(d, R, cx, cy, ((-72, -44, 3, GOLD), (28, -54, 3, tint(theme, 0.5)),
+                         (74, 40, 3, theme)))
+    d.ellipse(R(cx-64, cy+48, cx+40, cy+58), fill=tint(theme, 0.18))
+    # 後層：矮樓
+    d.rounded_rectangle(R(cx-14, cy-18, cx+26, cy+50), radius=5*S,
+                        fill=tint(theme, 0.30), outline=OUTLINE, width=ow)
+    # 前層：主樓
+    d.rounded_rectangle(R(cx-64, cy-46, cx-6, cy+50), radius=5*S,
+                        fill=theme, outline=OUTLINE, width=ow)
+    d.rounded_rectangle(R(cx-68, cy-54, cx-2, cy-42), radius=4*S,
+                        fill=shade(theme, 0.80), outline=OUTLINE, width=4*S)
+    # 窗格（3 欄 × 4 列，白色）＋大門
+    for row in range(4):
+        for col in range(3):
+            x0 = cx - 56 + col*16
+            y0 = cy - 34 + row*16
+            d.rounded_rectangle(R(x0, y0, x0+10, y0+10), radius=2*S, fill='white')
+    d.rounded_rectangle(R(cx-42, cy+32, cx-28, cy+50), radius=3*S,
+                        fill=GOLD, outline=OUTLINE, width=3*S)
+    for y0 in (cy-6, cy+12):
+        d.rounded_rectangle(R(cx-6, y0, cx+18, y0+8), radius=2*S, fill='white')
+    # 焦點細節：金鑰匙（環＋桿＋齒）
+    kx, ky = cx+52, cy-24
+    d.line(R(kx, ky+16, kx, ky+64), fill=OUTLINE, width=9*S)
+    d.line(R(kx, ky+16, kx, ky+64), fill=GOLD, width=4*S)
+    for yy in (ky+50, ky+60):
+        d.rounded_rectangle(R(kx, yy-4, kx+12, yy+4), radius=2*S,
+                            fill=GOLD, outline=OUTLINE, width=3*S)
+    d.ellipse(R(kx-18, ky-18, kx+18, ky+18), fill=GOLD, outline=OUTLINE, width=ow)
+    d.ellipse(R(kx-7, ky-7, kx+7, ky+7), fill='white', outline=OUTLINE, width=3*S)
+
+
+def illu_paycheckfreeze(d, R, S, cx, cy, theme):
+    """薪資單＋雪花徽章（凍薪／零調薪）"""
+    ow = 5*S
+    _dots(d, R, cx, cy, ((-72, -40, 3, theme), (-36, -56, 3, GOLD),
+                         (74, 40, 3, tint(theme, 0.5))))
+    d.ellipse(R(cx-60, cy+48, cx+44, cy+58), fill=tint(theme, 0.18))
+    # 後層：第二張薪資單
+    d.rounded_rectangle(R(cx-46, cy-50, cx+18, cy+34), radius=6*S,
+                        fill=tint(theme, 0.30), outline=OUTLINE, width=ow)
+    # 前層：薪資單本體
+    d.rounded_rectangle(R(cx-60, cy-36, cx+6, cy+48), radius=6*S,
+                        fill='white', outline=OUTLINE, width=ow)
+    d.rounded_rectangle(R(cx-60, cy-36, cx+6, cy-20), radius=6*S,
+                        fill=theme, outline=OUTLINE, width=ow)
+    for i, w in enumerate((42, 30, 38)):
+        yy = cy-6 + i*12
+        d.line(R(cx-50, yy, cx-50+w, yy), fill=tint(theme, 0.45), width=4*S)
+    # 金額列：持平的橫線（沒有上升）
+    d.rounded_rectangle(R(cx-50, cy+30, cx-4, cy+40), radius=3*S,
+                        fill=tint(theme, 0.60), outline=OUTLINE, width=3*S)
+    # 焦點細節：金色圓徽章＋六芒雪花
+    bx, by, br = cx+44, cy-8, 28
+    d.ellipse(R(bx-br, by-br, bx+br, by+br), fill=GOLD, outline=OUTLINE, width=ow)
+    for ang in (90, 30, -30):
+        a = math.radians(ang)
+        dx, dy = 17*math.cos(a), 17*math.sin(a)
+        d.line(R(bx-dx, by-dy, bx+dx, by+dy), fill=OUTLINE, width=4*S)
+    for ang in range(0, 360, 60):
+        a = math.radians(ang + 90)
+        px, py = bx + 11*math.cos(a), by + 11*math.sin(a)
+        d.ellipse(R(px-3, py-3, px+3, py+3), fill='white', outline=OUTLINE, width=2*S)
+    d.ellipse(R(bx-4, by-4, bx+4, by+4), fill='white', outline=OUTLINE, width=2*S)
+
+
+def illu_hourglass(d, R, S, cx, cy, theme):
+    """沙漏＋愛心徽章（退休年資／育兒照護期間採計）"""
+    ow = 5*S
+    _dots(d, R, cx, cy, ((-72, -40, 3, GOLD), (-46, -56, 3, tint(theme, 0.5)),
+                         (74, 40, 3, theme)))
+    d.ellipse(R(cx-58, cy+48, cx+34, cy+58), fill=tint(theme, 0.18))
+    # 玻璃（白）：上下兩個三角瓶身
+    d.polygon(R(cx-42, cy-40, cx+14, cy-40, cx-10, cy+2, cx-18, cy+2),
+              fill='white', outline=OUTLINE, width=ow)
+    d.polygon(R(cx-18, cy+2, cx-10, cy+2, cx+14, cy+44, cx-42, cy+44),
+              fill='white', outline=OUTLINE, width=ow)
+    # 金沙：上方剩一點、下方堆積＋中間沙流
+    d.polygon(R(cx-26, cy-14, cx-2, cy-14, cx-12, cy-2, cx-16, cy-2), fill=GOLD)
+    d.polygon(R(cx-14, cy+22, cx+6, cy+40, cx-34, cy+40), fill=GOLD)
+    d.line(R(cx-14, cy+2, cx-14, cy+24), fill=GOLD_D, width=3*S)
+    # 上下木座（主題色）
+    for y0 in (cy-52, cy+42):
+        d.rounded_rectangle(R(cx-54, y0, cx+26, y0+12), radius=5*S,
+                            fill=theme, outline=OUTLINE, width=ow)
+    # 焦點細節：白底愛心徽章（育兒與照護）
+    hx, hy, hr = cx+52, cy-4, 24
+    d.ellipse(R(hx-hr, hy-hr, hx+hr, hy+hr), fill='white', outline=OUTLINE, width=ow)
+    d.ellipse(R(hx-13, hy-11, hx+1, hy+3), fill=theme)
+    d.ellipse(R(hx-1, hy-11, hx+13, hy+3), fill=theme)
+    d.polygon(R(hx-13, hy-3, hx+13, hy-3, hx, hy+13), fill=theme)
+
+
+def illu_taxcalendar(d, R, S, cx, cy, theme):
+    """日曆頁＋菸盒完稅標籤（稅法生效日出錯／菸稅）"""
+    ow = 5*S
+    _dots(d, R, cx, cy, ((-72, -44, 3, GOLD), (70, -50, 3, tint(theme, 0.5)),
+                         (-70, 40, 3, theme)))
+    d.ellipse(R(cx-62, cy+48, cx+56, cy+58), fill=tint(theme, 0.18))
+    # 後層：日曆
+    d.rounded_rectangle(R(cx-64, cy-40, cx+14, cy+46), radius=8*S,
+                        fill='white', outline=OUTLINE, width=ow)
+    d.rounded_rectangle(R(cx-64, cy-40, cx+14, cy-20), radius=8*S,
+                        fill=theme, outline=OUTLINE, width=ow)
+    for x0 in (cx-44, cx-6):
+        d.rounded_rectangle(R(x0-3, cy-50, x0+3, cy-32), radius=3*S, fill=OUTLINE)
+    # 日期格（3×3），其中一格以金色標出提前的生效日
+    for row in range(3):
+        for col in range(3):
+            x0 = cx - 54 + col*22
+            y0 = cy - 12 + row*18
+            hi = (row, col) == (1, 1)
+            d.rounded_rectangle(R(x0, y0, x0+14, y0+11), radius=2*S,
+                                fill=GOLD if hi else tint(theme, 0.30),
+                                outline=OUTLINE if hi else None, width=2*S)
+    # 前景：菸盒＋金色完稅標籤（焦點細節）
+    px0, py0 = cx+18, cy-16
+    d.rounded_rectangle(R(px0, py0, px0+44, py0+62), radius=5*S,
+                        fill=theme, outline=OUTLINE, width=ow)
+    d.rounded_rectangle(R(px0, py0, px0+44, py0+16), radius=5*S,
+                        fill='white', outline=OUTLINE, width=4*S)
+    d.rounded_rectangle(R(px0+10, py0-6, px0+34, py0+24), radius=3*S,
+                        fill=GOLD, outline=OUTLINE, width=3*S)
+    d.line(R(px0+16, py0+4, px0+28, py0+4), fill=OUTLINE, width=2*S)
+    d.line(R(px0+16, py0+12, px0+28, py0+12), fill=OUTLINE, width=2*S)
+    d.rounded_rectangle(R(px0+8, py0+34, px0+36, py0+44), radius=3*S, fill=tint(theme, 0.5))
+
+
+def illu_investchip(d, R, S, cx, cy, theme):
+    """AI 晶片＋金幣堆＋上升箭頭（投資承諾／產業 AI）"""
+    ow = 5*S
+    _dots(d, R, cx, cy, ((-72, -46, 3, GOLD), (40, -56, 3, tint(theme, 0.5)),
+                         (-72, 40, 3, theme)))
+    d.ellipse(R(cx-62, cy+48, cx+62, cy+58), fill=tint(theme, 0.18))
+    # 晶片針腳（後層）
+    for k in range(4):
+        x = cx - 50 + k*14
+        d.line(R(x, cy-46, x, cy+26), fill=OUTLINE, width=3*S)
+        y = cy - 32 + k*14
+        d.line(R(cx-68, y, cx+8, y), fill=OUTLINE, width=3*S)
+    # 晶片本體
+    d.rounded_rectangle(R(cx-60, cy-38, cx-2, cy+20), radius=8*S,
+                        fill=theme, outline=OUTLINE, width=ow)
+    d.rounded_rectangle(R(cx-46, cy-24, cx-16, cy+6), radius=4*S,
+                        fill='white', outline=OUTLINE, width=3*S)
+    d.ellipse(R(cx-36, cy-14, cx-26, cy-4), fill=GOLD)
+    # 前景：金幣堆（三枚）
+    for i in range(3):
+        y0 = cy + 34 - i*12
+        d.ellipse(R(cx+10, y0, cx+58, y0+16), fill=GOLD, outline=OUTLINE, width=4*S)
+    d.ellipse(R(cx+20, cy+12, cx+48, cy+20), fill=GOLD_HI)
+    # 焦點細節：主題色上升箭頭
+    d.line(R(cx+34, cy+4, cx+34, cy-34), fill=OUTLINE, width=9*S)
+    d.line(R(cx+34, cy+4, cx+34, cy-34), fill=theme, width=4*S)
+    d.polygon(R(cx+18, cy-28, cx+34, cy-50, cx+50, cy-28), fill=theme, outline=OUTLINE, width=4*S)
+
+
+def illu_spinoff(d, R, S, cx, cy, theme):
+    """母公司大樓＋分出的四格子公司方塊＋箭頭（企業分拆／改組為子公司）"""
+    ow = 5*S
+    _dots(d, R, cx, cy, ((-74, -46, 3, GOLD), (8, -54, 3, tint(theme, 0.5)),
+                         (76, 44, 3, theme)))
+    d.ellipse(R(cx-66, cy+46, cx+70, cy+58), fill=tint(theme, 0.18))
+    # 母公司：大樓本體＋屋簷
+    d.rounded_rectangle(R(cx-68, cy-36, cx-14, cy+50), radius=6*S,
+                        fill=tint(theme, 0.30), outline=OUTLINE, width=ow)
+    d.rounded_rectangle(R(cx-72, cy-46, cx-10, cy-32), radius=4*S,
+                        fill=theme, outline=OUTLINE, width=4*S)
+    for row in range(3):
+        for col in range(2):
+            x0 = cx - 58 + col*22
+            y0 = cy - 22 + row*18
+            d.rounded_rectangle(R(x0, y0, x0+12, y0+10), radius=2*S, fill='white')
+    d.rounded_rectangle(R(cx-48, cy+34, cx-34, cy+50), radius=3*S,
+                        fill='white', outline=OUTLINE, width=3*S)
+    # 箭頭：母公司 → 子公司
+    d.line(R(cx-6, cy+4, cx+12, cy+4), fill=OUTLINE, width=9*S)
+    d.line(R(cx-6, cy+4, cx+12, cy+4), fill=theme, width=4*S)
+    d.polygon(R(cx+10, cy-6, cx+22, cy+4, cx+10, cy+14),
+              fill=theme, outline=OUTLINE, width=3*S)
+    # 四家子公司（2×2），焦點細節：最大那格為金色（Mobility）
+    tiles = ((cx+28, cy-34, cx+58, cy+2, GOLD),
+             (cx+62, cy-22, cx+78, cy+2, 'white'),
+             (cx+28, cy+8, cx+48, cy+30, theme),
+             (cx+52, cy+8, cx+78, cy+30, tint(theme, 0.45)))
+    for x0, y0, x1, y1, fc in tiles:
+        d.rounded_rectangle(R(x0, y0, x1, y1), radius=4*S,
+                            fill=fc, outline=OUTLINE, width=4*S)
+    # 金格上的小齒輪（汽車零組件）
+    gx, gy = cx+43, cy-16
+    for ang in range(0, 360, 60):
+        a = math.radians(ang)
+        d.line(R(gx, gy, gx + 10*math.cos(a), gy + 10*math.sin(a)), fill=OUTLINE, width=4*S)
+    d.ellipse(R(gx-7, gy-7, gx+7, gy+7), fill='white', outline=OUTLINE, width=3*S)
+    d.ellipse(R(gx-2, gy-2, gx+2, gy+2), fill=OUTLINE)
+
+
 ILLUS = dict(podium=illu_podium, flags=illu_flags, coins=illu_coins,
              idcard=illu_idcard, camera=illu_camera, trophy=illu_trophy,
              bankcard=illu_bankcard, checklist=illu_checklist,
@@ -1845,7 +2077,11 @@ ILLUS = dict(podium=illu_podium, flags=illu_flags, coins=illu_coins,
              powerbill=illu_powerbill, secretfile=illu_secretfile,
              presidentbell=illu_presidentbell,
              healthcard=illu_healthcard, sodacan=illu_sodacan,
-             pipeline=illu_pipeline, medhelmet=illu_medhelmet)
+             pipeline=illu_pipeline, medhelmet=illu_medhelmet,
+             heatingbill=illu_heatingbill, apartmentkeys=illu_apartmentkeys,
+             paycheckfreeze=illu_paycheckfreeze, hourglass=illu_hourglass,
+             taxcalendar=illu_taxcalendar, investchip=illu_investchip,
+             spinoff=illu_spinoff)
 
 # ── 版型 ────────────────────────────────────────────────────
 
@@ -2166,88 +2402,101 @@ def make_chart_card(spec, path, week_label='W?', date_label=''):
 # ════════════════════════════════════════════════════════════
 # 每週卡片內容（範本：W29）——之後每週改這一段即可
 # ════════════════════════════════════════════════════════════
-WEEK = 'W42'
-DATE_RANGE = '2026/10/12-10/18'
+WEEK = 'W43'
+DATE_RANGE = '2026/10/19-10/25'
 
 CARDS = [
  dict(
-  theme='#2E8B57', badges=[('健保', True), ('2027 預估', False)], illu='healthcard',
-  title='健保附加保費 2027 預估維持 2.9%',
-  subtitle='健保估算小組（Schätzerkreis）10/14 公布；衛生部 11/1 前正式公告',
-  stats=[('2.9%', '2027 年平均附加保費預估'),
-         ('3.13%', '目前各健保公司實際平均')],
+  theme='#D4740E', badges=[('能源帳單', True), ('2027 預估', False)], illu='heatingbill',
+  title='明年瓦斯費恐漲 10–20%',
+  subtitle='聯邦統計局 10/20：九月生產者物價年增 6.7%，能源成本持續往下游轉嫁',
+  stats=[('+6.7%', '九月生產者物價年增'),
+         ('250–500 €', '年用 2 萬度家庭每年多付')],
   bullets=[
-   ('為什麼能持平', '健康基金收入預估增 2.7%、支出增 2.2%；衛生部長 Linnemann 歸功於保費穩定法，明年最多省下 150 億歐元。'),
-   ('2.9% 只是計算值', '各健保公司自訂費率、年中也能調漲；目前實際平均已達 3.13%，預估持平不等於你的保費不漲。'),
-   ('業界：穩定仍不牢靠', '替代健保公司聯合會（vdek）會長 Elsner：法案見效，但結構問題未解。'),
+   ('能源領漲', '能源年增 14.9%、石油製品 51.3%，是 2023 年 3 月以來最大漲幅；扣除能源只漲 3.2%。'),
+   ('瓦斯首當其衝', 'Verivox 預估明年 1 月起瓦斯費依方案漲 10–20%：業者早年預購的便宜天然氣用完，2027 年得高價補貨。'),
+   ('網路費也小漲', '2027 年瓦斯網路費平均 +3%、電網費 +1.9%；儲氣率約六成，11/1 達 80% 的法定目標已不可能。'),
   ],
-  takeaway=('因應建議', '收到調漲通知時，可行使特別終止權（Sonderkündigungsrecht）在生效當月底前換健保公司。'),
-  file='W42_圖卡1_健保附加保費持平.png'),
+  takeaway=('因應建議', '基本供應（Grundversorgung）1/1 調價須在 11/20 前通知；收到漲價信可行使特別終止權，比較有價格保證的方案。'),
+  file='W43_圖卡1_明年瓦斯費恐漲兩成.png'),
  dict(
-  theme='#0D9488', badges=[('早鳥退休金', True), ('三讀通過', False)], illu='piggybank',
-  title='早鳥退休金三讀通過：每月替孩子存 10 €',
-  subtitle='聯邦議院 10/16 通過，仍待聯邦參議院；預計 2027 年 1 月上路',
-  stats=[('1,440 €', '6 到 18 歲國家共存入'),
-         ('2020 年', '首批納入的出生年次')],
+  theme='#7C3AED', badges=[('柏林住房', True), ('組閣談判', False)], illu='apartmentkeys',
+  title='柏林擬將大房東 16 萬戶收歸公有',
+  subtitle='柏林邦（Berlin）SPD、綠黨 10/19 同意與左翼黨展開組閣談判',
+  stats=[('約 16 萬戶', '可能轉為公有的住宅'),
+         ('160 億歐元', '補償金上限')],
   bullets=[
-   ('誰能領', '6 到 18 歲、主要居所在德國的孩子都適用；2020 年出生者最先納入，2026 年的份追溯補發。'),
-   ('錢怎麼投', '只補助費用上限 1% 的認證帳戶，資金投入全球分散的股票或股票基金；家長沒選就進聯邦銀行代管方案。'),
-   ('能不能加碼', '父母或祖父母每年最多可另存 6,840 €，但加碼部分沒有補助；原則上 65 歲前不能提領。'),
+   ('怎麼收', '持有逾 1 萬戶的住宅企業，超出部分依基本法第 15 條轉為公有並給予補償；合作社、公益住宅與 2021 年後新建者除外。'),
+   ('時程', '法案預計 2028 年中提出、最快 2029 年中生效；左翼黨 10/31 黨代會才決定是否正式進入組閣談判。'),
+   ('各方反應', 'Vonovia 稱計畫違憲、經不起司法審查；推動公投的團體不滿門檻從 3,000 戶拉高；聯邦執政聯盟另研擬立法阻擋。'),
   ],
-  takeaway=('因應建議', '家有 2020、2021 年出生孩子的家長，可先比較各家認證帳戶的費用；不選也會自動進聯邦銀行方案。'),
-  file='W42_圖卡2_早鳥退休金三讀.png'),
+  takeaway=('觀察重點', '對租客而言短期不會有變化：法律最快 2029 年生效，補償金靠貸款支應、再以租金回收，且勢必面臨憲法訴訟。'),
+  file='W43_圖卡2_柏林大房東收歸公有.png'),
  dict(
-  theme='#D4740E', badges=[('含糖飲料稅', True), ('2027/7 上路', False)], illu='sodacan',
-  title='含糖飲料稅定案：每公升最高 32 歐分',
-  subtitle='內閣 10/14 通過草案，預計 2027 年 7 月 1 日上路，仍待聯邦議院審議',
-  stats=[('26／32 歐分', '兩級稅率（每公升）'),
-         ('6.9 億歐元', '2027 年預估稅收')],
+  theme='#2563EB', badges=[('汽車產業', True), ('勞資對峙', False)], illu='paycheckfreeze',
+  title='福斯傳凍薪到 2030 年',
+  subtitle='《南德日報》率先報導、IG Metall 證實內部指示；福斯「不評論臆測」',
+  stats=[('約 66 萬人', '全球可能受影響員工'),
+         ('10% 以上', '工會估算實質薪資損失')],
   bullets=[
-   ('兩級怎麼分', '每 100 ml 含糖 5 至未滿 8 公克，每公升課 26 歐分；8 公克以上課 32 歐分。原規劃的第三級（38 歐分）取消。'),
-   ('哪些不課', '無糖（Zero）飲料、未加糖的純果汁與蔬菜汁、乳飲品與酒精飲料都不在範圍內；小型業者另有豁免。'),
-   ('各方角力', 'Foodwatch 認為能促使業者改配方減糖；飲料業六大公會警告漲價與行政成本，CSU 主張延到 2028 年。'),
+   ('指示內容', '據 IG Metall 與員工代表會，董事會要求全球人資部門自 10 月初起，人事預算不再編列通膨補貼與團體協約調薪。'),
+   ('工會反擊', '員工代表會稱這是 Wolfsburg 資方的「一廂情願」；工會要求加薪 5%，福斯企業協約談判預計 11 月底開始。'),
+   ('全產業升溫', '金屬電機業第二輪薪資談判 10/27 起陸續登場，和平義務 10/31 午夜到期，11/1 起可發動警告性罷工。'),
   ],
-  takeaway=('影響評估', '稅收將用於穩定法定健保保費；業者會不會把稅額全數轉嫁到售價，要看上路後的市場反應。'),
-  file='W42_圖卡3_含糖飲料稅定案.png'),
+  takeaway=('觀察重點', '凍薪目前是媒體與工會披露、公司未證實；福斯已終止十份團體協約，年底前勞資攻防將直接牽動各廠區。'),
+  file='W43_圖卡3_福斯傳凍薪到2030.png'),
  dict(
-  theme='#2563EB', badges=[('汽車產業', True), ('自願離職', False)], illu='contract',
-  title='BMW 自願離職方案開跑',
-  subtitle='據報約 4 萬名德國員工 10/8 起可上網查看方案，人事系統一度塞爆',
-  stats=[('約 8,000 個', '2027 年底前全球縮減職位'),
-         ('約 4 萬人', '德國可收到方案的員工')],
+  theme='#2E8B57', badges=[('汽車產業', True), ('集團改組', False)], illu='spinoff',
+  title='Bosch 汽車事業拆成子公司',
+  subtitle='10/22 宣布：在德約 6.25 萬名員工移轉到 4 家全資子公司',
+  stats=[('約 6.25 萬人', '移轉到新子公司的在德員工'),
+         ('2027/8/1', '新公司開始營運')],
   bullets=[
-   ('不是直接解僱', '7 月底與總員工代表會議定：靠自然離職、部分工時退休（Altersteilzeit）與離職金方案，原則上不資遣。'),
-   ('名單上是哪些人', '據內部消息以研發、行政等間接部門為主，生產線職位排除；離職金依年資與薪資計算，公式未公開。'),
-   ('同業同步瘦身', '賓士傳 12 月重啟第二輪離職方案；福斯 10 月初終止十份團體協約，勞資雙方本月下旬續談。'),
+   ('怎麼拆', 'Mobility 在德事業與 IT、共享服務、不動產單位從母公司分出。'),
+   ('員工權益', '公司稱契約整批轉移、薪資與勞動條件不變；不另外裁員，也不打算上市或出售。'),
+   ('工會疑慮', '員工代表會強調重組不能犧牲員工；到 2030 年再減約 1.3 萬個職位的既有計畫照常。'),
   ],
-  takeaway=('因應建議', '簽合意解約（Aufhebungsvertrag）前，先確認會不會觸發失業給付等待期（Sperrzeit），必要時諮詢工會或律師。'),
-  file='W42_圖卡4_BMW自願離職方案.png'),
+  takeaway=('因應建議', '屬事業移轉（Betriebsübergang），民法典第 613a 條保障契約與年資；收到書面通知一個月內可異議。'),
+  file='W43_圖卡4_Bosch汽車事業拆子公司.png'),
  dict(
-  theme='#7C3AED', badges=[('司法', True), ('全球首例', False)], illu='pipeline',
-  title='北溪管線爆炸案 漢堡開審',
-  subtitle='烏克蘭籍被告 Serhij K. 10/14 出庭，檢方指他是破壞行動的現場指揮',
-  stats=[('16 個', '排定庭期，至 12/17'),
-         ('7 人', '檢方認定的行動小組')],
+  theme='#0D9488', badges=[('退休金', True), ('改革角力', False)], illu='hourglass',
+  title='45 年免扣減退休：育兒年資恐不再算',
+  subtitle='聯盟黨提出妥協構想、SPD 反對；整體退休改革恐延到 2027 年',
+  stats=[('45 年', '免扣減提前退休門檻'),
+         ('33 項', '退休金委員會改革建議')],
   bullets=[
-   ('起訴內容', '罪名包括引發爆炸、毀損建物、妨害公用事業運作並涉戰爭罪；2025 年 8 月在義大利度假時被捕，11 月引渡德國。'),
-   ('檢方還原經過', '2022 年 9 月他與六名同夥在呂根島（Rügen）登上租來的帆船 Andromeda，在波羅的海海底管線裝設炸藥。'),
-   ('辯方主張', '律師主張即使他參與也享有「職務豁免」、管線屬合法軍事目標，檢方否認；首日辯方猛烈抨擊引渡程序。'),
+   ('構想內容', '據《圖片報》（Bild）報導，聯盟黨想保留 45 年制度，但育兒與照護期間未來少算或不算，等於要多工作幾年。'),
+   ('誰受影響', '分析指出女性受衝擊最大，許多人得靠育兒、照護期間才湊滿年資；SPD 黨團副主席 Schmidt 表態堅決維護。'),
+   ('卡在哪裡', '退休金委員會原建議廢除此制；接替請辭的 Bas 出任勞動部長的 Schweitzer（SPD）盼在聯盟內找到妥協。'),
   ],
-  takeaway=('觀察重點', '全球第一宗北溪破壞案審判，牽動德烏關係；法院已駁回北溪公司以附帶訴訟人身分參加審判的申請。'),
-  file='W42_圖卡5_北溪爆炸案開審.png'),
+  takeaway=('數據解讀', '「63 歲退休」早已名不符實：現行世代滿 45 年免扣減的最早年齡已約 64.5 歲，並逐步升到 65 歲。'),
+  file='W43_圖卡5_45年退休育兒年資.png'),
  dict(
-  theme='#C0392B', badges=[('國防', True), ('調查中', False)], illu='medhelmet',
-  title='聯邦國防軍衛勤團 10 人遭調查',
-  subtitle='駐地 Weißenfels 位於薩克森-安哈特邦（Sachsen-Anhalt）',
-  stats=[('10 人', '被列為涉案人'),
-         ('7 人', '已暫停執行職務')],
+  theme='#C0392B', badges=[('菸稅', True), ('立法烏龍', False)], illu='taxcalendar',
+  title='菸稅漲價法提前生效：財政部烏龍',
+  subtitle='公報誤載「公布次日生效」，原訂 2027/1/1 的新稅率 10/21 起即適用',
+  stats=[('10/21', '法律意外生效日'),
+         ('11.78 €', '2030 年一包菸預估均價')],
   bullets=[
-   ('涉嫌內容', '販售安非他命與睪固酮、恐嚇，以及性不當行為；據報有上級利用職權與新兵發生親密關係。'),
-   ('調查進度', '衛勤總監 Hoffmann 10/14 向聯邦議院國防委員會報告；檢方偵辦其中 5 人，憲兵已執行搜索與訊問。'),
-   ('部長表態', '國防部長 Pistorius：「目前仍是指控，若屬實令人作嘔」，承諾全面釐清並加強保護受害者。'),
+   ('出了什麼錯', '條文寫成「公布次日生效」，且原定 2030 年的最高稅率被列為一般稅率；財政部稱是技術錯誤，已啟動更正。'),
+   ('售價會馬上漲嗎', '不會。新稅率的完稅標籤（Steuerzeichen）還沒印好，海關暫不執行；已完稅的庫存可照常販售。'),
+   ('電子菸爭議', '業界主張新法漏列電子菸液稅率、今年等於免稅；財政部反駁「立法者意思很清楚」，照舊稅率課徵。'),
   ],
-  takeaway=('政策觀察', '2025 年底 Zweibrücken 傘兵團才爆出類似指控；國防軍擴充兵員之際，申訴與保護機制成為檢驗重點。'),
-  file='W42_圖卡6_國防軍衛勤團調查.png'),
+  takeaway=('數據解讀', '依財政部試算，一包菸均價從約 8.05 € 漲到 2027 年 9.10 €、2030 年 11.78 €（本站 W42 誤引 8 月草案數字）。'),
+  file='W43_圖卡6_菸稅法提前生效.png'),
+ dict(
+  theme='#2E8B57', badges=[('經濟', True), ('投資高峰會', False)], illu='investchip',
+  title='投資高峰會：企業承諾約 2,300 億歐元',
+  subtitle='Merz 10/19–20 在柏林邀集約 200 位企業領袖，Nvidia 執行長黃仁勳壓軸',
+  stats=[('2,286 億歐元', '經濟部統計的大型投資案'),
+         ('160 億歐元', 'Amazon 至 2027 年底')],
+  bullets=[
+   ('錢從哪來', '經濟部列出 2026 年逾 70 件、每件至少 1 億歐元的投資案，約 955 億歐元來自外國企業。'),
+   ('AI 是主角', 'Nvidia 入股 4 家德國新創、與聯邦合作推動工業 AI；Amazon 近 50 億歐元擴建法蘭克福雲端。'),
+   ('數字的但書', '不少專案早已規劃且橫跨多年；經濟部隔天也表示這是「會前彙整的統計」，並非全是新承諾。'),
+  ],
+  takeaway=('觀察重點', 'Merz 喊出要把德國從「儲蓄者之國」變成「投資者之國」；實際能帶來多少新工作，要看專案動工進度。'),
+  file='W43_圖卡7_投資高峰會兩千三百億.png'),
 ]
 
 # ── 邦名德文全名檢查 ────────────────────────────────────────
