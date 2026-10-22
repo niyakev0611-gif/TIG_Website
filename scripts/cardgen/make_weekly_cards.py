@@ -2007,6 +2007,46 @@ def illu_investchip(d, R, S, cx, cy, theme):
     d.polygon(R(cx+18, cy-28, cx+34, cy-50, cx+50, cy-28), fill=theme, outline=OUTLINE, width=4*S)
 
 
+def illu_spinoff(d, R, S, cx, cy, theme):
+    """母公司大樓＋分出的四格子公司方塊＋箭頭（企業分拆／改組為子公司）"""
+    ow = 5*S
+    _dots(d, R, cx, cy, ((-74, -46, 3, GOLD), (8, -54, 3, tint(theme, 0.5)),
+                         (76, 44, 3, theme)))
+    d.ellipse(R(cx-66, cy+46, cx+70, cy+58), fill=tint(theme, 0.18))
+    # 母公司：大樓本體＋屋簷
+    d.rounded_rectangle(R(cx-68, cy-36, cx-14, cy+50), radius=6*S,
+                        fill=tint(theme, 0.30), outline=OUTLINE, width=ow)
+    d.rounded_rectangle(R(cx-72, cy-46, cx-10, cy-32), radius=4*S,
+                        fill=theme, outline=OUTLINE, width=4*S)
+    for row in range(3):
+        for col in range(2):
+            x0 = cx - 58 + col*22
+            y0 = cy - 22 + row*18
+            d.rounded_rectangle(R(x0, y0, x0+12, y0+10), radius=2*S, fill='white')
+    d.rounded_rectangle(R(cx-48, cy+34, cx-34, cy+50), radius=3*S,
+                        fill='white', outline=OUTLINE, width=3*S)
+    # 箭頭：母公司 → 子公司
+    d.line(R(cx-6, cy+4, cx+12, cy+4), fill=OUTLINE, width=9*S)
+    d.line(R(cx-6, cy+4, cx+12, cy+4), fill=theme, width=4*S)
+    d.polygon(R(cx+10, cy-6, cx+22, cy+4, cx+10, cy+14),
+              fill=theme, outline=OUTLINE, width=3*S)
+    # 四家子公司（2×2），焦點細節：最大那格為金色（Mobility）
+    tiles = ((cx+28, cy-34, cx+58, cy+2, GOLD),
+             (cx+62, cy-22, cx+78, cy+2, 'white'),
+             (cx+28, cy+8, cx+48, cy+30, theme),
+             (cx+52, cy+8, cx+78, cy+30, tint(theme, 0.45)))
+    for x0, y0, x1, y1, fc in tiles:
+        d.rounded_rectangle(R(x0, y0, x1, y1), radius=4*S,
+                            fill=fc, outline=OUTLINE, width=4*S)
+    # 金格上的小齒輪（汽車零組件）
+    gx, gy = cx+43, cy-16
+    for ang in range(0, 360, 60):
+        a = math.radians(ang)
+        d.line(R(gx, gy, gx + 10*math.cos(a), gy + 10*math.sin(a)), fill=OUTLINE, width=4*S)
+    d.ellipse(R(gx-7, gy-7, gx+7, gy+7), fill='white', outline=OUTLINE, width=3*S)
+    d.ellipse(R(gx-2, gy-2, gx+2, gy+2), fill=OUTLINE)
+
+
 ILLUS = dict(podium=illu_podium, flags=illu_flags, coins=illu_coins,
              idcard=illu_idcard, camera=illu_camera, trophy=illu_trophy,
              bankcard=illu_bankcard, checklist=illu_checklist,
@@ -2040,7 +2080,8 @@ ILLUS = dict(podium=illu_podium, flags=illu_flags, coins=illu_coins,
              pipeline=illu_pipeline, medhelmet=illu_medhelmet,
              heatingbill=illu_heatingbill, apartmentkeys=illu_apartmentkeys,
              paycheckfreeze=illu_paycheckfreeze, hourglass=illu_hourglass,
-             taxcalendar=illu_taxcalendar, investchip=illu_investchip)
+             taxcalendar=illu_taxcalendar, investchip=illu_investchip,
+             spinoff=illu_spinoff)
 
 # ── 版型 ────────────────────────────────────────────────────
 
@@ -2394,16 +2435,29 @@ CARDS = [
  dict(
   theme='#2563EB', badges=[('汽車產業', True), ('勞資對峙', False)], illu='paycheckfreeze',
   title='福斯傳凍薪到 2030 年',
-  subtitle='IG Metall 10/19 披露董事會內部指示；福斯表示「不評論臆測」',
-  stats=[('逾 66 萬人', '全球可能受影響員工'),
+  subtitle='《南德日報》率先報導、IG Metall 證實內部指示；福斯「不評論臆測」',
+  stats=[('約 66 萬人', '全球可能受影響員工'),
          ('10% 以上', '工會估算實質薪資損失')],
   bullets=[
-   ('指示內容', '據 IG Metall，董事會要求全球人資部門自 10 月初起，人事預算不再編列通膨補貼與團體協約調薪。'),
+   ('指示內容', '據 IG Metall 與員工代表會，董事會要求全球人資部門自 10 月初起，人事預算不再編列通膨補貼與團體協約調薪。'),
    ('工會反擊', '員工代表會稱這是 Wolfsburg 資方的「一廂情願」；工會要求加薪 5%，福斯企業協約談判預計 11 月底開始。'),
    ('全產業升溫', '金屬電機業第二輪薪資談判 10/27 起陸續登場，和平義務 10/31 午夜到期，11/1 起可發動警告性罷工。'),
   ],
-  takeaway=('觀察重點', '凍薪目前只是工會披露、公司未證實；福斯已終止十份團體協約，年底前勞資攻防將直接牽動各廠區。'),
+  takeaway=('觀察重點', '凍薪目前是媒體與工會披露、公司未證實；福斯已終止十份團體協約，年底前勞資攻防將直接牽動各廠區。'),
   file='W43_圖卡3_福斯傳凍薪到2030.png'),
+ dict(
+  theme='#2E8B57', badges=[('汽車產業', True), ('集團改組', False)], illu='spinoff',
+  title='Bosch 汽車事業拆成子公司',
+  subtitle='10/22 宣布：在德約 6.25 萬名員工移轉到 4 家全資子公司',
+  stats=[('約 6.25 萬人', '移轉到新子公司的在德員工'),
+         ('2027/8/1', '新公司開始營運')],
+  bullets=[
+   ('怎麼拆', 'Mobility 在德事業與 IT、共享服務、不動產單位從母公司分出。'),
+   ('員工權益', '公司稱契約整批轉移、薪資與勞動條件不變；不另外裁員，也不打算上市或出售。'),
+   ('工會疑慮', '員工代表會強調重組不能犧牲員工；到 2030 年再減約 1.3 萬個職位的既有計畫照常。'),
+  ],
+  takeaway=('因應建議', '屬事業移轉（Betriebsübergang），民法典第 613a 條保障契約與年資；收到書面通知一個月內可異議。'),
+  file='W43_圖卡4_Bosch汽車事業拆子公司.png'),
  dict(
   theme='#0D9488', badges=[('退休金', True), ('改革角力', False)], illu='hourglass',
   title='45 年免扣減退休：育兒年資恐不再算',
@@ -2416,7 +2470,7 @@ CARDS = [
    ('卡在哪裡', '退休金委員會原建議廢除此制；接替請辭的 Bas 出任勞動部長的 Schweitzer（SPD）盼在聯盟內找到妥協。'),
   ],
   takeaway=('數據解讀', '「63 歲退休」早已名不符實：現行世代滿 45 年免扣減的最早年齡已約 64.5 歲，並逐步升到 65 歲。'),
-  file='W43_圖卡4_45年退休育兒年資.png'),
+  file='W43_圖卡5_45年退休育兒年資.png'),
  dict(
   theme='#C0392B', badges=[('菸稅', True), ('立法烏龍', False)], illu='taxcalendar',
   title='菸稅漲價法提前生效：財政部烏龍',
@@ -2426,10 +2480,10 @@ CARDS = [
   bullets=[
    ('出了什麼錯', '條文寫成「公布次日生效」，且原定 2030 年的最高稅率被列為一般稅率；財政部稱是技術錯誤，已啟動更正。'),
    ('售價會馬上漲嗎', '不會。新稅率的完稅標籤（Steuerzeichen）還沒印好，海關暫不執行；已完稅的庫存可照常販售。'),
-   ('業界反應', '菸草業公會 BVTE 的 Mücke 要求政府盡快恢復法律確定性，否則生產無法正常進行。'),
+   ('電子菸爭議', '業界主張新法漏列電子菸液稅率、今年等於免稅；財政部反駁「立法者意思很清楚」，照舊稅率課徵。'),
   ],
   takeaway=('數據解讀', '依財政部試算，一包菸均價從約 8.05 € 漲到 2027 年 9.10 €、2030 年 11.78 €（本站 W42 誤引 8 月草案數字）。'),
-  file='W43_圖卡5_菸稅法提前生效.png'),
+  file='W43_圖卡6_菸稅法提前生效.png'),
  dict(
   theme='#2E8B57', badges=[('經濟', True), ('投資高峰會', False)], illu='investchip',
   title='投資高峰會：企業承諾約 2,300 億歐元',
@@ -2442,7 +2496,7 @@ CARDS = [
    ('數字的但書', '不少專案早已規劃且橫跨多年；經濟部隔天也表示這是「會前彙整的統計」，並非全是新承諾。'),
   ],
   takeaway=('觀察重點', 'Merz 喊出要把德國從「儲蓄者之國」變成「投資者之國」；實際能帶來多少新工作，要看專案動工進度。'),
-  file='W43_圖卡6_投資高峰會兩千三百億.png'),
+  file='W43_圖卡7_投資高峰會兩千三百億.png'),
 ]
 
 # ── 邦名德文全名檢查 ────────────────────────────────────────
