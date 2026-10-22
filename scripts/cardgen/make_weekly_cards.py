@@ -2047,6 +2047,42 @@ def illu_spinoff(d, R, S, cx, cy, theme):
     d.ellipse(R(gx-2, gy-2, gx+2, gy+2), fill=OUTLINE)
 
 
+def illu_clockback(d, R, S, cx, cy, theme):
+    """雙鈴鬧鐘＋金色逆時針箭頭（時鐘撥回／夏令冬令時間切換）"""
+    ow = 5*S
+    _dots(d, R, cx, cy, ((-74, -40, 3, GOLD), (60, -52, 3, tint(theme, 0.5)),
+                         (-70, 44, 3, theme)))
+    ccx, ccy, r = cx-12, cy+2, 42
+    d.ellipse(R(ccx-46, cy+48, ccx+46, cy+58), fill=tint(theme, 0.18))
+    # 鈴鐺與腳
+    for bx in (ccx-30, ccx+30):
+        d.ellipse(R(bx-11, ccy-r-10, bx+11, ccy-r+12), fill=theme, outline=OUTLINE, width=4*S)
+    d.line(R(ccx-26, ccy+r-6, ccx-34, ccy+r+8), fill=OUTLINE, width=6*S)
+    d.line(R(ccx+26, ccy+r-6, ccx+34, ccy+r+8), fill=OUTLINE, width=6*S)
+    # 鐘體＋錶面
+    d.ellipse(R(ccx-r, ccy-r, ccx+r, ccy+r), fill=theme, outline=OUTLINE, width=ow)
+    d.ellipse(R(ccx-r+9, ccy-r+9, ccx+r-9, ccy+r-9), fill='white', outline=OUTLINE, width=3*S)
+    for ang in range(0, 360, 90):
+        a = math.radians(ang)
+        d.ellipse(R(ccx+26*math.cos(a)-2.5, ccy+26*math.sin(a)-2.5,
+                    ccx+26*math.cos(a)+2.5, ccy+26*math.sin(a)+2.5), fill=tint(theme, 0.6))
+    # 指針：分針指 12、時針指 2
+    d.line(R(ccx, ccy, ccx, ccy-24), fill=OUTLINE, width=4*S)
+    a = math.radians(-30)
+    d.line(R(ccx, ccy, ccx+16*math.cos(a), ccy+16*math.sin(a)), fill=OUTLINE, width=5*S)
+    d.ellipse(R(ccx-4, ccy-4, ccx+4, ccy+4), fill=GOLD, outline=OUTLINE, width=2*S)
+    # 焦點細節：金色逆時針弧形箭頭（撥回一小時）
+    ar = 60
+    d.arc(R(ccx-ar, ccy-ar, ccx+ar, ccy+ar), start=335, end=50, fill=OUTLINE, width=10*S)
+    d.arc(R(ccx-ar, ccy-ar, ccx+ar, ccy+ar), start=337, end=48, fill=GOLD, width=5*S)
+    th = math.radians(335)
+    px, py = ccx + ar*math.cos(th), ccy + ar*math.sin(th)
+    tx, ty = math.sin(th), -math.cos(th)
+    nx, ny = math.cos(th), math.sin(th)
+    d.polygon(R(px+16*tx, py+16*ty, px+10*nx, py+10*ny, px-10*nx, py-10*ny),
+              fill=GOLD, outline=OUTLINE, width=3*S)
+
+
 ILLUS = dict(podium=illu_podium, flags=illu_flags, coins=illu_coins,
              idcard=illu_idcard, camera=illu_camera, trophy=illu_trophy,
              bankcard=illu_bankcard, checklist=illu_checklist,
@@ -2081,7 +2117,7 @@ ILLUS = dict(podium=illu_podium, flags=illu_flags, coins=illu_coins,
              heatingbill=illu_heatingbill, apartmentkeys=illu_apartmentkeys,
              paycheckfreeze=illu_paycheckfreeze, hourglass=illu_hourglass,
              taxcalendar=illu_taxcalendar, investchip=illu_investchip,
-             spinoff=illu_spinoff)
+             spinoff=illu_spinoff, clockback=illu_clockback)
 
 # ── 版型 ────────────────────────────────────────────────────
 
@@ -2407,6 +2443,19 @@ DATE_RANGE = '2026/10/19-10/25'
 
 CARDS = [
  dict(
+  theme='#2563EB', badges=[('生活提醒', True), ('冬令時間', False)], illu='clockback',
+  title='週日凌晨調回冬令時間：多睡一小時',
+  subtitle='10/25 凌晨 3:00 撥回 2:00；台德時差從 6 小時變成 7 小時',
+  stats=[('3→2 點', '10/25 凌晨時鐘撥回'),
+         ('7 小時', '冬令期間台灣比德國快')],
+  bullets=[
+   ('怎麼調', '手機與電腦會自動調整；烤箱、車用時鐘與舊式鬧鐘要手動撥慢 1 小時。'),
+   ('百年歷史', '德國 1916 年一戰時首度實施，1950–79 年停用，1980 年因石油危機與東德同步恢復；歐盟 1996 年起統一日期。'),
+   ('廢除卡關', '2018 年歐盟意見調查 460 萬份回覆、84% 贊成廢除；歐洲議會 2019 年通過，成員國至今沒有共識。'),
+  ],
+  takeaway=('台灣經驗', '台灣也實施過日光節約時間，最後一次在 1979 年；德國換季時，台德時差就在 6、7 小時之間切換。'),
+  file='W43_圖卡1_週日調回冬令時間.png'),
+ dict(
   theme='#D4740E', badges=[('能源帳單', True), ('2027 預估', False)], illu='heatingbill',
   title='明年瓦斯費恐漲 10–20%',
   subtitle='聯邦統計局 10/20：九月生產者物價年增 6.7%，能源成本持續往下游轉嫁',
@@ -2418,7 +2467,7 @@ CARDS = [
    ('網路費也小漲', '2027 年瓦斯網路費平均 +3%、電網費 +1.9%；儲氣率約六成，11/1 達 80% 的法定目標已不可能。'),
   ],
   takeaway=('因應建議', '基本供應（Grundversorgung）1/1 調價須在 11/20 前通知；收到漲價信可行使特別終止權，比較有價格保證的方案。'),
-  file='W43_圖卡1_明年瓦斯費恐漲兩成.png'),
+  file='W43_圖卡2_明年瓦斯費恐漲兩成.png'),
  dict(
   theme='#7C3AED', badges=[('柏林住房', True), ('組閣談判', False)], illu='apartmentkeys',
   title='柏林擬將大房東 16 萬戶收歸公有',
@@ -2431,7 +2480,7 @@ CARDS = [
    ('各方反應', 'Vonovia 稱計畫違憲、經不起司法審查；推動公投的團體不滿門檻從 3,000 戶拉高；聯邦執政聯盟另研擬立法阻擋。'),
   ],
   takeaway=('觀察重點', '對租客而言短期不會有變化：法律最快 2029 年生效，補償金靠貸款支應、再以租金回收，且勢必面臨憲法訴訟。'),
-  file='W43_圖卡2_柏林大房東收歸公有.png'),
+  file='W43_圖卡3_柏林大房東收歸公有.png'),
  dict(
   theme='#2563EB', badges=[('汽車產業', True), ('勞資對峙', False)], illu='paycheckfreeze',
   title='福斯傳凍薪到 2030 年',
@@ -2444,7 +2493,7 @@ CARDS = [
    ('全產業升溫', '金屬電機業第二輪薪資談判 10/27 起陸續登場，和平義務 10/31 午夜到期，11/1 起可發動警告性罷工。'),
   ],
   takeaway=('觀察重點', '凍薪目前是媒體與工會披露、公司未證實；福斯已終止十份團體協約，年底前勞資攻防將直接牽動各廠區。'),
-  file='W43_圖卡3_福斯傳凍薪到2030.png'),
+  file='W43_圖卡4_福斯傳凍薪到2030.png'),
  dict(
   theme='#2E8B57', badges=[('汽車產業', True), ('集團改組', False)], illu='spinoff',
   title='Bosch 汽車事業拆成子公司',
@@ -2457,7 +2506,7 @@ CARDS = [
    ('工會疑慮', '員工代表會強調重組不能犧牲員工；到 2030 年再減約 1.3 萬個職位的既有計畫照常。'),
   ],
   takeaway=('因應建議', '屬事業移轉（Betriebsübergang），民法典第 613a 條保障契約與年資；收到書面通知一個月內可異議。'),
-  file='W43_圖卡4_Bosch汽車事業拆子公司.png'),
+  file='W43_圖卡5_Bosch汽車事業拆子公司.png'),
  dict(
   theme='#0D9488', badges=[('退休金', True), ('改革角力', False)], illu='hourglass',
   title='45 年免扣減退休：育兒年資恐不再算',
@@ -2470,7 +2519,7 @@ CARDS = [
    ('卡在哪裡', '退休金委員會原建議廢除此制；接替請辭的 Bas 出任勞動部長的 Schweitzer（SPD）盼在聯盟內找到妥協。'),
   ],
   takeaway=('數據解讀', '「63 歲退休」早已名不符實：現行世代滿 45 年免扣減的最早年齡已約 64.5 歲，並逐步升到 65 歲。'),
-  file='W43_圖卡5_45年退休育兒年資.png'),
+  file='W43_圖卡6_45年退休育兒年資.png'),
  dict(
   theme='#C0392B', badges=[('菸稅', True), ('立法烏龍', False)], illu='taxcalendar',
   title='菸稅漲價法提前生效：財政部烏龍',
@@ -2483,7 +2532,7 @@ CARDS = [
    ('電子菸爭議', '業界主張新法漏列電子菸液稅率、今年等於免稅；財政部反駁「立法者意思很清楚」，照舊稅率課徵。'),
   ],
   takeaway=('數據解讀', '依財政部試算，一包菸均價從約 8.05 € 漲到 2027 年 9.10 €、2030 年 11.78 €（本站 W42 誤引 8 月草案數字）。'),
-  file='W43_圖卡6_菸稅法提前生效.png'),
+  file='W43_圖卡7_菸稅法提前生效.png'),
  dict(
   theme='#2E8B57', badges=[('經濟', True), ('投資高峰會', False)], illu='investchip',
   title='投資高峰會：企業承諾約 2,300 億歐元',
@@ -2496,7 +2545,7 @@ CARDS = [
    ('數字的但書', '不少專案早已規劃且橫跨多年；經濟部隔天也表示這是「會前彙整的統計」，並非全是新承諾。'),
   ],
   takeaway=('觀察重點', 'Merz 喊出要把德國從「儲蓄者之國」變成「投資者之國」；實際能帶來多少新工作，要看專案動工進度。'),
-  file='W43_圖卡7_投資高峰會兩千三百億.png'),
+  file='W43_圖卡8_投資高峰會兩千三百億.png'),
 ]
 
 # ── 邦名德文全名檢查 ────────────────────────────────────────
