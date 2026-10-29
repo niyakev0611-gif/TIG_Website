@@ -2083,6 +2083,69 @@ def illu_clockback(d, R, S, cx, cy, theme):
               fill=GOLD, outline=OUTLINE, width=3*S)
 
 
+def illu_airplane(d, R, S, cx, cy, theme):
+    """側面客機＋金色時鐘（班機延誤／航空乘客權利 EU261）"""
+    ow = 5*S
+    _dots(d, R, cx, cy, ((-72, -44, 3, GOLD), (-24, -54, 3, tint(theme, 0.5)),
+                         (72, 30, 3, theme)))
+    d.ellipse(R(cx-60, cy+46, cx+36, cy+56), fill=tint(theme, 0.18))
+    # 垂直尾翼（先畫，讓機身壓在上面）
+    d.polygon(R(cx-64, cy-12, cx-72, cy-46, cx-56, cy-46, cx-38, cy-12),
+              fill=theme, outline=OUTLINE, width=ow)
+    # 水平尾翼
+    d.polygon(R(cx-60, cy, cx-74, cy+14, cx-62, cy+14, cx-46, cy),
+              fill=shade(theme, 0.8), outline=OUTLINE, width=4*S)
+    # 機身（白色，右側圓鼻）
+    d.rounded_rectangle(R(cx-70, cy-16, cx+54, cy+12), radius=14*S,
+                        fill='white', outline=OUTLINE, width=ow)
+    # 主題色腰線
+    d.line(R(cx-58, cy+3, cx+40, cy+3), fill=theme, width=5*S)
+    # 客艙窗：五扇（奇數韻律）
+    for i in range(5):
+        wx = cx-40 + i*13
+        d.rounded_rectangle(R(wx, cy-9, wx+7, cy-3), radius=2*S, fill=tint(theme, 0.55))
+    # 駕駛艙窗
+    d.polygon(R(cx+36, cy-10, cx+46, cy-10, cx+50, cy-4, cx+36, cy-4), fill=theme)
+    # 主翼（近側，壓在機身上）
+    d.polygon(R(cx-12, cy+4, cx-38, cy+40, cx-22, cy+40, cx+14, cy+4),
+              fill=theme, outline=OUTLINE, width=ow)
+    # 焦點細節：金色時鐘，時針指 3（三小時門檻）
+    kx, ky, kr = cx+50, cy-32, 21
+    d.ellipse(R(kx-kr, ky-kr, kx+kr, ky+kr), fill=GOLD, outline=OUTLINE, width=ow)
+    d.arc(R(kx-kr+4, ky-kr+4, kx+kr-4, ky+kr-4), start=195, end=250, fill=GOLD_HI, width=3*S)
+    d.line(R(kx, ky, kx, ky-13), fill=OUTLINE, width=4*S)
+    d.line(R(kx, ky, kx+11, ky), fill=OUTLINE, width=4*S)
+    d.ellipse(R(kx-3, ky-3, kx+3, ky+3), fill=OUTLINE)
+
+def illu_boardingpass(d, R, S, cx, cy, theme):
+    """登機證＋金色歐盟星環徽章（適用範圍／歐盟規範）"""
+    ow = 5*S
+    _dots(d, R, cx, cy, ((-72, -48, 3, GOLD), (60, -52, 3, tint(theme, 0.5)),
+                         (-74, 40, 3, theme)))
+    d.ellipse(R(cx-62, cy+44, cx+40, cy+54), fill=tint(theme, 0.18))
+    # 票身＋票頭
+    d.rounded_rectangle(R(cx-70, cy-38, cx+36, cy+36), radius=9*S,
+                        fill='white', outline=OUTLINE, width=ow)
+    d.rounded_rectangle(R(cx-68, cy-36, cx+34, cy-16), radius=7*S, fill=theme)
+    d.rectangle(R(cx-68, cy-24, cx+34, cy-16), fill=theme)
+    d.line(R(cx-70, cy-16, cx+36, cy-16), fill=OUTLINE, width=3*S)
+    # 票頭上的小飛機
+    d.polygon(R(cx-58, cy-26, cx-38, cy-26, cx-34, cy-23, cx-38, cy-20, cx-58, cy-20),
+              fill='white')
+    d.polygon(R(cx-50, cy-23, cx-44, cy-33, cx-40, cy-33, cx-42, cy-23), fill='white')
+    # 票面資訊列＋撕線
+    for dy, w in ((-4, 52), (8, 38), (20, 46)):
+        d.line(R(cx-58, cy+dy, cx-58+w, cy+dy), fill=tint(theme, 0.45), width=4*S)
+    for yy in range(-10, 32, 9):
+        d.line(R(cx+8, cy+yy, cx+8, cy+yy+4), fill=tint(theme, 0.6), width=3*S)
+    # 焦點細節：歐盟星環徽章
+    bx, by, br = cx+46, cy+20, 26
+    d.ellipse(R(bx-br, by-br, bx+br, by+br), fill=theme, outline=OUTLINE, width=ow)
+    for k in range(12):
+        a = math.radians(k*30)
+        sx, sy = bx + 14*math.cos(a), by + 14*math.sin(a)
+        d.ellipse(R(sx-2.6, sy-2.6, sx+2.6, sy+2.6), fill=GOLD)
+
 ILLUS = dict(podium=illu_podium, flags=illu_flags, coins=illu_coins,
              idcard=illu_idcard, camera=illu_camera, trophy=illu_trophy,
              bankcard=illu_bankcard, checklist=illu_checklist,
@@ -2117,7 +2180,8 @@ ILLUS = dict(podium=illu_podium, flags=illu_flags, coins=illu_coins,
              heatingbill=illu_heatingbill, apartmentkeys=illu_apartmentkeys,
              paycheckfreeze=illu_paycheckfreeze, hourglass=illu_hourglass,
              taxcalendar=illu_taxcalendar, investchip=illu_investchip,
-             spinoff=illu_spinoff, clockback=illu_clockback)
+             spinoff=illu_spinoff, clockback=illu_clockback,
+             airplane=illu_airplane, boardingpass=illu_boardingpass)
 
 # ── 版型 ────────────────────────────────────────────────────
 

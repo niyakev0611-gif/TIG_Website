@@ -18,6 +18,7 @@
 | `thg/` | 電動車碳權 THG-Quote（配額變現、資格、選商） | `assets/images/2026/thg/` |
 | `bahncard/` | BahnCard 25 九月促銷（回本試算、mydealz 平台介紹） | `assets/images/2026/bahncard/` |
 | `payback/` | PAYBACK American Express 卡（推薦加碼、集點與條件） | `assets/images/2026/payback/` |
+| `eu261/` | EU261 歐盟航空乘客權利（延誤補償、適用範圍、申請管道、2027 新制） | `assets/images/2026/eu261/` |
 
 新主題 → 開新資料夾（小寫英文短名），並在上表加一列。
 
