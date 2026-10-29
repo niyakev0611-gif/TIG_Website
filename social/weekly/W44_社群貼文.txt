@@ -7,12 +7,12 @@ FB 排程：2026-11-01 19:00（Europe/Berlin）　IG 排程：2026-11-01 19:00�
 【FB 版（重點條列版）】
 ------------------------------------------------------------------------
 
-🇩🇪【德國週報 W44｜10/26–11/1】十一月新制：境外包裹再加約 2 € 處理費、「先買後付」要查信用；金屬電機業 11/1 起可發動警告性罷工；賓士中國銷量年減 31%、下修財測；德日聯合聲明重申台海和平穩定；核廢料最終處置場候選範圍縮到 5% 以下；ifo 景氣指數六連升
+🇩🇪【德國週報 W44｜10/26–11/1】十一月新制：境外包裹每種商品再加 2 € 處理費、「先買後付」要查信用；金屬電機業 11/1 起可發動警告性罷工；賓士中國銷量年減 31%、下修財測；德日聯合聲明重申台海和平穩定；核廢料最終處置場候選範圍縮到 5% 以下；ifo 景氣指數六連升
 
 這週先看荷包：11 月有幾項新規上路，網購、分期付款、搭火車、換汽車保險都會碰到。六張圖卡一次看懂。
 
 📦 一、十一月新制：境外包裹再加 2 € 處理費
-▪️ 【11/1 起】歐盟以外寄來的小包裹，在 7 月起的每類商品 3 € 定額關稅之外，再加收處理費（Bearbeitungsgebühr），依報導為【每項商品類別約 2 €】
+▪️ 【11/1 起】歐盟以外寄來的小包裹，在 7 月起的每類商品 3 € 定額關稅之外，再加收處理費（Bearbeitungsgebühr），德國海關總署說明為【包裹內每種不同商品 2 €】：T 恤＋手機殼＋書＝6 €，四件同款 T 恤只算 2 €
 ▪️ 由平台與進口商繳納，但可能轉嫁給消費者；Temu、Shein、AliExpress、Amazon 都在範圍內，退貨不退還
 ▪️ 台灣同樣是第三國：【從台灣網購直寄德國一體適用】
 ▪️ 【11/20 起】Klarna、PayPal 等「先買後付」與 200 € 以下小額貸款納入消費信貸法，業者須先審查信用，小額分期也可能被拒
@@ -34,7 +34,7 @@ FB 排程：2026-11-01 19:00（Europe/Berlin）　IG 排程：2026-11-01 19:00�
 ▪️ 轎車調整後銷售報酬率目標從 3–5% 下修到【2–3%】，全年集團營業利益改為與去年持平
 ▪️ 據《新蘇黎世報》（NZZ）：12 月初起以資遣方案再減數千個行政職位，每年省【10 億歐元】人事成本
 ▪️ 執行長 Källenius：更多車款改在中國研發生產，並擴大匈牙利產能，稱成本比德國低約七成
-▪️ 福斯 10/29 公布第三季財報；市場預期受保時捷（Porsche）商譽減損約 60 億歐元拖累、單季轉虧
+▪️ 福斯 10/29 公布第三季：稅後【虧損 58.2 億歐元】，主因保時捷（Porsche）商譽減損 64 億歐元；中國銷量年減 38.5%，前三季累計虧損 27.2 億歐元
 
 🤝 四、德日聯合聲明：重申台海和平穩定
 ▪️ 總理 Merz 10/26–30 出訪【新加坡、日本、南韓】，隨行約 30 位企業代表
@@ -61,6 +61,7 @@ FB 排程：2026-11-01 19:00（Europe/Berlin）　IG 排程：2026-11-01 19:00�
 
 📚 資料來源
 十一月新制：
+https://www.presseportal.de/blaulicht/pm/120080/6380083
 https://www.t-online.de/finanzen/aktuelles/verbraucher/id_101438534/temu-shein-co-pakete-ausserhalb-der-eu-werden-zum-1-november-teurer.html
 https://orf.at/stories/3425106/
 https://www.deutsche-handwerks-zeitung.de/aenderungen-im-november-2026-zoll-reformen-und-kleinkredite-385584/
@@ -80,6 +81,7 @@ https://www.onvista.de/news/2026/10-28-mercedes-macht-nach-schwachem-vorjahresqu
 https://finanzen.net/nachricht/aktien/zahlen-praesentiert-mercedes-benz-aktie-mehr-gewinn-nach-schwachem-vorjahresquartal-16013642
 https://www.nzz.ch/wirtschaft/neuer-china-schock-fuer-mercedes-der-autobauer-muss-seine-prognose-nach-unten-korrigieren-ld.10045981
 https://www.finanznachrichten.de/nachrichten-2026-10/69810210-volkswagen-absatz-sinkt-im-3-quartal-um-14-prozent-015.htm
+https://www.onvista.de/news/2026/10-29-vw-meldet-milliardenverlust-im-dritten-quartal-0-10-26569698
 Merz 亞洲行與 Steinmeier 訪中：
 https://www.bundesregierung.de/breg-de/aktuelles/bundeskanzler-merz-reist-nach-singapur-japan-und-in-die-republik-korea-2458120
 https://de.euronews.com/2026/10/28/merz-tokio-deutschland-japan
@@ -105,7 +107,7 @@ https://www.ifo.de/umfrage/ifo-geschaeftsklima-deutschland
 🇩🇪 德國週報 W44｜10/26–11/1
 網購包裹、分期付款、罷工、車廠財報、台海、核廢料與景氣。六張圖卡滑到底 👉
 
-📦 十一月新制｜11/1 起歐盟外小包裹在 3 € 關稅之外再加收約 2 € 處理費，從台灣網購直寄也適用；11/20 起「先買後付」要先查信用；德鐵家庭票 99.99 € 常態化；汽車保險解約信 11/30 前要送達
+📦 十一月新制｜11/1 起歐盟外小包裹在 3 € 關稅之外每種商品再加收 2 € 處理費，從台灣網購直寄也適用；11/20 起「先買後付」要先查信用；德鐵家庭票 99.99 € 常態化；汽車保險解約信 11/30 前要送達
 
 ✊ 金屬電機業 11/1 起可罷工｜約 370 萬名員工的協約 10/31 到期；資方出價 2028 年 7 月才調薪 1.3%，IG Metall 要求 5%
 
@@ -128,7 +130,7 @@ https://www.ifo.de/umfrage/ifo-geschaeftsklima-deutschland
 
 🇩🇪 德國週報 W44｜10/26–11/1
 
-▪️ 11/1 起境外包裹再加約【2 €】處理費
+▪️ 11/1 起境外包裹每種商品再加【2 €】處理費
 ▪️ 11/20 起「先買後付」要先查信用
 ▪️ 金屬電機業 11/1 起可罷工，資方只出 1.3%
 ▪️ 賓士中國銷量年減【31%】，下修財測
