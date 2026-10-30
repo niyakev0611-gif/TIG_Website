@@ -5,8 +5,266 @@
   <link>https://taiwanese-in-germany.com/</link>
   <description>寫給台灣人的德國知識誌：德國時事解析、來德必辦、德文學習與生活旅行攻略。種下一顆知識的種子。</description>
   <language>zh-TW</language>
-  <lastBuildDate>Sun, 25 Oct 2026 00:00:00 GMT</lastBuildDate>
+  <lastBuildDate>Fri, 30 Oct 2026 00:00:00 GMT</lastBuildDate>
   <atom:link href="https://taiwanese-in-germany.com/feed.xml" rel="self" type="application/rss+xml" />
+  <item>
+    <title>班機延誤、取消能拿多少？EU261 歐盟航空乘客權利完整攻略（含 2027 新制）</title>
+    <link>https://taiwanese-in-germany.com/posts/eu261-flight-compensation.html</link>
+    <guid isPermaLink="true">https://taiwanese-in-germany.com/posts/eu261-flight-compensation.html</guid>
+    <pubDate>Fri, 30 Oct 2026 00:00:00 GMT</pubDate>
+    <description>班機晚到 3 小時以上、起飛前不到 14 天才被取消、機位超賣被拒絕登機——依歐盟 261/2004 號規章（EU261），每位乘客可依飛行距離拿 250、400 或 600 € 的補償金，而且這筆錢和退票、改搭是兩回事。這篇整理哪些航班適用（法蘭克福飛台北搭長榮、華航都算，反方向就不一定）、航空公司常說的「特殊情況」哪些站不住腳、在德國怎麼自己申請（免費調解機構成功率多年超過八成，2023 年的航班 2026 年底前都還能申請），以及 2027 年 10 月 23 日上路的修正版 EU261：3 小時門檻與金額守住了，但新航班的申請期限縮短成 9 個月。</description>
+    <category>德國生活</category><category>旅行</category>
+    <content:encoded><![CDATA[<p class="post-meta-line"><em>德國知識小種子｜2026.10.30 發表 · 旅行權益</em></p>
+
+<p>航班延誤 4 個小時，到了機場只拿到一張 10 € 的餐券——很多人以為事情就這樣結束了。其實在歐盟，<strong>班機晚到 3 小時以上，每位乘客依飛行距離可以拿 250、400 或 600 € 的補償金</strong>，依據是歐盟第 261/2004 號規章，也就是大家常說的 <strong>EU261</strong>（德文 Fluggastrechte-Verordnung）。</p>
+
+<p>問題是這筆錢通常<strong>不會自己進帳</strong>：航空公司不會主動提醒，被拒賠時也常拿「特殊情況」當理由。這篇把規則、例外、申請流程與 2027 年上路的新制一次整理好，讓你下次遇到延誤時知道自己有哪些權利。</p>
+
+<p class="post-callout"><strong>📌 先講結論：</strong>現在（2026 年）延誤的航班，一律照<strong>現行 EU261</strong> 處理，在德國有 <strong>3 年</strong>請求權時效；歐盟修正版規章（EU）2026/2202 已在 2026 年 10 月刊登公報，但要到 <strong>2027 年 10 月 23 日</strong>以後的航班才適用。本文不構成法律意見，個案請以航空公司、調解機構或律師的判斷為準。</p>
+
+<nav class="post-toc" aria-label="本篇目錄">
+  <p class="post-toc__title">快速跳轉</p>
+  <ul>
+    <li><a href="#betrag">能拿多少：3 小時門檻與三級距離</a></li>
+    <li><a href="#betreuung">補償金以外：餐飲、住宿、退票與改搭</a></li>
+    <li><a href="#geltung">你的航班適用嗎？台德航線怎麼算</a></li>
+    <li><a href="#umstaende">「特殊情況」不用賠？什麼算、什麼不算</a></li>
+    <li><a href="#antrag">在德國怎麼申請：三個步驟</a></li>
+    <li><a href="#vorlage">德文申請信範本</a></li>
+    <li><a href="#reform">2027 年 10 月 23 日上路的新制</a></li>
+    <li><a href="#sources">資料來源</a></li>
+  </ul>
+</nav>
+
+<img src="assets/images/2026/eu261/EU261_圖卡1_最高六百歐元.png" alt="EU261 航空乘客權利：班機抵達延誤 3 小時以上，每位乘客依飛行距離可得 250、400 或 600 歐元補償金；起飛前不到 14 天取消與機位超賣同樣適用">
+<h2 id="betrag">能拿多少：3 小時門檻與三級距離</h2>
+
+<p>EU261 的補償金是<strong>定額</strong>的，和你買機票花了多少錢無關——50 € 的廉航機票延誤 3 小時，跟 500 € 的機票一樣拿 250 €。金額只看兩件事：<strong>飛行距離</strong>，以及<strong>抵達目的地時晚了多久</strong>。</p>
+
+<table>
+  <thead>
+    <tr><th>飛行距離</th><th>補償金（每位乘客）</th><th>例子</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>1,500 公里以內</td><td><strong>250 €</strong></td><td>法蘭克福 → 巴塞隆納（約 1,100 公里）</td></tr>
+    <tr><td>歐盟境內超過 1,500 公里<br>或其他 1,500–3,500 公里的航班</td><td><strong>400 €</strong></td><td>斯圖加特 → 里斯本（約 1,800 公里）<br>慕尼黑 → 伊斯坦堡（約 1,550 公里）</td></tr>
+    <tr><td>歐盟境外、超過 3,500 公里</td><td><strong>600 €</strong></td><td>法蘭克福 → 台北（約 9,400 公里）</td></tr>
+  </tbody>
+</table>
+
+<p>幾個常被搞錯的細節：</p>
+<ul>
+  <li><strong>延誤看抵達，不看起飛。</strong>起飛晚了 3 小時、但途中追回時間只晚到 2 小時 50 分，就沒有補償金。抵達時間以<strong>機艙門打開、乘客可以下機</strong>為準，不是飛機觸地的時間（歐洲法院 C-452/13）。</li>
+  <li><strong>距離用大圓距離計算</strong>，也就是兩座機場之間的直線飛行距離，不是航空公司實際繞的航路。</li>
+  <li><strong>長程航班可以打五折</strong>：超過 3,500 公里的航班，如果航空公司安排的替代航班讓你只晚到 3 到 4 小時之間，600 € 可以減半成 300 €。</li>
+  <li><strong>取消也有補償金</strong>：起飛前<strong>不到 14 天</strong>才通知取消，原則上要補償；但如果航空公司同時提供時間相近的替代航班（7–13 天前通知：最多提早 2 小時出發、晚 4 小時以內抵達；7 天內通知：最多提早 1 小時出發、晚 2 小時以內抵達），就可以免賠。</li>
+  <li><strong>機位超賣被拒絕登機</strong>（Überbuchung），只要你不是自願放棄座位，金額同上表。</li>
+</ul>
+
+<p>「延誤也能拿補償金」這件事其實不是寫在規章原文裡，而是歐洲法院 2009 年的 Sturgeon 判決（C-402/07、C-432/07）確立的：晚到 3 小時以上，等同取消對待。這也是為什麼後來的改革吵了十多年——航空業一直想把這個門檻往後推。</p>
+
+<p class="post-sources">📚 來源：<a href="https://www.zdfheute.de/politik/eu-reform-fluggastrechte-kompromiss-100.html" target="_blank" rel="noopener noreferrer">ZDFheute：Fluggastrechte: EU einigt sich</a> · <a href="https://europa.eu/youreurope/citizens/travel/passenger-rights/air/faq/index_de.htm" target="_blank" rel="noopener noreferrer">Your Europe：Fragen und Antworten – Fluggastrechte</a></p>
+
+<hr>
+
+<h2 id="betreuung">補償金以外：餐飲、住宿、退票與改搭</h2>
+
+<p>補償金是「賠償」，但在機場等待的當下，你還有另外兩組權利，<strong>就算最後被認定是特殊情況、不用付補償金，這兩組權利也照樣存在</strong>。</p>
+
+<h3>1. 照顧義務（Betreuungsleistungen）</h3>
+<p>依距離，預計起飛延誤達到以下時間，航空公司要提供照顧：</p>
+<table>
+  <thead>
+    <tr><th>飛行距離</th><th>延誤多久開始</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>1,500 公里以內</td><td>2 小時</td></tr>
+    <tr><td>歐盟境內超過 1,500 公里、其他 1,500–3,500 公里</td><td>3 小時</td></tr>
+    <tr><td>其他航班</td><td>4 小時</td></tr>
+  </tbody>
+</table>
+<p>內容包括：與等待時間相當的<strong>餐點與飲料</strong>、<strong>兩通電話或兩封電子郵件</strong>；若必須隔天才能飛，還有<strong>旅館住宿與機場和旅館之間的交通</strong>。航空公司沒提供時，你可以自己先付合理的費用，<strong>收據一定要留好</strong>，事後請款。</p>
+
+<h3>2. 退票或改搭</h3>
+<ul>
+  <li><strong>航班取消</strong>：你可以選擇<strong>全額退票</strong>（7 天內退款），或<strong>改搭替代航班</strong>到目的地。</li>
+  <li><strong>延誤達 5 小時以上</strong>：你可以決定不飛了，要求退回機票款。</li>
+  <li><strong>退款要的是錢，不是抵用券</strong>：抵用券（Gutschein）只有在你明確同意時才算數。</li>
+</ul>
+<p>補償金和退票是<strong>兩件事、可以同時主張</strong>：航班在起飛前 3 天被取消，你選擇退票，還是可以另外申請補償金。</p>
+
+<p class="post-sources">📚 來源：<a href="https://europa.eu/youreurope/citizens/travel/passenger-rights/air/faq/index_de.htm" target="_blank" rel="noopener noreferrer">Your Europe：Fragen und Antworten – Fluggastrechte</a></p>
+
+<hr>
+
+<img src="assets/images/2026/eu261/EU261_圖卡2_適用範圍.png" alt="EU261 適用範圍：從歐盟出發的航班任何航空公司都適用，飛進歐盟只限歐盟的航空公司；法蘭克福飛台北搭長榮或華航適用，台北飛回德國則不適用">
+<h2 id="geltung">你的航班適用嗎？台德航線怎麼算</h2>
+
+<p>EU261 的適用範圍只看兩件事：<strong>從哪裡起飛</strong>，以及<strong>實際執飛的是哪一家航空公司</strong>（共掛班號時看實際執飛的那家，不是賣你票的那家）。</p>
+
+<table>
+  <thead>
+    <tr><th>情況</th><th>適用嗎？</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>從歐盟機場起飛，任何航空公司</td><td><strong>✅ 適用</strong></td></tr>
+    <tr><td>從歐盟外飛進歐盟，<strong>歐盟的</strong>航空公司</td><td><strong>✅ 適用</strong></td></tr>
+    <tr><td>從歐盟外飛進歐盟，<strong>非歐盟的</strong>航空公司</td><td>❌ 不適用（看出發地當地的規定）</td></tr>
+    <tr><td>歐盟外兩地之間的航班</td><td>❌ 不適用（例外：從歐盟出發的同一張轉機訂位）</td></tr>
+  </tbody>
+</table>
+
+<p>套用到台灣人最常飛的路線：</p>
+<ul>
+  <li><strong>法蘭克福、慕尼黑、維也納飛台北，搭長榮、華航</strong>：從歐盟起飛，<strong>適用</strong>，距離超過 3,500 公里，最高 600 €。</li>
+  <li><strong>台北飛回德國，搭長榮、華航</strong>：非歐盟航空公司飛進歐盟，<strong>不適用 EU261</strong>，只能依台灣的規定與航空公司的運送條款處理。</li>
+  <li><strong>經伊斯坦堡、杜拜、新加坡等地轉機</strong>：去程從德國出發、同一張訂位，就算延誤發生在歐盟外的轉機段，也<strong>以最終目的地的延誤計算</strong>（歐洲法院 C-11/11、C-537/17）；回程則要看實際執飛的航空公司是不是歐盟的。</li>
+</ul>
+<p>另外，<strong>冰島、挪威、瑞士</strong>也適用同一套規定，這三國的航空公司視同歐盟的航空公司。</p>
+
+<p class="post-sources">📚 來源：<a href="https://www.consilium.europa.eu/en/press/press-releases/2026/06/15/council-and-parliament-reach-landmark-agreement-on-stronger-eu-air-passenger-rights/" target="_blank" rel="noopener noreferrer">Council of the EU：Council and Parliament reach landmark agreement（2026/06/15，含適用範圍說明）</a> · <a href="https://europa.eu/youreurope/citizens/travel/passenger-rights/air/faq/index_de.htm" target="_blank" rel="noopener noreferrer">Your Europe：Fluggastrechte FAQ</a></p>
+
+<hr>
+
+<img src="assets/images/2026/eu261/EU261_圖卡3_特殊情況.png" alt="航空公司以特殊情況拒賠：舉證責任在航空公司；惡劣天候、航管限制、鳥擊通常算，日常技術故障與自家員工罷工通常不算；即使屬特殊情況，照顧與退票權利仍在">
+<h2 id="umstaende">「特殊情況」不用賠？什麼算、什麼不算</h2>
+
+<p>EU261 規定，延誤或取消如果是「即使採取一切合理措施也無法避免的<strong>特殊情況</strong>」（außergewöhnliche Umstände）造成的，航空公司可以不付補償金。這是拒賠最常見的理由，但有兩個關鍵：<strong>舉證責任在航空公司</strong>，而且歐洲法院多年來把「特殊情況」解釋得很窄。</p>
+
+<table>
+  <thead>
+    <tr><th>通常算特殊情況</th><th>通常不算</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>惡劣天候（暴風雪、雷雨）</td><td>日常維修就該發現的技術故障（C-549/07）</td></tr>
+    <tr><td>航管限制、航管人員罷工</td><td>航空公司<strong>自家員工</strong>罷工，包括未經工會的「野貓罷工」（C-195/17、C-28/20）</td></tr>
+    <tr><td>機場安檢問題、政治動盪</td><td>人手不足、排班問題</td></tr>
+    <tr><td>鳥擊（C-315/15）</td><td>前一班飛機晚到造成的連鎖延誤（除非源頭本身是特殊情況）</td></tr>
+    <tr><td>製造商才知道的隱藏瑕疵</td><td></td></tr>
+  </tbody>
+</table>
+
+<p>遇到拒賠時，可以這樣做：</p>
+<ul>
+  <li><strong>要求書面說明具體原因</strong>：哪一種特殊情況、發生在哪個航段。只寫「營運因素」（operative Gründe）、說法含糊，多半站不住腳。</li>
+  <li><strong>自己查證</strong>：天候、機場罷工新聞、同時段其他航班是否正常起降，都是很好的反證。</li>
+  <li><strong>別忘了照顧與退票的權利</strong>：特殊情況只免除補償金，不免除餐飲、住宿、退票或改搭。</li>
+</ul>
+
+<p class="post-sources">📚 來源：<a href="https://europa.eu/youreurope/citizens/travel/passenger-rights/air/faq/index_de.htm" target="_blank" rel="noopener noreferrer">Your Europe：Fluggastrechte FAQ（技術故障與罷工）</a> · <a href="https://www.wbs.legal/allgemein/flugaerger-ade-eu-parlament-verabschiedet-weitreichende-reform-der-fluggastrechte-87438/" target="_blank" rel="noopener noreferrer">WBS.LEGAL：EU-Parlament verabschiedet Reform der Fluggastrechte</a></p>
+
+<hr>
+
+<img src="assets/images/2026/eu261/EU261_圖卡4_三步驟申請.png" alt="在德國申請 EU261 補償金三步驟：先向航空公司書面申請，被拒再找免費的 Schlichtungsstelle Reise und Verkehr 調解，求償網站通常抽 20 到 50 百分比；德國請求權時效 3 年">
+<h2 id="antrag">在德國怎麼申請：三個步驟</h2>
+
+<h3>步驟 1：自己向航空公司書面申請（免費）</h3>
+<p>大多數航空公司官網都有 EU261 申請表單（搜尋「航空公司名稱＋Entschädigung」或「EU261 claim」）。準備好<strong>訂位代號、航班號碼、登機證、延誤或取消的證明</strong>（航空公司的通知簡訊、機場看板照片都可以），在信裡<strong>給 14 天的付款期限</strong>。用線上表單送出時，記得把確認畫面截圖存下來。</p>
+
+<h3>步驟 2：被拒或沒回應，找調解機構（免費）</h3>
+<ul>
+  <li><strong>Schlichtungsstelle Reise &amp; Verkehr</strong>（前身 söp）：大多數航空公司都是會員，<strong>對乘客完全免費</strong>，調解成功率多年來超過八成。2026 年上半年它收到約 2.9 萬件申請，其中約 2.4 萬件是航空案件，創下新高。</li>
+  <li><strong>聯邦司法局航空調解處</strong>（Schlichtungsstelle Luftverkehr beim Bundesamt für Justiz）：航空公司不是上一個機構的會員時，改找這裡。起降在德國的航班，航空公司依法必須參加其中一個調解程序。</li>
+  <li><strong>歐洲消費者中心德國分部</strong>（EVZ Deutschland）：航空公司總部在其他歐盟國家、冰島、挪威或英國時，可以免費協助。</li>
+</ul>
+<p>調解建議只有雙方都接受才有拘束力，但<strong>送出調解會讓時效暫停計算</strong>，所以不用擔心排隊期間權利過期。</p>
+
+<h3>步驟 3：最後手段——法院</h3>
+<p>還是不付的話，可以走督促程序（Mahnverfahren），或跨國案件用<strong>歐盟小額訴訟程序</strong>（請求金額 5,000 € 以下、不需要律師）。有法律費用保險（Rechtsschutzversicherung）的人，也可以交給律師處理。</p>
+
+<h3>要不要用求償網站？</h3>
+<p>Flightright、AirHelp 這類代辦網站很方便，但通常會<strong>抽成 20–50%</strong>，有些還有獨家委託或提前解約費。要拿到全額，自己寫信加上免費調解通常就夠了。注意：Ryanair 要求乘客先自己向它申請，代辦網站在這一步幫不上忙。</p>
+
+<h3>時效：德國是 3 年</h3>
+<p>現行 EU261 本身沒有規定申請期限，而是看各國法律。在德國適用一般的 <strong>3 年請求權時效</strong>，<strong>從航班當年的年底開始算</strong>：</p>
+<table>
+  <thead>
+    <tr><th>航班年份</th><th>最晚申請期限</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>2023 年</td><td><strong>2026 年 12 月 31 日</strong>（今年底！）</td></tr>
+    <tr><td>2024 年</td><td>2027 年 12 月 31 日</td></tr>
+    <tr><td>2025 年</td><td>2028 年 12 月 31 日</td></tr>
+  </tbody>
+</table>
+<p>翻翻 2023 年的旅行紀錄，如果有延誤超過 3 小時、卻從來沒申請過的航班，<strong>今年就是最後的機會</strong>。</p>
+
+<p class="post-sources">📚 來源：<a href="https://www.evz.de/reisen-verkehr/reiserecht/flugzeug/entschaedigung-nach-flugverspaetung-oder-flugausfall-wer-hilft-wirklich-wer-zockt-ab.html" target="_blank" rel="noopener noreferrer">EVZ Deutschland：Entschädigung nach Flugverspätung oder Flugausfall – wer hilft wirklich?</a> · <a href="https://www.schlichtung-reise-und-verkehr.de/wp-content/uploads/2026/07/Schlichtung_Reise_Verkehr_Halbjahresbilanz_2026.pdf" target="_blank" rel="noopener noreferrer">Schlichtungsstelle Reise &amp; Verkehr：Halbjahresbilanz 2026（PDF）</a></p>
+
+<hr>
+
+<h2 id="vorlage">德文申請信範本</h2>
+
+<p>官網沒有表單、或你想用電子郵件申請時，可以參考這份範本，把括號內的資料換成你的：</p>
+
+<blockquote>
+<p><strong>Betreff:</strong> Ausgleichszahlung nach Art. 7 VO (EG) Nr. 261/2004 – Flug [Flugnummer] am [Datum], Buchungscode [Code]</p>
+<p>Sehr geehrte Damen und Herren,</p>
+<p>ich war Passagier des Fluges [Flugnummer] von [Abflugort] nach [Zielort] am [Datum]. Der Flug erreichte das Endziel mit einer Verspätung von [X] Stunden [bzw.: wurde am [Datum] annulliert].</p>
+<p>Gemäß Art. 7 der Verordnung (EG) Nr. 261/2004 in Verbindung mit der Rechtsprechung des EuGH steht mir eine Ausgleichszahlung in Höhe von [250/400/600] Euro zu.</p>
+<p>Bitte überweisen Sie den Betrag bis zum [Datum, 14 Tage später] auf folgendes Konto: [Name, IBAN].</p>
+<p>Eine Kopie meiner Bordkarte bzw. Buchungsbestätigung liegt bei.</p>
+<p>Mit freundlichen Grüßen<br>[Name, Anschrift]</p>
+</blockquote>
+
+<p>同一張訂位有好幾位乘客時，可以寫在同一封信裡，<strong>補償金是每個人各算一份</strong>，有買票的小孩也算。</p>
+
+<hr>
+
+<img src="assets/images/2026/eu261/EU261_圖卡5_二〇二七新制.png" alt="2027 年 10 月 23 日起的修正版 EU261：3 小時門檻與 250、400、600 歐元不變，新制申請期限 9 個月，航空公司須在 96 小時內主動通知權利，30 天內付款或說明拒絕理由，個人物品免費">
+<h2 id="reform">2027 年 10 月 23 日上路的新制</h2>
+
+<p>EU261 的改革從 2013 年歐盟執委會提案，一路卡了十多年。2025 年歐盟理事會的立場一度要把補償門檻拉長到<strong>歐盟境內 4 小時、境外 6 小時</strong>——德國聯邦消費者中心聯合會（vzbv）批評這是「大幅削減」，會讓數百萬乘客失去補償。歐洲議會在 2026 年 1 月 21 日否決了這個方向，雙方進入調解委員會，<strong>2026 年 6 月中達成協議</strong>，7 月由理事會與議會正式通過。修正後的規章是 <strong>（EU）2026/2202</strong>，2026 年 10 月 2 日刊登歐盟公報、10 月 22 日生效，<strong>2027 年 10 月 23 日起適用</strong>。</p>
+
+<h3>沒變的</h3>
+<ul>
+  <li><strong>3 小時門檻</strong>守住了，補償金一樣是 <strong>250／400／600 €</strong>，距離級距相同。</li>
+  <li>起飛前不到 14 天才通知取消，原則上仍要補償。</li>
+</ul>
+
+<h3>變了的</h3>
+<table>
+  <thead>
+    <tr><th>項目</th><th>新制內容</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>申請期限</td><td><strong>自起飛日起 9 個月內</strong>要提出申請（現在在德國是 3 年）</td></tr>
+    <tr><td>主動告知</td><td>延誤可能達補償標準時，航空公司要在抵達後 <strong>96 小時內</strong>以電子方式通知你的權利與申請方式</td></tr>
+    <tr><td>處理時限</td><td>收到申請要立即確認，<strong>30 天內</strong>付款或清楚說明拒絕理由</td></tr>
+    <tr><td>改搭</td><td>航空公司 <strong>3 小時內</strong>沒安排替代航班，你可以自己訂，最高請回原票價的 <strong>400%</strong></td></tr>
+    <tr><td>特殊情況</td><td>附件列出<strong>不限於此的清單</strong>，航空公司要指明援引哪一項並負舉證責任</td></tr>
+    <tr><td>抵用券</td><td>只有你明確同意才能用抵用券代替補償金，價值不得低於補償金額</td></tr>
+    <tr><td>手提行李</td><td>可放在前座下方的<strong>個人物品（40×30×15 公分）免費</strong>；票價要預設顯示含一件手提行李的價格（登機箱本身的尺寸重量仍由各家決定）</td></tr>
+    <tr><td>No-show</td><td>不得因為你沒搭去程，就取消回程</td></tr>
+    <tr><td>家庭</td><td>14 歲以下兒童可免費坐在同行大人旁邊</td></tr>
+    <tr><td>機坪等待</td><td>在機上等超過 2 小時，原則上要讓乘客下機</td></tr>
+  </tbody>
+</table>
+
+<p>另外，<strong>透過旅行社或訂票網站買的機票</strong>，配套的「乘客權利執行規章」規定取消時要在 <strong>14 天內</strong>退回全額（含手續費）。這份規章 2026 年 10 月 20 日在歐洲議會以 652 票對 2 票通過，還要等理事會正式同意，預定同樣在 2027 年 10 月 23 日適用。</p>
+
+<p class="post-callout"><strong>⚠️ 新制最需要注意的一點：</strong>申請期限從「3 年」縮短成「<strong>9 個月</strong>」。2027 年 10 月 23 日以後的航班，延誤了就要盡快申請，不能再像以前一樣拖個一兩年才想起來。</p>
+
+<p class="post-sources">📚 來源：<a href="https://www.consilium.europa.eu/en/press/press-releases/2026/06/15/council-and-parliament-reach-landmark-agreement-on-stronger-eu-air-passenger-rights/" target="_blank" rel="noopener noreferrer">Council of the EU：Council and Parliament reach landmark agreement on stronger EU air passenger rights（2026/06/15）</a> · <a href="https://www.consilium.europa.eu/en/press/press-releases/2026/07/13/council-gives-final-clearance-for-stronger-air-passenger-rights/" target="_blank" rel="noopener noreferrer">Council of the EU：Council gives final clearance（2026/07/13）</a> · <a href="https://eur-lex.europa.eu/eli/reg/2026/2202/oj" target="_blank" rel="noopener noreferrer">EUR-Lex：Verordnung (EU) 2026/2202</a> · <a href="https://www.vzbv.de/meldungen/verspaetungsregelung-europaeisches-parlament-verhindert-vorerst-abbau-von-fluggastrechten" target="_blank" rel="noopener noreferrer">vzbv：Europäisches Parlament verhindert vorerst Abbau von Fluggastrechten（2026/01/21）</a> · <a href="https://www.berliner-zeitung.de/article/ab-oktober-2027-was-flugreisende-beim-handgepaeck-jetzt-wissen-muessen-10496203" target="_blank" rel="noopener noreferrer">Berliner Zeitung：Ab Oktober 2027 – Handgepäck</a> · <a href="https://www.lovguiden.dk/en/det-offentlige/europa-parlamentet/2026-10-20-parlamentet-vedtager-eu-regler-om-haandhaevelse-af-passagerrettigheder" target="_blank" rel="noopener noreferrer">Lovguiden：Parliament adopts enforcement rules（2026/10/20）</a></p>
+
+<hr>
+
+<h2 id="sources">資料來源</h2>
+<ul>
+  <li><a href="https://www.consilium.europa.eu/en/press/press-releases/2026/06/15/council-and-parliament-reach-landmark-agreement-on-stronger-eu-air-passenger-rights/" target="_blank" rel="noopener noreferrer">Council of the EU（2026/06/15）：Council and Parliament reach landmark agreement on stronger EU air passenger rights</a></li>
+  <li><a href="https://www.consilium.europa.eu/en/press/press-releases/2026/07/13/council-gives-final-clearance-for-stronger-air-passenger-rights/" target="_blank" rel="noopener noreferrer">Council of the EU（2026/07/13）：Council gives final clearance for stronger air passenger rights</a></li>
+  <li><a href="https://eur-lex.europa.eu/eli/reg/2026/2202/oj" target="_blank" rel="noopener noreferrer">EUR-Lex：Verordnung (EU) 2026/2202</a></li>
+  <li><a href="https://europa.eu/youreurope/citizens/travel/passenger-rights/air/faq/index_de.htm" target="_blank" rel="noopener noreferrer">Your Europe：Fragen und Antworten – Fluggastrechte</a></li>
+  <li><a href="https://www.zdfheute.de/politik/eu-reform-fluggastrechte-kompromiss-100.html" target="_blank" rel="noopener noreferrer">ZDFheute：Fluggastrechte: EU einigt sich – nur kleine Änderungen</a></li>
+  <li><a href="https://www.vzbv.de/meldungen/verspaetungsregelung-europaeisches-parlament-verhindert-vorerst-abbau-von-fluggastrechten" target="_blank" rel="noopener noreferrer">vzbv：Europäisches Parlament verhindert vorerst Abbau von Fluggastrechten</a></li>
+  <li><a href="https://www.evz.de/reisen-verkehr/reiserecht/flugzeug/entschaedigung-nach-flugverspaetung-oder-flugausfall-wer-hilft-wirklich-wer-zockt-ab.html" target="_blank" rel="noopener noreferrer">EVZ Deutschland：Entschädigung nach Flugverspätung oder Flugausfall</a></li>
+  <li><a href="https://www.schlichtung-reise-und-verkehr.de/wp-content/uploads/2026/07/Schlichtung_Reise_Verkehr_Halbjahresbilanz_2026.pdf" target="_blank" rel="noopener noreferrer">Schlichtungsstelle Reise &amp; Verkehr：Halbjahresbilanz 2026</a></li>
+  <li><a href="https://www.berliner-zeitung.de/article/ab-oktober-2027-was-flugreisende-beim-handgepaeck-jetzt-wissen-muessen-10496203" target="_blank" rel="noopener noreferrer">Berliner Zeitung：Ab Oktober 2027: Was Flugreisende beim Handgepäck jetzt wissen müssen</a></li>
+  <li><a href="https://www.lovguiden.dk/en/det-offentlige/europa-parlamentet/2026-10-20-parlamentet-vedtager-eu-regler-om-haandhaevelse-af-passagerrettigheder" target="_blank" rel="noopener noreferrer">Lovguiden：Parlamentet vedtager EU-regler om håndhævelse af passagerrettigheder</a></li>
+  <li><a href="https://www.forbes.com/sites/christopherelliott/2026/10/23/eu-airline-passenger-rights-overhaul-what-it-means-for-you/" target="_blank" rel="noopener noreferrer">Forbes（2026/10/23）：EU Airline Passenger Rights Overhaul – What It Means For You</a></li>
+</ul>
+<p>歐洲法院判決編號：C-402/07 與 C-432/07（Sturgeon，延誤 3 小時比照取消）、C-549/07（技術故障）、C-452/13（抵達時間以開艙門為準）、C-315/15（鳥擊）、C-195/17 與 C-28/20（員工罷工）、C-11/11 與 C-537/17（轉機航班）。</p>]]></content:encoded>
+  </item>
   <item>
     <title>德國知識小種子週報精選</title>
     <link>https://taiwanese-in-germany.com/posts/weekly-digest.html</link>
