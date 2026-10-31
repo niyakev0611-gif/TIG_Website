@@ -1,13 +1,13 @@
 德國週報 W44｜2026/10/26–11/01
 社群貼文（FB 條列版 ＋ IG 精簡版 ＋ Threads 版）
-FB 排程：2026-11-01 19:00（Europe/Berlin）　IG 排程：2026-11-01 19:00　Threads 排程：2026-11-01 19:00（草稿建議，待版主確認）
-圖卡順序（五處一致）：1 十一月新制包裹處理費／2 金屬業十一月起可罷工／3 賓士下修財測／4 德日聯合聲明提台海／5 核廢料處置場範圍縮小／6 ifo 景氣六連升
+FB 排程：2026-10-31 21:30（Europe/Berlin）　IG 排程：2026-10-31 21:30　Threads 排程：2026-10-31 21:30（版主確認）
+圖卡順序（五處一致）：1 十一月新制包裹處理費／2 金屬業十一月起可罷工／3 賓士下修財測／4 德日聯合聲明提台海／5 景氣回溫通膨回落／6 核廢料處置場範圍縮小
 ========================================================================
 
 【FB 版（重點條列版）】
 ------------------------------------------------------------------------
 
-🇩🇪【德國週報 W44｜10/26–11/1】十一月新制：境外包裹每種商品再加 2 € 處理費、「先買後付」要查信用；金屬電機業 11/1 起可發動警告性罷工；賓士中國銷量年減 31%、下修財測；德日聯合聲明重申台海和平穩定；核廢料最終處置場候選範圍縮到 5% 以下；ifo 景氣指數六連升
+🇩🇪【德國週報 W44｜10/26–11/1】十一月新制：境外包裹每種商品再加 2 € 處理費、「先買後付」要查信用；金屬電機業 11/1 起可發動警告性罷工；賓士中國銷量年減 31%、下修財測；德日聯合聲明重申台海和平穩定；十月通膨降到 2.8%、ifo 景氣六連升；核廢料最終處置場候選範圍縮到 5% 以下
 
 這週先看荷包：11 月有幾項新規上路，網購、分期付款、搭火車、換汽車保險都會碰到。六張圖卡一次看懂。
 
@@ -25,7 +25,7 @@ FB 排程：2026-11-01 19:00（Europe/Berlin）　IG 排程：2026-11-01 19:00�
 ▪️ 資方 Gesamtmetall 10/27 首度出價：2027 年 7 月發年薪 1% 的一次性給付、【2028 年 7 月】起才調薪【1.3%】，協約到 2028 年底
 ▪️ 獲利不足的企業可不發一次性給付
 ▪️ IG Metall 要求 12 個月內加薪【5%】；北萊茵-西發利亞邦（Nordrhein-Westfalen）區負責人 Giesler：「太晚、太少」，實際上是「負成長的一輪」
-▪️ 下薩克森邦（Niedersachsen）11/1 起率先號召罷工；北部沿海區下一輪談判 11/6 在不來梅邦（Bremen）
+▪️ IG Metall 宣布【11/1 凌晨起全國各協約區陸續罷工】；北部沿海區下一輪談判 11/6 在不來梅邦（Bremen）
 ▪️ 觀察重點：警告性罷工多為數小時停工；福斯（Volkswagen）適用自家企業協約、不在這輪產業談判內，但凍薪爭議同步升溫
 
 🚗 三、賓士下修財測：中國銷量年減 31%
@@ -41,23 +41,25 @@ FB 排程：2026-11-01 19:00（Europe/Berlin）　IG 排程：2026-11-01 19:00�
 ▪️ 10/28 與日相高市早苗會談，簽署【關鍵原物料合作意向書】，分散兩國汽車業的稀土來源
 ▪️ 聯合聲明【強調台灣海峽和平穩定的重要性】、呼籲和平解決兩岸問題，並反對以武力或脅迫改變東海、南海現狀
 ▪️ 聲明未點名中國，但嚴重關切「任意的出口管制、針對關鍵原物料的報復措施」
-▪️ 同一週，聯邦總統 Steinmeier 10/27–31 國事訪問中國，是近 8 年來首位訪中的德國總統，預定與習近平、李強會談
+▪️ 10/29 在首爾與總統李在明會談，兩國關係升級為【強化戰略夥伴關係】
+▪️ 同一週，聯邦總統 Steinmeier 國事訪問中國，10/30 會見習近平，【敦促縮減中國對德貿易順差】（去年德方逆差約 900 億歐元）；習近平回以「合作而非對抗」，雙方未達成具體協議
 ▪️ 觀察重點：總理在東京、總統在北京，德國既要降低對中依賴、又不想與最大貿易夥伴關係破裂
 
-☢️ 五、核廢料最終處置場：候選範圍縮到國土 5% 以下
+📈 五、景氣回溫：十月通膨降到 2.8%、ifo 六連升
+▪️ 聯邦統計局 10/30 初值：10 月通膨率從 3.3% 降到【2.8%】
+▪️ 能源仍年漲 12.2%（9 月 14.9%）；核心通膨降到 2.1%，食品只漲 0.4%
+▪️ 第三季 GDP 季增【0.2%】，市場原本預期停滯；消費小幅成長、投資下滑，出口明顯轉弱
+▪️ 10 月 ifo 企業景氣指數升到【90.2 點】，連續第六個月上升、2023 年春以來新高
+▪️ 製造業現況與預期兩項分指標【三年多來首度同時轉正】；服務業轉為負值
+▪️ 數據解讀：ifo 預測今年 GDP 成長 1.4%，略高於政府秋季預測的 1.3%；能源仍比去年貴一成多
+
+☢️ 六、核廢料最終處置場：候選範圍縮到國土 5% 以下
 ▪️ 聯邦最終處置公司（BGE）10/27 公布最新進度：仍在評估的範圍【不到國土 5%】
 ▪️ 2020 年初選時有 90 個子區域、約 54% 國土
 ▪️ 萊茵蘭-普法茲邦（Rheinland-Pfalz）、黑森邦（Hessen）、柏林邦（Berlin）、薩克森邦（Sachsen）、薩爾蘭邦（Saarland）【完全出局】
 ▪️ 剩餘區域集中在下薩克森邦（Niedersachsen）西部到薩克森-安哈特邦（Sachsen-Anhalt）一帶
 ▪️ BGE 總裁 Graffunder：【2027 年底】提出約 5 到 10 個候選區域，經聯邦議院同意後才實地探勘；最終選址最晚本世紀中
 ▪️ 政策觀察：法律原訂的 2031 年目標早已落空，高放射性廢料仍存放在各地的中期貯存場
-
-📈 六、ifo 景氣指數六連升：2023 年春以來新高
-▪️ 10 月 ifo 企業景氣指數從 89.9 升到【90.2 點】，連續第六個月上升，優於分析師預估的 90.0
-▪️ 上升主要來自對未來半年的預期；對當前營運的評價反而略降
-▪️ 製造業現況與預期兩項分指標【三年多來首度同時轉正】；服務業轉為負值、貿易業持平
-▪️ 能源價格高檔與萊茵河低水位持續拖累生產，聯邦銀行點名化工業
-▪️ 數據解讀：ifo 預測今年 GDP 成長 1.4%，略高於政府秋季預測的 1.3%
 
 📚 資料來源
 十一月新制：
@@ -74,6 +76,7 @@ https://www.cash-online.de/a/neue-typklassen-2027-diese-kfz-modelle-werden-teure
 https://www.onvista.de/news/2026/10-27-metall-tarifrunde-arbeitgeber-bieten-einmalzahlung-und-1-3-prozent-0-20-26568912
 https://www.onvista.de/news/2026/10-27-metall-tarifrunde-arbeitgeber-angebot-fuer-ig-metall-zu-niedrig-0-20-26568948
 https://www.handelsblatt.com/politik/deutschland/metall-und-elektro-ig-metall-lehnt-erstes-angebot-ab-warnstreiks-kommen/100265295.html
+https://www.handelsblatt.com/politik/deutschland/metall-und-elektroindustrie-ig-metall-startet-warnstreiks-am-sonntag/100266042.html
 https://salzgitter-peine.igmetall.de/aktuelles/2026/2026-10-28-metallarbeitgeber-provozieren-warnstreiks-ab-1-november
 https://www.mt.de/regionales/niedersachsen/IG-Metall-kuendigt-Warnstreiks-im-Norden-an-24449776.html
 賓士財報：
@@ -87,17 +90,23 @@ https://www.bundesregierung.de/breg-de/aktuelles/bundeskanzler-merz-reist-nach-s
 https://de.euronews.com/2026/10/28/merz-tokio-deutschland-japan
 https://www.taiwannews.com.tw/news/6467661
 https://www.bundespraesident.de/SharedDocs/Pressemitteilungen/DE/2026/10/261021-Staatsbesuch-China.html
+https://www.bundespraesident.de/SharedDocs/Pressemitteilungen/DE/2026/10/261030-statement-xi-jinping.html
+https://www.boerse.de/nachrichten/ROUNDUP-Steinmeier-draengt-bei-Xi-auf-Abbau-des-Handelsueberschusses/38695492
+https://www.handelsblatt.com/politik/international/handelskonflikt-nicht-zulassen-dass-die-industrielle-basis-verloren-geht/100265455.html
+https://www.koreatimes.co.kr/foreignaffairs/20261029/korea-germany-agree-to-upgrade-bilateral-ties-to-enhanced-strategic-partnership-during-summit
 https://taz.de/Auf-der-Suche-nach-Partnerschaften/!6225109/
+景氣與物價：
+https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/10/PD26_382_611.html
+https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/10/PD26_381_811.html
+https://www.verkehrsrundschau.de/nachrichten/vermischtes/ifo-index-steigt-unternehmen-werden-zuversichtlicher-3926947
+https://www.ifo.de/umfrage/ifo-geschaeftsklima-deutschland
 核廢料最終處置場：
 https://taz.de/Endlagersuche/!6225307/
 https://www.evangelisch.de/inhalte/260389/27-10-2026/endlagersuche-noch-fuenf-prozent-deutschlands-potenziell-geeignet
 https://www.zdfheute.de/politik/deutschland/atommuell-endlager-suche-bundeslaender-100.html
 https://www.bge.de/de/endlagersuche/unterlagen/arbeitsstaende-standortregionen/
-ifo 景氣指數：
-https://www.verkehrsrundschau.de/nachrichten/vermischtes/ifo-index-steigt-unternehmen-werden-zuversichtlicher-3926947
-https://www.ifo.de/umfrage/ifo-geschaeftsklima-deutschland
 
-#德國知識小種子 #DasdeutscheWissen #在德台灣人 #德國生活 #德國新聞 #十一月新制 #Temu #先買後付 #Klarna #IGMetall #Warnstreik #賓士 #MercedesBenz #汽車產業 #台海 #Endlager #ifo
+#德國知識小種子 #DasdeutscheWissen #在德台灣人 #德國生活 #德國新聞 #十一月新制 #Temu #先買後付 #Klarna #IGMetall #Warnstreik #賓士 #MercedesBenz #汽車產業 #台海 #通膨 #ifo #Endlager
 
 ========================================================================
 
@@ -105,19 +114,19 @@ https://www.ifo.de/umfrage/ifo-geschaeftsklima-deutschland
 ------------------------------------------------------------------------
 
 🇩🇪 德國週報 W44｜10/26–11/1
-網購包裹、分期付款、罷工、車廠財報、台海、核廢料與景氣。六張圖卡滑到底 👉
+網購包裹、分期付款、罷工、車廠財報、台海、物價景氣與核廢料。六張圖卡滑到底 👉
 
 📦 十一月新制｜11/1 起歐盟外小包裹在 3 € 關稅之外每種商品再加收 2 € 處理費，從台灣網購直寄也適用；11/20 起「先買後付」要先查信用；德鐵家庭票 99.99 € 常態化；汽車保險解約信 11/30 前要送達
 
-✊ 金屬電機業 11/1 起可罷工｜約 370 萬名員工的協約 10/31 到期；資方出價 2028 年 7 月才調薪 1.3%，IG Metall 要求 5%
+✊ 金屬電機業 11/1 起可罷工｜約 370 萬名員工的協約 10/31 到期；資方出價 2028 年 7 月才調薪 1.3%，IG Metall 要求 5%，11/1 凌晨起全國陸續罷工
 
 🚗 賓士下修財測｜第三季中國銷量年減 31%，轎車利潤率目標降到 2–3%；12 月起再以資遣方案減數千個行政職位
 
-🤝 德日聯合聲明｜Merz 訪日與高市早苗會談，強調台灣海峽和平穩定的重要性、簽關鍵原物料意向書；Steinmeier 同週訪中
+🤝 德日聯合聲明｜Merz 訪日與高市早苗會談，強調台灣海峽和平穩定的重要性、簽關鍵原物料意向書；Steinmeier 同週訪中，促習近平縮減貿易順差
+
+📈 景氣回溫｜10 月通膨降到 2.8%、第三季 GDP 季增 0.2%；ifo 景氣指數六連升到 90.2 點
 
 ☢️ 核廢料最終處置場｜候選範圍縮到國土 5% 以下，5 個邦完全出局；2027 年底提出候選區域
-
-📈 ifo 景氣六連升｜10 月 90.2 點、2023 年春以來新高；製造業轉強、服務業轉弱
 
 📚 完整解析與來源 → FB 粉專或網站（連結在 bio）
 
@@ -135,8 +144,8 @@ https://www.ifo.de/umfrage/ifo-geschaeftsklima-deutschland
 ▪️ 金屬電機業 11/1 起可罷工，資方只出 1.3%
 ▪️ 賓士中國銷量年減【31%】，下修財測
 ▪️ 德日聯合聲明重申台海和平穩定
+▪️ 十月通膨降到【2.8%】，ifo 景氣六連升
 ▪️ 核廢料處置場候選範圍縮到 5% 以下
-▪️ ifo 景氣指數六連升到 90.2 點
 
 你常在 Temu、Shein 或台灣網站下單嗎？多 2 € 會讓你少買嗎？
 
