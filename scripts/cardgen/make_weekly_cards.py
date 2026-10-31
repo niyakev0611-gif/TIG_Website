@@ -2083,6 +2083,110 @@ def illu_clockback(d, R, S, cx, cy, theme):
               fill=GOLD, outline=OUTLINE, width=3*S)
 
 
+def illu_parcelfee(d, R, S, cx, cy, theme):
+    """紙箱包裹＋金色價格吊牌（進口包裹手續費／新收費上路）"""
+    ow = 5*S
+    _dots(d, R, cx, cy, ((-72, -44, 3, GOLD), (-20, -56, 3, tint(theme, 0.5)),
+                         (72, 34, 3, theme)))
+    d.ellipse(R(cx-64, cy+46, cx+30, cy+58), fill=tint(theme, 0.18))
+    # 箱體：正面＋頂蓋（分層表達深度、無透視）
+    d.polygon(R(cx-58, cy-14, cx-40, cy-32, cx+24, cy-32, cx+6, cy-14),
+              fill=tint(theme, 0.45), outline=OUTLINE, width=ow)
+    d.polygon(R(cx+6, cy-14, cx+24, cy-32, cx+24, cy+30, cx+6, cy+48),
+              fill=shade(theme, 0.82), outline=OUTLINE, width=ow)
+    d.rectangle(R(cx-58, cy-14, cx+6, cy+48), fill=theme, outline=OUTLINE, width=ow)
+    # 封箱膠帶（白）
+    d.polygon(R(cx-34, cy-14, cx-20, cy-32, cx-10, cy-32, cx-24, cy-14),
+              fill='white', outline=OUTLINE, width=3*S)
+    d.rectangle(R(cx-34, cy-14, cx-24, cy+48), fill='white', outline=OUTLINE, width=3*S)
+    # 箱面白色標籤
+    d.rounded_rectangle(R(cx-16, cy+20, cx-2, cy+36), radius=2*S, fill='white',
+                        outline=OUTLINE, width=3*S)
+    # 焦點細節：吊在箱角的金色價格吊牌（€）
+    d.line(R(cx+24, cy-30, cx+42, cy-18), fill=OUTLINE, width=3*S)
+    tag = [(36, -22), (70, -2), (56, 22), (22, 2)]
+    d.polygon(R(*[v for (dx, dy) in tag for v in (cx+dx, cy+dy)]),
+              fill=GOLD, outline=OUTLINE, width=ow)
+    d.ellipse(R(cx+33, cy-15, cx+41, cy-7), fill='white', outline=OUTLINE, width=2*S)
+    # 吊牌上的 € 符號（幾何繪製）
+    ex, ey = cx+50, cy+5
+    d.arc(R(ex-9, ey-9, ex+9, ey+9), start=45, end=315, fill=OUTLINE, width=4*S)
+    d.line(R(ex-12, ey-3, ex+3, ey-3), fill=OUTLINE, width=3*S)
+    d.line(R(ex-12, ey+3, ex+3, ey+3), fill=OUTLINE, width=3*S)
+
+def illu_flagsjapan(d, R, S, cx, cy, theme):
+    """德國與日本雙旗（總理訪日／德日聯合聲明）"""
+    ow = 5*S
+    _dots(d, R, cx, cy, ((-70, -6, 3, theme), (0, -56, 3, GOLD), (70, -6, 3, theme)))
+    d.ellipse(R(cx-48, cy+48, cx+48, cy+60), fill=tint(theme, 0.18))
+    for px, fx1, fx2, jp in ((-14, -66, -14, False), (14, 14, 66, True)):
+        x1, x2, y1, y2 = cx+fx1, cx+fx2, cy-50, cy-14
+        if jp:
+            # 日本：白底紅日
+            d.rectangle(R(x1, y1, x2, y2), fill='#FFFFFF')
+            mx, my, r = (x1+x2)/2, (y1+y2)/2, 10
+            d.ellipse(R(mx-r, my-r, mx+r, my+r), fill='#C0392B')
+        else:
+            h3 = (y2-y1)/3
+            for i, c in enumerate(('#374151', '#C0392B', '#E8B70A')):
+                d.rectangle(R(x1, y1+i*h3, x2, y1+(i+1)*h3), fill=c)
+        d.rectangle(R(x1, y1, x2, y2), outline=OUTLINE, width=ow)
+        d.line(R(cx+px, y1, cx+px, cy+50), fill=OUTLINE, width=ow)
+        d.ellipse(R(cx+px-5, cy-58, cx+px+5, cy-48), fill=GOLD, outline=OUTLINE, width=3*S)
+        d.ellipse(R(cx+px-8, cy+46, cx+px+8, cy+56), fill=OUTLINE)
+    # 焦點細節：兩旗之間的金星
+    d.polygon(R(*star_pts(cx, cy+14, 10, 4)), fill=GOLD, outline=OUTLINE)
+
+def illu_nuclearbarrel(d, R, S, cx, cy, theme):
+    """地層剖面＋深埋的金色核廢料桶（最終處置場選址）"""
+    ow = 5*S
+    _dots(d, R, cx, cy, ((-72, -50, 3, GOLD), (14, -55, 3, tint(theme, 0.5)),
+                         (72, -50, 3, theme)))
+    # 三層地層（由淺到深，同色系分層）
+    x1, x2 = cx-70, cx+70
+    layers = ((-40, -18, tint(theme, 0.25)), (-18, 14, tint(theme, 0.5)),
+              (14, 52, theme))
+    for k, (t, b, col) in enumerate(layers):
+        d.rounded_rectangle(R(x1, cy+t, x2, cy+b), radius=10*S, fill=col,
+                            corners=(k == 0, k == 0, k == 2, k == 2))
+    d.rounded_rectangle(R(x1, cy-40, x2, cy+52), radius=10*S, outline=OUTLINE, width=ow)
+    for (t, _, _) in layers[1:]:
+        d.line(R(x1+3, cy+t, x2-3, cy+t), fill=OUTLINE, width=3*S)
+    # 豎井（白）
+    d.rectangle(R(cx-5, cy-40, cx+5, cy+4), fill='white', outline=OUTLINE, width=3*S)
+    # 焦點細節：深層的金色桶＋輻射標誌
+    bx, by = cx, cy+26
+    d.rounded_rectangle(R(bx-27, by-22, bx+27, by+22), radius=6*S, fill=GOLD,
+                        outline=OUTLINE, width=ow)
+    d.ellipse(R(bx-17, by-17, bx+17, by+17), fill=GOLD_HI, outline=OUTLINE, width=3*S)
+    for a0 in (-90, 30, 150):
+        d.pieslice(R(bx-14, by-14, bx+14, by+14), start=a0-30, end=a0+30, fill=OUTLINE)
+    d.ellipse(R(bx-4, by-4, bx+4, by+4), fill=GOLD_HI, outline=OUTLINE, width=2*S)
+
+def illu_barometer(d, R, S, cx, cy, theme):
+    """半圓景氣儀表＋指針上揚＋金色上升箭頭（景氣指標／信心回升）"""
+    ow = 5*S
+    _dots(d, R, cx, cy, ((-72, -44, 3, GOLD), (-40, -56, 3, tint(theme, 0.5)),
+                         (72, 40, 3, theme)))
+    d.ellipse(R(cx-62, cy+42, cx+50, cy+54), fill=tint(theme, 0.18))
+    gx, gy, r = cx-6, cy+30, 54
+    # 錶盤（半圓）：三段刻度色帶
+    d.pieslice(R(gx-r, gy-r, gx+r, gy+r), start=180, end=360, fill='white',
+               outline=OUTLINE, width=ow)
+    for (a0, a1, col) in ((180, 240, tint(theme, 0.3)), (240, 300, tint(theme, 0.6)),
+                          (300, 360, theme)):
+        d.arc(R(gx-r+8, gy-r+8, gx+r-8, gy+r-8), start=a0, end=a1, fill=col, width=10*S)
+    d.line(R(gx-r, gy, gx+r, gy), fill=OUTLINE, width=ow)
+    # 指針：指向右上（約 315°）
+    a = math.radians(-40)
+    d.line(R(gx, gy, gx+38*math.cos(a), gy+38*math.sin(a)), fill=OUTLINE, width=5*S)
+    d.ellipse(R(gx-7, gy-7, gx+7, gy+7), fill=GOLD, outline=OUTLINE, width=3*S)
+    # 焦點細節：金色上升箭頭
+    ax, ay = cx+56, cy-14
+    d.line(R(ax, ay+30, ax, ay-6), fill=OUTLINE, width=10*S)
+    d.line(R(ax, ay+28, ax, ay-4), fill=GOLD, width=5*S)
+    d.polygon(R(ax-12, ay-2, ax+12, ay-2, ax, ay-22), fill=GOLD, outline=OUTLINE, width=3*S)
+
 def illu_airplane(d, R, S, cx, cy, theme):
     """側面客機＋金色時鐘（班機延誤／航空乘客權利 EU261）"""
     ow = 5*S
@@ -2181,6 +2285,8 @@ ILLUS = dict(podium=illu_podium, flags=illu_flags, coins=illu_coins,
              paycheckfreeze=illu_paycheckfreeze, hourglass=illu_hourglass,
              taxcalendar=illu_taxcalendar, investchip=illu_investchip,
              spinoff=illu_spinoff, clockback=illu_clockback,
+             parcelfee=illu_parcelfee, flagsjapan=illu_flagsjapan,
+             nuclearbarrel=illu_nuclearbarrel, barometer=illu_barometer,
              airplane=illu_airplane, boardingpass=illu_boardingpass)
 
 # ── 版型 ────────────────────────────────────────────────────
@@ -2502,114 +2608,89 @@ def make_chart_card(spec, path, week_label='W?', date_label=''):
 # ════════════════════════════════════════════════════════════
 # 每週卡片內容（範本：W29）——之後每週改這一段即可
 # ════════════════════════════════════════════════════════════
-WEEK = 'W43'
-DATE_RANGE = '2026/10/19-10/25'
+WEEK = 'W44'
+DATE_RANGE = '2026/10/26-11/01'
 
 CARDS = [
  dict(
-  theme='#2563EB', badges=[('生活提醒', True), ('冬令時間', False)], illu='clockback',
-  title='週日凌晨調回冬令時間：多睡一小時',
-  subtitle='10/25 凌晨 3:00 撥回 2:00；台德時差從 6 小時變成 7 小時',
-  stats=[('3→2 點', '10/25 凌晨時鐘撥回'),
-         ('7 小時', '冬令期間台灣比德國快')],
+  theme='#D4740E', badges=[('十一月新制', True), ('消費者', False)], illu='parcelfee',
+  title='十一月新制：境外包裹再加 2 € 處理費',
+  subtitle='11/1 起歐盟外小包裹加收處理費；11/20 起「先買後付」納入消費信貸法',
+  stats=[('2 €', '包裹內每種不同商品'),
+         ('11/30', '汽車保險年底換約的解約期限')],
   bullets=[
-   ('怎麼調', '手機與電腦會自動調整；烤箱、車用時鐘與舊式鬧鐘要手動撥慢 1 小時。'),
-   ('百年歷史', '德國 1916 年一戰時首度實施，1950–79 年停用，1980 年因石油危機與東德同步恢復；歐盟 1996 年起統一日期。'),
-   ('廢除卡關', '2018 年歐盟意見調查 460 萬份回覆、84% 贊成廢除；歐洲議會 2019 年通過，成員國至今沒有共識。'),
+   ('包裹處理費', '7 月起已有每類商品 3 € 的定額關稅，11/1 再加收處理費；由平台與進口商繳納但可能轉嫁，從台灣網購直寄德國同樣適用。'),
+   ('先買後付', '11/20 起 Klarna、PayPal 等「稍後付款」與 200 € 以下小額貸款都要先審查信用，小額分期也可能被拒。'),
+   ('德鐵家庭票', '11/1 起改為常態方案：最多 5 人搭 IC／ICE 來回含座位預訂 99.99 €，單程 59.99 €。'),
   ],
-  takeaway=('台灣經驗', '台灣也實施過日光節約時間，最後一次在 1979 年；德國換季時，台德時差就在 6、7 小時之間切換。'),
-  file='W43_圖卡1_週日調回冬令時間.png'),
+  takeaway=('因應建議', '汽車保險想在 1/1 換約，解約信須在 11/30 前「送達」保險公司（寄出日不算）；收到漲價通知另有特別終止權。'),
+  file='W44_圖卡1_十一月新制包裹處理費.png'),
  dict(
-  theme='#D4740E', badges=[('能源帳單', True), ('2027 預估', False)], illu='heatingbill',
-  title='明年瓦斯費恐漲 10–20%',
-  subtitle='聯邦統計局 10/20：九月生產者物價年增 6.7%，能源成本持續往下游轉嫁',
-  stats=[('+6.7%', '九月生產者物價年增'),
-         ('250–500 €', '年用 2 萬度家庭每年多付')],
+  theme='#C0392B', badges=[('勞資協商', True), ('汽車產業', False)], illu='protestsign',
+  title='金屬電機業 11/1 起可發動警告性罷工',
+  subtitle='資方 10/27 首度出價：2027 年一次性給付、2028 年 7 月才調薪 1.3%',
+  stats=[('約 370 萬人', '金屬電機業協約涵蓋員工'),
+         ('5% 對 1.3%', '工會訴求與資方出價')],
   bullets=[
-   ('能源領漲', '能源年增 14.9%、石油製品 51.3%，是 2023 年 3 月以來最大漲幅；扣除能源只漲 3.2%。'),
-   ('瓦斯首當其衝', 'Verivox 預估明年 1 月起瓦斯費依方案漲 10–20%：業者早年預購的便宜天然氣用完，2027 年得高價補貨。'),
-   ('網路費也小漲', '2027 年瓦斯網路費平均 +3%、電網費 +1.9%；儲氣率約六成，11/1 達 80% 的法定目標已不可能。'),
+   ('資方出價', 'Gesamtmetall 提議 2027 年 7 月發年薪 1% 一次性給付、2028 年 7 月起調薪 1.3%，協約到 2028 年底。'),
+   ('工會回應', 'IG Metall 要求 12 個月內加薪 5%，北萊茵-西發利亞邦（Nordrhein-Westfalen）區痛批是「負成長」。'),
+   ('罷工時程', '和平義務 10/31 午夜到期，IG Metall 宣布 11/1 凌晨起在全國各協約區陸續發動警告性罷工。'),
   ],
-  takeaway=('因應建議', '基本供應（Grundversorgung）1/1 調價須在 11/20 前通知；收到漲價信可行使特別終止權，比較有價格保證的方案。'),
-  file='W43_圖卡2_明年瓦斯費恐漲兩成.png'),
+  takeaway=('觀察重點', '警告性罷工多為數小時的停工；福斯適用自家企業協約、不在這輪產業談判內，但凍薪爭議同樣在升溫。'),
+  file='W44_圖卡2_金屬業十一月起可罷工.png'),
  dict(
-  theme='#7C3AED', badges=[('柏林住房', True), ('組閣談判', False)], illu='apartmentkeys',
-  title='柏林擬將大房東 16 萬戶收歸公有',
-  subtitle='柏林邦（Berlin）SPD、綠黨 10/19 同意與左翼黨展開組閣談判',
-  stats=[('約 16 萬戶', '可能轉為公有的住宅'),
-         ('160 億歐元', '補償金上限')],
+  theme='#2563EB', badges=[('汽車產業', True), ('第三季財報', False)], illu='carplant',
+  title='賓士下修財測：中國銷量年減 31%',
+  subtitle='第三季淨利 15.2 億歐元靠去年低基期；轎車利潤率目標降到 2–3%',
+  stats=[('-31%', '第三季中國銷量年增率'),
+         ('2–3%', '轎車利潤率目標（原 3–5%）')],
   bullets=[
-   ('怎麼收', '持有逾 1 萬戶的住宅企業，超出部分依基本法第 15 條轉為公有並給予補償；合作社、公益住宅與 2021 年後新建者除外。'),
-   ('時程', '法案預計 2028 年中提出、最快 2029 年中生效；左翼黨 10/31 黨代會才決定是否正式進入組閣談判。'),
-   ('各方反應', 'Vonovia 稱計畫違憲、經不起司法審查；推動公投的團體不滿門檻從 3,000 戶拉高；聯邦執政聯盟另研擬立法阻擋。'),
+   ('財報重點', '第三季營收 307 億歐元、年減 4.5%；轎車銷量年減 8%，純電車成長 61%。'),
+   ('為何下修', '公司指中國市場競爭加劇、第四季原物料成本上升；全年集團營業利益從「顯著成長」改為與去年持平。'),
+   ('撙節加碼', '據《新蘇黎世報》（NZZ），12 月起以資遣方案再減數千個行政職位，每年省 10 億歐元人事成本。'),
   ],
-  takeaway=('觀察重點', '對租客而言短期不會有變化：法律最快 2029 年生效，補償金靠貸款支應、再以租金回收，且勢必面臨憲法訴訟。'),
-  file='W43_圖卡3_柏林大房東收歸公有.png'),
+  takeaway=('數據解讀', '淨利年增近 28% 是因去年同期認列裁員費用；執行長稱匈牙利廠成本比德國低約七成。'),
+  file='W44_圖卡3_賓士下修財測.png'),
  dict(
-  theme='#2563EB', badges=[('汽車產業', True), ('勞資對峙', False)], illu='paycheckfreeze',
-  title='福斯傳凍薪到 2030 年',
-  subtitle='《南德日報》率先報導、IG Metall 證實內部指示；福斯「不評論臆測」',
-  stats=[('約 66 萬人', '全球可能受影響員工'),
-         ('10% 以上', '工會估算實質薪資損失')],
+  theme='#0D9488', badges=[('外交', True), ('印太', False)], illu='flagsjapan',
+  title='德日聯合聲明：重申台海和平穩定',
+  subtitle='Merz 訪新加坡、日本、南韓；總統 Steinmeier 同週國事訪問中國',
+  stats=[('3 國', 'Merz 亞洲行出訪國家'),
+         ('近 8 年', '德國總統首度訪問中國')],
   bullets=[
-   ('指示內容', '據 IG Metall 與員工代表會，董事會要求全球人資部門自 10 月初起，人事預算不再編列通膨補貼與團體協約調薪。'),
-   ('工會反擊', '員工代表會稱這是 Wolfsburg 資方的「一廂情願」；工會要求加薪 5%，福斯企業協約談判預計 11 月底開始。'),
-   ('全產業升溫', '金屬電機業第二輪薪資談判 10/27 起陸續登場，和平義務 10/31 午夜到期，11/1 起可發動警告性罷工。'),
+   ('德日成果', '10/28 與日相高市早苗會談，簽署關鍵原物料意向書，分散汽車業的稀土來源。'),
+   ('台海表述', '聯合聲明強調台灣海峽和平穩定的重要性，並反對以武力或脅迫改變東海、南海現狀。'),
+   ('兩線並行', 'Steinmeier 10/30 會見習近平，敦促縮減中國對德的龐大貿易順差；雙方未達成具體協議。'),
   ],
-  takeaway=('觀察重點', '凍薪目前是媒體與工會披露、公司未證實；福斯已終止十份團體協約，年底前勞資攻防將直接牽動各廠區。'),
-  file='W43_圖卡4_福斯傳凍薪到2030.png'),
+  takeaway=('觀察重點', '聲明未點名中國，但嚴重關切「任意的出口管制」；總理在東京、總統在北京，德國雙軌並行。'),
+  file='W44_圖卡4_德日聯合聲明提台海.png'),
  dict(
-  theme='#2E8B57', badges=[('汽車產業', True), ('集團改組', False)], illu='spinoff',
-  title='Bosch 汽車事業拆成子公司',
-  subtitle='10/22 宣布：在德約 6.25 萬名員工移轉到 4 家全資子公司',
-  stats=[('約 6.25 萬人', '移轉到新子公司的在德員工'),
-         ('2027/8/1', '新公司開始營運')],
+  theme='#2E8B57', badges=[('經濟', True), ('物價與景氣', False)], illu='barometer',
+  title='景氣回溫：通膨降到 2.8%、ifo 六連升',
+  subtitle='第三季 GDP 季增 0.2% 優於預期；ifo 指數 90.2 點、2023 年春以來新高',
+  stats=[('2.8%', '10 月通膨初值（9 月 3.3%）'),
+         ('90.2 點', '10 月 ifo 企業景氣指數')],
   bullets=[
-   ('怎麼拆', 'Mobility 在德事業與 IT、共享服務、不動產單位從母公司分出。'),
-   ('員工權益', '公司稱契約整批轉移、薪資與勞動條件不變；不另外裁員，也不打算上市或出售。'),
-   ('工會疑慮', '員工代表會強調重組不能犧牲員工；到 2030 年再減約 1.3 萬個職位的既有計畫照常。'),
+   ('通膨回落', '能源年漲 12.2%（9 月 14.9%）仍是主要推手；核心通膨降到 2.1%，食品只漲 0.4%。'),
+   ('第三季 GDP', '季增 0.2%，市場原本預期停滯；消費小幅成長、投資下滑，出口明顯轉弱。'),
+   ('誰在拉抬', '製造業的現況與預期兩項分指標三年多來首度同時轉正；服務業反而跌入負值。'),
   ],
-  takeaway=('因應建議', '屬事業移轉（Betriebsübergang），民法典第 613a 條保障契約與年資；收到書面通知一個月內可異議。'),
-  file='W43_圖卡5_Bosch汽車事業拆子公司.png'),
+  takeaway=('數據解讀', '物價與景氣同步好轉，但能源仍比去年貴一成多；ifo 預測今年 GDP 成長 1.4%，略高於政府秋季預測的 1.3%。'),
+  file='W44_圖卡5_景氣回溫通膨回落.png'),
  dict(
-  theme='#0D9488', badges=[('退休金', True), ('改革角力', False)], illu='hourglass',
-  title='45 年免扣減退休：育兒年資恐不再算',
-  subtitle='聯盟黨提出妥協構想、SPD 反對；整體退休改革恐延到 2027 年',
-  stats=[('45 年', '免扣減提前退休門檻'),
-         ('33 項', '退休金委員會改革建議')],
+  theme='#7C3AED', badges=[('能源政策', True), ('核廢料', False)], illu='nuclearbarrel',
+  title='核廢料最終處置場：候選範圍縮到 5% 以下',
+  subtitle='聯邦最終處置公司（BGE）10/27 公布最新進度，已有 5 個邦完全出局',
+  stats=[('< 5%', '仍在評估的國土面積'),
+         ('2027 年底', '提出少數候選區域')],
   bullets=[
-   ('構想內容', '據《圖片報》（Bild）報導，聯盟黨想保留 45 年制度，但育兒與照護期間未來少算或不算，等於要多工作幾年。'),
-   ('誰受影響', '分析指出女性受衝擊最大，許多人得靠育兒、照護期間才湊滿年資；SPD 黨團副主席 Schmidt 表態堅決維護。'),
-   ('卡在哪裡', '退休金委員會原建議廢除此制；接替請辭的 Bas 出任勞動部長的 Schweitzer（SPD）盼在聯盟內找到妥協。'),
+   ('範圍縮小', '2020 年初選有 90 個子區域、約 54% 國土；去年底仍約四分之一，如今只剩不到 5%。'),
+   ('剩下哪裡', '候選區集中在下薩克森邦（Niedersachsen）西部到薩克森-安哈特邦（Sachsen-Anhalt）一帶，其他邦另有零星區塊。'),
+   ('下一步', 'BGE 總裁 Graffunder 目標 2027 年底提出約 5 到 10 個候選區域，交聯邦議院決定後才會實地探勘。'),
   ],
-  takeaway=('數據解讀', '「63 歲退休」早已名不符實：現行世代滿 45 年免扣減的最早年齡已約 64.5 歲，並逐步升到 65 歲。'),
-  file='W43_圖卡6_45年退休育兒年資.png'),
- dict(
-  theme='#C0392B', badges=[('菸稅', True), ('立法烏龍', False)], illu='taxcalendar',
-  title='菸稅漲價法提前生效：財政部烏龍',
-  subtitle='公報誤載「公布次日生效」，原訂 2027/1/1 的新稅率 10/21 起即適用',
-  stats=[('10/21', '法律意外生效日'),
-         ('11.78 €', '2030 年一包菸預估均價')],
-  bullets=[
-   ('出了什麼錯', '條文寫成「公布次日生效」，且原定 2030 年的最高稅率被列為一般稅率；財政部稱是技術錯誤，已啟動更正。'),
-   ('售價會馬上漲嗎', '不會。新稅率的完稅標籤（Steuerzeichen）還沒印好，海關暫不執行；已完稅的庫存可照常販售。'),
-   ('電子菸爭議', '業界主張新法漏列電子菸液稅率、今年等於免稅；財政部反駁「立法者意思很清楚」，照舊稅率課徵。'),
-  ],
-  takeaway=('數據解讀', '依財政部試算，一包菸均價從約 8.05 € 漲到 2027 年 9.10 €、2030 年 11.78 €（本站 W42 誤引 8 月草案數字）。'),
-  file='W43_圖卡7_菸稅法提前生效.png'),
- dict(
-  theme='#2E8B57', badges=[('經濟', True), ('投資高峰會', False)], illu='investchip',
-  title='投資高峰會：企業承諾約 2,300 億歐元',
-  subtitle='Merz 10/19–20 在柏林邀集約 200 位企業領袖，Nvidia 執行長黃仁勳壓軸',
-  stats=[('2,286 億歐元', '經濟部統計的大型投資案'),
-         ('160 億歐元', 'Amazon 至 2027 年底')],
-  bullets=[
-   ('錢從哪來', '經濟部列出 2026 年逾 70 件、每件至少 1 億歐元的投資案，約 955 億歐元來自外國企業。'),
-   ('AI 是主角', 'Nvidia 入股 4 家德國新創、與聯邦合作推動工業 AI；Amazon 近 50 億歐元擴建法蘭克福雲端。'),
-   ('數字的但書', '不少專案早已規劃且橫跨多年；經濟部隔天也表示這是「會前彙整的統計」，並非全是新承諾。'),
-  ],
-  takeaway=('觀察重點', 'Merz 喊出要把德國從「儲蓄者之國」變成「投資者之國」；實際能帶來多少新工作，要看專案動工進度。'),
-  file='W43_圖卡8_投資高峰會兩千三百億.png'),
+  takeaway=('政策觀察', '法律原訂 2031 年選定場址早已不可能，總裁估最晚本世紀中；在那之前，高放射性廢料仍存放在各地的中期貯存場。'),
+  file='W44_圖卡6_核廢料處置場範圍縮小.png'),
+
 ]
 
 # ── 邦名德文全名檢查 ────────────────────────────────────────
