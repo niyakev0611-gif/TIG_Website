@@ -1,13 +1,13 @@
 德國週報 W45｜2026/11/02–11/08
 社群貼文（FB 條列版 ＋ IG 精簡版 ＋ Threads 版）
 FB 排程：2026-11-08 21:30（Europe/Berlin）　IG 排程：2026-11-08 21:30　Threads 排程：2026-11-08 21:30（待版主確認）
-圖卡順序（五處一致）：1 住址登記全面上網／2 Schaeffler 再裁兩千六百人／3 油價上限法草案／4 駕照改革院會表決／5 西巴爾幹名額減半
+圖卡順序（五處一致）：1 住址登記全面上網／2 Schaeffler 再減兩千六百職位／3 油價上限法草案／4 駕照改革院會表決／5 西巴爾幹名額減半
 ========================================================================
 
 【FB 版（重點條列版）】
 ------------------------------------------------------------------------
 
-🇩🇪【德國週報 W45｜11/2–11/8】住址登記 12/1 起全面上網；Schaeffler 在德國再裁 2,660 人、關四處據點；油價上限法草案門檻高、各方批評；駕照改革表決，平均 3,400 € 要降價；西巴爾幹工作名額減半
+🇩🇪【德國週報 W45｜11/2–11/8】住址登記 12/1 起全面上網；Schaeffler 在德國再減 2,660 個職位、關四處據點；油價上限法草案門檻高、各方批評；駕照改革表決，平均 3,400 € 要降價；西巴爾幹工作名額減半
 
 這週有兩件和日常生活直接相關的行政改革：搬家要辦的住址登記（Anmeldung）要全面上網，考駕照的費用也可望降低。五張圖卡一次看懂。
 
@@ -18,14 +18,15 @@ FB 排程：2026-11-08 21:30（Europe/Berlin）　IG 排程：2026-11-08 21:30�
 ▪️ 需要 BundID 帳號，並以證件晶片的線上身分功能（Online-Ausweis）驗證；德國身分證、歐盟 eID 卡與【電子居留卡（eAT）】都有這項功能，須先啟用並設定 PIN
 ▪️ 因應建議：剛入境、只有護照與簽證的人多半仍須臨櫃辦首次登記；房東開的入住證明（Wohnungsgeberbestätigung）線上也不能少
 
-🔩 二、Schaeffler 再裁 2,660 人、關閉德國四據點
+🔩 二、Schaeffler 再減 2,660 個職位、關閉德國四據點
 ▪️ 汽車供應商 Schaeffler【11/3】宣布新撙節方案：歐洲淨減【3,460 個職位】，其中德國約【2,660 個】，主要在 2027–2028 年執行
 ▪️ 關閉多特蒙德（Dortmund，約 430 人）、Morbach（約 160 人）兩座燃油引擎零件廠與柏林據點（約 270 人）；Schwalbach 約 385 人多數轉調法蘭克福，仍減約 190 個職位
 ▪️ 2030 年起每年省【3 億歐元】，一次性成本約 4.8 億歐元；董事會先自減 10% 薪資，再以限期減薪「團結捐」（Solidaritätsbeitrag）擴及各層級
 ▪️ 上一輪（2024 年 11 月宣布、歐洲 4,700 人）到 9 月底已完成 3,715 人，新一輪又接著來
-▪️ IG Metall 與員工代表會批評裁員一輪接一輪，要求提出德國據點的未來方案
+▪️ 不是直接解僱：依 2018 年與 IG Metall 簽的未來協議（Zukunftsvereinbarung），【原則上排除經營性解僱】，以自然離職、內部轉調、自願離職方案與提前退休（Altersteilzeit）為主
+▪️ IG Metall 與員工代表會批評減員方案一輪接一輪，要求提出德國據點的未來方案
 ▪️ 產業全景：聯邦統計局數據，2026 年中汽車業就業【69.15 萬人】、年減 4.23 萬，為 2005 年有統計以來最低；零組件業減 7.6%，比車廠更重
-▪️ 提醒：若收到合意解約（Aufhebungsvertrag）提議，簽署前先確認對失業給付等待期（Sperrzeit）的影響
+▪️ 提醒：資遣補償金（Abfindung）不是法定權利，金額看個別合意解約或社會計畫；若收到合意解約（Aufhebungsvertrag）提議，簽署前先確認對失業給付等待期（Sperrzeit）的影響
 
 ⛽ 三、油價上限法草案：須連三週高於歐盟均價才啟動
 ▪️ 經濟部《燃料最高價格法》（Kraftstoffhöchstpreisgesetz）草案曝光，目標【2027 年 1 月 1 日】上路，目前仍在部會早期協調
@@ -58,6 +59,7 @@ Schaeffler 與汽車業就業：
 https://www.hessenschau.de/wirtschaft/schaeffler-streicht-tausende-stellen-und-schliesst-werk-in-schwalbach-v1,schaeffler-stellenabbau-100.html
 https://www.heise.de/news/Schaeffler-streicht-3460-Stellen-und-schliesst-vier-deutsche-Standorte-11508878.html
 https://www.autohaus.de/nachrichten/autohersteller/branchenkrise-schaeffler-streicht-tausende-jobs-und-schliesst-werke-3930499
+https://bayern.igmetall.de/aktuell/ig-metall-akzeptiert-schaefflers-abbauplaene-nicht
 https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/08/PD26_N057_42.html
 油價上限法草案：
 https://www.lto.de/recht/nachrichten/n/spritpreisdeckel-geplant-wirtschaftsministerium-reiche-kraftstoffhoechstpreisgesetz
@@ -74,7 +76,7 @@ https://rheinland.hv-nrw.de/blog/2026/10/28/erfolgsmodell-westbalkanregelung-hde
 
 完整深度解析 → https://taiwanese-in-germany.com/posts/weekly-digest.html#nov2-8
 
-#德國知識小種子 #DasdeutscheWissen #在德台灣人 #德國生活 #德國新聞 #Anmeldung #住址登記 #Schaeffler #汽車產業 #裁員 #油價 #Spritpreisdeckel #駕照 #Führerschein #Westbalkanregelung
+#德國知識小種子 #DasdeutscheWissen #在德台灣人 #德國生活 #德國新聞 #Anmeldung #住址登記 #Schaeffler #汽車產業 #油價 #Spritpreisdeckel #駕照 #Führerschein #Westbalkanregelung
 
 ========================================================================
 
@@ -82,11 +84,11 @@ https://rheinland.hv-nrw.de/blog/2026/10/28/erfolgsmodell-westbalkanregelung-hde
 ------------------------------------------------------------------------
 
 🇩🇪 德國週報 W45｜11/2–11/8
-住址登記上網、供應商裁員、油價上限、駕照改革、西巴爾幹名額。五張圖卡滑到底 👉
+住址登記上網、供應商減員、油價上限、駕照改革、西巴爾幹名額。五張圖卡滑到底 👉
 
 🏠 住址登記全面上網｜內閣 11/4 通過命令，預計 12/1 起所有登記機關都要提供線上 Anmeldung；需 BundID 與證件晶片線上身分功能，電子居留卡（eAT）也可用
 
-🔩 Schaeffler 再裁 2,660 人｜11/3 宣布德國關閉四處據點、歐洲共減 3,460 個職位；汽車業就業降到 2005 年以來最低
+🔩 Schaeffler 再減 2,660 個職位｜11/3 宣布德國關閉四處據點、歐洲共減 3,460 個職位，原則上不做經營性解僱、以自願離職與提前退休為主；汽車業就業降到 2005 年以來最低
 
 ⛽ 油價上限法草案｜油價須連三週比其他歐盟國家平均高 5 個百分點以上才啟動，每次最長 3 個月；工會與加油站業者都批評。燃油稅減免則在 12/31 到期
 
@@ -106,7 +108,7 @@ https://rheinland.hv-nrw.de/blog/2026/10/28/erfolgsmodell-westbalkanregelung-hde
 🇩🇪 德國週報 W45｜11/2–11/8
 
 ▪️ 12/1 起各地都要提供線上住址登記（Anmeldung）
-▪️ Schaeffler 在德國再裁【2,660】人、關四處據點
+▪️ Schaeffler 在德國再減【2,660】個職位、關四處據點
 ▪️ 油價上限法草案：須連三週高於歐盟均價才啟動
 ▪️ 駕照改革表決，平均【3,400 €】要降價
 ▪️ 西巴爾幹工作名額每年減半到 2.5 萬
