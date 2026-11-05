@@ -2250,6 +2250,77 @@ def illu_boardingpass(d, R, S, cx, cy, theme):
         sx, sy = bx + 14*math.cos(a), by + 14*math.sin(a)
         d.ellipse(R(sx-2.6, sy-2.6, sx+2.6, sy+2.6), fill=GOLD)
 
+def illu_onlineregister(d, R, S, cx, cy, theme):
+    """筆電螢幕上的房子＋金色勾選章（線上住址登記／數位行政）"""
+    ow = 5*S
+    _dots(d, R, cx, cy, ((-72, -40, 3, GOLD), (-66, 30, 3, tint(theme, 0.5)),
+                         (70, 40, 3, theme)))
+    d.ellipse(R(cx-66, cy+40, cx+42, cy+52), fill=tint(theme, 0.18))
+    # 筆電：螢幕（主題色外框＋白色畫面）＋底座
+    d.rounded_rectangle(R(cx-58, cy-44, cx+30, cy+18), radius=6*S, fill=theme,
+                        outline=OUTLINE, width=ow)
+    d.rectangle(R(cx-48, cy-34, cx+20, cy+8), fill='white', outline=OUTLINE, width=3*S)
+    d.polygon(R(cx-68, cy+18, cx+40, cy+18, cx+46, cy+32, cx-74, cy+32),
+              fill=tint(theme, 0.45), outline=OUTLINE, width=ow)
+    d.line(R(cx-20, cy+25, cx-8, cy+25), fill=OUTLINE, width=3*S)
+    # 畫面中的小房子
+    hx, hy = cx-14, cy-6
+    d.polygon(R(hx-18, hy-4, hx, hy-22, hx+18, hy-4), fill=tint(theme, 0.6),
+              outline=OUTLINE, width=3*S)
+    d.rectangle(R(hx-13, hy-4, hx+13, hy+12), fill=tint(theme, 0.25), outline=OUTLINE, width=3*S)
+    d.rectangle(R(hx-4, hy+2, hx+4, hy+12), fill=theme, outline=OUTLINE, width=2*S)
+    # 焦點細節：金色勾選章
+    bx, by, r = cx+44, cy-30, 17
+    d.ellipse(R(bx-r, by-r, bx+r, by+r), fill=GOLD, outline=OUTLINE, width=ow)
+    d.line(R(bx-8, by+1, bx-2, by+7, bx+9, by-6), fill=OUTLINE, width=4*S, joint='curve')
+
+def illu_bearing(d, R, S, cx, cy, theme):
+    """滾珠軸承＋金色下降箭頭（汽車供應商／零組件產業縮編）"""
+    ow = 5*S
+    _dots(d, R, cx, cy, ((-72, -46, 3, GOLD), (-74, 40, 3, tint(theme, 0.5)),
+                         (74, -48, 3, theme)))
+    bx, by = cx-14, cy-4
+    d.ellipse(R(bx-50, by+46, bx+44, by+56), fill=tint(theme, 0.18))
+    # 外環
+    d.ellipse(R(bx-46, by-46, bx+46, by+46), fill=theme, outline=OUTLINE, width=ow)
+    d.ellipse(R(bx-35, by-35, bx+35, by+35), fill=tint(theme, 0.25), outline=OUTLINE, width=3*S)
+    # 滾珠（奇數 7 顆、白色）
+    for i in range(7):
+        a = math.radians(-90 + i*360/7)
+        px, py = bx + 28*math.cos(a), by + 28*math.sin(a)
+        d.ellipse(R(px-7, py-7, px+7, py+7), fill='white', outline=OUTLINE, width=3*S)
+    # 內環
+    d.ellipse(R(bx-19, by-19, bx+19, by+19), fill=tint(theme, 0.55), outline=OUTLINE, width=ow)
+    d.ellipse(R(bx-8, by-8, bx+8, by+8), fill='white', outline=OUTLINE, width=3*S)
+    # 焦點細節：金色下降箭頭
+    ax = cx+58
+    d.polygon(R(ax-7, cy-40, ax+7, cy-40, ax+7, cy+14, ax+16, cy+14, ax, cy+36,
+                ax-16, cy+14, ax-7, cy+14), fill=GOLD, outline=OUTLINE, width=4*S)
+
+def illu_steeringwheel(d, R, S, cx, cy, theme):
+    """方向盤＋金幣下降箭頭（駕照費用／駕訓改革）"""
+    ow = 5*S
+    _dots(d, R, cx, cy, ((-74, -44, 3, GOLD), (-72, 42, 3, tint(theme, 0.5)),
+                         (40, -54, 3, theme)))
+    wx, wy = cx-16, cy-4
+    d.ellipse(R(wx-50, wy+46, wx+44, wy+56), fill=tint(theme, 0.18))
+    # 方向盤外圈（主題色厚環）
+    d.ellipse(R(wx-46, wy-46, wx+46, wy+46), fill=theme, outline=OUTLINE, width=ow)
+    d.ellipse(R(wx-33, wy-33, wx+33, wy+33), fill='white', outline=OUTLINE, width=ow)
+    # 三支輻條
+    for (ex, ey) in ((-33, 6), (33, 6), (0, 33)):
+        d.line(R(wx, wy+4, wx+ex, wy+ey), fill=OUTLINE, width=11*S)
+        d.line(R(wx, wy+4, wx+ex, wy+ey), fill=tint(theme, 0.55), width=5*S)
+    d.ellipse(R(wx-13, wy-9, wx+13, wy+17), fill=shade(theme, 0.85), outline=OUTLINE, width=ow)
+    # 焦點細節：金幣＋向下小箭頭（費用下降）
+    gx, gy, r = cx+52, cy+24, 17
+    d.ellipse(R(gx-r, gy-r, gx+r, gy+r), fill=GOLD, outline=OUTLINE, width=ow)
+    d.arc(R(gx-8, gy-8, gx+8, gy+8), start=45, end=315, fill=OUTLINE, width=3*S)
+    d.line(R(gx-11, gy-2, gx+2, gy-2), fill=OUTLINE, width=2*S)
+    d.line(R(gx-11, gy+3, gx+2, gy+3), fill=OUTLINE, width=2*S)
+    d.polygon(R(gx-6, cy-46, gx+6, cy-46, gx+6, cy-24, gx+13, cy-24, gx, cy-11,
+                gx-13, cy-24, gx-6, cy-24), fill=tint(theme, 0.55), outline=OUTLINE, width=3*S)
+
 ILLUS = dict(podium=illu_podium, flags=illu_flags, coins=illu_coins,
              idcard=illu_idcard, camera=illu_camera, trophy=illu_trophy,
              bankcard=illu_bankcard, checklist=illu_checklist,
@@ -2287,7 +2358,9 @@ ILLUS = dict(podium=illu_podium, flags=illu_flags, coins=illu_coins,
              spinoff=illu_spinoff, clockback=illu_clockback,
              parcelfee=illu_parcelfee, flagsjapan=illu_flagsjapan,
              nuclearbarrel=illu_nuclearbarrel, barometer=illu_barometer,
-             airplane=illu_airplane, boardingpass=illu_boardingpass)
+             airplane=illu_airplane, boardingpass=illu_boardingpass,
+             onlineregister=illu_onlineregister, bearing=illu_bearing,
+             steeringwheel=illu_steeringwheel)
 
 # ── 版型 ────────────────────────────────────────────────────
 
@@ -2608,89 +2681,75 @@ def make_chart_card(spec, path, week_label='W?', date_label=''):
 # ════════════════════════════════════════════════════════════
 # 每週卡片內容（範本：W29）——之後每週改這一段即可
 # ════════════════════════════════════════════════════════════
-WEEK = 'W44'
-DATE_RANGE = '2026/10/26-11/01'
+WEEK = 'W45'
+DATE_RANGE = '2026/11/02-11/08'
 
 CARDS = [
  dict(
-  theme='#D4740E', badges=[('十一月新制', True), ('消費者', False)], illu='parcelfee',
-  title='十一月新制：境外包裹再加 2 € 處理費',
-  subtitle='11/1 起歐盟外小包裹加收處理費；11/20 起「先買後付」納入消費信貸法',
-  stats=[('2 €', '包裹內每種不同商品'),
-         ('11/30', '汽車保險年底換約的解約期限')],
+  theme='#0D9488', badges=[('數位行政', True), ('居住登記', False)], illu='onlineregister',
+  title='住址登記全面上網：12/1 起各地都要提供',
+  subtitle='內閣 11/4 通過行政命令，所有登記機關都須開放線上辦理遷入與遷居登記',
+  stats=[('12/1', '命令預計生效日'),
+         ('約 3,800 個', '已接入系統的登記機關')],
   bullets=[
-   ('包裹處理費', '7 月起已有每類商品 3 € 的定額關稅，11/1 再加收處理費；由平台與進口商繳納但可能轉嫁，從台灣網購直寄德國同樣適用。'),
-   ('先買後付', '11/20 起 Klarna、PayPal 等「稍後付款」與 200 € 以下小額貸款都要先審查信用，小額分期也可能被拒。'),
-   ('德鐵家庭票', '11/1 起改為常態方案：最多 5 人搭 IC／ICE 來回含座位預訂 99.99 €，單程 59.99 €。'),
+   ('怎麼辦', '透過 wohnsitzanmeldung.gov.de 申請，需 BundID 帳號與證件晶片的線上身分功能。'),
+   ('法律性質', '屬聯邦行政命令，不必經國會審議；系統由漢堡邦（Hamburg）開發後推廣全國。'),
+   ('涵蓋範圍', '官方稱已可服務約 7,420 萬人；各地進度不一，可先在入口網站查詢新地址。'),
   ],
-  takeaway=('因應建議', '汽車保險想在 1/1 換約，解約信須在 11/30 前「送達」保險公司（寄出日不算）；收到漲價通知另有特別終止權。'),
-  file='W44_圖卡1_十一月新制包裹處理費.png'),
+  takeaway=('因應建議', '剛入境、還沒拿到電子居留卡（eAT）的人多半仍須臨櫃；房東開的入住證明（Wohnungsgeberbestätigung）也不可少。'),
+  file='W45_圖卡1_住址登記全面上網.png'),
  dict(
-  theme='#C0392B', badges=[('勞資協商', True), ('汽車產業', False)], illu='protestsign',
-  title='金屬電機業 11/1 起可發動警告性罷工',
-  subtitle='資方 10/27 首度出價：2027 年一次性給付、2028 年 7 月才調薪 1.3%',
-  stats=[('約 370 萬人', '金屬電機業協約涵蓋員工'),
-         ('5% 對 1.3%', '工會訴求與資方出價')],
+  theme='#C0392B', badges=[('汽車產業', True), ('裁員', False)], illu='bearing',
+  title='Schaeffler 再裁 2,660 人、關四據點',
+  subtitle='11/3 公布新撙節方案：歐洲共減 3,460 個職位，2027–28 年執行',
+  stats=[('2,660 個', '德國境內淨減職位'),
+         ('3 億歐元', '2030 年起每年節省目標')],
   bullets=[
-   ('資方出價', 'Gesamtmetall 提議 2027 年 7 月發年薪 1% 一次性給付、2028 年 7 月起調薪 1.3%，協約到 2028 年底。'),
-   ('工會回應', 'IG Metall 要求 12 個月內加薪 5%，北萊茵-西發利亞邦（Nordrhein-Westfalen）區痛批是「負成長」。'),
-   ('罷工時程', '和平義務 10/31 午夜到期，IG Metall 宣布 11/1 凌晨起在全國各協約區陸續發動警告性罷工。'),
+   ('關閉據點', '多特蒙德約 430 人、Morbach 約 160 人（皆做燃油引擎零件）、柏林約 270 人；Schwalbach 則多數轉調法蘭克福。'),
+   ('團結捐', '董事會先自減 10% 薪資，限期減薪再擴及各層級；一次性成本約 4.8 億歐元。'),
+   ('勞方反應', 'IG Metall 與員工代表會批評裁員一輪接一輪，要求德國據點的未來方案。'),
   ],
-  takeaway=('觀察重點', '警告性罷工多為數小時的停工；福斯適用自家企業協約、不在這輪產業談判內，但凍薪爭議同樣在升溫。'),
-  file='W44_圖卡2_金屬業十一月起可罷工.png'),
+  takeaway=('產業全景', '聯邦統計局：2026 年中汽車業就業 69.15 萬人、年減 4.23 萬，為 2005 年有統計以來最低。'),
+  file='W45_圖卡2_Schaeffler再裁兩千六百人.png'),
  dict(
-  theme='#2563EB', badges=[('汽車產業', True), ('第三季財報', False)], illu='carplant',
-  title='賓士下修財測：中國銷量年減 31%',
-  subtitle='第三季淨利 15.2 億歐元靠去年低基期；轎車利潤率目標降到 2–3%',
-  stats=[('-31%', '第三季中國銷量年增率'),
-         ('2–3%', '轎車利潤率目標（原 3–5%）')],
+  theme='#D4740E', badges=[('油價', True), ('法案草案', False)], illu='fuelpump',
+  title='油價上限法草案：須連三週高於歐盟均價',
+  subtitle='經濟部《燃料最高價格法》草案進入部會協調，目標 2027 年上路',
+  stats=[('3 週', '油價須連續偏高才可啟動'),
+         ('3 個月', '上限每次最長實施期間')],
   bullets=[
-   ('財報重點', '第三季營收 307 億歐元、年減 4.5%；轎車銷量年減 8%，純電車成長 61%。'),
-   ('為何下修', '公司指中國市場競爭加劇、第四季原物料成本上升；全年集團營業利益從「顯著成長」改為與去年持平。'),
-   ('撙節加碼', '據《新蘇黎世報》（NZZ），12 月起以資遣方案再減數千個行政職位，每年省 10 億歐元人事成本。'),
+   ('啟動門檻', '汽油與柴油連續三週、每週都比其他歐盟國家平均高出 5 個百分點以上（依歐盟執委會數據），再由政府發布命令啟動。'),
+   ('制度設計', '參考盧森堡與比利時；各邦可訂不同上限、供應吃緊時可暫停，違規加油站最高罰 10 萬歐元。'),
+   ('各方批評', '獨立加油站協會（bft）稱是「官僚怪獸」；德國工會聯合會（DGB）認為門檻太高、幾乎不會生效。'),
   ],
-  takeaway=('數據解讀', '淨利年增近 28% 是因去年同期認列裁員費用；執行長稱匈牙利廠成本比德國低約七成。'),
-  file='W44_圖卡3_賓士下修財測.png'),
+  takeaway=('觀察重點', '眼前更有感的是燃油稅減免 12/31 到期，1 月起每公升稅額回升約 17 分（含加值稅）；草案內容仍可能修改。'),
+  file='W45_圖卡3_油價上限法草案.png'),
  dict(
-  theme='#0D9488', badges=[('外交', True), ('印太', False)], illu='flagsjapan',
-  title='德日聯合聲明：重申台海和平穩定',
-  subtitle='Merz 訪新加坡、日本、南韓；總統 Steinmeier 同週國事訪問中國',
-  stats=[('3 國', 'Merz 亞洲行出訪國家'),
-         ('近 8 年', '德國總統首度訪問中國')],
+  theme='#2E8B57', badges=[('交通', True), ('駕照', False)], illu='steeringwheel',
+  title='駕照改革表決：平均 3,400 € 要降價',
+  subtitle='交通委員會 11/4 通過、聯邦議院 11/5 表決，順利的話 2027 年初上路',
+  stats=[('約 3,400 €', '目前考駕照的平均花費'),
+         ('12 → 3 趟', '法定特殊路況駕駛課')],
   bullets=[
-   ('德日成果', '10/28 與日相高市早苗會談，簽署關鍵原物料意向書，分散汽車業的稀土來源。'),
-   ('台海表述', '聯合聲明強調台灣海峽和平穩定的重要性，並反對以武力或脅迫改變東海、南海現狀。'),
-   ('兩線並行', 'Steinmeier 10/30 會見習近平，敦促縮減中國對德的龐大貿易順差；雙方未達成具體協議。'),
+   ('理論數位化', '理論課不必再到駕訓班上，可改線上進行；路考時間也會縮短。'),
+   ('特殊駕駛', '現行 12 趟法定課程改為高速公路、郊區、夜間各一趟，且不可用模擬器代替；練車節數不再由法律規定。'),
+   ('親友陪練', '委員會修正：由各邦訂定條件，讓學員在嚴格規範下由父母等近親陪同上路練習（僅限小客車），並須評估成效。'),
   ],
-  takeaway=('觀察重點', '聲明未點名中國，但嚴重關切「任意的出口管制」；總理在東京、總統在北京，德國雙軌並行。'),
-  file='W44_圖卡4_德日聯合聲明提台海.png'),
+  takeaway=('各方觀點', 'ADAC 支持；駕訓教練協會質疑「便宜 1,000 €」的算法；AfD、綠黨（Grüne）、左翼黨（Die Linke）在委員會投反對票。'),
+  file='W45_圖卡4_駕照改革院會表決.png'),
  dict(
-  theme='#2E8B57', badges=[('經濟', True), ('物價與景氣', False)], illu='barometer',
-  title='景氣回溫：通膨降到 2.8%、ifo 六連升',
-  subtitle='第三季 GDP 季增 0.2% 優於預期；ifo 指數 90.2 點、2023 年春以來新高',
-  stats=[('2.8%', '10 月通膨初值（9 月 3.3%）'),
-         ('90.2 點', '10 月 ifo 企業景氣指數')],
+  theme='#7C3AED', badges=[('移民與就業', True), ('勞動市場', False)], illu='crane',
+  title='西巴爾幹工作名額減半至 2.5 萬',
+  subtitle='內閣 11/4 通過勞動部命令，2027 年 1 月起適用，仍待聯邦參議院同意',
+  stats=[('25,000 人', '2027 年起每年核准上限'),
+         ('約 9,000 人', '營建業估計將少掉的人力')],
   bullets=[
-   ('通膨回落', '能源年漲 12.2%（9 月 14.9%）仍是主要推手；核心通膨降到 2.1%，食品只漲 0.4%。'),
-   ('第三季 GDP', '季增 0.2%，市場原本預期停滯；消費小幅成長、投資下滑，出口明顯轉弱。'),
-   ('誰在拉抬', '製造業的現況與預期兩項分指標三年多來首度同時轉正；服務業反而跌入負值。'),
+   ('適用國家', '阿爾巴尼亞、波士尼亞與赫塞哥維納、科索沃、蒙特內哥羅、北馬其頓、塞爾維亞六國公民，不必有認可學歷即可來德工作。'),
+   ('政策依據', '聯盟黨與 SPD 的執政協議早已寫明減半；勞動部長 Schweitzer 提案，內閣不顧多方反對照案通過。'),
+   ('反對聲浪', '據內閣提案資料，主要經濟團體、聯邦勞動署與七個邦都反對；營建業公會要求撤回，零售業公會 HDE 主張乾脆取消名額。'),
   ],
-  takeaway=('數據解讀', '物價與景氣同步好轉，但能源仍比去年貴一成多；ifo 預測今年 GDP 成長 1.4%，略高於政府秋季預測的 1.3%。'),
-  file='W44_圖卡5_景氣回溫通膨回落.png'),
- dict(
-  theme='#7C3AED', badges=[('能源政策', True), ('核廢料', False)], illu='nuclearbarrel',
-  title='核廢料最終處置場：候選範圍縮到 5% 以下',
-  subtitle='聯邦最終處置公司（BGE）10/27 公布最新進度，已有 5 個邦完全出局',
-  stats=[('< 5%', '仍在評估的國土面積'),
-         ('2027 年底', '提出少數候選區域')],
-  bullets=[
-   ('範圍縮小', '2020 年初選有 90 個子區域、約 54% 國土；去年底仍約四分之一，如今只剩不到 5%。'),
-   ('剩下哪裡', '候選區集中在下薩克森邦（Niedersachsen）西部到薩克森-安哈特邦（Sachsen-Anhalt）一帶，其他邦另有零星區塊。'),
-   ('下一步', 'BGE 總裁 Graffunder 目標 2027 年底提出約 5 到 10 個候選區域，交聯邦議院決定後才會實地探勘。'),
-  ],
-  takeaway=('政策觀察', '法律原訂 2031 年選定場址早已不可能，總裁估最晚本世紀中；在那之前，高放射性廢料仍存放在各地的中期貯存場。'),
-  file='W44_圖卡6_核廢料處置場範圍縮小.png'),
-
+  takeaway=('數據解讀', '名額 2025 年就已用罄，12 月約 1.8 萬件申請被拒；今年 9 月約 54.6 萬名六國公民在德從事須繳社會保險的工作。'),
+  file='W45_圖卡5_西巴爾幹名額減半.png'),
 ]
 
 # ── 邦名德文全名檢查 ────────────────────────────────────────
