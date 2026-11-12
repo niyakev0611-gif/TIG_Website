@@ -16,7 +16,7 @@ import sys
 from make_weekly_cards import make_card, check_glyphs
 
 LABEL = '出入境'
-DATE_RANGE = '2026/10'  # footer 中段上限約 400px
+DATE_RANGE = '2026/11'  # footer 中段上限約 400px
 
 CARDS = [
  dict(
@@ -60,8 +60,8 @@ CARDS = [
   file='EES_圖卡3_自動通關.png'),
  dict(
   theme='#D4740E', badges=[('ETIAS', True), ('延期', False)], illu='webpermit',
-  title='ETIAS 延期，現在還不用申請',
-  subtitle='原訂 2026 年底上路，官方已撤下日期；外媒報導最快 2027 年',
+  title='歐盟旅行許可延期，現在還不用申請',
+  subtitle='ETIAS 原訂 2026 年底上路，官方已撤下日期；外媒報導最快 2027 年',
   stats=[('20 €', '規費（18–70 歲）'),
          ('3 年', '核准後的效期')],
   bullets=[

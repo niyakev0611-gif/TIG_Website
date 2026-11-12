@@ -5,233 +5,19 @@
   <link>https://taiwanese-in-germany.com/</link>
   <description>寫給台灣人的德國知識誌：德國時事解析、來德必辦、德文學習與生活旅行攻略。種下一顆知識的種子。</description>
   <language>zh-TW</language>
-  <lastBuildDate>Fri, 13 Nov 2026 00:00:00 GMT</lastBuildDate>
+  <lastBuildDate>Sun, 15 Nov 2026 00:00:00 GMT</lastBuildDate>
   <atom:link href="https://taiwanese-in-germany.com/feed.xml" rel="self" type="application/rss+xml" />
-  <item>
-    <title>入境歐洲新制一次看懂：EES 指紋登記、EasyPASS 自動通關、ETIAS 延期（在德台灣人版）</title>
-    <link>https://taiwanese-in-germany.com/posts/schengen-ees-etias-easypass.html</link>
-    <guid isPermaLink="true">https://taiwanese-in-germany.com/posts/schengen-ees-etias-easypass.html</guid>
-    <pubDate>Fri, 13 Nov 2026 00:00:00 GMT</pubDate>
-    <description>歐盟出入境系統 EES 從 2026 年 4 月 10 日起在所有申根邊境全面上路，護照不再蓋章，改成登記指紋與臉部影像；原訂 2026 年底上路的旅行許可 ETIAS 則又延期，官方已撤下日期。這三個新名詞對在德台灣人來說，規定依身分完全不同：持德國居留卡的人 EES 不用登記、ETIAS 不用申請，而且 12 歲以上可以直接走 EasyPASS 自動通關；來德國探親的台灣家人朋友，第一次入境要按指紋、拍臉，想用自動通關要先登記 EasyPASS-RTP。這篇整理三種身分的對照表、EES 的實際流程與排隊狀況、德國 8 座機場的 EasyPASS 登記處，以及 ETIAS 目前的進度與假網站陷阱。</description>
-    <category>德國生活</category><category>旅行</category>
-    <content:encoded><![CDATA[<p class="post-meta-line"><em>德國知識小種子｜2026.11.13 發表 · 旅行與居留</em></p>
-
-<p>從 2026 年 4 月 10 日起，進出申根區的<strong>第三國短期旅客，護照不再蓋入出境章</strong>，改由歐盟的<strong>出入境系統 EES</strong>（Entry/Exit System，德文 Einreise-/Ausreisesystem）用電子方式記錄，第一次入境要按指紋、拍臉部影像。再加上已經喊了好幾年、卻一延再延的<strong>旅行許可 ETIAS</strong>，以及德國機場的<strong>自動通關閘門 EasyPASS</strong>，三個名字常被混在一起講。</p>
-
-<p>對在德台灣人來說，這三件事<strong>要不要做，幾乎完全看你的身分</strong>：自己持德國居留卡，和來探親的爸媽、來玩的朋友，規定完全不同。這篇把三種身分分開整理，讓你出門前、親友來訪前都知道要準備什麼。</p>
-
-<p class="post-callout"><strong>📌 先講結論：</strong>持<strong>德國居留卡</strong>的人，EES 不用登記、ETIAS 不用申請，12 歲以上還可以直接走 <strong>EasyPASS 自動通關</strong>，不必事先登記。用<strong>台灣護照短期來訪</strong>的家人朋友，第一次入境要按指紋、拍臉；ETIAS <strong>目前還不受理申請</strong>，現在任何要你付錢「申請 ETIAS」的網站都不是官方網站。本文資料截至 2026 年 11 月中，規定以聯邦警察（Bundespolizei）與歐盟官方公告為準。</p>
-
-<nav class="post-toc" aria-label="本篇目錄">
-  <p class="post-toc__title">快速跳轉</p>
-  <ul>
-    <li><a href="#identitaet">你是哪一種？三種身分對照表</a></li>
-    <li><a href="#ees">EES：第一次入境要按指紋、拍臉</a></li>
-    <li><a href="#easypass">EasyPASS：德國機場的自動通關</a></li>
-    <li><a href="#etias">ETIAS：延期，現在還不用申請</a></li>
-    <li><a href="#checkliste">出門前的檢查清單</a></li>
-    <li><a href="#sources">資料來源</a></li>
-  </ul>
-</nav>
-
-<img src="assets/images/2026/ees/EES_圖卡1_三種身分.png" alt="入境歐洲新制三種身分對照：持德國居留卡的人 EES 不用登記、ETIAS 不用申請、12 歲以上可直接走 EasyPASS；台灣親友短期來訪第一次入境要按指紋拍臉；有德國籍者用德國護照或身分證，EES 與 ETIAS 都不適用">
-<h2 id="identitaet">你是哪一種？三種身分對照表</h2>
-
-<table>
-  <thead>
-    <tr><th>身分</th><th>EES 登記</th><th>ETIAS（上路後）</th><th>EasyPASS 自動通關</th></tr>
-  </thead>
-  <tbody>
-    <tr><td><strong>持德國居留卡</strong>（Aufenthaltstitel）的台灣人</td><td><strong>不用</strong>，入出境出示居留卡</td><td><strong>不用</strong></td><td>12 歲以上<strong>直接使用</strong>，不必事先登記</td></tr>
-    <tr><td>持德國<strong>長期簽證</strong>（D 簽）、還沒拿到居留卡</td><td><strong>不用</strong></td><td><strong>不用</strong></td><td>只能在<strong>出境</strong>時使用</td></tr>
-    <tr><td>用<strong>台灣護照短期來訪</strong>（觀光、探親、出差，90 天以內）</td><td>第一次入境<strong>要登記</strong>指紋與臉部影像</td><td><strong>要申請</strong></td><td>先到聯邦警察服務處登記 <strong>EasyPASS-RTP</strong>（免費）</td></tr>
-    <tr><td>有<strong>德國籍或其他歐盟國籍</strong>（含雙重國籍）</td><td>不適用</td><td>不用</td><td>直接使用</td></tr>
-  </tbody>
-</table>
-
-<p>幾個要注意的地方：</p>
-<ul>
-  <li><strong>居留卡一定要隨身帶。</strong>EES 免登記的前提是你能證明自己不是短期旅客；邊境人員要看到居留卡，才知道不用替你建 EES 紀錄。只帶護照出門，就可能被當成短期旅客處理。</li>
-  <li><strong>持居留卡的人不用在 EES 自助機登記</strong>，直接走 EasyPASS 或人工櫃台即可。</li>
-  <li><strong>雙重國籍的人，入出境申根區請出示德國（或其他歐盟國家）的護照或身分證。</strong>拿台灣護照走，會被當成第三國旅客。</li>
-  <li><strong>居留卡正在換發</strong>、手上只有臨時證明（Fiktionsbescheinigung）的人，出國前最好先向外事局（Ausländerbehörde）確認能不能順利入出境。</li>
-</ul>
-
-<p class="post-sources">📚 來源：<a href="https://ber.berlin-airport.de/en/flying/controls/id-and-passport-control/ees.html" target="_blank" rel="noopener noreferrer">柏林布蘭登堡機場：Entry/Exit System (EES)</a> · <a href="https://bundespolizei.de/grenzkontrolle/easypass/faq-easypass" target="_blank" rel="noopener noreferrer">Bundespolizei：FAQ zu EasyPASS</a> · <a href="https://www.bmi.gv.at/202/Fremdenpolizei_und_Grenzkontrolle/Entry_Exit_System/faq_en.aspx" target="_blank" rel="noopener noreferrer">奧地利內政部：EES FAQ</a></p>
-
-<hr>
-
-<img src="assets/images/2026/ees/EES_圖卡2_指紋登記.png" alt="EES 歐盟出入境系統：第三國短期旅客第一次入境要登記護照資料、臉部影像與指紋，12 歲以上才按指紋，資料保存 3 年；轉機在第一個申根國登記；2026 年 7 月法蘭克福機場平均等候 120 分鐘">
-<h2 id="ees">EES：第一次入境要按指紋、拍臉</h2>
-
-<p>EES 是歐盟記錄第三國短期旅客入出境的電子系統，2025 年 10 月 12 日開始分階段啟用（德國第一站是杜塞道夫機場），<strong>2026 年 4 月 10 日起在所有申根邊境全面上路</strong>。它取代護照蓋章，同時自動計算「<strong>任何 180 天內最多停留 90 天</strong>」的免簽期限——以前邊境人員要翻護照數章，現在系統直接算給你看。</p>
-
-<table>
-  <thead>
-    <tr><th>項目</th><th>內容</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>誰要登記</td><td>不需簽證或持短期簽證、在申根區停留 <strong>90 天以內</strong>的第三國旅客（台灣護照短期入境就是這一類）</td></tr>
-    <tr><td>登記什麼</td><td>護照資料、<strong>臉部影像</strong>、<strong>指紋</strong>；<strong>12 歲以下兒童只拍臉部影像</strong>，不按指紋</td></tr>
-    <tr><td>在哪裡登記</td><td><strong>第一個入境的申根國家</strong>；經其他申根國轉機，就在轉機那一國登記</td></tr>
-    <tr><td>怎麼登記</td><td>部分機場的入境區有<strong>自助機</strong>，先自己掃護照、拍照、按指紋，再到櫃台由邊境人員確認；12 歲以下兒童、沒有晶片護照的人走人工櫃台。<strong>出境沒有自助機</strong></td></tr>
-    <tr><td>保存多久</td><td>最後一次入出境後保存 <strong>3 年</strong>；逾期停留最多保存 5 年。3 年內再來，只要比對、不必重新登記</td></tr>
-    <tr><td>費用</td><td><strong>免費</strong></td></tr>
-    <tr><td>拒絕會怎樣</td><td>拒絕提供指紋或臉部影像，<strong>會被拒絕入境</strong></td></tr>
-  </tbody>
-</table>
-
-<h3>排隊排多久？</h3>
-<p>EES 上路後最大的問題是排隊。依《金融時報》與分析公司 Qsensor 的統計，<strong>2026 年 7 月法蘭克福機場的平均等候時間是 120 分鐘</strong>，去年同期是 60 分鐘；慕尼黑機場最長等到 60 分鐘，去年同期 31 分鐘。歐盟執委會則表示，單一旅客的登記平均約 70 秒，並不是每個地方都塞。</p>
-<p>夏季尖峰時，邊境機關可以在嚴重壅塞時暫停部分生物辨識登記，但這項彈性措施已在 <strong>2026 年 9 月 6 日到期</strong>。包括<strong>德國</strong>在內的 8 個成員國與瑞士，7 月就寫信要求延長，航空業者也希望延到冬季甚至 2027 年，但歐盟 9 月時沒有延長。10 月 15 日，歐盟執委會交通總署副署長 Maja Bakran Marcich 公開表示「還會有進一步的彈性」，具體措施至今還沒公布。換句話說，<strong>聖誕節與農曆年的探親潮，最好預設要排隊</strong>。</p>
-
-<p class="post-callout"><strong>💡 給來訪親友的提醒：</strong>第一次入境預留比以前更多的時間，轉機時間別訂太短；長輩如果對自助機不熟，可以直接到人工櫃台。入境後 EES 會記錄出境時間，<strong>不要逾期停留</strong>——系統會自動算出來，紀錄也會保存得更久。</p>
-
-<p class="post-sources">📚 來源：<a href="https://home-affairs.ec.europa.eu/news/entryexit-system-will-become-fully-operational-10-april-2026-2026-03-30_en" target="_blank" rel="noopener noreferrer">European Commission：The Entry/Exit System will become fully operational on 10 April 2026</a> · <a href="https://ber.berlin-airport.de/en/flying/controls/id-and-passport-control/ees.html" target="_blank" rel="noopener noreferrer">柏林布蘭登堡機場：EES</a> · <a href="https://www.lba.de/SharedDocs/Startseite_Nachrichten/EN/Aktuell/Grenzkontrollen.html" target="_blank" rel="noopener noreferrer">聯邦航空局 LBA：Waiting times at German airports are possible</a> · <a href="https://de.euronews.com/2026/08/12/neues-grenzsystem-ees-verdoppelt-warteschlangen-an-flughafen" target="_blank" rel="noopener noreferrer">Euronews：Neues Grenzsystem EES verdoppelt Warteschlangen（2026/08/12）</a> · <a href="https://newlandchase.com/schengen-ees-flexibility-lapses-as-etias-launch-appears-likely-to-move-to-2027/" target="_blank" rel="noopener noreferrer">Newland Chase：EES Flexibility Lapses（2026/09/09）</a> · <a href="https://traveltomorrow.com/eu-could-extend-flexibility-on-ees-border-checks-amid-fears-of-further-travel-disruption/" target="_blank" rel="noopener noreferrer">Travel Tomorrow：EU could extend flexibility on EES border checks（2026/08/10）</a> · <a href="https://skift.com/2026/10/15/easing-eu-border-friction-there-will-be-flexibility-official-says/" target="_blank" rel="noopener noreferrer">Skift：Easing EU Border Friction（2026/10/15）</a></p>
-
-<hr>
-
-<img src="assets/images/2026/ees/EES_圖卡3_自動通關.png" alt="EasyPASS 自動通關：持德國居留卡 12 歲以上可直接使用不必登記，只持 D 簽者限出境；台灣護照短期停留要先到聯邦警察服務處登記 EasyPASS-RTP，免費；德國 8 座機場設有閘門">
-<h2 id="easypass">EasyPASS：德國機場的自動通關</h2>
-
-<p>EasyPASS 是聯邦警察設在德國機場的<strong>自動通關閘門</strong>：把電子護照的照片頁放上讀取器，看著鏡頭讓系統比對臉部，就能通關，不必排人工櫃台。很多在德台灣人不知道，<strong>持德國居留卡就能直接使用</strong>。</p>
-
-<h3>誰可以用？</h3>
-<table>
-  <thead>
-    <tr><th>身分</th><th>怎麼用</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>歐盟、歐洲經濟區（冰島、列支敦斯登、挪威）與瑞士國民</td><td>直接使用</td></tr>
-    <tr><td>持<strong>德國居留卡</strong>的第三國國民（含台灣人）</td><td><strong>直接使用，不必事先登記</strong></td></tr>
-    <tr><td>持德國<strong>長期簽證（D 簽）</strong>的第三國國民</td><td>只能在<strong>出境</strong>時使用</td></tr>
-    <tr><td>美國、香港、韓國、<strong>台灣</strong>、英國的國民（短期停留）</td><td>先登記 <strong>EasyPASS-RTP</strong> 才能使用</td></tr>
-  </tbody>
-</table>
-<p>共同條件：<strong>12 歲以上</strong>、持有效的<strong>電子護照</strong>（台灣護照現在都是晶片護照）。過閘門前要先取下帽子和太陽眼鏡。</p>
-
-<h3>台灣護照短期停留：怎麼登記 EasyPASS-RTP</h3>
-<ul>
-  <li><strong>地點</strong>：設有 EasyPASS 的機場裡的聯邦警察服務處（Servicebüro／Servicepoint），<strong>只能現場辦理</strong>，不能線上申請。入境查驗完成後再去即可。</li>
-  <li><strong>預約</strong>：開放時間內多半<strong>不用預約</strong>。申請表可以先從聯邦警察網站下載填好，現場比較快。</li>
-  <li><strong>流程</strong>：填問卷、簽同意書，聯邦警察查核護照真偽並比對資料庫，沒有問題就完成登記。</li>
-  <li><strong>費用與效期</strong>：<strong>免費</strong>；效期跟著護照，<strong>換新護照就要重新登記</strong>。</li>
-</ul>
-<p>註：駐德國台北代表處 2022 年的說明寫的是「18 歲以上」，聯邦警察現行網頁已改為 <strong>12 歲以上</strong>，以聯邦警察公告為準。</p>
-
-<h3>8 座機場的登記處</h3>
-<table>
-  <thead>
-    <tr><th>機場</th><th>聯邦警察服務處位置</th><th>開放時間</th></tr>
-  </thead>
-  <tbody>
-    <tr><td><a href="https://www.google.com/maps/search/?api=1&amp;query=Flughafen+Berlin+Brandenburg+Terminal+1" target="_blank" rel="noopener noreferrer">柏林布蘭登堡（BER）</a></td><td>第 1 航廈（主航廈）Ebene 2 的 Servicepoint</td><td>24 小時</td></tr>
-    <tr><td><a href="https://www.google.com/maps/search/?api=1&amp;query=Flughafen+D%C3%BCsseldorf" target="_blank" rel="noopener noreferrer">杜塞道夫</a></td><td>中央大樓出境層</td><td>週一至週四 8:00–15:00、週五 8:00–14:00</td></tr>
-    <tr><td><a href="https://www.google.com/maps/search/?api=1&amp;query=Frankfurt+Airport+Terminal+1" target="_blank" rel="noopener noreferrer">法蘭克福</a></td><td>第 1 航廈 B 廳 Ebene 3（往 Skyline 的樓梯旁）；第 3 航廈出境層報到大廳左側（2026/4/23 新設）</td><td>每天 6:30–21:30</td></tr>
-    <tr><td><a href="https://www.google.com/maps/search/?api=1&amp;query=Hamburg+Airport+Terminal+2" target="_blank" rel="noopener noreferrer">漢堡</a></td><td>第 2 航廈 Ebene 1</td><td>4:30–24:00</td></tr>
-    <tr><td><a href="https://www.google.com/maps/search/?api=1&amp;query=Flughafen+Hannover+Terminal+B" target="_blank" rel="noopener noreferrer">漢諾威</a></td><td>B 航廈出境層的聯邦警察站</td><td>24 小時（可能要等候）</td></tr>
-    <tr><td><a href="https://www.google.com/maps/search/?api=1&amp;query=Flughafen+K%C3%B6ln%2FBonn+Terminal+1" target="_blank" rel="noopener noreferrer">科隆／波昂</a></td><td>第 1 航廈 Aufgang 5、Ebene 0（聯邦與邦警察共用的警察站）</td><td>24 小時</td></tr>
-    <tr><td><a href="https://www.google.com/maps/search/?api=1&amp;query=Munich+Airport+Center+MAC" target="_blank" rel="noopener noreferrer">慕尼黑</a></td><td>慕尼黑機場中心（MAC）Ebene 04</td><td>6:30–21:00</td></tr>
-    <tr><td><a href="https://www.google.com/maps/search/?api=1&amp;query=Flughafen+Stuttgart+Terminal+1" target="_blank" rel="noopener noreferrer">斯圖加特</a></td><td>第 1 航廈 Ebene 3 的 Servicepoint</td><td>可電話或電子郵件預約；不預約可能要等 30 分鐘以上</td></tr>
-  </tbody>
-</table>
-<p>開放時間偶有調整，出發前請以聯邦警察網站公告為準。</p>
-
-<p class="post-sources">📚 來源：<a href="https://bundespolizei.de/grenzkontrolle/easypass/faq-easypass" target="_blank" rel="noopener noreferrer">Bundespolizei：FAQ zu EasyPASS</a> · <a href="https://bundespolizei.de/grenzkontrolle/easypass/easypass-rtp" target="_blank" rel="noopener noreferrer">Bundespolizei：EasyPASS-RTP</a> · <a href="https://bundespolizei.de/grenzkontrolle/easypass/wo-gibt-es-easypass" target="_blank" rel="noopener noreferrer">Bundespolizei：Wo gibt es EasyPASS?</a> · <a href="https://www.munich-airport.de/automated-passport-control-1028169" target="_blank" rel="noopener noreferrer">慕尼黑機場：Automated passport control</a> · <a href="https://www.frankfurt-airport.com/zh/flights/transferring-at-fra/passport-and-id-checks.html" target="_blank" rel="noopener noreferrer">法蘭克福機場：護照與身分查驗</a></p>
-
-<hr>
-
-<img src="assets/images/2026/ees/EES_圖卡4_ETIAS延期.png" alt="ETIAS 歐盟旅行許可延期：原訂 2026 年底上路，官方已撤下日期，外媒報導最快 2027 年；規費 20 歐元、效期 3 年；持居留卡者不用申請；Frontex 發現上百個非官方網站，官方入口只在 europa.eu 網域">
-<h2 id="etias">ETIAS：延期，現在還不用申請</h2>
-
-<p><strong>ETIAS</strong>（European Travel Information and Authorisation System，歐洲旅行資訊及授權系統）是給<strong>免簽國家旅客</strong>的線上旅行許可，概念類似美國的 ESTA。它<strong>不是簽證</strong>，台灣護照的免簽待遇不變，只是上路後，短期入境申根區前要先上網填寫、取得許可。</p>
-
-<h3>目前進度：2026 年不會上路</h3>
-<ul>
-  <li>歐盟原本預定 ETIAS 在 <strong>2026 年第四季</strong>上路。</li>
-  <li>2026 年 7 月，《金融時報》報導負責建置系統的歐盟機構 <strong>eu-LISA</strong> 已承認年底前上路「不再可行」，主因是 EES 上路後的排隊問題，歐盟想先讓 EES 穩定下來。</li>
-  <li>歐盟官方 ETIAS 網站隨後<strong>撤下「2026 年第四季」的時程</strong>，只寫系統尚未運作、不受理申請。</li>
-  <li>截至 2026 年 11 月中，<strong>官方沒有公布新的上路日期</strong>；外媒普遍預估最快 2027 年。歐盟先前承諾，確定日期會提前數個月公告。</li>
-</ul>
-
-<h3>上路後的規則（依目前公布的內容）</h3>
-<table>
-  <thead>
-    <tr><th>項目</th><th>內容</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>誰要申請</td><td>台灣等免簽國家的旅客，短期入境申根區前</td></tr>
-    <tr><td>誰不用</td><td>持<strong>德國或其他申根國居留卡</strong>、長期簽證的人；有歐盟國籍的人</td></tr>
-    <tr><td>規費</td><td><strong>20 €</strong>（2025 年從原定 7 € 調高）；<strong>未滿 18 歲與 70 歲以上免費</strong></td></tr>
-    <tr><td>效期</td><td><strong>3 年</strong>，或到護照到期為止（以先到者為準），期間可多次入境</td></tr>
-    <tr><td>審核</td><td>多數申請幾分鐘內核准，少數要人工審查；申請時要填第一個入境的申根國家</td></tr>
-    <tr><td>過渡期</td><td>依先前規劃，上路後會先有一段過渡期與寬限期，不會立刻因沒申請而無法登機</td></tr>
-  </tbody>
-</table>
-
-<h3>最要小心的：假網站</h3>
-<p>ETIAS 還沒上路，網路上卻早就有大量「代辦」網站。歐盟邊境管理局 <strong>Frontex</strong> 已發現<strong>上百個非官方 ETIAS 網站</strong>，有的宣稱已經可以申請、收取高額費用，還可能盜用個人資料。</p>
-<p class="post-callout"><strong>⚠️ 判斷原則：</strong>ETIAS <strong>目前不受理任何申請</strong>，現在要你填資料、付錢的網站都不是官方網站。正式上路後，官方入口只會在 <strong>europa.eu</strong> 網域底下（歐盟旅遊資訊網 travel-europe.europa.eu）。家裡長輩要來德國前，最好先提醒一聲。</p>
-
-<p class="post-sources">📚 來源：<a href="https://www.afar.com/magazine/europe-delays-etias-travel-authorization-until-2027" target="_blank" rel="noopener noreferrer">AFAR：Europe Delays ETIAS Travel Authorization Until 2027（2026/07/13）</a> · <a href="https://www.berliner-zeitung.de/article/nach-ees-warteschlangen-eu-verschiebt-etias-start-auf-2027-10173095" target="_blank" rel="noopener noreferrer">Berliner Zeitung：Nach EES-Warteschlangen: EU verschiebt ETIAS-Start auf 2027（2026/07/07）</a> · <a href="https://news.tourismus.com/etias-verschoben-eu-streicht-starttermin-2026-290820261/" target="_blank" rel="noopener noreferrer">tourismus.com：ETIAS verschoben: Kein Start 2026（2026/08/29）</a> · <a href="https://www.frontex.europa.eu/media-centre/news/news-release/beware-of-risks-posed-by-unofficial-etias-websites-eNZniu" target="_blank" rel="noopener noreferrer">Frontex：Beware of risks posed by unofficial ETIAS websites</a> · <a href="https://www.thelocal.de/20250718/etias-fee-for-european-travel-authorisation-set-to-increase-to-e20" target="_blank" rel="noopener noreferrer">The Local：ETIAS fee set to increase to €20</a></p>
-
-<hr>
-
-<h2 id="checkliste">出門前的檢查清單</h2>
-
-<h3>自己持德國居留卡</h3>
-<ul>
-  <li>護照＋<strong>居留卡</strong>一起帶，兩者都要在效期內。</li>
-  <li>回德國時可以直接走 <strong>EasyPASS</strong>（12 歲以上），不用在 EES 自助機登記。</li>
-  <li>居留卡換發中、只有臨時證明的人，出國前先跟外事局確認。</li>
-</ul>
-
-<h3>台灣家人朋友要來德國</h3>
-<ul>
-  <li>護照效期充足（建議至少 6 個月），回程機票、住宿資料備好。</li>
-  <li>第一次入境要按指紋、拍臉，<strong>多留通關時間</strong>，轉機別訂太緊。</li>
-  <li>ETIAS <strong>現在不用申請</strong>，也不要在任何網站付費「預先申請」。</li>
-  <li>常來德國的人，可以在機場登記 <strong>EasyPASS-RTP</strong>，之後入出境比較快。</li>
-  <li>停留不要超過「180 天內 90 天」，EES 會自動計算。</li>
-</ul>
-
-<p class="post-callout"><strong>📖 延伸閱讀：</strong>到了機場遇上班機延誤或取消，可以看〈<a href="/posts/eu261-flight-compensation.html">班機延誤、取消能拿多少？EU261 歐盟航空乘客權利完整攻略</a>〉。</p>
-
-<hr>
-
-<h2 id="sources">資料來源</h2>
-<ul>
-  <li><a href="https://home-affairs.ec.europa.eu/news/entryexit-system-will-become-fully-operational-10-april-2026-2026-03-30_en" target="_blank" rel="noopener noreferrer">European Commission（2026/03/30）：The Entry/Exit System will become fully operational on 10 April 2026</a></li>
-  <li><a href="https://ber.berlin-airport.de/en/flying/controls/id-and-passport-control/ees.html" target="_blank" rel="noopener noreferrer">Flughafen Berlin Brandenburg：Entry/Exit System (EES)</a></li>
-  <li><a href="https://www.bmi.gv.at/202/Fremdenpolizei_und_Grenzkontrolle/Entry_Exit_System/faq_en.aspx" target="_blank" rel="noopener noreferrer">Bundesministerium für Inneres（奧地利）：Entry/Exit System FAQ</a></li>
-  <li><a href="https://www.lba.de/SharedDocs/Startseite_Nachrichten/EN/Aktuell/Grenzkontrollen.html" target="_blank" rel="noopener noreferrer">Luftfahrt-Bundesamt（2026/04/01）：New Entry-Exit-System (EES): Waiting times at German airports are possible</a></li>
-  <li><a href="https://de.euronews.com/2026/08/12/neues-grenzsystem-ees-verdoppelt-warteschlangen-an-flughafen" target="_blank" rel="noopener noreferrer">Euronews（2026/08/12）：Neues Grenzsystem EES verdoppelt Warteschlangen an Flughafen</a></li>
-  <li><a href="https://newlandchase.com/schengen-ees-flexibility-lapses-as-etias-launch-appears-likely-to-move-to-2027/" target="_blank" rel="noopener noreferrer">Newland Chase（2026/09/09）：Schengen: EES Flexibility Lapses as ETIAS Launch Appears Likely to Move to 2027</a></li>
-  <li><a href="https://traveltomorrow.com/eu-could-extend-flexibility-on-ees-border-checks-amid-fears-of-further-travel-disruption/" target="_blank" rel="noopener noreferrer">Travel Tomorrow（2026/08/10）：EU could extend flexibility on EES border checks amid fears of further travel disruption</a></li>
-  <li><a href="https://skift.com/2026/10/15/easing-eu-border-friction-there-will-be-flexibility-official-says/" target="_blank" rel="noopener noreferrer">Skift（2026/10/15）：Easing EU Border Friction: There Will Be 'Flexibility,' Official Says</a></li>
-  <li><a href="https://bundespolizei.de/grenzkontrolle/easypass/faq-easypass" target="_blank" rel="noopener noreferrer">Bundespolizei：FAQ zu EasyPASS</a></li>
-  <li><a href="https://bundespolizei.de/grenzkontrolle/easypass/easypass-rtp" target="_blank" rel="noopener noreferrer">Bundespolizei：EasyPASS-RTP</a></li>
-  <li><a href="https://bundespolizei.de/grenzkontrolle/easypass/wo-gibt-es-easypass" target="_blank" rel="noopener noreferrer">Bundespolizei：Wo gibt es EasyPASS?</a></li>
-  <li><a href="https://www.munich-airport.de/automated-passport-control-1028169" target="_blank" rel="noopener noreferrer">Flughafen München：Automated passport control</a></li>
-  <li><a href="https://www.roc-taiwan.org/uploads/sites/138/2022/12/國人使用德國自動查驗通關系統說明1.pdf" target="_blank" rel="noopener noreferrer">駐德國台北代表處（2022）：國人使用德國自動查驗通關系統說明</a></li>
-  <li><a href="https://www.afar.com/magazine/europe-delays-etias-travel-authorization-until-2027" target="_blank" rel="noopener noreferrer">AFAR（2026/07/13）：Europe Delays ETIAS Travel Authorization Until 2027</a></li>
-  <li><a href="https://www.berliner-zeitung.de/article/nach-ees-warteschlangen-eu-verschiebt-etias-start-auf-2027-10173095" target="_blank" rel="noopener noreferrer">Berliner Zeitung（2026/07/07）：Nach EES-Warteschlangen: EU verschiebt ETIAS-Start auf 2027</a></li>
-  <li><a href="https://news.tourismus.com/etias-verschoben-eu-streicht-starttermin-2026-290820261/" target="_blank" rel="noopener noreferrer">tourismus.com（2026/08/29）：ETIAS verschoben: Kein Start 2026</a></li>
-  <li><a href="https://www.frontex.europa.eu/media-centre/news/news-release/beware-of-risks-posed-by-unofficial-etias-websites-eNZniu" target="_blank" rel="noopener noreferrer">Frontex：Beware of risks posed by unofficial ETIAS websites</a></li>
-  <li><a href="https://www.thelocal.de/20250718/etias-fee-for-european-travel-authorisation-set-to-increase-to-e20" target="_blank" rel="noopener noreferrer">The Local（2025/07/18）：ETIAS fee for European travel authorisation set to increase to €20</a></li>
-  <li><a href="https://pinmap.co/europe-etias-ees/" target="_blank" rel="noopener noreferrer">打卡世界（2026/07）：ETIAS 是什麼？台灣 2026 入境 ETIAS、EES 新制攻略</a></li>
-</ul>]]></content:encoded>
-  </item>
   <item>
     <title>德國知識小種子週報精選</title>
     <link>https://taiwanese-in-germany.com/posts/weekly-digest.html</link>
     <guid isPermaLink="true">https://taiwanese-in-germany.com/posts/weekly-digest.html</guid>
-    <pubDate>Sun, 08 Nov 2026 00:00:00 GMT</pubDate>
-    <description>先看日常：內閣 11 月 4 日通過行政命令，預計 12 月 1 日起全國所有登記機關都須透過 wohnsitzanmeldung.gov.de 提供線上住址登記（Anmeldung），已接入約 3,800 個機關、可服務約 7,420 萬人，持電子居留卡（eAT）者可用線上身分功能辦理；聯邦議院 11 月 5 日通過駕照改革，目標壓低平均約 3,400 € 的考照費，理論課可線上、特殊路況課不再規定 12 趟、親友可在嚴格條件下陪練，主要新規 2027 年 7 月 1 日生效。汽車業方面，供應商 Schaeffler 11 月 3 日宣布在德國再減 2,660 個職位、關閉多特蒙德、Morbach、柏林與 Schwalbach 四處據點，汽車業就業已降到 2005 年以來最低。經濟部《燃料最高價格法》草案須油價連三週高於其他歐盟國家平均 5 個百分點以上才啟動，DGB 與加油站業者都批評；燃油稅減免則在 12 月 31 日到期。內閣另不顧經濟界、聯邦勞動署與七個邦反對，把西巴爾幹工作名額從每年 5 萬砍到 2.5 萬。</description>
+    <pubDate>Sun, 15 Nov 2026 00:00:00 GMT</pubDate>
+    <description>先看退休與荷包：聯邦政府的經濟顧問機構「經濟專家委員會」11 月 11 日發表年度報告，把 2026 年經濟成長預測從 0.5% 上修到 1.3%，卻同時建議取消「63 歲退休」、撤回母親年金擴大，警告支出成長快於收入；內閣同日通過國家天然氣戰略儲備草案，目標 24 TWh，2027 年 10 月起向瓦斯用戶加收附加費，一般家庭每年估多付約 4–7 €。汽車業多線告急：賓士（Mercedes-Benz）11 月 12 日宣布凍結所有在德新投資、不排除關閉兩座廠，福斯（Volkswagen）喊停 Wolfsburg 總廠「Gamechanger」大型壓鑄計畫、2030 年前累計減少的職位已逾 47,000 個，Audi 重談未來協議、BMW 二度下修財測；金屬業工會 IG Metall 總部 11 月 12 日決議發動 24 小時警告罷工，2018 年以來首次。最後，國防部公布暗數研究：72% 女性軍人曾遭言語性騷擾，實際案件為通報數的 3 到 6 倍。</description>
     <category>德國時事</category>
     <content:encoded><![CDATA[<nav class="post-toc" aria-label="本篇目錄">
   <p class="post-toc__title">快速跳轉</p>
   <ul>
+    <li><a href="#nov9-15">11月9日–15日：政府經濟顧問建議取消「63 歲退休」（經濟專家委員會年度報告，同時把 2026 年成長預測從 0.5% 上修至 1.3%、2027 年 1.0%，並建議撤回母親年金擴大）、瓦斯費 2027 年 10 月起多收儲備附加費（國家天然氣戰略儲備過內閣、目標 24 TWh，一般家庭每年估多付約 4–7 €）、車廠同步縮手（賓士凍結在德投資並不排除關閉兩座廠、福斯喊停 Gamechanger 且累計減少職位逾 47,000 個、Audi 啟動壞天氣條款重談、BMW 二度下修財測）、IG Metall 決議發動 24 小時警告罷工（總部 11/12 全票通過、2018 年以來首次）、國防軍暗數研究（72% 女性軍人曾遭言語性騷擾、34 項行動計畫）</a></li>
     <li><a href="#nov2-8">11月2日–8日：住址登記全面上網（內閣 11/4 通過行政命令、預計 12/1 生效，所有登記機關須開放線上遷入與遷居登記，已接入約 3,800 個機關、需 BundID 與線上身分功能）、Schaeffler 再減 2,660 個職位並關閉德國四處據點（歐洲共減 3,460 個職位、原則上不做經營性解僱、2030 年起每年省 3 億歐元、董事會自減 10% 薪資，汽車業就業 69.15 萬人創 2005 年來新低）、油價上限法草案（須連三週高於其他歐盟國家平均 5 個百分點以上才啟動、每次最長 3 個月，bft 與 DGB 都批評；燃油稅減免 12/31 到期）、駕照改革通過（平均約 3,400 €，理論課可線上、特殊路況課不再規定 12 趟、親友可陪練，主要新規 2027/7/1 生效）、西巴爾幹工作名額減半（每年 5 萬降到 2.5 萬、2027 年起適用，營建業估少約 9,000 人）</a></li>
     <li><a href="#oct26-nov1">10月26日–11月1日：十一月新制（11/1 起歐盟外小包裹在 3 € 定額關稅之外每種商品再加收 2 € 處理費、11/20 起「先買後付」與 200 € 以下小額貸款須審查信用、德鐵家庭票常態化最多 5 人 IC／ICE 來回 99.99 €、汽車保險換約解約信須 11/30 前送達）、金屬電機業 11/1 起可發動警告性罷工（約 370 萬名員工，資方 10/27 首度出價 2027 年一次性給付與 2028 年 7 月調薪 1.3%，IG Metall 要求 12 個月加薪 5%）、賓士下修財測（第三季中國銷量年減 31%、轎車利潤率目標從 3–5% 降到 2–3%，12 月起再以資遣方案縮減數千個行政職位）、德日聯合聲明重申台海和平穩定（Merz 10/26–30 訪新加坡、日本、南韓，與高市早苗簽署關鍵原物料意向書；Steinmeier 同週國事訪問中國、促習近平縮減貿易順差）、景氣回溫（十月通膨初值降到 2.8%、第三季 GDP 季增 0.2%、ifo 景氣指數連升第六個月到 90.2 點）、核廢料最終處置場候選範圍縮到國土 5% 以下（BGE 10/27 公布、5 個邦完全出局、2027 年底提出候選區域）</a></li>
     <li><a href="#oct19-25">10月19日–25日：週日凌晨調回冬令時間（10/25 凌晨 3:00 撥回 2:00、台德時差變 7 小時，歐盟廢除案 2019 年起卡在理事會）、明年瓦斯費恐漲 10–20%（九月生產者物價年增 6.7% 為 2023 年 3 月以來最大、能源年增 14.9%，Verivox 預估 1 月起依方案調漲、年用 2 萬度家庭多付 250–500 €，基本供應調價須 11/20 前通知）、柏林擬將大房東約 16 萬戶收歸公有（柏林邦〔Berlin〕SPD 與綠黨 10/19 同意與左翼黨組閣談判，持有逾 1 萬戶的企業超出部分依基本法第 15 條轉為公有、補償金上限 160 億歐元，Vonovia 稱違憲）、福斯傳凍薪到 2030 年（《南德日報》10/19 披露、IG Metall 證實，全球約 66 萬名員工，公司不評論；金屬電機業和平義務 10/31 到期）、Bosch 汽車事業拆成子公司（10/22 宣布 Mobility 與三個中央服務單位改組為 4 家全資子公司、約 6.25 萬名在德員工 2027/8/1 移轉，不另外裁員）、45 年免扣減退休的育兒與照護年資恐不再採計（聯盟黨構想、SPD 反對，退休改革恐延到 2027 年）、菸稅漲價法因條文疏失 10/21 提前生效（海關暫不執行、菸價暫不變；2030 年一包約 11.78 €）、投資高峰會企業承諾約 2,300 億歐元（經濟部統計 2,286 億歐元、不少為舊案）</a></li>
@@ -265,6 +51,54 @@
     <li><a href="#mar16-22">3月16–22日：RLP選舉CDU大勝、BER機場停擺</a></li>
   </ul>
 </nav>
+
+<h2 id="nov9-15">11月9日–15日：政府經濟顧問建議取消「63 歲退休」（經濟專家委員會年度報告，同時把 2026 年成長預測從 0.5% 上修至 1.3%、2027 年 1.0%，並建議撤回母親年金擴大）、瓦斯費 2027 年 10 月起多收儲備附加費（國家天然氣戰略儲備 11/11 過內閣、儲備目標 24 TWh，一般家庭每年估多付約 4–7 €）、車廠同步縮手（賓士 11/12 凍結所有在德新投資、不排除關閉兩座廠；福斯喊停 Wolfsburg「Gamechanger」計畫，10/23 再減 12,000 個職位、累計逾 47,000 個；Audi 啟動壞天氣條款重談未來協議；BMW 二度下修財測、自願離職方案提前關閉）、IG Metall 決議發動 24 小時警告罷工（總部 11/12 全票通過、2018 年以來首次，選定工廠 11/13 起投票）、國防軍性騷擾暗數研究（72% 女性軍人曾遭言語性騷擾、暗數為通報數 3–6 倍，國防部提出 34 項行動計畫）</h2>
+<p>這週的重頭戲是聯邦政府的經濟顧問機構<strong>經濟專家委員會（Sachverständigenrat）</strong>11 月 11 日交給總理 Merz 的年度報告：經濟成長預測大幅上修，但委員會同時警告財政缺口，並把矛頭指向<strong>退休制度</strong>——建議取消「63 歲退休」、撤回母親年金擴大。<strong>荷包方面</strong>，內閣同一天通過<strong>國家天然氣戰略儲備</strong>的草案，2027 年 10 月起將向瓦斯用戶加收一筆小額附加費。<strong>汽車與金屬業</strong>則多線告急：賓士（Mercedes-Benz）宣布<strong>凍結所有在德新投資</strong>、不排除關廠，福斯（Volkswagen）喊停 Wolfsburg 總廠的現代化計畫，Audi 與 BMW 也同步撙節；金屬業工會 IG Metall 總部則在 11 月 12 日決議發動<strong>全天警告罷工</strong>，是 2018 年以來第一次。最後，國防部公布首份大規模<strong>暗數研究</strong>，國防軍內部性騷擾的規模遠超過通報數字。</p>
+
+<img src="assets/images/2026/weekly/W46_圖卡1_經濟顧問建議取消63歲退休.png" alt="德國經濟專家委員會Sachverständigenrat俗稱五賢人Wirtschaftsweise 2026年11月11日年度報告Jahresgutachten 2026/27 2026年經濟成長預測從0.5%上修至1.3% 2027年1.0%原0.8% 成長動能為出口與基礎建設氣候保護國防支出 建議取消63歲退休abschlagsfreie Rente für besonders langjährig Versicherte 撤回母親年金擴大Mütterrente III 聯邦與社會保險支出成長快於收入 總理Merz接受報告">
+<h3>政府經濟顧問建議取消「63 歲退休」：成長預測上修，但點燃新一輪退休論戰</h3>
+<p><strong>誰在建議：</strong>經濟專家委員會（Sachverständigenrat zur Begutachtung der gesamtwirtschaftlichen Entwicklung）依 1963 年的法律設立，由<strong>五位經濟學家</strong>組成，每年秋天向聯邦政府提交獨立的經濟評估，政府必須對報告提出書面回應，但不受其約束。因為成員固定是五位專家，德國媒體習慣稱他們為「Wirtschaftsweise」（經濟智者），中文常譯作「五賢人」。</p>
+<p><strong>成長預測大幅上修：</strong>委員會 <strong>11 月 11 日</strong>發表 2026/27 年度報告，把 2026 年的實質經濟成長預測從春季的 <strong>0.5% 上修到 1.3%</strong>，2027 年則從 0.8% 上修到 <strong>1.0%</strong>。委員會指出，主要動能來自<strong>出口回溫</strong>，以及政府在<strong>基礎建設、氣候保護與國防</strong>上的支出；春季報告之所以保守，是因為當時伊朗戰爭推升能源價格、壓抑景氣。這次上修的方向與 9 月主要經濟研究機構的秋季聯合預測（2026 年同為 1.3%）一致。</p>
+<p><strong>退休制度成為焦點：</strong>報告最受矚目的是撙節建議。委員會主張取消<strong>「63 歲退休」</strong>——正式名稱是「特長年資投保者免扣減退休金」（abschlagsfreie Rente für besonders langjährig Versicherte），繳滿 45 年保費的人可提前退休、不必扣減年金；這個名稱其實早已名不符實，法定提前門檻已隨出生年次逐步提高。委員會也建議撤回聯合政府已通過的<strong>母親年金擴大（Mütterrente III）</strong>，也就是讓 1992 年以前出生子女的育兒年資進一步加計，理由是對聯邦預算負擔過重；另據報導，委員會也主張完整落實退休保障委員會（Alterssicherungskommission）的建議。</p>
+<p><strong>為何要砍：</strong>委員會的核心論點是，<strong>聯邦與社會保險的支出成長快於收入</strong>，即使經濟回溫，光靠成長也補不了缺口；另有報導引述報告，指以舉債支應的國防支出可能讓長期財政缺口持續擴大。換句話說，這份報告雖然上修了成長，傳達的卻是「好消息不夠用」的訊息。</p>
+<p><strong>政策觀察：</strong>年度報告<strong>沒有法律約束力</strong>，但它是政府與國會討論經濟政策的重要參考。總理 Merz 接受報告時表示大致認同委員會對財政的判斷；不過「63 歲退休」與母親年金分別是 SPD 與 CSU 的代表性政策，聯合政府內部要動這兩項並不容易。關於「45 年」年資是否該納入育兒與照護期間的討論，可參考本站 <a href="#oct19-25">W43 的整理</a>。對已在德國工作、繳納退休保險的讀者來說，眼前不會有立即改變，但退休年齡與給付條件仍在變動，建議定期查看德國退休保險（Deutsche Rentenversicherung）寄來的年金資訊（Renteninformation）。</p>
+<p class="post-sources">📚 來源：<a href="https://www.zdfheute.de/wirtschaft/wirtschaftsweise-jahresgutachten-sachverstaendigenrat-100.html" target="_blank" rel="noopener noreferrer">ZDFheute：Wirtschaftsweise – BIP wächst, aber Sorge um Staatsfinanzen</a> · <a href="https://www.marktundmittelstand.de/politik/wirtschaftsweise-jahresgutachten-2026-wachstum-sparforderungen" target="_blank" rel="noopener noreferrer">Markt und Mittelstand：Wirtschaftsweise 2026 – Mehr Wachstum, harte Sparforderungen</a> · <a href="https://de.euronews.com/2026/11/11/wirtschaftsweise-schlagen-alarm-deutschland-schuldenkrise" target="_blank" rel="noopener noreferrer">Euronews：Wirtschaftsweise schlagen Alarm</a> · <a href="https://www.schwarzwaelder-bote.de/wirtschaft/muetterrente-iii-wirtschaftsweise-gegen-nachzahlung-79691303.html" target="_blank" rel="noopener noreferrer">Schwarzwälder Bote：Wirtschaftsweise gegen Nachzahlung der Mütterrente</a> · <a href="https://www.bundeskanzler.de/bk-de/aktuelles/entgegennahme-jahresgutachten-des-sachverstaendigenrates-2460120" target="_blank" rel="noopener noreferrer">聯邦總理府：Entgegennahme Jahresgutachten des Sachverständigenrates</a></p>
+
+<img src="assets/images/2026/weekly/W46_圖卡2_瓦斯費加收儲備附加費.png" alt="德國國家天然氣戰略儲備Gasreserve 聯邦內閣2026年11月11日通過經濟部長Katherina Reiche法案草案 儲備目標24 TWh約240億度 約全國儲氣容量一成 2027年10月1日起向瓦斯用戶加收儲備附加費Umlage 每度約0.03至0.04歐分 一般家庭每年估多付約4至7歐元 舊儲氣附加費Gasspeicherumlage每度0.289歐分已於2026年初取消 一次性建置成本12.6億至18.1億歐元 儲氣設施法定填充率規定2027年3月底到期">
+<h3>瓦斯費 2027 年 10 月起多收儲備附加費：一般家庭每年估多付 4–7 €</h3>
+<p><strong>草案內容：</strong>聯邦內閣 <strong>11 月 11 日</strong>通過經濟部長 Reiche（CDU）提出的法案，要建立一座<strong>國家天然氣戰略儲備</strong>，目標規模 <strong>24 TWh（240 億度）</strong>，約為德國儲氣設施容量的一成，從 2027 年起分階段建置。依草案，儲備只能在嚴格定義的例外情況下動用，例如極端寒冬、<strong>破壞事件（Sabotage）</strong>或罕見的重大事故。Reiche 強調：「戰略儲備保的是危機，不是高價。」換句話說，它的設計目的不是壓低瓦斯價格。</p>
+<p><strong>誰來付錢：</strong>建置與維持成本將以<strong>附加費（Umlage）</strong>轉嫁給瓦斯用戶，第一個收費期間從 <strong>2027 年 10 月 1 日</strong>開始。依草案估算，費率約為<strong>每度 0.03 至 0.04 歐分</strong>，一般家庭每年約多付 <strong>3.77 至 7.20 €</strong>，比 2026 年初取消的舊<strong>儲氣附加費（Gasspeicherumlage，每度 0.289 歐分）</strong>低得多。一次性建置成本估計為 <strong>12.6 億至 18.1 億歐元</strong>。經濟部的理由是「依使用者付費原則」由瓦斯用戶負擔，而非動用聯邦預算；但聯合政府內部對附加費仍有異議。</p>
+<p><strong>配套變動：</strong>2022 年能源危機後訂下的<strong>儲氣設施法定填充率規定</strong>將在 <strong>2027 年 3 月底</strong>到期、不再延長，改由戰略儲備承擔供應安全的保險功能；據 Reuters 報導，政府也在研擬要求瓦斯供應商負擔冬季供應預備義務。草案接下來交由聯邦議院審議，內容仍可能修改。</p>
+<p><strong>影響評估：</strong>每年幾歐元的附加費對荷包影響有限；更值得留意的是近期的瓦斯價格。依比價平台彙整，已有多家基本供應（Grundversorgung）業者宣布 <strong>2027 年 1 月 1 日</strong>起調高瓦斯價格。業者調價須提前通知，收到通知時可行使特別終止權、改換方案；明年瓦斯費為何可能上漲，可參考本站 <a href="#oct19-25">W43 的分析</a>。</p>
+<p class="post-sources">📚 來源：<a href="https://www.onvista.de/news/2026/11-11-kabinett-beschliesst-weitere-massnahmen-zur-sicherung-der-gasversorgung-0-20-26575188" target="_blank" rel="noopener noreferrer">onvista（Reuters）：Kabinett beschließt weitere Maßnahmen zur Sicherung der Gasversorgung</a> · <a href="https://www.berliner-zeitung.de/article/gas-umlage-kommt-kabinett-beschliesst-nationale-reserve-fuer-krisenfaelle-10587522" target="_blank" rel="noopener noreferrer">Berliner Zeitung：Gas-Umlage kommt – Kabinett beschließt nationale Reserve</a> · <a href="https://www.handelsblatt.com/politik/deutschland/gasversorgung-was-bringt-eine-gasreserve-und-wer-zahlt-sie/100268964.html" target="_blank" rel="noopener noreferrer">Handelsblatt：Was bringt eine Gasreserve? Und wer zahlt sie?</a> · <a href="https://www.t-online.de/finanzen/energie/id_101522722/kabinett-beschliesst-neues-gas-gesetz-das-ist-geplant.html" target="_blank" rel="noopener noreferrer">t-online：Gaskunden zahlen 2027 neue Umlage</a> · <a href="https://wechselpilot.com/magazin/preiserhoehung-2027" target="_blank" rel="noopener noreferrer">Wechselpilot：Strom- und Gaspreiserhöhungen 2027</a></p>
+
+<img src="assets/images/2026/weekly/W46_圖卡3_賓士凍結投資福斯喊停改造.png" alt="德國汽車業同步撙節 賓士Mercedes-Benz 2026年11月12日內部訪談宣布暫停所有在德國廠區新投資Investitionsstopp 要求延長工時不加薪刪減分紅休假津貼聖誕獎金 不排除關閉兩座德國工廠 福斯Volkswagen 11月11日喊停Wolfsburg總廠Gamechanger大型一體壓鑄Großguss計畫 員工代表會主席Daniela Cavallo指控違反2024年12月協約 10月23日證實核心品牌Volkswagen AG再減12000個職位 與既有35000個累計逾47000個 Audi啟動壞天氣條款Schlechtwetterklausel重談未來協議 BMW 11月3日二度下修財測 自願離職方案不到三週提前關閉 合意解約Aufhebungsvertrag 失業給付等待期Sperrzeit">
+<h3>車廠同步縮手：賓士凍結在德投資、福斯喊停總廠改造，Audi 與 BMW 也在撙節</h3>
+<p><strong>賓士：凍結在德投資、不排除關廠。</strong>賓士（Mercedes-Benz）<strong>11 月 12 日</strong>在內部網路刊出董事訪談，宣布<strong>暫停所有在德國廠區的新投資</strong>，由《商報》（Handelsblatt）率先披露。生產董事 Michael Schiebe 表示，以目前的成本「無法在德國投資」，德國一個生產工時的成本最高可達東歐的五倍。資方要求員工<strong>延長工時但不加薪</strong>，並把分紅、休假津貼與聖誕獎金拿上談判桌；人資董事 Britta Seeger 說會盡全力避免關廠，但這個選項「必須更具體地評估」。Schiebe 數週前就曾表示，若成本降不下來，可能關閉<strong>兩座德國工廠</strong>，公司至今沒有點名是哪兩座。員工代表會與 IG Metall 拒絕在工時與獎金上讓步；凍結涵蓋哪些已規劃的專案、要凍結多久，目前也都還不清楚。</p>
+<p><strong>福斯：喊停 Gamechanger，裁員數字再加碼。</strong>福斯 <strong>11 月 11 日</strong>證實，原本要讓 Wolfsburg 總廠脫胎換骨的生產計畫<strong>「Gamechanger」不會以原定形式實施</strong>。這項計畫的核心是導入<strong>大型一體壓鑄（Großguss）</strong>——以巨型壓鑄機一次成形整塊車身底板、減少零件與工序，是追趕特斯拉與中國車廠生產效率的關鍵技術。福斯發言人表示，目前<strong>所有投資都在重新檢討</strong>；據 Reuters 報導，下一代電動平台 SSP 的開發則照常進行。《商報》引述消息人士指出，這次削減與 Audi 計畫中的美國設廠有關，但福斯並未證實。總員工代表會主席 <strong>Daniela Cavallo</strong> 稱喊停計畫是對 2024 年協約的「明顯違反」，等於經營層承認失敗，並放話：在細節透明之前，<strong>燃油版 Golf 不會移出 Wolfsburg</strong>。</p>
+<p><strong>數字拆解：</strong>2024 年 12 月，福斯與 IG Metall 達成協約：<strong>2030 年前以社會相容方式減少逾 35,000 個德國職位</strong>，交換條件之一是讓 Wolfsburg 總廠導入大型壓鑄等新製程，同時把<strong>燃油版 Golf 的生產移往墨西哥</strong>。<strong>10 月 23 日</strong>福斯又證實，核心品牌 Volkswagen AG 要在 2030 年前<strong>再減 12,000 個職位</strong>，與原方案合計<strong>逾 47,000 個</strong>。要注意這是<strong>累計數字、只算 Volkswagen AG 在德國的部分</strong>，不等於整個集團（本站 <a href="#sep14-20">W38</a> 報導的「十萬個職位」是全集團口徑）。協約排除經營性解僱到 2030 年底，新增的部分同樣要靠自願離職、部分工時退休與不遞補；資方提議讓員工轉入政府補助的<strong>轉職公司（Transfergesellschaft）</strong>，IG Metall 堅決反對。福斯企業協約的新一輪談判預計 11 月底開始（見 <a href="#oct19-25">W43</a>）。</p>
+<p><strong>Audi：啟動「壞天氣條款」重談。</strong>Audi 10 月底啟動 2019 年未來協約中的<strong>「壞天氣條款」（Schlechtwetterklausel）</strong>——業績明顯惡化時，資方可要求重新協商。2025 年 3 月的現行未來協議已約定 <strong>2029 年底前</strong>在德國減少最多 <strong>7,500 個間接部門職位</strong>，就業保障則延到 2033 年底。執行長 Döllner 表示，額外的裁員還沒有具體數字與時程；員工代表會強調<strong>既沒有決定關廠、也沒有定裁員人數</strong>，現有就業保障不受這輪會談影響，但薪資的部分項目可能被拿出來談。首輪試探性會談預計本週展開，重點是 Ingolstadt 與 Neckarsulm 兩座廠。</p>
+<p><strong>BMW：二度下修財測、離職方案提前關閉。</strong>BMW <strong>11 月 3 日</strong>第二次下修 2026 年財測：汽車部門營業利益率從 1–3% 降到<strong>負 0.5% 至正 0.5%</strong>，主因是裁員方案的成本；11 月 4 日公布的第三季財報顯示交車量年減 6.3%。本站 <a href="#oct12-18">W42</a> 報導的<strong>自願離職方案</strong>，開放不到三週就提前關閉，據報是申請人數遠超預期；執行長 Nedeljković 估計，約九成減少的職位落在慕尼黑總部與研發中心（FIZ）。</p>
+<p><strong>因應建議：</strong>四家車廠目前都以自願離職、部分工時退休與不遞補為主，多數員工仍受就業保障協約保護。在車廠或供應商工作的讀者，若收到離職方案，簽<strong>合意解約（Aufhebungsvertrag）</strong>前務必確認是否會觸發失業給付的<strong>等待期（Sperrzeit）</strong>，並先諮詢員工代表會、工會或勞動法律師。供應鏈也同步承壓：破產的汽車飾條供應商 <strong>WKW</strong> 11 月出售給投資人，IG Metall 表示約 <strong>450 個職位消失、約 1,050 個保留</strong>；加上上週的 Schaeffler 再減 2,660 個職位（見 <a href="#nov2-8">W45</a>）。</p>
+<p class="post-sources">📚 來源：<a href="https://www.handelsblatt.com/unternehmen/industrie/mercedes-autohersteller-stoppt-alle-investitionen-in-deutschland/100269485.html" target="_blank" rel="noopener noreferrer">Handelsblatt：Mercedes stoppt alle Investitionen in Deutschland</a> · <a href="https://www.stuttgarter-zeitung.de/wirtschaft/internes-interview-noch-mehr-jobs-in-gefahr-mercedes-stoppt-alle-investitionen-in-deutschland-79696560.html" target="_blank" rel="noopener noreferrer">Stuttgarter Zeitung：Mercedes stoppt alle Investitionen in Deutschland</a> · <a href="https://www.handelsblatt.com/unternehmen/industrie/volkswagen-vw-stoppt-projekt-gamechanger-was-wirklich-dahintersteckt/100269104.html" target="_blank" rel="noopener noreferrer">Handelsblatt：VW stoppt Projekt „Gamechanger"</a> · <a href="https://www.wiwo.de/unternehmen/auto/vw-stoppt-gamechanger-aus-fuer-grossguss-empoert-betriebsrat/100269111.html" target="_blank" rel="noopener noreferrer">WirtschaftsWoche：Aus für Großguss empört Betriebsrat</a> · <a href="https://www.onvista.de/news/2026/11-11-vw-stoppt-produktionsprojekt-gamechanger-0-20-26575142" target="_blank" rel="noopener noreferrer">onvista（Reuters）：VW stoppt Produktionsprojekt „Gamechanger"</a> · <a href="https://www.igmetall-wob.de/meldung/konzernvorstand-beerdigt-gamechanger-1" target="_blank" rel="noopener noreferrer">IG Metall Wolfsburg：Konzernvorstand beerdigt Gamechanger</a> · <a href="https://www.t-online.de/finanzen/aktuelles/wirtschaft/id_101495606/volkswagen-will-12000-weitere-stellen-abbauen.html" target="_blank" rel="noopener noreferrer">t-online：Volkswagen will 12.000 weitere Stellen abbauen</a> · <a href="https://www.auto-motor-und-sport.de/verkehr/vw-stellenabbau-weitere-12-000-arbeitsplaetze-bedroht/" target="_blank" rel="noopener noreferrer">auto motor und sport：Weitere 12.000 Arbeitsplätze bedroht</a> · <a href="https://www.handelsblatt.com/unternehmen/industrie/autobauer-audi-will-mit-betriebsrat-ueber-weitere-einsparungen-verhandeln/100260842.html" target="_blank" rel="noopener noreferrer">Handelsblatt：Audi will mit Betriebsrat über weitere Einsparungen verhandeln</a> · <a href="https://www.boersen-zeitung.de/unternehmen-branchen/schlechtwetter-in-neckarsulm-audi-bereitet-stellenabbau-vor" target="_blank" rel="noopener noreferrer">Börsen-Zeitung：Schlechtwetter in Neckarsulm</a> · <a href="https://www.audi.com/de/medieninformationen/betriebsrat-fordert-klarheit-und-zukunftsperspektiven-fuer-audi-18372" target="_blank" rel="noopener noreferrer">Audi：Betriebsrat fordert Klarheit und Zukunftsperspektiven</a> · <a href="https://www.handelsblatt.com/politik/deutschland/autoindustrie-sparprogramm-sorgt-fuer-gewinnwarnung-bei-bmw/100267102.html" target="_blank" rel="noopener noreferrer">Handelsblatt：Sparprogramm sorgt für Gewinnwarnung bei BMW</a> · <a href="https://www.elektroauto-news.net/news/viele-wollen-weg-bmw-beendet-abfindungsprogramm-vorzeitig" target="_blank" rel="noopener noreferrer">elektroauto-news：BMW beendet Abfindungsprogramm vorzeitig</a> · <a href="https://www.kurierverlag.de/wirtschaft/wkw-autozulieferer-insolvenz-verkauf-450-jobs-gestrichen-mitarbeiter-gehaltsverzicht-zr-94579327.html" target="_blank" rel="noopener noreferrer">Kurierverlag：WKW nach Insolvenz verkauft</a></p>
+
+<img src="assets/images/2026/weekly/W46_圖卡4_IGMetall決議24小時罷工.png" alt="德國金屬電機業團體協約協商Metall- und Elektroindustrie Tarifrunde 2026 第三輪協商11月9日無果 IG Metall各工會區11月11日申請24小時警告罷工24-Stunden-Warnstreiks 總部11月12日全票通過 2018年以來首次 選定工廠11月13日起會員投票須過半同意 第四輪協商未排定 首波警告罷工逾40萬人次 IG Metall要求12個月加薪5% 資方Gesamtmetall提2027年一次性給付 2028年7月調薪1.3% 約370萬名員工">
+<h3>IG Metall 決議發動 24 小時警告罷工：2018 年以來首次，選定工廠 11/13 起投票</h3>
+<p><strong>從幾小時到一整天：</strong>金屬電機業約 <strong>370 萬名員工</strong>適用的團體協約協商，第三輪談判在 <strong>11 月 9 日</strong>無果而終。各工會區的協約委員會 <strong>11 月 11 日</strong>向 IG Metall 總部申請發動<strong>24 小時警告罷工</strong>，總部 <strong>11 月 12 日全票通過</strong>——這是 IG Metall <strong>2018 年以來第一次</strong>動用全天警告罷工。依 ZDF 的說法，這是發動罷工投票（Urabstimmung）與無限期罷工之前的最後一個升級階段。依工會規定，被選定的工廠從 <strong>11 月 13 日</strong>起讓會員投票，<strong>過半同意</strong>才能實施；哪些工廠、哪一天罷工，工會尚未公布，第四輪協商也還沒排定。</p>
+<p><strong>雙方差距：</strong>IG Metall 要求 <strong>12 個月加薪 5%</strong>，並要求保障就業。資方提出的方案是 <strong>2027 年 7 月一次性給付</strong>，<strong>2028 年 7 月起才永久調薪 1.3%</strong>，遭工會拒絕。和平義務 10 月 31 日結束後（見本站 <a href="#oct26-nov1">W44</a>），工會從 11 月 1 日起發動第一波數小時的警告罷工，依 IG Metall 統計參與人次<strong>已逾 40 萬</strong>（巴伐利亞邦約 7.5 萬人次）。巴伐利亞邦工會區已表示，在可能的 24 小時罷工之前不會再排新的協商日期。</p>
+<p><strong>各方觀點：</strong>工會把就業保障與加薪綁在一起，主因是汽車業與供應商接連宣布裁員；資方則以產業危機為由壓低調薪幅度，並希望保留讓陷入困境的企業偏離協約的彈性。據報導，雙方在<strong>薪資、企業例外條款與就業保障</strong>三方面都還相距甚遠，目前也沒有排定下一輪協商日期。</p>
+<p><strong>觀察重點：</strong>全天罷工會讓產線停擺一整天，汽車廠與供應商首當其衝，也可能波及交貨時程。對在這些工廠工作的讀者而言，參與罷工期間雇主不必支付薪資，<strong>工會會員</strong>可向 IG Metall 申請罷工津貼；非會員雖然也可參與工會號召的罷工，但沒有津貼。</p>
+<p class="post-sources">📚 來源：<a href="https://handelsblatt.com/politik/deutschland/arbeitsmarkt-metalltarifrunde-steht-vor-weiterer-eskalationsstufe/100269129.html" target="_blank" rel="noopener noreferrer">Handelsblatt：Metalltarifrunde steht vor weiterer Eskalationsstufe</a> · <a href="https://www.volksstimme.de/panorama/tarifkonflikt-ig-metall-plant-24-stunden-warnstreiks-4354661" target="_blank" rel="noopener noreferrer">Volksstimme（dpa）：IG Metall plant 24-Stunden-Warnstreiks</a> · <a href="https://www.igmetall.de/tarif/tarifrunden/metall-und-elektro/aktionen-zur-metall-tarifrunde" target="_blank" rel="noopener noreferrer">IG Metall：Über 400.000 im Warnstreik</a> · <a href="https://www.zdfheute.de/wirtschaft/ig-metall-warnstreiks-elektro-industrie-100.html" target="_blank" rel="noopener noreferrer">ZDFheute：IG Metall – Warnstreiks in Metall- und Elektroindustrie gestartet</a> · <a href="https://www.dgb.de/service/weiterer-service/tarifmeldungen/tarifmeldung/tarifrunde-metall-und-elektroindustrie-ig-metall-beschliesst-24-stunden-warnstreiks" target="_blank" rel="noopener noreferrer">DGB：IG Metall beschließt 24-Stunden-Warnstreiks</a> · <a href="https://www.zdfheute.de/wirtschaft/ig-metall-warnstreik-metallindustrie-elektroindustrie-100.html" target="_blank" rel="noopener noreferrer">ZDFheute：IG Metall kündigt ganztägige Warnstreiks an</a> · <a href="https://taz.de/IG-Metall-kuendigt-Warnstreiks-an/!6229550/" target="_blank" rel="noopener noreferrer">taz：IG Metall kündigt Warnstreiks an</a> · <a href="https://www.igmetall-wob.de/meldung/ig-metall-vorstand-beschliesst-24-stunden-warnstreiks-in-der-metall-und-elektroindustrie" target="_blank" rel="noopener noreferrer">IG Metall Wolfsburg：Vorstand beschließt 24-Stunden-Warnstreiks</a></p>
+
+<img src="assets/images/2026/weekly/W46_圖卡5_國防軍性騷擾暗數研究.png" alt="德國國防軍Bundeswehr性騷擾暗數研究Dunkelfeldstudie Sexualisiertes Fehlverhalten in den Streitkräften 2026年11月11日公布 由國防軍軍事史與社會科學中心ZMSBw波茨坦執行 回收率約18% 72%女性軍人與31%男性軍人曾遭言語性騷擾 暗數為通報數3至6倍 國防部長Pistorius與國防軍總監Breuer提出34項行動計畫 Koblenz內部領導中心申訴專線 18個月內再調查 國防監察專員Wehrbeauftragter Otte 反歧視專員Ferda Ataman">
+<h3>國防軍暗數研究：72% 女性軍人曾遭言語性騷擾，實際案件是通報數的 3 到 6 倍</h3>
+<p><strong>研究發現：</strong>國防部長 Pistorius 與國防軍總監（Generalinspekteur）Breuer <strong>11 月 11 日</strong>公布首份大規模<strong>暗數研究（Dunkelfeldstudie）</strong>〈武裝部隊中的性化不當行為〉，由位於波茨坦的<strong>國防軍軍事史與社會科學中心（ZMSBw）</strong>執行，結果已向聯邦議院國防委員會報告。<strong>72% 的女性軍人</strong>表示服役期間至少遭遇過一次言語性騷擾，<strong>男性軍人也有 31%</strong>。研究估計實際發生的案件是正式通報數的<strong>三到六倍</strong>。問卷回收率約 18%，研究團隊表示資料具代表性。</p>
+<p><strong>數字需謹慎解讀：</strong>關於肢體侵害與性暴力的比例，各家媒體引述的數字並不一致（從 2% 到約 10% 都有，涉及的時間範圍與定義也不同），本站在取得原始報告前不予引用。可以確定的是，言語騷擾在部隊中相當普遍，而且大多數事件從未被通報。</p>
+<p><strong>因應措施：</strong>Pistorius 宣布對性騷擾<strong>「零容忍」</strong>，並提出包含 <strong>34 項措施</strong>的行動計畫，其中包括在 Koblenz 的<strong>內部領導中心（Zentrum Innere Führung）</strong>設立申訴專線，並預定在 <strong>18 個月內</strong>進行第二次暗數調查、最遲 24 個月內公布結果，以追蹤成效。</p>
+<p><strong>後續影響：</strong>這份研究的時間點相當敏感：國防軍正全力擴充兵員。聯邦議院<strong>國防監察專員（Wehrbeauftragter）Otte</strong> 10 月初就曾示警，並提醒研究結果可能讓有意從軍的女性更加卻步；<strong>聯邦反歧視專員 Ferda Ataman</strong> 則要求對加害者追究責任。行動計畫能否改變部隊文化，第二次調查將是第一個檢驗點。</p>
+<p class="post-sources">📚 來源：<a href="https://www.bmvg.de/de/dunkelfeldstudie-statement-minister-gi" target="_blank" rel="noopener noreferrer">聯邦國防部：Dunkelfeldstudie – Pistorius und Breuer zu sexualisiertem Fehlverhalten</a> · <a href="https://www.bundeswehr.de/de/selbstverstaendnis/innere-fuehrung/kampf-gegen-sexualisiertes-fehlverhalten/ergebnisse-massnahmen-dunkelfeldstudie" target="_blank" rel="noopener noreferrer">國防軍：Sexualisiertes Fehlverhalten – Studie und Aktionsplan</a> · <a href="https://t-online.de/nachrichten/deutschland/militaer-verteidigung/id_101523506/bundeswehr-studie-zu-fehlverhalten-pistorius-kuendigt-null-toleranz-an.html" target="_blank" rel="noopener noreferrer">t-online：Pistorius kündigt Null-Toleranz an</a> · <a href="https://www.stuttgarter-zeitung.de/politik/bundeswehr-studie-belaestigt-bedraengt-attackiert-79687491.html" target="_blank" rel="noopener noreferrer">Stuttgarter Zeitung：Bundeswehr-Studie</a> · <a href="https://www.zdfheute.de/politik/deutschland/bundeswehr-sexualisierte-gewalt-erfahrung-interview-100.html" target="_blank" rel="noopener noreferrer">ZDFheute：Sexuelle Übergriffe in der Bundeswehr</a></p>
+
+<hr>
 
 <h2 id="nov2-8">11月2日–8日：住址登記全面上網（內閣 11/4 通過行政命令、預計 12/1 生效，所有登記機關須開放線上遷入與遷居登記，已接入約 3,800 個機關）、Schaeffler 再減 2,660 個職位並關閉德國四處據點（歐洲共減 3,460 個職位、原則上不做經營性解僱、2030 年起每年省 3 億歐元，董事會自減 10% 薪資）、油價上限法草案出爐（須連續三週高於其他歐盟國家平均 5 個百分點以上才啟動、每次最長 3 個月，DGB 與加油站業者同聲批評）、駕照改革通過（平均花費約 3,400 €，理論課可線上、特殊路況課不再規定 12 趟、親友可陪練）、西巴爾幹工作名額減半（每年 5 萬降到 2.5 萬、2027 年起適用，營建業估少約 9,000 人）</h2>
 <p>這週有兩件和<strong>日常生活</strong>直接相關的行政改革：內閣 11 月 4 日通過命令，要求全國所有登記機關從 12 月起都得提供<strong>線上住址登記（Anmeldung）</strong>；聯邦議院則在 11 月 5 日通過<strong>駕照改革</strong>，目標是把平均約 3,400 € 的考照費用壓下來。<strong>汽車產業</strong>再傳裁員：供應商 Schaeffler 11 月 3 日宣布在德國再減 2,660 個職位、關閉四處據點，而聯邦統計局數據顯示，汽車業就業已降到 2005 年有統計以來最低。<strong>荷包方面</strong>，經濟部的《燃料最高價格法》草案曝光，但啟動門檻之高讓工會與業者都質疑它「幾乎不會生效」；眼前更有感的反而是燃油稅減免 12 月底到期。最後，內閣也不顧經濟界、聯邦勞動署與七個邦反對，把西巴爾幹國家的工作名額砍半。</p>
@@ -469,6 +303,7 @@
 <h3>BMW 自願離職方案開跑：約 4 萬人可查方案，賓士、福斯同步瘦身</h3>
 <p>BMW 10 月 8 日起透過內部人事系統（HR4Me）寄出自願離職方案。《商報》（Handelsblatt）引述公司內部人士報導，大批員工同時登入查看，<strong>系統一度無法連線</strong>；據報約 <strong>4 萬名</strong>德國員工有資格收到方案，BMW 未就系統狀況置評。方案源自 7 月底管理層與<strong>總員工代表會（Gesamtbetriebsrat）</strong>的協議：<strong>2027 年底前全球人力縮減約 8,000 個職位</strong>，手段是自然離職、部分工時退休（Altersteilzeit）、不遞補空缺與自願離職金，<strong>原則上不做資遣</strong>。</p>
 <p><strong>數字拆解：</strong>8,000 是兩年內的累計目標，而且涵蓋全球；4 萬是「可以收到方案」的人數，<strong>不是會離職的人數</strong>——登入塞爆只代表關注度高，無法推論實際會有多少人接受。據內部消息，方案以研發、行政等<strong>間接部門</strong>為主，生產線職位明確排除；離職金依年資與薪資計算，BMW 未公布公式。</p>
+<p class="post-callout"><strong>⏰ 2026/11/12 更新：BMW 的自願離職方案開放不到三週就已提前關閉，</strong>據報是因為申請人數遠超預期。BMW 也在 11 月 3 日因裁員成本第二次下修 2026 年財測，汽車部門營業利益率降到負 0.5% 至正 0.5%。最新進度見 <a href="#nov9-15">W46</a>。</p>
 <p><strong>同業同步：</strong>賓士（Mercedes-Benz）去年 4 月至今年 3 月的第一輪離職方案約 5,500 人接受，媒體報導將在 <strong>12 月重啟第二輪</strong>，對象同樣是行政、研發與生產規劃等間接部門，首度納入高階主管，公司尚未正式證實。福斯（Volkswagen）則在 10 月初公布<strong>終止十份團體協約</strong>，包括規範工時與休假的框架協約（Manteltarifvertrag），年底失效，IG Metall 估計涉及約 13 萬名員工；IG Metall 地區主委 Thorsten Gröger 痛批是「對員工的惡劣犯規」。被終止的協約依法在新約談成前仍繼續適用，就業保障也維持到 2030 年底；勞資雙方預計本月下旬續談，IG Metall 要求加薪 5%。</p>
 <p><strong>政策面：</strong>德國與法國 10 月 16 日確認一份共同立場文件，主張放寬歐盟 2035 年的新車排放規定：新車隊碳排只需比基準<strong>減少 90%</strong>，剩下的 10% 不必再另外抵銷，等於 2035 年後仍可能賣燃油車與油電混合車。歐盟執委會先前已提議放寬，德法的版本走得更遠；環保團體 T&amp;E 批評這是走回頭路。這還不是定案，<strong>必須經歐洲議會與各會員國同意</strong>。</p>
 <p><strong>接下來要看：</strong>整個<strong>金屬電機業</strong>（約 370 萬名員工，汽車業也在內）的勞資談判同步進行，IG Metall 要求加薪 5%，資方公會 Gesamtmetall 認為經濟情勢不允許、至今沒有提出方案。<strong>和平義務 10 月 31 日午夜到期，11 月 1 日起可以發動警告性罷工</strong>。</p>
@@ -1630,6 +1465,221 @@
 <img src="assets/images/2026/weekly/W12_圖卡3_經濟景氣.png" alt="德國經濟復甦放緩景氣指數">
 <h3>德國經濟：復甦放緩</h3>
 <p>消費信心指數跌至 -24.7 點，2 月破產企業 1,466 家（+5%），影響 23,000 名員工。三大隱憂：中東危機推高油氣價格、美國關稅衝擊出口、通膨回升壓抑消費。好消息：各機構預測 2026 GDP 仍有 +0.6~1.5% 成長，Q2 起有望逐步回溫。</p>]]></content:encoded>
+  </item>
+  <item>
+    <title>入境歐洲新制一次看懂：指紋登記、自動通關、旅行許可延期（在德台灣人版）</title>
+    <link>https://taiwanese-in-germany.com/posts/schengen-ees-etias-easypass.html</link>
+    <guid isPermaLink="true">https://taiwanese-in-germany.com/posts/schengen-ees-etias-easypass.html</guid>
+    <pubDate>Fri, 13 Nov 2026 00:00:00 GMT</pubDate>
+    <description>歐盟出入境系統 EES 從 2026 年 4 月 10 日起在所有申根邊境全面上路，護照不再蓋章，改成登記指紋與臉部影像；原訂 2026 年底上路的旅行許可 ETIAS 則又延期，官方已撤下日期。這三個新名詞對在德台灣人來說，規定依身分完全不同：持德國居留卡的人 EES 不用登記、ETIAS 不用申請，而且 12 歲以上可以直接走 EasyPASS 自動通關；來德國探親的台灣家人朋友，第一次入境要按指紋、拍臉，想用自動通關要先登記 EasyPASS-RTP。這篇整理三種身分的對照表、EES 的實際流程與排隊狀況、德國 8 座機場的 EasyPASS 登記處，以及 ETIAS 目前的進度與假網站陷阱。</description>
+    <category>德國生活</category><category>旅行</category>
+    <content:encoded><![CDATA[<p class="post-meta-line"><em>德國知識小種子｜2026.11.13 發表 · 旅行與居留</em></p>
+
+<p>從 2026 年 4 月 10 日起，進出申根區的<strong>第三國短期旅客，護照不再蓋入出境章</strong>，改由歐盟的<strong>出入境系統 EES</strong>（Entry/Exit System，德文 Einreise-/Ausreisesystem）用電子方式記錄，第一次入境要按指紋、拍臉部影像。再加上已經喊了好幾年、卻一延再延的<strong>旅行許可 ETIAS</strong>，以及德國機場的<strong>自動通關閘門 EasyPASS</strong>，三個名字常被混在一起講。</p>
+
+<p>對在德台灣人來說，這三件事<strong>要不要做，幾乎完全看你的身分</strong>：自己持德國居留卡，和來探親的爸媽、來玩的朋友，規定完全不同。這篇把三種身分分開整理，讓你出門前、親友來訪前都知道要準備什麼。</p>
+
+<p class="post-callout"><strong>📌 先講結論：</strong>持<strong>德國居留卡</strong>的人，EES 不用登記、ETIAS 不用申請，12 歲以上還可以直接走 <strong>EasyPASS 自動通關</strong>，不必事先登記。用<strong>台灣護照短期來訪</strong>的家人朋友，第一次入境要按指紋、拍臉；ETIAS <strong>目前還不受理申請</strong>，現在任何要你付錢「申請 ETIAS」的網站都不是官方網站。本文資料截至 2026 年 11 月中，規定以聯邦警察（Bundespolizei）與歐盟官方公告為準。</p>
+
+<nav class="post-toc" aria-label="本篇目錄">
+  <p class="post-toc__title">快速跳轉</p>
+  <ul>
+    <li><a href="#identitaet">你是哪一種？三種身分對照表</a></li>
+    <li><a href="#ees">第一次入境要按指紋、拍臉</a></li>
+    <li><a href="#easypass">德國機場的自動通關閘門</a></li>
+    <li><a href="#etias">歐盟旅行許可延期，現在還不用申請</a></li>
+    <li><a href="#checkliste">出門前的檢查清單</a></li>
+    <li><a href="#sources">資料來源</a></li>
+  </ul>
+</nav>
+
+<img src="assets/images/2026/ees/EES_圖卡1_三種身分.png" alt="入境歐洲新制三種身分對照：持德國居留卡的人 EES 不用登記、ETIAS 不用申請、12 歲以上可直接走 EasyPASS；台灣親友短期來訪第一次入境要按指紋拍臉；有德國籍者用德國護照或身分證，EES 與 ETIAS 都不適用">
+<h2 id="identitaet">你是哪一種？三種身分對照表</h2>
+
+<table>
+  <thead>
+    <tr><th>身分</th><th>EES 登記</th><th>ETIAS（上路後）</th><th>EasyPASS 自動通關</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>持德國居留卡</strong>（Aufenthaltstitel）的台灣人</td><td><strong>不用</strong>，入出境出示居留卡</td><td><strong>不用</strong></td><td>12 歲以上<strong>直接使用</strong>，不必事先登記</td></tr>
+    <tr><td>持德國<strong>長期簽證</strong>（D 簽）、還沒拿到居留卡</td><td><strong>不用</strong></td><td><strong>不用</strong></td><td>只能在<strong>出境</strong>時使用</td></tr>
+    <tr><td>用<strong>台灣護照短期來訪</strong>（觀光、探親、出差，90 天以內）</td><td>第一次入境<strong>要登記</strong>指紋與臉部影像</td><td><strong>要申請</strong></td><td>先到聯邦警察服務處登記 <strong>EasyPASS-RTP</strong>（免費）</td></tr>
+    <tr><td>有<strong>德國籍或其他歐盟國籍</strong>（含雙重國籍）</td><td>不適用</td><td>不用</td><td>直接使用</td></tr>
+  </tbody>
+</table>
+
+<p>幾個要注意的地方：</p>
+<ul>
+  <li><strong>居留卡一定要隨身帶。</strong>EES 免登記的前提是你能證明自己不是短期旅客；邊境人員要看到居留卡，才知道不用替你建 EES 紀錄。只帶護照出門，就可能被當成短期旅客處理。</li>
+  <li><strong>持居留卡的人不用在 EES 自助機登記</strong>，直接走 EasyPASS 或人工櫃台即可。</li>
+  <li><strong>雙重國籍的人，入出境申根區請出示德國（或其他歐盟國家）的護照或身分證。</strong>拿台灣護照走，會被當成第三國旅客。</li>
+  <li><strong>居留卡正在換發</strong>、手上只有臨時證明（Fiktionsbescheinigung）的人，出國前最好先向外事局（Ausländerbehörde）確認能不能順利入出境。</li>
+</ul>
+
+<p class="post-sources">📚 來源：<a href="https://ber.berlin-airport.de/en/flying/controls/id-and-passport-control/ees.html" target="_blank" rel="noopener noreferrer">柏林布蘭登堡機場：Entry/Exit System (EES)</a> · <a href="https://bundespolizei.de/grenzkontrolle/easypass/faq-easypass" target="_blank" rel="noopener noreferrer">Bundespolizei：FAQ zu EasyPASS</a> · <a href="https://www.bmi.gv.at/202/Fremdenpolizei_und_Grenzkontrolle/Entry_Exit_System/faq_en.aspx" target="_blank" rel="noopener noreferrer">奧地利內政部：EES FAQ</a></p>
+
+<hr>
+
+<img src="assets/images/2026/ees/EES_圖卡2_指紋登記.png" alt="EES 歐盟出入境系統：第三國短期旅客第一次入境要登記護照資料、臉部影像與指紋，12 歲以上才按指紋，資料保存 3 年；轉機在第一個申根國登記；2026 年 7 月法蘭克福機場平均等候 120 分鐘">
+<h2 id="ees">第一次入境要按指紋、拍臉</h2>
+
+<p>EES 是歐盟記錄第三國短期旅客入出境的電子系統，2025 年 10 月 12 日開始分階段啟用（德國第一站是杜塞道夫機場），<strong>2026 年 4 月 10 日起在所有申根邊境全面上路</strong>。它取代護照蓋章，同時自動計算「<strong>任何 180 天內最多停留 90 天</strong>」的免簽期限——以前邊境人員要翻護照數章，現在系統直接算給你看。</p>
+
+<table>
+  <thead>
+    <tr><th>項目</th><th>內容</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>誰要登記</td><td>不需簽證或持短期簽證、在申根區停留 <strong>90 天以內</strong>的第三國旅客（台灣護照短期入境就是這一類）</td></tr>
+    <tr><td>登記什麼</td><td>護照資料、<strong>臉部影像</strong>、<strong>指紋</strong>；<strong>12 歲以下兒童只拍臉部影像</strong>，不按指紋</td></tr>
+    <tr><td>在哪裡登記</td><td><strong>第一個入境的申根國家</strong>；經其他申根國轉機，就在轉機那一國登記</td></tr>
+    <tr><td>怎麼登記</td><td>部分機場的入境區有<strong>自助機</strong>，先自己掃護照、拍照、按指紋，再到櫃台由邊境人員確認；12 歲以下兒童、沒有晶片護照的人走人工櫃台。<strong>出境沒有自助機</strong></td></tr>
+    <tr><td>保存多久</td><td>最後一次入出境後保存 <strong>3 年</strong>；逾期停留最多保存 5 年。3 年內再來，只要比對、不必重新登記</td></tr>
+    <tr><td>費用</td><td><strong>免費</strong></td></tr>
+    <tr><td>拒絕會怎樣</td><td>拒絕提供指紋或臉部影像，<strong>會被拒絕入境</strong></td></tr>
+  </tbody>
+</table>
+
+<h3>排隊排多久？</h3>
+<p>EES 上路後最大的問題是排隊。依《金融時報》與分析公司 Qsensor 的統計，<strong>2026 年 7 月法蘭克福機場的平均等候時間是 120 分鐘</strong>，去年同期是 60 分鐘；慕尼黑機場最長等到 60 分鐘，去年同期 31 分鐘。歐盟執委會則表示，單一旅客的登記平均約 70 秒，並不是每個地方都塞。</p>
+<p>夏季尖峰時，邊境機關可以在嚴重壅塞時暫停部分生物辨識登記，但這項彈性措施已在 <strong>2026 年 9 月 6 日到期</strong>。包括<strong>德國</strong>在內的 8 個成員國與瑞士，7 月就寫信要求延長，航空業者也希望延到冬季甚至 2027 年，但歐盟 9 月時沒有延長。10 月 15 日，歐盟執委會交通總署副署長 Maja Bakran Marcich 公開表示「還會有進一步的彈性」，具體措施至今還沒公布。換句話說，<strong>聖誕節與農曆年的探親潮，最好預設要排隊</strong>。</p>
+
+<p class="post-callout"><strong>💡 給來訪親友的提醒：</strong>第一次入境預留比以前更多的時間，轉機時間別訂太短；長輩如果對自助機不熟，可以直接到人工櫃台。入境後 EES 會記錄出境時間，<strong>不要逾期停留</strong>——系統會自動算出來，紀錄也會保存得更久。</p>
+
+<p class="post-sources">📚 來源：<a href="https://home-affairs.ec.europa.eu/news/entryexit-system-will-become-fully-operational-10-april-2026-2026-03-30_en" target="_blank" rel="noopener noreferrer">European Commission：The Entry/Exit System will become fully operational on 10 April 2026</a> · <a href="https://ber.berlin-airport.de/en/flying/controls/id-and-passport-control/ees.html" target="_blank" rel="noopener noreferrer">柏林布蘭登堡機場：EES</a> · <a href="https://www.lba.de/SharedDocs/Startseite_Nachrichten/EN/Aktuell/Grenzkontrollen.html" target="_blank" rel="noopener noreferrer">聯邦航空局 LBA：Waiting times at German airports are possible</a> · <a href="https://de.euronews.com/2026/08/12/neues-grenzsystem-ees-verdoppelt-warteschlangen-an-flughafen" target="_blank" rel="noopener noreferrer">Euronews：Neues Grenzsystem EES verdoppelt Warteschlangen（2026/08/12）</a> · <a href="https://newlandchase.com/schengen-ees-flexibility-lapses-as-etias-launch-appears-likely-to-move-to-2027/" target="_blank" rel="noopener noreferrer">Newland Chase：EES Flexibility Lapses（2026/09/09）</a> · <a href="https://traveltomorrow.com/eu-could-extend-flexibility-on-ees-border-checks-amid-fears-of-further-travel-disruption/" target="_blank" rel="noopener noreferrer">Travel Tomorrow：EU could extend flexibility on EES border checks（2026/08/10）</a> · <a href="https://skift.com/2026/10/15/easing-eu-border-friction-there-will-be-flexibility-official-says/" target="_blank" rel="noopener noreferrer">Skift：Easing EU Border Friction（2026/10/15）</a></p>
+
+<hr>
+
+<img src="assets/images/2026/ees/EES_圖卡3_自動通關.png" alt="EasyPASS 自動通關：持德國居留卡 12 歲以上可直接使用不必登記，只持 D 簽者限出境；台灣護照短期停留要先到聯邦警察服務處登記 EasyPASS-RTP，免費；德國 8 座機場設有閘門">
+<h2 id="easypass">德國機場的自動通關閘門</h2>
+
+<p>EasyPASS 是聯邦警察設在德國機場的<strong>自動通關閘門</strong>：把電子護照的照片頁放上讀取器，看著鏡頭讓系統比對臉部，就能通關，不必排人工櫃台。很多在德台灣人不知道，<strong>持德國居留卡就能直接使用</strong>。</p>
+
+<h3>誰可以用？</h3>
+<table>
+  <thead>
+    <tr><th>身分</th><th>怎麼用</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>歐盟、歐洲經濟區（冰島、列支敦斯登、挪威）與瑞士國民</td><td>直接使用</td></tr>
+    <tr><td>持<strong>德國居留卡</strong>的第三國國民（含台灣人）</td><td><strong>直接使用，不必事先登記</strong></td></tr>
+    <tr><td>持德國<strong>長期簽證（D 簽）</strong>的第三國國民</td><td>只能在<strong>出境</strong>時使用</td></tr>
+    <tr><td>美國、香港、韓國、<strong>台灣</strong>、英國的國民（短期停留）</td><td>先登記 <strong>EasyPASS-RTP</strong> 才能使用</td></tr>
+  </tbody>
+</table>
+<p>共同條件：<strong>12 歲以上</strong>、持有效的<strong>電子護照</strong>（台灣護照現在都是晶片護照）。過閘門前要先取下帽子和太陽眼鏡。</p>
+
+<h3>台灣護照短期停留：怎麼登記自動通關</h3>
+<ul>
+  <li><strong>地點</strong>：設有 EasyPASS 的機場裡的聯邦警察服務處（Servicebüro／Servicepoint），<strong>只能現場辦理</strong>，不能線上申請。入境查驗完成後再去即可。</li>
+  <li><strong>預約</strong>：開放時間內多半<strong>不用預約</strong>。申請表可以先從聯邦警察網站下載填好，現場比較快。</li>
+  <li><strong>流程</strong>：填問卷、簽同意書，聯邦警察查核護照真偽並比對資料庫，沒有問題就完成登記。</li>
+  <li><strong>費用與效期</strong>：<strong>免費</strong>；效期跟著護照，<strong>換新護照就要重新登記</strong>。</li>
+</ul>
+<p>註：駐德國台北代表處 2022 年的說明寫的是「18 歲以上」，聯邦警察現行網頁已改為 <strong>12 歲以上</strong>，以聯邦警察公告為準。</p>
+
+<h3>8 座機場的登記處</h3>
+<table>
+  <thead>
+    <tr><th>機場</th><th>聯邦警察服務處位置</th><th>開放時間</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><a href="https://www.google.com/maps/search/?api=1&amp;query=Flughafen+Berlin+Brandenburg+Terminal+1" target="_blank" rel="noopener noreferrer">柏林布蘭登堡（BER）</a></td><td>第 1 航廈（主航廈）Ebene 2 的 Servicepoint</td><td>24 小時</td></tr>
+    <tr><td><a href="https://www.google.com/maps/search/?api=1&amp;query=Flughafen+D%C3%BCsseldorf" target="_blank" rel="noopener noreferrer">杜塞道夫</a></td><td>中央大樓出境層</td><td>週一至週四 8:00–15:00、週五 8:00–14:00</td></tr>
+    <tr><td><a href="https://www.google.com/maps/search/?api=1&amp;query=Frankfurt+Airport+Terminal+1" target="_blank" rel="noopener noreferrer">法蘭克福</a></td><td>第 1 航廈 B 廳 Ebene 3（往 Skyline 的樓梯旁）；第 3 航廈出境層報到大廳左側（2026/4/23 新設）</td><td>每天 6:30–21:30</td></tr>
+    <tr><td><a href="https://www.google.com/maps/search/?api=1&amp;query=Hamburg+Airport+Terminal+2" target="_blank" rel="noopener noreferrer">漢堡</a></td><td>第 2 航廈 Ebene 1</td><td>4:30–24:00</td></tr>
+    <tr><td><a href="https://www.google.com/maps/search/?api=1&amp;query=Flughafen+Hannover+Terminal+B" target="_blank" rel="noopener noreferrer">漢諾威</a></td><td>B 航廈出境層的聯邦警察站</td><td>24 小時（可能要等候）</td></tr>
+    <tr><td><a href="https://www.google.com/maps/search/?api=1&amp;query=Flughafen+K%C3%B6ln%2FBonn+Terminal+1" target="_blank" rel="noopener noreferrer">科隆／波昂</a></td><td>第 1 航廈 Aufgang 5、Ebene 0（聯邦與邦警察共用的警察站）</td><td>24 小時</td></tr>
+    <tr><td><a href="https://www.google.com/maps/search/?api=1&amp;query=Munich+Airport+Center+MAC" target="_blank" rel="noopener noreferrer">慕尼黑</a></td><td>慕尼黑機場中心（MAC）Ebene 04</td><td>6:30–21:00</td></tr>
+    <tr><td><a href="https://www.google.com/maps/search/?api=1&amp;query=Flughafen+Stuttgart+Terminal+1" target="_blank" rel="noopener noreferrer">斯圖加特</a></td><td>第 1 航廈 Ebene 3 的 Servicepoint</td><td>可電話或電子郵件預約；不預約可能要等 30 分鐘以上</td></tr>
+  </tbody>
+</table>
+<p>開放時間偶有調整，出發前請以聯邦警察網站公告為準。</p>
+
+<p class="post-sources">📚 來源：<a href="https://bundespolizei.de/grenzkontrolle/easypass/faq-easypass" target="_blank" rel="noopener noreferrer">Bundespolizei：FAQ zu EasyPASS</a> · <a href="https://bundespolizei.de/grenzkontrolle/easypass/easypass-rtp" target="_blank" rel="noopener noreferrer">Bundespolizei：EasyPASS-RTP</a> · <a href="https://bundespolizei.de/grenzkontrolle/easypass/wo-gibt-es-easypass" target="_blank" rel="noopener noreferrer">Bundespolizei：Wo gibt es EasyPASS?</a> · <a href="https://www.munich-airport.de/automated-passport-control-1028169" target="_blank" rel="noopener noreferrer">慕尼黑機場：Automated passport control</a> · <a href="https://www.frankfurt-airport.com/zh/flights/transferring-at-fra/passport-and-id-checks.html" target="_blank" rel="noopener noreferrer">法蘭克福機場：護照與身分查驗</a></p>
+
+<hr>
+
+<img src="assets/images/2026/ees/EES_圖卡4_ETIAS延期.png" alt="ETIAS 歐盟旅行許可延期：原訂 2026 年底上路，官方已撤下日期，外媒報導最快 2027 年；規費 20 歐元、效期 3 年；持居留卡者不用申請；Frontex 發現上百個非官方網站，官方入口只在 europa.eu 網域">
+<h2 id="etias">歐盟旅行許可延期，現在還不用申請</h2>
+
+<p><strong>ETIAS</strong>（European Travel Information and Authorisation System，歐洲旅行資訊及授權系統）是給<strong>免簽國家旅客</strong>的線上旅行許可，概念類似美國的 ESTA。它<strong>不是簽證</strong>，台灣護照的免簽待遇不變，只是上路後，短期入境申根區前要先上網填寫、取得許可。</p>
+
+<h3>目前進度：2026 年不會上路</h3>
+<ul>
+  <li>歐盟原本預定 ETIAS 在 <strong>2026 年第四季</strong>上路。</li>
+  <li>2026 年 7 月，《金融時報》報導負責建置系統的歐盟機構 <strong>eu-LISA</strong> 已承認年底前上路「不再可行」，主因是 EES 上路後的排隊問題，歐盟想先讓 EES 穩定下來。</li>
+  <li>歐盟官方 ETIAS 網站隨後<strong>撤下「2026 年第四季」的時程</strong>，只寫系統尚未運作、不受理申請。</li>
+  <li>截至 2026 年 11 月中，<strong>官方沒有公布新的上路日期</strong>；外媒普遍預估最快 2027 年。歐盟先前承諾，確定日期會提前數個月公告。</li>
+</ul>
+
+<h3>上路後的規則（依目前公布的內容）</h3>
+<table>
+  <thead>
+    <tr><th>項目</th><th>內容</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>誰要申請</td><td>台灣等免簽國家的旅客，短期入境申根區前</td></tr>
+    <tr><td>誰不用</td><td>持<strong>德國或其他申根國居留卡</strong>、長期簽證的人；有歐盟國籍的人</td></tr>
+    <tr><td>規費</td><td><strong>20 €</strong>（2025 年從原定 7 € 調高）；<strong>未滿 18 歲與 70 歲以上免費</strong></td></tr>
+    <tr><td>效期</td><td><strong>3 年</strong>，或到護照到期為止（以先到者為準），期間可多次入境</td></tr>
+    <tr><td>審核</td><td>多數申請幾分鐘內核准，少數要人工審查；申請時要填第一個入境的申根國家</td></tr>
+    <tr><td>過渡期</td><td>依先前規劃，上路後會先有一段過渡期與寬限期，不會立刻因沒申請而無法登機</td></tr>
+  </tbody>
+</table>
+
+<h3>最要小心的：假網站</h3>
+<p>ETIAS 還沒上路，網路上卻早就有大量「代辦」網站。歐盟邊境管理局 <strong>Frontex</strong> 已發現<strong>上百個非官方 ETIAS 網站</strong>，有的宣稱已經可以申請、收取高額費用，還可能盜用個人資料。</p>
+<p class="post-callout"><strong>⚠️ 判斷原則：</strong>ETIAS <strong>目前不受理任何申請</strong>，現在要你填資料、付錢的網站都不是官方網站。正式上路後，官方入口只會在 <strong>europa.eu</strong> 網域底下（歐盟旅遊資訊網 travel-europe.europa.eu）。家裡長輩要來德國前，最好先提醒一聲。</p>
+
+<p class="post-sources">📚 來源：<a href="https://www.afar.com/magazine/europe-delays-etias-travel-authorization-until-2027" target="_blank" rel="noopener noreferrer">AFAR：Europe Delays ETIAS Travel Authorization Until 2027（2026/07/13）</a> · <a href="https://www.berliner-zeitung.de/article/nach-ees-warteschlangen-eu-verschiebt-etias-start-auf-2027-10173095" target="_blank" rel="noopener noreferrer">Berliner Zeitung：Nach EES-Warteschlangen: EU verschiebt ETIAS-Start auf 2027（2026/07/07）</a> · <a href="https://news.tourismus.com/etias-verschoben-eu-streicht-starttermin-2026-290820261/" target="_blank" rel="noopener noreferrer">tourismus.com：ETIAS verschoben: Kein Start 2026（2026/08/29）</a> · <a href="https://www.frontex.europa.eu/media-centre/news/news-release/beware-of-risks-posed-by-unofficial-etias-websites-eNZniu" target="_blank" rel="noopener noreferrer">Frontex：Beware of risks posed by unofficial ETIAS websites</a> · <a href="https://www.thelocal.de/20250718/etias-fee-for-european-travel-authorisation-set-to-increase-to-e20" target="_blank" rel="noopener noreferrer">The Local：ETIAS fee set to increase to €20</a></p>
+
+<hr>
+
+<h2 id="checkliste">出門前的檢查清單</h2>
+
+<h3>自己持德國居留卡</h3>
+<ul>
+  <li>護照＋<strong>居留卡</strong>一起帶，兩者都要在效期內。</li>
+  <li>回德國時可以直接走 <strong>EasyPASS</strong>（12 歲以上），不用在 EES 自助機登記。</li>
+  <li>居留卡換發中、只有臨時證明的人，出國前先跟外事局確認。</li>
+</ul>
+
+<h3>台灣家人朋友要來德國</h3>
+<ul>
+  <li>護照效期充足（建議至少 6 個月），回程機票、住宿資料備好。</li>
+  <li>第一次入境要按指紋、拍臉，<strong>多留通關時間</strong>，轉機別訂太緊。</li>
+  <li>ETIAS <strong>現在不用申請</strong>，也不要在任何網站付費「預先申請」。</li>
+  <li>常來德國的人，可以在機場登記 <strong>EasyPASS-RTP</strong>，之後入出境比較快。</li>
+  <li>停留不要超過「180 天內 90 天」，EES 會自動計算。</li>
+</ul>
+
+<p class="post-callout"><strong>📖 延伸閱讀：</strong>到了機場遇上班機延誤或取消，可以看〈<a href="/posts/eu261-flight-compensation.html">班機延誤、取消能拿多少？EU261 歐盟航空乘客權利完整攻略</a>〉。</p>
+
+<hr>
+
+<h2 id="sources">資料來源</h2>
+<ul>
+  <li><a href="https://home-affairs.ec.europa.eu/news/entryexit-system-will-become-fully-operational-10-april-2026-2026-03-30_en" target="_blank" rel="noopener noreferrer">European Commission（2026/03/30）：The Entry/Exit System will become fully operational on 10 April 2026</a></li>
+  <li><a href="https://ber.berlin-airport.de/en/flying/controls/id-and-passport-control/ees.html" target="_blank" rel="noopener noreferrer">Flughafen Berlin Brandenburg：Entry/Exit System (EES)</a></li>
+  <li><a href="https://www.bmi.gv.at/202/Fremdenpolizei_und_Grenzkontrolle/Entry_Exit_System/faq_en.aspx" target="_blank" rel="noopener noreferrer">Bundesministerium für Inneres（奧地利）：Entry/Exit System FAQ</a></li>
+  <li><a href="https://www.lba.de/SharedDocs/Startseite_Nachrichten/EN/Aktuell/Grenzkontrollen.html" target="_blank" rel="noopener noreferrer">Luftfahrt-Bundesamt（2026/04/01）：New Entry-Exit-System (EES): Waiting times at German airports are possible</a></li>
+  <li><a href="https://de.euronews.com/2026/08/12/neues-grenzsystem-ees-verdoppelt-warteschlangen-an-flughafen" target="_blank" rel="noopener noreferrer">Euronews（2026/08/12）：Neues Grenzsystem EES verdoppelt Warteschlangen an Flughafen</a></li>
+  <li><a href="https://newlandchase.com/schengen-ees-flexibility-lapses-as-etias-launch-appears-likely-to-move-to-2027/" target="_blank" rel="noopener noreferrer">Newland Chase（2026/09/09）：Schengen: EES Flexibility Lapses as ETIAS Launch Appears Likely to Move to 2027</a></li>
+  <li><a href="https://traveltomorrow.com/eu-could-extend-flexibility-on-ees-border-checks-amid-fears-of-further-travel-disruption/" target="_blank" rel="noopener noreferrer">Travel Tomorrow（2026/08/10）：EU could extend flexibility on EES border checks amid fears of further travel disruption</a></li>
+  <li><a href="https://skift.com/2026/10/15/easing-eu-border-friction-there-will-be-flexibility-official-says/" target="_blank" rel="noopener noreferrer">Skift（2026/10/15）：Easing EU Border Friction: There Will Be 'Flexibility,' Official Says</a></li>
+  <li><a href="https://bundespolizei.de/grenzkontrolle/easypass/faq-easypass" target="_blank" rel="noopener noreferrer">Bundespolizei：FAQ zu EasyPASS</a></li>
+  <li><a href="https://bundespolizei.de/grenzkontrolle/easypass/easypass-rtp" target="_blank" rel="noopener noreferrer">Bundespolizei：EasyPASS-RTP</a></li>
+  <li><a href="https://bundespolizei.de/grenzkontrolle/easypass/wo-gibt-es-easypass" target="_blank" rel="noopener noreferrer">Bundespolizei：Wo gibt es EasyPASS?</a></li>
+  <li><a href="https://www.munich-airport.de/automated-passport-control-1028169" target="_blank" rel="noopener noreferrer">Flughafen München：Automated passport control</a></li>
+  <li><a href="https://www.roc-taiwan.org/uploads/sites/138/2022/12/國人使用德國自動查驗通關系統說明1.pdf" target="_blank" rel="noopener noreferrer">駐德國台北代表處（2022）：國人使用德國自動查驗通關系統說明</a></li>
+  <li><a href="https://www.afar.com/magazine/europe-delays-etias-travel-authorization-until-2027" target="_blank" rel="noopener noreferrer">AFAR（2026/07/13）：Europe Delays ETIAS Travel Authorization Until 2027</a></li>
+  <li><a href="https://www.berliner-zeitung.de/article/nach-ees-warteschlangen-eu-verschiebt-etias-start-auf-2027-10173095" target="_blank" rel="noopener noreferrer">Berliner Zeitung（2026/07/07）：Nach EES-Warteschlangen: EU verschiebt ETIAS-Start auf 2027</a></li>
+  <li><a href="https://news.tourismus.com/etias-verschoben-eu-streicht-starttermin-2026-290820261/" target="_blank" rel="noopener noreferrer">tourismus.com（2026/08/29）：ETIAS verschoben: Kein Start 2026</a></li>
+  <li><a href="https://www.frontex.europa.eu/media-centre/news/news-release/beware-of-risks-posed-by-unofficial-etias-websites-eNZniu" target="_blank" rel="noopener noreferrer">Frontex：Beware of risks posed by unofficial ETIAS websites</a></li>
+  <li><a href="https://www.thelocal.de/20250718/etias-fee-for-european-travel-authorisation-set-to-increase-to-e20" target="_blank" rel="noopener noreferrer">The Local（2025/07/18）：ETIAS fee for European travel authorisation set to increase to €20</a></li>
+  <li><a href="https://pinmap.co/europe-etias-ees/" target="_blank" rel="noopener noreferrer">打卡世界（2026/07）：ETIAS 是什麼？台灣 2026 入境 ETIAS、EES 新制攻略</a></li>
+</ul>]]></content:encoded>
   </item>
   <item>
     <title>班機延誤、取消能拿多少？EU261 歐盟航空乘客權利完整攻略（含 2027 新制）</title>
