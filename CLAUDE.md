@@ -118,7 +118,9 @@
   `trophy` 獎盃＋足球（賽事）、`piggybank` 小豬撲滿＋金幣（兒童儲蓄／長期資本累積）、
   `shieldeye` 盾牌＋監看之眼（情報機關／國安權限）、`agelimit` 啤酒杯＋年齡徽章（青少年保護）、
   `heathealth` 生命徵象監測＋烈日（高溫致死／健康衝擊）、`harvest` 麥穗＋乾裂土地（乾旱歉收）、
-  `airplane` 側面客機＋金色時鐘（班機延誤／航空權益）、`boardingpass` 登機證＋歐盟星環（適用範圍／歐盟規範）。
+  `airplane` 側面客機＋金色時鐘（班機延誤／航空權益）、`boardingpass` 登機證＋歐盟星環（適用範圍／歐盟規範）、
+  `fingerscan` EES 自助機＋指紋徽章（生物辨識登記／邊境查驗）、`egate` 自動通關閘門＋電子護照（EasyPASS）、
+  `webpermit` 網頁申請表＋沙漏徽章（線上旅行許可／制度延期）。
   新主題若無合適元件，**依設計哲學新增一個**，不要湊合。
 - **Seedling Flat 鐵則**（詳見 `design_philosophy_seedling_flat.md`）：
   描邊一律 #1F2937（5px @1080）；每卡限「主題色＋金 #F0C24B＋白」三色系；
