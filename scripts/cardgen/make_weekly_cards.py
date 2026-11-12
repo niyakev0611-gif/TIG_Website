@@ -2321,6 +2321,32 @@ def illu_steeringwheel(d, R, S, cx, cy, theme):
     d.polygon(R(gx-6, cy-46, gx+6, cy-46, gx+6, cy-24, gx+13, cy-24, gx, cy-11,
                 gx-13, cy-24, gx-6, cy-24), fill=tint(theme, 0.55), outline=OUTLINE, width=3*S)
 
+def illu_surveyshield(d, R, S, cx, cy, theme):
+    """問卷夾板＋金色警示盾牌（暗數調查／組織內部不當行為）"""
+    ow = 5*S
+    _dots(d, R, cx, cy, ((-74, -42, 3, GOLD), (-72, 40, 3, tint(theme, 0.5)),
+                         (70, -50, 3, theme)))
+    d.ellipse(R(cx-62, cy+46, cx+30, cy+56), fill=tint(theme, 0.18))
+    # 夾板本體（主題色）＋白色問卷紙
+    d.rounded_rectangle(R(cx-60, cy-42, cx+14, cy+48), radius=8*S, fill=theme,
+                        outline=OUTLINE, width=ow)
+    d.rectangle(R(cx-50, cy-30, cx+4, cy+40), fill='white', outline=OUTLINE, width=3*S)
+    # 夾子
+    d.rounded_rectangle(R(cx-36, cy-50, cx-10, cy-36), radius=4*S,
+                        fill=tint(theme, 0.55), outline=OUTLINE, width=4*S)
+    # 三列勾選框（第一列已勾）
+    for i, yy in enumerate((cy-18, cy+2, cy+22)):
+        d.rectangle(R(cx-44, yy-6, cx-32, yy+6), fill='white', outline=OUTLINE, width=3*S)
+        d.line(R(cx-26, yy, cx-4, yy), fill=tint(theme, 0.45), width=4*S)
+        if i == 0:
+            d.line(R(cx-42, yy, cx-38, yy+4, cx-33, yy-5), fill=theme, width=3*S, joint='curve')
+    # 焦點細節：金色盾牌＋驚嘆號
+    sx, sy = cx+42, cy+6
+    d.polygon(R(sx-24, sy-26, sx+24, sy-26, sx+24, sy+2, sx, sy+30, sx-24, sy+2),
+              fill=GOLD, outline=OUTLINE, width=ow)
+    d.line(R(sx, sy-16, sx, sy+4), fill=OUTLINE, width=5*S)
+    d.ellipse(R(sx-3, sy+10, sx+3, sy+16), fill=OUTLINE)
+
 ILLUS = dict(podium=illu_podium, flags=illu_flags, coins=illu_coins,
              idcard=illu_idcard, camera=illu_camera, trophy=illu_trophy,
              bankcard=illu_bankcard, checklist=illu_checklist,
@@ -2360,7 +2386,7 @@ ILLUS = dict(podium=illu_podium, flags=illu_flags, coins=illu_coins,
              nuclearbarrel=illu_nuclearbarrel, barometer=illu_barometer,
              airplane=illu_airplane, boardingpass=illu_boardingpass,
              onlineregister=illu_onlineregister, bearing=illu_bearing,
-             steeringwheel=illu_steeringwheel)
+             steeringwheel=illu_steeringwheel, surveyshield=illu_surveyshield)
 
 # ── 版型 ────────────────────────────────────────────────────
 
@@ -2681,75 +2707,75 @@ def make_chart_card(spec, path, week_label='W?', date_label=''):
 # ════════════════════════════════════════════════════════════
 # 每週卡片內容（範本：W29）——之後每週改這一段即可
 # ════════════════════════════════════════════════════════════
-WEEK = 'W45'
-DATE_RANGE = '2026/11/02-11/08'
+WEEK = 'W46'
+DATE_RANGE = '2026/11/09-11/15'
 
 CARDS = [
  dict(
-  theme='#0D9488', badges=[('數位行政', True), ('住址登記', False)], illu='onlineregister',
-  title='住址登記全面上網：12/1 起各地都要提供',
-  subtitle='內閣 11/4 通過行政命令，所有登記機關都須開放線上辦理遷入與遷居登記',
-  stats=[('12/1', '命令預計生效日'),
-         ('約 3,800 個', '已接入系統的登記機關')],
+  theme='#2E8B57', badges=[('經濟與退休', True), ('年度報告', False)], illu='barometer',
+  title='政府經濟顧問建議取消「63 歲退休」',
+  subtitle='經濟專家委員會 11/11 年度報告：成長上修，但要求撙節',
+  stats=[('1.3%', '2026 年經濟成長預測'),
+         ('1.0%', '2027 年成長預測（原 0.8%）')],
   bullets=[
-   ('怎麼辦', '透過 wohnsitzanmeldung.gov.de 申請，需 BundID 帳號與證件晶片的線上身分功能。'),
-   ('法律性質', '屬聯邦行政命令，不必經國會審議；系統由漢堡邦（Hamburg）開發後推廣全國。'),
-   ('涵蓋範圍', '官方稱已可服務約 7,420 萬人；各地進度不一，可先在入口網站查詢新地址。'),
+   ('成長動能', '出口回溫，加上政府在基礎建設、氣候保護與國防的支出；春季時受伊朗戰爭衝擊只估 0.5%。'),
+   ('退休建議', '取消繳滿 45 年即可提前領全額的「63 歲退休」，並撤回已通過的母親年金（Mütterrente）擴大。'),
+   ('財政警訊', '聯邦與社會保險支出成長快於收入，委員會認為光靠經濟成長補不了缺口。'),
   ],
-  takeaway=('因應建議', '剛入境、還沒拿到電子居留卡（eAT）的人多半仍須臨櫃；房東開的入住證明（Wohnungsgeberbestätigung）不可少。'),
-  file='W45_圖卡1_住址登記全面上網.png'),
+  takeaway=('政策觀察', '報告沒有約束力；總理 Merz 接受報告時表示大致認同，但退休議題牽動聯合執政的 SPD，能否落實仍是未知數。'),
+  file='W46_圖卡1_經濟顧問建議取消63歲退休.png'),
  dict(
-  theme='#C0392B', badges=[('汽車產業', True), ('人力縮編', False)], illu='bearing',
-  title='Schaeffler 再減 2,660 個職位、關四據點',
-  subtitle='11/3 公布新撙節方案：歐洲共減 3,460 個職位，2027–28 年執行',
-  stats=[('2,660 個', '德國境內淨減職位'),
-         ('3 億歐元', '2030 年起每年節省目標')],
+  theme='#D4740E', badges=[('能源', True), ('瓦斯費', False)], illu='gastank',
+  title='瓦斯費 2027/10 起多收儲備附加費',
+  subtitle='內閣 11/11 通過草案，戰略儲備費用由瓦斯用戶分攤',
+  stats=[('24 TWh', '儲備目標（約儲氣容量一成）'),
+         ('約 4–7 €', '一般家庭每年估計多付')],
   bullets=[
-   ('關閉據點', '多特蒙德約 430 人、Morbach 約 160 人（皆做燃油引擎零件）、柏林約 270 人；Schwalbach 則多數轉調法蘭克福。'),
-   ('怎麼減', '依 2018 年與 IG Metall 的未來協議，原則上不做經營性解僱，以自然離職、轉調、自願離職與提前退休為主。'),
-   ('勞方反應', 'IG Metall 與員工代表會批評減員方案一輪接一輪，要求德國據點的未來方案。'),
+   ('用途', '只在極端情況、破壞事件等危機時動用；Reiche 強調儲備「保的是危機，不是高價」。'),
+   ('費率', '每度約 0.03–0.04 歐分，遠低於 2026 年初取消的舊儲氣附加費（每度 0.289 歐分）。'),
+   ('配套', '現行儲氣設施法定填充率規定 2027 年 3 月底到期、不再延長；一次性建置成本估 12.6 億至 18.1 億歐元。'),
   ],
-  takeaway=('產業全景', '聯邦統計局：2026 年中汽車業就業 69.15 萬人、年減 4.23 萬，為 2005 年有統計以來最低。'),
-  file='W45_圖卡2_Schaeffler再減兩千六百職位.png'),
+  takeaway=('影響評估', '附加費本身對荷包影響有限；更有感的是多家基本供應業者已宣布 1/1 起調高瓦斯價格。草案仍待聯邦議院審議。'),
+  file='W46_圖卡2_瓦斯費加收儲備附加費.png'),
  dict(
-  theme='#D4740E', badges=[('油價', True), ('法案草案', False)], illu='fuelpump',
-  title='油價上限法草案：須連三週高於歐盟均價',
-  subtitle='經濟部《燃料最高價格法》草案進入部會協調，目標 2027 年上路',
-  stats=[('3 週', '油價須連續偏高才可啟動'),
-         ('3 個月', '上限每次最長實施期間')],
+  theme='#2563EB', badges=[('汽車產業', True), ('撙節', False)], illu='carplant',
+  title='賓士凍結在德投資、福斯喊停總廠改造',
+  subtitle='兩大車廠接連縮手，Audi、BMW 同步撙節',
+  stats=[('2 座', '賓士不排除關閉的德國廠'),
+         ('逾 47,000 個', '福斯 2030 年前累計減少職位')],
   bullets=[
-   ('啟動門檻', '汽油與柴油連續三週、每週都比其他歐盟國家平均高出 5 個百分點以上（依歐盟執委會數據），再由政府發布命令啟動。'),
-   ('制度設計', '參考盧森堡與比利時；各邦可訂不同上限、供應吃緊時可暫停，違規加油站最高罰 10 萬歐元。'),
-   ('各方批評', '獨立加油站協會（bft）稱是「官僚怪獸」；德國工會聯合會（DGB）認為門檻太高、幾乎不會生效。'),
+   ('賓士', '11/12 宣布暫停所有在德新投資，要求延長工時不加薪、刪減獎金，不排除關閉兩座廠。'),
+   ('福斯', '喊停 Wolfsburg 大型壓鑄計畫，勞方指控違約；10/23 再減 12,000 個職位，與既有 35,000 個累計。'),
+   ('Audi／BMW', 'Audi 啟動「壞天氣條款」重談協議；BMW 二度下修財測，自願離職方案不到三週就提前關閉。'),
   ],
-  takeaway=('觀察重點', '眼前更有感的是燃油稅減免 12/31 到期，1 月起每公升稅額回升約 17 分（含加值稅）；草案內容仍可能修改。'),
-  file='W45_圖卡3_油價上限法草案.png'),
+  takeaway=('因應建議', '簽合意解約（Aufhebungsvertrag）前，先確認是否觸發失業給付等待期（Sperrzeit）。'),
+  file='W46_圖卡3_賓士凍結投資福斯喊停改造.png'),
  dict(
-  theme='#2E8B57', badges=[('交通', True), ('駕照', False)], illu='steeringwheel',
-  title='駕照改革通過：目標壓低 3,400 € 考照費',
-  subtitle='聯邦議院 11/5 通過，主要新規 2027/7/1 生效，仍待聯邦參議院同意',
-  stats=[('約 3,400 €', '目前考駕照的平均花費'),
-         ('2027/7/1', '主要新規預計生效日')],
+  theme='#C0392B', badges=[('勞資協商', True), ('IG Metall', False)], illu='protestsign',
+  title='IG Metall 決議發動 24 小時警告罷工',
+  subtitle='總部 11/12 全票通過、2018 年以來首次；約 370 萬名員工適用',
+  stats=[('逾 40 萬人', '首波警告罷工參與人次'),
+         ('5%', '工會要求的 12 個月加薪幅度')],
   bullets=[
-   ('理論數位化', '理論課可全程線上、不必到班；B 類路考駕駛時間從 30 分鐘減為 25 分鐘。'),
-   ('特殊駕駛', '郊區、高速公路、夜間駕駛不再規定 12 趟，改由教練依學員程度決定趟數。'),
-   ('親友陪練', '考過理論、上滿 6 堂課後，可由駕照滿 7 年的近親陪練；各邦須另訂命令才實施。'),
+   ('雙方差距', '資方提 2027 年一次性給付、2028 年 7 月起才調薪 1.3%；工會要求加薪 5% 並保障就業。'),
+   ('升級程序', '各工會區 11/11 提出申請、總部 11/12 全票通過；選定工廠 11/13 起投票，會員過半才實施。'),
+   ('下一步', '哪些工廠、哪一天罷工尚未公布；第四輪協商仍未排定。'),
   ],
-  takeaway=('各方觀點', '交通部長 Bilger 稱最多可省 1,000 €，駕訓教練協會認為不切實際；AfD、綠黨（Grüne）與左翼黨（Die Linke）反對。'),
-  file='W45_圖卡4_駕照改革通過.png'),
+  takeaway=('觀察重點', '全天罷工會讓產線整天停擺，車廠與供應商首當其衝；罷工期間雇主不必支薪，工會會員可申請罷工津貼。'),
+  file='W46_圖卡4_IGMetall決議24小時罷工.png'),
  dict(
-  theme='#7C3AED', badges=[('移民與就業', True), ('勞動市場', False)], illu='crane',
-  title='西巴爾幹工作名額減半至 2.5 萬',
-  subtitle='內閣 11/4 通過勞動部命令，2027 年 1 月起適用，仍待聯邦參議院同意',
-  stats=[('25,000 人', '2027 年起每年核准上限'),
-         ('約 9,000 人', '營建業估計將少掉的人力')],
+  theme='#7C3AED', badges=[('國防軍', True), ('職場性騷擾', False)], illu='surveyshield',
+  title='國防軍調查：72% 女軍人遭言語性騷擾',
+  subtitle='國防部 11/11 公布暗數研究，宣布 34 項行動計畫',
+  stats=[('72%', '女性軍人曾遭言語性騷擾'),
+         ('3–6 倍', '實際案件相對於通報數')],
   bullets=[
-   ('適用國家', '阿爾巴尼亞、波士尼亞與赫塞哥維納、科索沃、蒙特內哥羅、北馬其頓、塞爾維亞六國公民，不必有認可學歷即可來德工作。'),
-   ('政策依據', '聯盟黨與 SPD 的執政協議早已寫明減半；勞動部長 Schweitzer 提案，內閣不顧多方反對照案通過。'),
-   ('反對聲浪', '據內閣提案資料，主要經濟團體、聯邦勞動署與七個邦都反對；營建業公會要求撤回，零售業公會 HDE 主張乾脆取消名額。'),
+   ('調查方式', '由國防軍軍事史與社會科學中心（ZMSBw）執行，問卷回收率約 18%，結果已向聯邦議院國防委員會報告。'),
+   ('男性也受害', '男性軍人有 31% 曾遭言語性騷擾；肢體侵害與性暴力的比例各報導數字不一，有待原始報告確認。'),
+   ('因應措施', '34 項行動計畫，包括在 Koblenz 的內部領導中心設立申訴專線；18 個月內再做一次調查。'),
   ],
-  takeaway=('數據解讀', '名額 2025 年就已用罄，12 月約 1.8 萬件申請被拒；今年 9 月約 54.6 萬名六國公民在德從事須繳社會保險的工作。'),
-  file='W45_圖卡5_西巴爾幹名額減半.png'),
+  takeaway=('後續影響', '國防軍正全力擴充兵員；國防監察專員 Otte 警告結果恐讓有意從軍的女性卻步，反歧視專員 Ataman 要求追究加害者。'),
+  file='W46_圖卡5_國防軍性騷擾暗數研究.png'),
 ]
 
 # ── 邦名德文全名檢查 ────────────────────────────────────────
