@@ -2321,6 +2321,94 @@ def illu_steeringwheel(d, R, S, cx, cy, theme):
     d.polygon(R(gx-6, cy-46, gx+6, cy-46, gx+6, cy-24, gx+13, cy-24, gx, cy-11,
                 gx-13, cy-24, gx-6, cy-24), fill=tint(theme, 0.55), outline=OUTLINE, width=3*S)
 
+def illu_fingerscan(d, R, S, cx, cy, theme):
+    """EES 自助機＋指紋徽章（生物辨識登記／邊境查驗）"""
+    ow = 5*S
+    _dots(d, R, cx, cy, ((-72, -46, 3, GOLD), (40, -54, 3, tint(theme, 0.5)),
+                         (-74, 34, 3, theme)))
+    d.ellipse(R(cx-62, cy+46, cx+36, cy+56), fill=tint(theme, 0.18))
+    # 機身（主題色）
+    d.rounded_rectangle(R(cx-62, cy-48, cx+26, cy+46), radius=12*S,
+                        fill=theme, outline=OUTLINE, width=ow)
+    # 螢幕：護照頁＋大頭照
+    d.rounded_rectangle(R(cx-50, cy-38, cx+14, cy-4), radius=6*S,
+                        fill='white', outline=OUTLINE, width=3*S)
+    d.rounded_rectangle(R(cx-42, cy-31, cx-24, cy-11), radius=3*S, fill=tint(theme, 0.3))
+    d.ellipse(R(cx-37, cy-28, cx-29, cy-20), fill=theme)
+    for dy, w in ((-27, 26), (-19, 18)):
+        d.line(R(cx-16, cy+dy, cx-16+w, cy+dy), fill='#9CA3AF', width=4*S)
+    # 指紋玻璃板＋金色掃描線
+    d.rounded_rectangle(R(cx-44, cy+6, cx+8, cy+34), radius=6*S,
+                        fill=tint(theme, 0.25), outline=OUTLINE, width=3*S)
+    d.line(R(cx-40, cy+20, cx+4, cy+20), fill=GOLD, width=4*S)
+    # 焦點細節：白底指紋徽章
+    fx, fy, fr = cx+50, cy+8, 26
+    d.ellipse(R(fx-fr, fy-fr, fx+fr, fy+fr), fill='white', outline=OUTLINE, width=ow)
+    for ry, a0, a1 in ((17, 125, 415), (12, 105, 395), (7, 140, 430)):
+        rx = ry*0.72
+        d.arc(R(fx-rx, fy-ry, fx+rx, fy+ry), start=a0, end=a1, fill=theme, width=7)
+    d.line(R(fx, fy-2, fx, fy+3), fill=theme, width=7)
+
+def illu_webpermit(d, R, S, cx, cy, theme):
+    """網頁申請表＋金色沙漏徽章（線上旅行許可／制度延期）"""
+    ow = 5*S
+    _dots(d, R, cx, cy, ((-74, -50, 3, GOLD), (30, -56, 3, tint(theme, 0.5)),
+                         (-76, 36, 3, theme)))
+    d.ellipse(R(cx-64, cy+46, cx+36, cy+56), fill=tint(theme, 0.18))
+    # 瀏覽器視窗＋標題列
+    d.rounded_rectangle(R(cx-68, cy-46, cx+32, cy+42), radius=9*S,
+                        fill='white', outline=OUTLINE, width=ow)
+    d.rounded_rectangle(R(cx-66, cy-44, cx+30, cy-26), radius=7*S, fill=theme)
+    d.rectangle(R(cx-66, cy-33, cx+30, cy-26), fill=theme)
+    d.line(R(cx-68, cy-26, cx+32, cy-26), fill=OUTLINE, width=3*S)
+    for k in range(3):
+        x = cx-56 + k*10
+        d.ellipse(R(x-3, cy-38, x+3, cy-32), fill='white')
+    # 表單欄位（淡色）＋未啟用的送出鈕
+    for dy, w in ((-14, 70), (0, 56), (14, 64)):
+        d.rounded_rectangle(R(cx-56, cy+dy-4, cx-56+w, cy+dy+4), radius=3*S,
+                            fill=tint(theme, 0.25))
+    d.rounded_rectangle(R(cx-56, cy+24, cx-18, cy+34), radius=4*S, fill=tint(theme, 0.5))
+    # 焦點細節：白底金色沙漏徽章（尚未開放）
+    hx, hy, hr = cx+50, cy+18, 26
+    d.ellipse(R(hx-hr, hy-hr, hx+hr, hy+hr), fill='white', outline=OUTLINE, width=ow)
+    d.polygon(R(hx-11, hy-13, hx+11, hy-13, hx, hy), fill=GOLD, outline=OUTLINE, width=2*S)
+    d.polygon(R(hx, hy, hx+11, hy+13, hx-11, hy+13), fill=GOLD, outline=OUTLINE, width=2*S)
+    for y0 in (hy-16, hy+13):
+        d.line(R(hx-13, y0+1.5, hx+13, y0+1.5), fill=theme, width=4*S)
+
+def illu_egate(d, R, S, cx, cy, theme):
+    """自動通關閘門＋電子護照（EasyPASS／自動查驗通關）"""
+    ow = 5*S
+    _dots(d, R, cx, cy, ((-70, -50, 3, GOLD), (8, -56, 3, tint(theme, 0.5)),
+                         (74, -40, 3, theme)))
+    d.ellipse(R(cx-72, cy+46, cx+30, cy+56), fill=tint(theme, 0.18))
+    # 地面金色箭頭（通行方向）
+    d.polygon(R(cx-50, cy+38, cx+2, cy+38, cx+2, cy+32, cx+14, cy+42,
+                cx+2, cy+52, cx+2, cy+46, cx-50, cy+46), fill=GOLD)
+    # 頂部燈箱
+    d.rounded_rectangle(R(cx-70, cy-48, cx+28, cy-32), radius=6*S,
+                        fill='white', outline=OUTLINE, width=ow)
+    d.line(R(cx-58, cy-40, cx-34, cy-40), fill=tint(theme, 0.6), width=4*S)
+    d.ellipse(R(cx+8, cy-45, cx+18, cy-35), fill=theme)
+    # 兩側立柱＋半開玻璃門
+    for x0 in (cx-66, cx+4):
+        d.rounded_rectangle(R(x0, cy-28, x0+20, cy+34), radius=5*S,
+                            fill=theme, outline=OUTLINE, width=ow)
+    d.rounded_rectangle(R(cx-42, cy-12, cx-28, cy+24), radius=4*S,
+                        fill=tint(theme, 0.2), outline=OUTLINE, width=3*S)
+    d.rounded_rectangle(R(cx-14, cy-12, cx+0, cy+24), radius=4*S,
+                        fill=tint(theme, 0.2), outline=OUTLINE, width=3*S)
+    # 左柱上的護照讀取器
+    d.rounded_rectangle(R(cx-63, cy-18, cx-49, cy-6), radius=2*S, fill=GOLD)
+    # 焦點細節：電子護照（金色國徽圓＋晶片標）
+    px0, py0, px1, py1 = cx+36, cy-22, cx+76, cy+30
+    d.rounded_rectangle(R(px0, py0, px1, py1), radius=6*S,
+                        fill=theme, outline=OUTLINE, width=ow)
+    d.ellipse(R(px0+11, py0+10, px1-11, py0+28), fill=GOLD)
+    d.rounded_rectangle(R(px0+12, py1-16, px1-12, py1-8), radius=2*S, outline=GOLD, width=3*S)
+    d.line(R(px0+20, py1-12, px1-20, py1-12), fill=GOLD, width=2*S)
+
 ILLUS = dict(podium=illu_podium, flags=illu_flags, coins=illu_coins,
              idcard=illu_idcard, camera=illu_camera, trophy=illu_trophy,
              bankcard=illu_bankcard, checklist=illu_checklist,
@@ -2360,7 +2448,9 @@ ILLUS = dict(podium=illu_podium, flags=illu_flags, coins=illu_coins,
              nuclearbarrel=illu_nuclearbarrel, barometer=illu_barometer,
              airplane=illu_airplane, boardingpass=illu_boardingpass,
              onlineregister=illu_onlineregister, bearing=illu_bearing,
-             steeringwheel=illu_steeringwheel)
+             steeringwheel=illu_steeringwheel,
+             fingerscan=illu_fingerscan, egate=illu_egate,
+             webpermit=illu_webpermit)
 
 # ── 版型 ────────────────────────────────────────────────────
 

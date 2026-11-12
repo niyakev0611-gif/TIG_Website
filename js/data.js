@@ -3,6 +3,224 @@
 
 const POSTS = [
   {
+    slug: 'schengen-ees-etias-easypass',
+    title: '入境歐洲新制一次看懂：EES 指紋登記、EasyPASS 自動通關、ETIAS 延期（在德台灣人版）',
+    date: '2026-11-13',
+    categories: ['德國生活', '旅行'],
+    tags: ['EES', 'ETIAS', 'EasyPASS', '出入境', '自動通關', '居留卡', '申根', '旅行', '德國生活'],
+    excerpt: '歐盟出入境系統 EES 從 2026 年 4 月 10 日起在所有申根邊境全面上路，護照不再蓋章，改成登記指紋與臉部影像；原訂 2026 年底上路的旅行許可 ETIAS 則又延期，官方已撤下日期。這三個新名詞對在德台灣人來說，規定依身分完全不同：持德國居留卡的人 EES 不用登記、ETIAS 不用申請，而且 12 歲以上可以直接走 EasyPASS 自動通關；來德國探親的台灣家人朋友，第一次入境要按指紋、拍臉，想用自動通關要先登記 EasyPASS-RTP。這篇整理三種身分的對照表、EES 的實際流程與排隊狀況、德國 8 座機場的 EasyPASS 登記處，以及 ETIAS 目前的進度與假網站陷阱。',
+    emoji: '🛂',
+    content: `
+<p class="post-meta-line"><em>德國知識小種子｜2026.11.13 發表 · 旅行與居留</em></p>
+
+<p>從 2026 年 4 月 10 日起，進出申根區的<strong>第三國短期旅客，護照不再蓋入出境章</strong>，改由歐盟的<strong>出入境系統 EES</strong>（Entry/Exit System，德文 Einreise-/Ausreisesystem）用電子方式記錄，第一次入境要按指紋、拍臉部影像。再加上已經喊了好幾年、卻一延再延的<strong>旅行許可 ETIAS</strong>，以及德國機場的<strong>自動通關閘門 EasyPASS</strong>，三個名字常被混在一起講。</p>
+
+<p>對在德台灣人來說，這三件事<strong>要不要做，幾乎完全看你的身分</strong>：自己持德國居留卡，和來探親的爸媽、來玩的朋友，規定完全不同。這篇把三種身分分開整理，讓你出門前、親友來訪前都知道要準備什麼。</p>
+
+<p class="post-callout"><strong>📌 先講結論：</strong>持<strong>德國居留卡</strong>的人，EES 不用登記、ETIAS 不用申請，12 歲以上還可以直接走 <strong>EasyPASS 自動通關</strong>，不必事先登記。用<strong>台灣護照短期來訪</strong>的家人朋友，第一次入境要按指紋、拍臉；ETIAS <strong>目前還不受理申請</strong>，現在任何要你付錢「申請 ETIAS」的網站都不是官方網站。本文資料截至 2026 年 11 月中，規定以聯邦警察（Bundespolizei）與歐盟官方公告為準。</p>
+
+<nav class="post-toc" aria-label="本篇目錄">
+  <p class="post-toc__title">快速跳轉</p>
+  <ul>
+    <li><a href="#identitaet">你是哪一種？三種身分對照表</a></li>
+    <li><a href="#ees">EES：第一次入境要按指紋、拍臉</a></li>
+    <li><a href="#easypass">EasyPASS：德國機場的自動通關</a></li>
+    <li><a href="#etias">ETIAS：延期，現在還不用申請</a></li>
+    <li><a href="#checkliste">出門前的檢查清單</a></li>
+    <li><a href="#sources">資料來源</a></li>
+  </ul>
+</nav>
+
+<img src="assets/images/2026/ees/EES_圖卡1_三種身分.png" alt="入境歐洲新制三種身分對照：持德國居留卡的人 EES 不用登記、ETIAS 不用申請、12 歲以上可直接走 EasyPASS；台灣親友短期來訪第一次入境要按指紋拍臉；有德國籍者用德國護照或身分證，EES 與 ETIAS 都不適用">
+<h2 id="identitaet">你是哪一種？三種身分對照表</h2>
+
+<table>
+  <thead>
+    <tr><th>身分</th><th>EES 登記</th><th>ETIAS（上路後）</th><th>EasyPASS 自動通關</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>持德國居留卡</strong>（Aufenthaltstitel）的台灣人</td><td><strong>不用</strong>，入出境出示居留卡</td><td><strong>不用</strong></td><td>12 歲以上<strong>直接使用</strong>，不必事先登記</td></tr>
+    <tr><td>持德國<strong>長期簽證</strong>（D 簽）、還沒拿到居留卡</td><td><strong>不用</strong></td><td><strong>不用</strong></td><td>只能在<strong>出境</strong>時使用</td></tr>
+    <tr><td>用<strong>台灣護照短期來訪</strong>（觀光、探親、出差，90 天以內）</td><td>第一次入境<strong>要登記</strong>指紋與臉部影像</td><td><strong>要申請</strong></td><td>先到聯邦警察服務處登記 <strong>EasyPASS-RTP</strong>（免費）</td></tr>
+    <tr><td>有<strong>德國籍或其他歐盟國籍</strong>（含雙重國籍）</td><td>不適用</td><td>不用</td><td>直接使用</td></tr>
+  </tbody>
+</table>
+
+<p>幾個要注意的地方：</p>
+<ul>
+  <li><strong>居留卡一定要隨身帶。</strong>EES 免登記的前提是你能證明自己不是短期旅客；邊境人員要看到居留卡，才知道不用替你建 EES 紀錄。只帶護照出門，就可能被當成短期旅客處理。</li>
+  <li><strong>持居留卡的人不用在 EES 自助機登記</strong>，直接走 EasyPASS 或人工櫃台即可。</li>
+  <li><strong>雙重國籍的人，入出境申根區請出示德國（或其他歐盟國家）的護照或身分證。</strong>拿台灣護照走，會被當成第三國旅客。</li>
+  <li><strong>居留卡正在換發</strong>、手上只有臨時證明（Fiktionsbescheinigung）的人，出國前最好先向外事局（Ausländerbehörde）確認能不能順利入出境。</li>
+</ul>
+
+<p class="post-sources">📚 來源：<a href="https://ber.berlin-airport.de/en/flying/controls/id-and-passport-control/ees.html" target="_blank" rel="noopener noreferrer">柏林布蘭登堡機場：Entry/Exit System (EES)</a> · <a href="https://bundespolizei.de/grenzkontrolle/easypass/faq-easypass" target="_blank" rel="noopener noreferrer">Bundespolizei：FAQ zu EasyPASS</a> · <a href="https://www.bmi.gv.at/202/Fremdenpolizei_und_Grenzkontrolle/Entry_Exit_System/faq_en.aspx" target="_blank" rel="noopener noreferrer">奧地利內政部：EES FAQ</a></p>
+
+<hr>
+
+<img src="assets/images/2026/ees/EES_圖卡2_指紋登記.png" alt="EES 歐盟出入境系統：第三國短期旅客第一次入境要登記護照資料、臉部影像與指紋，12 歲以上才按指紋，資料保存 3 年；轉機在第一個申根國登記；2026 年 7 月法蘭克福機場平均等候 120 分鐘">
+<h2 id="ees">EES：第一次入境要按指紋、拍臉</h2>
+
+<p>EES 是歐盟記錄第三國短期旅客入出境的電子系統，2025 年 10 月 12 日開始分階段啟用（德國第一站是杜塞道夫機場），<strong>2026 年 4 月 10 日起在所有申根邊境全面上路</strong>。它取代護照蓋章，同時自動計算「<strong>任何 180 天內最多停留 90 天</strong>」的免簽期限——以前邊境人員要翻護照數章，現在系統直接算給你看。</p>
+
+<table>
+  <thead>
+    <tr><th>項目</th><th>內容</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>誰要登記</td><td>不需簽證或持短期簽證、在申根區停留 <strong>90 天以內</strong>的第三國旅客（台灣護照短期入境就是這一類）</td></tr>
+    <tr><td>登記什麼</td><td>護照資料、<strong>臉部影像</strong>、<strong>指紋</strong>；<strong>12 歲以下兒童只拍臉部影像</strong>，不按指紋</td></tr>
+    <tr><td>在哪裡登記</td><td><strong>第一個入境的申根國家</strong>；經其他申根國轉機，就在轉機那一國登記</td></tr>
+    <tr><td>怎麼登記</td><td>部分機場的入境區有<strong>自助機</strong>，先自己掃護照、拍照、按指紋，再到櫃台由邊境人員確認；12 歲以下兒童、沒有晶片護照的人走人工櫃台。<strong>出境沒有自助機</strong></td></tr>
+    <tr><td>保存多久</td><td>最後一次入出境後保存 <strong>3 年</strong>；逾期停留最多保存 5 年。3 年內再來，只要比對、不必重新登記</td></tr>
+    <tr><td>費用</td><td><strong>免費</strong></td></tr>
+    <tr><td>拒絕會怎樣</td><td>拒絕提供指紋或臉部影像，<strong>會被拒絕入境</strong></td></tr>
+  </tbody>
+</table>
+
+<h3>排隊排多久？</h3>
+<p>EES 上路後最大的問題是排隊。依《金融時報》與分析公司 Qsensor 的統計，<strong>2026 年 7 月法蘭克福機場的平均等候時間是 120 分鐘</strong>，去年同期是 60 分鐘；慕尼黑機場最長等到 60 分鐘，去年同期 31 分鐘。歐盟執委會則表示，單一旅客的登記平均約 70 秒，並不是每個地方都塞。</p>
+<p>夏季尖峰時，邊境機關可以在嚴重壅塞時暫停部分生物辨識登記，但這項彈性措施已在 <strong>2026 年 9 月 6 日到期</strong>。包括<strong>德國</strong>在內的 8 個成員國與瑞士，7 月就寫信要求延長，航空業者也希望延到冬季甚至 2027 年，但歐盟 9 月時沒有延長。10 月 15 日，歐盟執委會交通總署副署長 Maja Bakran Marcich 公開表示「還會有進一步的彈性」，具體措施至今還沒公布。換句話說，<strong>聖誕節與農曆年的探親潮，最好預設要排隊</strong>。</p>
+
+<p class="post-callout"><strong>💡 給來訪親友的提醒：</strong>第一次入境預留比以前更多的時間，轉機時間別訂太短；長輩如果對自助機不熟，可以直接到人工櫃台。入境後 EES 會記錄出境時間，<strong>不要逾期停留</strong>——系統會自動算出來，紀錄也會保存得更久。</p>
+
+<p class="post-sources">📚 來源：<a href="https://home-affairs.ec.europa.eu/news/entryexit-system-will-become-fully-operational-10-april-2026-2026-03-30_en" target="_blank" rel="noopener noreferrer">European Commission：The Entry/Exit System will become fully operational on 10 April 2026</a> · <a href="https://ber.berlin-airport.de/en/flying/controls/id-and-passport-control/ees.html" target="_blank" rel="noopener noreferrer">柏林布蘭登堡機場：EES</a> · <a href="https://www.lba.de/SharedDocs/Startseite_Nachrichten/EN/Aktuell/Grenzkontrollen.html" target="_blank" rel="noopener noreferrer">聯邦航空局 LBA：Waiting times at German airports are possible</a> · <a href="https://de.euronews.com/2026/08/12/neues-grenzsystem-ees-verdoppelt-warteschlangen-an-flughafen" target="_blank" rel="noopener noreferrer">Euronews：Neues Grenzsystem EES verdoppelt Warteschlangen（2026/08/12）</a> · <a href="https://newlandchase.com/schengen-ees-flexibility-lapses-as-etias-launch-appears-likely-to-move-to-2027/" target="_blank" rel="noopener noreferrer">Newland Chase：EES Flexibility Lapses（2026/09/09）</a> · <a href="https://traveltomorrow.com/eu-could-extend-flexibility-on-ees-border-checks-amid-fears-of-further-travel-disruption/" target="_blank" rel="noopener noreferrer">Travel Tomorrow：EU could extend flexibility on EES border checks（2026/08/10）</a> · <a href="https://skift.com/2026/10/15/easing-eu-border-friction-there-will-be-flexibility-official-says/" target="_blank" rel="noopener noreferrer">Skift：Easing EU Border Friction（2026/10/15）</a></p>
+
+<hr>
+
+<img src="assets/images/2026/ees/EES_圖卡3_自動通關.png" alt="EasyPASS 自動通關：持德國居留卡 12 歲以上可直接使用不必登記，只持 D 簽者限出境；台灣護照短期停留要先到聯邦警察服務處登記 EasyPASS-RTP，免費；德國 8 座機場設有閘門">
+<h2 id="easypass">EasyPASS：德國機場的自動通關</h2>
+
+<p>EasyPASS 是聯邦警察設在德國機場的<strong>自動通關閘門</strong>：把電子護照的照片頁放上讀取器，看著鏡頭讓系統比對臉部，就能通關，不必排人工櫃台。很多在德台灣人不知道，<strong>持德國居留卡就能直接使用</strong>。</p>
+
+<h3>誰可以用？</h3>
+<table>
+  <thead>
+    <tr><th>身分</th><th>怎麼用</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>歐盟、歐洲經濟區（冰島、列支敦斯登、挪威）與瑞士國民</td><td>直接使用</td></tr>
+    <tr><td>持<strong>德國居留卡</strong>的第三國國民（含台灣人）</td><td><strong>直接使用，不必事先登記</strong></td></tr>
+    <tr><td>持德國<strong>長期簽證（D 簽）</strong>的第三國國民</td><td>只能在<strong>出境</strong>時使用</td></tr>
+    <tr><td>美國、香港、韓國、<strong>台灣</strong>、英國的國民（短期停留）</td><td>先登記 <strong>EasyPASS-RTP</strong> 才能使用</td></tr>
+  </tbody>
+</table>
+<p>共同條件：<strong>12 歲以上</strong>、持有效的<strong>電子護照</strong>（台灣護照現在都是晶片護照）。過閘門前要先取下帽子和太陽眼鏡。</p>
+
+<h3>台灣護照短期停留：怎麼登記 EasyPASS-RTP</h3>
+<ul>
+  <li><strong>地點</strong>：設有 EasyPASS 的機場裡的聯邦警察服務處（Servicebüro／Servicepoint），<strong>只能現場辦理</strong>，不能線上申請。入境查驗完成後再去即可。</li>
+  <li><strong>預約</strong>：開放時間內多半<strong>不用預約</strong>。申請表可以先從聯邦警察網站下載填好，現場比較快。</li>
+  <li><strong>流程</strong>：填問卷、簽同意書，聯邦警察查核護照真偽並比對資料庫，沒有問題就完成登記。</li>
+  <li><strong>費用與效期</strong>：<strong>免費</strong>；效期跟著護照，<strong>換新護照就要重新登記</strong>。</li>
+</ul>
+<p>註：駐德國台北代表處 2022 年的說明寫的是「18 歲以上」，聯邦警察現行網頁已改為 <strong>12 歲以上</strong>，以聯邦警察公告為準。</p>
+
+<h3>8 座機場的登記處</h3>
+<table>
+  <thead>
+    <tr><th>機場</th><th>聯邦警察服務處位置</th><th>開放時間</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><a href="https://www.google.com/maps/search/?api=1&amp;query=Flughafen+Berlin+Brandenburg+Terminal+1" target="_blank" rel="noopener noreferrer">柏林布蘭登堡（BER）</a></td><td>第 1 航廈（主航廈）Ebene 2 的 Servicepoint</td><td>24 小時</td></tr>
+    <tr><td><a href="https://www.google.com/maps/search/?api=1&amp;query=Flughafen+D%C3%BCsseldorf" target="_blank" rel="noopener noreferrer">杜塞道夫</a></td><td>中央大樓出境層</td><td>週一至週四 8:00–15:00、週五 8:00–14:00</td></tr>
+    <tr><td><a href="https://www.google.com/maps/search/?api=1&amp;query=Frankfurt+Airport+Terminal+1" target="_blank" rel="noopener noreferrer">法蘭克福</a></td><td>第 1 航廈 B 廳 Ebene 3（往 Skyline 的樓梯旁）；第 3 航廈出境層報到大廳左側（2026/4/23 新設）</td><td>每天 6:30–21:30</td></tr>
+    <tr><td><a href="https://www.google.com/maps/search/?api=1&amp;query=Hamburg+Airport+Terminal+2" target="_blank" rel="noopener noreferrer">漢堡</a></td><td>第 2 航廈 Ebene 1</td><td>4:30–24:00</td></tr>
+    <tr><td><a href="https://www.google.com/maps/search/?api=1&amp;query=Flughafen+Hannover+Terminal+B" target="_blank" rel="noopener noreferrer">漢諾威</a></td><td>B 航廈出境層的聯邦警察站</td><td>24 小時（可能要等候）</td></tr>
+    <tr><td><a href="https://www.google.com/maps/search/?api=1&amp;query=Flughafen+K%C3%B6ln%2FBonn+Terminal+1" target="_blank" rel="noopener noreferrer">科隆／波昂</a></td><td>第 1 航廈 Aufgang 5、Ebene 0（聯邦與邦警察共用的警察站）</td><td>24 小時</td></tr>
+    <tr><td><a href="https://www.google.com/maps/search/?api=1&amp;query=Munich+Airport+Center+MAC" target="_blank" rel="noopener noreferrer">慕尼黑</a></td><td>慕尼黑機場中心（MAC）Ebene 04</td><td>6:30–21:00</td></tr>
+    <tr><td><a href="https://www.google.com/maps/search/?api=1&amp;query=Flughafen+Stuttgart+Terminal+1" target="_blank" rel="noopener noreferrer">斯圖加特</a></td><td>第 1 航廈 Ebene 3 的 Servicepoint</td><td>可電話或電子郵件預約；不預約可能要等 30 分鐘以上</td></tr>
+  </tbody>
+</table>
+<p>開放時間偶有調整，出發前請以聯邦警察網站公告為準。</p>
+
+<p class="post-sources">📚 來源：<a href="https://bundespolizei.de/grenzkontrolle/easypass/faq-easypass" target="_blank" rel="noopener noreferrer">Bundespolizei：FAQ zu EasyPASS</a> · <a href="https://bundespolizei.de/grenzkontrolle/easypass/easypass-rtp" target="_blank" rel="noopener noreferrer">Bundespolizei：EasyPASS-RTP</a> · <a href="https://bundespolizei.de/grenzkontrolle/easypass/wo-gibt-es-easypass" target="_blank" rel="noopener noreferrer">Bundespolizei：Wo gibt es EasyPASS?</a> · <a href="https://www.munich-airport.de/automated-passport-control-1028169" target="_blank" rel="noopener noreferrer">慕尼黑機場：Automated passport control</a> · <a href="https://www.frankfurt-airport.com/zh/flights/transferring-at-fra/passport-and-id-checks.html" target="_blank" rel="noopener noreferrer">法蘭克福機場：護照與身分查驗</a></p>
+
+<hr>
+
+<img src="assets/images/2026/ees/EES_圖卡4_ETIAS延期.png" alt="ETIAS 歐盟旅行許可延期：原訂 2026 年底上路，官方已撤下日期，外媒報導最快 2027 年；規費 20 歐元、效期 3 年；持居留卡者不用申請；Frontex 發現上百個非官方網站，官方入口只在 europa.eu 網域">
+<h2 id="etias">ETIAS：延期，現在還不用申請</h2>
+
+<p><strong>ETIAS</strong>（European Travel Information and Authorisation System，歐洲旅行資訊及授權系統）是給<strong>免簽國家旅客</strong>的線上旅行許可，概念類似美國的 ESTA。它<strong>不是簽證</strong>，台灣護照的免簽待遇不變，只是上路後，短期入境申根區前要先上網填寫、取得許可。</p>
+
+<h3>目前進度：2026 年不會上路</h3>
+<ul>
+  <li>歐盟原本預定 ETIAS 在 <strong>2026 年第四季</strong>上路。</li>
+  <li>2026 年 7 月，《金融時報》報導負責建置系統的歐盟機構 <strong>eu-LISA</strong> 已承認年底前上路「不再可行」，主因是 EES 上路後的排隊問題，歐盟想先讓 EES 穩定下來。</li>
+  <li>歐盟官方 ETIAS 網站隨後<strong>撤下「2026 年第四季」的時程</strong>，只寫系統尚未運作、不受理申請。</li>
+  <li>截至 2026 年 11 月中，<strong>官方沒有公布新的上路日期</strong>；外媒普遍預估最快 2027 年。歐盟先前承諾，確定日期會提前數個月公告。</li>
+</ul>
+
+<h3>上路後的規則（依目前公布的內容）</h3>
+<table>
+  <thead>
+    <tr><th>項目</th><th>內容</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>誰要申請</td><td>台灣等免簽國家的旅客，短期入境申根區前</td></tr>
+    <tr><td>誰不用</td><td>持<strong>德國或其他申根國居留卡</strong>、長期簽證的人；有歐盟國籍的人</td></tr>
+    <tr><td>規費</td><td><strong>20 €</strong>（2025 年從原定 7 € 調高）；<strong>未滿 18 歲與 70 歲以上免費</strong></td></tr>
+    <tr><td>效期</td><td><strong>3 年</strong>，或到護照到期為止（以先到者為準），期間可多次入境</td></tr>
+    <tr><td>審核</td><td>多數申請幾分鐘內核准，少數要人工審查；申請時要填第一個入境的申根國家</td></tr>
+    <tr><td>過渡期</td><td>依先前規劃，上路後會先有一段過渡期與寬限期，不會立刻因沒申請而無法登機</td></tr>
+  </tbody>
+</table>
+
+<h3>最要小心的：假網站</h3>
+<p>ETIAS 還沒上路，網路上卻早就有大量「代辦」網站。歐盟邊境管理局 <strong>Frontex</strong> 已發現<strong>上百個非官方 ETIAS 網站</strong>，有的宣稱已經可以申請、收取高額費用，還可能盜用個人資料。</p>
+<p class="post-callout"><strong>⚠️ 判斷原則：</strong>ETIAS <strong>目前不受理任何申請</strong>，現在要你填資料、付錢的網站都不是官方網站。正式上路後，官方入口只會在 <strong>europa.eu</strong> 網域底下（歐盟旅遊資訊網 travel-europe.europa.eu）。家裡長輩要來德國前，最好先提醒一聲。</p>
+
+<p class="post-sources">📚 來源：<a href="https://www.afar.com/magazine/europe-delays-etias-travel-authorization-until-2027" target="_blank" rel="noopener noreferrer">AFAR：Europe Delays ETIAS Travel Authorization Until 2027（2026/07/13）</a> · <a href="https://www.berliner-zeitung.de/article/nach-ees-warteschlangen-eu-verschiebt-etias-start-auf-2027-10173095" target="_blank" rel="noopener noreferrer">Berliner Zeitung：Nach EES-Warteschlangen: EU verschiebt ETIAS-Start auf 2027（2026/07/07）</a> · <a href="https://news.tourismus.com/etias-verschoben-eu-streicht-starttermin-2026-290820261/" target="_blank" rel="noopener noreferrer">tourismus.com：ETIAS verschoben: Kein Start 2026（2026/08/29）</a> · <a href="https://www.frontex.europa.eu/media-centre/news/news-release/beware-of-risks-posed-by-unofficial-etias-websites-eNZniu" target="_blank" rel="noopener noreferrer">Frontex：Beware of risks posed by unofficial ETIAS websites</a> · <a href="https://www.thelocal.de/20250718/etias-fee-for-european-travel-authorisation-set-to-increase-to-e20" target="_blank" rel="noopener noreferrer">The Local：ETIAS fee set to increase to €20</a></p>
+
+<hr>
+
+<h2 id="checkliste">出門前的檢查清單</h2>
+
+<h3>自己持德國居留卡</h3>
+<ul>
+  <li>護照＋<strong>居留卡</strong>一起帶，兩者都要在效期內。</li>
+  <li>回德國時可以直接走 <strong>EasyPASS</strong>（12 歲以上），不用在 EES 自助機登記。</li>
+  <li>居留卡換發中、只有臨時證明的人，出國前先跟外事局確認。</li>
+</ul>
+
+<h3>台灣家人朋友要來德國</h3>
+<ul>
+  <li>護照效期充足（建議至少 6 個月），回程機票、住宿資料備好。</li>
+  <li>第一次入境要按指紋、拍臉，<strong>多留通關時間</strong>，轉機別訂太緊。</li>
+  <li>ETIAS <strong>現在不用申請</strong>，也不要在任何網站付費「預先申請」。</li>
+  <li>常來德國的人，可以在機場登記 <strong>EasyPASS-RTP</strong>，之後入出境比較快。</li>
+  <li>停留不要超過「180 天內 90 天」，EES 會自動計算。</li>
+</ul>
+
+<p class="post-callout"><strong>📖 延伸閱讀：</strong>到了機場遇上班機延誤或取消，可以看〈<a href="/posts/eu261-flight-compensation.html">班機延誤、取消能拿多少？EU261 歐盟航空乘客權利完整攻略</a>〉。</p>
+
+<hr>
+
+<h2 id="sources">資料來源</h2>
+<ul>
+  <li><a href="https://home-affairs.ec.europa.eu/news/entryexit-system-will-become-fully-operational-10-april-2026-2026-03-30_en" target="_blank" rel="noopener noreferrer">European Commission（2026/03/30）：The Entry/Exit System will become fully operational on 10 April 2026</a></li>
+  <li><a href="https://ber.berlin-airport.de/en/flying/controls/id-and-passport-control/ees.html" target="_blank" rel="noopener noreferrer">Flughafen Berlin Brandenburg：Entry/Exit System (EES)</a></li>
+  <li><a href="https://www.bmi.gv.at/202/Fremdenpolizei_und_Grenzkontrolle/Entry_Exit_System/faq_en.aspx" target="_blank" rel="noopener noreferrer">Bundesministerium für Inneres（奧地利）：Entry/Exit System FAQ</a></li>
+  <li><a href="https://www.lba.de/SharedDocs/Startseite_Nachrichten/EN/Aktuell/Grenzkontrollen.html" target="_blank" rel="noopener noreferrer">Luftfahrt-Bundesamt（2026/04/01）：New Entry-Exit-System (EES): Waiting times at German airports are possible</a></li>
+  <li><a href="https://de.euronews.com/2026/08/12/neues-grenzsystem-ees-verdoppelt-warteschlangen-an-flughafen" target="_blank" rel="noopener noreferrer">Euronews（2026/08/12）：Neues Grenzsystem EES verdoppelt Warteschlangen an Flughafen</a></li>
+  <li><a href="https://newlandchase.com/schengen-ees-flexibility-lapses-as-etias-launch-appears-likely-to-move-to-2027/" target="_blank" rel="noopener noreferrer">Newland Chase（2026/09/09）：Schengen: EES Flexibility Lapses as ETIAS Launch Appears Likely to Move to 2027</a></li>
+  <li><a href="https://traveltomorrow.com/eu-could-extend-flexibility-on-ees-border-checks-amid-fears-of-further-travel-disruption/" target="_blank" rel="noopener noreferrer">Travel Tomorrow（2026/08/10）：EU could extend flexibility on EES border checks amid fears of further travel disruption</a></li>
+  <li><a href="https://skift.com/2026/10/15/easing-eu-border-friction-there-will-be-flexibility-official-says/" target="_blank" rel="noopener noreferrer">Skift（2026/10/15）：Easing EU Border Friction: There Will Be ‘Flexibility,’ Official Says</a></li>
+  <li><a href="https://bundespolizei.de/grenzkontrolle/easypass/faq-easypass" target="_blank" rel="noopener noreferrer">Bundespolizei：FAQ zu EasyPASS</a></li>
+  <li><a href="https://bundespolizei.de/grenzkontrolle/easypass/easypass-rtp" target="_blank" rel="noopener noreferrer">Bundespolizei：EasyPASS-RTP</a></li>
+  <li><a href="https://bundespolizei.de/grenzkontrolle/easypass/wo-gibt-es-easypass" target="_blank" rel="noopener noreferrer">Bundespolizei：Wo gibt es EasyPASS?</a></li>
+  <li><a href="https://www.munich-airport.de/automated-passport-control-1028169" target="_blank" rel="noopener noreferrer">Flughafen München：Automated passport control</a></li>
+  <li><a href="https://www.roc-taiwan.org/uploads/sites/138/2022/12/國人使用德國自動查驗通關系統說明1.pdf" target="_blank" rel="noopener noreferrer">駐德國台北代表處（2022）：國人使用德國自動查驗通關系統說明</a></li>
+  <li><a href="https://www.afar.com/magazine/europe-delays-etias-travel-authorization-until-2027" target="_blank" rel="noopener noreferrer">AFAR（2026/07/13）：Europe Delays ETIAS Travel Authorization Until 2027</a></li>
+  <li><a href="https://www.berliner-zeitung.de/article/nach-ees-warteschlangen-eu-verschiebt-etias-start-auf-2027-10173095" target="_blank" rel="noopener noreferrer">Berliner Zeitung（2026/07/07）：Nach EES-Warteschlangen: EU verschiebt ETIAS-Start auf 2027</a></li>
+  <li><a href="https://news.tourismus.com/etias-verschoben-eu-streicht-starttermin-2026-290820261/" target="_blank" rel="noopener noreferrer">tourismus.com（2026/08/29）：ETIAS verschoben: Kein Start 2026</a></li>
+  <li><a href="https://www.frontex.europa.eu/media-centre/news/news-release/beware-of-risks-posed-by-unofficial-etias-websites-eNZniu" target="_blank" rel="noopener noreferrer">Frontex：Beware of risks posed by unofficial ETIAS websites</a></li>
+  <li><a href="https://www.thelocal.de/20250718/etias-fee-for-european-travel-authorisation-set-to-increase-to-e20" target="_blank" rel="noopener noreferrer">The Local（2025/07/18）：ETIAS fee for European travel authorisation set to increase to €20</a></li>
+  <li><a href="https://pinmap.co/europe-etias-ees/" target="_blank" rel="noopener noreferrer">打卡世界（2026/07）：ETIAS 是什麼？台灣 2026 入境 ETIAS、EES 新制攻略</a></li>
+</ul>
+`
+  },
+  {
     slug: 'eu261-flight-compensation',
     title: '班機延誤、取消能拿多少？EU261 歐盟航空乘客權利完整攻略（含 2027 新制）',
     date: '2026-10-30',
