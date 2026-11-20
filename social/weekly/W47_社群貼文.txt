@@ -13,7 +13,8 @@ FB 排程：2026-11-22 21:30（Europe/Berlin）　IG 排程：2026-11-22 21:30�
 
 ⚡ 一、2027 年電力稅降到歐盟最低
 ▪️ 聯盟黨（CDU/CSU）與 SPD 在聯合委員會（Koalitionsausschuss）協商八小時以上，【11/18】拍板
-▪️ 所有家庭與尚未享優惠的企業，每度從 2.05 歐分降到【0.1 歐分】；含加值稅，家庭每度約省 2.3 歐分
+▪️ 所有家庭與尚未享優惠的企業，從 2.05 ct/kWh 降到【0.1 ct/kWh】；含加值稅，約省 2.3 ct/kWh
+▪️ 電力稅按度數課固定金額，以 BDEW 2026 年平均家庭電價 37.3 ct/kWh 估算，電費約少【6%】
 ▪️ Verivox 估年用 4,000 度家庭每月省約 7.75 €、一年【約 93 €】（以業者全額轉嫁計）
 ▪️ 只適用【2027 年 1 月 1 日至 12 月 31 日】；約 54 億歐元缺口由再生能源 EEG 帳戶盈餘支應，2028 年起財源未定
 ▪️ 油價上限同場定案：【2027 年 1 月 1 日】起試行 3 個月，內閣 12/2 審修正草案，上限公式仍未公布
@@ -59,6 +60,7 @@ https://www.tagesspiegel.de/politik/strom-gunstiger-sprit-nicht-noch-teurer-wie-
 https://www.t-online.de/nachrichten/deutschland/innenpolitik/id_101534002/stromsteuer-koalition-beschliesst-senkung-mit-einem-haken.html
 https://taz.de/Einigung-im-Koalitionsausschuss/!6231102/
 https://www.adac.de/verkehr/tanken-kraftstoff-antrieb/benzin-und-diesel/spritpreisdeckel/
+https://www.bdew.de/presse/pressemappen/strompreis/
 勞動法套案：
 https://www.bundesregierung.de/breg-de/aktuelles/arbeitsrechtspaket-kabinett-2461564
 https://www.bmas.de/DE/Service/Presse/Pressemitteilungen/2026/kabinett-beschliesst-arbeitsrechtspaket.html
@@ -83,13 +85,13 @@ https://www.echo24.de/welt/db-infrago-verkehrsminister-plant-bonus-kuerzung-fuer
 
 ========================================================================
 
-【IG 版（精簡版）】（554 字元）
+【IG 版（精簡版）】（569 字元）
 ------------------------------------------------------------------------
 
 🇩🇪 德國週報 W47｜11/16–11/22
 電費減稅、定期契約、年金、全天罷工、德鐵準點率。五張圖卡滑到底 👉
 
-⚡ 2027 年電力稅降到歐盟最低｜執政聯盟 11/18 拍板，所有家庭每度從 2.05 歐分降到 0.1 歐分，4,000 度家庭一年估省約 93 €；但只先保證一年。油價上限 1/1 起試行 3 個月
+⚡ 2027 年電力稅降到歐盟最低｜執政聯盟 11/18 拍板，所有家庭從 2.05 ct/kWh 降到 0.1 ct/kWh，電費約少 6%、4,000 度家庭一年估省約 93 €；但只先保證一年。油價上限 1/1 起試行 3 個月
 
 📝 無理由定期契約最長延到 4 年｜內閣 11/18 通過，可續約 6 次、只適用 2030 年底前簽的契約；年薪逾約 18 萬歐元者解僱保護放寬
 
@@ -105,12 +107,12 @@ https://www.echo24.de/welt/db-infrago-verkehrsminister-plant-bonus-kuerzung-fuer
 
 ========================================================================
 
-【Threads 版（≤500 字＋網站連結；資料來源放第一則自我回覆）】（278 字，emoji 以位元組計）
+【Threads 版（≤500 字＋網站連結；資料來源放第一則自我回覆）】（285 字，emoji 以位元組計）
 ------------------------------------------------------------------------
 
 🇩🇪 德國週報 W47｜11/16–11/22
 
-▪️ 2027 年電力稅降到歐盟最低，4,000 度家庭一年估省約 93 €
+▪️ 2027 年電力稅降到歐盟最低，電費約少 6%、4,000 度家庭一年省約 93 €
 ▪️ 無理由定期契約最長延到 4 年
 ▪️ 年金明年 7 月估漲 4.1%
 ▪️ 金屬業全天罷工開打，福斯 11/24 開談
