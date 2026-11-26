@@ -2648,6 +2648,39 @@ def illu_helpline(d, R, S, cx, cy, theme):
     d.ellipse(R(hx-1, hy-9, hx+11, hy+3), fill=OUTLINE)
     d.polygon(R(hx-11, hy-2, hx+11, hy-2, hx, hy+11), fill=OUTLINE)
 
+def illu_draftletter(d, R, S, cx, cy, theme):
+    """兵役問卷＋鋼盔＋金色勾選徽章（兵役登記／徵兵制度）"""
+    ow = 5*S
+    _dots(d, R, cx, cy, ((-72, -44, 3, GOLD), (62, -54, 3, tint(theme, 0.5)),
+                         (-70, 36, 3, theme)))
+    d.ellipse(R(cx-60, cy+46, cx+60, cy+58), fill=tint(theme, 0.18))
+    # 後層：問卷紙＋三個勾選框
+    d.rounded_rectangle(R(cx-62, cy-48, cx+4, cy+40), radius=5*S,
+                        fill='white', outline=OUTLINE, width=ow)
+    for i in range(3):
+        yy = cy-34 + i*20
+        d.rounded_rectangle(R(cx-52, yy, cx-40, yy+12), radius=2*S,
+                            fill=tint(theme, 0.40) if i < 2 else 'white',
+                            outline=OUTLINE, width=3*S)
+        d.line(R(cx-34, yy+6, cx-34+(26 if i != 1 else 18), yy+6),
+               fill=tint(theme, 0.45), width=4*S)
+    # 前景：鋼盔（主題色盔體＋分層帽沿）
+    hx, hy = cx+22, cy+18
+    # 下巴帶（最後層，從帽沿兩側垂下）
+    d.arc(R(hx-24, hy-12, hx+24, hy+24), 25, 155, fill=OUTLINE, width=4*S)
+    # 盔體：較高的圓頂，前後低垂
+    d.chord(R(hx-40, hy-42, hx+40, hy+38), 180, 360, fill=theme, outline=OUTLINE, width=ow)
+    d.arc(R(hx-26, hy-30, hx+26, hy+26), 205, 255, fill=tint(theme, 0.55), width=4*S)
+    # 帽沿：窄邊，兩端略下垂
+    d.polygon(R(hx-48, hy+8, hx-40, hy-2, hx+40, hy-2, hx+48, hy+8),
+              fill=tint(theme, 0.45), outline=OUTLINE, width=ow)
+    # 側邊鉚釘
+    d.ellipse(R(hx+20, hy-14, hx+28, hy-6), fill='white', outline=OUTLINE, width=2*S)
+    # 焦點細節：金色勾選徽章
+    gx, gy, gr = cx+48, cy-34, 20
+    d.ellipse(R(gx-gr, gy-gr, gx+gr, gy+gr), fill=GOLD, outline=OUTLINE, width=ow)
+    d.line(R(gx-9, gy, gx-2, gy+8, gx+10, gy-7), fill=OUTLINE, width=5*S)
+
 ILLUS = dict(podium=illu_podium, flags=illu_flags, coins=illu_coins,
              idcard=illu_idcard, camera=illu_camera, trophy=illu_trophy,
              bankcard=illu_bankcard, checklist=illu_checklist,
@@ -2694,7 +2727,7 @@ ILLUS = dict(podium=illu_podium, flags=illu_flags, coins=illu_coins,
              strikeday=illu_strikeday, pensionrise=illu_pensionrise,
              platformclock=illu_platformclock,
              bnplcheck=illu_bnplcheck, bargaining=illu_bargaining,
-             helpline=illu_helpline)
+             helpline=illu_helpline, draftletter=illu_draftletter)
 
 # ── 版型 ────────────────────────────────────────────────────
 
@@ -3086,6 +3119,23 @@ CARDS = [
   file='W48_圖卡5_2027預算本週表決.png'),
 ]
 
+# 備用卡：不屬於本週正式圖卡，只用 --backup 產出（版主決定是否換入正式週報）
+BACKUP_CARDS = [
+ dict(
+  theme='#2E8B57', badges=[('兵役', True), ('青年抗議', False)], illu='draftletter',
+  title='學生罷課反徵兵，自願從軍遠低於目標',
+  subtitle='11/20 全國罷課；2027 年 7 月起 18 歲男性須強制體檢',
+  stats=[('約 530 人', '年中前透過問卷招到的自願役'),
+         ('2 萬人', '2026 年自願役目標')],
+  bullets=[
+   ('罷課', '主辦單位稱逾 5 萬人、100 多城參加，訴求停止強制體檢；人數未經警方證實。'),
+   ('招募', '年中前寄出近 30 萬份兵役問卷、約 1,500 人受檢；國防部則稱報名明顯成長。'),
+   ('下一步', '2027 年起國會依半年報告檢討，人數不足可另立法啟動「必要時徵兵」。'),
+  ],
+  takeaway=('適用範圍', '兵役只適用德國國籍者；持台灣護照者不受影響，已入籍或具雙重國籍的子女則在範圍內。'),
+  file='W48_備用_反徵兵罷課與自願役.png'),
+]
+
 # ── 邦名德文全名檢查 ────────────────────────────────────────
 # CLAUDE.md 鐵則：提到聯邦邦一律寫「◯◯邦」並附德文全名，不可只給簡寫或只有中文。
 # 目測會漏（W36 第 6 張就漏了），故在產圖時自動掃描每張卡的全部文字。
@@ -3166,9 +3216,11 @@ def check_glyphs(spec):
 
 if __name__ == '__main__':
     import os, sys
-    OUT = sys.argv[1] if len(sys.argv) > 1 else '.'
+    args = [a for a in sys.argv[1:] if not a.startswith('--')]
+    OUT = args[0] if args else '.'
     os.makedirs(OUT, exist_ok=True)
-    for c in CARDS:
+    cards = BACKUP_CARDS if '--backup' in sys.argv else CARDS
+    for c in cards:
         check_states(c)
         check_glyphs(c)
         render = make_chart_card if c.get('kind') == 'chart' else make_card
