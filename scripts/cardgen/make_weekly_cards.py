@@ -2564,6 +2564,123 @@ def illu_platformclock(d, R, S, cx, cy, theme):
     d.line(R(kx, ky, kx+10, ky+4), fill=OUTLINE, width=4*S)
     d.ellipse(R(kx-3, ky-3, kx+3, ky+3), fill=theme)
 
+def illu_bnplcheck(d, R, S, cx, cy, theme):
+    """購物袋＋分期付款四格條＋金色放大鏡（先買後付／信用審查）"""
+    ow = 5*S
+    _dots(d, R, cx, cy, ((-72, -44, 3, GOLD), (60, -54, 3, tint(theme, 0.5)),
+                         (-70, 36, 3, theme)))
+    d.ellipse(R(cx-62, cy+46, cx+58, cy+58), fill=tint(theme, 0.18))
+    # 後層：購物袋（主題色）＋提把
+    bx0, by0, bx1, by1 = cx-60, cy-24, cx+6, cy+46
+    d.arc(R(bx0+14, by0-26, bx1-14, by0+16), 180, 360, fill=OUTLINE, width=ow)
+    d.rounded_rectangle(R(bx0, by0, bx1, by1), radius=6*S,
+                        fill=theme, outline=OUTLINE, width=ow)
+    d.line(R(bx0+8, by0+12, bx1-8, by0+12), fill=tint(theme, 0.55), width=3*S)
+    # 中層：分期條（四格＝四期，前兩期已付）
+    px0, py0 = cx-50, cy+16
+    d.rounded_rectangle(R(px0-6, py0-6, px0+82, py0+20), radius=6*S,
+                        fill='white', outline=OUTLINE, width=4*S)
+    for i in range(4):
+        x0 = px0 + i*20
+        fill = tint(theme, 0.55) if i < 2 else 'white'
+        d.rounded_rectangle(R(x0, py0, x0+14, py0+14), radius=3*S,
+                            fill=fill, outline=OUTLINE, width=3*S)
+    # 焦點細節：金框放大鏡（審查信用）
+    mx, my, mr = cx+38, cy-22, 24
+    d.line(R(mx+16, my+16, mx+34, my+36), fill=OUTLINE, width=8*S)
+    d.ellipse(R(mx-mr, my-mr, mx+mr, my+mr), fill=GOLD, outline=OUTLINE, width=ow)
+    d.ellipse(R(mx-15, my-15, mx+15, my+15), fill='white', outline=OUTLINE, width=3*S)
+    d.line(R(mx-8, my, mx-2, my+7, mx+9, my-7), fill=theme, width=4*S)
+
+def illu_bargaining(d, R, S, cx, cy, theme):
+    """談判桌＋雙方對話框＋金色百分比徽章（勞資協商）"""
+    ow = 5*S
+    _dots(d, R, cx, cy, ((-72, -46, 3, GOLD), (2, -56, 3, tint(theme, 0.5)),
+                         (72, 40, 3, theme)))
+    d.ellipse(R(cx-62, cy+46, cx+62, cy+58), fill=tint(theme, 0.18))
+    # 桌子（主題色桌面＋兩支腳）
+    for dx in (-44, 40):
+        d.rectangle(R(cx+dx, cy+20, cx+dx+6, cy+48), fill=tint(theme, 0.45), outline=OUTLINE, width=3*S)
+    d.rounded_rectangle(R(cx-62, cy+10, cx+62, cy+24), radius=4*S,
+                        fill=theme, outline=OUTLINE, width=ow)
+    # 左側對話框（工會，主題色淡）
+    d.rounded_rectangle(R(cx-66, cy-44, cx-14, cy-8), radius=8*S,
+                        fill=tint(theme, 0.30), outline=OUTLINE, width=ow)
+    d.polygon(R(cx-50, cy-9, cx-40, cy-9, cx-52, cy+2), fill=OUTLINE)
+    for yy, w in ((cy-32, 32), (cy-22, 22)):
+        d.line(R(cx-56, yy, cx-56+w, yy), fill=OUTLINE, width=3*S)
+    # 右側對話框（資方，白）
+    d.rounded_rectangle(R(cx+14, cy-34, cx+66, cy+2), radius=8*S,
+                        fill='white', outline=OUTLINE, width=ow)
+    for yy, w in ((cy-22, 30), (cy-12, 20)):
+        d.line(R(cx+24, yy, cx+24+w, yy), fill=tint(theme, 0.55), width=3*S)
+    # 焦點細節：金色 % 徽章（調薪幅度）
+    gx, gy, gr = cx, cy-36, 18
+    d.ellipse(R(gx-gr, gy-gr, gx+gr, gy+gr), fill=GOLD, outline=OUTLINE, width=ow)
+    d.ellipse(R(gx-9, gy-9, gx-3, gy-3), fill=OUTLINE)
+    d.ellipse(R(gx+3, gy+3, gx+9, gy+9), fill=OUTLINE)
+    d.line(R(gx+8, gy-9, gx-8, gy+9), fill=OUTLINE, width=3*S)
+
+def illu_helpline(d, R, S, cx, cy, theme):
+    """盾牌＋手機＋金色愛心徽章（家暴防治／求助專線）"""
+    ow = 5*S
+    _dots(d, R, cx, cy, ((-72, -40, 3, GOLD), (64, -54, 3, tint(theme, 0.5)),
+                         (72, 38, 3, theme)))
+    d.ellipse(R(cx-58, cy+46, cx+58, cy+58), fill=tint(theme, 0.18))
+    # 後層：盾牌（主題色淡）
+    d.polygon(R(cx-62, cy-40, cx-14, cy-52, cx+34, cy-40, cx+34, cy-2,
+                cx-14, cy+46, cx-62, cy-2),
+              fill=tint(theme, 0.30), outline=OUTLINE, width=ow)
+    d.polygon(R(cx-48, cy-31, cx-14, cy-40, cx+20, cy-31, cx+20, cy-6,
+                cx-14, cy+28, cx-48, cy-6), fill=tint(theme, 0.55))
+    # 前景：手機（主題色機身＋白螢幕）
+    px0, py0, px1, py1 = cx+6, cy-22, cx+50, cy+48
+    d.rounded_rectangle(R(px0, py0, px1, py1), radius=8*S, fill=theme, outline=OUTLINE, width=ow)
+    d.rounded_rectangle(R(px0+6, py0+10, px1-6, py1-14), radius=3*S, fill='white')
+    d.ellipse(R((px0+px1)//2-4, py1-10, (px0+px1)//2+4, py1-2), fill=tint(theme, 0.55))
+    for i, w in enumerate((22, 16, 20)):
+        yy = py0+22 + i*10
+        d.line(R(px0+11, yy, px0+11+w, yy), fill=tint(theme, 0.45), width=3*S)
+    # 焦點細節：金色愛心徽章
+    hx, hy = cx+52, cy-30
+    d.ellipse(R(hx-20, hy-20, hx+20, hy+20), fill=GOLD, outline=OUTLINE, width=ow)
+    d.ellipse(R(hx-11, hy-9, hx+1, hy+3), fill=OUTLINE)
+    d.ellipse(R(hx-1, hy-9, hx+11, hy+3), fill=OUTLINE)
+    d.polygon(R(hx-11, hy-2, hx+11, hy-2, hx, hy+11), fill=OUTLINE)
+
+def illu_draftletter(d, R, S, cx, cy, theme):
+    """兵役問卷＋鋼盔＋金色勾選徽章（兵役登記／徵兵制度）"""
+    ow = 5*S
+    _dots(d, R, cx, cy, ((-72, -44, 3, GOLD), (62, -54, 3, tint(theme, 0.5)),
+                         (-70, 36, 3, theme)))
+    d.ellipse(R(cx-60, cy+46, cx+60, cy+58), fill=tint(theme, 0.18))
+    # 後層：問卷紙＋三個勾選框
+    d.rounded_rectangle(R(cx-62, cy-48, cx+4, cy+40), radius=5*S,
+                        fill='white', outline=OUTLINE, width=ow)
+    for i in range(3):
+        yy = cy-34 + i*20
+        d.rounded_rectangle(R(cx-52, yy, cx-40, yy+12), radius=2*S,
+                            fill=tint(theme, 0.40) if i < 2 else 'white',
+                            outline=OUTLINE, width=3*S)
+        d.line(R(cx-34, yy+6, cx-34+(26 if i != 1 else 18), yy+6),
+               fill=tint(theme, 0.45), width=4*S)
+    # 前景：鋼盔（主題色盔體＋分層帽沿）
+    hx, hy = cx+22, cy+18
+    # 下巴帶（最後層，從帽沿兩側垂下）
+    d.arc(R(hx-24, hy-12, hx+24, hy+24), 25, 155, fill=OUTLINE, width=4*S)
+    # 盔體：較高的圓頂，前後低垂
+    d.chord(R(hx-40, hy-42, hx+40, hy+38), 180, 360, fill=theme, outline=OUTLINE, width=ow)
+    d.arc(R(hx-26, hy-30, hx+26, hy+26), 205, 255, fill=tint(theme, 0.55), width=4*S)
+    # 帽沿：窄邊，兩端略下垂
+    d.polygon(R(hx-48, hy+8, hx-40, hy-2, hx+40, hy-2, hx+48, hy+8),
+              fill=tint(theme, 0.45), outline=OUTLINE, width=ow)
+    # 側邊鉚釘
+    d.ellipse(R(hx+20, hy-14, hx+28, hy-6), fill='white', outline=OUTLINE, width=2*S)
+    # 焦點細節：金色勾選徽章
+    gx, gy, gr = cx+48, cy-34, 20
+    d.ellipse(R(gx-gr, gy-gr, gx+gr, gy+gr), fill=GOLD, outline=OUTLINE, width=ow)
+    d.line(R(gx-9, gy, gx-2, gy+8, gx+10, gy-7), fill=OUTLINE, width=5*S)
+
 ILLUS = dict(podium=illu_podium, flags=illu_flags, coins=illu_coins,
              idcard=illu_idcard, camera=illu_camera, trophy=illu_trophy,
              bankcard=illu_bankcard, checklist=illu_checklist,
@@ -2608,7 +2725,9 @@ ILLUS = dict(podium=illu_podium, flags=illu_flags, coins=illu_coins,
              webpermit=illu_webpermit,
              powertaxcut=illu_powertaxcut, fixedterm=illu_fixedterm,
              strikeday=illu_strikeday, pensionrise=illu_pensionrise,
-             platformclock=illu_platformclock)
+             platformclock=illu_platformclock,
+             bnplcheck=illu_bnplcheck, bargaining=illu_bargaining,
+             helpline=illu_helpline, draftletter=illu_draftletter)
 
 # ── 版型 ────────────────────────────────────────────────────
 
@@ -2929,75 +3048,92 @@ def make_chart_card(spec, path, week_label='W?', date_label=''):
 # ════════════════════════════════════════════════════════════
 # 每週卡片內容（範本：W29）——之後每週改這一段即可
 # ════════════════════════════════════════════════════════════
-WEEK = 'W47'
-DATE_RANGE = '2026/11/16-11/22'
+WEEK = 'W48'
+DATE_RANGE = '2026/11/23-11/29'
 
 CARDS = [
  dict(
-  theme='#0D9488', badges=[('能源與荷包', True), ('聯合委員會', False)], illu='powertaxcut',
-  title='2027 年電力稅降到歐盟最低',
-  subtitle='執政聯盟 11/18 拍板：所有家庭與企業都適用，先限一年',
-  stats=[('約 93 €', '年用 4,000 度家庭一年估省'),
-         ('約 6%', '以平均電價估算的電費降幅')],
+  theme='#D4740E', badges=[('能源與荷包', True), ('比價網統計', False)], illu='heatingbill',
+  title='冬季瓦斯費調漲：361 家業者平均漲 14%',
+  subtitle='Verivox 11/21 統計：12 月至 2 月陸續生效，電費也有 329 家調漲',
+  stats=[('361 家', '宣布調漲瓦斯費的基本供應業者'),
+         ('約 14%', '瓦斯平均漲幅（12 月至 2 月生效）')],
   bullets=[
-   ('稅率', '從 2.05 ct/kWh 降到 0.1 ct/kWh；按度數課固定金額，含加值稅約省 2.3 ct/kWh。'),
-   ('期限', '只適用 2027 年全年；約 54 億歐元缺口由 EEG 帳戶支應，2028 年起財源未定。'),
-   ('油價上限', '同場決定 2027 年 1 月 1 日起實施、先試行 3 個月；內閣 12/2 審修正草案，上限公式仍未公布。'),
+   ('影響範圍', '估約 190 萬個瓦斯取暖家庭受影響；電費也有 329 家平均漲 8%。'),
+   ('原因', 'Verivox 專家 Storck：3 月伊朗戰爭後飆漲的批發價現在才轉嫁；儲氣偏低，恐再漲。'),
+   ('電費抵銷', '2027 年電力稅降到歐盟最低，每度約省 2.3 ct，可抵銷部分電價漲幅。'),
   ],
-  takeaway=('省錢提醒', '能源業公會 BDEW 表示會把減稅轉給客戶；消保團體提醒，換電力方案往往比減稅省得更多。'),
-  file='W47_圖卡1_電力稅降到歐盟最低.png'),
+  takeaway=('因應建議', '收到漲價通知可在調價生效前行使特別解約權；基本供應本來就能提前兩週解約。'),
+  file='W48_圖卡1_冬季瓦斯費平均漲一成四.png'),
  dict(
-  theme='#2563EB', badges=[('勞動法', True), ('內閣草案', False)], illu='fixedterm',
-  title='無理由定期契約最長延到 4 年',
-  subtitle='內閣 11/18 通過勞動法套案，高薪者解僱保護同步放寬',
-  stats=[('4 年', '無理由定期契約上限（現行 2 年）'),
-         ('6 次', '期限內可續約次數（現行 3 次）')],
+  theme='#2563EB', badges=[('消費者保護', True), ('歐盟新規', False)], illu='bnplcheck',
+  title='先買後付也算借貸：分期付款須先審信用',
+  subtitle='歐盟消費信貸新規 11/20 起適用，Klarna、PayPal 分期都納入',
+  stats=[('200 € 以下', '小額貸款首度納入消費信貸保護'),
+         ('3 個月內', '短期與零利率分期同樣適用')],
   bullets=[
-   ('適用期間', '只適用 2030 年底前簽訂的契約；「曾在同一雇主任職就不得再簽無理由定期契約」的禁令放寬一次。'),
-   ('高薪者', '年薪超過退休保險投保上限 1.75 倍（約 18 萬歐元）者，法院較容易判資遣終止僱傭；估計約 0.27% 受僱者受影響。'),
-   ('各方反應', '雇主聯合會 BDA 稱是「正面訊號」；DGB 認為擴大定期契約沒有必要，ver.di 主席 Werneke 稱「令人失望」。'),
+   ('適用範圍', '先買後付、零利率分期、200 € 以下小額貸款、三個月內到期的借款都算消費信貸。'),
+   ('信用審查', '業者須先評估還款能力，確認大概還得起才能核貸；德國實施法今年 5 月公布。'),
+   ('評分透明', '評分左右核貸時，Schufa 等徵信機構須說明主因；社群與健康資料不得用於評分。'),
   ],
-  takeaway=('觀察重點', '草案仍待聯邦議院審議，預計 2027 年初生效。藍卡等居留許可常依契約期限核發，續約時留意兩者是否銜接。'),
-  file='W47_圖卡2_定期契約延到四年.png'),
+  takeaway=('購物提醒', '巴登-符騰堡邦（Baden-Württemberg）消保中心：分期被拒不會留下負面 Schufa 紀錄。'),
+  file='W48_圖卡2_先買後付須審信用.png'),
  dict(
-  theme='#2E8B57', badges=[('退休金', True), ('政府報告', False)], illu='pensionrise',
-  title='年金明年 7 月估漲 4.1%',
-  subtitle='內閣 11/18 通過 2026 年退休保險報告，保費率 2027 年不變',
-  stats=[('4.1%', '2027 年 7 月年金調幅預估'),
-         ('18.6%', '2027 年退休保險費率（維持不變）')],
+  theme='#C0392B', badges=[('汽車產業', True), ('勞資協商', False)], illu='bargaining',
+  title='金屬業 50 萬人罷工後，第四輪協商登場',
+  subtitle='11/25 起在 Mannheim 協商、截稿時尚無結果，全國約 370 萬人將比照',
+  stats=[('約 50 萬人', '三天全天罷工人數（工會統計）'),
+         ('5% vs 1.3%', '工會要求與資方提議調幅')],
   bullets=[
-   ('年金點數', '每個年金點數的價值估從 42.52 € 升到約 44.26 €；最終幅度要到明年春天才確定。'),
-   ('預測下修', '去年報告估 4.75%、今年春天估 4.4%，這次再降；2028 年保費率估升到 19.7–19.8%。'),
-   ('長期展望', '2040 年前年金累計約漲 46%、平均每年 2.8%；稅前替代率 2031 年後逐步降到 46.4%。'),
+   ('罷工規模', '工會統計約 330 家工廠參與三天全天罷工，賓士 Sindelfingen、Rastatt、Bremen 等廠停產。'),
+   ('雙方立場', '工會要 12 個月加薪 5%；資方提 2027 年一次性給付、2028 年 7 月起調薪 1.3%。'),
+   ('試點協約', '由巴登-符騰堡邦（Baden-Württemberg）與北萊茵-西發利亞邦（Nordrhein-Westfalen）共同談判。'),
   ],
-  takeaway=('數據解讀', '預測尚未納入退休保障委員會的改革建議；總理 Merz 已宣布退休改革拆成兩段，年金法部分聖誕節前提出草案。'),
-  file='W47_圖卡3_年金估漲四點一.png'),
+  takeaway=('觀察重點', '若破局，工會可發動會員投票（需 75% 同意）走向無限期罷工；賓士另要求週工時增至 38 小時。'),
+  file='W48_圖卡3_金屬業第四輪協商.png'),
  dict(
-  theme='#C0392B', badges=[('汽車產業', True), ('勞資協商', False)], illu='strikeday',
-  title='金屬業全天罷工開打，福斯 11/24 開談',
-  subtitle='ZF Koblenz 廠 11/19 夜班起停工；福斯企業協約 12/31 失效',
-  stats=[('94%', 'Koblenz 六廠會員贊成罷工'),
-         ('約 13 萬人', '福斯企業協約涵蓋的員工')],
+  theme='#7C3AED', badges=[('社會安全', True), ('官方報告', False)], illu='helpline',
+  title='家暴受害人數創新高：2025 年逾 28 萬人',
+  subtitle='聯邦刑事警察局（BKA）11/24 發布年度報告，七成受害者為女性',
+  stats=[('280,129 人', '2025 年家暴受害者（+2.8%）'),
+         ('209 人', '死於家暴的女性與女孩')],
   bullets=[
-   ('首波罷工', 'ZF Koblenz 廠 11/19 夜班起停工 24 小時，11/20 Novelis、Stabilus 等廠接力；北德選定工廠投票全數通過。'),
-   ('雙方差距', '資方提一次性給付加上 26 個月內調薪 1.3%；工會要求 12 個月加薪 5%。第四輪協商仍未排定。'),
-   ('福斯', '9 月底終止 10 項企業協約；首輪談判 11/24 在 Emden、12/15 移師 Zwickau，工會要求撤回終止並要求加薪 5%。'),
+   ('伴侶暴力', '伴侶暴力受害者 179,940 人、79.4% 是女性，相當於每小時逾 16 名女性受害。'),
+   ('致命暴力', '共 292 人死於家暴，其中女性與女孩 209 人；130 起是現任或前任伴侶下手。'),
+   ('數位暴力', '女性數位暴力受害者增 15.7% 至 31,221 人；報告首次採用統一的「殺害女性」定義。'),
   ],
-  takeaway=('觀察重點', '福斯的和平義務 12/31 到期，若談不攏，明年初福斯廠區也可能罷工；車廠與供應商交貨恐受波及。'),
-  file='W47_圖卡4_金屬業全天罷工福斯開談.png'),
+  takeaway=('求助管道', '「對婦女暴力」求助專線 116 016 免費、全天候；2032 年起受害者依法有權獲得庇護所床位。'),
+  file='W48_圖卡4_家暴受害創新高.png'),
  dict(
-  theme='#7C3AED', badges=[('鐵路', True), ('交通政策', False)], illu='platformclock',
-  title='政府要德鐵 2029 年準點率回到七成',
-  subtitle='交通部長 Bilger 11/18 提出路網履約協議草案，主管獎金與績效掛鉤',
-  stats=[('56.2%', '10 月德鐵長途列車準點率'),
-         ('71 項', '路網公司須達成的績效指標')],
+  theme='#0D9488', badges=[('聯邦預算', True), ('聯邦議院', False)], illu='reichstag',
+  title='2027 年聯邦預算創新高：5,609 億歐元',
+  subtitle='Merz 11/25 總辯論為預算辯護，聯邦議院預定 11/27 最終表決',
+  stats=[('5,609 億歐元', '2027 年聯邦總支出'),
+         ('約 1,230 億歐元', '核心預算新增借款')],
   bullets=[
-   ('協議內容', '2027 年起為期 5 年；仿瑞士「訂購與執行分離」模式，由聯邦訂目標、路網公司 DB InfraGO 照做。'),
-   ('要修什麼', '2031 年前更新 7,200 組道岔與 7,500 公里軌道；據報導聯邦將投入逾 800 億歐元。'),
-   ('罰則', '改為密集監控，目標可能落空就要提出對策，不執行可處罰款；主管獎金掛鉤 71 項指標。'),
+   ('借款', '加計基礎建設與國防特別基金，新增借款合計約 2,104 億歐元。'),
+   ('國防', '核心預算國防支出約 1,097 億歐元，比 2026 年多三分之一、近總支出五分之一。'),
+   ('最大項目', '勞動與社會部約 2,015 億歐元居各部會之首；電力稅全面調降的財源到最後仍有爭議。'),
   ],
-  takeaway=('政策觀察', '草案仍須聯邦議院預算委員會與德鐵監事會同意；路網公司董事會 2025 年績效獎金 76.9 萬歐元，是前一年的三倍多。'),
-  file='W47_圖卡5_德鐵準點率目標七成.png'),
+  takeaway=('各方觀點', 'Merz 稱國家「無法再負擔一切」；左翼黨（Die Linke）批社會刪減，綠黨（Grüne）譏為「沒有地基的木板屋」。'),
+  file='W48_圖卡5_2027預算本週表決.png'),
+]
+
+# 備用卡：不屬於本週正式圖卡，只用 --backup 產出（版主決定是否換入正式週報）
+BACKUP_CARDS = [
+ dict(
+  theme='#2E8B57', badges=[('兵役', True), ('青年抗議', False)], illu='draftletter',
+  title='學生罷課反徵兵，自願從軍遠低於目標',
+  subtitle='11/20 全國罷課；2027 年 7 月起 18 歲男性須強制體檢',
+  stats=[('約 530 人', '年中前透過問卷招到的自願役'),
+         ('2 萬人', '2026 年自願役目標')],
+  bullets=[
+   ('罷課', '主辦單位稱逾 5 萬人、100 多城參加，訴求停止強制體檢；人數未經警方證實。'),
+   ('招募', '年中前寄出近 30 萬份兵役問卷、約 1,500 人受檢；國防部則稱報名明顯成長。'),
+   ('下一步', '2027 年起國會依半年報告檢討，人數不足可另立法啟動「必要時徵兵」。'),
+  ],
+  takeaway=('適用範圍', '兵役只適用德國國籍者；持台灣護照者不受影響，已入籍或具雙重國籍的子女則在範圍內。'),
+  file='W48_備用_反徵兵罷課與自願役.png'),
 ]
 
 # ── 邦名德文全名檢查 ────────────────────────────────────────
@@ -3080,9 +3216,11 @@ def check_glyphs(spec):
 
 if __name__ == '__main__':
     import os, sys
-    OUT = sys.argv[1] if len(sys.argv) > 1 else '.'
+    args = [a for a in sys.argv[1:] if not a.startswith('--')]
+    OUT = args[0] if args else '.'
     os.makedirs(OUT, exist_ok=True)
-    for c in CARDS:
+    cards = BACKUP_CARDS if '--backup' in sys.argv else CARDS
+    for c in cards:
         check_states(c)
         check_glyphs(c)
         render = make_chart_card if c.get('kind') == 'chart' else make_card
